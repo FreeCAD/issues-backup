@@ -29,7 +29,7 @@ If used anonymously, the github API only allows 60 requests per hour, which is
 not enough to perform a complete backup (at the time I write this, a full backup
 uses around 500 requests, 200 for the issues and 300 for the contents). To make
 use of the authentication system, create yourself an access token on github
-(under profile icon -> Settings -> Developer settings) and copy the token to 
+(under profile icon -> Settings -> Developer settings) and copy the token to
 a file named ".ghbackup" in your home directory or together with this script.
 
 command-line usage:
@@ -46,16 +46,16 @@ command-line usage:
 python usage:
 
     import ghbackup
-    
+
     repo = "FreeCAD/FreeCAD"
     issues_dict = ghbackup.get_issues(repo)
     comments_dict = ghbackup.get_issue_comments(repo)
-    
+
     with open("issues.json","w") as f:
         json.dump(issues_dict,f,indent=4)
     with open("comments.json","w") as f:
-        json.dump(comments_dict,f,indent=4)   
-        
+        json.dump(comments_dict,f,indent=4)
+
     ghbackup.push()
 """
 
@@ -66,21 +66,24 @@ import requests
 import json
 import git
 import datetime
+import re
 
 
 DEFAULT_REPO = "FreeCAD/FreeCAD"
 BASEURL = "https://api.github.com/repos/"
 SESSION = requests.Session()
 HEADERS = {}
-token_file = os.path.join( os.path.abspath(os.path.expanduser("~")), ".ghbackup")
+# look for github user token this folder and ~$HOME
+token_file = os.path.join( os.path.dirname(__file__), ".ghbackup")
 if os.path.exists(token_file):
     with(open(token_file) as f):
         HEADERS = {'Authorization': 'token ' + f.read().strip()}
 else:
-    token_file = os.path.join( os.path.dirname(__file__), ".ghbackup")
+    token_file = os.path.join( os.path.abspath(os.path.expanduser("~")), ".ghbackup")
     if os.path.exists(token_file):
         with(open(token_file) as f):
             HEADERS = {'Authorization': 'token ' + f.read().strip()}
+
 
 
 def get_data(api_point,page=1):
@@ -114,28 +117,36 @@ def get_issue_comments(repo):
     return get_data(repo+"/issues/comments")
 
 
-def get_pulls(repo):
+def get_image_links(data):
 
-    """get_issue_comments(repo): returns a dict from github issue comments"""
+    """get_image_links(data): finds attached image links in the given dict (issues or comments)"""
 
-    return get_data(repo+"/pulls")
+    return re.findall("https\:\/\/user-images.githubusercontent\.com/.*?\.jpg",json.dumps(data))
 
 
-def backup(repo):
+def get_file_links(data):
 
-    """backup(repo): backs up issues, issue comments and pull requests into 3 json files"""
+    """get_file_links(data): finds attached file links in the given dict (issues or comments)"""
 
-    print("Backing up issues...")
-    with open("issues.json","w") as f:
-        json.dump(get_issues(repo),f,indent=4)
-    print("Backing up issue comments...")
-    with open("comments.json","w") as f:
-        json.dump(get_issue_comments(repo),f,indent=4)
-    # pull requests are issues too so already saved
-    # print("Backing up pul requests...")
-    # with open("pulls.json","w") as f:
-    #    json.dump(get_pulls(repo),f,indent=4)
-    return True
+    return re.findall("(https\:\/\/github.com/"+repo.replace("/","\/")+"\/files\/.*?)\)",json.dumps(data))
+
+
+def backup_files(links,target):
+
+    """backup_files(links,target): downloads all links from the given link list, and saves them under
+    attachments/<target>. Skips existing files."""
+
+    folder = os.path.join(os.path.dirname(__file__),"attachments",target)
+    if not os.path.isdir(folder):
+        os.makedirs(folder)
+    for link in links:
+        name = link.split("/")[-1]
+        path = os.path.join(folder,name)
+        if not os.path.exists(path):
+            response = requests.get(link)
+            with open(path,"wb") as f:
+                print("saving",name)
+                f.write(response.content)
 
 
 def push():
@@ -151,6 +162,29 @@ def push():
         return True
     except:
         return False
+
+
+def backup(repo):
+
+    """backup(repo): backs up issues, issue comments and pull requests into 3 json files"""
+
+    print("Backing up issues...")
+    with open("issues.json","w") as f:
+        issues = get_issues(repo)
+        json.dump(issues,f,indent=4)
+    print("Backing up issue comments...")
+    with open("comments.json","w") as f:
+        comments = get_issue_comments(repo)
+        json.dump(comments,f,indent=4)
+    print("Backing up image attachments...")
+    imagelinks = get_image_links(issues)
+    imagelinks.extend(get_image_links(comments))
+    backup_files(imagelinks,"images")
+    print("Backing up file attachments...")
+    filelinks = get_file_links(issues)
+    filelinks.extend(get_file_links(comments))
+    backup_files(filelinks,"files")
+    return True
 
 
 if __name__ == "__main__":
