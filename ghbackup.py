@@ -51,10 +51,17 @@ python usage:
     issues_dict = ghbackup.get_issues(repo)
     comments_dict = ghbackup.get_issue_comments(repo)
 
+    # saving json data
     with open("issues.json","w") as f:
         json.dump(issues_dict,f,indent=4)
     with open("comments.json","w") as f:
         json.dump(comments_dict,f,indent=4)
+
+    # saving attachments
+    imagelinks = get_image_links(issues) + get_image_links(comments)
+    backup_files(imagelinks,"images")
+    filelinks = get_file_links(issues) + get_file_links(comments)
+    backup_files(filelinks,"files")
 
     ghbackup.push()
 """
