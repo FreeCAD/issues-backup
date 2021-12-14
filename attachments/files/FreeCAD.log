@@ -1,0 +1,304 @@
+﻿Msg: FreeCAD 0.17, Libs: 0.17R13491 (Git)
+© Juergen Riegel, Werner Mayer, Yorik van Havre 2001-2018
+  #####                 ####  ###   ####  
+  #                    #      # #   #   # 
+  #     ##  #### ####  #     #   #  #   # 
+  ####  # # #  # #  #  #     #####  #   # 
+  #     #   #### ####  #    #     # #   # 
+  #     #   #    #     #    #     # #   #  ##  ##  ##
+  #     #   #### ####   ### #     # ####   ##  ##  ##
+
+Log: Time = Mon Apr  2 17:14:06 2018
+Log: AppDataSkipVendor = true
+Log: AppHomePath = /home/tomate/Software/FreeCAD/build/
+Log: AppIcon = freecad
+Log: AppTempPath = /tmp/
+Log: BinPath = /home/tomate/Software/FreeCAD/build/bin/
+Log: BuildRepositoryURL = git://github.com/FreeCAD/FreeCAD.git master
+Log: BuildRevision = 13491 (Git)
+Log: BuildRevisionBranch = master
+Log: BuildRevisionDate = 2018/04/02 12:17:16
+Log: BuildRevisionHash = ba3fb75b48962f4b78c6e3ebdebf3965e35aa1e4
+Log: BuildVersionMajor = 0
+Log: BuildVersionMinor = 17
+Log: Console = 0
+Log: CopyrightInfo = © Juergen Riegel, Werner Mayer, Yorik van Havre 2001-2018
+  #####                 ####  ###   ####  
+  #                    #      # #   #   # 
+  #     ##  #### ####  #     #   #  #   # 
+  ####  # # #  # #  #  #     #####  #   # 
+  #     #   #### ####  #    #     # #   # 
+  #     #   #    #     #    #     # #   #  ##  ##  ##
+  #     #   #### ####   ### #     # ####   ##  ##  ##
+
+
+Log: Debug = 0
+Log: DocPath = /home/tomate/Software/FreeCAD/build/doc/
+Log: ExeName = FreeCAD
+Log: ExeVendor = FreeCAD
+Log: ExeVersion = 0.17
+Log: LoggingFile = 1
+Log: LoggingFileName = /home/tomate/.FreeCAD/FreeCAD.log
+Log: MaintainerUrl = http://www.freecadweb.org/wiki/Main_Page
+Log: PATH = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+Log: PYTHONPATH = 
+Log: PythonSearchPath = :/usr/lib/python2.7:/usr/lib/python2.7/plat-x86_64-linux-gnu:/usr/lib/python2.7/lib-tk:/usr/lib/python2.7/lib-old:/usr/lib/python2.7/lib-dynload
+Log: RunMode = Gui
+Log: SplashAlignment = Bottom|Left
+Log: SplashInfoColor = #c8c8c8
+Log: SplashScreen = freecadsplash
+Log: SplashTextColor = #ffffff
+Log: StartWorkbench = StartWorkbench
+Log: SystemParameter = /home/tomate/.FreeCAD/system.cfg
+Log: UserAppData = /home/tomate/.FreeCAD/
+Log: UserHomePath = /home/tomate
+Log: UserParameter = /home/tomate/.FreeCAD/user.cfg
+Log: Verbose = 
+Log: Create Application
+Log: Run App init script
+Log: Init: starting App::FreeCADInit.py
+Log: Init:   Searching for modules...
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Sketcher... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/ReverseEngineering... done
+Log: Init:      Initializing /home/tomate/.FreeCAD/Mod/Render(Init.py not found)... ignore
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Show(Init.py not found)... ignore
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Image... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Surface... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/PartDesign... done
+Log: Init:      Initializing /home/tomate/.FreeCAD/Mod/Fasteners_V0.2.15.zip(Init.py not found)... ignore
+Log: Init:      Initializing /home/tomate/.FreeCAD/Mod/SelectionTools(Init.py not found)... ignore
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Measure... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Ship(Init.py not found)... ignore
+Log: Init:      Initializing /home/tomate/.FreeCAD/Mod/nurbs(Init.py not found)... ignore
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Plot(Init.py not found)... ignore
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/MeshPart... done
+Log: Init:      Initializing /home/tomate/.FreeCAD/Mod/lattice(Init.py not found)... ignore
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/OpenSCAD... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Fem... done
+Log: Init:      Initializing /home/tomate/.FreeCAD/Mod/workfeature(Init.py not found)... ignore
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Spreadsheet... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Start... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Points... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Draft... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Test... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Import... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/TechDraw... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Tux(Init.py not found)... ignore
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Complete... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Web... done
+Log: Init:      Initializing /home/tomate/.FreeCAD/Mod/PieMenu(Init.py not found)... ignore
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Material... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Raytracing... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Mesh... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Path... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Part... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Arch... done
+Log: Init:      Initializing /home/tomate/.FreeCAD/Mod/CurvesWB(Init.py not found)... ignore
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Robot... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/AddonManager... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Idf... done
+Log: Init:      Initializing /home/tomate/.FreeCAD/Mod/Fasteners... done
+Log: Init:      Initializing /home/tomate/.FreeCAD/Mod/WebTools... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Inspection... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Drawing... done
+Log: Using /home/tomate/Software/FreeCAD/build/Mod as module path!
+Log: System path after init:
+Log:    /home/tomate/Software/FreeCAD/build/bin
+Log:    /home/tomate/Software/FreeCAD/build/Mod/Sketcher
+Log:    /home/tomate/Software/FreeCAD/build/Mod/ReverseEngineering
+Log:    /home/tomate/.FreeCAD/Mod/Render
+Log:    /home/tomate/Software/FreeCAD/build/Mod/Show
+Log:    /home/tomate/Software/FreeCAD/build/Mod/Image
+Log:    /home/tomate/Software/FreeCAD/build/Mod/Surface
+Log:    /home/tomate/Software/FreeCAD/build/Mod/PartDesign
+Log:    /home/tomate/.FreeCAD/Mod/Fasteners_V0.2.15.zip
+Log:    /home/tomate/.FreeCAD/Mod/SelectionTools
+Log:    /home/tomate/Software/FreeCAD/build/Mod/Measure
+Log:    /home/tomate/Software/FreeCAD/build/Mod/Ship
+Log:    /home/tomate/.FreeCAD/Mod/nurbs
+Log:    /home/tomate/Software/FreeCAD/build/Mod/Plot
+Log:    /home/tomate/Software/FreeCAD/build/Mod/MeshPart
+Log:    /home/tomate/.FreeCAD/Mod/lattice
+Log:    /home/tomate/Software/FreeCAD/build/Mod/OpenSCAD
+Log:    /home/tomate/Software/FreeCAD/build/Mod/Fem
+Log:    /home/tomate/.FreeCAD/Mod/workfeature
+Log:    /home/tomate/Software/FreeCAD/build/Mod/Spreadsheet
+Log:    /home/tomate/Software/FreeCAD/build/Mod/Start
+Log:    /home/tomate/Software/FreeCAD/build/Mod/Points
+Log:    /home/tomate/Software/FreeCAD/build/Mod/Draft
+Log:    /home/tomate/Software/FreeCAD/build/Mod/Test
+Log:    /home/tomate/Software/FreeCAD/build/Mod/Import
+Log:    /home/tomate/Software/FreeCAD/build/Mod/TechDraw
+Log:    /home/tomate/Software/FreeCAD/build/Mod/Tux
+Log:    /home/tomate/Software/FreeCAD/build/Mod/Complete
+Log:    /home/tomate/Software/FreeCAD/build/Mod/Web
+Log:    /home/tomate/.FreeCAD/Mod/PieMenu
+Log:    /home/tomate/Software/FreeCAD/build/Mod/Material
+Log:    /home/tomate/Software/FreeCAD/build/Mod/Raytracing
+Log:    /home/tomate/Software/FreeCAD/build/Mod/Mesh
+Log:    /home/tomate/Software/FreeCAD/build/Mod/Path
+Log:    /home/tomate/Software/FreeCAD/build/Mod/Part
+Log:    /home/tomate/Software/FreeCAD/build/Mod/Arch
+Log:    /home/tomate/.FreeCAD/Mod/CurvesWB
+Log:    /home/tomate/Software/FreeCAD/build/Mod/Robot
+Log:    /home/tomate/Software/FreeCAD/build/Mod/AddonManager
+Log:    /home/tomate/Software/FreeCAD/build/Mod/Idf
+Log:    /home/tomate/.FreeCAD/Mod/Fasteners
+Log:    /home/tomate/.FreeCAD/Mod/WebTools
+Log:    /home/tomate/Software/FreeCAD/build/Mod/Inspection
+Log:    /home/tomate/Software/FreeCAD/build/Mod/Drawing
+Log:    /usr/local/sbin
+Log:    /usr/local/bin
+Log:    /usr/sbin
+Log:    /usr/bin
+Log:    /sbin
+Log:    /bin
+Log:    /usr/games
+Log:    /usr/local/games
+Log:    /snap/bin
+Log: Init: App::FreeCADInit.py done
+Log: Init: Creating Gui::Application and QApplication
+Log: Local server 'FreeCAD' started
+Log: OpenGL version 3.0 or higher is present
+Log: QFileSystemWatcher: failed to add paths: /home/tomate/.config/ibus/bus
+Log: Bus::open: Can not get ibus-daemon's address. 
+Log: IBusInputContext::createInputContext: no connection to ibus-daemon 
+Log: Run Gui init script
+Log: Init: Running FreeCADGuiInit.py start script...
+Log: Init:   Searching modules...
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Sketcher... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/ReverseEngineering... done
+Log: Init:      Initializing /home/tomate/.FreeCAD/Mod/Render... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Show(InitGui.py not found)... ignore
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Image... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Surface... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/PartDesign... done
+Log: Init:      Initializing /home/tomate/.FreeCAD/Mod/Fasteners_V0.2.15.zip(InitGui.py not found)... ignore
+Log: Init:      Initializing /home/tomate/.FreeCAD/Mod/SelectionTools... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Measure(InitGui.py not found)... ignore
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Ship... done
+Msg: nurbs configuration file loadedMsg: 
+Log: Init:      Initializing /home/tomate/.FreeCAD/Mod/nurbs... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Plot... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/MeshPart... done
+Log: Init:      Initializing /home/tomate/.FreeCAD/Mod/lattice... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/OpenSCAD... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Fem... done
+Log: Init:      Initializing /home/tomate/.FreeCAD/Mod/workfeature(InitGui.py not found)... ignore
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Spreadsheet... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Start... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Points... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Draft... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Test... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Import... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/TechDraw... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Tux... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Complete... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Web... done
+Log: Init:      Initializing /home/tomate/.FreeCAD/Mod/PieMenu... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Material... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Raytracing... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Mesh... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Path... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Part... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Arch... done
+Log: Init:      Initializing /home/tomate/.FreeCAD/Mod/CurvesWB... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Robot... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/AddonManager... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Idf(InitGui.py not found)... ignore
+Log: Init:      Initializing /home/tomate/.FreeCAD/Mod/Fasteners... done
+Log: Init:      Initializing /home/tomate/.FreeCAD/Mod/WebTools... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Inspection... done
+Log: Init:      Initializing /home/tomate/Software/FreeCAD/build/Mod/Drawing... done
+Log: Init: Loading FreeCAD GUI
+Log: Init: Running FreeCADGuiInit.py start script... done
+Log: Init: Activating default workbench StartWorkbench
+Log: Module: Part
+Log: Loading Part module... done
+Log: Loading Sketcher module... done
+Log: Loading GUI of Part module... done
+Log: Loading GUI of Sketcher module... done
+Log: Init: Showing main window
+Log: Main window restored
+Log: Show main window
+Log: Toolbars restored
+Log: Init: Entering event loop
+Log: Init: Processing command line files
+Log: Loading Draft module...done
+Log: Draft workbench activated
+Msg: Pick center point:
+Msg: Pick radius:
+Msg: Pick start angle:
+Msg: Pick aperture:
+Msg: Msg: Pick center point:
+Msg: Pick radius:
+Msg: Pick start angle:
+Msg: Pick aperture:
+Msg: Log: Loading Surface module... done
+Log: Loading GUI of Surface module... done
+Log: Draft workbench deactivated
+Err: Program received signal SIGSEGV, Segmentation fault.
+Err: #0  /lib/x86_64-linux-gnu/libc.so.6(+0x37140) [0x7f0d84f78140]
+Err: #1  0x7f0d396e8ada in NCollection_BaseList::PRemove(NCollection_BaseList::Iterator&, void (*)(NCollection_ListNode*, opencascade::handle<NCollection_BaseAllocator>&)) from /usr/local/lib/libTKernel.so.7+0x1a
+Err: #2  0x7f0d37836eb2 in BRepFill_Filling::Build() from /usr/local/lib/libTKBool.so.7+0x1cd2
+Err: #3  0x7f0d22de47a8 in Surface::Filling::execute() from /home/tomate/Software/FreeCAD/build/Mod/Surface/Surface.so+0x5e0
+Err: #4  0x7f0d8793f40f in App::DocumentObject::recompute() from /home/tomate/Software/FreeCAD/build/lib/libFreeCADApp.so+0xbd
+Err: #5  0x7f0d3a3588cb in Part::Feature::recompute() from /home/tomate/Software/FreeCAD/build/Mod/Part/Part.so+0x1b
+Err: #6  0x7f0d878d55eb in App::Document::_recomputeFeature(App::DocumentObject*) from /home/tomate/Software/FreeCAD/build/lib/libFreeCADApp.so+0xa5
+Err: #7  0x7f0d878d5b54 in App::Document::recomputeFeature(App::DocumentObject*) from /home/tomate/Software/FreeCAD/build/lib/libFreeCADApp.so+0xd0
+Err: #8  0x7f0d8793f5bc in App::DocumentObject::recomputeFeature() from /home/tomate/Software/FreeCAD/build/lib/libFreeCADApp.so+0x36
+Err: #9  0x7f0d280d6266 in SurfaceGui::FillingPanel::onSelectionChanged(Gui::SelectionChanges const&) from /home/tomate/Software/FreeCAD/build/Mod/Surface/SurfaceGui.so+0x13ea
+Err: #10  0x7f0d8895ee05 in boost::_mfi::mf1<void, Gui::SelectionObserver, Gui::SelectionChanges const&>::operator()(Gui::SelectionObserver*, Gui::SelectionChanges const&) const from /home/tomate/Software/FreeCAD/build/lib/libFreeCADGui.so+0x71
+Err: #11  0x7f0d8895e5e1 in void boost::_bi::list2<boost::_bi::value<Gui::SelectionObserver*>, boost::arg<1> >::operator()<boost::_mfi::mf1<void, Gui::SelectionObserver, Gui::SelectionChanges const&>, boost::_bi::rrlist1<Gui::SelectionChanges const&> >(boost::_bi::type<void>, boost::_mfi::mf1<void, Gui::SelectionObserver, Gui::SelectionChanges const&>&, boost::_bi::rrlist1<Gui::SelectionChanges const&>&, int) from /home/tomate/Software/FreeCAD/build/lib/libFreeCADGui.so+0x6b
+Err: #12  0x7f0d8895d9e9 in void boost::_bi::bind_t<void, boost::_mfi::mf1<void, Gui::SelectionObserver, Gui::SelectionChanges const&>, boost::_bi::list2<boost::_bi::value<Gui::SelectionObserver*>, boost::arg<1> > >::operator()<Gui::SelectionChanges const&>(Gui::SelectionChanges const&) from /home/tomate/Software/FreeCAD/build/lib/libFreeCADGui.so+0x55
+Err: #13  0x7f0d8895cb51 in boost::detail::function::void_function_obj_invoker1<boost::_bi::bind_t<void, boost::_mfi::mf1<void, Gui::SelectionObserver, Gui::SelectionChanges const&>, boost::_bi::list2<boost::_bi::value<Gui::SelectionObserver*>, boost::arg<1> > >, void, Gui::SelectionChanges const&>::invoke(boost::detail::function::function_buffer&, Gui::SelectionChanges const&) from /home/tomate/Software/FreeCAD/build/lib/libFreeCADGui.so+0x36
+Err: #14  0x7f0d8895f5ad in boost::function1<void, Gui::SelectionChanges const&>::operator()(Gui::SelectionChanges const&) const from /home/tomate/Software/FreeCAD/build/lib/libFreeCADGui.so+0x77
+Err: #15  0x7f0d8895f07f in boost::signals::detail::unusable boost::signals::detail::call_bound1<void>::caller<Gui::SelectionChanges const&, boost::function<void (Gui::SelectionChanges const&)> >::operator()<boost::signals::detail::connection_slot_pair>(boost::signals::detail::connection_slot_pair const&) const from /home/tomate/Software/FreeCAD/build/lib/libFreeCADGui.so+0x4d
+Err: #16  0x7f0d8895e8bf in boost::signals::detail::slot_call_iterator<boost::signals::detail::call_bound1<void>::caller<Gui::SelectionChanges const&, boost::function<void (Gui::SelectionChanges const&)> >, boost::signals::detail::named_slot_map_iterator>::dereference() const from /home/tomate/Software/FreeCAD/build/lib/libFreeCADGui.so+0x5f
+Err: #17  0x7f0d8895e00c in boost::signals::detail::slot_call_iterator<boost::signals::detail::call_bound1<void>::caller<Gui::SelectionChanges const&, boost::function<void (Gui::SelectionChanges const&)> >, boost::signals::detail::named_slot_map_iterator>::reference boost::iterators::iterator_core_access::dereference<boost::signals::detail::slot_call_iterator<boost::signals::detail::call_bound1<void>::caller<Gui::SelectionChanges const&, boost::function<void (Gui::SelectionChanges const&)> >, boost::signals::detail::named_slot_map_iterator> >(boost::signals::detail::slot_call_iterator<boost::signals::detail::call_bound1<void>::caller<Gui::SelectionChanges const&, boost::function<void (Gui::SelectionChanges const&)> >, boost::signals::detail::named_slot_map_iterator> const&) from /home/tomate/Software/FreeCAD/build/lib/libFreeCADGui.so+0x18
+Err: #18  0x7f0d8895d1e4 in boost::iterators::detail::iterator_facade_base<boost::signals::detail::slot_call_iterator<boost::signals::detail::call_bound1<void>::caller<Gui::SelectionChanges const&, boost::function<void (Gui::SelectionChanges const&)> >, boost::signals::detail::named_slot_map_iterator>, boost::signals::detail::unusable, boost::iterators::single_pass_traversal_tag, boost::signals::detail::unusable const&, long, false, false>::operator*() const from /home/tomate/Software/FreeCAD/build/lib/libFreeCADGui.so+0x20
+Err: #19  0x7f0d8895c49a in boost::iterators::detail::postfix_increment_proxy<boost::signals::detail::slot_call_iterator<boost::signals::detail::call_bound1<void>::caller<Gui::SelectionChanges const&, boost::function<void (Gui::SelectionChanges const&)> >, boost::signals::detail::named_slot_map_iterator> >::postfix_increment_proxy(boost::signals::detail::slot_call_iterator<boost::signals::detail::call_bound1<void>::caller<Gui::SelectionChanges const&, boost::function<void (Gui::SelectionChanges const&)> >, boost::signals::detail::named_slot_map_iterator> const&) from /home/tomate/Software/FreeCAD/build/lib/libFreeCADGui.so+0x1c
+Err: #20  0x7f0d8895b019 in boost::iterators::detail::postfix_increment_result<boost::signals::detail::slot_call_iterator<boost::signals::detail::call_bound1<void>::caller<Gui::SelectionChanges const&, boost::function<void (Gui::SelectionChanges const&)> >, boost::signals::detail::named_slot_map_iterator>, boost::signals::detail::unusable, boost::signals::detail::unusable const&, boost::iterators::single_pass_traversal_tag>::type boost::iterators::operator++<boost::signals::detail::slot_call_iterator<boost::signals::detail::call_bound1<void>::caller<Gui::SelectionChanges const&, boost::function<void (Gui::SelectionChanges const&)> >, boost::signals::detail::named_slot_map_iterator>, boost::signals::detail::unusable, boost::iterators::single_pass_traversal_tag, boost::signals::detail::unusable const&, long>(boost::iterators::iterator_facade<boost::signals::detail::slot_call_iterator<boost::signals::detail::call_bound1<void>::caller<Gui::SelectionChanges const&, boost::function<void (Gui::SelectionChanges const&)> >, boost::signals::detail::named_slot_map_iterator>, boost::signals::detail::unusable, boost::iterators::single_pass_traversal_tag, boost::signals::detail::unusable const&, long>&, int) from /home/tomate/Software/FreeCAD/build/lib/libFreeCADGui.so+0x32
+Err: #21  0x7f0d8895890b in void boost::last_value<void>::operator()<boost::signals::detail::slot_call_iterator<boost::signals::detail::call_bound1<void>::caller<Gui::SelectionChanges const&, boost::function<void (Gui::SelectionChanges const&)> >, boost::signals::detail::named_slot_map_iterator> >(boost::signals::detail::slot_call_iterator<boost::signals::detail::call_bound1<void>::caller<Gui::SelectionChanges const&, boost::function<void (Gui::SelectionChanges const&)> >, boost::signals::detail::named_slot_map_iterator>, boost::signals::detail::slot_call_iterator<boost::signals::detail::call_bound1<void>::caller<Gui::SelectionChanges const&, boost::function<void (Gui::SelectionChanges const&)> >, boost::signals::detail::named_slot_map_iterator>) const from /home/tomate/Software/FreeCAD/build/lib/libFreeCADGui.so+0x4b
+Err: #22  0x7f0d88956bc7 in boost::signal1<void, Gui::SelectionChanges const&, boost::last_value<void>, int, std::less<int>, boost::function<void (Gui::SelectionChanges const&)> >::operator()(Gui::SelectionChanges const&) from /home/tomate/Software/FreeCAD/build/lib/libFreeCADGui.so+0x18f
+Err: #23  0x7f0d8895158b in Gui::SelectionSingleton::addSelection(char const*, char const*, char const*, float, float, float) from /home/tomate/Software/FreeCAD/build/lib/libFreeCADGui.so+0x4ff
+Err: #24  0x7f0d8877194e in Gui::SoFCUnifiedSelection::handleEvent(SoHandleEventAction*) from /home/tomate/Software/FreeCAD/build/lib/libFreeCADGui.so+0x1122
+Err: #25  0x7f0d848b50f0 in SoNode::handleEventS(SoAction*, SoNode*) from /usr/lib/x86_64-linux-gnu/libCoin.so.80+0x90
+Err: #26  0x7f0d84658b74 in SoAction::traverse(SoNode*) from /usr/lib/x86_64-linux-gnu/libCoin.so.80+0x64
+Err: #27  0x7f0d847bf63e in SoChildList::traverse(SoAction*, int, int) from /usr/lib/x86_64-linux-gnu/libCoin.so.80+0x26e
+Err: #28  0x7f0d848a9706 in SoGroup::doAction(SoAction*) from /usr/lib/x86_64-linux-gnu/libCoin.so.80+0x56
+Err: #29  0x7f0d848c8da7 in SoSeparator::doAction(SoAction*) from /usr/lib/x86_64-linux-gnu/libCoin.so.80+0x27
+Err: #30  0x7f0d848b50f0 in SoNode::handleEventS(SoAction*, SoNode*) from /usr/lib/x86_64-linux-gnu/libCoin.so.80+0x90
+Err: #31  0x7f0d84658b74 in SoAction::traverse(SoNode*) from /usr/lib/x86_64-linux-gnu/libCoin.so.80+0x64
+Err: #32  0x7f0d846640ca in SoHandleEventAction::beginTraversal(SoNode*) from /usr/lib/x86_64-linux-gnu/libCoin.so.80+0x7a
+Err: #33  0x7f0d8465a3c2 in SoAction::apply(SoNode*) from /usr/lib/x86_64-linux-gnu/libCoin.so.80+0x472
+Err: #34  0x7f0d847def69 in SoEventManager::actuallyProcessEvent(SoEvent const*) from /usr/lib/x86_64-linux-gnu/libCoin.so.80+0x89
+Err: #35  0x7f0d8880343a in SIM::Coin3D::Quarter::QuarterWidget::processSoEvent(SoEvent const*) from /home/tomate/Software/FreeCAD/build/lib/libFreeCADGui.so+0x56
+Err: #36  0x7f0d8880b90f in SIM::Coin3D::Quarter::SoQTQuarterAdaptor::processSoEvent(SoEvent const*) from /home/tomate/Software/FreeCAD/build/lib/libFreeCADGui.so+0x195
+Err: #37  0x7f0d88843505 in Gui::View3DInventorViewer::processSoEventBase(SoEvent const*) from /home/tomate/Software/FreeCAD/build/lib/libFreeCADGui.so+0x23
+Err: #38  0x7f0d8881b919 in Gui::NavigationStyle::processSoEvent(SoEvent const*) from /home/tomate/Software/FreeCAD/build/lib/libFreeCADGui.so+0x27
+Err: #39  0x7f0d8882215c in Gui::CADNavigationStyle::processSoEvent(SoEvent const*) from /home/tomate/Software/FreeCAD/build/lib/libFreeCADGui.so+0x128e
+Err: #40  0x7f0d8881b855 in Gui::NavigationStyle::processEvent(SoEvent const*) from /home/tomate/Software/FreeCAD/build/lib/libFreeCADGui.so+0x1ff
+Err: #41  0x7f0d888434c6 in Gui::View3DInventorViewer::processSoEvent(SoEvent const*) from /home/tomate/Software/FreeCAD/build/lib/libFreeCADGui.so+0x126
+Err: #42  0x7f0d887fbdbb in SIM::Coin3D::Quarter::EventFilter::eventFilter(QObject*, QEvent*) from /home/tomate/Software/FreeCAD/build/lib/libFreeCADGui.so+0x18f
+Err: #43  0x7f0d85a48a16 in QCoreApplicationPrivate::sendThroughObjectEventFilters(QObject*, QEvent*) from /usr/lib/x86_64-linux-gnu/libQtCore.so.4+0x86
+Err: #44  0x7f0d85f7501c in QApplicationPrivate::notify_helper(QObject*, QEvent*) from /usr/lib/x86_64-linux-gnu/libQtGui.so.4+0x6c
+Err: #45  0x7f0d85f7c136 in QApplication::notify(QObject*, QEvent*) from /usr/lib/x86_64-linux-gnu/libQtGui.so.4+0x476
+Err: #46  0x7f0d8856eca2 in Gui::GUIApplication::notify(QObject*, QEvent*) from /home/tomate/Software/FreeCAD/build/lib/libFreeCADGui.so+0x10e
+Err: #47  0x7f0d85a488ad in QCoreApplication::notifyInternal(QObject*, QEvent*) from /usr/lib/x86_64-linux-gnu/libQtCore.so.4+0x8d
+Err: #48  0x7f0d85f7b73d in QApplicationPrivate::sendMouseEvent(QWidget*, QMouseEvent*, QWidget*, QWidget*, QWidget**, QPointer<QWidget>&, bool) from /usr/lib/x86_64-linux-gnu/libQtGui.so.4+0x14d
+Err: #49  /usr/lib/x86_64-linux-gnu/libQtGui.so.4(+0x249452) [0x7f0d85ff9452]
+Err: #50  0x7f0d85ff8ce3 in QApplication::x11ProcessEvent(_XEvent*) from /usr/lib/x86_64-linux-gnu/libQtGui.so.4+0x16b3
+Err: #51  /usr/lib/x86_64-linux-gnu/libQtGui.so.4(+0x272592) [0x7f0d86022592]
+Err: #52  /lib/x86_64-linux-gnu/libglib-2.0.so.0(g_main_context_dispatch+0x2e7) [0x7f0d7edb1fb7]
+Err: #53  /lib/x86_64-linux-gnu/libglib-2.0.so.0(+0x4b1f0) [0x7f0d7edb21f0]
+Err: #54  /lib/x86_64-linux-gnu/libglib-2.0.so.0(g_main_context_iteration+0x2c) [0x7f0d7edb227c]
+Err: #55  0x7f0d85a7920e in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) from /usr/lib/x86_64-linux-gnu/libQtCore.so.4+0x7e
+Err: #56  /usr/lib/x86_64-linux-gnu/libQtGui.so.4(+0x272666) [0x7f0d86022666]
+Err: #57  0x7f0d85a4712f in QEventLoop::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) from /usr/lib/x86_64-linux-gnu/libQtCore.so.4+0x3f
+Err: #58  0x7f0d85a47495 in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) from /usr/lib/x86_64-linux-gnu/libQtCore.so.4+0x1b5
+Err: #59  0x7f0d85a4d459 in QCoreApplication::exec() from /usr/lib/x86_64-linux-gnu/libQtCore.so.4+0x99
+Err: #60  0x7f0d884fcb93 in Gui::Application::runApplication() from /home/tomate/Software/FreeCAD/build/lib/libFreeCADGui.so+0x1ec3
+Err: #61  /home/tomate/Software/FreeCAD/build/bin/FreeCAD(main+0xa89) [0x55f5f346d0e3]
+Err: #62  /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf1) [0x7f0d84f621c1]
+Err: #63  /home/tomate/Software/FreeCAD/build/bin/FreeCAD(_start+0x2a) [0x55f5f346c4ba]

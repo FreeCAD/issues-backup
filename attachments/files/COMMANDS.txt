@@ -1,0 +1,49 @@
+============
+Build System
+============
+
+Filter depends
+**************
+
+.. code-block:: console
+
+    cat arch.sh | sort | uniq > arch_2.txt
+
+Dependancy search
+*****************
+
+    apt-get install --yes apt-file
+    apt-file update
+    apt-file search vtkParseOGLExt
+
+cmake
+*****
+
+.. code-block:: console
+
+    # Console 1
+    cmake ../freecad-source &> ../build_log/xxx-cmake.log
+    # Console 2
+    tail -f ../build_log/xxx-cmake.log
+
+
+Build
+*****
+
+.. code-block:: console
+
+    # Console 1
+    make -j$(nproc --ignore=2) &> ../build_log/xxx-build.log
+    # Console 2
+    tail -f ../build_log/xxx-build.log
+
+
+Test
+****
+
+.. code-block:: console
+
+    # Console 1
+    ./bin/FreeCADCmd --run-test 0 &> ../build_log/xxx-test.log
+    # Console 2
+    tail -f ../build_log/xxx-test.log

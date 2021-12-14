@@ -1,0 +1,406 @@
+-- The C compiler identification is GNU 10.3.0
+-- The CXX compiler identification is GNU 10.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Compiler: GNU, version: 10.3.0
+-- Looking for GL/gl.h
+-- Looking for GL/gl.h - found
+-- Looking for C++ include istream
+-- Looking for C++ include istream - found
+-- Looking for C++ include ostream
+-- Looking for C++ include ostream - found
+-- Looking for C++ include fstream
+-- Looking for C++ include fstream - found
+-- Looking for C++ include sstream
+-- Looking for C++ include sstream - found
+-- Looking for C++ include ios
+-- Looking for C++ include ios - found
+-- Looking for C++ include iostream
+-- Looking for C++ include iostream - found
+-- Looking for C++ include iomanip
+-- Looking for C++ include iomanip - found
+-- Looking for C++ include iostream
+-- Looking for C++ include iostream - found
+-- Check for STD namespace
+-- Check for STD namespace - found
+-- prefix: /usr/local
+-- bindir: bin
+-- datadir: share
+-- docdir: share/doc/FreeCAD
+-- includedir: include
+-- libdir: lib
+-- cmake: 3.18.4
+-- Found Doxygen: /usr/bin/doxygen (found version "1.9.1") found components: doxygen missing components: dot
+-- Found Python3: /usr/bin/python3.9 (found version "3.9.5") found components: Interpreter Development Development.Module Development.Embed 
+-- Found XercesC: /usr/lib/x86_64-linux-gnu/libxerces-c.so (found version "3.2.3") 
+-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+-- PyCXX found:
+--   Headers:  /builds/freecad-source/src
+--   Sources:  /builds/freecad-source/src/CXX
+--   Version:  6.2.8
+CMake Warning (dev) at /usr/share/cmake-3.18/Modules/FindPackageHandleStandardArgs.cmake:273 (message):
+  The package name passed to `find_package_handle_standard_args` (OCC) does
+  not match the name of the calling package (OpenCasCade).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  cMake/FindOpenCasCade.cmake:120 (FIND_PACKAGE_HANDLE_STANDARD_ARGS)
+  cMake/FreeCAD_Helpers/SetupOpenCasCade.cmake:4 (find_package)
+  CMakeLists.txt:51 (SetupOpenCasCade)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found OCC: /usr/include/opencascade (found version "7.5.1") 
+-- -- Found OCE/OpenCASCADE version: 7.5.1
+-- -- OCE/OpenCASCADE include directory: /usr/include/opencascade
+-- -- OCE/OpenCASCADE shared libraries directory: /usr/lib/x86_64-linux-gnu
+-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so   
+-- Found OpenGLU: /usr/lib/x86_64-linux-gnu/libGLU.so
+CMake Deprecation Warning at /usr/lib/x86_64-linux-gnu/cmake/vtk-9.0/vtk-config.cmake:64 (message):
+  The new name for the 'vtkCommonCore' component is 'CommonCore'
+Call Stack (most recent call first):
+  cMake/FreeCAD_Helpers/SetupSalomeSMESH.cmake:29 (find_package)
+  CMakeLists.txt:58 (SetupSalomeSMESH)
+
+
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found utf8cpp: /usr/include  
+-- VTK components: not found or used
+-- Found X11: /usr/include   
+-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  
+-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX 
+-- Found Python3: /usr/bin/python3.9 (found suitable version "3.9.5", minimum required is "3.9") found components: Interpreter Development.Module Development.Embed 
+-- HDF5: Using hdf5 compiler wrapper to determine C configuration
+-- Found HDF5: /usr/lib/x86_64-linux-gnu/hdf5/serial/libhdf5.so;/usr/lib/x86_64-linux-gnu/libpthread.so;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libz.so;/usr/lib/x86_64-linux-gnu/libdl.so;/usr/lib/x86_64-linux-gnu/libm.so (found version "1.10.6") found components: C HL 
+-- Found OGG: /usr/lib/x86_64-linux-gnu/libogg.so  
+-- Found THEORA: /usr/lib/x86_64-linux-gnu/libtheora.so  
+-- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.3", minimum required is "0.7.0") 
+-- Found LibXml2: /usr/lib/x86_64-linux-gnu/libxml2.so (found version "2.9.10") 
+-- Found GL2PS: /usr/lib/x86_64-linux-gnu/libgl2ps.so (found suitable version "1.4.2", minimum required is "1.4.1") 
+-- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") 
+-- Found SQLite3: /usr/include (found version "3.34.1") 
+-- Found LibPROJ: /usr/lib/x86_64-linux-gnu/libproj.so (found version "7.2.1") 
+-- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.2.10") 
+-- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  
+-- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") 
+-- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") 
+-- Found Eigen3: /usr/include/eigen3 (found version "3.3.9") 
+-- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so  
+-- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.2.0") 
+-- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.10.4") 
+-- Check for medfile (libmed and libmedc) ...
+-- Found MEDFile: /usr/include  
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+-- We guess that libmed was built using hdf5-openmpi version
+-- Checking for one of the modules 'hdf5-openmpi'
+-- Checking for one of the modules 'ompi-cxx'
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.55") found components: filesystem program_options regex system thread 
+-- Found SWIG: /usr/bin/swig4.0 (found version "4.0.2")  
+-- Found Eigen3: /usr/include/eigen3 (found suitable version "3.3.9", minimum required is "2.91.0") 
+-- Checking for module 'Coin'
+--   No package 'Coin' found
+-- Coin3D libraries found
+-- Could NOT find Spnav (missing: SPNAV_LIBRARY SPNAV_INCLUDE_DIR) 
+-- Shiboken2Config: Using default python: .cpython-39-x86_64-linux-gnu
+-- Found PythonInterp: /usr/bin/python3.9 (found suitable version "3.9.5", minimum required is "3") 
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.9.so (found suitable version "3.9.5", minimum required is "3") 
+-- SHIBOKEN_PYTHON_INCLUDE_DIRS computed to value: '/usr/include/python3.9'
+-- SHIBOKEN_PYTHON_LIBRARIES computed to value: ''
+-- libshiboken built for RelWithDebInfo
+-- PYTHON_CONFIG_SUFFIX: .cpython-39-x86_64-linux-gnu
+-- libshiboken built for RelWithDebInfo
+-- ===============================================
+PySide2 Python module found at /usr/lib/python3/dist-packages/PySide2.
+===============================================
+
+-- Found Matplotlib: /usr/lib/python3/dist-packages/matplotlib (found version "3.3.4")
+-- Platform is 64-bit, set -D_OCC64
+-- Performing Test _flag_found
+-- Performing Test _flag_found - Success
+-- Performing Test _flag_found
+-- Performing Test _flag_found - Success
+-- Performing Test _flag_found
+-- Performing Test _flag_found - Success
+-- /builds/build-ubuntu/src/Base/TypePy.cpp
+-- /builds/build-ubuntu/src/Base/BaseClassPy.cpp
+-- /builds/build-ubuntu/src/Base/BoundBoxPy.cpp
+-- /builds/build-ubuntu/src/Base/CoordinateSystemPy.cpp
+-- /builds/build-ubuntu/src/Base/PersistencePy.cpp
+-- /builds/build-ubuntu/src/Base/VectorPy.cpp
+-- /builds/build-ubuntu/src/Base/MatrixPy.cpp
+-- /builds/build-ubuntu/src/Base/RotationPy.cpp
+-- /builds/build-ubuntu/src/Base/PlacementPy.cpp
+-- /builds/build-ubuntu/src/Base/AxisPy.cpp
+-- /builds/build-ubuntu/src/Base/UnitPy.cpp
+-- /builds/build-ubuntu/src/Base/QuantityPy.cpp
+-- /builds/build-ubuntu/src/App/DocumentPy.cpp
+-- /builds/build-ubuntu/src/App/DocumentObjectPy.cpp
+-- /builds/build-ubuntu/src/App/ExtensionPy.cpp
+-- /builds/build-ubuntu/src/App/ExtensionContainerPy.cpp
+-- /builds/build-ubuntu/src/App/DocumentObjectExtensionPy.cpp
+-- /builds/build-ubuntu/src/App/GroupExtensionPy.cpp
+-- /builds/build-ubuntu/src/App/LinkBaseExtensionPy.cpp
+-- /builds/build-ubuntu/src/App/DocumentObjectGroupPy.cpp
+-- /builds/build-ubuntu/src/App/GeoFeaturePy.cpp
+-- /builds/build-ubuntu/src/App/GeoFeatureGroupExtensionPy.cpp
+-- /builds/build-ubuntu/src/App/OriginGroupExtensionPy.cpp
+-- /builds/build-ubuntu/src/App/PartPy.cpp
+-- /builds/build-ubuntu/src/App/ComplexGeoDataPy.cpp
+-- /builds/build-ubuntu/src/App/PropertyContainerPy.cpp
+-- /builds/build-ubuntu/src/App/MaterialPy.cpp
+-- /builds/build-ubuntu/src/Mod/Points/App/PointsPy.cpp
+-- /builds/build-ubuntu/src/Mod/Mesh/App/FacetPy.cpp
+-- /builds/build-ubuntu/src/Mod/Mesh/App/MeshFeaturePy.cpp
+-- /builds/build-ubuntu/src/Mod/Mesh/App/MeshPointPy.cpp
+-- /builds/build-ubuntu/src/Mod/Mesh/App/MeshPy.cpp
+-- /builds/build-ubuntu/src/Mod/Mesh/Gui/ViewProviderMeshPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/ArcPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/ArcOfConicPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/ArcOfCirclePy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/ArcOfParabolaPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/BodyBasePy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/ConicPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/CirclePy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/ArcOfEllipsePy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/EllipsePy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/HyperbolaPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/ArcOfHyperbolaPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/ParabolaPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/OffsetCurvePy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/GeometryPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/GeometryExtensionPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/GeometryIntExtensionPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/GeometryStringExtensionPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/GeometryBoolExtensionPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/GeometryDoubleExtensionPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/GeometryCurvePy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/BoundedCurvePy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/TrimmedCurvePy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/GeometrySurfacePy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/LinePy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/LineSegmentPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/PointPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/BezierCurvePy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/BSplineCurvePy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/PlanePy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/ConePy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/CylinderPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/SpherePy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/ToroidPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/BezierSurfacePy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/BSplineSurfacePy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/OffsetSurfacePy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/PlateSurfacePy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/RectangularTrimmedSurfacePy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/SurfaceOfExtrusionPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/SurfaceOfRevolutionPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/PartFeaturePy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/AttachExtensionPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/Part2DObjectPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/AttachEnginePy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/TopoShapePy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/TopoShapeCompoundPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/TopoShapeCompSolidPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/TopoShapeEdgePy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/TopoShapeFacePy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/TopoShapeShellPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/TopoShapeSolidPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/TopoShapeVertexPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/TopoShapeWirePy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/BRepOffsetAPI_MakePipeShellPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/BRepOffsetAPI_MakeFillingPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/BRepFeat/MakePrismPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/Geom2d/ArcOfCircle2dPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/Geom2d/ArcOfConic2dPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/Geom2d/ArcOfEllipse2dPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/Geom2d/ArcOfHyperbola2dPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/Geom2d/ArcOfParabola2dPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/Geom2d/BezierCurve2dPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/Geom2d/BSplineCurve2dPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/Geom2d/Circle2dPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/Geom2d/Conic2dPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/Geom2d/Ellipse2dPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/Geom2d/Geometry2dPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/Geom2d/Hyperbola2dPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/Geom2d/Curve2dPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/Geom2d/Line2dSegmentPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/Geom2d/Line2dPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/Geom2d/OffsetCurve2dPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/Geom2d/Parabola2dPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/GeomPlate/BuildPlateSurfacePy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/GeomPlate/CurveConstraintPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/GeomPlate/PointConstraintPy.cpp
+-- /builds/build-ubuntu/src/Mod/Part/App/ShapeUpgrade/UnifySameDomainPy.cpp
+-- /builds/build-ubuntu/src/Mod/PartDesign/App/BodyPy.cpp
+-- /builds/build-ubuntu/src/Mod/PartDesign/App/FeaturePy.cpp
+-- /builds/build-ubuntu/src/Mod/PartDesign/Gui/ViewProviderPy.cpp
+-- /builds/build-ubuntu/src/Mod/Sketcher/App/SketchObjectSFPy.cpp
+-- /builds/build-ubuntu/src/Mod/Sketcher/App/SketchObjectPy.cpp
+-- /builds/build-ubuntu/src/Mod/Sketcher/App/SketchGeometryExtensionPy.cpp
+-- /builds/build-ubuntu/src/Mod/Sketcher/App/ExternalGeometryExtensionPy.cpp
+-- /builds/build-ubuntu/src/Mod/Sketcher/App/GeometryFacadePy.cpp
+-- /builds/build-ubuntu/src/Mod/Sketcher/App/ExternalGeometryFacadePy.cpp
+-- /builds/build-ubuntu/src/Mod/Sketcher/App/ConstraintPy.cpp
+-- /builds/build-ubuntu/src/Mod/Sketcher/App/SketchPy.cpp
+-- /builds/build-ubuntu/src/Mod/Robot/App/Robot6AxisPy.cpp
+-- /builds/build-ubuntu/src/Mod/Robot/App/TrajectoryPy.cpp
+-- /builds/build-ubuntu/src/Mod/Robot/App/WaypointPy.cpp
+-- /builds/build-ubuntu/src/Mod/Robot/App/RobotObjectPy.cpp
+-- Performing Test _flag_found
+-- Performing Test _flag_found - Success
+-- Performing Test _flag_found
+-- Performing Test _flag_found - Success
+-- /builds/build-ubuntu/src/Mod/Import/App/StepShapePy.cpp
+-- /builds/build-ubuntu/src/Mod/Fem/App/FemMeshPy.cpp
+-- /builds/build-ubuntu/src/Mod/Fem/App/FemPostPipelinePy.cpp
+-- /builds/build-ubuntu/src/Mod/Fem/Gui/ViewProviderFemMeshPy.cpp
+-- /builds/build-ubuntu/src/Mod/Spreadsheet/App/SheetPy.cpp
+-- /builds/build-ubuntu/src/Mod/Spreadsheet/App/PropertySheetPy.cpp
+-- /builds/build-ubuntu/src/Mod/Spreadsheet/App/PropertyColumnWidthsPy.cpp
+-- /builds/build-ubuntu/src/Mod/Spreadsheet/App/PropertyRowHeightsPy.cpp
+-- /builds/build-ubuntu/src/Mod/Spreadsheet/Gui/SpreadsheetViewPy.cpp
+-- /builds/build-ubuntu/src/Mod/Path/App/CommandPy.cpp
+-- /builds/build-ubuntu/src/Mod/Path/App/PathPy.cpp
+-- /builds/build-ubuntu/src/Mod/Path/App/ToolPy.cpp
+-- /builds/build-ubuntu/src/Mod/Path/App/TooltablePy.cpp
+-- /builds/build-ubuntu/src/Mod/Path/App/FeaturePathCompoundPy.cpp
+-- /builds/build-ubuntu/src/Mod/Path/App/AreaPy.cpp
+-- /builds/build-ubuntu/src/Mod/Path/App/FeatureAreaPy.cpp
+-- /builds/build-ubuntu/src/Mod/Path/App/VoronoiPy.cpp
+-- /builds/build-ubuntu/src/Mod/Path/App/VoronoiCellPy.cpp
+-- /builds/build-ubuntu/src/Mod/Path/App/VoronoiEdgePy.cpp
+-- /builds/build-ubuntu/src/Mod/Path/App/VoronoiVertexPy.cpp
+-- setting gcc options: -Wall -Werror -Wno-deprecated -pedantic-errors
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: python39 
+-- found Boost: 1_74
+-- boost-incude dirs are: /usr/include
+-- boost-python lib is: 
+-- boost_LIBRARY_DIRS is: /usr/lib/x86_64-linux-gnu
+-- Boost_LIBRARIES is: Boost::python
+-- area module (for Path Workbench) will be installed to: lib
+-- /builds/build-ubuntu/src/Mod/Path/PathSimulator/App/PathSimPy.cpp
+-- /builds/build-ubuntu/src/Mod/Measure/App/MeasurementPy.cpp
+-- /builds/build-ubuntu/src/Mod/TechDraw/App/DrawPagePy.cpp
+-- /builds/build-ubuntu/src/Mod/TechDraw/App/DrawViewPy.cpp
+-- /builds/build-ubuntu/src/Mod/TechDraw/App/DrawViewPartPy.cpp
+-- /builds/build-ubuntu/src/Mod/TechDraw/App/DrawViewSymbolPy.cpp
+-- /builds/build-ubuntu/src/Mod/TechDraw/App/DrawTemplatePy.cpp
+-- /builds/build-ubuntu/src/Mod/TechDraw/App/DrawParametricTemplatePy.cpp
+-- /builds/build-ubuntu/src/Mod/TechDraw/App/DrawSVGTemplatePy.cpp
+-- /builds/build-ubuntu/src/Mod/TechDraw/App/DrawViewClipPy.cpp
+-- /builds/build-ubuntu/src/Mod/TechDraw/App/DrawViewDimensionPy.cpp
+-- /builds/build-ubuntu/src/Mod/TechDraw/App/DrawViewDimExtentPy.cpp
+-- /builds/build-ubuntu/src/Mod/TechDraw/App/DrawHatchPy.cpp
+-- /builds/build-ubuntu/src/Mod/TechDraw/App/DrawGeomHatchPy.cpp
+-- /builds/build-ubuntu/src/Mod/TechDraw/App/DrawViewCollectionPy.cpp
+-- /builds/build-ubuntu/src/Mod/TechDraw/App/DrawProjGroupPy.cpp
+-- /builds/build-ubuntu/src/Mod/TechDraw/App/DrawProjGroupItemPy.cpp
+-- /builds/build-ubuntu/src/Mod/TechDraw/App/DrawViewAnnotationPy.cpp
+-- /builds/build-ubuntu/src/Mod/TechDraw/App/DrawLeaderLinePy.cpp
+-- /builds/build-ubuntu/src/Mod/TechDraw/App/DrawRichAnnoPy.cpp
+-- /builds/build-ubuntu/src/Mod/TechDraw/App/GeomFormatPy.cpp
+-- /builds/build-ubuntu/src/Mod/TechDraw/App/CenterLinePy.cpp
+-- /builds/build-ubuntu/src/Mod/TechDraw/App/CosmeticEdgePy.cpp
+-- /builds/build-ubuntu/src/Mod/TechDraw/App/CosmeticVertexPy.cpp
+-- /builds/build-ubuntu/src/Mod/TechDraw/App/DrawTilePy.cpp
+-- /builds/build-ubuntu/src/Mod/TechDraw/App/DrawTileWeldPy.cpp
+-- /builds/build-ubuntu/src/Mod/TechDraw/App/DrawWeldSymbolPy.cpp
+-- /builds/build-ubuntu/src/Mod/TechDraw/App/CosmeticExtensionPy.cpp
+-- /builds/build-ubuntu/src/Mod/TechDraw/Gui/MDIViewPagePy.cpp
+Created file /builds/build-ubuntu/share/doc/FreeCAD/freecad.qch
+-- Note: Doxygen docs will look better with graphviz's dot installed.
+-- Coin3D doc is not installed
+-- /builds/build-ubuntu/src/Gui/DocumentPy.cpp
+-- /builds/build-ubuntu/src/Gui/PythonWorkbenchPy.cpp
+-- /builds/build-ubuntu/src/Gui/ViewProviderPy.cpp
+-- /builds/build-ubuntu/src/Gui/ViewProviderDocumentObjectPy.cpp
+-- /builds/build-ubuntu/src/Gui/ViewProviderExtensionPy.cpp
+-- /builds/build-ubuntu/src/Gui/WorkbenchPy.cpp
+-- /builds/build-ubuntu/src/Gui/SelectionObjectPy.cpp
+-- /builds/build-ubuntu/src/Gui/LinkViewPy.cpp
+-- /builds/build-ubuntu/src/Gui/ViewProviderLinkPy.cpp
+-- /builds/build-ubuntu/src/Gui/AxisOriginPy.cpp
+-- /builds/build-ubuntu/src/Gui/CommandPy.cpp
+-- 
+==============
+Summary report
+==============
+
+-- Build type:          
+-- Compiler:            /usr/bin/c++ (10.3.0)
+-- Flags:               -Wall -Wextra -Wno-write-strings 
+-- Standard:            Requires C++17
+-- Python:              3.9.5 [/usr/bin/python3.9] [.cpython-39-x86_64-linux-gnu]
+-- PCL:                 not enabled
+-- pybind11:            not enabled
+-- Boost:               1.74.0 (1.74.0)
+-- XercesC:             3.2.3 [/usr/lib/x86_64-linux-gnu/libxerces-c.so] [/usr/include]
+-- ZLIB:                1.2.11
+-- PyCXX:               6.2.8 [/builds/freecad-source/src]
+-- OCC:                 7.5.1 [TKFillet;TKMesh;TKernel;TKG2d;TKG3d;TKMath;TKIGES;TKSTL;TKShHealing;TKXSBase;TKBool;TKBO;TKBRep;TKTopAlgo;TKGeomAlgo;TKGeomBase;TKOffset;TKPrim;TKSTEPBase;TKSTEPAttr;TKSTEP209;TKSTEP;TKHLR;TKFeat] [/usr/lib/x86_64-linux-gnu] [/usr/include/opencascade]
+-- SMESH:               build internal
+--  MEDFile:            4.1.0 [/usr/lib/x86_64-linux-gnu/libmedC.so] [/usr/include]
+--  HDF5:               1.10.6
+--  VTK:                9.0.1
+-- NETGEN:              not enabled
+-- SWIG:                4.0.2
+-- Eigen3               3.3.9
+-- Qt5Core:             5.15.2
+-- Qt5Network:          5.15.2
+-- Qt5Xml:              5.15.2
+-- Qt5XmlPatterns:      5.15.2
+-- Qt5Widgets:          5.15.2
+-- Qt5PrintSupport:     5.15.2
+-- Qt5OpenGL:           5.15.2
+-- Qt5Svg:              5.15.2
+-- Qt5UiTools:          5.15.2
+-- Qt5Concurrent:       5.15.2
+-- Qt5WebKitWidgets:    5.212.0
+-- Shiboken2:           5.15.2 [/usr/lib/x86_64-linux-gnu/cmake/Shiboken2-5.15.2] [/usr/lib/../include/shiboken2;/usr/include/python3.9]
+-- PySide2:             5.15.2 [/usr/lib/../include/PySide2]
+-- PySide2Tools:        [/usr/bin/uic] [/usr/bin/rcc]
+-- Freetype:            2.10.4
+-- OpenGL:              /usr/lib/x86_64-linux-gnu/libGL.so
+-- OpenGLU:             [/usr/lib/x86_64-linux-gnu/libGLU.so][/usr/include]
+-- Coin3D:              4.0.0 [/usr/lib/x86_64-linux-gnu/libCoin.so] [/usr/include]
+-- Pivy:                0.6.5
+-- SPNAV:               [SPNAV_LIBRARY-NOTFOUND] [SPNAV_INCLUDE_DIR-NOTFOUND]
+-- Matplotlib:          3.3.4
+-- Rift:                not enabled (BUILD_VR)
+-- Doxygen:             1.9.1
+--  Language:           English
+--  Coin3D_DOC:         not found
+=================================================
+Now run 'cmake --build /builds/build-ubuntu' to build FreeCAD
+=================================================
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /builds/build-ubuntu

@@ -1,0 +1,4321 @@
+11:40:07  Path workbench activated
+11:40:12  Path workbench deactivated
+11:40:23  OpenSCAD executable not found
+11:40:29  Drawing became obsolete in 0.17; consider using TechDraw instead.
+11:40:33  Manipulator WB Activated(v 1.3.8)
+11:40:33  Manipulator WB Deactivated()
+11:40:39  Defeaturing WB Activated(v 1.1.7)
+11:40:40  Defeaturing WB Deactivated()
+11:40:40  AlignerTools-->None
+11:40:40  AltLCS-->None
+11:40:40  AnnoLbl-->None
+11:40:40  Arch_3Views-->None
+11:40:40  Arch_Add-->None
+11:40:40  Arch_Axis-->None
+11:40:40  Arch_AxisSystem-->None
+11:40:40  Arch_AxisTools-->None
+11:40:40  Arch_Building-->B, U
+11:40:40  Arch_BuildingPart-->B, P
+11:40:40  Arch_Check-->None
+11:40:40  Arch_CloneComponent-->C, C
+11:40:40  Arch_CloseHoles-->None
+11:40:40  Arch_Component-->C, M
+11:40:40  Arch_CurtainWall-->C, W
+11:40:40  Arch_CutLine-->None
+11:40:40  Arch_CutPlane-->None
+11:40:40  Arch_Equipment-->E, Q
+11:40:40  Arch_Fence-->None
+11:40:40  Arch_Floor-->L, V
+11:40:40  Arch_Frame-->F, R
+11:40:40  Arch_Grid-->None
+11:40:40  Arch_IfcSpreadsheet-->I, P
+11:40:40  Arch_Material-->None
+11:40:40  Arch_MaterialTools-->None
+11:40:40  Arch_MergeWalls-->None
+11:40:40  Arch_MeshToShape-->None
+11:40:40  Arch_MultiMaterial-->None
+11:40:40  Arch_Nest-->None
+11:40:40  Arch_Panel-->None
+11:40:41  Arch_PanelTools-->None
+11:40:41  Arch_Panel_Cut-->None
+11:40:41  Arch_Panel_Sheet-->None
+11:40:41  Arch_Pipe-->None
+11:40:41  Arch_PipeConnector-->None
+11:40:41  Arch_PipeTools-->None
+11:40:41  Arch_Profile-->P, F
+11:40:41  Arch_Project-->P, O
+11:40:41  Arch_Rebar-->R, B
+11:40:41  Arch_Reference-->E, X
+11:40:41  Arch_Remove-->None
+11:40:41  Arch_RemoveShape-->None
+11:40:41  Arch_Roof-->R, F
+11:40:41  Arch_Schedule-->None
+11:40:41  Arch_SectionPlane-->S, E
+11:40:41  Arch_SelectNonSolidMeshes-->None
+11:40:41  Arch_Site-->S, I
+11:40:41  Arch_Space-->S, P
+11:40:41  Arch_SplitMesh-->None
+11:40:41  Arch_Stairs-->S, R
+11:40:41  Arch_Structure-->S, T
+11:40:41  Arch_Survey-->None
+11:40:41  Arch_ToggleIfcBrepFlag-->None
+11:40:41  Arch_ToggleSubs-->Ctrl+Space
+11:40:41  Arch_Truss-->T, U
+11:40:41  Arch_Wall-->W, A
+11:40:41  Arch_Window-->W, N
+11:40:41  CaliperTools-->None
+11:40:41  DF_SelectLoop-->None
+11:40:41  DatumLCS-->None
+11:40:41  DatumLine-->None
+11:40:41  DatumPlane-->None
+11:40:41  DatumPoint-->None
+11:40:41  DefeatShapeFeature-->None
+11:40:41  DefeaturingTools-->None
+11:40:41  Draft_AddConstruction-->None
+11:40:41  Draft_AddToGroup-->None
+11:40:41  Draft_AnnotationStyleEditor-->None
+11:40:41  Draft_ApplyStyle-->None
+11:40:41  Draft_Arc-->A, R
+11:40:41  Draft_ArcTools-->None
+11:40:41  Draft_Arc_3Points-->None
+11:40:41  Draft_Array-->None
+11:40:41  Draft_ArrayTools-->None
+11:40:41  Draft_AutoGroup-->None
+11:40:41  Draft_BSpline-->B, S
+11:40:41  Draft_BezCurve-->B, Z
+11:40:41  Draft_BezierTools-->None
+11:40:41  Draft_Circle-->C, I
+11:40:41  Draft_CircularArray-->None
+11:40:41  Draft_Clone-->C, L
+11:40:41  Draft_CloseLine-->None
+11:40:41  Draft_CubicBezCurve-->None
+11:40:41  Draft_Dimension-->D, I
+11:40:41  Draft_Downgrade-->D, N
+11:40:41  Draft_Draft2Sketch-->None
+11:40:41  Draft_Drawing-->None
+11:40:41  Draft_Edit-->D, E
+11:40:41  Draft_Ellipse-->E, L
+11:40:41  Draft_Facebinder-->F, F
+11:40:41  Draft_Fillet-->None
+11:40:41  Draft_FinishLine-->None
+11:40:41  Draft_FlipDimension-->None
+11:40:41  Draft_Heal-->None
+11:40:41  Draft_Join-->J, O
+11:40:41  Draft_Label-->D, L
+11:40:41  Draft_Layer-->None
+11:40:41  Draft_Line-->L, I
+11:40:41  Draft_LinkArray-->None
+11:40:41  Draft_Mirror-->M, I
+11:40:41  Draft_Move-->M, V
+11:40:41  Draft_Offset-->O, S
+11:40:41  Draft_OrthoArray-->None
+11:40:41  Draft_PathArray-->None
+11:40:41  Draft_PathLinkArray-->None
+11:40:41  Draft_Point-->None
+11:40:41  Draft_PointArray-->None
+11:40:41  Draft_PolarArray-->None
+11:40:41  Draft_Polygon-->P, G
+11:40:41  Draft_Rectangle-->R, E
+11:40:41  Draft_Rotate-->R, O
+11:40:41  Draft_Scale-->S, C
+11:40:41  Draft_SelectGroup-->None
+11:40:41  Draft_SelectPlane-->W, P
+11:40:41  Draft_Shape2DView-->None
+11:40:41  Draft_ShapeString-->S, S
+11:40:41  Draft_ShowSnapBar-->None
+11:40:41  Draft_Slope-->None
+11:40:41  Draft_Snap_Angle-->None
+11:40:41  Draft_Snap_Center-->None
+11:40:41  Draft_Snap_Dimensions-->None
+11:40:41  Draft_Snap_Endpoint-->None
+11:40:41  Draft_Snap_Extension-->None
+11:40:41  Draft_Snap_Grid-->None
+11:40:41  Draft_Snap_Intersection-->None
+11:40:41  Draft_Snap_Lock-->None
+11:40:41  Draft_Snap_Midpoint-->None
+11:40:41  Draft_Snap_Near-->None
+11:40:41  Draft_Snap_Ortho-->None
+11:40:41  Draft_Snap_Parallel-->None
+11:40:41  Draft_Snap_Perpendicular-->None
+11:40:41  Draft_Snap_Special-->None
+11:40:41  Draft_Snap_WorkingPlane-->None
+11:40:41  Draft_Split-->S, P
+11:40:41  Draft_Stretch-->S, H
+11:40:41  Draft_SubelementHighlight-->H, S
+11:40:41  Draft_Text-->T, E
+11:40:41  Draft_ToggleConstructionMode-->C, M
+11:40:41  Draft_ToggleContinueMode-->None
+11:40:41  Draft_ToggleDisplayMode-->Shift+Space
+11:40:41  Draft_ToggleGrid-->G, R
+11:40:41  Draft_Trimex-->T, R
+11:40:41  Draft_UndoLine-->None
+11:40:41  Draft_Upgrade-->U, P
+11:40:41  Draft_Wire-->P, L
+11:40:41  Draft_WireToBSpline-->None
+11:40:41  Draft_WorkingPlaneProxy-->None
+11:40:41  Drawing_Annotation-->None
+11:40:41  Drawing_Clip-->None
+11:40:41  Drawing_DraftView-->None
+11:40:41  Drawing_ExportPage-->None
+11:40:41  Drawing_NewA3Landscape-->None
+11:40:41  Drawing_NewPage-->None
+11:40:41  Drawing_NewView-->None
+11:40:41  Drawing_Open-->None
+11:40:41  Drawing_OpenBrowserView-->None
+11:40:41  Drawing_OrthoViews-->None
+11:40:41  Drawing_ProjectShape-->None
+11:40:41  Drawing_SpreadsheetView-->None
+11:40:41  Drawing_Symbol-->None
+11:40:41  DynamicDataAddProperty-->None
+11:40:41  DynamicDataCopyProperty-->None
+11:40:41  DynamicDataCreateObject-->None
+11:40:41  DynamicDataImportAliases-->None
+11:40:41  DynamicDataImportNamedConstraints-->None
+11:40:41  DynamicDataRemoveProperty-->None
+11:40:41  DynamicDataSettings-->None
+11:40:41  FEM_Analysis-->N, A
+11:40:41  FEM_ClippingPlaneAdd-->None
+11:40:41  FEM_ClippingPlaneRemoveAll-->None
+11:40:41  FEM_ConstantVacuumPermittivity-->None
+11:40:41  FEM_ConstraintBearing-->None
+11:40:41  FEM_ConstraintBodyHeatSource-->None
+11:40:41  FEM_ConstraintContact-->None
+11:40:41  FEM_ConstraintDisplacement-->None
+11:40:41  FEM_ConstraintElectrostaticPotential-->None
+11:40:41  FEM_ConstraintFixed-->None
+11:40:41  FEM_ConstraintFlowVelocity-->None
+11:40:41  FEM_ConstraintFluidBoundary-->None
+11:40:41  FEM_ConstraintForce-->None
+11:40:41  FEM_ConstraintGear-->None
+11:40:41  FEM_ConstraintHeatflux-->None
+11:40:41  FEM_ConstraintInitialFlowVelocity-->None
+11:40:41  FEM_ConstraintInitialTemperature-->None
+11:40:41  FEM_ConstraintPlaneRotation-->None
+11:40:41  FEM_ConstraintPressure-->None
+11:40:41  FEM_ConstraintPulley-->None
+11:40:41  FEM_ConstraintSectionPrint-->None
+11:40:41  FEM_ConstraintSelfWeight-->C, W
+11:40:41  FEM_ConstraintTemperature-->None
+11:40:41  FEM_ConstraintTie-->C, T
+11:40:41  FEM_ConstraintTransform-->None
+11:40:41  FEM_CreateNodesSet-->None
+11:40:41  FEM_DefineNodesSet-->None
+11:40:41  FEM_ElementFluid1D-->C, B
+11:40:41  FEM_ElementGeometry1D-->C, B
+11:40:41  FEM_ElementGeometry2D-->C, S
+11:40:41  FEM_ElementRotation1D-->C, R
+11:40:41  FEM_EquationElasticity-->None
+11:40:41  FEM_EquationElectricforce-->None
+11:40:41  FEM_EquationElectrostatic-->None
+11:40:41  FEM_EquationFlow-->None
+11:40:41  FEM_EquationFlux-->None
+11:40:41  FEM_EquationHeat-->None
+11:40:41  FEM_Examples-->None
+11:40:41  FEM_FEMMesh2Mesh-->None
+11:40:41  FEM_MaterialEditor-->None
+11:40:41  FEM_MaterialFluid-->None
+11:40:41  FEM_MaterialMechanicalNonlinear-->C, W
+11:40:41  FEM_MaterialReinforced-->M, M
+11:40:41  FEM_MaterialSolid-->M, M
+11:40:41  FEM_MeshBoundaryLayer-->M, B
+11:40:41  FEM_MeshClear-->None
+11:40:41  FEM_MeshDisplayInfo-->None
+11:40:41  FEM_MeshGmshFromShape-->None
+11:40:41  FEM_MeshGroup-->M, G
+11:40:41  FEM_MeshNetgenFromShape-->None
+11:40:41  FEM_MeshRegion-->M, R
+11:40:41  FEM_PostApplyChanges-->None
+11:40:41  FEM_PostCreateFunctions-->None
+11:40:41  FEM_PostFilterClipRegion-->None
+11:40:41  FEM_PostFilterClipScalar-->None
+11:40:41  FEM_PostFilterCutFunction-->None
+11:40:41  FEM_PostFilterDataAlongLine-->None
+11:40:41  FEM_PostFilterDataAtPoint-->None
+11:40:41  FEM_PostFilterLinearizedStresses-->None
+11:40:41  FEM_PostFilterWarp-->None
+11:40:41  FEM_PostPipelineFromResult-->None
+11:40:41  FEM_ResultShow-->S, R
+11:40:41  FEM_ResultsPurge-->S, S
+11:40:41  FEM_SolverCalculiX-->S, C
+11:40:41  FEM_SolverCalculixCxxtools-->S, X
+11:40:41  FEM_SolverControl-->S, C
+11:40:41  FEM_SolverElmer-->S, E
+11:40:41  FEM_SolverRun-->R, C
+11:40:41  FEM_SolverZ88-->S, Z
+11:40:41  FSChangeParams-->None
+11:40:41  FSDIN557-->None
+11:40:41  FSDIN562-->None
+11:40:41  FSDIN967-->None
+11:40:41  FSDIN985-->None
+11:40:41  FSEN1661-->None
+11:40:41  FSEN1662-->None
+11:40:41  FSEN1665-->None
+11:40:41  FSFillet-->None
+11:40:41  FSFlip-->None
+11:40:41  FSHexNut-->None
+11:40:41  FSISO10642-->None
+11:40:41  FSISO1207-->None
+11:40:41  FSISO14579-->None
+11:40:41  FSISO14580-->None
+11:40:41  FSISO14582-->None
+11:40:41  FSISO14583-->None
+11:40:41  FSISO14584-->None
+11:40:41  FSISO1580-->None
+11:40:41  FSISO2009-->None
+11:40:41  FSISO2010-->None
+11:40:41  FSISO4014-->None
+11:40:41  FSISO4017-->None
+11:40:41  FSISO4032-->None
+11:40:41  FSISO4033-->None
+11:40:41  FSISO4035-->None
+11:40:41  FSISO4762-->None
+11:40:41  FSISO7045-->None
+11:40:41  FSISO7046-->None
+11:40:41  FSISO7047-->None
+11:40:41  FSISO7048-->None
+11:40:41  FSISO7089-->None
+11:40:41  FSISO7090-->None
+11:40:41  FSISO7092-->None
+11:40:41  FSISO7093-1-->None
+11:40:41  FSISO7094-->None
+11:40:41  FSISO7380-1-->None
+11:40:41  FSISO7380-2-->None
+11:40:41  FSMakeBOM-->None
+11:40:41  FSMatchTypeGroup-->None
+11:40:41  FSMatchTypeInner-->None
+11:40:41  FSMatchTypeOuter-->None
+11:40:41  FSMove-->None
+11:40:41  FSPressNut-->None
+11:40:41  FSScrewCalc-->None
+11:40:41  FSScrewTap-->None
+11:40:41  FSSimple-->None
+11:40:41  FSStandOff-->None
+11:40:41  FSStud-->None
+11:40:41  FuzzyCommon-->None
+11:40:41  FuzzyCut-->None
+11:40:41  FuzzyUnion-->None
+11:40:41  Image_CreateImagePlane-->None
+11:40:41  Image_Open-->None
+11:40:41  Image_Scaling-->None
+11:40:41  Inspection_InspectElement-->None
+11:40:41  Inspection_VisualInspection-->None
+11:40:41  Lattice2Mirror-->None
+11:40:41  Lattice2Slice-->None
+11:40:41  Lattice2_ArrayFilter_GroupCommand-->None
+11:40:41  Lattice2_ArrayFilter_Items-->None
+11:40:41  Lattice2_ArrayFiltercollision_pass-->None
+11:40:41  Lattice2_ArrayFilterpointing_at-->None
+11:40:41  Lattice2_ArrayFilterwindow_distance-->None
+11:40:41  Lattice2_ArrayFromShapeGroup-->None
+11:40:41  Lattice2_ArrayFromShape_CenterBB-->None
+11:40:41  Lattice2_ArrayFromShape_CenterMass-->None
+11:40:41  Lattice2_ArrayFromShape_Inertial-->None
+11:40:41  Lattice2_ArrayFromShape_Internal-->None
+11:40:41  Lattice2_AttachedPlacement-->None
+11:40:41  Lattice2_AttachedPlacementSubsequence-->None
+11:40:41  Lattice2_AttachedPlacement_Group-->None
+11:40:41  Lattice2_BoundBoxGroupCommand-->None
+11:40:41  Lattice2_BoundBox_Compound-->None
+11:40:41  Lattice2_BoundBox_Single-->None
+11:40:41  Lattice2_Compound-->None
+11:40:41  Lattice2_CompoundFilter-->None
+11:40:41  Lattice2_DowngradeCompSolids-->None
+11:40:41  Lattice2_DowngradeEdges-->None
+11:40:41  Lattice2_DowngradeFaces-->None
+11:40:41  Lattice2_DowngradeLeaves-->None
+11:40:41  Lattice2_DowngradeNon-seam edges-->None
+11:40:41  Lattice2_DowngradeOpenWires-->None
+11:40:41  Lattice2_DowngradeSeam edges-->None
+11:40:41  Lattice2_DowngradeShells-->None
+11:40:41  Lattice2_DowngradeSolids-->None
+11:40:41  Lattice2_DowngradeVertices-->None
+11:40:41  Lattice2_DowngradeWires-->None
+11:40:41  Lattice2_Downgrade_GroupCommand-->None
+11:40:41  Lattice2_Explode-->None
+11:40:41  Lattice2_ExplodeArray-->None
+11:40:41  Lattice2_ExposeLinkSub-->None
+11:40:41  Lattice2_FuseCompound-->None
+11:40:41  Lattice2_Help_BasicTutorial-->None
+11:40:41  Lattice2_Help_OpenManual-->None
+11:40:41  Lattice2_Inspect-->None
+11:40:41  Lattice2_Inspect_GroupCommand-->None
+11:40:41  Lattice2_Invert-->None
+11:40:41  Lattice2_JoinArrays-->None
+11:40:41  Lattice2_LinearArray_GroupCommand-->None
+11:40:41  Lattice2_LinearArray_Random-->None
+11:40:41  Lattice2_LinearArray_SpanN-->None
+11:40:41  Lattice2_LinearArray_SpanStep-->None
+11:40:41  Lattice2_LinearArray_StepN-->None
+11:40:41  Lattice2_PDPattern-->None
+11:40:41  Lattice2_ParaSeries-->None
+11:40:41  Lattice2_PlacementAx_AlongX-->None
+11:40:41  Lattice2_PlacementAx_AlongY-->None
+11:40:41  Lattice2_PlacementAx_AlongZ-->None
+11:40:41  Lattice2_PlacementCustom-->None
+11:40:41  Lattice2_PlacementEuler-->None
+11:40:41  Lattice2_PlacementFromShape_CenterBB-->None
+11:40:41  Lattice2_PlacementFromShape_CenterMass-->None
+11:40:41  Lattice2_PlacementFromShape_Inertial-->None
+11:40:41  Lattice2_PlacementFromShape_Internal-->None
+11:40:41  Lattice2_PlacementXY plane-->None
+11:40:41  Lattice2_PlacementXZ plane-->None
+11:40:41  Lattice2_PlacementYZ plane-->None
+11:40:41  Lattice2_Placement_GroupCommand-->None
+11:40:41  Lattice2_PolarArray-->None
+11:40:41  Lattice2_PolarArray2_GroupCommand-->None
+11:40:41  Lattice2_PolarArray2_Random-->None
+11:40:41  Lattice2_PolarArray2_SpanN-->None
+11:40:41  Lattice2_PolarArray2_SpanStep-->None
+11:40:41  Lattice2_PolarArray2_StepN-->None
+11:40:41  Lattice2_PopulateChildrenGroupCommand-->None
+11:40:41  Lattice2_PopulateChildren_Array-->None
+11:40:41  Lattice2_PopulateChildren_Move-->None
+11:40:41  Lattice2_PopulateChildren_Normal-->None
+11:40:41  Lattice2_PopulateCopiesGroupCommand-->None
+11:40:41  Lattice2_PopulateCopies_Array-->None
+11:40:41  Lattice2_PopulateCopies_Move-->None
+11:40:41  Lattice2_PopulateCopies_Normal-->None
+11:40:41  Lattice2_ProjectArray-->None
+11:40:41  Lattice2_RecomputeLockerGroup-->None
+11:40:41  Lattice2_RecomputeLocker_ForceRecompute-->Shift+F5
+11:40:41  Lattice2_RecomputeLocker_LockRecomputes-->None
+11:40:41  Lattice2_RecomputeLocker_MakeFeature-->None
+11:40:41  Lattice2_RecomputeLocker_RecomputeDocument-->None
+11:40:41  Lattice2_RecomputeLocker_RecomputeFeature-->None
+11:40:41  Lattice2_RecomputeLocker_Touch-->Shift+F5
+11:40:41  Lattice2_RecomputeLocker_UnlockRecomputes-->None
+11:40:41  Lattice2_Resample-->None
+11:40:41  Lattice2_Series_GroupCommand-->None
+11:40:41  Lattice2_ShapeInfoFeature-->None
+11:40:41  Lattice2_ShapeString-->None
+11:40:41  Lattice2_SubLink-->None
+11:40:41  Lattice2_SublinkSubsequence-->None
+11:40:41  Lattice2_Sublink_GroupCommand-->None
+11:40:41  Lattice2_SubstituteObject-->None
+11:40:41  Lattice2_TopoSeries-->None
+11:40:41  Manipulator-cheat-sheet.pdf-->None
+11:40:41  MeshRemodelCreateArc-->None
+11:40:41  MeshRemodelCreateBSpline-->None
+11:40:41  MeshRemodelCreateCircle-->None
+11:40:41  MeshRemodelCreateCoplanarPointsObject-->None
+11:40:41  MeshRemodelCreateLine-->None
+11:40:41  MeshRemodelCreatePointsObject-->None
+11:40:41  MeshRemodelCreatePolygon-->None
+11:40:41  MeshRemodelCreateSketch-->None
+11:40:41  MeshRemodelCreateWire-->None
+11:40:41  MeshRemodelMergeSketches-->None
+11:40:41  MeshRemodelSettings-->None
+11:40:41  MeshRemodelValidateSketch-->None
+11:40:41  Mesh_AddFacet-->None
+11:40:41  Mesh_BoundingBox-->None
+11:40:41  Mesh_BuildRegularSolid-->None
+11:40:41  Mesh_CrossSections-->None
+11:40:41  Mesh_CurvatureInfo-->None
+11:40:41  Mesh_Decimating-->None
+11:40:41  Mesh_Difference-->None
+11:40:41  Mesh_EvaluateFacet-->None
+11:40:41  Mesh_EvaluateSolid-->None
+11:40:41  Mesh_Evaluation-->None
+11:40:41  Mesh_Export-->None
+11:40:41  Mesh_FillInteractiveHole-->None
+11:40:41  Mesh_FillupHoles-->None
+11:40:41  Mesh_FlipNormals-->None
+11:40:41  Mesh_FromGeometry-->None
+11:40:41  Mesh_FromPartShape-->None
+11:40:41  Mesh_HarmonizeNormals-->None
+11:40:41  Mesh_Import-->None
+11:40:41  Mesh_Intersection-->None
+11:40:41  Mesh_Merge-->None
+11:40:41  Mesh_PolyCut-->None
+11:40:41  Mesh_PolySegm-->None
+11:40:41  Mesh_PolySplit-->None
+11:40:41  Mesh_PolyTrim-->None
+11:40:41  Mesh_RemeshGmsh-->None
+11:40:41  Mesh_RemoveCompByHand-->None
+11:40:41  Mesh_RemoveComponents-->None
+11:40:41  Mesh_Scale-->None
+11:40:41  Mesh_SectionByPlane-->None
+11:40:41  Mesh_Segmentation-->None
+11:40:41  Mesh_SegmentationBestFit-->None
+11:40:41  Mesh_Smoothing-->None
+11:40:41  Mesh_TrimByPlane-->None
+11:40:41  Mesh_Union-->None
+11:40:41  Mesh_VertexCurvature-->None
+11:40:42  MoverTools-->None
+11:40:42  OpenSCAD_AddOpenSCADElement-->None
+11:40:42  OpenSCAD_ColorCodeShape-->None
+11:40:42  OpenSCAD_Edgestofaces-->None
+11:40:42  OpenSCAD_ExpandPlacements-->None
+11:40:42  OpenSCAD_ExplodeGroup-->None
+11:40:42  OpenSCAD_Hull-->None
+11:40:42  OpenSCAD_IncreaseToleranceFeature-->None
+11:40:42  OpenSCAD_MeshBoolean-->None
+11:40:42  OpenSCAD_Minkowski-->None
+11:40:42  OpenSCAD_RefineShapeFeature-->None
+11:40:42  OpenSCAD_RemoveSubtree-->None
+11:40:42  OpenSCAD_ReplaceObject-->None
+11:40:42  PartDesign_AdditiveLoft-->None
+11:40:42  PartDesign_AdditivePipe-->None
+11:40:42  PartDesign_Body-->None
+11:40:42  PartDesign_Boolean-->None
+11:40:42  PartDesign_Chamfer-->None
+11:40:42  PartDesign_Clone-->None
+11:40:42  PartDesign_CompPrimitiveAdditive-->None
+11:40:42  PartDesign_CompPrimitiveSubtractive-->None
+11:40:42  PartDesign_CoordinateSystem-->None
+11:40:42  PartDesign_Draft-->None
+11:40:42  PartDesign_DuplicateSelection-->None
+11:40:42  PartDesign_Fillet-->None
+11:40:42  PartDesign_Groove-->None
+11:40:42  PartDesign_Hole-->None
+11:40:42  PartDesign_InvoluteGear-->None
+11:40:42  PartDesign_Line-->None
+11:40:42  PartDesign_LinearPattern-->None
+11:40:42  PartDesign_Migrate-->None
+11:40:42  PartDesign_Mirrored-->None
+11:40:42  PartDesign_MoveFeature-->None
+11:40:42  PartDesign_MoveFeatureInTree-->None
+11:40:42  PartDesign_MoveTip-->None
+11:40:42  PartDesign_MultiTransform-->None
+11:40:42  PartDesign_NewSketch-->None
+11:40:42  PartDesign_Pad-->None
+11:40:42  PartDesign_Plane-->None
+11:40:42  PartDesign_Pocket-->None
+11:40:42  PartDesign_Point-->None
+11:40:42  PartDesign_PolarPattern-->None
+11:40:42  PartDesign_Revolution-->None
+11:40:42  PartDesign_ShapeBinder-->None
+11:40:42  PartDesign_Sprocket-->None
+11:40:42  PartDesign_SubShapeBinder-->None
+11:40:42  PartDesign_SubtractiveLoft-->None
+11:40:42  PartDesign_SubtractivePipe-->None
+11:40:42  PartDesign_Thickness-->None
+11:40:42  PartDesign_WizardShaft-->None
+11:40:42  PartDesign_WizardShaftCallBack-->None
+11:40:42  Part_Boolean-->None
+11:40:42  Part_BooleanFragments-->None
+11:40:42  Part_Box-->None
+11:40:42  Part_BoxSelection-->None
+11:40:42  Part_Builder-->None
+11:40:42  Part_Chamfer-->None
+11:40:42  Part_CheckGeometry-->None
+11:40:42  Part_ColorPerFace-->None
+11:40:42  Part_Common-->None
+11:40:42  Part_CompCompoundTools-->None
+11:40:42  Part_CompJoinFeatures-->None
+11:40:42  Part_CompOffset-->None
+11:40:42  Part_CompSplitFeatures-->None
+11:40:42  Part_Compound-->None
+11:40:42  Part_CompoundFilter-->None
+11:40:42  Part_Cone-->None
+11:40:42  Part_CrossSections-->None
+11:40:42  Part_Cut-->None
+11:40:42  Part_Cylinder-->None
+11:40:42  Part_Defeaturing-->None
+11:40:42  Part_EditAttachment-->None
+11:40:42  Part_ElementCopy-->None
+11:40:42  Part_ExplodeCompound-->None
+11:40:42  Part_Export-->None
+11:40:42  Part_Extrude-->None
+11:40:42  Part_Fillet-->None
+11:40:42  Part_Fuse-->None
+11:40:42  Part_Import-->None
+11:40:42  Part_ImportCurveNet-->None
+11:40:42  Part_JoinConnect-->None
+11:40:42  Part_JoinCutout-->None
+11:40:42  Part_JoinEmbed-->None
+11:40:42  Part_Loft-->None
+11:40:42  Part_MakeFace-->None
+11:40:42  Part_MakeSolid-->None
+11:40:42  Part_MakeTube-->None
+11:40:42  Part_Measure_Angular-->None
+11:40:42  Part_Measure_Clear_All-->None
+11:40:42  Part_Measure_Linear-->None
+11:40:42  Part_Measure_Refresh-->None
+11:40:42  Part_Measure_Toggle_3d-->None
+11:40:42  Part_Measure_Toggle_All-->None
+11:40:42  Part_Measure_Toggle_Delta-->None
+11:40:42  Part_Mirror-->None
+11:40:42  Part_Offset-->None
+11:40:42  Part_Offset2D-->None
+11:40:42  Part_PickCurveNet-->None
+11:40:42  Part_PointsFromMesh-->None
+11:40:42  Part_Primitives-->None
+11:40:42  Part_RefineShape-->None
+11:40:42  Part_ReverseShape-->None
+11:40:42  Part_Revolve-->None
+11:40:42  Part_RuledSurface-->None
+11:40:42  Part_Section-->None
+11:40:42  Part_ShapeFromMesh-->None
+11:40:42  Part_ShapeInfo-->None
+11:40:42  Part_SimpleCopy-->None
+11:40:42  Part_SimpleCylinder-->None
+11:40:42  Part_Slice-->None
+11:40:42  Part_SliceApart-->None
+11:40:42  Part_Sphere-->None
+11:40:42  Part_Sweep-->None
+11:40:42  Part_Thickness-->None
+11:40:42  Part_Torus-->None
+11:40:42  Part_TransformedCopy-->None
+11:40:42  Part_XOR-->None
+11:40:42  Part_projectionOnSurface-->None
+11:40:42  Path_Adaptive-->None
+11:40:42  Path_Area-->None
+11:40:42  Path_Area_Workplane-->None
+11:40:42  Path_Array-->None
+11:40:42  Path_Comment-->None
+11:40:42  Path_Compound-->None
+11:40:42  Path_Custom-->None
+11:40:42  Path_Deburr-->None
+11:40:42  Path_DressupAxisMap-->None
+11:40:42  Path_DressupDogbone-->None
+11:40:42  Path_DressupDragKnife-->None
+11:40:42  Path_DressupLeadInOut-->None
+11:40:42  Path_DressupPathBoundary-->None
+11:40:42  Path_DressupRampEntry-->None
+11:40:42  Path_DressupTag-->None
+11:40:42  Path_DressupZCorrect-->None
+11:40:42  Path_Drilling-->None
+11:40:42  Path_Engrave-->None
+11:40:42  Path_EngraveTools-->None
+11:40:42  Path_ExportTemplate-->None
+11:40:42  Path_Fixture-->None
+11:40:42  Path_Helix-->None
+11:40:42  Path_Hop-->None
+11:40:42  Path_Inspect-->P, I
+11:40:42  Path_Job-->P, J
+11:40:42  Path_MillFace-->None
+11:40:42  Path_OpActiveToggle-->P, X
+11:40:42  Path_OperationCopy-->None
+11:40:42  Path_Pocket_3D-->None
+11:40:42  Path_Pocket_Shape-->None
+11:40:42  Path_Post-->P, P
+11:40:42  Path_Probe-->None
+11:40:42  Path_Profile-->None
+11:40:42  Path_Sanity-->None
+11:40:42  Path_SelectLoop-->P, L
+11:40:42  Path_SetStartPoint-->None
+11:40:42  Path_Shape-->None
+11:40:42  Path_SimpleCopy-->None
+11:40:42  Path_Simulator-->P, M
+11:40:42  Path_Slot-->None
+11:40:42  Path_Stop-->None
+11:40:42  Path_ToolBitCreate-->None
+11:40:42  Path_ToolBitLibraryLoad-->None
+11:40:42  Path_ToolBitLibraryOpen-->None
+11:40:42  Path_ToolBitLoad-->None
+11:40:42  Path_ToolBitSave-->None
+11:40:42  Path_ToolBitSaveAs-->None
+11:40:42  Path_ToolController-->None
+11:40:42  Path_ToolLibraryEdit-->P, T
+11:40:42  Plane-->None
+11:40:42  Points_Convert-->None
+11:40:42  Points_Export-->None
+11:40:42  Points_Import-->None
+11:40:42  Points_Merge-->None
+11:40:42  Points_PolyCut-->None
+11:40:42  Points_Structure-->None
+11:40:42  Points_Transform-->None
+11:40:42  Raytracing_ExportProject-->None
+11:40:42  Raytracing_NewLuxProject-->None
+11:40:42  Raytracing_NewPartSegment-->None
+11:40:42  Raytracing_NewPovrayProject-->None
+11:40:42  Raytracing_Render-->None
+11:40:42  Raytracing_ResetCamera-->None
+11:40:42  Raytracing_WriteCamera-->None
+11:40:42  Raytracing_WritePart-->None
+11:40:42  Raytracing_WriteView-->None
+11:40:42  Reen_ApproxCylinder-->None
+11:40:42  Reen_ApproxPlane-->None
+11:40:42  Reen_ApproxPolynomial-->None
+11:40:42  Reen_ApproxSphere-->None
+11:40:42  Reen_ApproxSurface-->None
+11:40:42  Reen_MeshBoundary-->None
+11:40:42  Reen_PoissonReconstruction-->None
+11:40:42  Reen_Segmentation-->None
+11:40:42  Reen_SegmentationFromComponents-->None
+11:40:42  Reen_SegmentationManual-->None
+11:40:42  Reen_ViewTriangulation-->None
+11:40:42  ResetPositions-->None
+11:40:42  Robot_AddToolShape-->None
+11:40:42  Robot_Create-->None
+11:40:42  Robot_CreateTrajectory-->None
+11:40:42  Robot_Edge2Trac-->None
+11:40:42  Robot_ExportKukaCompact-->None
+11:40:42  Robot_ExportKukaFull-->None
+11:40:42  Robot_InsertKukaIR125-->None
+11:40:42  Robot_InsertKukaIR16-->None
+11:40:42  Robot_InsertKukaIR210-->None
+11:40:42  Robot_InsertKukaIR500-->None
+11:40:42  Robot_InsertWaypoint-->A
+11:40:42  Robot_InsertWaypointPreselect-->W
+11:40:42  Robot_RestoreHomePos-->None
+11:40:42  Robot_SetDefaultOrientation-->None
+11:40:42  Robot_SetDefaultValues-->None
+11:40:42  Robot_SetHomePos-->None
+11:40:42  Robot_Simulate-->None
+11:40:42  Robot_TrajectoryCompound-->None
+11:40:42  Robot_TrajectoryDressUp-->None
+11:40:42  Sketcher_BSplineComb-->None
+11:40:42  Sketcher_BSplineConvertToNURB-->None
+11:40:42  Sketcher_BSplineDecreaseKnotMultiplicity-->None
+11:40:42  Sketcher_BSplineDegree-->None
+11:40:42  Sketcher_BSplineIncreaseDegree-->None
+11:40:42  Sketcher_BSplineIncreaseKnotMultiplicity-->None
+11:40:42  Sketcher_BSplineKnotMultiplicity-->None
+11:40:42  Sketcher_BSplinePolygon-->None
+11:40:42  Sketcher_CarbonCopy-->C, C
+11:40:42  Sketcher_Clone-->None
+11:40:42  Sketcher_CloseShape-->Ctrl+Shift+S
+11:40:42  Sketcher_CompBSplineShowHideGeometryInformation-->None
+11:40:42  Sketcher_CompConstrainRadDia-->Shift+R
+11:40:42  Sketcher_CompCopy-->Ctrl+C
+11:40:42  Sketcher_CompCreateArc-->None
+11:40:42  Sketcher_CompCreateBSpline-->None
+11:40:42  Sketcher_CompCreateCircle-->None
+11:40:42  Sketcher_CompCreateConic-->None
+11:40:42  Sketcher_CompCreateRegularPolygon-->None
+11:40:42  Sketcher_CompModifyKnotMultiplicity-->None
+11:40:42  Sketcher_ConnectLines-->Ctrl+Shift+K
+11:40:42  Sketcher_ConstrainAngle-->A
+11:40:42  Sketcher_ConstrainBlock-->None
+11:40:42  Sketcher_ConstrainCoincident-->C
+11:40:42  Sketcher_ConstrainDiameter-->None
+11:40:42  Sketcher_ConstrainDistance-->Shift+D
+11:40:42  Sketcher_ConstrainDistanceX-->Shift+H
+11:40:42  Sketcher_ConstrainDistanceY-->Shift+V
+11:40:42  Sketcher_ConstrainEqual-->E
+11:40:42  Sketcher_ConstrainHorizontal-->H
+11:40:42  Sketcher_ConstrainInternalAlignment-->Ctrl+A
+11:40:42  Sketcher_ConstrainLock-->None
+11:40:42  Sketcher_ConstrainParallel-->Shift+P
+11:40:42  Sketcher_ConstrainPerpendicular-->N
+11:40:42  Sketcher_ConstrainPointOnObject-->Shift+O
+11:40:42  Sketcher_ConstrainRadius-->None
+11:40:42  Sketcher_ConstrainSnellsLaw-->None
+11:40:42  Sketcher_ConstrainSymmetric-->S
+11:40:42  Sketcher_ConstrainTangent-->T
+11:40:42  Sketcher_ConstrainVertical-->V
+11:40:42  Sketcher_Copy-->None
+11:40:42  Sketcher_Create3PointArc-->None
+11:40:42  Sketcher_Create3PointCircle-->None
+11:40:42  Sketcher_CreateArc-->None
+11:40:42  Sketcher_CreateArcOfEllipse-->None
+11:40:42  Sketcher_CreateArcOfHyperbola-->None
+11:40:42  Sketcher_CreateArcOfParabola-->None
+11:40:42  Sketcher_CreateBSpline-->None
+11:40:42  Sketcher_CreateCircle-->None
+11:40:42  Sketcher_CreateEllipseBy3Points-->None
+11:40:42  Sketcher_CreateEllipseByCenter-->None
+11:40:42  Sketcher_CreateFillet-->F
+11:40:42  Sketcher_CreateHeptagon-->None
+11:40:42  Sketcher_CreateHexagon-->None
+11:40:42  Sketcher_CreateLine-->L
+11:40:42  Sketcher_CreateOctagon-->None
+11:40:42  Sketcher_CreatePentagon-->None
+11:40:42  Sketcher_CreatePeriodicBSpline-->None
+11:40:42  Sketcher_CreatePoint-->None
+11:40:42  Sketcher_CreatePolyline-->None
+11:40:42  Sketcher_CreateRectangle-->R
+11:40:42  Sketcher_CreateRegularPolygon-->None
+11:40:42  Sketcher_CreateSlot-->None
+11:40:42  Sketcher_CreateSquare-->None
+11:40:42  Sketcher_CreateTriangle-->None
+11:40:42  Sketcher_DeleteAllConstraints-->None
+11:40:42  Sketcher_DeleteAllGeometry-->None
+11:40:42  Sketcher_EditSketch-->None
+11:40:42  Sketcher_Extend-->T, E
+11:40:42  Sketcher_External-->X
+11:40:42  Sketcher_LeaveSketch-->None
+11:40:42  Sketcher_MapSketch-->None
+11:40:42  Sketcher_MergeSketches-->None
+11:40:42  Sketcher_MirrorSketch-->None
+11:40:42  Sketcher_Move-->Ctrl+M
+11:40:42  Sketcher_NewSketch-->None
+11:40:42  Sketcher_ProfilesHexagon1-->None
+11:40:42  Sketcher_RectangularArray-->None
+11:40:42  Sketcher_ReorientSketch-->None
+11:40:42  Sketcher_RestoreInternalAlignmentGeometry-->Ctrl+Shift+E
+11:40:42  Sketcher_SelectConflictingConstraints-->Ctrl+Shift+E
+11:40:42  Sketcher_SelectConstraints-->Ctrl+Shift+C
+11:40:42  Sketcher_SelectElementsAssociatedWithConstraints-->Ctrl+Shift+E
+11:40:42  Sketcher_SelectElementsWithDoFs-->None
+11:40:42  Sketcher_SelectHorizontalAxis-->Ctrl+Shift+H
+11:40:42  Sketcher_SelectOrigin-->Ctrl+Shift+O
+11:40:42  Sketcher_SelectRedundantConstraints-->Ctrl+Shift+R
+11:40:42  Sketcher_SelectVerticalAxis-->Ctrl+Shift+V
+11:40:42  Sketcher_StopOperation-->None
+11:40:42  Sketcher_SwitchVirtualSpace-->None
+11:40:42  Sketcher_Symmetry-->None
+11:40:42  Sketcher_ToggleActiveConstraint-->None
+11:40:42  Sketcher_ToggleConstruction-->C, M
+11:40:42  Sketcher_ToggleDrivingConstraint-->None
+11:40:42  Sketcher_Trimming-->T, R
+11:40:42  Sketcher_ValidateSketch-->None
+11:40:42  Sketcher_ViewSection-->None
+11:40:42  Sketcher_ViewSketch-->None
+11:40:42  Spreadsheet_AlignBottom-->None
+11:40:42  Spreadsheet_AlignCenter-->None
+11:40:42  Spreadsheet_AlignLeft-->None
+11:40:42  Spreadsheet_AlignRight-->None
+11:40:42  Spreadsheet_AlignTop-->None
+11:40:42  Spreadsheet_AlignVCenter-->None
+11:40:42  Spreadsheet_CreateSheet-->None
+11:40:42  Spreadsheet_Export-->None
+11:40:42  Spreadsheet_Import-->None
+11:40:42  Spreadsheet_MergeCells-->None
+11:40:42  Spreadsheet_SetAlias-->Ctrl+Shift+A
+11:40:42  Spreadsheet_SplitCell-->None
+11:40:42  Spreadsheet_StyleBold-->None
+11:40:42  Spreadsheet_StyleItalic-->None
+11:40:42  Spreadsheet_StyleUnderline-->None
+11:40:42  Start_StartPage-->None
+11:40:42  Std_About-->None
+11:40:42  Std_AboutQt-->None
+11:40:42  Std_ActivateNextWindow-->Ctrl+Tab
+11:40:42  Std_ActivatePrevWindow-->Ctrl+Shift+Backtab
+11:40:42  Std_AddonMgr-->None
+11:40:42  Std_Alignment-->None
+11:40:42  Std_ArrangeIcons-->None
+11:40:42  Std_AxisCross-->A, C
+11:40:42  Std_BoxElementSelection-->Shift+E
+11:40:42  Std_BoxSelection-->Shift+B
+11:40:42  Std_CascadeWindows-->None
+11:40:42  Std_CloseActiveWindow-->Ctrl+W
+11:40:42  Std_CloseAllWindows-->None
+11:40:42  Std_CommandLine-->None
+11:40:42  Std_Copy-->Ctrl+C
+11:40:42  Std_Cut-->Ctrl+X
+11:40:42  Std_Delete-->Del
+11:40:42  Std_DemoMode-->None
+11:40:42  Std_DependencyGraph-->None
+11:40:42  Std_DlgCustomize-->None
+11:40:42  Std_DlgMacroExecute-->None
+11:40:42  Std_DlgMacroExecuteDirect-->Ctrl+F6
+11:40:42  Std_DlgMacroRecord-->None
+11:40:42  Std_DlgParameter-->None
+11:40:42  Std_DlgPreferences-->None
+11:40:42  Std_DockViewMenu-->None
+11:40:42  Std_DrawStyle-->None
+11:40:42  Std_DuplicateSelection-->None
+11:40:42  Std_Edit-->None
+11:40:42  Std_Export-->Ctrl+E
+11:40:42  Std_Expressions-->None
+11:40:42  Std_FreeCADFAQ-->None
+11:40:42  Std_FreeCADForum-->None
+11:40:42  Std_FreeCADPowerUserHub-->None
+11:40:42  Std_FreeCADUserHub-->None
+11:40:42  Std_FreeCADWebsite-->None
+11:40:42  Std_FreezeViews-->None
+11:40:42  Std_Group-->None
+11:40:42  Std_HideObjects-->None
+11:40:42  Std_HideSelection-->None
+11:40:42  Std_Import-->Ctrl+I
+11:40:42  Std_LinkActions-->None
+11:40:42  Std_LinkImport-->None
+11:40:42  Std_LinkImportAll-->None
+11:40:42  Std_LinkMake-->None
+11:40:42  Std_LinkMakeGroup-->None
+11:40:42  Std_LinkMakeRelative-->None
+11:40:42  Std_LinkReplace-->None
+11:40:42  Std_LinkSelectActions-->None
+11:40:42  Std_LinkSelectAllLinks-->None
+11:40:42  Std_LinkSelectLinked-->S, G
+11:40:42  Std_LinkSelectLinkedFinal-->S, D
+11:40:42  Std_LinkUnlink-->None
+11:40:42  Std_MDITest1-->None
+11:40:42  Std_MDITest2-->None
+11:40:42  Std_MDITest3-->None
+11:40:42  Std_MacroAttachDebugger-->None
+11:40:42  Std_MacroStartDebug-->F6
+11:40:42  Std_MacroStepInto-->F11
+11:40:42  Std_MacroStepOver-->F10
+11:40:42  Std_MacroStopDebug-->Shift+F6
+11:40:42  Std_MacroStopRecord-->None
+11:40:42  Std_Macro_0-->None
+11:40:42  Std_Macro_1-->None
+11:40:42  Std_Macro_2-->None
+11:40:42  Std_Macro_3-->None
+11:40:42  Std_Macro_4-->None
+11:40:42  Std_Macro_5-->None
+11:40:42  Std_Macro_6-->None
+11:40:42  Std_MainFullscreen-->Alt+F11
+11:40:42  Std_MeasureDistance-->None
+11:40:42  Std_MergeProjects-->None
+11:40:42  Std_New-->Ctrl+N
+11:40:42  Std_OnlineHelp-->F1
+11:40:42  Std_OnlineHelpWebsite-->None
+11:40:42  Std_Open-->Ctrl+O
+11:40:42  Std_OrthographicCamera-->V, O
+11:40:42  Std_Part-->None
+11:40:42  Std_Paste-->Ctrl+V
+11:40:42  Std_PerspectiveCamera-->V, P
+11:40:42  Std_Placement-->None
+11:40:42  Std_Print-->Ctrl+P
+11:40:42  Std_PrintPdf-->None
+11:40:42  Std_PrintPreview-->None
+11:40:42  Std_ProjectInfo-->None
+11:40:42  Std_ProjectUtil-->None
+11:40:42  Std_PythonHelp-->None
+11:40:43  Std_PythonWebsite-->None
+11:40:43  Std_Quit-->Alt+F4
+11:40:43  Std_RandomColor-->None
+11:40:43  Std_RecentFiles-->None
+11:40:43  Std_Recompute-->None
+11:40:43  Std_Redo-->Ctrl+Shift+Z
+11:40:43  Std_Refresh-->Ctrl+R
+11:40:43  Std_Revert-->None
+11:40:43  Std_Save-->Ctrl+S
+11:40:43  Std_SaveAll-->None
+11:40:43  Std_SaveAs-->Ctrl+Shift+S
+11:40:43  Std_SaveCopy-->None
+11:40:43  Std_SceneInspector-->None
+11:40:43  Std_SelBack-->S, B
+11:40:43  Std_SelBoundingBox-->None
+11:40:43  Std_SelForward-->S, F
+11:40:43  Std_SelectAll-->None
+11:40:43  Std_SelectVisibleObjects-->None
+11:40:43  Std_SendToPythonConsole-->Ctrl+Shift+P
+11:40:43  Std_SetAppearance-->Ctrl+D
+11:40:43  Std_ShowObjects-->None
+11:40:43  Std_ShowSelection-->None
+11:40:43  Std_Test1-->None
+11:40:43  Std_Test2-->None
+11:40:43  Std_Test3-->None
+11:40:43  Std_Test4-->None
+11:40:43  Std_Test5-->None
+11:40:43  Std_Test6-->None
+11:40:43  Std_TestCmdFuncs-->None
+11:40:43  Std_TestConsoleOutput-->None
+11:40:43  Std_TestProgress1-->None
+11:40:43  Std_TestProgress2-->None
+11:40:43  Std_TestProgress3-->None
+11:40:43  Std_TestProgress4-->None
+11:40:43  Std_TestProgress5-->None
+11:40:43  Std_TestQM-->None
+11:40:43  Std_TestReloadQM-->None
+11:40:43  Std_TextDocument-->None
+11:40:43  Std_TextureMapping-->None
+11:40:43  Std_TileWindows-->None
+11:40:43  Std_ToggleBreakpoint-->F9
+11:40:43  Std_ToggleClipPlane-->None
+11:40:43  Std_ToggleNavigation-->Esc
+11:40:43  Std_ToggleObjects-->None
+11:40:43  Std_ToggleSelectability-->None
+11:40:43  Std_ToggleVisibility-->Space
+11:40:43  Std_ToolBarMenu-->None
+11:40:43  Std_Transform-->None
+11:40:43  Std_TransformManip-->None
+11:40:43  Std_TreeCollapse-->None
+11:40:43  Std_TreeCollapseDocument-->None
+11:40:43  Std_TreeDrag-->T, D
+11:40:43  Std_TreeExpand-->None
+11:40:43  Std_TreeMultiDocument-->None
+11:40:43  Std_TreePreSelection-->T, 4
+11:40:43  Std_TreeRecordSelection-->T, 5
+11:40:43  Std_TreeSelectAllInstances-->None
+11:40:43  Std_TreeSelection-->T, G
+11:40:43  Std_TreeSingleDocument-->None
+11:40:43  Std_TreeSyncPlacement-->T, 3
+11:40:43  Std_TreeSyncSelection-->T, 2
+11:40:43  Std_TreeSyncView-->T, 1
+11:40:43  Std_TreeViewActions-->None
+11:40:43  Std_Undo-->Ctrl+Z
+11:40:43  Std_UnitsCalculator-->None
+11:40:43  Std_UserInterface-->None
+11:40:43  Std_ViewBottom-->5
+11:40:43  Std_ViewBoxZoom-->Ctrl+B
+11:40:43  Std_ViewCreate-->None
+11:40:43  Std_ViewDimetric-->None
+11:40:43  Std_ViewDock-->V, D
+11:40:43  Std_ViewDockUndockFullscreen-->None
+11:40:43  Std_ViewExample1-->None
+11:40:43  Std_ViewExample2-->None
+11:40:43  Std_ViewExample3-->None
+11:40:43  Std_ViewFitAll-->V, F
+11:40:43  Std_ViewFitSelection-->V, S
+11:40:43  Std_ViewFront-->1
+11:40:43  Std_ViewFullscreen-->F11
+11:40:43  Std_ViewIsometric-->0
+11:40:43  Std_ViewIvIssueCamPos-->None
+11:40:43  Std_ViewIvStereoInterleavedColumns-->None
+11:40:43  Std_ViewIvStereoInterleavedRows-->None
+11:40:43  Std_ViewIvStereoOff-->None
+11:40:43  Std_ViewIvStereoQuadBuff-->None
+11:40:43  Std_ViewIvStereoRedGreen-->None
+11:40:43  Std_ViewLeft-->6
+11:40:43  Std_ViewRear-->4
+11:40:43  Std_ViewRight-->3
+11:40:43  Std_ViewRotateLeft-->Shift+Left
+11:40:43  Std_ViewRotateRight-->Shift+Right
+11:40:43  Std_ViewScreenShot-->None
+11:40:43  Std_ViewStatusBar-->None
+11:40:43  Std_ViewTop-->2
+11:40:43  Std_ViewTrimetric-->None
+11:40:43  Std_ViewUndock-->V, U
+11:40:43  Std_ViewVR-->None
+11:40:43  Std_ViewZoomIn-->Ctrl++
+11:40:43  Std_ViewZoomOut-->Ctrl+-
+11:40:43  Std_WhatsThis-->Shift+F1
+11:40:43  Std_Windows-->None
+11:40:43  Std_WindowsMenu-->None
+11:40:43  Std_Workbench-->None
+11:40:43  Surface_CurveOnMesh-->None
+11:40:43  Surface_ExtendFace-->None
+11:40:43  Surface_Filling-->None
+11:40:43  Surface_GeomFillSurface-->None
+11:40:43  TechDraw_2LineCenterLine-->None
+11:40:43  TechDraw_2PointCenterLine-->None
+11:40:43  TechDraw_3PtAngleDimension-->None
+11:40:43  TechDraw_ActiveView-->None
+11:40:43  TechDraw_AngleDimension-->None
+11:40:43  TechDraw_Annotation-->None
+11:40:43  TechDraw_ArchView-->None
+11:40:43  TechDraw_Balloon-->None
+11:40:43  TechDraw_CenterLineGroup-->None
+11:40:43  TechDraw_ClipGroup-->None
+11:40:43  TechDraw_ClipGroupAdd-->None
+11:40:43  TechDraw_ClipGroupRemove-->None
+11:40:43  TechDraw_CosmeticEraser-->None
+11:40:43  TechDraw_CosmeticVertex-->None
+11:40:43  TechDraw_CosmeticVertexGroup-->None
+11:40:43  TechDraw_DecorateLine-->None
+11:40:43  TechDraw_DetailView-->None
+11:40:43  TechDraw_DiameterDimension-->None
+11:40:43  TechDraw_Dimension-->None
+11:40:43  TechDraw_DraftView-->None
+11:40:43  TechDraw_ExportPageDXF-->None
+11:40:43  TechDraw_ExportPageSVG-->None
+11:40:43  TechDraw_ExtentGroup-->None
+11:40:43  TechDraw_FaceCenterLine-->None
+11:40:43  TechDraw_GeometricHatch-->None
+11:40:43  TechDraw_Hatch-->None
+11:40:43  TechDraw_HorizontalDimension-->None
+11:40:43  TechDraw_HorizontalExtentDimension-->None
+11:40:43  TechDraw_Image-->None
+11:40:43  TechDraw_LandmarkDimension-->None
+11:40:43  TechDraw_LeaderLine-->None
+11:40:43  TechDraw_LengthDimension-->None
+11:40:43  TechDraw_LinkDimension-->None
+11:40:43  TechDraw_Midpoints-->None
+11:40:43  TechDraw_PageDefault-->None
+11:40:43  TechDraw_PageTemplate-->None
+11:40:43  TechDraw_ProjectionGroup-->None
+11:40:43  TechDraw_Quadrants-->None
+11:40:43  TechDraw_RadiusDimension-->None
+11:40:43  TechDraw_RedrawPage-->None
+11:40:43  TechDraw_RichTextAnnotation-->None
+11:40:43  TechDraw_SectionView-->None
+11:40:43  TechDraw_ShowAll-->None
+11:40:43  TechDraw_SpreadsheetView-->None
+11:40:43  TechDraw_Symbol-->None
+11:40:43  TechDraw_ToggleFrame-->None
+11:40:43  TechDraw_VerticalDimension-->None
+11:40:43  TechDraw_VerticalExtentDimension-->None
+11:40:43  TechDraw_View-->None
+11:40:43  TechDraw_WeldSymbol-->None
+11:40:43  Test_InsertFeature-->None
+11:40:43  Test_Test-->None
+11:40:43  Test_TestAll-->None
+11:40:43  Test_TestAllText-->None
+11:40:43  Test_TestBase-->None
+11:40:43  Test_TestBaseText-->None
+11:40:43  Test_TestCreateMenu-->None
+11:40:43  Test_TestDeleteMenu-->None
+11:40:43  Test_TestDoc-->None
+11:40:43  Test_TestDocText-->None
+11:40:43  Test_TestWork-->None
+11:40:43  ThreadProfileCreateBottleObject-->None
+11:40:43  ThreadProfileCreateButtressObject-->None
+11:40:43  ThreadProfileCreateObject-->None
+11:40:43  ThreadProfileDoSweep-->None
+11:40:43  ThreadProfileMakeHelix-->None
+11:40:43  ThreadProfileOpenOnlineCalculator-->None
+11:40:43  ThreadProfileSettings-->None
+11:40:43  View_Measure_Clear_All-->None
+11:40:43  View_Measure_Toggle_All-->None
+11:40:43  Web_BrowserBack-->None
+11:40:43  Web_BrowserNext-->None
+11:40:43  Web_BrowserRefresh-->None
+11:40:43  Web_BrowserSetURL-->None
+11:40:43  Web_BrowserStop-->None
+11:40:43  Web_BrowserZoomIn-->None
+11:40:43  Web_BrowserZoomOut-->None
+11:40:43  Web_OpenWebsite-->None
+11:40:43  refineFeatureTool-->None
+11:40:43  AlignerTools-->None
+11:40:43  AltLCS-->None
+11:40:43  AnnoLbl-->None
+11:40:43  Arch_3Views-->None
+11:40:43  Arch_Add-->None
+11:40:43  Arch_Axis-->None
+11:40:43  Arch_AxisSystem-->None
+11:40:43  Arch_AxisTools-->None
+11:40:43  Arch_Building-->B, U
+11:40:43  Arch_BuildingPart-->B, P
+11:40:43  Arch_Check-->None
+11:40:43  Arch_CloneComponent-->C, C
+11:40:43  Arch_CloseHoles-->None
+11:40:43  Arch_Component-->C, M
+11:40:43  Arch_CurtainWall-->C, W
+11:40:43  Arch_CutLine-->None
+11:40:43  Arch_CutPlane-->None
+11:40:43  Arch_Equipment-->E, Q
+11:40:43  Arch_Fence-->None
+11:40:43  Arch_Floor-->L, V
+11:40:43  Arch_Frame-->F, R
+11:40:43  Arch_Grid-->None
+11:40:43  Arch_IfcSpreadsheet-->I, P
+11:40:43  Arch_Material-->None
+11:40:43  Arch_MaterialTools-->None
+11:40:43  Arch_MergeWalls-->None
+11:40:43  Arch_MeshToShape-->None
+11:40:43  Arch_MultiMaterial-->None
+11:40:43  Arch_Nest-->None
+11:40:43  Arch_Panel-->None
+11:40:43  Arch_PanelTools-->None
+11:40:43  Arch_Panel_Cut-->None
+11:40:43  Arch_Panel_Sheet-->None
+11:40:43  Arch_Pipe-->None
+11:40:43  Arch_PipeConnector-->None
+11:40:43  Arch_PipeTools-->None
+11:40:43  Arch_Profile-->P, F
+11:40:43  Arch_Project-->P, O
+11:40:43  Arch_Rebar-->R, B
+11:40:43  Arch_Reference-->E, X
+11:40:43  Arch_Remove-->None
+11:40:43  Arch_RemoveShape-->None
+11:40:43  Arch_Roof-->R, F
+11:40:43  Arch_Schedule-->None
+11:40:43  Arch_SectionPlane-->S, E
+11:40:43  Arch_SelectNonSolidMeshes-->None
+11:40:43  Arch_Site-->S, I
+11:40:43  Arch_Space-->S, P
+11:40:43  Arch_SplitMesh-->None
+11:40:43  Arch_Stairs-->S, R
+11:40:43  Arch_Structure-->S, T
+11:40:43  Arch_Survey-->None
+11:40:43  Arch_ToggleIfcBrepFlag-->None
+11:40:43  Arch_ToggleSubs-->Ctrl+Space
+11:40:43  Arch_Truss-->T, U
+11:40:43  Arch_Wall-->W, A
+11:40:43  Arch_Window-->W, N
+11:40:43  CaliperTools-->None
+11:40:43  DF_SelectLoop-->None
+11:40:43  DatumLCS-->None
+11:40:43  DatumLine-->None
+11:40:43  DatumPlane-->None
+11:40:43  DatumPoint-->None
+11:40:43  DefeatShapeFeature-->None
+11:40:43  DefeaturingTools-->None
+11:40:43  Draft_AddConstruction-->None
+11:40:43  Draft_AddToGroup-->None
+11:40:43  Draft_AnnotationStyleEditor-->None
+11:40:43  Draft_ApplyStyle-->None
+11:40:43  Draft_Arc-->A, R
+11:40:43  Draft_ArcTools-->None
+11:40:43  Draft_Arc_3Points-->None
+11:40:43  Draft_Array-->None
+11:40:43  Draft_ArrayTools-->None
+11:40:43  Draft_AutoGroup-->None
+11:40:43  Draft_BSpline-->B, S
+11:40:43  Draft_BezCurve-->B, Z
+11:40:43  Draft_BezierTools-->None
+11:40:43  Draft_Circle-->C, I
+11:40:43  Draft_CircularArray-->None
+11:40:43  Draft_Clone-->C, L
+11:40:43  Draft_CloseLine-->None
+11:40:43  Draft_CubicBezCurve-->None
+11:40:43  Draft_Dimension-->D, I
+11:40:43  Draft_Downgrade-->D, N
+11:40:43  Draft_Draft2Sketch-->None
+11:40:43  Draft_Drawing-->None
+11:40:43  Draft_Edit-->D, E
+11:40:43  Draft_Ellipse-->E, L
+11:40:43  Draft_Facebinder-->F, F
+11:40:43  Draft_Fillet-->None
+11:40:43  Draft_FinishLine-->None
+11:40:43  Draft_FlipDimension-->None
+11:40:43  Draft_Heal-->None
+11:40:43  Draft_Join-->J, O
+11:40:43  Draft_Label-->D, L
+11:40:43  Draft_Layer-->None
+11:40:43  Draft_Line-->L, I
+11:40:43  Draft_LinkArray-->None
+11:40:43  Draft_Mirror-->M, I
+11:40:43  Draft_Move-->M, V
+11:40:43  Draft_Offset-->O, S
+11:40:43  Draft_OrthoArray-->None
+11:40:43  Draft_PathArray-->None
+11:40:43  Draft_PathLinkArray-->None
+11:40:43  Draft_Point-->None
+11:40:43  Draft_PointArray-->None
+11:40:43  Draft_PolarArray-->None
+11:40:43  Draft_Polygon-->P, G
+11:40:43  Draft_Rectangle-->R, E
+11:40:43  Draft_Rotate-->R, O
+11:40:43  Draft_Scale-->S, C
+11:40:43  Draft_SelectGroup-->None
+11:40:43  Draft_SelectPlane-->W, P
+11:40:43  Draft_Shape2DView-->None
+11:40:43  Draft_ShapeString-->S, S
+11:40:43  Draft_ShowSnapBar-->None
+11:40:43  Draft_Slope-->None
+11:40:43  Draft_Snap_Angle-->None
+11:40:43  Draft_Snap_Center-->None
+11:40:43  Draft_Snap_Dimensions-->None
+11:40:43  Draft_Snap_Endpoint-->None
+11:40:43  Draft_Snap_Extension-->None
+11:40:43  Draft_Snap_Grid-->None
+11:40:43  Draft_Snap_Intersection-->None
+11:40:43  Draft_Snap_Lock-->None
+11:40:43  Draft_Snap_Midpoint-->None
+11:40:43  Draft_Snap_Near-->None
+11:40:43  Draft_Snap_Ortho-->None
+11:40:43  Draft_Snap_Parallel-->None
+11:40:43  Draft_Snap_Perpendicular-->None
+11:40:43  Draft_Snap_Special-->None
+11:40:43  Draft_Snap_WorkingPlane-->None
+11:40:43  Draft_Split-->S, P
+11:40:43  Draft_Stretch-->S, H
+11:40:43  Draft_SubelementHighlight-->H, S
+11:40:43  Draft_Text-->T, E
+11:40:43  Draft_ToggleConstructionMode-->C, M
+11:40:43  Draft_ToggleContinueMode-->None
+11:40:43  Draft_ToggleDisplayMode-->Shift+Space
+11:40:43  Draft_ToggleGrid-->G, R
+11:40:43  Draft_Trimex-->T, R
+11:40:43  Draft_UndoLine-->None
+11:40:43  Draft_Upgrade-->U, P
+11:40:43  Draft_Wire-->P, L
+11:40:43  Draft_WireToBSpline-->None
+11:40:43  Draft_WorkingPlaneProxy-->None
+11:40:43  Drawing_Annotation-->None
+11:40:43  Drawing_Clip-->None
+11:40:43  Drawing_DraftView-->None
+11:40:43  Drawing_ExportPage-->None
+11:40:43  Drawing_NewA3Landscape-->None
+11:40:43  Drawing_NewPage-->None
+11:40:43  Drawing_NewView-->None
+11:40:43  Drawing_Open-->None
+11:40:43  Drawing_OpenBrowserView-->None
+11:40:43  Drawing_OrthoViews-->None
+11:40:43  Drawing_ProjectShape-->None
+11:40:43  Drawing_SpreadsheetView-->None
+11:40:43  Drawing_Symbol-->None
+11:40:43  DynamicDataAddProperty-->None
+11:40:43  DynamicDataCopyProperty-->None
+11:40:43  DynamicDataCreateObject-->None
+11:40:43  DynamicDataImportAliases-->None
+11:40:43  DynamicDataImportNamedConstraints-->None
+11:40:43  DynamicDataRemoveProperty-->None
+11:40:43  DynamicDataSettings-->None
+11:40:43  FEM_Analysis-->N, A
+11:40:43  FEM_ClippingPlaneAdd-->None
+11:40:43  FEM_ClippingPlaneRemoveAll-->None
+11:40:43  FEM_ConstantVacuumPermittivity-->None
+11:40:43  FEM_ConstraintBearing-->None
+11:40:43  FEM_ConstraintBodyHeatSource-->None
+11:40:43  FEM_ConstraintContact-->None
+11:40:43  FEM_ConstraintDisplacement-->None
+11:40:43  FEM_ConstraintElectrostaticPotential-->None
+11:40:43  FEM_ConstraintFixed-->None
+11:40:43  FEM_ConstraintFlowVelocity-->None
+11:40:43  FEM_ConstraintFluidBoundary-->None
+11:40:43  FEM_ConstraintForce-->None
+11:40:43  FEM_ConstraintGear-->None
+11:40:43  FEM_ConstraintHeatflux-->None
+11:40:43  FEM_ConstraintInitialFlowVelocity-->None
+11:40:43  FEM_ConstraintInitialTemperature-->None
+11:40:43  FEM_ConstraintPlaneRotation-->None
+11:40:43  FEM_ConstraintPressure-->None
+11:40:43  FEM_ConstraintPulley-->None
+11:40:43  FEM_ConstraintSectionPrint-->None
+11:40:43  FEM_ConstraintSelfWeight-->C, W
+11:40:43  FEM_ConstraintTemperature-->None
+11:40:43  FEM_ConstraintTie-->C, T
+11:40:43  FEM_ConstraintTransform-->None
+11:40:43  FEM_CreateNodesSet-->None
+11:40:43  FEM_DefineNodesSet-->None
+11:40:43  FEM_ElementFluid1D-->C, B
+11:40:43  FEM_ElementGeometry1D-->C, B
+11:40:43  FEM_ElementGeometry2D-->C, S
+11:40:43  FEM_ElementRotation1D-->C, R
+11:40:43  FEM_EquationElasticity-->None
+11:40:43  FEM_EquationElectricforce-->None
+11:40:43  FEM_EquationElectrostatic-->None
+11:40:43  FEM_EquationFlow-->None
+11:40:43  FEM_EquationFlux-->None
+11:40:43  FEM_EquationHeat-->None
+11:40:43  FEM_Examples-->None
+11:40:43  FEM_FEMMesh2Mesh-->None
+11:40:43  FEM_MaterialEditor-->None
+11:40:43  FEM_MaterialFluid-->None
+11:40:43  FEM_MaterialMechanicalNonlinear-->C, W
+11:40:43  FEM_MaterialReinforced-->M, M
+11:40:43  FEM_MaterialSolid-->M, M
+11:40:43  FEM_MeshBoundaryLayer-->M, B
+11:40:43  FEM_MeshClear-->None
+11:40:43  FEM_MeshDisplayInfo-->None
+11:40:43  FEM_MeshGmshFromShape-->None
+11:40:43  FEM_MeshGroup-->M, G
+11:40:43  FEM_MeshNetgenFromShape-->None
+11:40:43  FEM_MeshRegion-->M, R
+11:40:43  FEM_PostApplyChanges-->None
+11:40:43  FEM_PostCreateFunctions-->None
+11:40:43  FEM_PostFilterClipRegion-->None
+11:40:43  FEM_PostFilterClipScalar-->None
+11:40:43  FEM_PostFilterCutFunction-->None
+11:40:43  FEM_PostFilterDataAlongLine-->None
+11:40:44  FEM_PostFilterDataAtPoint-->None
+11:40:44  FEM_PostFilterLinearizedStresses-->None
+11:40:44  FEM_PostFilterWarp-->None
+11:40:44  FEM_PostPipelineFromResult-->None
+11:40:44  FEM_ResultShow-->S, R
+11:40:44  FEM_ResultsPurge-->S, S
+11:40:44  FEM_SolverCalculiX-->S, C
+11:40:44  FEM_SolverCalculixCxxtools-->S, X
+11:40:44  FEM_SolverControl-->S, C
+11:40:44  FEM_SolverElmer-->S, E
+11:40:44  FEM_SolverRun-->R, C
+11:40:44  FEM_SolverZ88-->S, Z
+11:40:44  FSChangeParams-->None
+11:40:44  FSDIN557-->None
+11:40:44  FSDIN562-->None
+11:40:44  FSDIN967-->None
+11:40:44  FSDIN985-->None
+11:40:44  FSEN1661-->None
+11:40:44  FSEN1662-->None
+11:40:44  FSEN1665-->None
+11:40:44  FSFillet-->None
+11:40:44  FSFlip-->None
+11:40:44  FSHexNut-->None
+11:40:44  FSISO10642-->None
+11:40:44  FSISO1207-->None
+11:40:44  FSISO14579-->None
+11:40:44  FSISO14580-->None
+11:40:44  FSISO14582-->None
+11:40:44  FSISO14583-->None
+11:40:44  FSISO14584-->None
+11:40:44  FSISO1580-->None
+11:40:44  FSISO2009-->None
+11:40:44  FSISO2010-->None
+11:40:44  FSISO4014-->None
+11:40:44  FSISO4017-->None
+11:40:44  FSISO4032-->None
+11:40:44  FSISO4033-->None
+11:40:44  FSISO4035-->None
+11:40:44  FSISO4762-->None
+11:40:44  FSISO7045-->None
+11:40:44  FSISO7046-->None
+11:40:44  FSISO7047-->None
+11:40:44  FSISO7048-->None
+11:40:44  FSISO7089-->None
+11:40:44  FSISO7090-->None
+11:40:44  FSISO7092-->None
+11:40:44  FSISO7093-1-->None
+11:40:44  FSISO7094-->None
+11:40:44  FSISO7380-1-->None
+11:40:44  FSISO7380-2-->None
+11:40:44  FSMakeBOM-->None
+11:40:44  FSMatchTypeGroup-->None
+11:40:44  FSMatchTypeInner-->None
+11:40:44  FSMatchTypeOuter-->None
+11:40:44  FSMove-->None
+11:40:44  FSPressNut-->None
+11:40:44  FSScrewCalc-->None
+11:40:44  FSScrewTap-->None
+11:40:44  FSSimple-->None
+11:40:44  FSStandOff-->None
+11:40:44  FSStud-->None
+11:40:44  FuzzyCommon-->None
+11:40:44  FuzzyCut-->None
+11:40:44  FuzzyUnion-->None
+11:40:44  Image_CreateImagePlane-->None
+11:40:44  Image_Open-->None
+11:40:44  Image_Scaling-->None
+11:40:44  Inspection_InspectElement-->None
+11:40:44  Inspection_VisualInspection-->None
+11:40:44  Lattice2Mirror-->None
+11:40:44  Lattice2Slice-->None
+11:40:44  Lattice2_ArrayFilter_GroupCommand-->None
+11:40:44  Lattice2_ArrayFilter_Items-->None
+11:40:44  Lattice2_ArrayFiltercollision_pass-->None
+11:40:44  Lattice2_ArrayFilterpointing_at-->None
+11:40:44  Lattice2_ArrayFilterwindow_distance-->None
+11:40:44  Lattice2_ArrayFromShapeGroup-->None
+11:40:44  Lattice2_ArrayFromShape_CenterBB-->None
+11:40:44  Lattice2_ArrayFromShape_CenterMass-->None
+11:40:44  Lattice2_ArrayFromShape_Inertial-->None
+11:40:44  Lattice2_ArrayFromShape_Internal-->None
+11:40:44  Lattice2_AttachedPlacement-->None
+11:40:44  Lattice2_AttachedPlacementSubsequence-->None
+11:40:44  Lattice2_AttachedPlacement_Group-->None
+11:40:44  Lattice2_BoundBoxGroupCommand-->None
+11:40:44  Lattice2_BoundBox_Compound-->None
+11:40:44  Lattice2_BoundBox_Single-->None
+11:40:44  Lattice2_Compound-->None
+11:40:44  Lattice2_CompoundFilter-->None
+11:40:44  Lattice2_DowngradeCompSolids-->None
+11:40:44  Lattice2_DowngradeEdges-->None
+11:40:44  Lattice2_DowngradeFaces-->None
+11:40:44  Lattice2_DowngradeLeaves-->None
+11:40:44  Lattice2_DowngradeNon-seam edges-->None
+11:40:44  Lattice2_DowngradeOpenWires-->None
+11:40:44  Lattice2_DowngradeSeam edges-->None
+11:40:44  Lattice2_DowngradeShells-->None
+11:40:44  Lattice2_DowngradeSolids-->None
+11:40:44  Lattice2_DowngradeVertices-->None
+11:40:44  Lattice2_DowngradeWires-->None
+11:40:44  Lattice2_Downgrade_GroupCommand-->None
+11:40:44  Lattice2_Explode-->None
+11:40:44  Lattice2_ExplodeArray-->None
+11:40:44  Lattice2_ExposeLinkSub-->None
+11:40:44  Lattice2_FuseCompound-->None
+11:40:44  Lattice2_Help_BasicTutorial-->None
+11:40:44  Lattice2_Help_OpenManual-->None
+11:40:44  Lattice2_Inspect-->None
+11:40:44  Lattice2_Inspect_GroupCommand-->None
+11:40:44  Lattice2_Invert-->None
+11:40:44  Lattice2_JoinArrays-->None
+11:40:44  Lattice2_LinearArray_GroupCommand-->None
+11:40:44  Lattice2_LinearArray_Random-->None
+11:40:44  Lattice2_LinearArray_SpanN-->None
+11:40:44  Lattice2_LinearArray_SpanStep-->None
+11:40:44  Lattice2_LinearArray_StepN-->None
+11:40:44  Lattice2_PDPattern-->None
+11:40:44  Lattice2_ParaSeries-->None
+11:40:44  Lattice2_PlacementAx_AlongX-->None
+11:40:44  Lattice2_PlacementAx_AlongY-->None
+11:40:44  Lattice2_PlacementAx_AlongZ-->None
+11:40:44  Lattice2_PlacementCustom-->None
+11:40:44  Lattice2_PlacementEuler-->None
+11:40:44  Lattice2_PlacementFromShape_CenterBB-->None
+11:40:44  Lattice2_PlacementFromShape_CenterMass-->None
+11:40:44  Lattice2_PlacementFromShape_Inertial-->None
+11:40:44  Lattice2_PlacementFromShape_Internal-->None
+11:40:44  Lattice2_PlacementXY plane-->None
+11:40:44  Lattice2_PlacementXZ plane-->None
+11:40:44  Lattice2_PlacementYZ plane-->None
+11:40:44  Lattice2_Placement_GroupCommand-->None
+11:40:44  Lattice2_PolarArray-->None
+11:40:44  Lattice2_PolarArray2_GroupCommand-->None
+11:40:44  Lattice2_PolarArray2_Random-->None
+11:40:44  Lattice2_PolarArray2_SpanN-->None
+11:40:44  Lattice2_PolarArray2_SpanStep-->None
+11:40:44  Lattice2_PolarArray2_StepN-->None
+11:40:44  Lattice2_PopulateChildrenGroupCommand-->None
+11:40:44  Lattice2_PopulateChildren_Array-->None
+11:40:44  Lattice2_PopulateChildren_Move-->None
+11:40:44  Lattice2_PopulateChildren_Normal-->None
+11:40:44  Lattice2_PopulateCopiesGroupCommand-->None
+11:40:44  Lattice2_PopulateCopies_Array-->None
+11:40:44  Lattice2_PopulateCopies_Move-->None
+11:40:44  Lattice2_PopulateCopies_Normal-->None
+11:40:44  Lattice2_ProjectArray-->None
+11:40:44  Lattice2_RecomputeLockerGroup-->None
+11:40:44  Lattice2_RecomputeLocker_ForceRecompute-->Shift+F5
+11:40:44  Lattice2_RecomputeLocker_LockRecomputes-->None
+11:40:44  Lattice2_RecomputeLocker_MakeFeature-->None
+11:40:44  Lattice2_RecomputeLocker_RecomputeDocument-->None
+11:40:44  Lattice2_RecomputeLocker_RecomputeFeature-->None
+11:40:44  Lattice2_RecomputeLocker_Touch-->Shift+F5
+11:40:44  Lattice2_RecomputeLocker_UnlockRecomputes-->None
+11:40:44  Lattice2_Resample-->None
+11:40:44  Lattice2_Series_GroupCommand-->None
+11:40:44  Lattice2_ShapeInfoFeature-->None
+11:40:44  Lattice2_ShapeString-->None
+11:40:44  Lattice2_SubLink-->None
+11:40:44  Lattice2_SublinkSubsequence-->None
+11:40:44  Lattice2_Sublink_GroupCommand-->None
+11:40:44  Lattice2_SubstituteObject-->None
+11:40:44  Lattice2_TopoSeries-->None
+11:40:44  Manipulator-cheat-sheet.pdf-->None
+11:40:44  MeshRemodelCreateArc-->None
+11:40:44  MeshRemodelCreateBSpline-->None
+11:40:44  MeshRemodelCreateCircle-->None
+11:40:44  MeshRemodelCreateCoplanarPointsObject-->None
+11:40:44  MeshRemodelCreateLine-->None
+11:40:44  MeshRemodelCreatePointsObject-->None
+11:40:44  MeshRemodelCreatePolygon-->None
+11:40:44  MeshRemodelCreateSketch-->None
+11:40:44  MeshRemodelCreateWire-->None
+11:40:44  MeshRemodelMergeSketches-->None
+11:40:44  MeshRemodelSettings-->None
+11:40:44  MeshRemodelValidateSketch-->None
+11:40:44  Mesh_AddFacet-->None
+11:40:44  Mesh_BoundingBox-->None
+11:40:44  Mesh_BuildRegularSolid-->None
+11:40:44  Mesh_CrossSections-->None
+11:40:44  Mesh_CurvatureInfo-->None
+11:40:44  Mesh_Decimating-->None
+11:40:44  Mesh_Difference-->None
+11:40:44  Mesh_EvaluateFacet-->None
+11:40:44  Mesh_EvaluateSolid-->None
+11:40:44  Mesh_Evaluation-->None
+11:40:44  Mesh_Export-->None
+11:40:44  Mesh_FillInteractiveHole-->None
+11:40:44  Mesh_FillupHoles-->None
+11:40:44  Mesh_FlipNormals-->None
+11:40:44  Mesh_FromGeometry-->None
+11:40:44  Mesh_FromPartShape-->None
+11:40:44  Mesh_HarmonizeNormals-->None
+11:40:44  Mesh_Import-->None
+11:40:44  Mesh_Intersection-->None
+11:40:44  Mesh_Merge-->None
+11:40:44  Mesh_PolyCut-->None
+11:40:44  Mesh_PolySegm-->None
+11:40:44  Mesh_PolySplit-->None
+11:40:44  Mesh_PolyTrim-->None
+11:40:44  Mesh_RemeshGmsh-->None
+11:40:44  Mesh_RemoveCompByHand-->None
+11:40:44  Mesh_RemoveComponents-->None
+11:40:44  Mesh_Scale-->None
+11:40:44  Mesh_SectionByPlane-->None
+11:40:44  Mesh_Segmentation-->None
+11:40:44  Mesh_SegmentationBestFit-->None
+11:40:44  Mesh_Smoothing-->None
+11:40:44  Mesh_TrimByPlane-->None
+11:40:44  Mesh_Union-->None
+11:40:44  Mesh_VertexCurvature-->None
+11:40:44  MoverTools-->None
+11:40:44  OpenSCAD_AddOpenSCADElement-->None
+11:40:44  OpenSCAD_ColorCodeShape-->None
+11:40:44  OpenSCAD_Edgestofaces-->None
+11:40:44  OpenSCAD_ExpandPlacements-->None
+11:40:44  OpenSCAD_ExplodeGroup-->None
+11:40:44  OpenSCAD_Hull-->None
+11:40:44  OpenSCAD_IncreaseToleranceFeature-->None
+11:40:44  OpenSCAD_MeshBoolean-->None
+11:40:44  OpenSCAD_Minkowski-->None
+11:40:44  OpenSCAD_RefineShapeFeature-->None
+11:40:44  OpenSCAD_RemoveSubtree-->None
+11:40:44  OpenSCAD_ReplaceObject-->None
+11:40:44  PartDesign_AdditiveLoft-->None
+11:40:44  PartDesign_AdditivePipe-->None
+11:40:44  PartDesign_Body-->None
+11:40:44  PartDesign_Boolean-->None
+11:40:44  PartDesign_Chamfer-->None
+11:40:44  PartDesign_Clone-->None
+11:40:44  PartDesign_CompPrimitiveAdditive-->None
+11:40:44  PartDesign_CompPrimitiveSubtractive-->None
+11:40:44  PartDesign_CoordinateSystem-->None
+11:40:44  PartDesign_Draft-->None
+11:40:44  PartDesign_DuplicateSelection-->None
+11:40:44  PartDesign_Fillet-->None
+11:40:44  PartDesign_Groove-->None
+11:40:44  PartDesign_Hole-->None
+11:40:44  PartDesign_InvoluteGear-->None
+11:40:44  PartDesign_Line-->None
+11:40:44  PartDesign_LinearPattern-->None
+11:40:44  PartDesign_Migrate-->None
+11:40:44  PartDesign_Mirrored-->None
+11:40:44  PartDesign_MoveFeature-->None
+11:40:44  PartDesign_MoveFeatureInTree-->None
+11:40:44  PartDesign_MoveTip-->None
+11:40:44  PartDesign_MultiTransform-->None
+11:40:44  PartDesign_NewSketch-->None
+11:40:44  PartDesign_Pad-->None
+11:40:44  PartDesign_Plane-->None
+11:40:44  PartDesign_Pocket-->None
+11:40:44  PartDesign_Point-->None
+11:40:44  PartDesign_PolarPattern-->None
+11:40:44  PartDesign_Revolution-->None
+11:40:44  PartDesign_ShapeBinder-->None
+11:40:44  PartDesign_Sprocket-->None
+11:40:44  PartDesign_SubShapeBinder-->None
+11:40:44  PartDesign_SubtractiveLoft-->None
+11:40:44  PartDesign_SubtractivePipe-->None
+11:40:44  PartDesign_Thickness-->None
+11:40:44  PartDesign_WizardShaft-->None
+11:40:44  PartDesign_WizardShaftCallBack-->None
+11:40:44  Part_Boolean-->None
+11:40:44  Part_BooleanFragments-->None
+11:40:44  Part_Box-->None
+11:40:44  Part_BoxSelection-->None
+11:40:44  Part_Builder-->None
+11:40:44  Part_Chamfer-->None
+11:40:44  Part_CheckGeometry-->None
+11:40:44  Part_ColorPerFace-->None
+11:40:44  Part_Common-->None
+11:40:44  Part_CompCompoundTools-->None
+11:40:44  Part_CompJoinFeatures-->None
+11:40:44  Part_CompOffset-->None
+11:40:44  Part_CompSplitFeatures-->None
+11:40:44  Part_Compound-->None
+11:40:44  Part_CompoundFilter-->None
+11:40:44  Part_Cone-->None
+11:40:44  Part_CrossSections-->None
+11:40:44  Part_Cut-->None
+11:40:44  Part_Cylinder-->None
+11:40:44  Part_Defeaturing-->None
+11:40:44  Part_EditAttachment-->None
+11:40:44  Part_ElementCopy-->None
+11:40:44  Part_ExplodeCompound-->None
+11:40:44  Part_Export-->None
+11:40:44  Part_Extrude-->None
+11:40:44  Part_Fillet-->None
+11:40:44  Part_Fuse-->None
+11:40:44  Part_Import-->None
+11:40:44  Part_ImportCurveNet-->None
+11:40:44  Part_JoinConnect-->None
+11:40:44  Part_JoinCutout-->None
+11:40:44  Part_JoinEmbed-->None
+11:40:44  Part_Loft-->None
+11:40:44  Part_MakeFace-->None
+11:40:44  Part_MakeSolid-->None
+11:40:44  Part_MakeTube-->None
+11:40:44  Part_Measure_Angular-->None
+11:40:44  Part_Measure_Clear_All-->None
+11:40:44  Part_Measure_Linear-->None
+11:40:44  Part_Measure_Refresh-->None
+11:40:44  Part_Measure_Toggle_3d-->None
+11:40:44  Part_Measure_Toggle_All-->None
+11:40:44  Part_Measure_Toggle_Delta-->None
+11:40:44  Part_Mirror-->None
+11:40:44  Part_Offset-->None
+11:40:44  Part_Offset2D-->None
+11:40:44  Part_PickCurveNet-->None
+11:40:44  Part_PointsFromMesh-->None
+11:40:44  Part_Primitives-->None
+11:40:44  Part_RefineShape-->None
+11:40:44  Part_ReverseShape-->None
+11:40:44  Part_Revolve-->None
+11:40:44  Part_RuledSurface-->None
+11:40:44  Part_Section-->None
+11:40:44  Part_ShapeFromMesh-->None
+11:40:44  Part_ShapeInfo-->None
+11:40:44  Part_SimpleCopy-->None
+11:40:44  Part_SimpleCylinder-->None
+11:40:44  Part_Slice-->None
+11:40:44  Part_SliceApart-->None
+11:40:44  Part_Sphere-->None
+11:40:44  Part_Sweep-->None
+11:40:44  Part_Thickness-->None
+11:40:44  Part_Torus-->None
+11:40:44  Part_TransformedCopy-->None
+11:40:44  Part_XOR-->None
+11:40:44  Part_projectionOnSurface-->None
+11:40:44  Path_Adaptive-->None
+11:40:44  Path_Area-->None
+11:40:44  Path_Area_Workplane-->None
+11:40:44  Path_Array-->None
+11:40:44  Path_Comment-->None
+11:40:44  Path_Compound-->None
+11:40:44  Path_Custom-->None
+11:40:44  Path_Deburr-->None
+11:40:44  Path_DressupAxisMap-->None
+11:40:44  Path_DressupDogbone-->None
+11:40:44  Path_DressupDragKnife-->None
+11:40:44  Path_DressupLeadInOut-->None
+11:40:44  Path_DressupPathBoundary-->None
+11:40:44  Path_DressupRampEntry-->None
+11:40:44  Path_DressupTag-->None
+11:40:44  Path_DressupZCorrect-->None
+11:40:44  Path_Drilling-->None
+11:40:44  Path_Engrave-->None
+11:40:44  Path_EngraveTools-->None
+11:40:44  Path_ExportTemplate-->None
+11:40:44  Path_Fixture-->None
+11:40:44  Path_Helix-->None
+11:40:44  Path_Hop-->None
+11:40:44  Path_Inspect-->P, I
+11:40:44  Path_Job-->P, J
+11:40:44  Path_MillFace-->None
+11:40:44  Path_OpActiveToggle-->P, X
+11:40:44  Path_OperationCopy-->None
+11:40:44  Path_Pocket_3D-->None
+11:40:44  Path_Pocket_Shape-->None
+11:40:44  Path_Post-->P, P
+11:40:44  Path_Probe-->None
+11:40:44  Path_Profile-->None
+11:40:44  Path_Sanity-->None
+11:40:44  Path_SelectLoop-->P, L
+11:40:44  Path_SetStartPoint-->None
+11:40:44  Path_Shape-->None
+11:40:44  Path_SimpleCopy-->None
+11:40:44  Path_Simulator-->P, M
+11:40:44  Path_Slot-->None
+11:40:44  Path_Stop-->None
+11:40:44  Path_ToolBitCreate-->None
+11:40:44  Path_ToolBitLibraryLoad-->None
+11:40:44  Path_ToolBitLibraryOpen-->None
+11:40:44  Path_ToolBitLoad-->None
+11:40:44  Path_ToolBitSave-->None
+11:40:44  Path_ToolBitSaveAs-->None
+11:40:44  Path_ToolController-->None
+11:40:44  Path_ToolLibraryEdit-->P, T
+11:40:44  Plane-->None
+11:40:44  Points_Convert-->None
+11:40:44  Points_Export-->None
+11:40:44  Points_Import-->None
+11:40:44  Points_Merge-->None
+11:40:44  Points_PolyCut-->None
+11:40:44  Points_Structure-->None
+11:40:44  Points_Transform-->None
+11:40:44  Raytracing_ExportProject-->None
+11:40:44  Raytracing_NewLuxProject-->None
+11:40:44  Raytracing_NewPartSegment-->None
+11:40:44  Raytracing_NewPovrayProject-->None
+11:40:44  Raytracing_Render-->None
+11:40:44  Raytracing_ResetCamera-->None
+11:40:44  Raytracing_WriteCamera-->None
+11:40:44  Raytracing_WritePart-->None
+11:40:44  Raytracing_WriteView-->None
+11:40:44  Reen_ApproxCylinder-->None
+11:40:44  Reen_ApproxPlane-->None
+11:40:44  Reen_ApproxPolynomial-->None
+11:40:44  Reen_ApproxSphere-->None
+11:40:44  Reen_ApproxSurface-->None
+11:40:44  Reen_MeshBoundary-->None
+11:40:44  Reen_PoissonReconstruction-->None
+11:40:44  Reen_Segmentation-->None
+11:40:44  Reen_SegmentationFromComponents-->None
+11:40:44  Reen_SegmentationManual-->None
+11:40:44  Reen_ViewTriangulation-->None
+11:40:44  ResetPositions-->None
+11:40:44  Robot_AddToolShape-->None
+11:40:44  Robot_Create-->None
+11:40:44  Robot_CreateTrajectory-->None
+11:40:44  Robot_Edge2Trac-->None
+11:40:44  Robot_ExportKukaCompact-->None
+11:40:44  Robot_ExportKukaFull-->None
+11:40:44  Robot_InsertKukaIR125-->None
+11:40:44  Robot_InsertKukaIR16-->None
+11:40:45  Robot_InsertKukaIR210-->None
+11:40:45  Robot_InsertKukaIR500-->None
+11:40:45  Robot_InsertWaypoint-->A
+11:40:45  Robot_InsertWaypointPreselect-->W
+11:40:45  Robot_RestoreHomePos-->None
+11:40:45  Robot_SetDefaultOrientation-->None
+11:40:45  Robot_SetDefaultValues-->None
+11:40:45  Robot_SetHomePos-->None
+11:40:45  Robot_Simulate-->None
+11:40:45  Robot_TrajectoryCompound-->None
+11:40:45  Robot_TrajectoryDressUp-->None
+11:40:45  Sketcher_BSplineComb-->None
+11:40:45  Sketcher_BSplineConvertToNURB-->None
+11:40:45  Sketcher_BSplineDecreaseKnotMultiplicity-->None
+11:40:45  Sketcher_BSplineDegree-->None
+11:40:45  Sketcher_BSplineIncreaseDegree-->None
+11:40:45  Sketcher_BSplineIncreaseKnotMultiplicity-->None
+11:40:45  Sketcher_BSplineKnotMultiplicity-->None
+11:40:45  Sketcher_BSplinePolygon-->None
+11:40:45  Sketcher_CarbonCopy-->C, C
+11:40:45  Sketcher_Clone-->None
+11:40:45  Sketcher_CloseShape-->Ctrl+Shift+S
+11:40:45  Sketcher_CompBSplineShowHideGeometryInformation-->None
+11:40:45  Sketcher_CompConstrainRadDia-->Shift+R
+11:40:45  Sketcher_CompCopy-->Ctrl+C
+11:40:45  Sketcher_CompCreateArc-->None
+11:40:45  Sketcher_CompCreateBSpline-->None
+11:40:45  Sketcher_CompCreateCircle-->None
+11:40:45  Sketcher_CompCreateConic-->None
+11:40:45  Sketcher_CompCreateRegularPolygon-->None
+11:40:45  Sketcher_CompModifyKnotMultiplicity-->None
+11:40:45  Sketcher_ConnectLines-->Ctrl+Shift+K
+11:40:45  Sketcher_ConstrainAngle-->A
+11:40:45  Sketcher_ConstrainBlock-->None
+11:40:45  Sketcher_ConstrainCoincident-->C
+11:40:45  Sketcher_ConstrainDiameter-->None
+11:40:45  Sketcher_ConstrainDistance-->Shift+D
+11:40:45  Sketcher_ConstrainDistanceX-->Shift+H
+11:40:45  Sketcher_ConstrainDistanceY-->Shift+V
+11:40:45  Sketcher_ConstrainEqual-->E
+11:40:45  Sketcher_ConstrainHorizontal-->H
+11:40:45  Sketcher_ConstrainInternalAlignment-->Ctrl+A
+11:40:45  Sketcher_ConstrainLock-->None
+11:40:45  Sketcher_ConstrainParallel-->Shift+P
+11:40:45  Sketcher_ConstrainPerpendicular-->N
+11:40:45  Sketcher_ConstrainPointOnObject-->Shift+O
+11:40:45  Sketcher_ConstrainRadius-->None
+11:40:45  Sketcher_ConstrainSnellsLaw-->None
+11:40:45  Sketcher_ConstrainSymmetric-->S
+11:40:45  Sketcher_ConstrainTangent-->T
+11:40:45  Sketcher_ConstrainVertical-->V
+11:40:45  Sketcher_Copy-->None
+11:40:45  Sketcher_Create3PointArc-->None
+11:40:45  Sketcher_Create3PointCircle-->None
+11:40:45  Sketcher_CreateArc-->None
+11:40:45  Sketcher_CreateArcOfEllipse-->None
+11:40:45  Sketcher_CreateArcOfHyperbola-->None
+11:40:45  Sketcher_CreateArcOfParabola-->None
+11:40:45  Sketcher_CreateBSpline-->None
+11:40:45  Sketcher_CreateCircle-->None
+11:40:45  Sketcher_CreateEllipseBy3Points-->None
+11:40:45  Sketcher_CreateEllipseByCenter-->None
+11:40:45  Sketcher_CreateFillet-->F
+11:40:45  Sketcher_CreateHeptagon-->None
+11:40:45  Sketcher_CreateHexagon-->None
+11:40:45  Sketcher_CreateLine-->L
+11:40:45  Sketcher_CreateOctagon-->None
+11:40:45  Sketcher_CreatePentagon-->None
+11:40:45  Sketcher_CreatePeriodicBSpline-->None
+11:40:45  Sketcher_CreatePoint-->None
+11:40:45  Sketcher_CreatePolyline-->None
+11:40:45  Sketcher_CreateRectangle-->R
+11:40:45  Sketcher_CreateRegularPolygon-->None
+11:40:45  Sketcher_CreateSlot-->None
+11:40:45  Sketcher_CreateSquare-->None
+11:40:45  Sketcher_CreateTriangle-->None
+11:40:45  Sketcher_DeleteAllConstraints-->None
+11:40:45  Sketcher_DeleteAllGeometry-->None
+11:40:45  Sketcher_EditSketch-->None
+11:40:45  Sketcher_Extend-->T, E
+11:40:45  Sketcher_External-->X
+11:40:45  Sketcher_LeaveSketch-->None
+11:40:45  Sketcher_MapSketch-->None
+11:40:45  Sketcher_MergeSketches-->None
+11:40:45  Sketcher_MirrorSketch-->None
+11:40:45  Sketcher_Move-->Ctrl+M
+11:40:45  Sketcher_NewSketch-->None
+11:40:45  Sketcher_ProfilesHexagon1-->None
+11:40:45  Sketcher_RectangularArray-->None
+11:40:45  Sketcher_ReorientSketch-->None
+11:40:45  Sketcher_RestoreInternalAlignmentGeometry-->Ctrl+Shift+E
+11:40:45  Sketcher_SelectConflictingConstraints-->Ctrl+Shift+E
+11:40:45  Sketcher_SelectConstraints-->Ctrl+Shift+C
+11:40:45  Sketcher_SelectElementsAssociatedWithConstraints-->Ctrl+Shift+E
+11:40:45  Sketcher_SelectElementsWithDoFs-->None
+11:40:45  Sketcher_SelectHorizontalAxis-->Ctrl+Shift+H
+11:40:45  Sketcher_SelectOrigin-->Ctrl+Shift+O
+11:40:45  Sketcher_SelectRedundantConstraints-->Ctrl+Shift+R
+11:40:45  Sketcher_SelectVerticalAxis-->Ctrl+Shift+V
+11:40:45  Sketcher_StopOperation-->None
+11:40:45  Sketcher_SwitchVirtualSpace-->None
+11:40:45  Sketcher_Symmetry-->None
+11:40:45  Sketcher_ToggleActiveConstraint-->None
+11:40:45  Sketcher_ToggleConstruction-->C, M
+11:40:45  Sketcher_ToggleDrivingConstraint-->None
+11:40:45  Sketcher_Trimming-->T, R
+11:40:45  Sketcher_ValidateSketch-->None
+11:40:45  Sketcher_ViewSection-->None
+11:40:45  Sketcher_ViewSketch-->None
+11:40:45  Spreadsheet_AlignBottom-->None
+11:40:45  Spreadsheet_AlignCenter-->None
+11:40:45  Spreadsheet_AlignLeft-->None
+11:40:45  Spreadsheet_AlignRight-->None
+11:40:45  Spreadsheet_AlignTop-->None
+11:40:45  Spreadsheet_AlignVCenter-->None
+11:40:45  Spreadsheet_CreateSheet-->None
+11:40:45  Spreadsheet_Export-->None
+11:40:45  Spreadsheet_Import-->None
+11:40:45  Spreadsheet_MergeCells-->None
+11:40:45  Spreadsheet_SetAlias-->Ctrl+Shift+A
+11:40:45  Spreadsheet_SplitCell-->None
+11:40:45  Spreadsheet_StyleBold-->None
+11:40:45  Spreadsheet_StyleItalic-->None
+11:40:45  Spreadsheet_StyleUnderline-->None
+11:40:45  Start_StartPage-->None
+11:40:45  Std_About-->None
+11:40:45  Std_AboutQt-->None
+11:40:45  Std_ActivateNextWindow-->Ctrl+Tab
+11:40:45  Std_ActivatePrevWindow-->Ctrl+Shift+Backtab
+11:40:45  Std_AddonMgr-->None
+11:40:45  Std_Alignment-->None
+11:40:45  Std_ArrangeIcons-->None
+11:40:45  Std_AxisCross-->A, C
+11:40:45  Std_BoxElementSelection-->Shift+E
+11:40:45  Std_BoxSelection-->Shift+B
+11:40:45  Std_CascadeWindows-->None
+11:40:45  Std_CloseActiveWindow-->Ctrl+W
+11:40:45  Std_CloseAllWindows-->None
+11:40:45  Std_CommandLine-->None
+11:40:45  Std_Copy-->Ctrl+C
+11:40:45  Std_Cut-->Ctrl+X
+11:40:45  Std_Delete-->Del
+11:40:45  Std_DemoMode-->None
+11:40:45  Std_DependencyGraph-->None
+11:40:45  Std_DlgCustomize-->None
+11:40:45  Std_DlgMacroExecute-->None
+11:40:45  Std_DlgMacroExecuteDirect-->Ctrl+F6
+11:40:45  Std_DlgMacroRecord-->None
+11:40:45  Std_DlgParameter-->None
+11:40:45  Std_DlgPreferences-->None
+11:40:45  Std_DockViewMenu-->None
+11:40:45  Std_DrawStyle-->None
+11:40:45  Std_DuplicateSelection-->None
+11:40:45  Std_Edit-->None
+11:40:45  Std_Export-->Ctrl+E
+11:40:45  Std_Expressions-->None
+11:40:45  Std_FreeCADFAQ-->None
+11:40:45  Std_FreeCADForum-->None
+11:40:45  Std_FreeCADPowerUserHub-->None
+11:40:45  Std_FreeCADUserHub-->None
+11:40:45  Std_FreeCADWebsite-->None
+11:40:45  Std_FreezeViews-->None
+11:40:45  Std_Group-->None
+11:40:45  Std_HideObjects-->None
+11:40:45  Std_HideSelection-->None
+11:40:45  Std_Import-->Ctrl+I
+11:40:45  Std_LinkActions-->None
+11:40:45  Std_LinkImport-->None
+11:40:45  Std_LinkImportAll-->None
+11:40:45  Std_LinkMake-->None
+11:40:45  Std_LinkMakeGroup-->None
+11:40:45  Std_LinkMakeRelative-->None
+11:40:45  Std_LinkReplace-->None
+11:40:45  Std_LinkSelectActions-->None
+11:40:45  Std_LinkSelectAllLinks-->None
+11:40:45  Std_LinkSelectLinked-->S, G
+11:40:45  Std_LinkSelectLinkedFinal-->S, D
+11:40:45  Std_LinkUnlink-->None
+11:40:45  Std_MDITest1-->None
+11:40:45  Std_MDITest2-->None
+11:40:45  Std_MDITest3-->None
+11:40:45  Std_MacroAttachDebugger-->None
+11:40:45  Std_MacroStartDebug-->F6
+11:40:45  Std_MacroStepInto-->F11
+11:40:45  Std_MacroStepOver-->F10
+11:40:45  Std_MacroStopDebug-->Shift+F6
+11:40:45  Std_MacroStopRecord-->None
+11:40:45  Std_Macro_0-->None
+11:40:45  Std_Macro_1-->None
+11:40:45  Std_Macro_2-->None
+11:40:45  Std_Macro_3-->None
+11:40:45  Std_Macro_4-->None
+11:40:45  Std_Macro_5-->None
+11:40:45  Std_Macro_6-->None
+11:40:45  Std_MainFullscreen-->Alt+F11
+11:40:45  Std_MeasureDistance-->None
+11:40:45  Std_MergeProjects-->None
+11:40:45  Std_New-->Ctrl+N
+11:40:45  Std_OnlineHelp-->F1
+11:40:45  Std_OnlineHelpWebsite-->None
+11:40:45  Std_Open-->Ctrl+O
+11:40:45  Std_OrthographicCamera-->V, O
+11:40:45  Std_Part-->None
+11:40:45  Std_Paste-->Ctrl+V
+11:40:45  Std_PerspectiveCamera-->V, P
+11:40:45  Std_Placement-->None
+11:40:45  Std_Print-->Ctrl+P
+11:40:45  Std_PrintPdf-->None
+11:40:45  Std_PrintPreview-->None
+11:40:45  Std_ProjectInfo-->None
+11:40:45  Std_ProjectUtil-->None
+11:40:45  Std_PythonHelp-->None
+11:40:45  Std_PythonWebsite-->None
+11:40:45  Std_Quit-->Alt+F4
+11:40:45  Std_RandomColor-->None
+11:40:45  Std_RecentFiles-->None
+11:40:45  Std_Recompute-->None
+11:40:45  Std_Redo-->Ctrl+Shift+Z
+11:40:45  Std_Refresh-->Ctrl+R
+11:40:45  Std_Revert-->None
+11:40:45  Std_Save-->Ctrl+S
+11:40:45  Std_SaveAll-->None
+11:40:45  Std_SaveAs-->Ctrl+Shift+S
+11:40:45  Std_SaveCopy-->None
+11:40:45  Std_SceneInspector-->None
+11:40:45  Std_SelBack-->S, B
+11:40:45  Std_SelBoundingBox-->None
+11:40:45  Std_SelForward-->S, F
+11:40:45  Std_SelectAll-->None
+11:40:45  Std_SelectVisibleObjects-->None
+11:40:45  Std_SendToPythonConsole-->Ctrl+Shift+P
+11:40:45  Std_SetAppearance-->Ctrl+D
+11:40:45  Std_ShowObjects-->None
+11:40:45  Std_ShowSelection-->None
+11:40:45  Std_Test1-->None
+11:40:45  Std_Test2-->None
+11:40:45  Std_Test3-->None
+11:40:45  Std_Test4-->None
+11:40:45  Std_Test5-->None
+11:40:45  Std_Test6-->None
+11:40:45  Std_TestCmdFuncs-->None
+11:40:45  Std_TestConsoleOutput-->None
+11:40:45  Std_TestProgress1-->None
+11:40:45  Std_TestProgress2-->None
+11:40:45  Std_TestProgress3-->None
+11:40:45  Std_TestProgress4-->None
+11:40:45  Std_TestProgress5-->None
+11:40:45  Std_TestQM-->None
+11:40:45  Std_TestReloadQM-->None
+11:40:45  Std_TextDocument-->None
+11:40:45  Std_TextureMapping-->None
+11:40:45  Std_TileWindows-->None
+11:40:45  Std_ToggleBreakpoint-->F9
+11:40:45  Std_ToggleClipPlane-->None
+11:40:45  Std_ToggleNavigation-->Esc
+11:40:45  Std_ToggleObjects-->None
+11:40:45  Std_ToggleSelectability-->None
+11:40:45  Std_ToggleVisibility-->Space
+11:40:45  Std_ToolBarMenu-->None
+11:40:45  Std_Transform-->None
+11:40:45  Std_TransformManip-->None
+11:40:45  Std_TreeCollapse-->None
+11:40:45  Std_TreeCollapseDocument-->None
+11:40:45  Std_TreeDrag-->T, D
+11:40:45  Std_TreeExpand-->None
+11:40:45  Std_TreeMultiDocument-->None
+11:40:45  Std_TreePreSelection-->T, 4
+11:40:45  Std_TreeRecordSelection-->T, 5
+11:40:45  Std_TreeSelectAllInstances-->None
+11:40:45  Std_TreeSelection-->T, G
+11:40:45  Std_TreeSingleDocument-->None
+11:40:45  Std_TreeSyncPlacement-->T, 3
+11:40:45  Std_TreeSyncSelection-->T, 2
+11:40:45  Std_TreeSyncView-->T, 1
+11:40:45  Std_TreeViewActions-->None
+11:40:45  Std_Undo-->Ctrl+Z
+11:40:45  Std_UnitsCalculator-->None
+11:40:45  Std_UserInterface-->None
+11:40:45  Std_ViewBottom-->5
+11:40:45  Std_ViewBoxZoom-->Ctrl+B
+11:40:45  Std_ViewCreate-->None
+11:40:45  Std_ViewDimetric-->None
+11:40:45  Std_ViewDock-->V, D
+11:40:45  Std_ViewDockUndockFullscreen-->None
+11:40:45  Std_ViewExample1-->None
+11:40:45  Std_ViewExample2-->None
+11:40:45  Std_ViewExample3-->None
+11:40:45  Std_ViewFitAll-->V, F
+11:40:45  Std_ViewFitSelection-->V, S
+11:40:45  Std_ViewFront-->1
+11:40:45  Std_ViewFullscreen-->F11
+11:40:45  Std_ViewIsometric-->0
+11:40:45  Std_ViewIvIssueCamPos-->None
+11:40:45  Std_ViewIvStereoInterleavedColumns-->None
+11:40:45  Std_ViewIvStereoInterleavedRows-->None
+11:40:45  Std_ViewIvStereoOff-->None
+11:40:45  Std_ViewIvStereoQuadBuff-->None
+11:40:45  Std_ViewIvStereoRedGreen-->None
+11:40:45  Std_ViewLeft-->6
+11:40:45  Std_ViewRear-->4
+11:40:45  Std_ViewRight-->3
+11:40:45  Std_ViewRotateLeft-->Shift+Left
+11:40:45  Std_ViewRotateRight-->Shift+Right
+11:40:45  Std_ViewScreenShot-->None
+11:40:45  Std_ViewStatusBar-->None
+11:40:45  Std_ViewTop-->2
+11:40:45  Std_ViewTrimetric-->None
+11:40:45  Std_ViewUndock-->V, U
+11:40:45  Std_ViewVR-->None
+11:40:45  Std_ViewZoomIn-->Ctrl++
+11:40:45  Std_ViewZoomOut-->Ctrl+-
+11:40:45  Std_WhatsThis-->Shift+F1
+11:40:45  Std_Windows-->None
+11:40:45  Std_WindowsMenu-->None
+11:40:45  Std_Workbench-->None
+11:40:45  Surface_CurveOnMesh-->None
+11:40:45  Surface_ExtendFace-->None
+11:40:45  Surface_Filling-->None
+11:40:45  Surface_GeomFillSurface-->None
+11:40:45  TechDraw_2LineCenterLine-->None
+11:40:45  TechDraw_2PointCenterLine-->None
+11:40:45  TechDraw_3PtAngleDimension-->None
+11:40:45  TechDraw_ActiveView-->None
+11:40:45  TechDraw_AngleDimension-->None
+11:40:45  TechDraw_Annotation-->None
+11:40:45  TechDraw_ArchView-->None
+11:40:45  TechDraw_Balloon-->None
+11:40:45  TechDraw_CenterLineGroup-->None
+11:40:45  TechDraw_ClipGroup-->None
+11:40:45  TechDraw_ClipGroupAdd-->None
+11:40:45  TechDraw_ClipGroupRemove-->None
+11:40:45  TechDraw_CosmeticEraser-->None
+11:40:45  TechDraw_CosmeticVertex-->None
+11:40:45  TechDraw_CosmeticVertexGroup-->None
+11:40:45  TechDraw_DecorateLine-->None
+11:40:45  TechDraw_DetailView-->None
+11:40:45  TechDraw_DiameterDimension-->None
+11:40:45  TechDraw_Dimension-->None
+11:40:45  TechDraw_DraftView-->None
+11:40:45  TechDraw_ExportPageDXF-->None
+11:40:45  TechDraw_ExportPageSVG-->None
+11:40:45  TechDraw_ExtentGroup-->None
+11:40:45  TechDraw_FaceCenterLine-->None
+11:40:45  TechDraw_GeometricHatch-->None
+11:40:45  TechDraw_Hatch-->None
+11:40:45  TechDraw_HorizontalDimension-->None
+11:40:45  TechDraw_HorizontalExtentDimension-->None
+11:40:45  TechDraw_Image-->None
+11:40:45  TechDraw_LandmarkDimension-->None
+11:40:45  TechDraw_LeaderLine-->None
+11:40:45  TechDraw_LengthDimension-->None
+11:40:45  TechDraw_LinkDimension-->None
+11:40:45  TechDraw_Midpoints-->None
+11:40:45  TechDraw_PageDefault-->None
+11:40:45  TechDraw_PageTemplate-->None
+11:40:45  TechDraw_ProjectionGroup-->None
+11:40:45  TechDraw_Quadrants-->None
+11:40:45  TechDraw_RadiusDimension-->None
+11:40:45  TechDraw_RedrawPage-->None
+11:40:45  TechDraw_RichTextAnnotation-->None
+11:40:45  TechDraw_SectionView-->None
+11:40:45  TechDraw_ShowAll-->None
+11:40:45  TechDraw_SpreadsheetView-->None
+11:40:45  TechDraw_Symbol-->None
+11:40:45  TechDraw_ToggleFrame-->None
+11:40:45  TechDraw_VerticalDimension-->None
+11:40:45  TechDraw_VerticalExtentDimension-->None
+11:40:45  TechDraw_View-->None
+11:40:45  TechDraw_WeldSymbol-->None
+11:40:45  Test_InsertFeature-->None
+11:40:45  Test_Test-->None
+11:40:45  Test_TestAll-->None
+11:40:45  Test_TestAllText-->None
+11:40:45  Test_TestBase-->None
+11:40:45  Test_TestBaseText-->None
+11:40:45  Test_TestCreateMenu-->None
+11:40:45  Test_TestDeleteMenu-->None
+11:40:45  Test_TestDoc-->None
+11:40:45  Test_TestDocText-->None
+11:40:45  Test_TestWork-->None
+11:40:45  ThreadProfileCreateBottleObject-->None
+11:40:45  ThreadProfileCreateButtressObject-->None
+11:40:45  ThreadProfileCreateObject-->None
+11:40:45  ThreadProfileDoSweep-->None
+11:40:45  ThreadProfileMakeHelix-->None
+11:40:45  ThreadProfileOpenOnlineCalculator-->None
+11:40:45  ThreadProfileSettings-->None
+11:40:45  View_Measure_Clear_All-->None
+11:40:45  View_Measure_Toggle_All-->None
+11:40:45  Web_BrowserBack-->None
+11:40:45  Web_BrowserNext-->None
+11:40:45  Web_BrowserRefresh-->None
+11:40:45  Web_BrowserSetURL-->None
+11:40:45  Web_BrowserStop-->None
+11:40:45  Web_BrowserZoomIn-->None
+11:40:45  Web_BrowserZoomOut-->None
+11:40:45  Web_OpenWebsite-->None
+11:40:45  refineFeatureTool-->None
+11:40:45  Testing...
+11:40:46  command: AlignerTools-->Ctrl+Alt+Shift+T
+11:40:46  command: AlignerTools-->
+11:40:46  command: AltLCS-->Ctrl+Alt+Shift+T
+11:40:46  command: AltLCS-->
+11:40:46  command: AnnoLbl-->Ctrl+Alt+Shift+T
+11:40:46  command: AnnoLbl-->
+11:40:46  command: Arch_3Views-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_3Views-->
+11:40:46  command: Arch_Add-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_Add-->
+11:40:46  command: Arch_Axis-->
+11:40:46  Unable to set shortcut for command: Arch_Axis
+11:40:46  command: Arch_Axis-->
+11:40:46  command: Arch_AxisSystem-->
+11:40:46  Unable to set shortcut for command: Arch_AxisSystem
+11:40:46  command: Arch_AxisSystem-->
+11:40:46  command: Arch_AxisTools-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_AxisTools-->
+11:40:46  command: Arch_Building-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_Building-->B, U
+11:40:46  command: Arch_BuildingPart-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_BuildingPart-->B, P
+11:40:46  command: Arch_Check-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_Check-->
+11:40:46  command: Arch_CloneComponent-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_CloneComponent-->C, C
+11:40:46  command: Arch_CloseHoles-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_CloseHoles-->
+11:40:46  command: Arch_Component-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_Component-->C, M
+11:40:46  command: Arch_CurtainWall-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_CurtainWall-->C, W
+11:40:46  command: Arch_CutLine-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_CutLine-->
+11:40:46  command: Arch_CutPlane-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_CutPlane-->
+11:40:46  command: Arch_Equipment-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_Equipment-->E, Q
+11:40:46  command: Arch_Fence-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_Fence-->
+11:40:46  command: Arch_Floor-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_Floor-->L, V
+11:40:46  command: Arch_Frame-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_Frame-->F, R
+11:40:46  command: Arch_Grid-->
+11:40:46  Unable to set shortcut for command: Arch_Grid
+11:40:46  command: Arch_Grid-->
+11:40:46  command: Arch_IfcSpreadsheet-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_IfcSpreadsheet-->I, P
+11:40:46  command: Arch_Material-->
+11:40:46  Unable to set shortcut for command: Arch_Material
+11:40:46  command: Arch_Material-->
+11:40:46  command: Arch_MaterialTools-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_MaterialTools-->
+11:40:46  command: Arch_MergeWalls-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_MergeWalls-->
+11:40:46  command: Arch_MeshToShape-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_MeshToShape-->
+11:40:46  command: Arch_MultiMaterial-->
+11:40:46  Unable to set shortcut for command: Arch_MultiMaterial
+11:40:46  command: Arch_MultiMaterial-->
+11:40:46  command: Arch_Nest-->
+11:40:46  Unable to set shortcut for command: Arch_Nest
+11:40:46  command: Arch_Nest-->
+11:40:46  command: Arch_Panel-->
+11:40:46  Unable to set shortcut for command: Arch_Panel
+11:40:46  command: Arch_Panel-->
+11:40:46  command: Arch_PanelTools-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_PanelTools-->
+11:40:46  command: Arch_Panel_Cut-->
+11:40:46  Unable to set shortcut for command: Arch_Panel_Cut
+11:40:46  command: Arch_Panel_Cut-->
+11:40:46  command: Arch_Panel_Sheet-->
+11:40:46  Unable to set shortcut for command: Arch_Panel_Sheet
+11:40:46  command: Arch_Panel_Sheet-->
+11:40:46  command: Arch_Pipe-->
+11:40:46  Unable to set shortcut for command: Arch_Pipe
+11:40:46  command: Arch_Pipe-->
+11:40:46  command: Arch_PipeConnector-->
+11:40:46  Unable to set shortcut for command: Arch_PipeConnector
+11:40:46  command: Arch_PipeConnector-->
+11:40:46  command: Arch_PipeTools-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_PipeTools-->
+11:40:46  command: Arch_Profile-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_Profile-->P, F
+11:40:46  command: Arch_Project-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_Project-->P, O
+11:40:46  command: Arch_Rebar-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_Rebar-->R, B
+11:40:46  command: Arch_Reference-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_Reference-->E, X
+11:40:46  command: Arch_Remove-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_Remove-->
+11:40:46  command: Arch_RemoveShape-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_RemoveShape-->
+11:40:46  command: Arch_Roof-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_Roof-->R, F
+11:40:46  command: Arch_Schedule-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_Schedule-->
+11:40:46  command: Arch_SectionPlane-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_SectionPlane-->S, E
+11:40:46  command: Arch_SelectNonSolidMeshes-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_SelectNonSolidMeshes-->
+11:40:46  command: Arch_Site-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_Site-->S, I
+11:40:46  command: Arch_Space-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_Space-->S, P
+11:40:46  command: Arch_SplitMesh-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_SplitMesh-->
+11:40:46  command: Arch_Stairs-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_Stairs-->S, R
+11:40:46  command: Arch_Structure-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_Structure-->S, T
+11:40:46  command: Arch_Survey-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_Survey-->
+11:40:46  command: Arch_ToggleIfcBrepFlag-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_ToggleIfcBrepFlag-->
+11:40:46  command: Arch_ToggleSubs-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_ToggleSubs-->Ctrl+Space
+11:40:46  command: Arch_Truss-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_Truss-->T, U
+11:40:46  command: Arch_Wall-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_Wall-->W, A
+11:40:46  command: Arch_Window-->Ctrl+Alt+Shift+T
+11:40:46  command: Arch_Window-->W, N
+11:40:46  command: CaliperTools-->Ctrl+Alt+Shift+T
+11:40:46  command: CaliperTools-->
+11:40:46  command: DF_SelectLoop-->Ctrl+Alt+Shift+T
+11:40:46  command: DF_SelectLoop-->
+11:40:46  command: DatumLCS-->Ctrl+Alt+Shift+T
+11:40:46  command: DatumLCS-->
+11:40:46  command: DatumLine-->Ctrl+Alt+Shift+T
+11:40:46  command: DatumLine-->
+11:40:46  command: DatumPlane-->Ctrl+Alt+Shift+T
+11:40:46  command: DatumPlane-->
+11:40:46  command: DatumPoint-->Ctrl+Alt+Shift+T
+11:40:46  command: DatumPoint-->
+11:40:46  command: DefeatShapeFeature-->Ctrl+Alt+Shift+T
+11:40:46  command: DefeatShapeFeature-->
+11:40:46  command: DefeaturingTools-->Ctrl+Alt+Shift+T
+11:40:46  command: DefeaturingTools-->
+11:40:46  command: Draft_AddConstruction-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_AddConstruction-->
+11:40:46  command: Draft_AddToGroup-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_AddToGroup-->
+11:40:46  command: Draft_AnnotationStyleEditor-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_AnnotationStyleEditor-->
+11:40:46  command: Draft_ApplyStyle-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_ApplyStyle-->
+11:40:46  command: Draft_Arc-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_Arc-->A, R
+11:40:46  command: Draft_ArcTools-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_ArcTools-->
+11:40:46  command: Draft_Arc_3Points-->
+11:40:46  Unable to set shortcut for command: Draft_Arc_3Points
+11:40:46  command: Draft_Arc_3Points-->
+11:40:46  command: Draft_Array-->
+11:40:46  Unable to set shortcut for command: Draft_Array
+11:40:46  command: Draft_Array-->
+11:40:46  command: Draft_ArrayTools-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_ArrayTools-->
+11:40:46  command: Draft_AutoGroup-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_AutoGroup-->
+11:40:46  command: Draft_BSpline-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_BSpline-->B, S
+11:40:46  command: Draft_BezCurve-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_BezCurve-->B, Z
+11:40:46  command: Draft_BezierTools-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_BezierTools-->
+11:40:46  command: Draft_Circle-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_Circle-->C, I
+11:40:46  command: Draft_CircularArray-->
+11:40:46  Unable to set shortcut for command: Draft_CircularArray
+11:40:46  command: Draft_CircularArray-->
+11:40:46  command: Draft_Clone-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_Clone-->C, L
+11:40:46  command: Draft_CloseLine-->
+11:40:46  Unable to set shortcut for command: Draft_CloseLine
+11:40:46  command: Draft_CloseLine-->
+11:40:46  command: Draft_CubicBezCurve-->
+11:40:46  Unable to set shortcut for command: Draft_CubicBezCurve
+11:40:46  command: Draft_CubicBezCurve-->
+11:40:46  command: Draft_Dimension-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_Dimension-->D, I
+11:40:46  command: Draft_Downgrade-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_Downgrade-->D, N
+11:40:46  command: Draft_Draft2Sketch-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_Draft2Sketch-->
+11:40:46  command: Draft_Drawing-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_Drawing-->
+11:40:46  command: Draft_Edit-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_Edit-->D, E
+11:40:46  command: Draft_Ellipse-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_Ellipse-->E, L
+11:40:46  command: Draft_Facebinder-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_Facebinder-->F, F
+11:40:46  command: Draft_Fillet-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_Fillet-->
+11:40:46  command: Draft_FinishLine-->
+11:40:46  Unable to set shortcut for command: Draft_FinishLine
+11:40:46  command: Draft_FinishLine-->
+11:40:46  command: Draft_FlipDimension-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_FlipDimension-->
+11:40:46  command: Draft_Heal-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_Heal-->
+11:40:46  command: Draft_Join-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_Join-->J, O
+11:40:46  command: Draft_Label-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_Label-->D, L
+11:40:46  command: Draft_Layer-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_Layer-->
+11:40:46  command: Draft_Line-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_Line-->L, I
+11:40:46  command: Draft_LinkArray-->
+11:40:46  Unable to set shortcut for command: Draft_LinkArray
+11:40:46  command: Draft_LinkArray-->
+11:40:46  command: Draft_Mirror-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_Mirror-->M, I
+11:40:46  command: Draft_Move-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_Move-->M, V
+11:40:46  command: Draft_Offset-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_Offset-->O, S
+11:40:46  command: Draft_OrthoArray-->
+11:40:46  Unable to set shortcut for command: Draft_OrthoArray
+11:40:46  command: Draft_OrthoArray-->
+11:40:46  command: Draft_PathArray-->
+11:40:46  Unable to set shortcut for command: Draft_PathArray
+11:40:46  command: Draft_PathArray-->
+11:40:46  command: Draft_PathLinkArray-->
+11:40:46  Unable to set shortcut for command: Draft_PathLinkArray
+11:40:46  command: Draft_PathLinkArray-->
+11:40:46  command: Draft_Point-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_Point-->
+11:40:46  command: Draft_PointArray-->
+11:40:46  Unable to set shortcut for command: Draft_PointArray
+11:40:46  command: Draft_PointArray-->
+11:40:46  command: Draft_PolarArray-->
+11:40:46  Unable to set shortcut for command: Draft_PolarArray
+11:40:46  command: Draft_PolarArray-->
+11:40:46  command: Draft_Polygon-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_Polygon-->P, G
+11:40:46  command: Draft_Rectangle-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_Rectangle-->R, E
+11:40:46  command: Draft_Rotate-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_Rotate-->R, O
+11:40:46  command: Draft_Scale-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_Scale-->S, C
+11:40:46  command: Draft_SelectGroup-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_SelectGroup-->
+11:40:46  command: Draft_SelectPlane-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_SelectPlane-->W, P
+11:40:46  command: Draft_Shape2DView-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_Shape2DView-->
+11:40:46  command: Draft_ShapeString-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_ShapeString-->S, S
+11:40:46  command: Draft_ShowSnapBar-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_ShowSnapBar-->
+11:40:46  command: Draft_Slope-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_Slope-->
+11:40:46  command: Draft_Snap_Angle-->
+11:40:46  Unable to set shortcut for command: Draft_Snap_Angle
+11:40:46  command: Draft_Snap_Angle-->
+11:40:46  command: Draft_Snap_Center-->
+11:40:46  Unable to set shortcut for command: Draft_Snap_Center
+11:40:46  command: Draft_Snap_Center-->
+11:40:46  command: Draft_Snap_Dimensions-->
+11:40:46  Unable to set shortcut for command: Draft_Snap_Dimensions
+11:40:46  command: Draft_Snap_Dimensions-->
+11:40:46  command: Draft_Snap_Endpoint-->
+11:40:46  Unable to set shortcut for command: Draft_Snap_Endpoint
+11:40:46  command: Draft_Snap_Endpoint-->
+11:40:46  command: Draft_Snap_Extension-->
+11:40:46  Unable to set shortcut for command: Draft_Snap_Extension
+11:40:46  command: Draft_Snap_Extension-->
+11:40:46  command: Draft_Snap_Grid-->
+11:40:46  Unable to set shortcut for command: Draft_Snap_Grid
+11:40:46  command: Draft_Snap_Grid-->
+11:40:46  command: Draft_Snap_Intersection-->
+11:40:46  Unable to set shortcut for command: Draft_Snap_Intersection
+11:40:46  command: Draft_Snap_Intersection-->
+11:40:46  command: Draft_Snap_Lock-->
+11:40:46  Unable to set shortcut for command: Draft_Snap_Lock
+11:40:46  command: Draft_Snap_Lock-->
+11:40:46  command: Draft_Snap_Midpoint-->
+11:40:46  Unable to set shortcut for command: Draft_Snap_Midpoint
+11:40:46  command: Draft_Snap_Midpoint-->
+11:40:46  command: Draft_Snap_Near-->
+11:40:46  Unable to set shortcut for command: Draft_Snap_Near
+11:40:46  command: Draft_Snap_Near-->
+11:40:46  command: Draft_Snap_Ortho-->
+11:40:46  Unable to set shortcut for command: Draft_Snap_Ortho
+11:40:46  command: Draft_Snap_Ortho-->
+11:40:46  command: Draft_Snap_Parallel-->
+11:40:46  Unable to set shortcut for command: Draft_Snap_Parallel
+11:40:46  command: Draft_Snap_Parallel-->
+11:40:46  command: Draft_Snap_Perpendicular-->
+11:40:46  Unable to set shortcut for command: Draft_Snap_Perpendicular
+11:40:46  command: Draft_Snap_Perpendicular-->
+11:40:46  command: Draft_Snap_Special-->
+11:40:46  Unable to set shortcut for command: Draft_Snap_Special
+11:40:46  command: Draft_Snap_Special-->
+11:40:46  command: Draft_Snap_WorkingPlane-->
+11:40:46  Unable to set shortcut for command: Draft_Snap_WorkingPlane
+11:40:46  command: Draft_Snap_WorkingPlane-->
+11:40:46  command: Draft_Split-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_Split-->S, P
+11:40:46  command: Draft_Stretch-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_Stretch-->S, H
+11:40:46  command: Draft_SubelementHighlight-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_SubelementHighlight-->H, S
+11:40:46  command: Draft_Text-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_Text-->T, E
+11:40:46  command: Draft_ToggleConstructionMode-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_ToggleConstructionMode-->C, M
+11:40:46  command: Draft_ToggleContinueMode-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_ToggleContinueMode-->
+11:40:46  command: Draft_ToggleDisplayMode-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_ToggleDisplayMode-->Shift+Space
+11:40:46  command: Draft_ToggleGrid-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_ToggleGrid-->G, R
+11:40:46  command: Draft_Trimex-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_Trimex-->T, R
+11:40:46  command: Draft_UndoLine-->
+11:40:46  Unable to set shortcut for command: Draft_UndoLine
+11:40:46  command: Draft_UndoLine-->
+11:40:46  command: Draft_Upgrade-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_Upgrade-->U, P
+11:40:46  command: Draft_Wire-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_Wire-->P, L
+11:40:46  command: Draft_WireToBSpline-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_WireToBSpline-->
+11:40:46  command: Draft_WorkingPlaneProxy-->Ctrl+Alt+Shift+T
+11:40:46  command: Draft_WorkingPlaneProxy-->
+11:40:46  command: Drawing_Annotation-->Ctrl+Alt+Shift+T
+11:40:46  command: Drawing_Annotation-->
+11:40:46  command: Drawing_Clip-->Ctrl+Alt+Shift+T
+11:40:46  command: Drawing_Clip-->
+11:40:46  command: Drawing_DraftView-->Ctrl+Alt+Shift+T
+11:40:46  command: Drawing_DraftView-->
+11:40:46  command: Drawing_ExportPage-->Ctrl+Alt+Shift+T
+11:40:46  command: Drawing_ExportPage-->
+11:40:46  command: Drawing_NewA3Landscape-->
+11:40:46  Unable to set shortcut for command: Drawing_NewA3Landscape
+11:40:46  command: Drawing_NewA3Landscape-->
+11:40:46  command: Drawing_NewPage-->Ctrl+Alt+Shift+T
+11:40:46  command: Drawing_NewPage-->
+11:40:46  command: Drawing_NewView-->Ctrl+Alt+Shift+T
+11:40:46  command: Drawing_NewView-->
+11:40:46  command: Drawing_Open-->Ctrl+Alt+Shift+T
+11:40:46  command: Drawing_Open-->
+11:40:46  command: Drawing_OpenBrowserView-->Ctrl+Alt+Shift+T
+11:40:46  command: Drawing_OpenBrowserView-->
+11:40:46  command: Drawing_OrthoViews-->Ctrl+Alt+Shift+T
+11:40:46  command: Drawing_OrthoViews-->
+11:40:46  command: Drawing_ProjectShape-->Ctrl+Alt+Shift+T
+11:40:46  command: Drawing_ProjectShape-->
+11:40:46  command: Drawing_SpreadsheetView-->Ctrl+Alt+Shift+T
+11:40:46  command: Drawing_SpreadsheetView-->
+11:40:46  command: Drawing_Symbol-->Ctrl+Alt+Shift+T
+11:40:46  command: Drawing_Symbol-->
+11:40:46  command: DynamicDataAddProperty-->Ctrl+Alt+Shift+T
+11:40:46  command: DynamicDataAddProperty-->
+11:40:46  command: DynamicDataCopyProperty-->Ctrl+Alt+Shift+T
+11:40:46  command: DynamicDataCopyProperty-->
+11:40:46  command: DynamicDataCreateObject-->Ctrl+Alt+Shift+T
+11:40:46  command: DynamicDataCreateObject-->
+11:40:46  command: DynamicDataImportAliases-->Ctrl+Alt+Shift+T
+11:40:46  command: DynamicDataImportAliases-->
+11:40:46  command: DynamicDataImportNamedConstraints-->Ctrl+Alt+Shift+T
+11:40:46  command: DynamicDataImportNamedConstraints-->
+11:40:46  command: DynamicDataRemoveProperty-->Ctrl+Alt+Shift+T
+11:40:46  command: DynamicDataRemoveProperty-->
+11:40:46  command: DynamicDataSettings-->Ctrl+Alt+Shift+T
+11:40:46  command: DynamicDataSettings-->
+11:40:46  command: FEM_Analysis-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_Analysis-->N, A
+11:40:46  command: FEM_ClippingPlaneAdd-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_ClippingPlaneAdd-->
+11:40:46  command: FEM_ClippingPlaneRemoveAll-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_ClippingPlaneRemoveAll-->
+11:40:46  command: FEM_ConstantVacuumPermittivity-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_ConstantVacuumPermittivity-->
+11:40:46  command: FEM_ConstraintBearing-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_ConstraintBearing-->
+11:40:46  command: FEM_ConstraintBodyHeatSource-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_ConstraintBodyHeatSource-->
+11:40:46  command: FEM_ConstraintContact-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_ConstraintContact-->
+11:40:46  command: FEM_ConstraintDisplacement-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_ConstraintDisplacement-->
+11:40:46  command: FEM_ConstraintElectrostaticPotential-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_ConstraintElectrostaticPotential-->
+11:40:46  command: FEM_ConstraintFixed-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_ConstraintFixed-->
+11:40:46  command: FEM_ConstraintFlowVelocity-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_ConstraintFlowVelocity-->
+11:40:46  command: FEM_ConstraintFluidBoundary-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_ConstraintFluidBoundary-->
+11:40:46  command: FEM_ConstraintForce-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_ConstraintForce-->
+11:40:46  command: FEM_ConstraintGear-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_ConstraintGear-->
+11:40:46  command: FEM_ConstraintHeatflux-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_ConstraintHeatflux-->
+11:40:46  command: FEM_ConstraintInitialFlowVelocity-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_ConstraintInitialFlowVelocity-->
+11:40:46  command: FEM_ConstraintInitialTemperature-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_ConstraintInitialTemperature-->
+11:40:46  command: FEM_ConstraintPlaneRotation-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_ConstraintPlaneRotation-->
+11:40:46  command: FEM_ConstraintPressure-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_ConstraintPressure-->
+11:40:46  command: FEM_ConstraintPulley-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_ConstraintPulley-->
+11:40:46  command: FEM_ConstraintSectionPrint-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_ConstraintSectionPrint-->
+11:40:46  command: FEM_ConstraintSelfWeight-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_ConstraintSelfWeight-->C, W
+11:40:46  command: FEM_ConstraintTemperature-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_ConstraintTemperature-->
+11:40:46  command: FEM_ConstraintTie-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_ConstraintTie-->C, T
+11:40:46  command: FEM_ConstraintTransform-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_ConstraintTransform-->
+11:40:46  command: FEM_CreateNodesSet-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_CreateNodesSet-->
+11:40:46  command: FEM_DefineNodesSet-->
+11:40:46  Unable to set shortcut for command: FEM_DefineNodesSet
+11:40:46  command: FEM_DefineNodesSet-->
+11:40:46  command: FEM_ElementFluid1D-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_ElementFluid1D-->C, B
+11:40:46  command: FEM_ElementGeometry1D-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_ElementGeometry1D-->C, B
+11:40:46  command: FEM_ElementGeometry2D-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_ElementGeometry2D-->C, S
+11:40:46  command: FEM_ElementRotation1D-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_ElementRotation1D-->C, R
+11:40:46  command: FEM_EquationElasticity-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_EquationElasticity-->
+11:40:46  command: FEM_EquationElectricforce-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_EquationElectricforce-->
+11:40:46  command: FEM_EquationElectrostatic-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_EquationElectrostatic-->
+11:40:46  command: FEM_EquationFlow-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_EquationFlow-->
+11:40:46  command: FEM_EquationFlux-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_EquationFlux-->
+11:40:46  command: FEM_EquationHeat-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_EquationHeat-->
+11:40:46  command: FEM_Examples-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_Examples-->
+11:40:46  command: FEM_FEMMesh2Mesh-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_FEMMesh2Mesh-->
+11:40:46  command: FEM_MaterialEditor-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_MaterialEditor-->
+11:40:46  command: FEM_MaterialFluid-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_MaterialFluid-->
+11:40:46  command: FEM_MaterialMechanicalNonlinear-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_MaterialMechanicalNonlinear-->C, W
+11:40:46  command: FEM_MaterialReinforced-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_MaterialReinforced-->M, M
+11:40:46  command: FEM_MaterialSolid-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_MaterialSolid-->M, M
+11:40:46  command: FEM_MeshBoundaryLayer-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_MeshBoundaryLayer-->M, B
+11:40:46  command: FEM_MeshClear-->
+11:40:46  Unable to set shortcut for command: FEM_MeshClear
+11:40:46  command: FEM_MeshClear-->
+11:40:46  command: FEM_MeshDisplayInfo-->
+11:40:46  Unable to set shortcut for command: FEM_MeshDisplayInfo
+11:40:46  command: FEM_MeshDisplayInfo-->
+11:40:46  command: FEM_MeshGmshFromShape-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_MeshGmshFromShape-->
+11:40:46  command: FEM_MeshGroup-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_MeshGroup-->M, G
+11:40:46  command: FEM_MeshNetgenFromShape-->
+11:40:46  Unable to set shortcut for command: FEM_MeshNetgenFromShape
+11:40:46  command: FEM_MeshNetgenFromShape-->
+11:40:46  command: FEM_MeshRegion-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_MeshRegion-->M, R
+11:40:46  command: FEM_PostApplyChanges-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_PostApplyChanges-->
+11:40:46  command: FEM_PostCreateFunctions-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_PostCreateFunctions-->
+11:40:46  command: FEM_PostFilterClipRegion-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_PostFilterClipRegion-->
+11:40:46  command: FEM_PostFilterClipScalar-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_PostFilterClipScalar-->
+11:40:46  command: FEM_PostFilterCutFunction-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_PostFilterCutFunction-->
+11:40:46  command: FEM_PostFilterDataAlongLine-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_PostFilterDataAlongLine-->
+11:40:46  command: FEM_PostFilterDataAtPoint-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_PostFilterDataAtPoint-->
+11:40:46  command: FEM_PostFilterLinearizedStresses-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_PostFilterLinearizedStresses-->
+11:40:46  command: FEM_PostFilterWarp-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_PostFilterWarp-->
+11:40:46  command: FEM_PostPipelineFromResult-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_PostPipelineFromResult-->
+11:40:46  command: FEM_ResultShow-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_ResultShow-->S, R
+11:40:46  command: FEM_ResultsPurge-->Ctrl+Alt+Shift+T
+11:40:46  command: FEM_ResultsPurge-->S, S
+11:40:46  command: FEM_SolverCalculiX-->Ctrl+Alt+Shift+T
+11:40:47  command: FEM_SolverCalculiX-->S, C
+11:40:47  command: FEM_SolverCalculixCxxtools-->Ctrl+Alt+Shift+T
+11:40:47  command: FEM_SolverCalculixCxxtools-->S, X
+11:40:47  command: FEM_SolverControl-->Ctrl+Alt+Shift+T
+11:40:47  command: FEM_SolverControl-->S, C
+11:40:47  command: FEM_SolverElmer-->Ctrl+Alt+Shift+T
+11:40:47  command: FEM_SolverElmer-->S, E
+11:40:47  command: FEM_SolverRun-->Ctrl+Alt+Shift+T
+11:40:47  command: FEM_SolverRun-->R, C
+11:40:47  command: FEM_SolverZ88-->Ctrl+Alt+Shift+T
+11:40:47  command: FEM_SolverZ88-->S, Z
+11:40:47  command: FSChangeParams-->Ctrl+Alt+Shift+T
+11:40:47  command: FSChangeParams-->
+11:40:47  command: FSDIN557-->Ctrl+Alt+Shift+T
+11:40:47  command: FSDIN557-->
+11:40:47  command: FSDIN562-->Ctrl+Alt+Shift+T
+11:40:47  command: FSDIN562-->
+11:40:47  command: FSDIN967-->Ctrl+Alt+Shift+T
+11:40:47  command: FSDIN967-->
+11:40:47  command: FSDIN985-->Ctrl+Alt+Shift+T
+11:40:47  command: FSDIN985-->
+11:40:47  command: FSEN1661-->Ctrl+Alt+Shift+T
+11:40:47  command: FSEN1661-->
+11:40:47  command: FSEN1662-->Ctrl+Alt+Shift+T
+11:40:47  command: FSEN1662-->
+11:40:47  command: FSEN1665-->Ctrl+Alt+Shift+T
+11:40:47  command: FSEN1665-->
+11:40:47  command: FSFillet-->Ctrl+Alt+Shift+T
+11:40:47  command: FSFillet-->
+11:40:47  command: FSFlip-->Ctrl+Alt+Shift+T
+11:40:47  command: FSFlip-->
+11:40:47  command: FSHexNut-->
+11:40:47  Unable to set shortcut for command: FSHexNut
+11:40:47  command: FSHexNut-->
+11:40:47  command: FSISO10642-->Ctrl+Alt+Shift+T
+11:40:47  command: FSISO10642-->
+11:40:47  command: FSISO1207-->Ctrl+Alt+Shift+T
+11:40:47  command: FSISO1207-->
+11:40:47  command: FSISO14579-->Ctrl+Alt+Shift+T
+11:40:47  command: FSISO14579-->
+11:40:47  command: FSISO14580-->Ctrl+Alt+Shift+T
+11:40:47  command: FSISO14580-->
+11:40:47  command: FSISO14582-->Ctrl+Alt+Shift+T
+11:40:47  command: FSISO14582-->
+11:40:47  command: FSISO14583-->Ctrl+Alt+Shift+T
+11:40:47  command: FSISO14583-->
+11:40:47  command: FSISO14584-->Ctrl+Alt+Shift+T
+11:40:47  command: FSISO14584-->
+11:40:47  command: FSISO1580-->Ctrl+Alt+Shift+T
+11:40:47  command: FSISO1580-->
+11:40:47  command: FSISO2009-->Ctrl+Alt+Shift+T
+11:40:47  command: FSISO2009-->
+11:40:47  command: FSISO2010-->Ctrl+Alt+Shift+T
+11:40:47  command: FSISO2010-->
+11:40:47  command: FSISO4014-->Ctrl+Alt+Shift+T
+11:40:47  command: FSISO4014-->
+11:40:47  command: FSISO4017-->Ctrl+Alt+Shift+T
+11:40:47  command: FSISO4017-->
+11:40:47  command: FSISO4032-->Ctrl+Alt+Shift+T
+11:40:47  command: FSISO4032-->
+11:40:47  command: FSISO4033-->Ctrl+Alt+Shift+T
+11:40:47  command: FSISO4033-->
+11:40:47  command: FSISO4035-->Ctrl+Alt+Shift+T
+11:40:47  command: FSISO4035-->
+11:40:47  command: FSISO4762-->Ctrl+Alt+Shift+T
+11:40:47  command: FSISO4762-->
+11:40:47  command: FSISO7045-->Ctrl+Alt+Shift+T
+11:40:47  command: FSISO7045-->
+11:40:47  command: FSISO7046-->Ctrl+Alt+Shift+T
+11:40:47  command: FSISO7046-->
+11:40:47  command: FSISO7047-->Ctrl+Alt+Shift+T
+11:40:47  command: FSISO7047-->
+11:40:47  command: FSISO7048-->Ctrl+Alt+Shift+T
+11:40:47  command: FSISO7048-->
+11:40:47  command: FSISO7089-->Ctrl+Alt+Shift+T
+11:40:47  command: FSISO7089-->
+11:40:47  command: FSISO7090-->Ctrl+Alt+Shift+T
+11:40:47  command: FSISO7090-->
+11:40:47  command: FSISO7092-->Ctrl+Alt+Shift+T
+11:40:47  command: FSISO7092-->
+11:40:47  command: FSISO7093-1-->Ctrl+Alt+Shift+T
+11:40:47  command: FSISO7093-1-->
+11:40:47  command: FSISO7094-->Ctrl+Alt+Shift+T
+11:40:47  command: FSISO7094-->
+11:40:47  command: FSISO7380-1-->Ctrl+Alt+Shift+T
+11:40:47  command: FSISO7380-1-->
+11:40:47  command: FSISO7380-2-->Ctrl+Alt+Shift+T
+11:40:47  command: FSISO7380-2-->
+11:40:47  command: FSMakeBOM-->Ctrl+Alt+Shift+T
+11:40:47  command: FSMakeBOM-->
+11:40:47  command: FSMatchTypeGroup-->Ctrl+Alt+Shift+T
+11:40:47  command: FSMatchTypeGroup-->
+11:40:47  command: FSMatchTypeInner-->
+11:40:47  Unable to set shortcut for command: FSMatchTypeInner
+11:40:47  command: FSMatchTypeInner-->
+11:40:47  command: FSMatchTypeOuter-->
+11:40:47  Unable to set shortcut for command: FSMatchTypeOuter
+11:40:47  command: FSMatchTypeOuter-->
+11:40:47  command: FSMove-->Ctrl+Alt+Shift+T
+11:40:47  command: FSMove-->
+11:40:47  command: FSPressNut-->Ctrl+Alt+Shift+T
+11:40:47  command: FSPressNut-->
+11:40:47  command: FSScrewCalc-->Ctrl+Alt+Shift+T
+11:40:47  command: FSScrewCalc-->
+11:40:47  command: FSScrewTap-->Ctrl+Alt+Shift+T
+11:40:47  command: FSScrewTap-->
+11:40:47  command: FSSimple-->Ctrl+Alt+Shift+T
+11:40:47  command: FSSimple-->
+11:40:47  command: FSStandOff-->Ctrl+Alt+Shift+T
+11:40:47  command: FSStandOff-->
+11:40:47  command: FSStud-->Ctrl+Alt+Shift+T
+11:40:47  command: FSStud-->
+11:40:47  command: FuzzyCommon-->Ctrl+Alt+Shift+T
+11:40:47  command: FuzzyCommon-->
+11:40:47  command: FuzzyCut-->Ctrl+Alt+Shift+T
+11:40:47  command: FuzzyCut-->
+11:40:47  command: FuzzyUnion-->Ctrl+Alt+Shift+T
+11:40:47  command: FuzzyUnion-->
+11:40:47  command: Image_CreateImagePlane-->Ctrl+Alt+Shift+T
+11:40:47  command: Image_CreateImagePlane-->
+11:40:47  command: Image_Open-->Ctrl+Alt+Shift+T
+11:40:47  command: Image_Open-->
+11:40:47  command: Image_Scaling-->Ctrl+Alt+Shift+T
+11:40:47  command: Image_Scaling-->
+11:40:47  command: Inspection_InspectElement-->Ctrl+Alt+Shift+T
+11:40:47  command: Inspection_InspectElement-->
+11:40:47  command: Inspection_VisualInspection-->Ctrl+Alt+Shift+T
+11:40:47  command: Inspection_VisualInspection-->
+11:40:47  command: Lattice2Mirror-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2Mirror-->
+11:40:47  command: Lattice2Slice-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2Slice-->
+11:40:47  command: Lattice2_ArrayFilter_GroupCommand-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_ArrayFilter_GroupCommand-->
+11:40:47  command: Lattice2_ArrayFilter_Items-->
+11:40:47  Unable to set shortcut for command: Lattice2_ArrayFilter_Items
+11:40:47  command: Lattice2_ArrayFilter_Items-->
+11:40:47  command: Lattice2_ArrayFiltercollision_pass-->
+11:40:47  Unable to set shortcut for command: Lattice2_ArrayFiltercollision_pass
+11:40:47  command: Lattice2_ArrayFiltercollision_pass-->
+11:40:47  command: Lattice2_ArrayFilterpointing_at-->
+11:40:47  Unable to set shortcut for command: Lattice2_ArrayFilterpointing_at
+11:40:47  command: Lattice2_ArrayFilterpointing_at-->
+11:40:47  command: Lattice2_ArrayFilterwindow_distance-->
+11:40:47  Unable to set shortcut for command: Lattice2_ArrayFilterwindow_distance
+11:40:47  command: Lattice2_ArrayFilterwindow_distance-->
+11:40:47  command: Lattice2_ArrayFromShapeGroup-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_ArrayFromShapeGroup-->
+11:40:47  command: Lattice2_ArrayFromShape_CenterBB-->
+11:40:47  Unable to set shortcut for command: Lattice2_ArrayFromShape_CenterBB
+11:40:47  command: Lattice2_ArrayFromShape_CenterBB-->
+11:40:47  command: Lattice2_ArrayFromShape_CenterMass-->
+11:40:47  Unable to set shortcut for command: Lattice2_ArrayFromShape_CenterMass
+11:40:47  command: Lattice2_ArrayFromShape_CenterMass-->
+11:40:47  command: Lattice2_ArrayFromShape_Inertial-->
+11:40:47  Unable to set shortcut for command: Lattice2_ArrayFromShape_Inertial
+11:40:47  command: Lattice2_ArrayFromShape_Inertial-->
+11:40:47  command: Lattice2_ArrayFromShape_Internal-->
+11:40:47  Unable to set shortcut for command: Lattice2_ArrayFromShape_Internal
+11:40:47  command: Lattice2_ArrayFromShape_Internal-->
+11:40:47  command: Lattice2_AttachedPlacement-->
+11:40:47  Unable to set shortcut for command: Lattice2_AttachedPlacement
+11:40:47  command: Lattice2_AttachedPlacement-->
+11:40:47  command: Lattice2_AttachedPlacementSubsequence-->
+11:40:47  Unable to set shortcut for command: Lattice2_AttachedPlacementSubsequence
+11:40:47  command: Lattice2_AttachedPlacementSubsequence-->
+11:40:47  command: Lattice2_AttachedPlacement_Group-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_AttachedPlacement_Group-->
+11:40:47  command: Lattice2_BoundBoxGroupCommand-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_BoundBoxGroupCommand-->
+11:40:47  command: Lattice2_BoundBox_Compound-->
+11:40:47  Unable to set shortcut for command: Lattice2_BoundBox_Compound
+11:40:47  command: Lattice2_BoundBox_Compound-->
+11:40:47  command: Lattice2_BoundBox_Single-->
+11:40:47  Unable to set shortcut for command: Lattice2_BoundBox_Single
+11:40:47  command: Lattice2_BoundBox_Single-->
+11:40:47  command: Lattice2_Compound-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_Compound-->
+11:40:47  command: Lattice2_CompoundFilter-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_CompoundFilter-->
+11:40:47  command: Lattice2_DowngradeCompSolids-->
+11:40:47  Unable to set shortcut for command: Lattice2_DowngradeCompSolids
+11:40:47  command: Lattice2_DowngradeCompSolids-->
+11:40:47  command: Lattice2_DowngradeEdges-->
+11:40:47  Unable to set shortcut for command: Lattice2_DowngradeEdges
+11:40:47  command: Lattice2_DowngradeEdges-->
+11:40:47  command: Lattice2_DowngradeFaces-->
+11:40:47  Unable to set shortcut for command: Lattice2_DowngradeFaces
+11:40:47  command: Lattice2_DowngradeFaces-->
+11:40:47  command: Lattice2_DowngradeLeaves-->
+11:40:47  Unable to set shortcut for command: Lattice2_DowngradeLeaves
+11:40:47  command: Lattice2_DowngradeLeaves-->
+11:40:47  command: Lattice2_DowngradeNon-seam edges-->
+11:40:47  Unable to set shortcut for command: Lattice2_DowngradeNon-seam edges
+11:40:47  command: Lattice2_DowngradeNon-seam edges-->
+11:40:47  command: Lattice2_DowngradeOpenWires-->
+11:40:47  Unable to set shortcut for command: Lattice2_DowngradeOpenWires
+11:40:47  command: Lattice2_DowngradeOpenWires-->
+11:40:47  command: Lattice2_DowngradeSeam edges-->
+11:40:47  Unable to set shortcut for command: Lattice2_DowngradeSeam edges
+11:40:47  command: Lattice2_DowngradeSeam edges-->
+11:40:47  command: Lattice2_DowngradeShells-->
+11:40:47  Unable to set shortcut for command: Lattice2_DowngradeShells
+11:40:47  command: Lattice2_DowngradeShells-->
+11:40:47  command: Lattice2_DowngradeSolids-->
+11:40:47  Unable to set shortcut for command: Lattice2_DowngradeSolids
+11:40:47  command: Lattice2_DowngradeSolids-->
+11:40:47  command: Lattice2_DowngradeVertices-->
+11:40:47  Unable to set shortcut for command: Lattice2_DowngradeVertices
+11:40:47  command: Lattice2_DowngradeVertices-->
+11:40:47  command: Lattice2_DowngradeWires-->
+11:40:47  Unable to set shortcut for command: Lattice2_DowngradeWires
+11:40:47  command: Lattice2_DowngradeWires-->
+11:40:47  command: Lattice2_Downgrade_GroupCommand-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_Downgrade_GroupCommand-->
+11:40:47  command: Lattice2_Explode-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_Explode-->
+11:40:47  command: Lattice2_ExplodeArray-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_ExplodeArray-->
+11:40:47  command: Lattice2_ExposeLinkSub-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_ExposeLinkSub-->
+11:40:47  command: Lattice2_FuseCompound-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_FuseCompound-->
+11:40:47  command: Lattice2_Help_BasicTutorial-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_Help_BasicTutorial-->
+11:40:47  command: Lattice2_Help_OpenManual-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_Help_OpenManual-->
+11:40:47  command: Lattice2_Inspect-->
+11:40:47  Unable to set shortcut for command: Lattice2_Inspect
+11:40:47  command: Lattice2_Inspect-->
+11:40:47  command: Lattice2_Inspect_GroupCommand-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_Inspect_GroupCommand-->
+11:40:47  command: Lattice2_Invert-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_Invert-->
+11:40:47  command: Lattice2_JoinArrays-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_JoinArrays-->
+11:40:47  command: Lattice2_LinearArray_GroupCommand-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_LinearArray_GroupCommand-->
+11:40:47  command: Lattice2_LinearArray_Random-->
+11:40:47  Unable to set shortcut for command: Lattice2_LinearArray_Random
+11:40:47  command: Lattice2_LinearArray_Random-->
+11:40:47  command: Lattice2_LinearArray_SpanN-->
+11:40:47  Unable to set shortcut for command: Lattice2_LinearArray_SpanN
+11:40:47  command: Lattice2_LinearArray_SpanN-->
+11:40:47  command: Lattice2_LinearArray_SpanStep-->
+11:40:47  Unable to set shortcut for command: Lattice2_LinearArray_SpanStep
+11:40:47  command: Lattice2_LinearArray_SpanStep-->
+11:40:47  command: Lattice2_LinearArray_StepN-->
+11:40:47  Unable to set shortcut for command: Lattice2_LinearArray_StepN
+11:40:47  command: Lattice2_LinearArray_StepN-->
+11:40:47  command: Lattice2_PDPattern-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_PDPattern-->
+11:40:47  command: Lattice2_ParaSeries-->
+11:40:47  Unable to set shortcut for command: Lattice2_ParaSeries
+11:40:47  command: Lattice2_ParaSeries-->
+11:40:47  command: Lattice2_PlacementAx_AlongX-->
+11:40:47  Unable to set shortcut for command: Lattice2_PlacementAx_AlongX
+11:40:47  command: Lattice2_PlacementAx_AlongX-->
+11:40:47  command: Lattice2_PlacementAx_AlongY-->
+11:40:47  Unable to set shortcut for command: Lattice2_PlacementAx_AlongY
+11:40:47  command: Lattice2_PlacementAx_AlongY-->
+11:40:47  command: Lattice2_PlacementAx_AlongZ-->
+11:40:47  Unable to set shortcut for command: Lattice2_PlacementAx_AlongZ
+11:40:47  command: Lattice2_PlacementAx_AlongZ-->
+11:40:47  command: Lattice2_PlacementCustom-->
+11:40:47  Unable to set shortcut for command: Lattice2_PlacementCustom
+11:40:47  command: Lattice2_PlacementCustom-->
+11:40:47  command: Lattice2_PlacementEuler-->
+11:40:47  Unable to set shortcut for command: Lattice2_PlacementEuler
+11:40:47  command: Lattice2_PlacementEuler-->
+11:40:47  command: Lattice2_PlacementFromShape_CenterBB-->
+11:40:47  Unable to set shortcut for command: Lattice2_PlacementFromShape_CenterBB
+11:40:47  command: Lattice2_PlacementFromShape_CenterBB-->
+11:40:47  command: Lattice2_PlacementFromShape_CenterMass-->
+11:40:47  Unable to set shortcut for command: Lattice2_PlacementFromShape_CenterMass
+11:40:47  command: Lattice2_PlacementFromShape_CenterMass-->
+11:40:47  command: Lattice2_PlacementFromShape_Inertial-->
+11:40:47  Unable to set shortcut for command: Lattice2_PlacementFromShape_Inertial
+11:40:47  command: Lattice2_PlacementFromShape_Inertial-->
+11:40:47  command: Lattice2_PlacementFromShape_Internal-->
+11:40:47  Unable to set shortcut for command: Lattice2_PlacementFromShape_Internal
+11:40:47  command: Lattice2_PlacementFromShape_Internal-->
+11:40:47  command: Lattice2_PlacementXY plane-->
+11:40:47  Unable to set shortcut for command: Lattice2_PlacementXY plane
+11:40:47  command: Lattice2_PlacementXY plane-->
+11:40:47  command: Lattice2_PlacementXZ plane-->
+11:40:47  Unable to set shortcut for command: Lattice2_PlacementXZ plane
+11:40:47  command: Lattice2_PlacementXZ plane-->
+11:40:47  command: Lattice2_PlacementYZ plane-->
+11:40:47  Unable to set shortcut for command: Lattice2_PlacementYZ plane
+11:40:47  command: Lattice2_PlacementYZ plane-->
+11:40:47  command: Lattice2_Placement_GroupCommand-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_Placement_GroupCommand-->
+11:40:47  command: Lattice2_PolarArray-->
+11:40:47  Unable to set shortcut for command: Lattice2_PolarArray
+11:40:47  command: Lattice2_PolarArray-->
+11:40:47  command: Lattice2_PolarArray2_GroupCommand-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_PolarArray2_GroupCommand-->
+11:40:47  command: Lattice2_PolarArray2_Random-->
+11:40:47  Unable to set shortcut for command: Lattice2_PolarArray2_Random
+11:40:47  command: Lattice2_PolarArray2_Random-->
+11:40:47  command: Lattice2_PolarArray2_SpanN-->
+11:40:47  Unable to set shortcut for command: Lattice2_PolarArray2_SpanN
+11:40:47  command: Lattice2_PolarArray2_SpanN-->
+11:40:47  command: Lattice2_PolarArray2_SpanStep-->
+11:40:47  Unable to set shortcut for command: Lattice2_PolarArray2_SpanStep
+11:40:47  command: Lattice2_PolarArray2_SpanStep-->
+11:40:47  command: Lattice2_PolarArray2_StepN-->
+11:40:47  Unable to set shortcut for command: Lattice2_PolarArray2_StepN
+11:40:47  command: Lattice2_PolarArray2_StepN-->
+11:40:47  command: Lattice2_PopulateChildrenGroupCommand-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_PopulateChildrenGroupCommand-->
+11:40:47  command: Lattice2_PopulateChildren_Array-->
+11:40:47  Unable to set shortcut for command: Lattice2_PopulateChildren_Array
+11:40:47  command: Lattice2_PopulateChildren_Array-->
+11:40:47  command: Lattice2_PopulateChildren_Move-->
+11:40:47  Unable to set shortcut for command: Lattice2_PopulateChildren_Move
+11:40:47  command: Lattice2_PopulateChildren_Move-->
+11:40:47  command: Lattice2_PopulateChildren_Normal-->
+11:40:47  Unable to set shortcut for command: Lattice2_PopulateChildren_Normal
+11:40:47  command: Lattice2_PopulateChildren_Normal-->
+11:40:47  command: Lattice2_PopulateCopiesGroupCommand-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_PopulateCopiesGroupCommand-->
+11:40:47  command: Lattice2_PopulateCopies_Array-->
+11:40:47  Unable to set shortcut for command: Lattice2_PopulateCopies_Array
+11:40:47  command: Lattice2_PopulateCopies_Array-->
+11:40:47  command: Lattice2_PopulateCopies_Move-->
+11:40:47  Unable to set shortcut for command: Lattice2_PopulateCopies_Move
+11:40:47  command: Lattice2_PopulateCopies_Move-->
+11:40:47  command: Lattice2_PopulateCopies_Normal-->
+11:40:47  Unable to set shortcut for command: Lattice2_PopulateCopies_Normal
+11:40:47  command: Lattice2_PopulateCopies_Normal-->
+11:40:47  command: Lattice2_ProjectArray-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_ProjectArray-->
+11:40:47  command: Lattice2_RecomputeLockerGroup-->
+11:40:47  Unable to set shortcut for command: Lattice2_RecomputeLockerGroup
+11:40:47  command: Lattice2_RecomputeLockerGroup-->
+11:40:47  command: Lattice2_RecomputeLocker_ForceRecompute-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_RecomputeLocker_ForceRecompute-->Shift+F5
+11:40:47  command: Lattice2_RecomputeLocker_LockRecomputes-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_RecomputeLocker_LockRecomputes-->
+11:40:47  command: Lattice2_RecomputeLocker_MakeFeature-->
+11:40:47  Unable to set shortcut for command: Lattice2_RecomputeLocker_MakeFeature
+11:40:47  command: Lattice2_RecomputeLocker_MakeFeature-->
+11:40:47  command: Lattice2_RecomputeLocker_RecomputeDocument-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_RecomputeLocker_RecomputeDocument-->
+11:40:47  command: Lattice2_RecomputeLocker_RecomputeFeature-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_RecomputeLocker_RecomputeFeature-->
+11:40:47  command: Lattice2_RecomputeLocker_Touch-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_RecomputeLocker_Touch-->Shift+F5
+11:40:47  command: Lattice2_RecomputeLocker_UnlockRecomputes-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_RecomputeLocker_UnlockRecomputes-->
+11:40:47  command: Lattice2_Resample-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_Resample-->
+11:40:47  command: Lattice2_Series_GroupCommand-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_Series_GroupCommand-->
+11:40:47  command: Lattice2_ShapeInfoFeature-->
+11:40:47  Unable to set shortcut for command: Lattice2_ShapeInfoFeature
+11:40:47  command: Lattice2_ShapeInfoFeature-->
+11:40:47  command: Lattice2_ShapeString-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_ShapeString-->
+11:40:47  command: Lattice2_SubLink-->
+11:40:47  Unable to set shortcut for command: Lattice2_SubLink
+11:40:47  command: Lattice2_SubLink-->
+11:40:47  command: Lattice2_SublinkSubsequence-->
+11:40:47  Unable to set shortcut for command: Lattice2_SublinkSubsequence
+11:40:47  command: Lattice2_SublinkSubsequence-->
+11:40:47  command: Lattice2_Sublink_GroupCommand-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_Sublink_GroupCommand-->
+11:40:47  command: Lattice2_SubstituteObject-->Ctrl+Alt+Shift+T
+11:40:47  command: Lattice2_SubstituteObject-->
+11:40:47  command: Lattice2_TopoSeries-->
+11:40:47  Unable to set shortcut for command: Lattice2_TopoSeries
+11:40:47  command: Lattice2_TopoSeries-->
+11:40:47  command: Manipulator-cheat-sheet.pdf-->Ctrl+Alt+Shift+T
+11:40:47  command: Manipulator-cheat-sheet.pdf-->
+11:40:47  command: MeshRemodelCreateArc-->Ctrl+Alt+Shift+T
+11:40:47  command: MeshRemodelCreateArc-->
+11:40:47  command: MeshRemodelCreateBSpline-->Ctrl+Alt+Shift+T
+11:40:47  command: MeshRemodelCreateBSpline-->
+11:40:47  command: MeshRemodelCreateCircle-->Ctrl+Alt+Shift+T
+11:40:47  command: MeshRemodelCreateCircle-->
+11:40:47  command: MeshRemodelCreateCoplanarPointsObject-->Ctrl+Alt+Shift+T
+11:40:47  command: MeshRemodelCreateCoplanarPointsObject-->
+11:40:47  command: MeshRemodelCreateLine-->Ctrl+Alt+Shift+T
+11:40:47  command: MeshRemodelCreateLine-->
+11:40:47  command: MeshRemodelCreatePointsObject-->Ctrl+Alt+Shift+T
+11:40:47  command: MeshRemodelCreatePointsObject-->
+11:40:47  command: MeshRemodelCreatePolygon-->Ctrl+Alt+Shift+T
+11:40:47  command: MeshRemodelCreatePolygon-->
+11:40:47  command: MeshRemodelCreateSketch-->Ctrl+Alt+Shift+T
+11:40:47  command: MeshRemodelCreateSketch-->
+11:40:47  command: MeshRemodelCreateWire-->Ctrl+Alt+Shift+T
+11:40:47  command: MeshRemodelCreateWire-->
+11:40:47  command: MeshRemodelMergeSketches-->Ctrl+Alt+Shift+T
+11:40:47  command: MeshRemodelMergeSketches-->
+11:40:47  command: MeshRemodelSettings-->Ctrl+Alt+Shift+T
+11:40:48  command: MeshRemodelSettings-->
+11:40:48  command: MeshRemodelValidateSketch-->Ctrl+Alt+Shift+T
+11:40:48  command: MeshRemodelValidateSketch-->
+11:40:48  command: Mesh_AddFacet-->Ctrl+Alt+Shift+T
+11:40:48  command: Mesh_AddFacet-->
+11:40:48  command: Mesh_BoundingBox-->Ctrl+Alt+Shift+T
+11:40:48  command: Mesh_BoundingBox-->
+11:40:48  command: Mesh_BuildRegularSolid-->Ctrl+Alt+Shift+T
+11:40:48  command: Mesh_BuildRegularSolid-->
+11:40:48  command: Mesh_CrossSections-->Ctrl+Alt+Shift+T
+11:40:48  command: Mesh_CrossSections-->
+11:40:48  command: Mesh_CurvatureInfo-->Ctrl+Alt+Shift+T
+11:40:48  command: Mesh_CurvatureInfo-->
+11:40:48  command: Mesh_Decimating-->Ctrl+Alt+Shift+T
+11:40:48  command: Mesh_Decimating-->
+11:40:48  command: Mesh_Difference-->Ctrl+Alt+Shift+T
+11:40:48  command: Mesh_Difference-->
+11:40:48  command: Mesh_EvaluateFacet-->Ctrl+Alt+Shift+T
+11:40:48  command: Mesh_EvaluateFacet-->
+11:40:48  command: Mesh_EvaluateSolid-->Ctrl+Alt+Shift+T
+11:40:48  command: Mesh_EvaluateSolid-->
+11:40:48  command: Mesh_Evaluation-->Ctrl+Alt+Shift+T
+11:40:48  command: Mesh_Evaluation-->
+11:40:48  command: Mesh_Export-->Ctrl+Alt+Shift+T
+11:40:48  command: Mesh_Export-->
+11:40:48  command: Mesh_FillInteractiveHole-->Ctrl+Alt+Shift+T
+11:40:48  command: Mesh_FillInteractiveHole-->
+11:40:48  command: Mesh_FillupHoles-->Ctrl+Alt+Shift+T
+11:40:48  command: Mesh_FillupHoles-->
+11:40:48  command: Mesh_FlipNormals-->Ctrl+Alt+Shift+T
+11:40:48  command: Mesh_FlipNormals-->
+11:40:48  command: Mesh_FromGeometry-->
+11:40:48  Unable to set shortcut for command: Mesh_FromGeometry
+11:40:48  command: Mesh_FromGeometry-->
+11:40:48  command: Mesh_FromPartShape-->Ctrl+Alt+Shift+T
+11:40:48  command: Mesh_FromPartShape-->
+11:40:48  command: Mesh_HarmonizeNormals-->Ctrl+Alt+Shift+T
+11:40:48  command: Mesh_HarmonizeNormals-->
+11:40:48  command: Mesh_Import-->Ctrl+Alt+Shift+T
+11:40:48  command: Mesh_Import-->
+11:40:48  command: Mesh_Intersection-->Ctrl+Alt+Shift+T
+11:40:48  command: Mesh_Intersection-->
+11:40:48  command: Mesh_Merge-->Ctrl+Alt+Shift+T
+11:40:48  command: Mesh_Merge-->
+11:40:48  command: Mesh_PolyCut-->Ctrl+Alt+Shift+T
+11:40:48  command: Mesh_PolyCut-->
+11:40:48  command: Mesh_PolySegm-->
+11:40:48  Unable to set shortcut for command: Mesh_PolySegm
+11:40:48  command: Mesh_PolySegm-->
+11:40:48  command: Mesh_PolySplit-->
+11:40:48  Unable to set shortcut for command: Mesh_PolySplit
+11:40:48  command: Mesh_PolySplit-->
+11:40:48  command: Mesh_PolyTrim-->Ctrl+Alt+Shift+T
+11:40:48  command: Mesh_PolyTrim-->
+11:40:48  command: Mesh_RemeshGmsh-->Ctrl+Alt+Shift+T
+11:40:48  command: Mesh_RemeshGmsh-->
+11:40:48  command: Mesh_RemoveCompByHand-->Ctrl+Alt+Shift+T
+11:40:48  command: Mesh_RemoveCompByHand-->
+11:40:48  command: Mesh_RemoveComponents-->Ctrl+Alt+Shift+T
+11:40:48  command: Mesh_RemoveComponents-->
+11:40:48  command: Mesh_Scale-->Ctrl+Alt+Shift+T
+11:40:48  command: Mesh_Scale-->
+11:40:48  command: Mesh_SectionByPlane-->Ctrl+Alt+Shift+T
+11:40:48  command: Mesh_SectionByPlane-->
+11:40:48  command: Mesh_Segmentation-->Ctrl+Alt+Shift+T
+11:40:48  command: Mesh_Segmentation-->
+11:40:48  command: Mesh_SegmentationBestFit-->Ctrl+Alt+Shift+T
+11:40:48  command: Mesh_SegmentationBestFit-->
+11:40:48  command: Mesh_Smoothing-->Ctrl+Alt+Shift+T
+11:40:48  command: Mesh_Smoothing-->
+11:40:48  command: Mesh_TrimByPlane-->Ctrl+Alt+Shift+T
+11:40:48  command: Mesh_TrimByPlane-->
+11:40:48  command: Mesh_Union-->Ctrl+Alt+Shift+T
+11:40:48  command: Mesh_Union-->
+11:40:48  command: Mesh_VertexCurvature-->Ctrl+Alt+Shift+T
+11:40:48  command: Mesh_VertexCurvature-->
+11:40:48  command: MoverTools-->Ctrl+Alt+Shift+T
+11:40:48  command: MoverTools-->
+11:40:48  command: OpenSCAD_AddOpenSCADElement-->
+11:40:48  Unable to set shortcut for command: OpenSCAD_AddOpenSCADElement
+11:40:48  command: OpenSCAD_AddOpenSCADElement-->
+11:40:48  command: OpenSCAD_ColorCodeShape-->
+11:40:48  Unable to set shortcut for command: OpenSCAD_ColorCodeShape
+11:40:48  command: OpenSCAD_ColorCodeShape-->
+11:40:48  command: OpenSCAD_Edgestofaces-->Ctrl+Alt+Shift+T
+11:40:48  command: OpenSCAD_Edgestofaces-->
+11:40:48  command: OpenSCAD_ExpandPlacements-->Ctrl+Alt+Shift+T
+11:40:48  command: OpenSCAD_ExpandPlacements-->
+11:40:48  command: OpenSCAD_ExplodeGroup-->Ctrl+Alt+Shift+T
+11:40:48  command: OpenSCAD_ExplodeGroup-->
+11:40:48  command: OpenSCAD_Hull-->
+11:40:48  Unable to set shortcut for command: OpenSCAD_Hull
+11:40:48  command: OpenSCAD_Hull-->
+11:40:48  command: OpenSCAD_IncreaseToleranceFeature-->Ctrl+Alt+Shift+T
+11:40:48  command: OpenSCAD_IncreaseToleranceFeature-->
+11:40:48  command: OpenSCAD_MeshBoolean-->
+11:40:48  Unable to set shortcut for command: OpenSCAD_MeshBoolean
+11:40:48  command: OpenSCAD_MeshBoolean-->
+11:40:48  command: OpenSCAD_Minkowski-->
+11:40:48  Unable to set shortcut for command: OpenSCAD_Minkowski
+11:40:48  command: OpenSCAD_Minkowski-->
+11:40:48  command: OpenSCAD_RefineShapeFeature-->Ctrl+Alt+Shift+T
+11:40:48  command: OpenSCAD_RefineShapeFeature-->
+11:40:48  command: OpenSCAD_RemoveSubtree-->Ctrl+Alt+Shift+T
+11:40:48  command: OpenSCAD_RemoveSubtree-->
+11:40:48  command: OpenSCAD_ReplaceObject-->Ctrl+Alt+Shift+T
+11:40:48  command: OpenSCAD_ReplaceObject-->
+11:40:48  command: PartDesign_AdditiveLoft-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_AdditiveLoft-->
+11:40:48  command: PartDesign_AdditivePipe-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_AdditivePipe-->
+11:40:48  command: PartDesign_Body-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_Body-->
+11:40:48  command: PartDesign_Boolean-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_Boolean-->
+11:40:48  command: PartDesign_Chamfer-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_Chamfer-->
+11:40:48  command: PartDesign_Clone-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_Clone-->
+11:40:48  command: PartDesign_CompPrimitiveAdditive-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_CompPrimitiveAdditive-->
+11:40:48  command: PartDesign_CompPrimitiveSubtractive-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_CompPrimitiveSubtractive-->
+11:40:48  command: PartDesign_CoordinateSystem-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_CoordinateSystem-->
+11:40:48  command: PartDesign_Draft-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_Draft-->
+11:40:48  command: PartDesign_DuplicateSelection-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_DuplicateSelection-->
+11:40:48  command: PartDesign_Fillet-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_Fillet-->
+11:40:48  command: PartDesign_Groove-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_Groove-->
+11:40:48  command: PartDesign_Hole-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_Hole-->
+11:40:48  command: PartDesign_InvoluteGear-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_InvoluteGear-->
+11:40:48  command: PartDesign_Line-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_Line-->
+11:40:48  command: PartDesign_LinearPattern-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_LinearPattern-->
+11:40:48  command: PartDesign_Migrate-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_Migrate-->
+11:40:48  command: PartDesign_Mirrored-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_Mirrored-->
+11:40:48  command: PartDesign_MoveFeature-->
+11:40:48  Unable to set shortcut for command: PartDesign_MoveFeature
+11:40:48  command: PartDesign_MoveFeature-->
+11:40:48  command: PartDesign_MoveFeatureInTree-->
+11:40:48  Unable to set shortcut for command: PartDesign_MoveFeatureInTree
+11:40:48  command: PartDesign_MoveFeatureInTree-->
+11:40:48  command: PartDesign_MoveTip-->
+11:40:48  Unable to set shortcut for command: PartDesign_MoveTip
+11:40:48  command: PartDesign_MoveTip-->
+11:40:48  command: PartDesign_MultiTransform-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_MultiTransform-->
+11:40:48  command: PartDesign_NewSketch-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_NewSketch-->
+11:40:48  command: PartDesign_Pad-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_Pad-->
+11:40:48  command: PartDesign_Plane-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_Plane-->
+11:40:48  command: PartDesign_Pocket-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_Pocket-->
+11:40:48  command: PartDesign_Point-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_Point-->
+11:40:48  command: PartDesign_PolarPattern-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_PolarPattern-->
+11:40:48  command: PartDesign_Revolution-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_Revolution-->
+11:40:48  command: PartDesign_ShapeBinder-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_ShapeBinder-->
+11:40:48  command: PartDesign_Sprocket-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_Sprocket-->
+11:40:48  command: PartDesign_SubShapeBinder-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_SubShapeBinder-->
+11:40:48  command: PartDesign_SubtractiveLoft-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_SubtractiveLoft-->
+11:40:48  command: PartDesign_SubtractivePipe-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_SubtractivePipe-->
+11:40:48  command: PartDesign_Thickness-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_Thickness-->
+11:40:48  command: PartDesign_WizardShaft-->Ctrl+Alt+Shift+T
+11:40:48  command: PartDesign_WizardShaft-->
+11:40:48  command: PartDesign_WizardShaftCallBack-->
+11:40:48  Unable to set shortcut for command: PartDesign_WizardShaftCallBack
+11:40:48  command: PartDesign_WizardShaftCallBack-->
+11:40:48  command: Part_Boolean-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Boolean-->
+11:40:48  command: Part_BooleanFragments-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_BooleanFragments-->
+11:40:48  command: Part_Box-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Box-->
+11:40:48  command: Part_BoxSelection-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_BoxSelection-->
+11:40:48  command: Part_Builder-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Builder-->
+11:40:48  command: Part_Chamfer-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Chamfer-->
+11:40:48  command: Part_CheckGeometry-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_CheckGeometry-->
+11:40:48  command: Part_ColorPerFace-->
+11:40:48  Unable to set shortcut for command: Part_ColorPerFace
+11:40:48  command: Part_ColorPerFace-->
+11:40:48  command: Part_Common-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Common-->
+11:40:48  command: Part_CompCompoundTools-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_CompCompoundTools-->
+11:40:48  command: Part_CompJoinFeatures-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_CompJoinFeatures-->
+11:40:48  command: Part_CompOffset-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_CompOffset-->
+11:40:48  command: Part_CompSplitFeatures-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_CompSplitFeatures-->
+11:40:48  command: Part_Compound-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Compound-->
+11:40:48  command: Part_CompoundFilter-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_CompoundFilter-->
+11:40:48  command: Part_Cone-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Cone-->
+11:40:48  command: Part_CrossSections-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_CrossSections-->
+11:40:48  command: Part_Cut-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Cut-->
+11:40:48  command: Part_Cylinder-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Cylinder-->
+11:40:48  command: Part_Defeaturing-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Defeaturing-->
+11:40:48  command: Part_EditAttachment-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_EditAttachment-->
+11:40:48  command: Part_ElementCopy-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_ElementCopy-->
+11:40:48  command: Part_ExplodeCompound-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_ExplodeCompound-->
+11:40:48  command: Part_Export-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Export-->
+11:40:48  command: Part_Extrude-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Extrude-->
+11:40:48  command: Part_Fillet-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Fillet-->
+11:40:48  command: Part_Fuse-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Fuse-->
+11:40:48  command: Part_Import-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Import-->
+11:40:48  command: Part_ImportCurveNet-->
+11:40:48  Unable to set shortcut for command: Part_ImportCurveNet
+11:40:48  command: Part_ImportCurveNet-->
+11:40:48  command: Part_JoinConnect-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_JoinConnect-->
+11:40:48  command: Part_JoinCutout-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_JoinCutout-->
+11:40:48  command: Part_JoinEmbed-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_JoinEmbed-->
+11:40:48  command: Part_Loft-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Loft-->
+11:40:48  command: Part_MakeFace-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_MakeFace-->
+11:40:48  command: Part_MakeSolid-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_MakeSolid-->
+11:40:48  command: Part_MakeTube-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_MakeTube-->
+11:40:48  command: Part_Measure_Angular-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Measure_Angular-->
+11:40:48  command: Part_Measure_Clear_All-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Measure_Clear_All-->
+11:40:48  command: Part_Measure_Linear-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Measure_Linear-->
+11:40:48  command: Part_Measure_Refresh-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Measure_Refresh-->
+11:40:48  command: Part_Measure_Toggle_3d-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Measure_Toggle_3d-->
+11:40:48  command: Part_Measure_Toggle_All-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Measure_Toggle_All-->
+11:40:48  command: Part_Measure_Toggle_Delta-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Measure_Toggle_Delta-->
+11:40:48  command: Part_Mirror-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Mirror-->
+11:40:48  command: Part_Offset-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Offset-->
+11:40:48  command: Part_Offset2D-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Offset2D-->
+11:40:48  command: Part_PickCurveNet-->
+11:40:48  Unable to set shortcut for command: Part_PickCurveNet
+11:40:48  command: Part_PickCurveNet-->
+11:40:48  command: Part_PointsFromMesh-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_PointsFromMesh-->
+11:40:48  command: Part_Primitives-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Primitives-->
+11:40:48  command: Part_RefineShape-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_RefineShape-->
+11:40:48  command: Part_ReverseShape-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_ReverseShape-->
+11:40:48  command: Part_Revolve-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Revolve-->
+11:40:48  command: Part_RuledSurface-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_RuledSurface-->
+11:40:48  command: Part_Section-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Section-->
+11:40:48  command: Part_ShapeFromMesh-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_ShapeFromMesh-->
+11:40:48  command: Part_ShapeInfo-->
+11:40:48  Unable to set shortcut for command: Part_ShapeInfo
+11:40:48  command: Part_ShapeInfo-->
+11:40:48  command: Part_SimpleCopy-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_SimpleCopy-->
+11:40:48  command: Part_SimpleCylinder-->
+11:40:48  Unable to set shortcut for command: Part_SimpleCylinder
+11:40:48  command: Part_SimpleCylinder-->
+11:40:48  command: Part_Slice-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Slice-->
+11:40:48  command: Part_SliceApart-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_SliceApart-->
+11:40:48  command: Part_Sphere-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Sphere-->
+11:40:48  command: Part_Sweep-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Sweep-->
+11:40:48  command: Part_Thickness-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Thickness-->
+11:40:48  command: Part_Torus-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_Torus-->
+11:40:48  command: Part_TransformedCopy-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_TransformedCopy-->
+11:40:48  command: Part_XOR-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_XOR-->
+11:40:48  command: Part_projectionOnSurface-->Ctrl+Alt+Shift+T
+11:40:48  command: Part_projectionOnSurface-->
+11:40:48  command: Path_Adaptive-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_Adaptive-->
+11:40:48  command: Path_Area-->
+11:40:48  Unable to set shortcut for command: Path_Area
+11:40:48  command: Path_Area-->
+11:40:48  command: Path_Area_Workplane-->
+11:40:48  Unable to set shortcut for command: Path_Area_Workplane
+11:40:48  command: Path_Area_Workplane-->
+11:40:48  command: Path_Array-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_Array-->
+11:40:48  command: Path_Comment-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_Comment-->
+11:40:48  command: Path_Compound-->
+11:40:48  Unable to set shortcut for command: Path_Compound
+11:40:48  command: Path_Compound-->
+11:40:48  command: Path_Custom-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_Custom-->
+11:40:48  command: Path_Deburr-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_Deburr-->
+11:40:48  command: Path_DressupAxisMap-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_DressupAxisMap-->
+11:40:48  command: Path_DressupDogbone-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_DressupDogbone-->
+11:40:48  command: Path_DressupDragKnife-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_DressupDragKnife-->
+11:40:48  command: Path_DressupLeadInOut-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_DressupLeadInOut-->
+11:40:48  command: Path_DressupPathBoundary-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_DressupPathBoundary-->
+11:40:48  command: Path_DressupRampEntry-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_DressupRampEntry-->
+11:40:48  command: Path_DressupTag-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_DressupTag-->
+11:40:48  command: Path_DressupZCorrect-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_DressupZCorrect-->
+11:40:48  command: Path_Drilling-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_Drilling-->
+11:40:48  command: Path_Engrave-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_Engrave-->
+11:40:48  command: Path_EngraveTools-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_EngraveTools-->
+11:40:48  command: Path_ExportTemplate-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_ExportTemplate-->
+11:40:48  command: Path_Fixture-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_Fixture-->
+11:40:48  command: Path_Helix-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_Helix-->
+11:40:48  command: Path_Hop-->
+11:40:48  Unable to set shortcut for command: Path_Hop
+11:40:48  command: Path_Hop-->
+11:40:48  command: Path_Inspect-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_Inspect-->P, I
+11:40:48  command: Path_Job-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_Job-->P, J
+11:40:48  command: Path_MillFace-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_MillFace-->
+11:40:48  command: Path_OpActiveToggle-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_OpActiveToggle-->P, X
+11:40:48  command: Path_OperationCopy-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_OperationCopy-->
+11:40:48  command: Path_Pocket_3D-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_Pocket_3D-->
+11:40:48  command: Path_Pocket_Shape-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_Pocket_Shape-->
+11:40:48  command: Path_Post-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_Post-->P, P
+11:40:48  command: Path_Probe-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_Probe-->
+11:40:48  command: Path_Profile-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_Profile-->
+11:40:48  command: Path_Sanity-->
+11:40:48  Unable to set shortcut for command: Path_Sanity
+11:40:48  command: Path_Sanity-->
+11:40:48  command: Path_SelectLoop-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_SelectLoop-->P, L
+11:40:48  command: Path_SetStartPoint-->
+11:40:48  Unable to set shortcut for command: Path_SetStartPoint
+11:40:48  command: Path_SetStartPoint-->
+11:40:48  command: Path_Shape-->
+11:40:48  Unable to set shortcut for command: Path_Shape
+11:40:48  command: Path_Shape-->
+11:40:48  command: Path_SimpleCopy-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_SimpleCopy-->
+11:40:48  command: Path_Simulator-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_Simulator-->P, M
+11:40:48  command: Path_Slot-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_Slot-->
+11:40:48  command: Path_Stop-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_Stop-->
+11:40:48  command: Path_ToolBitCreate-->
+11:40:48  Unable to set shortcut for command: Path_ToolBitCreate
+11:40:48  command: Path_ToolBitCreate-->
+11:40:48  command: Path_ToolBitLibraryLoad-->
+11:40:48  Unable to set shortcut for command: Path_ToolBitLibraryLoad
+11:40:48  command: Path_ToolBitLibraryLoad-->
+11:40:48  command: Path_ToolBitLibraryOpen-->
+11:40:48  Unable to set shortcut for command: Path_ToolBitLibraryOpen
+11:40:48  command: Path_ToolBitLibraryOpen-->
+11:40:48  command: Path_ToolBitLoad-->
+11:40:48  Unable to set shortcut for command: Path_ToolBitLoad
+11:40:48  command: Path_ToolBitLoad-->
+11:40:48  command: Path_ToolBitSave-->
+11:40:48  Unable to set shortcut for command: Path_ToolBitSave
+11:40:48  command: Path_ToolBitSave-->
+11:40:48  command: Path_ToolBitSaveAs-->
+11:40:48  Unable to set shortcut for command: Path_ToolBitSaveAs
+11:40:48  command: Path_ToolBitSaveAs-->
+11:40:48  command: Path_ToolController-->
+11:40:48  Unable to set shortcut for command: Path_ToolController
+11:40:48  command: Path_ToolController-->
+11:40:48  command: Path_ToolLibraryEdit-->Ctrl+Alt+Shift+T
+11:40:48  command: Path_ToolLibraryEdit-->P, T
+11:40:48  command: Plane-->Ctrl+Alt+Shift+T
+11:40:48  command: Plane-->
+11:40:48  command: Points_Convert-->Ctrl+Alt+Shift+T
+11:40:48  command: Points_Convert-->
+11:40:48  command: Points_Export-->Ctrl+Alt+Shift+T
+11:40:48  command: Points_Export-->
+11:40:48  command: Points_Import-->Ctrl+Alt+Shift+T
+11:40:48  command: Points_Import-->
+11:40:48  command: Points_Merge-->Ctrl+Alt+Shift+T
+11:40:48  command: Points_Merge-->
+11:40:48  command: Points_PolyCut-->Ctrl+Alt+Shift+T
+11:40:48  command: Points_PolyCut-->
+11:40:48  command: Points_Structure-->Ctrl+Alt+Shift+T
+11:40:48  command: Points_Structure-->
+11:40:48  command: Points_Transform-->
+11:40:48  Unable to set shortcut for command: Points_Transform
+11:40:48  command: Points_Transform-->
+11:40:48  command: Raytracing_ExportProject-->Ctrl+Alt+Shift+T
+11:40:48  command: Raytracing_ExportProject-->
+11:40:48  command: Raytracing_NewLuxProject-->Ctrl+Alt+Shift+T
+11:40:48  command: Raytracing_NewLuxProject-->
+11:40:48  command: Raytracing_NewPartSegment-->Ctrl+Alt+Shift+T
+11:40:48  command: Raytracing_NewPartSegment-->
+11:40:48  command: Raytracing_NewPovrayProject-->Ctrl+Alt+Shift+T
+11:40:48  command: Raytracing_NewPovrayProject-->
+11:40:48  command: Raytracing_Render-->Ctrl+Alt+Shift+T
+11:40:48  command: Raytracing_Render-->
+11:40:48  command: Raytracing_ResetCamera-->Ctrl+Alt+Shift+T
+11:40:48  command: Raytracing_ResetCamera-->
+11:40:48  command: Raytracing_WriteCamera-->Ctrl+Alt+Shift+T
+11:40:48  command: Raytracing_WriteCamera-->
+11:40:48  command: Raytracing_WritePart-->Ctrl+Alt+Shift+T
+11:40:48  command: Raytracing_WritePart-->
+11:40:48  command: Raytracing_WriteView-->Ctrl+Alt+Shift+T
+11:40:48  command: Raytracing_WriteView-->
+11:40:48  command: Reen_ApproxCylinder-->Ctrl+Alt+Shift+T
+11:40:48  command: Reen_ApproxCylinder-->
+11:40:48  command: Reen_ApproxPlane-->Ctrl+Alt+Shift+T
+11:40:48  command: Reen_ApproxPlane-->
+11:40:48  command: Reen_ApproxPolynomial-->Ctrl+Alt+Shift+T
+11:40:48  command: Reen_ApproxPolynomial-->
+11:40:48  command: Reen_ApproxSphere-->Ctrl+Alt+Shift+T
+11:40:48  command: Reen_ApproxSphere-->
+11:40:48  command: Reen_ApproxSurface-->Ctrl+Alt+Shift+T
+11:40:48  command: Reen_ApproxSurface-->
+11:40:48  command: Reen_MeshBoundary-->Ctrl+Alt+Shift+T
+11:40:48  command: Reen_MeshBoundary-->
+11:40:48  command: Reen_PoissonReconstruction-->Ctrl+Alt+Shift+T
+11:40:48  command: Reen_PoissonReconstruction-->
+11:40:48  command: Reen_Segmentation-->Ctrl+Alt+Shift+T
+11:40:48  command: Reen_Segmentation-->
+11:40:48  command: Reen_SegmentationFromComponents-->Ctrl+Alt+Shift+T
+11:40:48  command: Reen_SegmentationFromComponents-->
+11:40:48  command: Reen_SegmentationManual-->Ctrl+Alt+Shift+T
+11:40:48  command: Reen_SegmentationManual-->
+11:40:48  command: Reen_ViewTriangulation-->Ctrl+Alt+Shift+T
+11:40:48  command: Reen_ViewTriangulation-->
+11:40:48  command: ResetPositions-->Ctrl+Alt+Shift+T
+11:40:48  command: ResetPositions-->
+11:40:49  command: Robot_AddToolShape-->Ctrl+Alt+Shift+T
+11:40:49  command: Robot_AddToolShape-->
+11:40:49  command: Robot_Create-->Ctrl+Alt+Shift+T
+11:40:49  command: Robot_Create-->
+11:40:49  command: Robot_CreateTrajectory-->Ctrl+Alt+Shift+T
+11:40:49  command: Robot_CreateTrajectory-->
+11:40:49  command: Robot_Edge2Trac-->Ctrl+Alt+Shift+T
+11:40:49  command: Robot_Edge2Trac-->
+11:40:49  command: Robot_ExportKukaCompact-->Ctrl+Alt+Shift+T
+11:40:49  command: Robot_ExportKukaCompact-->
+11:40:49  command: Robot_ExportKukaFull-->Ctrl+Alt+Shift+T
+11:40:49  command: Robot_ExportKukaFull-->
+11:40:49  command: Robot_InsertKukaIR125-->Ctrl+Alt+Shift+T
+11:40:49  command: Robot_InsertKukaIR125-->
+11:40:49  command: Robot_InsertKukaIR16-->Ctrl+Alt+Shift+T
+11:40:49  command: Robot_InsertKukaIR16-->
+11:40:49  command: Robot_InsertKukaIR210-->Ctrl+Alt+Shift+T
+11:40:49  command: Robot_InsertKukaIR210-->
+11:40:49  command: Robot_InsertKukaIR500-->Ctrl+Alt+Shift+T
+11:40:49  command: Robot_InsertKukaIR500-->
+11:40:49  command: Robot_InsertWaypoint-->Ctrl+Alt+Shift+T
+11:40:49  command: Robot_InsertWaypoint-->A
+11:40:49  command: Robot_InsertWaypointPreselect-->Ctrl+Alt+Shift+T
+11:40:49  command: Robot_InsertWaypointPreselect-->W
+11:40:49  command: Robot_RestoreHomePos-->Ctrl+Alt+Shift+T
+11:40:49  command: Robot_RestoreHomePos-->
+11:40:49  command: Robot_SetDefaultOrientation-->Ctrl+Alt+Shift+T
+11:40:49  command: Robot_SetDefaultOrientation-->
+11:40:49  command: Robot_SetDefaultValues-->Ctrl+Alt+Shift+T
+11:40:49  command: Robot_SetDefaultValues-->
+11:40:49  command: Robot_SetHomePos-->Ctrl+Alt+Shift+T
+11:40:49  command: Robot_SetHomePos-->
+11:40:49  command: Robot_Simulate-->Ctrl+Alt+Shift+T
+11:40:49  command: Robot_Simulate-->
+11:40:49  command: Robot_TrajectoryCompound-->Ctrl+Alt+Shift+T
+11:40:49  command: Robot_TrajectoryCompound-->
+11:40:49  command: Robot_TrajectoryDressUp-->Ctrl+Alt+Shift+T
+11:40:49  command: Robot_TrajectoryDressUp-->
+11:40:49  command: Sketcher_BSplineComb-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_BSplineComb-->
+11:40:49  command: Sketcher_BSplineConvertToNURB-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_BSplineConvertToNURB-->
+11:40:49  command: Sketcher_BSplineDecreaseKnotMultiplicity-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_BSplineDecreaseKnotMultiplicity-->
+11:40:49  command: Sketcher_BSplineDegree-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_BSplineDegree-->
+11:40:49  command: Sketcher_BSplineIncreaseDegree-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_BSplineIncreaseDegree-->
+11:40:49  command: Sketcher_BSplineIncreaseKnotMultiplicity-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_BSplineIncreaseKnotMultiplicity-->
+11:40:49  command: Sketcher_BSplineKnotMultiplicity-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_BSplineKnotMultiplicity-->
+11:40:49  command: Sketcher_BSplinePolygon-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_BSplinePolygon-->
+11:40:49  command: Sketcher_CarbonCopy-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CarbonCopy-->C, C
+11:40:49  command: Sketcher_Clone-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_Clone-->
+11:40:49  command: Sketcher_CloseShape-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CloseShape-->Ctrl+Shift+S
+11:40:49  command: Sketcher_CompBSplineShowHideGeometryInformation-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CompBSplineShowHideGeometryInformation-->
+11:40:49  command: Sketcher_CompConstrainRadDia-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CompConstrainRadDia-->Shift+R
+11:40:49  command: Sketcher_CompCopy-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CompCopy-->Ctrl+C
+11:40:49  command: Sketcher_CompCreateArc-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CompCreateArc-->
+11:40:49  command: Sketcher_CompCreateBSpline-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CompCreateBSpline-->
+11:40:49  command: Sketcher_CompCreateCircle-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CompCreateCircle-->
+11:40:49  command: Sketcher_CompCreateConic-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CompCreateConic-->
+11:40:49  command: Sketcher_CompCreateRegularPolygon-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CompCreateRegularPolygon-->
+11:40:49  command: Sketcher_CompModifyKnotMultiplicity-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CompModifyKnotMultiplicity-->
+11:40:49  command: Sketcher_ConnectLines-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_ConnectLines-->Ctrl+Shift+K
+11:40:49  command: Sketcher_ConstrainAngle-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_ConstrainAngle-->A
+11:40:49  command: Sketcher_ConstrainBlock-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_ConstrainBlock-->
+11:40:49  command: Sketcher_ConstrainCoincident-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_ConstrainCoincident-->C
+11:40:49  command: Sketcher_ConstrainDiameter-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_ConstrainDiameter-->
+11:40:49  command: Sketcher_ConstrainDistance-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_ConstrainDistance-->Shift+D
+11:40:49  command: Sketcher_ConstrainDistanceX-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_ConstrainDistanceX-->Shift+H
+11:40:49  command: Sketcher_ConstrainDistanceY-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_ConstrainDistanceY-->Shift+V
+11:40:49  command: Sketcher_ConstrainEqual-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_ConstrainEqual-->E
+11:40:49  command: Sketcher_ConstrainHorizontal-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_ConstrainHorizontal-->H
+11:40:49  command: Sketcher_ConstrainInternalAlignment-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_ConstrainInternalAlignment-->Ctrl+A
+11:40:49  command: Sketcher_ConstrainLock-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_ConstrainLock-->
+11:40:49  command: Sketcher_ConstrainParallel-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_ConstrainParallel-->Shift+P
+11:40:49  command: Sketcher_ConstrainPerpendicular-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_ConstrainPerpendicular-->N
+11:40:49  command: Sketcher_ConstrainPointOnObject-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_ConstrainPointOnObject-->Shift+O
+11:40:49  command: Sketcher_ConstrainRadius-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_ConstrainRadius-->
+11:40:49  command: Sketcher_ConstrainSnellsLaw-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_ConstrainSnellsLaw-->
+11:40:49  command: Sketcher_ConstrainSymmetric-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_ConstrainSymmetric-->S
+11:40:49  command: Sketcher_ConstrainTangent-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_ConstrainTangent-->T
+11:40:49  command: Sketcher_ConstrainVertical-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_ConstrainVertical-->V
+11:40:49  command: Sketcher_Copy-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_Copy-->
+11:40:49  command: Sketcher_Create3PointArc-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_Create3PointArc-->
+11:40:49  command: Sketcher_Create3PointCircle-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_Create3PointCircle-->
+11:40:49  command: Sketcher_CreateArc-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CreateArc-->
+11:40:49  command: Sketcher_CreateArcOfEllipse-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CreateArcOfEllipse-->
+11:40:49  command: Sketcher_CreateArcOfHyperbola-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CreateArcOfHyperbola-->
+11:40:49  command: Sketcher_CreateArcOfParabola-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CreateArcOfParabola-->
+11:40:49  command: Sketcher_CreateBSpline-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CreateBSpline-->
+11:40:49  command: Sketcher_CreateCircle-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CreateCircle-->
+11:40:49  command: Sketcher_CreateEllipseBy3Points-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CreateEllipseBy3Points-->
+11:40:49  command: Sketcher_CreateEllipseByCenter-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CreateEllipseByCenter-->
+11:40:49  command: Sketcher_CreateFillet-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CreateFillet-->F
+11:40:49  command: Sketcher_CreateHeptagon-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CreateHeptagon-->
+11:40:49  command: Sketcher_CreateHexagon-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CreateHexagon-->
+11:40:49  command: Sketcher_CreateLine-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CreateLine-->L
+11:40:49  command: Sketcher_CreateOctagon-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CreateOctagon-->
+11:40:49  command: Sketcher_CreatePentagon-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CreatePentagon-->
+11:40:49  command: Sketcher_CreatePeriodicBSpline-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CreatePeriodicBSpline-->
+11:40:49  command: Sketcher_CreatePoint-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CreatePoint-->
+11:40:49  command: Sketcher_CreatePolyline-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CreatePolyline-->
+11:40:49  command: Sketcher_CreateRectangle-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CreateRectangle-->R
+11:40:49  command: Sketcher_CreateRegularPolygon-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CreateRegularPolygon-->
+11:40:49  command: Sketcher_CreateSlot-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CreateSlot-->
+11:40:49  command: Sketcher_CreateSquare-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CreateSquare-->
+11:40:49  command: Sketcher_CreateTriangle-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_CreateTriangle-->
+11:40:49  command: Sketcher_DeleteAllConstraints-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_DeleteAllConstraints-->
+11:40:49  command: Sketcher_DeleteAllGeometry-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_DeleteAllGeometry-->
+11:40:49  command: Sketcher_EditSketch-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_EditSketch-->
+11:40:49  command: Sketcher_Extend-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_Extend-->T, E
+11:40:49  command: Sketcher_External-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_External-->X
+11:40:49  command: Sketcher_LeaveSketch-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_LeaveSketch-->
+11:40:49  command: Sketcher_MapSketch-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_MapSketch-->
+11:40:49  command: Sketcher_MergeSketches-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_MergeSketches-->
+11:40:49  command: Sketcher_MirrorSketch-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_MirrorSketch-->
+11:40:49  command: Sketcher_Move-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_Move-->Ctrl+M
+11:40:49  command: Sketcher_NewSketch-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_NewSketch-->
+11:40:49  command: Sketcher_ProfilesHexagon1-->
+11:40:49  Unable to set shortcut for command: Sketcher_ProfilesHexagon1
+11:40:49  command: Sketcher_ProfilesHexagon1-->
+11:40:49  command: Sketcher_RectangularArray-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_RectangularArray-->
+11:40:49  command: Sketcher_ReorientSketch-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_ReorientSketch-->
+11:40:49  command: Sketcher_RestoreInternalAlignmentGeometry-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_RestoreInternalAlignmentGeometry-->Ctrl+Shift+E
+11:40:49  command: Sketcher_SelectConflictingConstraints-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_SelectConflictingConstraints-->Ctrl+Shift+E
+11:40:49  command: Sketcher_SelectConstraints-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_SelectConstraints-->Ctrl+Shift+C
+11:40:49  command: Sketcher_SelectElementsAssociatedWithConstraints-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_SelectElementsAssociatedWithConstraints-->Ctrl+Shift+E
+11:40:49  command: Sketcher_SelectElementsWithDoFs-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_SelectElementsWithDoFs-->
+11:40:49  command: Sketcher_SelectHorizontalAxis-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_SelectHorizontalAxis-->Ctrl+Shift+H
+11:40:49  command: Sketcher_SelectOrigin-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_SelectOrigin-->Ctrl+Shift+O
+11:40:49  command: Sketcher_SelectRedundantConstraints-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_SelectRedundantConstraints-->Ctrl+Shift+R
+11:40:49  command: Sketcher_SelectVerticalAxis-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_SelectVerticalAxis-->Ctrl+Shift+V
+11:40:49  command: Sketcher_StopOperation-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_StopOperation-->
+11:40:49  command: Sketcher_SwitchVirtualSpace-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_SwitchVirtualSpace-->
+11:40:49  command: Sketcher_Symmetry-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_Symmetry-->
+11:40:49  command: Sketcher_ToggleActiveConstraint-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_ToggleActiveConstraint-->
+11:40:49  command: Sketcher_ToggleConstruction-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_ToggleConstruction-->C, M
+11:40:49  command: Sketcher_ToggleDrivingConstraint-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_ToggleDrivingConstraint-->
+11:40:49  command: Sketcher_Trimming-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_Trimming-->T, R
+11:40:49  command: Sketcher_ValidateSketch-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_ValidateSketch-->
+11:40:49  command: Sketcher_ViewSection-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_ViewSection-->
+11:40:49  command: Sketcher_ViewSketch-->Ctrl+Alt+Shift+T
+11:40:49  command: Sketcher_ViewSketch-->
+11:40:49  command: Spreadsheet_AlignBottom-->Ctrl+Alt+Shift+T
+11:40:49  command: Spreadsheet_AlignBottom-->
+11:40:49  command: Spreadsheet_AlignCenter-->Ctrl+Alt+Shift+T
+11:40:49  command: Spreadsheet_AlignCenter-->
+11:40:49  command: Spreadsheet_AlignLeft-->Ctrl+Alt+Shift+T
+11:40:49  command: Spreadsheet_AlignLeft-->
+11:40:49  command: Spreadsheet_AlignRight-->Ctrl+Alt+Shift+T
+11:40:49  command: Spreadsheet_AlignRight-->
+11:40:49  command: Spreadsheet_AlignTop-->Ctrl+Alt+Shift+T
+11:40:49  command: Spreadsheet_AlignTop-->
+11:40:49  command: Spreadsheet_AlignVCenter-->Ctrl+Alt+Shift+T
+11:40:49  command: Spreadsheet_AlignVCenter-->
+11:40:49  command: Spreadsheet_CreateSheet-->Ctrl+Alt+Shift+T
+11:40:49  command: Spreadsheet_CreateSheet-->
+11:40:49  command: Spreadsheet_Export-->Ctrl+Alt+Shift+T
+11:40:49  command: Spreadsheet_Export-->
+11:40:49  command: Spreadsheet_Import-->Ctrl+Alt+Shift+T
+11:40:49  command: Spreadsheet_Import-->
+11:40:49  command: Spreadsheet_MergeCells-->Ctrl+Alt+Shift+T
+11:40:49  command: Spreadsheet_MergeCells-->
+11:40:49  command: Spreadsheet_SetAlias-->Ctrl+Alt+Shift+T
+11:40:49  command: Spreadsheet_SetAlias-->Ctrl+Shift+A
+11:40:49  command: Spreadsheet_SplitCell-->Ctrl+Alt+Shift+T
+11:40:49  command: Spreadsheet_SplitCell-->
+11:40:49  command: Spreadsheet_StyleBold-->Ctrl+Alt+Shift+T
+11:40:49  command: Spreadsheet_StyleBold-->
+11:40:49  command: Spreadsheet_StyleItalic-->Ctrl+Alt+Shift+T
+11:40:49  command: Spreadsheet_StyleItalic-->
+11:40:49  command: Spreadsheet_StyleUnderline-->Ctrl+Alt+Shift+T
+11:40:49  command: Spreadsheet_StyleUnderline-->
+11:40:49  command: Start_StartPage-->Ctrl+Alt+Shift+T
+11:40:49  command: Start_StartPage-->
+11:40:49  command: Std_About-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_About-->
+11:40:49  command: Std_AboutQt-->
+11:40:49  Unable to set shortcut for command: Std_AboutQt
+11:40:49  command: Std_AboutQt-->
+11:40:49  command: Std_ActivateNextWindow-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_ActivateNextWindow-->Ctrl+Tab
+11:40:49  command: Std_ActivatePrevWindow-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_ActivatePrevWindow-->Ctrl+Shift+Backtab
+11:40:49  command: Std_AddonMgr-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_AddonMgr-->
+11:40:49  command: Std_Alignment-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_Alignment-->
+11:40:49  command: Std_ArrangeIcons-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_ArrangeIcons-->
+11:40:49  command: Std_AxisCross-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_AxisCross-->A, C
+11:40:49  command: Std_BoxElementSelection-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_BoxElementSelection-->Shift+E
+11:40:49  command: Std_BoxSelection-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_BoxSelection-->Shift+B
+11:40:49  command: Std_CascadeWindows-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_CascadeWindows-->
+11:40:49  command: Std_CloseActiveWindow-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_CloseActiveWindow-->Ctrl+W
+11:40:49  command: Std_CloseAllWindows-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_CloseAllWindows-->
+11:40:49  command: Std_CommandLine-->
+11:40:49  Unable to set shortcut for command: Std_CommandLine
+11:40:49  command: Std_CommandLine-->
+11:40:49  command: Std_Copy-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_Copy-->Ctrl+C
+11:40:49  command: Std_Cut-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_Cut-->Ctrl+X
+11:40:49  command: Std_Delete-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_Delete-->Del
+11:40:49  command: Std_DemoMode-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_DemoMode-->
+11:40:49  command: Std_DependencyGraph-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_DependencyGraph-->
+11:40:49  command: Std_DlgCustomize-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_DlgCustomize-->
+11:40:49  command: Std_DlgMacroExecute-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_DlgMacroExecute-->
+11:40:49  command: Std_DlgMacroExecuteDirect-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_DlgMacroExecuteDirect-->Ctrl+F6
+11:40:49  command: Std_DlgMacroRecord-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_DlgMacroRecord-->
+11:40:49  command: Std_DlgParameter-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_DlgParameter-->
+11:40:49  command: Std_DlgPreferences-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_DlgPreferences-->
+11:40:49  command: Std_DockViewMenu-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_DockViewMenu-->
+11:40:49  command: Std_DrawStyle-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_DrawStyle-->
+11:40:49  command: Std_DuplicateSelection-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_DuplicateSelection-->
+11:40:49  command: Std_Edit-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_Edit-->
+11:40:49  command: Std_Export-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_Export-->Ctrl+E
+11:40:49  command: Std_Expressions-->
+11:40:49  Unable to set shortcut for command: Std_Expressions
+11:40:49  command: Std_Expressions-->
+11:40:49  command: Std_FreeCADFAQ-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_FreeCADFAQ-->
+11:40:49  command: Std_FreeCADForum-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_FreeCADForum-->
+11:40:49  command: Std_FreeCADPowerUserHub-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_FreeCADPowerUserHub-->
+11:40:49  command: Std_FreeCADUserHub-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_FreeCADUserHub-->
+11:40:49  command: Std_FreeCADWebsite-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_FreeCADWebsite-->
+11:40:49  command: Std_FreezeViews-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_FreezeViews-->
+11:40:49  command: Std_Group-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_Group-->
+11:40:49  command: Std_HideObjects-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_HideObjects-->
+11:40:49  command: Std_HideSelection-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_HideSelection-->
+11:40:49  command: Std_Import-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_Import-->Ctrl+I
+11:40:49  command: Std_LinkActions-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_LinkActions-->
+11:40:49  command: Std_LinkImport-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_LinkImport-->
+11:40:49  command: Std_LinkImportAll-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_LinkImportAll-->
+11:40:49  command: Std_LinkMake-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_LinkMake-->
+11:40:49  command: Std_LinkMakeGroup-->
+11:40:49  Unable to set shortcut for command: Std_LinkMakeGroup
+11:40:49  command: Std_LinkMakeGroup-->
+11:40:49  command: Std_LinkMakeRelative-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_LinkMakeRelative-->
+11:40:49  command: Std_LinkReplace-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_LinkReplace-->
+11:40:49  command: Std_LinkSelectActions-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_LinkSelectActions-->
+11:40:49  command: Std_LinkSelectAllLinks-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_LinkSelectAllLinks-->
+11:40:49  command: Std_LinkSelectLinked-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_LinkSelectLinked-->S, G
+11:40:49  command: Std_LinkSelectLinkedFinal-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_LinkSelectLinkedFinal-->S, D
+11:40:49  command: Std_LinkUnlink-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_LinkUnlink-->
+11:40:49  command: Std_MDITest1-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_MDITest1-->
+11:40:49  command: Std_MDITest2-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_MDITest2-->
+11:40:49  command: Std_MDITest3-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_MDITest3-->
+11:40:49  command: Std_MacroAttachDebugger-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_MacroAttachDebugger-->
+11:40:49  command: Std_MacroStartDebug-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_MacroStartDebug-->F6
+11:40:49  command: Std_MacroStepInto-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_MacroStepInto-->F11
+11:40:49  command: Std_MacroStepOver-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_MacroStepOver-->F10
+11:40:49  command: Std_MacroStopDebug-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_MacroStopDebug-->Shift+F6
+11:40:49  command: Std_MacroStopRecord-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_MacroStopRecord-->
+11:40:49  command: Std_Macro_0-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_Macro_0-->
+11:40:49  command: Std_Macro_1-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_Macro_1-->
+11:40:49  command: Std_Macro_2-->
+11:40:49  Unable to set shortcut for command: Std_Macro_2
+11:40:49  command: Std_Macro_2-->
+11:40:49  command: Std_Macro_3-->
+11:40:49  Unable to set shortcut for command: Std_Macro_3
+11:40:49  command: Std_Macro_3-->
+11:40:49  command: Std_Macro_4-->
+11:40:49  Unable to set shortcut for command: Std_Macro_4
+11:40:49  command: Std_Macro_4-->
+11:40:49  command: Std_Macro_5-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_Macro_5-->
+11:40:49  command: Std_Macro_6-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_Macro_6-->
+11:40:49  command: Std_MainFullscreen-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_MainFullscreen-->Alt+F11
+11:40:49  command: Std_MeasureDistance-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_MeasureDistance-->
+11:40:49  command: Std_MergeProjects-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_MergeProjects-->
+11:40:49  command: Std_New-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_New-->Ctrl+N
+11:40:49  command: Std_OnlineHelp-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_OnlineHelp-->F1
+11:40:49  command: Std_OnlineHelpWebsite-->
+11:40:49  Unable to set shortcut for command: Std_OnlineHelpWebsite
+11:40:49  command: Std_OnlineHelpWebsite-->
+11:40:49  command: Std_Open-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_Open-->Ctrl+O
+11:40:49  command: Std_OrthographicCamera-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_OrthographicCamera-->V, O
+11:40:49  command: Std_Part-->Ctrl+Alt+Shift+T
+11:40:49  command: Std_Part-->
+11:40:49  command: Std_Paste-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_Paste-->Ctrl+V
+11:40:50  command: Std_PerspectiveCamera-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_PerspectiveCamera-->V, P
+11:40:50  command: Std_Placement-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_Placement-->
+11:40:50  command: Std_Print-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_Print-->Ctrl+P
+11:40:50  command: Std_PrintPdf-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_PrintPdf-->
+11:40:50  command: Std_PrintPreview-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_PrintPreview-->
+11:40:50  command: Std_ProjectInfo-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ProjectInfo-->
+11:40:50  command: Std_ProjectUtil-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ProjectUtil-->
+11:40:50  command: Std_PythonHelp-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_PythonHelp-->
+11:40:50  command: Std_PythonWebsite-->
+11:40:50  Unable to set shortcut for command: Std_PythonWebsite
+11:40:50  command: Std_PythonWebsite-->
+11:40:50  command: Std_Quit-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_Quit-->Alt+F4
+11:40:50  command: Std_RandomColor-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_RandomColor-->
+11:40:50  command: Std_RecentFiles-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_RecentFiles-->
+11:40:50  command: Std_Recompute-->
+11:40:50  Unable to set shortcut for command: Std_Recompute
+11:40:50  command: Std_Recompute-->
+11:40:50  command: Std_Redo-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_Redo-->Ctrl+Shift+Z
+11:40:50  command: Std_Refresh-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_Refresh-->Ctrl+R
+11:40:50  command: Std_Revert-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_Revert-->
+11:40:50  command: Std_Save-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_Save-->Ctrl+S
+11:40:50  command: Std_SaveAll-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_SaveAll-->
+11:40:50  command: Std_SaveAs-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_SaveAs-->Ctrl+Shift+S
+11:40:50  command: Std_SaveCopy-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_SaveCopy-->
+11:40:50  command: Std_SceneInspector-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_SceneInspector-->
+11:40:50  command: Std_SelBack-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_SelBack-->S, B
+11:40:50  command: Std_SelBoundingBox-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_SelBoundingBox-->
+11:40:50  command: Std_SelForward-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_SelForward-->S, F
+11:40:50  command: Std_SelectAll-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_SelectAll-->
+11:40:50  command: Std_SelectVisibleObjects-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_SelectVisibleObjects-->
+11:40:50  command: Std_SendToPythonConsole-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_SendToPythonConsole-->Ctrl+Shift+P
+11:40:50  command: Std_SetAppearance-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_SetAppearance-->Ctrl+D
+11:40:50  command: Std_ShowObjects-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ShowObjects-->
+11:40:50  command: Std_ShowSelection-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ShowSelection-->
+11:40:50  command: Std_Test1-->
+11:40:50  Unable to set shortcut for command: Std_Test1
+11:40:50  command: Std_Test1-->
+11:40:50  command: Std_Test2-->
+11:40:50  Unable to set shortcut for command: Std_Test2
+11:40:50  command: Std_Test2-->
+11:40:50  command: Std_Test3-->
+11:40:50  Unable to set shortcut for command: Std_Test3
+11:40:50  command: Std_Test3-->
+11:40:50  command: Std_Test4-->
+11:40:50  Unable to set shortcut for command: Std_Test4
+11:40:50  command: Std_Test4-->
+11:40:50  command: Std_Test5-->
+11:40:50  Unable to set shortcut for command: Std_Test5
+11:40:50  command: Std_Test5-->
+11:40:50  command: Std_Test6-->
+11:40:50  Unable to set shortcut for command: Std_Test6
+11:40:50  command: Std_Test6-->
+11:40:50  command: Std_TestCmdFuncs-->
+11:40:50  Unable to set shortcut for command: Std_TestCmdFuncs
+11:40:50  command: Std_TestCmdFuncs-->
+11:40:50  command: Std_TestConsoleOutput-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_TestConsoleOutput-->
+11:40:50  command: Std_TestProgress1-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_TestProgress1-->
+11:40:50  command: Std_TestProgress2-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_TestProgress2-->
+11:40:50  command: Std_TestProgress3-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_TestProgress3-->
+11:40:50  command: Std_TestProgress4-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_TestProgress4-->
+11:40:50  command: Std_TestProgress5-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_TestProgress5-->
+11:40:50  command: Std_TestQM-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_TestQM-->
+11:40:50  command: Std_TestReloadQM-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_TestReloadQM-->
+11:40:50  command: Std_TextDocument-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_TextDocument-->
+11:40:50  command: Std_TextureMapping-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_TextureMapping-->
+11:40:50  command: Std_TileWindows-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_TileWindows-->
+11:40:50  command: Std_ToggleBreakpoint-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ToggleBreakpoint-->F9
+11:40:50  command: Std_ToggleClipPlane-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ToggleClipPlane-->
+11:40:50  command: Std_ToggleNavigation-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ToggleNavigation-->Esc
+11:40:50  command: Std_ToggleObjects-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ToggleObjects-->
+11:40:50  command: Std_ToggleSelectability-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ToggleSelectability-->
+11:40:50  command: Std_ToggleVisibility-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ToggleVisibility-->Space
+11:40:50  command: Std_ToolBarMenu-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ToolBarMenu-->
+11:40:50  command: Std_Transform-->
+11:40:50  Unable to set shortcut for command: Std_Transform
+11:40:50  command: Std_Transform-->
+11:40:50  command: Std_TransformManip-->
+11:40:50  Unable to set shortcut for command: Std_TransformManip
+11:40:50  command: Std_TransformManip-->
+11:40:50  command: Std_TreeCollapse-->
+11:40:50  Unable to set shortcut for command: Std_TreeCollapse
+11:40:50  command: Std_TreeCollapse-->
+11:40:50  command: Std_TreeCollapseDocument-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_TreeCollapseDocument-->
+11:40:50  command: Std_TreeDrag-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_TreeDrag-->T, D
+11:40:50  command: Std_TreeExpand-->
+11:40:50  Unable to set shortcut for command: Std_TreeExpand
+11:40:50  command: Std_TreeExpand-->
+11:40:50  command: Std_TreeMultiDocument-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_TreeMultiDocument-->
+11:40:50  command: Std_TreePreSelection-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_TreePreSelection-->T, 4
+11:40:50  command: Std_TreeRecordSelection-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_TreeRecordSelection-->T, 5
+11:40:50  command: Std_TreeSelectAllInstances-->
+11:40:50  Unable to set shortcut for command: Std_TreeSelectAllInstances
+11:40:50  command: Std_TreeSelectAllInstances-->
+11:40:50  command: Std_TreeSelection-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_TreeSelection-->T, G
+11:40:50  command: Std_TreeSingleDocument-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_TreeSingleDocument-->
+11:40:50  command: Std_TreeSyncPlacement-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_TreeSyncPlacement-->T, 3
+11:40:50  command: Std_TreeSyncSelection-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_TreeSyncSelection-->T, 2
+11:40:50  command: Std_TreeSyncView-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_TreeSyncView-->T, 1
+11:40:50  command: Std_TreeViewActions-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_TreeViewActions-->
+11:40:50  command: Std_Undo-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_Undo-->Ctrl+Z
+11:40:50  command: Std_UnitsCalculator-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_UnitsCalculator-->
+11:40:50  command: Std_UserInterface-->
+11:40:50  Unable to set shortcut for command: Std_UserInterface
+11:40:50  command: Std_UserInterface-->
+11:40:50  command: Std_ViewBottom-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ViewBottom-->5
+11:40:50  command: Std_ViewBoxZoom-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ViewBoxZoom-->Ctrl+B
+11:40:50  command: Std_ViewCreate-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ViewCreate-->
+11:40:50  command: Std_ViewDimetric-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ViewDimetric-->
+11:40:50  command: Std_ViewDock-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ViewDock-->V, D
+11:40:50  command: Std_ViewDockUndockFullscreen-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ViewDockUndockFullscreen-->
+11:40:50  command: Std_ViewExample1-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ViewExample1-->
+11:40:50  command: Std_ViewExample2-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ViewExample2-->
+11:40:50  command: Std_ViewExample3-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ViewExample3-->
+11:40:50  command: Std_ViewFitAll-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ViewFitAll-->V, F
+11:40:50  command: Std_ViewFitSelection-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ViewFitSelection-->V, S
+11:40:50  command: Std_ViewFront-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ViewFront-->1
+11:40:50  command: Std_ViewFullscreen-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ViewFullscreen-->F11
+11:40:50  command: Std_ViewIsometric-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ViewIsometric-->0
+11:40:50  command: Std_ViewIvIssueCamPos-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ViewIvIssueCamPos-->
+11:40:50  command: Std_ViewIvStereoInterleavedColumns-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ViewIvStereoInterleavedColumns-->
+11:40:50  command: Std_ViewIvStereoInterleavedRows-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ViewIvStereoInterleavedRows-->
+11:40:50  command: Std_ViewIvStereoOff-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ViewIvStereoOff-->
+11:40:50  command: Std_ViewIvStereoQuadBuff-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ViewIvStereoQuadBuff-->
+11:40:50  command: Std_ViewIvStereoRedGreen-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ViewIvStereoRedGreen-->
+11:40:50  command: Std_ViewLeft-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ViewLeft-->6
+11:40:50  command: Std_ViewRear-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ViewRear-->4
+11:40:50  command: Std_ViewRight-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ViewRight-->3
+11:40:50  command: Std_ViewRotateLeft-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ViewRotateLeft-->Shift+Left
+11:40:50  command: Std_ViewRotateRight-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ViewRotateRight-->Shift+Right
+11:40:50  command: Std_ViewScreenShot-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ViewScreenShot-->
+11:40:50  command: Std_ViewStatusBar-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ViewStatusBar-->
+11:40:50  command: Std_ViewTop-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ViewTop-->2
+11:40:50  command: Std_ViewTrimetric-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ViewTrimetric-->
+11:40:50  command: Std_ViewUndock-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ViewUndock-->V, U
+11:40:50  command: Std_ViewVR-->
+11:40:50  Unable to set shortcut for command: Std_ViewVR
+11:40:50  command: Std_ViewVR-->
+11:40:50  command: Std_ViewZoomIn-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ViewZoomIn-->Ctrl++
+11:40:50  command: Std_ViewZoomOut-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_ViewZoomOut-->Ctrl+-
+11:40:50  command: Std_WhatsThis-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_WhatsThis-->Shift+F1
+11:40:50  command: Std_Windows-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_Windows-->
+11:40:50  command: Std_WindowsMenu-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_WindowsMenu-->
+11:40:50  command: Std_Workbench-->Ctrl+Alt+Shift+T
+11:40:50  command: Std_Workbench-->
+11:40:50  command: Surface_CurveOnMesh-->Ctrl+Alt+Shift+T
+11:40:50  command: Surface_CurveOnMesh-->
+11:40:50  command: Surface_ExtendFace-->Ctrl+Alt+Shift+T
+11:40:50  command: Surface_ExtendFace-->
+11:40:50  command: Surface_Filling-->Ctrl+Alt+Shift+T
+11:40:50  command: Surface_Filling-->
+11:40:50  command: Surface_GeomFillSurface-->Ctrl+Alt+Shift+T
+11:40:50  command: Surface_GeomFillSurface-->
+11:40:50  command: TechDraw_2LineCenterLine-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_2LineCenterLine-->
+11:40:50  command: TechDraw_2PointCenterLine-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_2PointCenterLine-->
+11:40:50  command: TechDraw_3PtAngleDimension-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_3PtAngleDimension-->
+11:40:50  command: TechDraw_ActiveView-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_ActiveView-->
+11:40:50  command: TechDraw_AngleDimension-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_AngleDimension-->
+11:40:50  command: TechDraw_Annotation-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_Annotation-->
+11:40:50  command: TechDraw_ArchView-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_ArchView-->
+11:40:50  command: TechDraw_Balloon-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_Balloon-->
+11:40:50  command: TechDraw_CenterLineGroup-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_CenterLineGroup-->
+11:40:50  command: TechDraw_ClipGroup-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_ClipGroup-->
+11:40:50  command: TechDraw_ClipGroupAdd-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_ClipGroupAdd-->
+11:40:50  command: TechDraw_ClipGroupRemove-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_ClipGroupRemove-->
+11:40:50  command: TechDraw_CosmeticEraser-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_CosmeticEraser-->
+11:40:50  command: TechDraw_CosmeticVertex-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_CosmeticVertex-->
+11:40:50  command: TechDraw_CosmeticVertexGroup-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_CosmeticVertexGroup-->
+11:40:50  command: TechDraw_DecorateLine-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_DecorateLine-->
+11:40:50  command: TechDraw_DetailView-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_DetailView-->
+11:40:50  command: TechDraw_DiameterDimension-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_DiameterDimension-->
+11:40:50  command: TechDraw_Dimension-->
+11:40:50  Unable to set shortcut for command: TechDraw_Dimension
+11:40:50  command: TechDraw_Dimension-->
+11:40:50  command: TechDraw_DraftView-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_DraftView-->
+11:40:50  command: TechDraw_ExportPageDXF-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_ExportPageDXF-->
+11:40:50  command: TechDraw_ExportPageSVG-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_ExportPageSVG-->
+11:40:50  command: TechDraw_ExtentGroup-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_ExtentGroup-->
+11:40:50  command: TechDraw_FaceCenterLine-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_FaceCenterLine-->
+11:40:50  command: TechDraw_GeometricHatch-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_GeometricHatch-->
+11:40:50  command: TechDraw_Hatch-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_Hatch-->
+11:40:50  command: TechDraw_HorizontalDimension-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_HorizontalDimension-->
+11:40:50  command: TechDraw_HorizontalExtentDimension-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_HorizontalExtentDimension-->
+11:40:50  command: TechDraw_Image-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_Image-->
+11:40:50  command: TechDraw_LandmarkDimension-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_LandmarkDimension-->
+11:40:50  command: TechDraw_LeaderLine-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_LeaderLine-->
+11:40:50  command: TechDraw_LengthDimension-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_LengthDimension-->
+11:40:50  command: TechDraw_LinkDimension-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_LinkDimension-->
+11:40:50  command: TechDraw_Midpoints-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_Midpoints-->
+11:40:50  command: TechDraw_PageDefault-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_PageDefault-->
+11:40:50  command: TechDraw_PageTemplate-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_PageTemplate-->
+11:40:50  command: TechDraw_ProjectionGroup-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_ProjectionGroup-->
+11:40:50  command: TechDraw_Quadrants-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_Quadrants-->
+11:40:50  command: TechDraw_RadiusDimension-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_RadiusDimension-->
+11:40:50  command: TechDraw_RedrawPage-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_RedrawPage-->
+11:40:50  command: TechDraw_RichTextAnnotation-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_RichTextAnnotation-->
+11:40:50  command: TechDraw_SectionView-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_SectionView-->
+11:40:50  command: TechDraw_ShowAll-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_ShowAll-->
+11:40:50  command: TechDraw_SpreadsheetView-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_SpreadsheetView-->
+11:40:50  command: TechDraw_Symbol-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_Symbol-->
+11:40:50  command: TechDraw_ToggleFrame-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_ToggleFrame-->
+11:40:50  command: TechDraw_VerticalDimension-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_VerticalDimension-->
+11:40:50  command: TechDraw_VerticalExtentDimension-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_VerticalExtentDimension-->
+11:40:50  command: TechDraw_View-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_View-->
+11:40:50  command: TechDraw_WeldSymbol-->Ctrl+Alt+Shift+T
+11:40:50  command: TechDraw_WeldSymbol-->
+11:40:50  command: Test_InsertFeature-->Ctrl+Alt+Shift+T
+11:40:50  command: Test_InsertFeature-->
+11:40:50  command: Test_Test-->Ctrl+Alt+Shift+T
+11:40:50  command: Test_Test-->
+11:40:50  command: Test_TestAll-->Ctrl+Alt+Shift+T
+11:40:50  command: Test_TestAll-->
+11:40:50  command: Test_TestAllText-->Ctrl+Alt+Shift+T
+11:40:50  command: Test_TestAllText-->
+11:40:50  command: Test_TestBase-->Ctrl+Alt+Shift+T
+11:40:50  command: Test_TestBase-->
+11:40:50  command: Test_TestBaseText-->Ctrl+Alt+Shift+T
+11:40:50  command: Test_TestBaseText-->
+11:40:50  command: Test_TestCreateMenu-->Ctrl+Alt+Shift+T
+11:40:50  command: Test_TestCreateMenu-->
+11:40:50  command: Test_TestDeleteMenu-->Ctrl+Alt+Shift+T
+11:40:50  command: Test_TestDeleteMenu-->
+11:40:50  command: Test_TestDoc-->Ctrl+Alt+Shift+T
+11:40:50  command: Test_TestDoc-->
+11:40:50  command: Test_TestDocText-->Ctrl+Alt+Shift+T
+11:40:50  command: Test_TestDocText-->
+11:40:50  command: Test_TestWork-->Ctrl+Alt+Shift+T
+11:40:50  command: Test_TestWork-->
+11:40:50  command: ThreadProfileCreateBottleObject-->Ctrl+Alt+Shift+T
+11:40:50  command: ThreadProfileCreateBottleObject-->
+11:40:50  command: ThreadProfileCreateButtressObject-->Ctrl+Alt+Shift+T
+11:40:50  command: ThreadProfileCreateButtressObject-->
+11:40:50  command: ThreadProfileCreateObject-->Ctrl+Alt+Shift+T
+11:40:50  command: ThreadProfileCreateObject-->
+11:40:50  command: ThreadProfileDoSweep-->Ctrl+Alt+Shift+T
+11:40:50  command: ThreadProfileDoSweep-->
+11:40:50  command: ThreadProfileMakeHelix-->Ctrl+Alt+Shift+T
+11:40:50  command: ThreadProfileMakeHelix-->
+11:40:50  command: ThreadProfileOpenOnlineCalculator-->Ctrl+Alt+Shift+T
+11:40:50  command: ThreadProfileOpenOnlineCalculator-->
+11:40:50  command: ThreadProfileSettings-->Ctrl+Alt+Shift+T
+11:40:50  command: ThreadProfileSettings-->
+11:40:50  command: View_Measure_Clear_All-->Ctrl+Alt+Shift+T
+11:40:50  command: View_Measure_Clear_All-->
+11:40:51  command: View_Measure_Toggle_All-->Ctrl+Alt+Shift+T
+11:40:51  command: View_Measure_Toggle_All-->
+11:40:51  command: Web_BrowserBack-->Ctrl+Alt+Shift+T
+11:40:51  command: Web_BrowserBack-->
+11:40:51  command: Web_BrowserNext-->Ctrl+Alt+Shift+T
+11:40:51  command: Web_BrowserNext-->
+11:40:51  command: Web_BrowserRefresh-->Ctrl+Alt+Shift+T
+11:40:51  command: Web_BrowserRefresh-->
+11:40:51  command: Web_BrowserSetURL-->Ctrl+Alt+Shift+T
+11:40:51  command: Web_BrowserSetURL-->
+11:40:51  command: Web_BrowserStop-->Ctrl+Alt+Shift+T
+11:40:51  command: Web_BrowserStop-->
+11:40:51  command: Web_BrowserZoomIn-->Ctrl+Alt+Shift+T
+11:40:51  command: Web_BrowserZoomIn-->
+11:40:51  command: Web_BrowserZoomOut-->Ctrl+Alt+Shift+T
+11:40:51  command: Web_BrowserZoomOut-->
+11:40:51  command: Web_OpenWebsite-->Ctrl+Alt+Shift+T
+11:40:51  command: Web_OpenWebsite-->
+11:40:51  command: refineFeatureTool-->Ctrl+Alt+Shift+T
+11:40:51  command: refineFeatureTool-->
+11:40:51  Shortcut set successes = 874, fails = 163, rate = 0.8428158148505304
