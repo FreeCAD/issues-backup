@@ -48,14 +48,14 @@ python usage:
     import ghbackup
 
     repo = "FreeCAD/FreeCAD"
-    issues_dict = ghbackup.get_issues(repo)
-    comments_dict = ghbackup.get_issue_comments(repo)
+    issues = ghbackup.get_issues(repo)
+    comments = ghbackup.get_issue_comments(repo)
 
     # saving json data
     with open("issues.json","w") as f:
-        json.dump(issues_dict,f,indent=4)
+        json.dump(issues,f,indent=4)
     with open("comments.json","w") as f:
-        json.dump(comments_dict,f,indent=4)
+        json.dump(comments,f,indent=4)
 
     # saving attachments
     imagelinks = get_image_links(issues) + get_image_links(comments)
