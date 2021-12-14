@@ -83,12 +83,12 @@ HEADERS = {}
 # look for github user token this folder and ~$HOME
 token_file = os.path.join( os.path.dirname(__file__), ".ghbackup")
 if os.path.exists(token_file):
-    with(open(token_file) as f):
+    with open(token_file) as f:
         HEADERS = {'Authorization': 'token ' + f.read().strip()}
 else:
     token_file = os.path.join( os.path.abspath(os.path.expanduser("~")), ".ghbackup")
     if os.path.exists(token_file):
-        with(open(token_file) as f):
+        with open(token_file) as f:
             HEADERS = {'Authorization': 'token ' + f.read().strip()}
 
 
