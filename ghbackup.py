@@ -162,7 +162,7 @@ def push():
 
     try:
         repo = git.Repo(os.path.curdir)
-        repo.git.add(update=True)
+        repo.git.add(all=True)
         repo.index.commit("backup " + str(datetime.date.today()) )
         origin = repo.remote(name='origin')
         origin.push()
