@@ -93,12 +93,15 @@ else:
 
 
 
-def get_data(api_point,page=1):
+def get_data(api_point,page=1,all=False):
 
-    """get_data(api_point,[page]): returns a dict from a github API point"""
+    """get_data(api_point,[page,all]): returns a dict from a github API point"""
 
     print("fetching",api_point,"page",page)
-    params = { "state": "all", "page": str(page) }
+    if all:
+        params = { "state": "all", "page": str(page) }
+    else:
+        params = { "page": str(page) }
     result = SESSION.get(url = BASEURL + api_point, params = params, headers = HEADERS)
     data = result.json()
     if data:
