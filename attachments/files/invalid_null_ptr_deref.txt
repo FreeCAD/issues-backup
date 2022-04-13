@@ -1,0 +1,158 @@
+Breakpoint 1, BRep_Tool::Surface (F=...) at /tmp/OCCT/src/BRep/BRep_Tool.cxx:100
+100       const BRep_TFace* TF = static_cast<const BRep_TFace*>(F.TShape().get());
+(gdb) print F
+$1 = (const TopoDS_Face &) @0x7fffffffbc20: {<TopoDS_Shape> = {myTShape = {entity = 0x555555cac960}, myLocation = {myItems = {myNode = {
+          entity = 0x5555559e5b00}}}, myOrient = TopAbs_REVERSED}, <No data fields>}
+(gdb) bt full
+#0  BRep_Tool::Surface (F=...) at /tmp/OCCT/src/BRep/BRep_Tool.cxx:100
+        TF = 0x555555cb0f80
+        S = <error reading variable>
+        L = {myItems = {myNode = {entity = 0x0}}}
+#1  0x00007ffff35c46da in ChFi3d::IsTangentFaces (theEdge=..., theFace1=..., theFace2=..., Order=GeomAbs_G1) at /tmp/OCCT/src/ChFi3d/ChFi3d.cxx:168
+        TolC0 = 0.001
+        aFirst = 4.3859548499707541
+        aLast = 5.0388221078495521
+        aC2d1 = {entity = 0x555555ca6ef0}
+        EE = {<TopoDS_Shape> = {myTShape = {entity = 0x555555cac3b0}, myLocation = {myItems = {myNode = {entity = 0x555555ca8640}}}, 
+            myOrient = TopAbs_FORWARD}, <No data fields>}
+        aC2d2 = {entity = 0x555555cd1960}
+        aSurf1 = {entity = 0x7fffffffb410}
+        aSurf2 = {entity = 0x7fffffffbc20}
+        aBAS1 = {<Adaptor3d_Surface> = {<Standard_Transient> = {_vptr.Standard_Transient = 0x0, myRefCount_ = 0}, <No data fields>}, 
+          mySurf = {<Adaptor3d_Surface> = {<Standard_Transient> = {_vptr.Standard_Transient = 0x0, myRefCount_ = 0}, <No data fields>}, mySurface = {
+              entity = 0x0}, myUFirst = 0, myULast = 4.6355709180114701e-310, myVFirst = 4.6355709211960197e-310, myVLast = 6.9533558068634736e-310, 
+            myTolU = 6.9533471295860654e-310, myTolV = 6.9533558069784921e-310, myBSplineSurface = {entity = 0x555555cb8210}, mySurfaceCache = {
+              entity = 0x7fffffffb350}, mySurfaceType = 4160096339, myNestedEvaluator = {entity = 0x7fffffffb370}}, myTrsf = {
+            scale = 6.9533558069753301e-310, shape = 4294947696, matrix = {myMat = {{6.9533473483047767e-310, 4.6355709211956244e-310, 
+                  6.9533558069753301e-310}, {6.9533558068682167e-310, 6.9533473483013182e-310, 4.6355709126305024e-310}, {6.9533558069753301e-310, 
+                  6.9533558068697977e-310, 6.9533473482635222e-310}}}, loc = {x = 4.6355709126305024e-310, y = 6.9533558069753301e-310, 
+              z = 6.9533558068713787e-310}}, myFace = {<TopoDS_Shape> = {myTShape = {
+                entity = 0x7ffff7f5dc6f <TopLoc_SListOfItemLocation::operator=(TopLoc_SListOfItemLocation const&)+35>}, myLocation = {myItems = {
+                  myNode = {entity = 0x555555c8dce0}}}, myOrient = 4294949896}, <No data fields>}}
+        aBAS2 = {<Adaptor3d_Surface> = {<Standard_Transient> = {_vptr.Standard_Transient = 0x0, myRefCount_ = 0}, <No data fields>}, 
+          mySurf = {<Adaptor3d_Surface> = {<Standard_Transient> = {_vptr.Standard_Transient = 0x6737312e250064, 
+                myRefCount_ = 1886152040}, <No data fields>}, mySurface = {entity = 0x0}, myUFirst = 0, myULast = 0, myVFirst = 0, 
+            myVLast = -0.66666666666666785, myTolU = 0, myTolV = 0.79999999953239764, myBSplineSurface = {entity = 0x0}, mySurfaceCache = {entity = 0x0}, 
+            mySurfaceType = GeomAbs_Plane, myNestedEvaluator = {entity = 0x0}}, myTrsf = {scale = 0, shape = gp_Identity, matrix = {myMat = {{0, 
+                  4.6355707764241136e-310, 4.6355709206082792e-310}, {4.6355707764241136e-310, 4.6355709206082792e-310, 9.8813129168249309e-324}, {
+                  -6.9169190417774516e-323, 0, 0}}}, loc = {x = 0, y = 0, z = 0}}, myFace = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {
+                myItems = {myNode = {entity = 0x2}}}, myOrient = 14}, <No data fields>}}
+        aBAHS1 = {entity = 0x0}
+        aBAHS2 = {entity = 0x0}
+        aTool1 = {entity = 0x0}
+        aTool2 = {entity = 0x0}
+        aNbSamples1 = 21845
+        aNbSamples2 = 1439334736
+        aNbSamples = 32767
+        aPar = 6.9533491438468423e-310
+        aDelta = 6.9533558068792837e-310
+        i = 32767
+        nbNotDone = -19344
+        MidPar = 6.9533558069749348e-310
+        uv1 = {coord = {x = 1, y = 0}}
+        uv2 = {coord = {x = 0, y = 0}}
+        normal1 = {coord = {x = 0, y = 0, z = 0}}
+        normal2 = {coord = {x = 0, y = 0, z = 0}}
+        dot = 6.9533558069765159e-310
+#2  0x00007ffff35f4d4a in ChFi3d_Builder::PerformElement (this=0x555555ca8110, Spine=..., Offset=-1, theFirstFace=...)
+    at /tmp/OCCT/src/ChFi3d/ChFi3d_Builder_1.cxx:855
+        ta = 0.01
+        It = {<NCollection_BaseList::Iterator> = {myCurrent = 0x0, myPrevious = 0x0}, <No data fields>}
+        Nbface = 32767
+        Jt = {<NCollection_BaseList::Iterator> = {myCurrent = 0x0, myPrevious = 0x0}, <No data fields>}
+        Wl = 6.9533558070041835e-310
+        Wf = 6.9533558070010215e-310
+        degeneOnEc = false
+        P2 = {coord = {x = 0, y = 0, z = 0}}
+        V1 = {coord = {x = 0, y = 0, z = 0}}
+        V2 = {coord = {x = 0, y = 0, z = 0}}
+        Ve1 = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, 
+            myOrient = TopAbs_EXTERNAL}, <No data fields>}
+        VStart = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, 
+            myOrient = TopAbs_EXTERNAL}, <No data fields>}
+        FVEc = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, 
+            myOrient = TopAbs_EXTERNAL}, <No data fields>}
+        LVEc = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, 
+            myOrient = TopAbs_EXTERNAL}, <No data fields>}
+        FVEv = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, 
+            myOrient = TopAbs_EXTERNAL}, <No data fields>}
+        LVEv = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, 
+            myOrient = TopAbs_EXTERNAL}, <No data fields>}
+        Ev = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, 
+            myOrient = TopAbs_EXTERNAL}, <No data fields>}
+        Ec = {<TopoDS_Shape> = {myTShape = {entity = 0x555555cac3b0}, myLocation = {myItems = {myNode = {entity = 0x555555ca8640}}}, myOrient = TopAbs_FORWARD}, <No data fields>}
+        ff1 = {<TopoDS_Shape> = {myTShape = {entity = 0x555555cac960}, myLocation = {myItems = {myNode = {entity = 0x5555559e5b00}}}, myOrient = TopAbs_REVERSED}, <No data fields>}
+        ff2 = {<TopoDS_Shape> = {myTShape = {entity = 0x555555cb0f10}, myLocation = {myItems = {myNode = {entity = 0x555555cb8210}}}, myOrient = TopAbs_FORWARD}, <No data fields>}
+        FirstFace = {<TopoDS_Shape> = {myTShape = {entity = 0x3fe999999959554e}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_FORWARD}, <No data fields>}
+        TypeOfConcavity = 21845
+        ToRestrict = 85
+        Sb1 = {<Adaptor3d_Surface> = {<Standard_Transient> = {_vptr.Standard_Transient = 0x0, myRefCount_ = 0}, <No data fields>}, mySurf = {<Adaptor3d_Surface> = {<Standard_Transient> = {_vptr.Standard_Transient = 0x0, myRefCount_ = 0}, <No data fields>}, mySurface = {entity = 0x0}, myUFirst = 0, myULast = 0, myVFirst = 0, myVLast = -1, myTolU = 0, myTolV = 0, myBSplineSurface = {entity = 0x0}, mySurfaceCache = {entity = 0x0}, mySurfaceType = GeomAbs_Plane, myNestedEvaluator = {entity = 0x0}}, myTrsf = {scale = 0, shape = gp_Identity, matrix = {myMat = {{0, 0, 0}, {0, 0, 0}, {0, 1.0331282344412303e-306, 6.8835748236686099e-313}}}, loc = {x = 0, y = 0, z = 0}}, myFace = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0xbfe5555555555560}}}, myOrient = TopAbs_FORWARD}, <No data fields>}}
+        Sb2 = {<Adaptor3d_Surface> = {<Standard_Transient> = {_vptr.Standard_Transient = 0x7fffffffbeb0, myRefCount_ = 5}, <No data fields>}, mySurf = {<Adaptor3d_Surface> = {<Standard_Transient> = {_vptr.Standard_Transient = 0x5, myRefCount_ = 1431921136}, <No data fields>}, mySurface = {entity = 0x5}, myUFirst = 6.9533491704023273e-310, myULast = 4.9406564584124654e-324, myVFirst = 0, myVLast = 4.6355709203193496e-310, myTolU = 6.953345283540313e-310, myTolV = 6.953355807001812e-310, myBSplineSurface = {entity = 0x7ffff7fe868a <_dl_runtime_resolve_xsavec+122>}, mySurfaceCache = {entity = 0xbff0000000000000}, mySurfaceType = 4294950512, myNestedEvaluator = {entity = 0x7fffffffbe80}}, myTrsf = {scale = 6.9533558070057645e-310, shape = 1439334672, matrix = {myMat = {{4.6355709203379264e-310, 6.953348999675226e-310, 0}, {0, 0, 0}, {1.3906499416490908e-309, 0, 0}}}, loc = {x = 0, y = 0, z = 0}}, myFace = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_FORWARD}, <No data fields>}}
+        CEc = {<Adaptor3d_Curve> = {<Standard_Transient> = {_vptr.Standard_Transient = 0x7fffffffba28, myRefCount_ = -18048}, <No data fields>}, myTrsf = {scale = 6.9533558069441051e-310, shape = 4160605409, matrix = {myMat = {{3.4584595208887258e-323, 0, 4.9406564584124654e-324}, {0, 4.9406564584124654e-324, 4.6355706975941612e-310}, {2.1219957904712067e-314, 0, 4.6355706975941612e-310}}}, loc = {x = 4.1646417617701191e-314, y = 4.6355707750114811e-310, z = 0}}, myCurve = {<Adaptor3d_Curve> = {<Standard_Transient> = {_vptr.Standard_Transient = 0x5, myRefCount_ = 1431921136}, <No data fields>}, myCurve = {entity = 0xffffffff}, myTypeCurve = 4160624163, myFirst = 6.953345283540313e-310, myLast = 4.6355706975941612e-310, myBSplineCurve = {entity = 0x7fffffffbe10}, myCurveCache = {entity = 0x555555cb3cc8}, myNestedEvaluator = {entity = 0x5}}, myConSurf = {entity = 0x5555555961f0}, myEdge = {<TopoDS_Shape> = {myTShape = {entity = 0x5}, myLocation = {myItems = {myNode = {entity = 0x7ffff7fe1623 <_dl_fixup+211>}}}, myOrient = TopAbs_REVERSED}, <No data fields>}}
+        CEv = {<Adaptor3d_Curve> = {<Standard_Transient> = {_vptr.Standard_Transient = 0x7ffff34c6c68, myRefCount_ = -213014096}, <No data fields>}, myTrsf = {scale = 4.9406564584124654e-324, shape = 4160603044, matrix = {myMat = {{1.2934638608123835e-320, 6.9533452889924262e-310, 4.6355706975941612e-310}, {6.9533558069342238e-310, 6.9533558069340262e-310, 6.9533558069308642e-310}, {6.9533464157585381e-310, 6.9531436082559078e-310, 6.9533452889924262e-310}}}, loc = {x = 6.9533452804359997e-310, y = 6.9533452980129779e-310, z = 9.8999725262822708e-315}}, myCurve = {<Adaptor3d_Curve> = {<Standard_Transient> = {_vptr.Standard_Transient = 0x1ddbcd3, myRefCount_ = -18236}, <No data fields>}, myCurve = {entity = 0x55555566fe18}, myTypeCurve = 4294949264, myFirst = 6.953345283540313e-310, myLast = 6.9533558069433146e-310, myBSplineCurve = {entity = 0x30}, myCurveCache = {entity = 0x7fffffffb940}, myNestedEvaluator = {entity = 0xffffb950}}, myConSurf = {entity = 0x0}, myEdge = {<TopoDS_Shape> = {myTShape = {entity = 0x12}, myLocation = {myItems = {myNode = {entity = 0x776f34eb}}}, myOrient = 1436441672}, <No data fields>}}
+        curor = 4083117830
+        Fini = false
+        Nb = -144402535
+        CurSt = 4294950448
+#3  0x00007ffff367500b in ChFi3d_FilBuilder::Add (this=0x555555ca8110, E=...) at /tmp/OCCT/src/ChFi3d/ChFi3d_FilBuilder.cxx:213
+        Stripe = {entity = 0x555555cb39f0}
+        Sp = @0x555555cb3a20: {entity = 0x555555cb3a80}
+        Spine = {entity = 0x555555cb3a80}
+        E_wnt = {<TopoDS_Shape> = {myTShape = {entity = 0x555555cac3b0}, myLocation = {myItems = {myNode = {entity = 0x555555ca8640}}}, myOrient = TopAbs_FORWARD}, <No data fields>}
+        dummy = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}
+#4  0x00007ffff3753646 in BRepFilletAPI_MakeFillet::Add (this=0x555555ca80c0, Radius=1, E=...) at /tmp/OCCT/src/BRepFilletAPI/BRepFilletAPI_MakeFillet.cxx:94
+        IinC = 1434862224
+        IC = 21845
+#5  0x00007ffff413a538 in BLEND (di=..., narg=5, a=0x55555559a400) at /tmp/OCCT/src/BRepTest/BRepTest_FilletCommands.cxx:175
+        aLocalEdge = {myTShape = {entity = 0x555555cac3b0}, myLocation = {myItems = {myNode = {entity = 0x555555ca8640}}}, myOrient = TopAbs_REVERSED}
+        ii = 1
+        V = {myTShape = {entity = 0x555555cb1390}, myLocation = {myItems = {myNode = {entity = 0x5555559e5b00}}}, myOrient = TopAbs_FORWARD}
+        FSh = ChFi3d_Rational
+        Rad = 1
+        E = {<TopoDS_Shape> = {myTShape = {entity = 0x555555cac3b0}, myLocation = {myItems = {myNode = {entity = 0x555555ca8640}}}, myOrient = TopAbs_REVERSED}, <No data fields>}
+        nbedge = 0
+        res = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_FORWARD}
+#6  0x00007ffff7f3133f in Draw_Interpretor::CallBackDataFunc::Invoke (this=0x555555969680, theDI=..., theArgNb=5, theArgVec=0x55555559a400) at /tmp/OCCT/src/Draw/Draw_Interpretor.hxx:81
+No locals.
+#7  0x00007ffff7f3ca3a in CommandCmd (theClientData=0x555555969680, interp=0x5555555961f0, argc=5, argv=0x55555559a400) at /tmp/OCCT/src/Draw/Draw_Interpretor.cxx:154
+        _aHandler = {myPrevious = 0x0, myCaughtError = {entity = 0x0}, myLabel = {{__jmpbuf = {93824992519120, -4245596933791900921, 5, 5, 93824992502256, 5, -4245596934108570873, -4245614560411870457}, __mask_was_saved = 0, __saved_mask = {__val = {0 <repeats 16 times>}}}}, myStatus = Standard_HandlerVoid, myThread = 140737298184064, myCallbackPtr = 0x0}
+        fres = 21845
+        code = 0
+        aCallback = 0x555555969680
+        di = @0x7ffff7fc5f60: {myInterp = 0x5555555961f0, isAllocated = true, myDoLog = false, myDoEcho = false, myToColorize = false, myFDLog = -1}
+        isLogManipulation = false
+        doLog = false
+        doEcho = false
+        aFDstdout = 1
+        aFDstderr = 2
+        aFDerr_save = -1
+        aFDout_save = -1
+#8  0x00007ffff73ac645 in TclInvokeStringCommand () from /usr/lib/x86_64-linux-gnu/libtcl8.6.so
+No symbol table info available.
+#9  0x00007ffff73ae4a2 in TclNRRunCallbacks () from /usr/lib/x86_64-linux-gnu/libtcl8.6.so
+No symbol table info available.
+#10 0x00007ffff744e29c in Tcl_RecordAndEvalObj () from /usr/lib/x86_64-linux-gnu/libtcl8.6.so
+No symbol table info available.
+#11 0x00007ffff744e148 in Tcl_RecordAndEval () from /usr/lib/x86_64-linux-gnu/libtcl8.6.so
+No symbol table info available.
+#12 0x00007ffff7f3d94c in Draw_Interpretor::RecordAndEval (this=0x7ffff7fc5f60 <theCommands>, line=0x7ffff7fc61d0 <Draw_Interprete(char const*)::command+16> "source -encoding utf-8 \"test.script\"", flags=0) at /tmp/OCCT/src/Draw/Draw_Interpretor.cxx:497
+No locals.
+#13 0x00007ffff7f27dc3 in Draw_Interprete (com=0x5555559eb330 "source -encoding utf-8 \"test.script\"") at /tmp/OCCT/src/Draw/Draw.cxx:610
+        first = false
+        command = {string = 0x7ffff7fc61d0 <Draw_Interprete(char const*)::command+16> "source -encoding utf-8 \"test.script\"", length = 36, spaceAvl = 200, staticSpace = "source -encoding utf-8 \"test.script\"\000/DrawResources/DrawDefault\"", '\000' <repeats 135 times>}
+        wasspying = false
+        tictac = {<OSD_Chronometer> = {_vptr.OSD_Chronometer = 0x7ffff5983450 <vtable for OSD_Timer+16>, myStartCpuUser = 0, myStartCpuSys = 0, myCumulCpuUser = 0, myCumulCpuSys = 0, myIsStopped = true, myIsThreadOnly = false}, myTimeStart = 0, myTimeCumul = 0}
+        hadchrono = false
+        c = 1436463824
+#14 0x00007ffff7f25af6 in interpreteTclCommand (theCmd=...) at /tmp/OCCT/src/Draw/Draw.cxx:104
+No locals.
+#15 0x00007ffff7f25ba0 in ReadInitFile (theFileName=...) at /tmp/OCCT/src/Draw/Draw.cxx:115
+        aCmd = {mystring = 0x5555559eb330 "source -encoding utf-8 \"test.script\"", mylength = 36}
+#16 0x00007ffff7f27841 in Draw_Appli (argc=3, argv=0x7fffffffdb28, Draw_InitAppli=0x555555555185 <Draw_InitAppli(Draw_Interpretor&)>) at /tmp/OCCT/src/Draw/Draw.cxx:499
+        aRunFile = {mystring = 0x55555557bce0 "test.script", mylength = 11}
+        aCommand = {mystring = 0x55555557bca0 "", mylength = 0}
+        isInteractiveForced = false
+        aDrawDef = {mystring = 0x55555577d6c0 "", mylength = 0}
+#17 0x00007ffff7f3e49d in Draw_Main (argc=3, argv=0x7fffffffdb28, fDraw_InitAppli=0x555555555185 <Draw_InitAppli(Draw_Interpretor&)>) at /tmp/OCCT/src/Draw/Draw_Main.cxx:118
+No locals.
+#18 0x00005555555551df in main (argc=3, argv=0x7fffffffdb28) at /tmp/OCCT/src/DRAWEXE/DRAWEXE.cxx:305

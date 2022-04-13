@@ -1,0 +1,352 @@
+0x00007ffff7f68a76 in opencascade::handle<Geom_Surface>::IsNull (this=0x70) at /tmp/OCCT/src/Standard/Standard_Handle.hxx:92
+92          bool IsNull() const { return entity == 0; } 
+(gdb) bt full
+#0  0x00007ffff7f68a76 in opencascade::handle<Geom_Surface>::IsNull (this=0x70) at /tmp/OCCT/src/Standard/Standard_Handle.hxx:92
+No locals.
+#1  0x00007ffff6606e59 in BRep_Tool::Surface (F=...) at /tmp/OCCT/src/BRep/BRep_Tool.cxx:96
+        TF = 0x0
+        S = <error reading variable>
+        L = {myItems = {myNode = {entity = 0x7fffffff7420}}}
+#2  0x00007ffff3614d02 in ChFi3d_Builder::PerformIntersectionAtEnd (this=0x555555cb1290, Index=1) at /tmp/OCCT/src/ChFi3d/ChFi3d_Builder_C1.cxx:2118
+        cint = {entity = 0x3ff0000000000000}
+        C2dint1 = {entity = 0x0}
+        vv1 = 9.9999999999999995e-08
+        P2 = {coord = {x = 0, y = 0, z = 0}}
+        P8 = {coord = {x = 6.9533558064425297e-310, y = 6.9533558064326484e-310, z = 0}}
+        Isvtx2 = 255
+        C2dint2 = {entity = 0x0}
+        vv2 = 0
+        p2d1 = {coord = {x = 0, y = 0}}
+        P3 = {coord = {x = 0, y = 6.9531436082559572e-310, z = 0}}
+        ori = 4294947200
+        cfacemoins1 = {entity = 0xbce3b9cbd31e97dd}
+        p2d2 = {coord = {x = -16.033328088421051, y = 47.359607160628443}}
+        P4 = {coord = {x = 6.9533558059899656e-310, y = 47.359607160628443, z = 6.9533471781686273e-310}}
+        indice = 32767
+        cface = {entity = 0x0}
+        to1 = 1.2899645366134423e-06
+        P5 = {coord = {x = 50, y = 6.9533558060405579e-310, z = 1.8972294542597588}}
+        uu1 = 60
+        to2 = 0
+        P6 = {coord = {x = -0.94719214321256873, y = -16.033328088421051, z = 47.359607160628443}}
+        tcurv3d = {myCurve = {entity = 0x0}, myFirst = 0, myLast = 60, myRangeDefined = 221, myTolerance = 0, myIsWalk = false, myS1 = {myTShape = {
+              entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x3ff0000000000000}}}, myOrient = TopAbs_FORWARD}, myS2 = {myTShape = {
+              entity = 0x3ff0000000000000}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_FORWARD}, mySCI1 = {entity = 0x0}, 
+          mySCI2 = {entity = 0x8000000000000000}, myKeep = false, myMother = 1076363264, myDSIndex = 1200518656}
+        uu2 = 6.9533558060405579e-310
+        P1 = {coord = {x = 1.8972294542597588, y = 6.9533558059931276e-310, z = 6.9533558059978706e-310}}
+        P7 = {coord = {x = -16.033328088421051, y = 6.953355805971784e-310, z = 6.9533558059678314e-310}}
+        Isvtx1 = 255
+        DStr = @0x555555cdcbd0: {myNbSurfaces = 2, mySurfaces = {<NCollection_BaseMap> = {
+              _vptr.NCollection_BaseMap = 0x7ffff3496a60 <vtable for NCollection_DataMap<int, TopOpeBRepDS_SurfaceData, NCollection_DefaultHasher<int> >+16>, myAllocator = {entity = 0x55555556bb40}, myData1 = 0x555555ce0c30, myData2 = 0x0, myNbBuckets = 101, mySize = 2, isDouble = false}, <No data fields>}, 
+          myNbCurves = 4, myCurves = {<NCollection_BaseMap> = {
+              _vptr.NCollection_BaseMap = 0x7ffff3496a40 <vtable for NCollection_DataMap<int, TopOpeBRepDS_CurveData, NCollection_DefaultHasher<int> >+16>, myAllocator = {entity = 0x55555556bb40}, myData1 = 0x555555ce0f70, myData2 = 0x0, myNbBuckets = 101, mySize = 4, isDouble = false}, <No data fields>}, 
+          myNbPoints = 2, myPoints = {<NCollection_BaseMap> = {
+              _vptr.NCollection_BaseMap = 0x7ffff3496a20 <vtable for NCollection_DataMap<int, TopOpeBRepDS_PointData, NCollection_DefaultHasher<int> >+16>, myAllocator = {entity = 0x55555556bb40}, myData1 = 0x555555cddb30, myData2 = 0x0, myNbBuckets = 101, mySize = 2, isDouble = false}, <No data fields>}, 
+          myShapes = {<NCollection_BaseMap> = {
+              _vptr.NCollection_BaseMap = 0x7ffff34969e0 <vtable for NCollection_IndexedDataMap<TopoDS_Shape, TopOpeBRepDS_ShapeData, TopTools_ShapeMapHasher>+16>, myAllocator = {entity = 0x55555556bb40}, myData1 = 0x555555cdd3b0, myData2 = 0x555555cde950, myNbBuckets = 101, mySize = 3, 
+              isDouble = true}, <No data fields>}, mySectionEdges = {<NCollection_BaseMap> = {
+              _vptr.NCollection_BaseMap = 0x7ffff7fbe050 <vtable for NCollection_IndexedMap<TopoDS_Shape, TopTools_ShapeMapHasher>+16>, myAllocator = {
+                entity = 0x55555556bb40}, myData1 = 0x0, myData2 = 0x0, myNbBuckets = 1, mySize = 0, isDouble = true}, <No data fields>}, 
+          myEmptyListOfInterference = {<NCollection_BaseList> = {
+              _vptr.NCollection_BaseList = 0x7ffff3495aa8 <vtable for NCollection_List<opencascade::handle<TopOpeBRepDS_Interference> >+16>, 
+              myAllocator = {entity = 0x55555556bb40}, myFirst = 0x0, myLast = 0x0, myLength = 0}, <No data fields>}, 
+          myEmptyListOfShape = {<NCollection_BaseList> = {_vptr.NCollection_BaseList = 0x7ffff7fbe070 <vtable for NCollection_List<TopoDS_Shape>+16>, 
+              myAllocator = {entity = 0x55555556bb40}, myFirst = 0x0, myLast = 0x0, myLength = 0}, <No data fields>}, myEmptyShape = {myTShape = {
+              entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, myEmptyPoint = {myPoint = {coord = {x = 0, 
+                y = 0, z = 0}}, myTolerance = 0, myKeep = true}, myEmptySurface = {mySurface = {entity = 0x0}, myTolerance = 0, myKeep = false}, 
+          myEmptyCurve = {myCurve = {entity = 0x0}, myFirst = 0, myLast = 0, myRangeDefined = false, myTolerance = 9.9999999999999995e-08, 
+            myIsWalk = false, myS1 = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, myS2 = {
+              myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, mySCI1 = {entity = 0x0}, 
+            mySCI2 = {entity = 0x0}, myKeep = true, myMother = 0, myDSIndex = 0}, myEmptyGSurface = {entity = 0x0}, 
+          myNewSurface = {<NCollection_BaseMap> = {
+              _vptr.NCollection_BaseMap = 0x7ffff3496a00 <vtable for NCollection_DataMap<TopoDS_Shape, opencascade::handle<Geom_Surface>, TopTools_ShapeMapHasher>+16>, myAllocator = {entity = 0x55555556bb40}, myData1 = 0x0, myData2 = 0x0, myNbBuckets = 1, mySize = 0, isDouble = false}, <No data fields>}, 
+          myIsfafa = false, myI = 0, myMapOfShapeWithStateObj = {<NCollection_BaseMap> = {
+              _vptr.NCollection_BaseMap = 0x7ffff34969c0 <vtable for NCollection_IndexedDataMap<TopoDS_Shape, TopOpeBRepDS_ShapeWithState, TopTools_ShapeMapHasher>+16>, myAllocator = {entity = 0x55555556bb40}, myData1 = 0x0, myData2 = 0x0, myNbBuckets = 1, mySize = 0, isDouble = true}, <No data fields>}, 
+          myMapOfShapeWithStateTool = {<NCollection_BaseMap> = {
+              _vptr.NCollection_BaseMap = 0x7ffff34969c0 <vtable for NCollection_IndexedDataMap<TopoDS_Shape, TopOpeBRepDS_ShapeWithState, TopTools_ShapeMapHasher>+16>, myAllocator = {entity = 0x55555556bb40}, myData1 = 0x0, myData2 = 0x0, myNbBuckets = 1, mySize = 0, isDouble = true}, <No data fields>}, 
+          myMapOfRejectedShapesObj = {<NCollection_BaseMap> = {
+              _vptr.NCollection_BaseMap = 0x7ffff7fbe050 <vtable for NCollection_IndexedMap<TopoDS_Shape, TopTools_ShapeMapHasher>+16>, myAllocator = {
+                entity = 0x55555556bb40}, myData1 = 0x0, myData2 = 0x0, myNbBuckets = 1, mySize = 0, isDouble = true}, <No data fields>}, 
+          myMapOfRejectedShapesTool = {<NCollection_BaseMap> = {
+              _vptr.NCollection_BaseMap = 0x7ffff7fbe050 <vtable for NCollection_IndexedMap<TopoDS_Shape, TopTools_ShapeMapHasher>+16>, myAllocator = {
+--Type <RET> for more, q to quit, c to continue without paging--c
+                entity = 0x55555556bb40}, myData1 = 0x0, myData2 = 0x0, myNbBuckets = 1, mySize = 0, isDouble = true}, <No data fields>}}
+        nn = 15
+        It = {<NCollection_BaseList::Iterator> = {myCurrent = 0x555555cde8b0, myPrevious = 0x0}, <No data fields>}
+        stripe = {entity = 0x555555cbc9d0}
+        spine = {entity = 0x555555cbca60}
+        SeqFil = @0x555555cdfa70: {<NCollection_BaseSequence> = {_vptr.NCollection_BaseSequence = 0x7ffff379dac0 <vtable for ChFiDS_HData+16>, myAllocator = {entity = 0x55555556bb40}, myFirstItem = 0x555555cde520, myLastItem = 0x555555cde520, myCurrentItem = 0x555555cde520, myCurrentIndex = 1, mySize = 1}, <No data fields>}
+        Vtx = @0x555555cdc8e0: {<TopoDS_Shape> = {myTShape = {entity = 0x555555cb4a80}, myLocation = {myItems = {myNode = {entity = 0x555555cb17c0}}}, myOrient = TopAbs_FORWARD}, <No data fields>}
+        sens = 1
+        num = 1
+        num1 = 2
+        couture = false
+        isfirst = true
+        edgelibre1 = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}
+        edgelibre2 = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}
+        EdgeSpine = {<TopoDS_Shape> = {myTShape = {entity = 0x555555cb5390}, myLocation = {myItems = {myNode = {entity = 0x555555cb17c0}}}, myOrient = TopAbs_FORWARD}, <No data fields>}
+        bordlibre = false
+        tabedg = {myLowerBound = 0, myUpperBound = 15, myDeletable = true, myData = 0x555555ce1f08}
+        F1 = {<TopoDS_Shape> = {myTShape = {entity = 0x555555cb5940}, myLocation = {myItems = {myNode = {entity = 0x5555559f1260}}}, myOrient = TopAbs_REVERSED}, <No data fields>}
+        F2 = {<TopoDS_Shape> = {myTShape = {entity = 0x555555cb9ef0}, myLocation = {myItems = {myNode = {entity = 0x555555cc11f0}}}, myOrient = TopAbs_FORWARD}, <No data fields>}
+        nface = 3
+        ItF = {<NCollection_BaseList::Iterator> = {myCurrent = 0x0, myPrevious = 0x555555ccfe10}, <No data fields>}
+        nbarete = 3
+        facecouture = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}
+        edgecouture = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}
+        trouve = false
+        reg1 = false
+        reg2 = false
+        Ecur = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}
+        Eadj1 = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}
+        Eadj2 = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}
+        Fga = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}
+        Fdr = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}
+        Vbid1 = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}
+        nbsurf = 1
+        nbedge = 1
+        state = ChFiDS_AllSame
+        face = {<TopoDS_Shape> = {myTShape = {entity = 0x555555cb5940}, myLocation = {myItems = {myNode = {entity = 0x5555559f1260}}}, myOrient = TopAbs_REVERSED}, <No data fields>}
+        Fd = {entity = 0x555555cdd6f0}
+        CV1 = @0x555555cdd700: {arc = {<TopoDS_Shape> = {myTShape = {entity = 0x555555cb4b40}, myLocation = {myItems = {myNode = {entity = 0x5555559f1260}}}, myOrient = TopAbs_FORWARD}, <No data fields>}, vtx = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, point = {coord = {x = -16.033375587687114, y = -47.359591079993066, z = 15}}, vector = {coord = {x = 0, y = 0, z = 0}}, tol = 1.0000000000000001e-11, prmarc = 15, prmtg = 0, traarc = TopAbs_REVERSED, isonarc = true, isvtx = false, hasvector = false}
+        CV2 = @0x555555cdd800: {arc = {<TopoDS_Shape> = {myTShape = {entity = 0x555555cb8aa0}, myLocation = {myItems = {myNode = {entity = 0x555555cdfd40}}}, myOrient = TopAbs_REVERSED}, <No data fields>}, vtx = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, point = {coord = {x = -48.80833333333333, y = -4.3297340821605346, z = 16}}, vector = {coord = {x = 0, y = 0, z = 0}}, tol = 1.0000000000000001e-11, prmarc = 5.9140477982926738, prmtg = 0, traarc = TopAbs_FORWARD, isonarc = true, isvtx = false, hasvector = false}
+        onecorner = false
+        HGs = {entity = 0x555555cda910}
+        Fi1 = {firstParam = 0, lastParam = 0.65286725787879796, pCurveOnFace = {entity = 0x555555cde220}, pCurveOnSurf = {entity = 0x555555cde4e0}, lineindex = 2, LineTransition = TopAbs_FORWARD}
+        Fi2 = {firstParam = -1.1558848846516172, lastParam = 1.8087531454794892, pCurveOnFace = {entity = 0x555555ce04b0}, pCurveOnSurf = {entity = 0x555555ce0980}, lineindex = 1, LineTransition = TopAbs_FORWARD}
+        Gs = @0x555555cda910: {<Adaptor3d_Surface> = {<Standard_Transient> = {_vptr.Standard_Transient = 0x7ffff5facd88 <vtable for GeomAdaptor_Surface+16>, myRefCount_ = 1}, <No data fields>}, mySurface = {entity = 0x555555cdd9e0}, myUFirst = -1.4523486876647278, myULast = 2.1052169484926, myVFirst = 0, myVLast = 1.5707963267948966, myTolU = 0, myTolV = 0, myBSplineSurface = {entity = 0x0}, mySurfaceCache = {entity = 0x0}, mySurfaceType = GeomAbs_Torus, myNestedEvaluator = {entity = 0x0}}
+        HBs = {entity = 0x555555cde3d0}
+        Bs = @0x555555cde3d0: {<Adaptor3d_Surface> = {<Standard_Transient> = {_vptr.Standard_Transient = 0x7ffff66b8ec8 <vtable for BRepAdaptor_Surface+16>, myRefCount_ = 1}, <No data fields>}, mySurf = {<Adaptor3d_Surface> = {<Standard_Transient> = {_vptr.Standard_Transient = 0x7ffff5facd88 <vtable for GeomAdaptor_Surface+16>, myRefCount_ = 0}, <No data fields>}, mySurface = {entity = 0x0}, myUFirst = 0, myULast = 0, myVFirst = 0, myVLast = 0, myTolU = 0, myTolV = 0, myBSplineSurface = {entity = 0x0}, mySurfaceCache = {entity = 0x0}, mySurfaceType = GeomAbs_OtherSurface, myNestedEvaluator = {entity = 0x0}}, myTrsf = {scale = 1, shape = gp_Identity, matrix = {myMat = {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}}, loc = {x = 0, y = 0, z = 0}}, myFace = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}}
+        Cc = {entity = 0x0}
+        Pc = {entity = 0x0}
+        Ps = {entity = 0x0}
+        Ubid = 2.4851489710802413e+197
+        Vbid = 0
+        orsurfdata = TopAbs_FORWARD
+        IsurfPrev = 0
+        Isurf = 1
+        SDprev = {entity = 0x0}
+        tolpt = 0.0001
+        tolreached = 0
+        orcourbe = TopAbs_REVERSED
+        orface = TopAbs_FORWARD
+        orien = 1439371920
+        dist = 0
+        Ishape1 = 2
+        trafil1 = TopAbs_FORWARD
+        isOnSame1 = false
+        isOnSame2 = false
+        checkShrink = false
+        isShrink = false
+        isUShrink = false
+        checkShrParam = 0
+        prevSDParam = 0
+        midP2d = {coord = {x = 0, y = 0}}
+        midIpoint = 0
+        P2d1 = {coord = {x = 0, y = 0}}
+        P2d2 = {coord = {x = 0.65286725787879796, y = 0}}
+        aP1 = {coord = {x = -48.80833333333333, y = -4.3297340821605346, z = 16}}
+        aP2 = {coord = {x = 48.808333333333337, y = -4.3297340821605097, z = 16}}
+        Fi1Length = 32.066703676112205
+        P2d3 = {coord = {x = -1.1558848846516172, y = 1.5707963267948966}}
+        P2d4 = {coord = {x = 1.8087531454794892, y = 1.5707963267948966}}
+        Fi2Length = 97.616666666666674
+        nb = 1
+        nbface = 1
+        E1 = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}
+        E2 = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}
+        Edge = {{<TopoDS_Shape> = {myTShape = {entity = 0x555555cb4b40}, myLocation = {myItems = {myNode = {entity = 0x5555559f1260}}}, myOrient = TopAbs_FORWARD}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x555555cb8aa0}, myLocation = {myItems = {myNode = {entity = 0x555555cdfd40}}}, myOrient = TopAbs_REVERSED}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}}
+        E = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}
+        Ei = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}
+        edgesau = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}
+        facesau = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}
+        oneintersection1 = false
+        oneintersection2 = false
+        Face = {{<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}}
+        F = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}
+        F3 = {<TopoDS_Shape> = {myTShape = {entity = 0x555555cb5940}, myLocation = {myItems = {myNode = {entity = 0x5555559f1260}}}, myOrient = TopAbs_REVERSED}, <No data fields>}
+        V1 = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}
+        V2 = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}
+        V = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}
+        Vfin = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}
+        findonf1 = false
+        findonf2 = false
+        It3 = {<NCollection_BaseList::Iterator> = {myCurrent = 0x0, myPrevious = 0x0}, <No data fields>}
+        dist1 = -6.9169190417774516e-323
+        dist2 = 9.8813129168249309e-324
+        Pardeb = {myLowerBound = 1, myUpperBound = 4, myDeletable = true, myData = 0x555555ae7f78}
+        Parfin = {myLowerBound = 1, myUpperBound = 4, myDeletable = true, myData = 0x555555b85968}
+        pfil1 = {coord = {x = 0, y = 0}}
+        pfac1 = {coord = {x = 0, y = 0}}
+        pfil2 = {coord = {x = 0, y = 0}}
+        pfac2 = {coord = {x = 0, y = 0}}
+        pint = {coord = {x = 0, y = 0}}
+        pfildeb = {coord = {x = 0, y = 0}}
+        Hc1 = {entity = 0x0}
+        Hc2 = {entity = 0x0}
+        inters = {<IntCurveSurface_Intersection> = {done = false, myIsParallel = false, lpnt = {<NCollection_BaseSequence> = {_vptr.NCollection_BaseSequence = 0x7ffff76e7368 <vtable for NCollection_Sequence<IntCurveSurface_IntersectionPoint>+16>, myAllocator = {entity = 0x55555556bb40}, myFirstItem = 0x0, myLastItem = 0x0, myCurrentItem = 0x0, myCurrentIndex = 0, mySize = 0}, <No data fields>}, lseg = {<NCollection_BaseSequence> = {_vptr.NCollection_BaseSequence = 0x7ffff76e7348 <vtable for NCollection_Sequence<IntCurveSurface_IntersectionSegment>+16>, myAllocator = {entity = 0x55555556bb40}, myFirstItem = 0x0, myLastItem = 0x0, myCurrentItem = 0x0, myCurrentIndex = 0, mySize = 0}, <No data fields>}}, <No data fields>}
+        proledge = {0, 0, 1431921136, 21845, 5, 0, -139063599, 32767, 0, 1076363264, -33168, 32767, -36208, 32767, -33608}
+        prolface = {0, -2147483648, 0, -2147483648, 0, -2147483648, -36304, 32767, 0, 0, 102624, 0, -137802880, 32767, 48, 0}
+        shrink = {0, 1076363264, 1285458443, -1125484231, 0, 0, -172560508, 32767, 0, 1079115776, -1881239308, -1124656766, 0, 0, 0}
+        faceprol = {{<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}}
+        indcurve = {0, 0, -172560508, 32767, 0, 0, 1771591316, 1022673256, 0, 1078460416, -36592, 32767, -36800, 32767, -135025682}
+        indpoint2 = 0
+        indpoint1 = 0
+        Interfp1 = {entity = 0x0}
+        Interfp2 = {entity = 0x0}
+        Interfedge = {{entity = 0x0} <repeats 15 times>}
+        Interfc = {entity = 0x0}
+        InterfPC = {{entity = 0x0} <repeats 15 times>}
+        InterfPS = {{entity = 0x0} <repeats 15 times>}
+        u2 = 4.6355709283469282e-310
+        v2 = 0.32066656176842107
+        p1 = 6.9533491336811452e-310
+        p2 = 6.9533558059923371e-310
+        paredge1 = 6.9533558062516227e-310
+        paredge2 = 0
+        tolex = 0.0001
+        extend = false
+        Sfacemoins1 = {entity = 0x0}
+        Sface = {entity = 0x0}
+        intersOnSameFailed = false
+#3  0x00007ffff360b019 in ChFi3d_Builder::PerformOneCorner (this=0x555555cb1290, Index=1, thePrepareOnSame=false) at /tmp/OCCT/src/ChFi3d/ChFi3d_Builder_C1.cxx:747
+        pced = {entity = 0x7fffffffafb0}
+        DStr = @0x555555cdcbd0: {myNbSurfaces = 2, mySurfaces = {<NCollection_BaseMap> = {_vptr.NCollection_BaseMap = 0x7ffff3496a60 <vtable for NCollection_DataMap<int, TopOpeBRepDS_SurfaceData, NCollection_DefaultHasher<int> >+16>, myAllocator = {entity = 0x55555556bb40}, myData1 = 0x555555ce0c30, myData2 = 0x0, myNbBuckets = 101, mySize = 2, isDouble = false}, <No data fields>}, myNbCurves = 4, myCurves = {<NCollection_BaseMap> = {_vptr.NCollection_BaseMap = 0x7ffff3496a40 <vtable for NCollection_DataMap<int, TopOpeBRepDS_CurveData, NCollection_DefaultHasher<int> >+16>, myAllocator = {entity = 0x55555556bb40}, myData1 = 0x555555ce0f70, myData2 = 0x0, myNbBuckets = 101, mySize = 4, isDouble = false}, <No data fields>}, myNbPoints = 2, myPoints = {<NCollection_BaseMap> = {_vptr.NCollection_BaseMap = 0x7ffff3496a20 <vtable for NCollection_DataMap<int, TopOpeBRepDS_PointData, NCollection_DefaultHasher<int> >+16>, myAllocator = {entity = 0x55555556bb40}, myData1 = 0x555555cddb30, myData2 = 0x0, myNbBuckets = 101, mySize = 2, isDouble = false}, <No data fields>}, myShapes = {<NCollection_BaseMap> = {_vptr.NCollection_BaseMap = 0x7ffff34969e0 <vtable for NCollection_IndexedDataMap<TopoDS_Shape, TopOpeBRepDS_ShapeData, TopTools_ShapeMapHasher>+16>, myAllocator = {entity = 0x55555556bb40}, myData1 = 0x555555cdd3b0, myData2 = 0x555555cde950, myNbBuckets = 101, mySize = 3, isDouble = true}, <No data fields>}, mySectionEdges = {<NCollection_BaseMap> = {_vptr.NCollection_BaseMap = 0x7ffff7fbe050 <vtable for NCollection_IndexedMap<TopoDS_Shape, TopTools_ShapeMapHasher>+16>, myAllocator = {entity = 0x55555556bb40}, myData1 = 0x0, myData2 = 0x0, myNbBuckets = 1, mySize = 0, isDouble = true}, <No data fields>}, myEmptyListOfInterference = {<NCollection_BaseList> = {_vptr.NCollection_BaseList = 0x7ffff3495aa8 <vtable for NCollection_List<opencascade::handle<TopOpeBRepDS_Interference> >+16>, myAllocator = {entity = 0x55555556bb40}, myFirst = 0x0, myLast = 0x0, myLength = 0}, <No data fields>}, myEmptyListOfShape = {<NCollection_BaseList> = {_vptr.NCollection_BaseList = 0x7ffff7fbe070 <vtable for NCollection_List<TopoDS_Shape>+16>, myAllocator = {entity = 0x55555556bb40}, myFirst = 0x0, myLast = 0x0, myLength = 0}, <No data fields>}, myEmptyShape = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, myEmptyPoint = {myPoint = {coord = {x = 0, y = 0, z = 0}}, myTolerance = 0, myKeep = true}, myEmptySurface = {mySurface = {entity = 0x0}, myTolerance = 0, myKeep = false}, myEmptyCurve = {myCurve = {entity = 0x0}, myFirst = 0, myLast = 0, myRangeDefined = false, myTolerance = 9.9999999999999995e-08, myIsWalk = false, myS1 = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, myS2 = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, mySCI1 = {entity = 0x0}, mySCI2 = {entity = 0x0}, myKeep = true, myMother = 0, myDSIndex = 0}, myEmptyGSurface = {entity = 0x0}, myNewSurface = {<NCollection_BaseMap> = {_vptr.NCollection_BaseMap = 0x7ffff3496a00 <vtable for NCollection_DataMap<TopoDS_Shape, opencascade::handle<Geom_Surface>, TopTools_ShapeMapHasher>+16>, myAllocator = {entity = 0x55555556bb40}, myData1 = 0x0, myData2 = 0x0, myNbBuckets = 1, mySize = 0, isDouble = false}, <No data fields>}, myIsfafa = false, myI = 0, myMapOfShapeWithStateObj = {<NCollection_BaseMap> = {_vptr.NCollection_BaseMap = 0x7ffff34969c0 <vtable for NCollection_IndexedDataMap<TopoDS_Shape, TopOpeBRepDS_ShapeWithState, TopTools_ShapeMapHasher>+16>, myAllocator = {entity = 0x55555556bb40}, myData1 = 0x0, myData2 = 0x0, myNbBuckets = 1, mySize = 0, isDouble = true}, <No data fields>}, myMapOfShapeWithStateTool = {<NCollection_BaseMap> = {_vptr.NCollection_BaseMap = 0x7ffff34969c0 <vtable for NCollection_IndexedDataMap<TopoDS_Shape, TopOpeBRepDS_ShapeWithState, TopTools_ShapeMapHasher>+16>, myAllocator = {entity = 0x55555556bb40}, myData1 = 0x0, myData2 = 0x0, myNbBuckets = 1, mySize = 0, isDouble = true}, <No data fields>}, myMapOfRejectedShapesObj = {<NCollection_BaseMap> = {_vptr.NCollection_BaseMap = 0x7ffff7fbe050 <vtable for NCollection_IndexedMap<TopoDS_Shape, TopTools_ShapeMapHasher>+16>, myAllocator = {entity = 0x55555556bb40}, myData1 = 0x0, myData2 = 0x0, myNbBuckets = 1, mySize = 0, isDouble = true}, <No data fields>}, myMapOfRejectedShapesTool = {<NCollection_BaseMap> = {_vptr.NCollection_BaseMap = 0x7ffff7fbe050 <vtable for NCollection_IndexedMap<TopoDS_Shape, TopTools_ShapeMapHasher>+16>, myAllocator = {entity = 0x55555556bb40}, myData1 = 0x0, myData2 = 0x0, myNbBuckets = 1, mySize = 0, isDouble = true}, <No data fields>}}
+        Vtx = @0x555555cdc8e0: {<TopoDS_Shape> = {myTShape = {entity = 0x555555cb4a80}, myLocation = {myItems = {myNode = {entity = 0x555555cb17c0}}}, myOrient = TopAbs_FORWARD}, <No data fields>}
+        StrIt = {<NCollection_BaseList::Iterator> = {myCurrent = 0x555555cde8b0, myPrevious = 0x0}, <No data fields>}
+        stripe = {entity = 0x555555cbc9d0}
+        spine = {entity = 0x555555cbca60}
+        SeqFil = @0x555555cdfa70: {<NCollection_BaseSequence> = {_vptr.NCollection_BaseSequence = 0x7ffff379dac0 <vtable for ChFiDS_HData+16>, myAllocator = {entity = 0x55555556bb40}, myFirstItem = 0x555555cde520, myLastItem = 0x555555cde520, myCurrentItem = 0x555555cde520, myCurrentIndex = 1, mySize = 1}, <No data fields>}
+        sens = 1
+        num = 1
+        isfirst = true
+        Fd = @0x555555cde530: {entity = 0x555555cdd6f0}
+        CV1 = @0x555555cdd700: {arc = {<TopoDS_Shape> = {myTShape = {entity = 0x555555cb4b40}, myLocation = {myItems = {myNode = {entity = 0x5555559f1260}}}, myOrient = TopAbs_FORWARD}, <No data fields>}, vtx = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, point = {coord = {x = -16.033375587687114, y = -47.359591079993066, z = 15}}, vector = {coord = {x = 0, y = 0, z = 0}}, tol = 1.0000000000000001e-11, prmarc = 15, prmtg = 0, traarc = TopAbs_REVERSED, isonarc = true, isvtx = false, hasvector = false}
+        CV2 = @0x555555cdd800: {arc = {<TopoDS_Shape> = {myTShape = {entity = 0x555555cb8aa0}, myLocation = {myItems = {myNode = {entity = 0x555555cdfd40}}}, myOrient = TopAbs_REVERSED}, <No data fields>}, vtx = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, point = {coord = {x = -48.80833333333333, y = -4.3297340821605346, z = 16}}, vector = {coord = {x = 0, y = 0, z = 0}}, tol = 1.0000000000000001e-11, prmarc = 5.9140477982926738, prmtg = 0, traarc = TopAbs_FORWARD, isonarc = true, isvtx = false, hasvector = false}
+        box1 = {Xmin = 1.7976931348623157e+308, Xmax = -1.7976931348623157e+308, Ymin = 1.7976931348623157e+308, Ymax = -1.7976931348623157e+308, Zmin = 1.7976931348623157e+308, Zmax = -1.7976931348623157e+308, Gap = 0, Flags = 1}
+        box2 = {Xmin = 1.7976931348623157e+308, Xmax = -1.7976931348623157e+308, Ymin = 1.7976931348623157e+308, Ymax = -1.7976931348623157e+308, Zmin = 1.7976931348623157e+308, Zmax = -1.7976931348623157e+308, Gap = 0, Flags = 1}
+        stat = ChFiDS_AllSame
+        onsame = false
+        Fv = {<TopoDS_Shape> = {myTShape = {entity = 0x555555cb5940}, myLocation = {myItems = {myNode = {entity = 0x5555559f1260}}}, myOrient = TopAbs_REVERSED}, <No data fields>}
+        Fad = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}
+        Fop = {<TopoDS_Shape> = {myTShape = {entity = 0x555555cb9ef0}, myLocation = {myItems = {myNode = {entity = 0x555555cc11f0}}}, myOrient = TopAbs_FORWARD}, <No data fields>}
+        Arcpiv = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}
+        Arcprol = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}
+        Arcspine = {<TopoDS_Shape> = {myTShape = {entity = 0x555555cb5390}, myLocation = {myItems = {myNode = {entity = 0x555555cb17c0}}}, myOrient = TopAbs_FORWARD}, <No data fields>}
+        OArcprolv = TopAbs_FORWARD
+        OArcprolop = TopAbs_FORWARD
+        ICurve = 32767
+        HBs = {entity = 0x555555cdb9e0}
+        HBad = {entity = 0x555555cdbc20}
+        HBop = {entity = 0x555555ce1570}
+        Bs = @0x555555cdb9e0: {<Adaptor3d_Surface> = {<Standard_Transient> = {_vptr.Standard_Transient = 0x7ffff66b8ec8 <vtable for BRepAdaptor_Surface+16>, myRefCount_ = 1}, <No data fields>}, mySurf = {<Adaptor3d_Surface> = {<Standard_Transient> = {_vptr.Standard_Transient = 0x7ffff5facd88 <vtable for GeomAdaptor_Surface+16>, myRefCount_ = 0}, <No data fields>}, mySurface = {entity = 0x0}, myUFirst = 0, myULast = 0, myVFirst = 0, myVLast = 0, myTolU = 0, myTolV = 0, myBSplineSurface = {entity = 0x0}, mySurfaceCache = {entity = 0x0}, mySurfaceType = GeomAbs_OtherSurface, myNestedEvaluator = {entity = 0x0}}, myTrsf = {scale = 1, shape = gp_Identity, matrix = {myMat = {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}}, loc = {x = 0, y = 0, z = 0}}, myFace = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}}
+        Bad = @0x555555cdbc20: {<Adaptor3d_Surface> = {<Standard_Transient> = {_vptr.Standard_Transient = 0x7ffff66b8ec8 <vtable for BRepAdaptor_Surface+16>, myRefCount_ = 1}, <No data fields>}, mySurf = {<Adaptor3d_Surface> = {<Standard_Transient> = {_vptr.Standard_Transient = 0x7ffff5facd88 <vtable for GeomAdaptor_Surface+16>, myRefCount_ = 0}, <No data fields>}, mySurface = {entity = 0x0}, myUFirst = 0, myULast = 0, myVFirst = 0, myVLast = 0, myTolU = 0, myTolV = 0, myBSplineSurface = {entity = 0x0}, mySurfaceCache = {entity = 0x0}, mySurfaceType = GeomAbs_OtherSurface, myNestedEvaluator = {entity = 0x0}}, myTrsf = {scale = 1, shape = gp_Identity, matrix = {myMat = {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}}, loc = {x = 0, y = 0, z = 0}}, myFace = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}}
+        Bop = @0x555555ce1570: {<Adaptor3d_Surface> = {<Standard_Transient> = {_vptr.Standard_Transient = 0x7ffff66b8ec8 <vtable for BRepAdaptor_Surface+16>, myRefCount_ = 1}, <No data fields>}, mySurf = {<Adaptor3d_Surface> = {<Standard_Transient> = {_vptr.Standard_Transient = 0x7ffff5facd88 <vtable for GeomAdaptor_Surface+16>, myRefCount_ = 0}, <No data fields>}, mySurface = {entity = 0x0}, myUFirst = 0, myULast = 0, myVFirst = 0, myVLast = 0, myTolU = 0, myTolV = 0, myBSplineSurface = {entity = 0x0}, mySurfaceCache = {entity = 0x0}, mySurfaceType = GeomAbs_OtherSurface, myNestedEvaluator = {entity = 0x0}}, myTrsf = {scale = 1, shape = gp_Identity, matrix = {myMat = {{1, 0, 0}, {0, 1, 0}, {0, 0, 1}}}, loc = {x = 0, y = 0, z = 0}}, myFace = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}}
+        Cc = {entity = 0x0}
+        Pc = {entity = 0x0}
+        Ps = {entity = 0x0}
+        Ubid = 6.9533452765882165e-310
+        Vbid = 6.9533452851292281e-310
+        Udeb = 0
+        Ufin = 0
+        inters = false
+        IFadArc = 1
+        IFopArc = 2
+        ex = {myStack = 0x555555cdfde0, myShape = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, myTop = -1, mySizeOfStack = 20, toFind = TopAbs_SHAPE, toAvoid = TopAbs_SHAPE, hasMore = false}
+        CPopArc = @0x555555cdd800: {arc = {<TopoDS_Shape> = {myTShape = {entity = 0x555555cb8aa0}, myLocation = {myItems = {myNode = {entity = 0x555555cdfd40}}}, myOrient = TopAbs_REVERSED}, <No data fields>}, vtx = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, point = {coord = {x = -48.80833333333333, y = -4.3297340821605346, z = 16}}, vector = {coord = {x = 0, y = 0, z = 0}}, tol = 1.0000000000000001e-11, prmarc = 5.9140477982926738, prmtg = 0, traarc = TopAbs_FORWARD, isonarc = true, isvtx = false, hasvector = false}
+        FiopArc = @0x555555cdd928: {firstParam = -1.1558848846516172, lastParam = 1.8087531454794892, pCurveOnFace = {entity = 0x555555ce04b0}, pCurveOnSurf = {entity = 0x555555ce0980}, lineindex = 1, LineTransition = TopAbs_FORWARD}
+        CPadArc = @0x555555cdd700: {arc = {<TopoDS_Shape> = {myTShape = {entity = 0x555555cb4b40}, myLocation = {myItems = {myNode = {entity = 0x5555559f1260}}}, myOrient = TopAbs_FORWARD}, <No data fields>}, vtx = {<TopoDS_Shape> = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, <No data fields>}, point = {coord = {x = -16.033375587687114, y = -47.359591079993066, z = 15}}, vector = {coord = {x = 0, y = 0, z = 0}}, tol = 1.0000000000000001e-11, prmarc = 15, prmtg = 0, traarc = TopAbs_REVERSED, isonarc = true, isvtx = false, hasvector = false}
+        FiadArc = @0x555555cdd900: {firstParam = 0, lastParam = 0.65286725787879796, pCurveOnFace = {entity = 0x555555cde220}, pCurveOnSurf = {entity = 0x555555cde4e0}, lineindex = 2, LineTransition = TopAbs_FORWARD}
+        wop = 0
+        c3df = {entity = 0x0}
+        HGs = {entity = 0x555555cdbb80}
+        p2dbout = {coord = {x = 0, y = 0}}
+        edgecouture = {<TopoDS_Shape> = {myTShape = {entity = 0x55555586fda0}, myLocation = {myItems = {myNode = {entity = 0x1837a17c2}}}, myOrient = 1436457744}, <No data fields>}
+        couture = false
+        intcouture = 48
+        tolreached = 2.1219856883109462e-314
+        par1 = 4.635570928745738e-310
+        par2 = 4.6355709287583861e-310
+        indpt = 1
+        Icurv1 = 13486304
+        Icurv2 = 1
+        curv1 = {entity = 0x55555586fda0}
+        curv2 = {entity = 0x1}
+        c2d1 = {entity = 0x0}
+        c2d2 = {entity = 0x1}
+        Isurf = 32767
+        IShape = 32767
+        Et = 4294948432
+#4  0x00007ffff35b727f in ChFi3d_Builder::PerformFilletOnVertex (this=0x555555cb1290, Index=1) at /tmp/OCCT/src/ChFi3d/ChFi3d_Builder.cxx:705
+        It = {<NCollection_BaseList::Iterator> = {myCurrent = 0x0, myPrevious = 0x555555cde8b0}, <No data fields>}
+        stripe = {entity = 0x555555cbc9d0}
+        sp = {entity = 0x555555cbca60}
+        Vtx = @0x555555cdc8e0: {<TopoDS_Shape> = {myTShape = {entity = 0x555555cb4a80}, myLocation = {myItems = {myNode = {entity = 0x555555cb17c0}}}, myOrient = TopAbs_FORWARD}, <No data fields>}
+        Fd = {entity = 0x555555cdd6f0}
+        i = 1
+        nondegenere = true
+        toujoursdegenere = false
+        isfirst = true
+        nba = 3
+#5  0x00007ffff35b53a2 in ChFi3d_Builder::Compute (this=0x555555cb1290) at /tmp/OCCT/src/ChFi3d/ChFi3d_Builder.cxx:268
+        _aHandler = {myPrevious = 0x7fffffffc080, myCaughtError = {entity = 0x0}, myLabel = {{__jmpbuf = {93824999953400, -6679299604317347232, 93825000002200, 5, 93824992502256, 5, -6679299604543839648, -6679325141478284704}, __mask_was_saved = 0, __saved_mask = {__val = {0 <repeats 16 times>}}}}, myStatus = Standard_HandlerVoid, myThread = 140737298093952, myCallbackPtr = 0x0}
+        j = 1
+        DStr = @0x555555cdcbd0: {myNbSurfaces = 2, mySurfaces = {<NCollection_BaseMap> = {_vptr.NCollection_BaseMap = 0x7ffff3496a60 <vtable for NCollection_DataMap<int, TopOpeBRepDS_SurfaceData, NCollection_DefaultHasher<int> >+16>, myAllocator = {entity = 0x55555556bb40}, myData1 = 0x555555ce0c30, myData2 = 0x0, myNbBuckets = 101, mySize = 2, isDouble = false}, <No data fields>}, myNbCurves = 4, myCurves = {<NCollection_BaseMap> = {_vptr.NCollection_BaseMap = 0x7ffff3496a40 <vtable for NCollection_DataMap<int, TopOpeBRepDS_CurveData, NCollection_DefaultHasher<int> >+16>, myAllocator = {entity = 0x55555556bb40}, myData1 = 0x555555ce0f70, myData2 = 0x0, myNbBuckets = 101, mySize = 4, isDouble = false}, <No data fields>}, myNbPoints = 2, myPoints = {<NCollection_BaseMap> = {_vptr.NCollection_BaseMap = 0x7ffff3496a20 <vtable for NCollection_DataMap<int, TopOpeBRepDS_PointData, NCollection_DefaultHasher<int> >+16>, myAllocator = {entity = 0x55555556bb40}, myData1 = 0x555555cddb30, myData2 = 0x0, myNbBuckets = 101, mySize = 2, isDouble = false}, <No data fields>}, myShapes = {<NCollection_BaseMap> = {_vptr.NCollection_BaseMap = 0x7ffff34969e0 <vtable for NCollection_IndexedDataMap<TopoDS_Shape, TopOpeBRepDS_ShapeData, TopTools_ShapeMapHasher>+16>, myAllocator = {entity = 0x55555556bb40}, myData1 = 0x555555cdd3b0, myData2 = 0x555555cde950, myNbBuckets = 101, mySize = 3, isDouble = true}, <No data fields>}, mySectionEdges = {<NCollection_BaseMap> = {_vptr.NCollection_BaseMap = 0x7ffff7fbe050 <vtable for NCollection_IndexedMap<TopoDS_Shape, TopTools_ShapeMapHasher>+16>, myAllocator = {entity = 0x55555556bb40}, myData1 = 0x0, myData2 = 0x0, myNbBuckets = 1, mySize = 0, isDouble = true}, <No data fields>}, myEmptyListOfInterference = {<NCollection_BaseList> = {_vptr.NCollection_BaseList = 0x7ffff3495aa8 <vtable for NCollection_List<opencascade::handle<TopOpeBRepDS_Interference> >+16>, myAllocator = {entity = 0x55555556bb40}, myFirst = 0x0, myLast = 0x0, myLength = 0}, <No data fields>}, myEmptyListOfShape = {<NCollection_BaseList> = {_vptr.NCollection_BaseList = 0x7ffff7fbe070 <vtable for NCollection_List<TopoDS_Shape>+16>, myAllocator = {entity = 0x55555556bb40}, myFirst = 0x0, myLast = 0x0, myLength = 0}, <No data fields>}, myEmptyShape = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, myEmptyPoint = {myPoint = {coord = {x = 0, y = 0, z = 0}}, myTolerance = 0, myKeep = true}, myEmptySurface = {mySurface = {entity = 0x0}, myTolerance = 0, myKeep = false}, myEmptyCurve = {myCurve = {entity = 0x0}, myFirst = 0, myLast = 0, myRangeDefined = false, myTolerance = 9.9999999999999995e-08, myIsWalk = false, myS1 = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, myS2 = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_EXTERNAL}, mySCI1 = {entity = 0x0}, mySCI2 = {entity = 0x0}, myKeep = true, myMother = 0, myDSIndex = 0}, myEmptyGSurface = {entity = 0x0}, myNewSurface = {<NCollection_BaseMap> = {_vptr.NCollection_BaseMap = 0x7ffff3496a00 <vtable for NCollection_DataMap<TopoDS_Shape, opencascade::handle<Geom_Surface>, TopTools_ShapeMapHasher>+16>, myAllocator = {entity = 0x55555556bb40}, myData1 = 0x0, myData2 = 0x0, myNbBuckets = 1, mySize = 0, isDouble = false}, <No data fields>}, myIsfafa = false, myI = 0, myMapOfShapeWithStateObj = {<NCollection_BaseMap> = {_vptr.NCollection_BaseMap = 0x7ffff34969c0 <vtable for NCollection_IndexedDataMap<TopoDS_Shape, TopOpeBRepDS_ShapeWithState, TopTools_ShapeMapHasher>+16>, myAllocator = {entity = 0x55555556bb40}, myData1 = 0x0, myData2 = 0x0, myNbBuckets = 1, mySize = 0, isDouble = true}, <No data fields>}, myMapOfShapeWithStateTool = {<NCollection_BaseMap> = {_vptr.NCollection_BaseMap = 0x7ffff34969c0 <vtable for NCollection_IndexedDataMap<TopoDS_Shape, TopOpeBRepDS_ShapeWithState, TopTools_ShapeMapHasher>+16>, myAllocator = {entity = 0x55555556bb40}, myData1 = 0x0, myData2 = 0x0, myNbBuckets = 1, mySize = 0, isDouble = true}, <No data fields>}, myMapOfRejectedShapesObj = {<NCollection_BaseMap> = {_vptr.NCollection_BaseMap = 0x7ffff7fbe050 <vtable for NCollection_IndexedMap<TopoDS_Shape, TopTools_ShapeMapHasher>+16>, myAllocator = {entity = 0x55555556bb40}, myData1 = 0x0, myData2 = 0x0, myNbBuckets = 1, mySize = 0, isDouble = true}, <No data fields>}, myMapOfRejectedShapesTool = {<NCollection_BaseMap> = {_vptr.NCollection_BaseMap = 0x7ffff7fbe050 <vtable for NCollection_IndexedMap<TopoDS_Shape, TopTools_ShapeMapHasher>+16>, myAllocator = {entity = 0x55555556bb40}, myData1 = 0x0, myData2 = 0x0, myNbBuckets = 1, mySize = 0, isDouble = true}, <No data fields>}}
+        itel = {<NCollection_BaseList::Iterator> = {myCurrent = 0x0, myPrevious = 0x555555cbd290}, <No data fields>}
+        MapIndSo = {<NCollection_BaseMap> = {_vptr.NCollection_BaseMap = 0x0, myAllocator = {entity = 0x0}, myData1 = 0x0, myData2 = 0x0, myNbBuckets = 0, mySize = 0, isDouble = false}, <No data fields>}
+        expso = {myStack = 0x3fe752c6bdd7e0e0, myShape = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_FORWARD}, myTop = 1431655776, mySizeOfStack = -1075489451, toFind = TopAbs_COMPOUND, toAvoid = TopAbs_COMPOUND, hasMore = 78}
+        expsh = {myStack = 0x0, myShape = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_FORWARD}, myTop = -1406834556, mySizeOfStack = -1069303883, toFind = TopAbs_COMPOUND, toAvoid = TopAbs_COMPOUND, hasMore = false}
+#6  0x00007ffff374122b in BRepFilletAPI_MakeFillet::Build (this=0x555555cb1240) at /tmp/OCCT/src/BRepFilletAPI/BRepFilletAPI_MakeFillet.cxx:527
+No locals.
+#7  0x00007ffff4124439 in BLEND (di=..., narg=5, a=0x55555559a400) at /tmp/OCCT/src/BRepTest/BRepTest_FilletCommands.cxx:171
+        V = {myTShape = {entity = 0x555555cba370}, myLocation = {myItems = {myNode = {entity = 0x5555559f1260}}}, myOrient = TopAbs_FORWARD}
+        FSh = ChFi3d_Rational
+        Rad = 1
+        E = {<TopoDS_Shape> = {myTShape = {entity = 0x555555cb5390}, myLocation = {myItems = {myNode = {entity = 0x555555cb17c0}}}, myOrient = TopAbs_REVERSED}, <No data fields>}
+        nbedge = 1
+        res = {myTShape = {entity = 0x0}, myLocation = {myItems = {myNode = {entity = 0x0}}}, myOrient = TopAbs_FORWARD}
+#8  0x00007ffff7f30501 in Draw_Interpretor::CallBackDataFunc::Invoke (this=0x55555596c430, theDI=..., theArgNb=5, theArgVec=0x55555559a400) at /tmp/OCCT/src/Draw/Draw_Interpretor.hxx:79
+No locals.
+#9  0x00007ffff7f3bca0 in CommandCmd (theClientData=0x55555596c430, interp=0x5555555961f0, argc=5, argv=0x55555559a400) at /tmp/OCCT/src/Draw/Draw_Interpretor.cxx:151
+        _aHandler = {myPrevious = 0x0, myCaughtError = {entity = 0x0}, myLabel = {{__jmpbuf = {93824992519120, -6679299608157232544, 5, 5, 93824992502256, 5, -6679299608410987936, -6679317093350776224}, __mask_was_saved = 0, __saved_mask = {__val = {0 <repeats 16 times>}}}}, myStatus = Standard_HandlerVoid, myThread = 140737298093952, myCallbackPtr = 0x0}
+        fres = 21845
+        code = 0
+        aCallback = 0x55555596c430
+        di = @0x7ffff7fc5fa0: {myInterp = 0x5555555961f0, isAllocated = true, myDoLog = false, myDoEcho = false, myToColorize = false, myFDLog = -1}
+        isLogManipulation = false
+        doLog = false
+        doEcho = false
+        aFDstdout = 1
+        aFDstderr = 2
+        aFDerr_save = -1
+        aFDout_save = -1
+#10 0x00007ffff73a3645 in TclInvokeStringCommand () from /usr/lib/x86_64-linux-gnu/libtcl8.6.so
+No symbol table info available.
+#11 0x00007ffff73a54a2 in TclNRRunCallbacks () from /usr/lib/x86_64-linux-gnu/libtcl8.6.so
+No symbol table info available.
+#12 0x00007ffff744529c in Tcl_RecordAndEvalObj () from /usr/lib/x86_64-linux-gnu/libtcl8.6.so
+No symbol table info available.
+#13 0x00007ffff7445148 in Tcl_RecordAndEval () from /usr/lib/x86_64-linux-gnu/libtcl8.6.so
+No symbol table info available.
+#14 0x00007ffff7f3cba4 in Draw_Interpretor::RecordAndEval (this=0x7ffff7fc5fa0 <theCommands>, line=0x7ffff7fc6210 <Draw_Interprete(char const*)::command+16> "source -encoding utf-8 \"test.script\"", flags=0) at /tmp/OCCT/src/Draw/Draw_Interpretor.cxx:493
+No locals.
+#15 0x00007ffff7f26e13 in Draw_Interprete (com=0x5555559ef0f0 "source -encoding utf-8 \"test.script\"") at /tmp/OCCT/src/Draw/Draw.cxx:607
+        first = false
+        command = {string = 0x7ffff7fc6210 <Draw_Interprete(char const*)::command+16> "source -encoding utf-8 \"test.script\"", length = 36, spaceAvl = 200, staticSpace = "source -encoding utf-8 \"test.script\"\000/DrawResources/DrawDefault\"", '\000' <repeats 135 times>}
+        wasspying = false
+        tictac = {<OSD_Chronometer> = {_vptr.OSD_Chronometer = 0x7ffff596c450 <vtable for OSD_Timer+16>, myStartCpuUser = 0, myStartCpuSys = 0, myCumulCpuUser = 0, myCumulCpuSys = 0, myIsStopped = true, myIsThreadOnly = false}, myTimeStart = 0, myTimeCumul = 0}
+        hadchrono = false
+        c = 1436479632
+#16 0x00007ffff7f24b46 in interpreteTclCommand (theCmd=...) at /tmp/OCCT/src/Draw/Draw.cxx:101
+No locals.
+#17 0x00007ffff7f24bf0 in ReadInitFile (theFileName=...) at /tmp/OCCT/src/Draw/Draw.cxx:112
+        aCmd = {mystring = 0x5555559ef0f0 "source -encoding utf-8 \"test.script\"", mylength = 36}
+#18 0x00007ffff7f26891 in Draw_Appli (argc=3, argv=0x7fffffffdb28, Draw_InitAppli=0x555555555185 <Draw_InitAppli(Draw_Interpretor&)>) at /tmp/OCCT/src/Draw/Draw.cxx:496
+        aRunFile = {mystring = 0x55555557bce0 "test.script", mylength = 11}
+        aCommand = {mystring = 0x55555557bca0 "", mylength = 0}
+        isInteractiveForced = false
+        aDrawDef = {mystring = 0x55555577d6c0 "", mylength = 0}
+#19 0x00007ffff7f3d6f5 in Draw_Main (argc=3, argv=0x7fffffffdb28, fDraw_InitAppli=0x555555555185 <Draw_InitAppli(Draw_Interpretor&)>) at /tmp/OCCT/src/Draw/Draw_Main.cxx:111
+No locals.
+#20 0x00005555555551df in main (argc=3, argv=0x7fffffffdb28) at /tmp/OCCT/src/DRAWEXE/DRAWEXE.cxx:305
