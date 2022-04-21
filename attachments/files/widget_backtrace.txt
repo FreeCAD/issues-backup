@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+<class 'NameError'>: Unknown document 'Unnamed'
+
+Thread 1 "FreeCAD" received signal SIGSEGV, Segmentation fault.
+0x00007ffff3181a33 in QMapNodeBase::nextNode() const () from /lib/x86_64-linux-gnu/libQt5Core.so.5
+(gdb) bt
+#0  0x00007ffff3181a33 in QMapNodeBase::nextNode() const () at /lib/x86_64-linux-gnu/libQt5Core.so.5
+#1  0x00007ffff3e37968 in QWidget::~QWidget() () at /lib/x86_64-linux-gnu/libQt5Widgets.so.5
+#2  0x00007ffff730f3e2 in Gui::MDIView::~MDIView() (this=0x7fffe8001420, __in_chrg=<optimized out>)
+    at /mnt/d/FreeCAD/src/Gui/MDIView.cpp:100
+#3  0x00007ffff719026b in Gui::View3DInventor::~View3DInventor() (this=0x7fffe8001420, __in_chrg=<optimized out>)
+    at /mnt/d/FreeCAD/src/Gui/View3DInventor.cpp:206
+#4  0x00007ffff71902a8 in Gui::View3DInventor::~View3DInventor() (this=0x7fffe8001420, __in_chrg=<optimized out>)
+    at /mnt/d/FreeCAD/src/Gui/View3DInventor.cpp:206
+#5  0x00007ffff3354eff in QObject::event(QEvent*) () at /lib/x86_64-linux-gnu/libQt5Core.so.5
+#6  0x00007ffff3dfa71f in QApplicationPrivate::notify_helper(QObject*, QEvent*) () at /lib/x86_64-linux-gnu/libQt5Widgets.so.5
+#7  0x00007ffff6d37814 in Gui::GUIApplication::notify(QObject*, QEvent*) (this=0x7fffffffcac0, receiver=0x7fffe8001420, event=0x55555b83e410)
+    at /mnt/d/FreeCAD/src/Gui/GuiApplication.cpp:84
+#8  0x00007ffff3328b4a in QCoreApplication::notifyInternal2(QObject*, QEvent*) () at /lib/x86_64-linux-gnu/libQt5Core.so.5
+#9  0x00007ffff332bb97 in QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*) () at /lib/x86_64-linux-gnu/libQt5Core.so.5
+#10 0x00007ffff3380b03 in  () at /lib/x86_64-linux-gnu/libQt5Core.so.5
+#11 0x00007ffff1075f8b in g_main_context_dispatch () at /lib/x86_64-linux-gnu/libglib-2.0.so.0
+#12 0x00007ffff1076238 in  () at /lib/x86_64-linux-gnu/libglib-2.0.so.0
+#13 0x00007ffff10762ef in g_main_context_iteration () at /lib/x86_64-linux-gnu/libglib-2.0.so.0
+#14 0x00007ffff3380184 in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>) () at /lib/x86_64-linux-gnu/libQt5Core.so.5
+#15 0x00007ffff332755b in QEventLoop::exec(QFlags<QEventLoop::ProcessEventsFlag>) () at /lib/x86_64-linux-gnu/libQt5Core.so.5
+#16 0x00007ffff332f830 in QCoreApplication::exec() () at /lib/x86_64-linux-gnu/libQt5Core.so.5
+#17 0x00007ffff6c0ffa9 in Gui::Application::runApplication() ()
+    at /mnt/d/FreeCAD/src/Gui/Application.cpp:2305
+#18 0x00005555555664e3 in main(int, char**) (argc=1, argv=0x7fffffffdcd8)
+    at /mnt/d/FreeCAD/src/Main/MainGui.cpp:290
