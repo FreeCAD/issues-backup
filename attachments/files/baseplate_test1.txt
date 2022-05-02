@@ -1,0 +1,32 @@
+//
+// Test of polaris and pinhole baseplate elements
+//
+
+use <thorlabs_optomech.scad>;
+
+base_dz = 12.7;
+base_thick = 25.4;
+
+module elements(show=true, drill=true){
+     translate([-3, 0, 0])
+	  pinhole_ida12(base_dz, drill=drill, show=show, use_nut=false, use_surface=true, name="pin1");
+     translate([8, 0, 0])
+	  mirror_mount_c05g(base_dz, rot=-135, optic_center=true, drill=drill, show=show, name="m1");
+     translate([8, -20, 0])
+	  mirror_mount_c05g(base_dz, rot=-135, optic_center=true, drill=drill, show=show, name="m2");
+     translate([-17, 10, 0])
+	  mirror_mount_dmm05_with_slider_mount(base_dz, drill=drill, show=show, use_nut=false, name="m3", left_hand=false);
+}
+
+module baseplate_test1(show=true){
+     difference(){
+	  translate([-26, -25, -base_thick - base_dz]) cube([56, 50, base_thick]);
+	  elements(show=false, drill=true);
+     }
+     translate([0, 0, 0.02])
+	  color("green") elements(show=show, drill=false);
+}
+
+// baseplate_test1(show=true);
+baseplate_test1(show=false);
+

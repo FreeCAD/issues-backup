@@ -1,0 +1,4402 @@
+//
+// Thorlabs optomechanical parts, in OpenSCAD format
+// Components are oriented with the optical axis along +x,
+// and mostly centered so that [0, 0, 0] is the optical center point.
+//
+// for each component:
+//
+// dz = maximum height of post, above baseplate (typically the beam height)
+
+//-----------------------------------------------------------------------------
+// global constants
+use <aom_optomech.scad>;
+use <rb_cell_holder.scad>;
+use <util.scad>;
+
+d_inch = 25.4;
+pi = 3.14159;
+
+$fa=0.5; // default minimum facet angle is now 0.5
+$fs=0.5; // default minimum facet size is now 0.5 mm
+
+screw_clear_dia_3_48 = 0.108 * d_inch;	// #37 or #35 drill
+screw_tap_dia_3_48 = 0.0785 * d_inch;	// #47 drill
+
+screw_clear_dia_4_40 = 0.120 * d_inch;
+screw_tap_dia_4_40   = 0.089 * d_inch;
+screw_nut_dia_4_40   = 6.4;
+screw_head_clear_dia_4_40 = 5.50;	// actually, pan screw head
+
+screw_clear_dia_6_32 = 0.1450 * d_inch;
+screw_tap_dia_6_32   = 0.1065 * d_inch;
+screw_nut_dia_6_32   = 7.9;
+
+screw_clear_dia_8_32 = 0.172 * d_inch;
+screw_tap_dia_8_32   = 0.1360 * d_inch;
+screw_nut_dia_8_32   = 8.7;		// measured from flat to flat
+screw_head_clear_dia_8_32 = 7.00;	// hex
+screw_washer_clear_dia_8_32 = 9.70;	// thorlabs 8-32 kit washer
+
+screw_clear_dia_14_20 = 0.260 * d_inch;
+screw_tap_dia_14_20   = 0.201 * d_inch;
+screw_nut_dia_14_20   = 11.2;		// measured from flat to flat
+screw_head_clear_dia_14_20 = 9.8;	// hex
+screw_head_thickness_14_20 = 0.25 * d_inch;
+screw_button_head_thickness_14_20 = 4.2;
+screw_button_head_dia_14_20 = 11.2;
+
+//-----------------------------------------------------------------------------
+// options
+
+//aom_dz = 15;	// height of AOM optical axis from base of AOM
+//aom_dx = 20;	// AOM depth (along optical axis) in mm
+//aom_dy = 30;	// AOM width (perpendicular to optical axis) in mm
+
+//isomet_1205c parameters
+aom_dz = 16;	// height of AOM optical axis from base of AOM
+aom_dx = 22.34;	// AOM depth (along optical axis) in mm
+aom_dy = 50.76;	// AOM width (perpendicular to optical axis) in mm
+
+prism_dx = d_inch/2;
+prism_dy = d_inch/2;
+prism_dz = d_inch/2;	// prism size (height = width = length) in mm
+
+dx_post = 10;	// post depth (along optical axis) in mm
+dy_post = 30;	// post width (perpendicular to optical axis) in mm
+
+
+drill_depth = 100;
+
+//-----------------------------------------------------------------------------
+// text labeling module
+
+// the_font = "";
+// the_font = "Liberation Sans";
+the_font = "Arial";
+
+module text_label(name, xp, yp, zp, rot=[0, 0, 0], size=5, font=the_font, height=1,
+		  text_color="blue", show=false, for_machining=true){
+     // place engravable text at specified center position
+     // zp = z-position of top of text
+     //
+     // For export to FreeCAD, set for_machining = true
+     //
+     if(((name!="") && (show) && 1) || for_machining){		// edit this line to force showing or not showing
+	  if(1){
+	       translate([xp, yp, -zp - height + 0.01])
+		    linear_extrude(height)			// comment this out to be able to save DXF for machining
+		    rotate(rot)
+		    color(text_color)
+		    text(name, size=size, halign="center", font=font);
+	       // echo("Text='", name, "', xp=", xp, ", yp=", yp, ", rot=", rot);
+	  }
+     }
+}
+
+//-----------------------------------------------------------------------------
+
+module post(dz, h2b, drill=0, holedia=0, headdia=0, head_depth_offset=15, post_dx=dx_post, post_dy=dy_post,
+	    post_xoff=0, post_yoff=0,
+	    lip_xpos=0, lip_dx=2, lip_dy=0, lip_height=2,
+	    use_nut=false, nut_depth_offset=10,
+	    pin_dia=0, pin_dy=0, pin_dz=0,
+	    hole_xoff=0, corner_diameter=8,
+     ){
+     // make rectangular post of correct height for optic to sit on baseplate,
+     // positioning the optical axis exactly where needed.
+     //
+     // dz = maximum height of post (subtract h2b to get actual post height)
+     // h2b = optical axis height <-- to --> base of optomechanical component
+     // holedia = hole for mounting screw (sometimes clear, sometimes tap)
+     // headdia = extra clearance hole diameter for mounting screw
+     // head_depth_offset = length in base before head countersink
+     // lip_xpos = add small alignment lip at this x edge (if not recessed)
+     // lip_height = height of lip (only if lip is instantiated)
+     // use_nut = (bool) make a nut holder and cut hole clear if true; else cut hole for tapping
+     // nut_depth_offset = length in base before nut holder (used if use_nut is true)
+     // post_dx = x-size of post
+     // post_dy = y-size of post
+     // post_xoff = x offset of post (from post center)
+     // post_yoff = y offset of post (from post center)
+     // pin_dia = diameter of pins to place (set to 0 for no pins)
+     // pin_dy = y-delta from post center for pins (assumes two pins)
+     // pin_dz = depth of holes for pins
+     // hole_xoff = x-offset of drill hole
+     // corner_diameter = diameter used for rounding corner of pockets
+     //
+     // make a post of height dz - h2b
+     // post dx, dy = global dx_post, dy_post
+     //
+     // if dz < h2b, then the post is flipped upwards, so that a recess can be cutout
+     // of the baseplate.
+     //
+     post_diff = dz - h2b;
+     recess = (post_diff < 0);
+     post_ztran = (recess ? -h2b + 0.01 : -post_diff - h2b);
+     post_dz = ( (recess && !drill) ? 0 : abs(post_diff) );
+
+     nut_size = (holedia==screw_tap_dia_8_32 ? screw_nut_dia_8_32 :
+		 (holedia==screw_tap_dia_14_20 ? screw_nut_dia_14_20 :
+		  (holedia==screw_tap_dia_4_40 ? screw_nut_dia_4_40 :
+		   (holedia==screw_tap_dia_6_32 ? screw_nut_dia_6_32 :
+		    0))));
+
+     // if using nut, replace hole diameter tap -> clear 
+     the_holedia = ( (!use_nut) ? holedia :
+		     (holedia==screw_tap_dia_8_32 ? screw_clear_dia_8_32 :
+		      (holedia==screw_tap_dia_14_20 ? screw_clear_dia_14_20 :
+		       (holedia==screw_tap_dia_4_40 ? screw_clear_dia_4_40 :
+			(holedia==screw_tap_dia_6_32 ? screw_clear_dia_6_32 :
+			 holedia )))));
+
+     translate([0, 0, post_ztran]){
+	  difference(){
+	       union(){
+		    color("green")	// post
+			 translate([-post_dx/2 + post_xoff, -post_dy/2 + post_yoff, 0]){
+			 cube_with_rounded_corners([post_dx, post_dy, post_dz], dia=corner_diameter);
+		    }
+		    if ( (!recess) && (lip_xpos != 0) ){	// lip
+			 color("olive")
+			 translate([lip_xpos - (lip_xpos < 0 ? lip_dx : 0), (lip_dy==0 ? -post_dy/2 : -lip_dy/2), 0])
+			      cube([lip_dx, (lip_dy==0 ? post_dy : lip_dy), post_dz + lip_height]);
+		    }
+	       }
+	       translate([0, 0, -0.1]){
+		    color("red"){
+		        cylinder(d=(recess ? 0 : the_holedia), h=post_dz+10);	// hole into post (suppressed if this is a recess cut)
+		    }
+		    if (use_nut && nut_size){		// cut hexagonal hole to hold a nut
+			 color("Salmon")
+			 translate([0, 0, -drill_depth + post_dz - nut_depth_offset])
+			 hex_nut(thick=drill_depth, dia=nut_size);
+		    }
+		    color("DarkRed"){
+			if (headdia > 0){		// countersink hole
+			     translate([0, 0, -drill_depth + post_dz - head_depth_offset])
+				  cylinder(d=headdia, h=drill_depth);
+			}
+		    }
+		    color("Salmon"){
+			 if (pin_dia > 0){		// alignment pins (eg for polaris mirror mounts)
+			      translate([0, 0, post_dz - pin_dz+0.15]){
+				   translate([0, -pin_dy, 0]) cylinder(d=pin_dia, h=pin_dz+0.15);
+				   translate([0, pin_dy, 0]) cylinder(d=pin_dia, h=pin_dz+0.15);
+			      }
+			 }
+		    }
+	       }
+	  }
+	  // drill hole
+	  if(drill){
+	       translate([hole_xoff, 0, -drill_depth + 0.1]){
+		    color("red")
+			 cylinder(d=the_holedia, h=drill_depth);	// hole into base
+		    if (use_nut && nut_size){		// cut hexagonal hole to hold a nut
+			 color("Salmon")
+			      translate([0, 0, -nut_depth_offset + post_dz])
+			      hex_nut(thick=drill_depth, dia=nut_size);
+		    }
+		    if (headdia > 0){
+			 color("DarkRed")
+			      translate([0, 0, -head_depth_offset + post_dz])
+			      cylinder(d=headdia, h=drill_depth);		// countersink hole
+		    }
+	       }
+	       color("Salmon"){
+		    if (pin_dia > 0){		// alignment pins (eg for polaris mirror mounts)
+			 translate([0, 0, post_dz - pin_dz+0.15]){
+			      translate([0, -pin_dy, 0]) cylinder(d=pin_dia, h=pin_dz+0.15);
+			      translate([0, pin_dy, 0]) cylinder(d=pin_dia, h=pin_dz+0.15);
+			 }
+		    }
+	       }
+	  }
+     }
+}
+
+module half_inch_post_with_base(dz, h2b, drill=0, optical_axis_zpos=0, show=true, holder_height=1.0, post_include_ba=true){
+     //
+     // half-inch post with base, mounted to baseplate top surface using 1/4-20 screws.
+     //
+     // dz = maximum post height from z=0 (if z=0 is the beam position, then this is the beam height)
+     // h2b = height to base - distance between optical center and base of optical component where mounting hole exists
+     // post_include_ba = inclue base adapter (1" wide, with slots along y-axis) if true
+     //
+     base_thick = 9.5;
+     ph_base_thick = 6;			// estimated thickness of bottom of post holder
+     post_dia = 0.5 * d_inch;
+     post_zoff = (post_include_ba ? 0 : -base_thick);
+     post_dz = (dz-h2b) - ph_base_thick + post_zoff + optical_axis_zpos;
+     translate([0, 0, -dz]){
+	  if (show){
+	       color("orange"){
+		    if (post_include_ba){
+			 translate([0, 0, 0.4])
+			      rotate([0, 0, 90])
+			      rotate([90, 0, 0])
+			      import("thorlabs/BA1-Solidworks.stl");
+		    }
+		    if (holder_height==1.5){
+			 translate([0, 0, 28.5 + post_zoff])
+			      import("thorlabs/PH1.5-Solidworks.stl");
+		    }
+		    if (holder_height==1.0){
+			 translate([0, 0, 22.0 + post_zoff])
+			      import("thorlabs/PH1-Solidworks.stl");
+		    }
+	       }
+	       // half-inch post
+	       color("silver")
+		    translate([0, 0, -post_dz - h2b + dz + optical_axis_zpos])
+		    cylinder(d=post_dia, h=post_dz);
+	  }
+	  if (drill){
+	       ba_hole_yp = 38.1 - 10.3;
+	       if (post_include_ba){
+		    for (yp=[0, 1]){
+			 mirror([0, yp, 0]){
+			      color("red")
+				   translate([0, ba_hole_yp, -100])
+				   cylinder(d=screw_tap_dia_14_20, h=200);
+			 }
+		    }
+	       }else{
+		    // no base adapter: put hole in center
+		    color("red")
+			 translate([0, 0, -100])
+			 cylinder(d=screw_tap_dia_14_20, h=200);
+	       }
+	  }
+     }
+}
+
+//-----------------------------------------------------------------------------
+// place optic
+
+module place_optic(xyz, z_rot=0, emit_msg=true){
+     //
+     // Translate and rotate children of this module, also emitting a message about the transformation used.
+     // These emitted messages can then be post-processed to generate other helpful scripts, e.g. for more
+     // efficiently generated text labels.
+     //
+     // echo("--> place_optic: xyz=", xyz, ", z_rot=", z_rot);
+     translate(xyz)
+	  rotate([0, 0, z_rot])
+	  children();
+     // echo("-------------------");
+}
+
+//-----------------------------------------------------------------------------
+// slider right-angle bracket, e.g. for dmm05
+
+module slider_right_angle_bracket(dz=0, side_thick=d_inch/4, side_dx=0.370*d_inch, slide_range = 4, drill=true, show=true, show_mount=true){
+     //
+     // right-angle bracket, with slot which allows bracket to slide orthogonal to the optical axis,
+     // on the baseplate.  One 8-32 screw holds the optomechanical component.  Another 8-32 screw
+     // holds the bracket to the baseplate, in a slot.
+     //
+     // A 2mm pin slot is also provided, for optional linear guidance.
+     //
+     // side_thick = thickness of piece screwed into the optomechanical component.     
+     // side_dx = thickness of overall piece, side to side (should be larger than screw head diameter)
+     // 
+     side_dz = dz + 5;
+     // side_thick = 4;
+     side_xoff = (7.5 - 1.4)/2;
+     side_zoff = dz;
+     side_yoff = 13.6;
+     hole_xoff = 4.3 - 1.4;
+     base_dy = 12 + (slide_range - 4);
+     base_dz = 6;
+     slot_y1 = -side_yoff - screw_head_clear_dia_8_32/2 - side_thick - 1;
+     slot_dy = slide_range;
+     slot_center_ypos = slot_y1 - slot_dy/2;
+     pin_dia = 2;	// 2mm pin
+     pin_dy = 8;
+     pin_dz = 2.2;	// depth of slot for 2mm pin
+     pin_yoff = -side_yoff - 0*pin_dia/2;
+     pin_slot_width = pin_dia + 0.1;	// allow 100um for free sliding of pin within slot
+     
+     if (show || show_mount){
+     difference(){
+	  color("brown"){
+	       translate([-side_dx/2 - side_xoff, -side_thick - side_yoff, -side_zoff]){
+		    cube([side_dx, side_thick, side_dz]);
+		    translate([0, -base_dy, 0])
+			 cube([side_dx, base_dy, base_dz]);
+	       }
+	  }
+	  color("red"){
+	       translate([-hole_xoff, 0, 0]){
+		    rotate([90, 0, 0])
+			 cylinder(d=screw_clear_dia_8_32, h=100);
+               translate([0,-side_thick-side_yoff+3,0])
+		    rotate([90,0,0])
+		    cylinder(d = screw_head_clear_dia_8_32, h=100);
+	       if (0){
+			 // make a slot using hull()
+			 hull()
+			      for(dy=[0, slot_dy]){
+				   translate([0, slot_y1 - dy, -50])
+					cylinder(d=screw_clear_dia_8_32, h=100);
+			      }
+		    }
+		    else{	// make a slot without using hull(), so it can be exported to STEP
+			 translate([0, slot_y1 - slot_dy/2, -50])
+			      rotate([0, 0, 90])
+			      slot_without_hull(width=screw_clear_dia_8_32,
+						length=slot_dy + screw_clear_dia_8_32,
+						height=100);
+		    }
+		    // make a slot for a 2mm pin, starting at the face contacting the optomechanical component
+		    // slot should only be 2mm deep
+		    translate([0, -side_yoff - pin_dy/2 + pin_dia/2, -100 - side_zoff + pin_dz])
+			 rotate([0, 0, 90])
+			 slot_without_hull(width=pin_slot_width,
+					   length=pin_dy,
+					   height=100);
+	       }
+	  }
+     }
+     }
+     // 8-32 hole at center of mount slot
+     if(drill){
+	  translate([-hole_xoff, slot_center_ypos, -100 + dz + 0.01])
+	       color("red")
+	       cylinder(d=screw_tap_dia_8_32, h=100);
+     }
+     // 2mm holes for pin slot which guides linear motion
+     if (drill){
+	  for (dy=[pin_yoff, pin_yoff - pin_dy/2]){
+	       translate([-hole_xoff, dy, -dz -pin_dz])
+		    color("red")
+		    cylinder(d=pin_dia, h=100);
+	  }
+     }
+}
+
+module slider_right_angle_bracket_z(dz=0, side_thick=d_inch/4, side_dx=0.370*d_inch, drill=true, show=true, show_mount=true){
+     //
+     // right-angle bracket, with slot which allows bracket to slide along optical axis,
+     // on the baseplate.  One 8-32 screw holds the optomechanical component.  Two8-32 screw
+     // holds the bracket to the baseplate, in a slot.
+     //
+     // A 2mm pin slot is also provided, for optional linear guidance.
+     //
+     // side_thick = thickness of piece screwed into the optomechanical component.     
+     // side_dx = thickness of overall piece, side to side (should be larger than screw head diameter)
+     // 
+     side_dz = dz + 5;
+     // side_thick = 4;
+     side_xoff = (7.5 - 1.4)/2;
+     side_zoff = dz;
+     side_yoff = 13.6;
+     hole_xoff = 4.3 - 1.4;
+     base_dx = 22;
+     base_dy = 8;
+     base_dz = 6;
+     slot_x1 = side_xoff + side_dx - screw_head_clear_dia_8_32/2-1;
+     slot_dx = 16;
+     slot_center_xpos = slot_x1 - slot_dx/2;
+     pin_dia = 2;	// 2mm pin
+     pin_dx = 11;
+     pin_dz = 2.2;	// depth of slot for 2mm pin
+     pin_yoff = -side_yoff + pin_dia/2;
+     pin_slot_width = pin_dia + 0.1;	// allow 100um for free sliding of pin within slot
+     
+     if (show || show_mount){
+     difference(){
+	  color("brown"){
+	       translate([-side_dx/2 - side_xoff, -side_thick - side_yoff, -side_zoff]){
+		    cube([side_dx, side_thick, side_dz]);
+		    translate([-base_dx/2 +side_dx/2, -base_dy, 0])
+			 cube([base_dx, base_dy, base_dz]);
+	       }
+	  }
+	  color("red"){
+	       translate([-hole_xoff, 0, 0]){
+		    rotate([90, 0, 0])
+			cylinder(d=screw_clear_dia_8_32, h=100);
+            translate([0,-side_thick-side_yoff+3,0])
+		    rotate([90,0,0])
+		    cylinder(d = screw_head_clear_dia_8_32, h=100);
+	      // make a slot without using hull(), so it can be exported to STEP
+			 translate([slot_x1 - slot_dx/2, -side_yoff-base_dy/2-side_thick,-50])
+			 slot_without_hull(width=screw_clear_dia_8_32,
+						length=slot_dx + screw_clear_dia_8_32,
+						height=100);
+
+		    // make a slot for a 2mm pin, starting at the face contacting the optomechanical component
+		    // slot should only be 2mm deep
+		    translate([0, -side_yoff - pin_dx/2 + pin_dia/2+1.5, -100 - side_zoff + pin_dz])
+			 slot_without_hull(width=pin_slot_width,
+					   length=pin_dx,
+					   height=100);
+	       }
+	  }
+     }
+     }
+     // 8-32 hole at center of mount slot
+     if(drill){
+         for(dx = [-3,3]){
+           translate([-hole_xoff+dx, slot_center_xpos-side_yoff-side_thick-base_dy/2, -100 + dz + 0.01])
+	       color("red")
+	       cylinder(d=screw_tap_dia_8_32, h=100);
+         }
+     }
+     // 2mm holes for pin slot which guides linear motion
+     if (drill){
+	  for (dx=[-1.5, 1.5]){
+	       translate([-hole_xoff+dx, pin_yoff-pin_dx/2+1.5, -dz -pin_dz])
+		    color("red")
+		    cylinder(d=pin_dia, h=100);
+	  }
+     }
+    
+}
+//slider_right_angle_bracket_z(dz=12.7);
+
+//-----------------------------------------------------------------------------
+// surface adapter, e.g. for pinhole
+
+module screw_clear_with_head_countersunk(head_height=10){
+     cylinder(d=screw_clear_dia_8_32, h=100);
+     cylinder(d=screw_head_clear_dia_8_32, h=head_height);
+}
+
+module surface_adapter(zpos, height_to_base, width, hole_separation, extra_length=0, drill=false, show=true, pda=false, low_profile=false, square_edges=false){
+     //
+     // this adapter allows a 8-32 bolt to be screwed into the component,
+     // and provides two holes for the adaptor to then be screwed into the
+     // baseplate.
+     //
+     // zpos = z-position of the top surface of the baseplate (z=0 is the optical axis)
+     // height_to_base = z-position of the bottom of the component
+     // drill: true -> make hole in baseplate for surface adapter
+     // low_profile: true -> put middle 8-32 screw head recesss in baseplate instead of adapter; the adapter is thinner as a result
+     // pda: true: thicker head height allowance (for small photodetector package -- now obsolete)
+     // extra_length: extra to add to recess pocket, e.g. to allow adapter to be machined as a rectangle with un-rounded corners
+     // square_edges: if true, then do not round corners of mount
+
+     // sa_head_height = .112*d_inch; //head height for flat 8-32 screw
+     sa_head_height = 4.4;   //head height for socket 8-32 screw
+        // .164*d_inch; //max 8-32 head height
+    
+     sa_thick_orig = sa_head_height + (pda ? 6 : 3) + (drill ? 0.01 : 0) ;	// this should be thicker than the 8-32 screw head
+     sa_thick = (low_profile ? 0.25 * d_inch : sa_thick_orig);			// for low_profile version, make the adapter 1/4" thick for easy machining
+     sa_dy = hole_separation + 2 + 2 * screw_clear_dia_8_32 + (drill ? 0.3 + extra_length : 0);
+     sa_dx = width + (drill ? 0.3 : 0);		// make drill pocket a bit wider
+     sa_dz = ((show || drill) ? sa_thick + (drill && (height_to_base > zpos) ? height_to_base - zpos : 0)	// extra thickness when pocket needed
+	      : 0);
+     sa_zoff = -sa_thick - height_to_base;
+     sa_dia = 8 + (drill ? 0.3 : 0);		// diameter for rounded corners
+     // echo("surface adapter dy length = ", sa_dy);
+     difference(){
+	  color("blue")
+	       translate([-sa_dx/2, -sa_dy/2, sa_zoff + (drill ? 0.01 : 0)])
+	       if (square_edges){
+		    cube([sa_dx, sa_dy, sa_dz]);
+		    // echo("surface adaptor dy length = ", sa_dy);
+	       }else{
+		    cube_with_rounded_corners([sa_dx, sa_dy, sa_dz], dia=sa_dia);
+	       }
+	  if (!drill){
+	       color("red"){
+		    // middle screw
+		    translate([0, 0, -0.01 + sa_zoff ])
+			 if (low_profile){
+			      cylinder(d=screw_clear_dia_8_32, h=100);
+			 }else{
+			      screw_clear_with_head_countersunk(head_height=sa_head_height);
+			 }
+		    for (dy=[-1, 1]){
+			 translate([0, dy*hole_separation/2, sa_thick + sa_zoff + 0.01]){
+			      mirror([0, 0, 1])
+				   screw_clear_with_head_countersunk(head_height=(sa_head_height + (low_profile ? -2 : 0)));
+			      translate([0, 0, -0.1])
+				   cylinder(d=screw_head_clear_dia_8_32, h=100);
+			 }
+		    }
+	       }
+	  }
+     }
+     if (0){			// show screws with heads - for debugging
+	  for (dy=[-1, 1]){
+	       translate([0, 0, 5])
+		    translate([0, dy*hole_separation/2, sa_thick + sa_zoff + 0.01]){
+		    mirror([0, 0, 1])
+			 screw_clear_with_head_countersunk(head_height=sa_head_height);
+	       }
+	  }
+     }
+     if (drill){
+	  color("red"){
+	       for (dy=[-1, 1]){
+		    translate([0, dy*hole_separation/2, -50])
+			 cylinder(d=screw_tap_dia_8_32, h=100);
+	       }
+	       if (low_profile){		// recess in baseplate for middle 8-32 screw head, when low_profile
+		    translate([0, 0, sa_zoff + 0.02 - sa_head_height - 0.5]){
+			 cylinder(d=screw_head_clear_dia_8_32, h=sa_head_height + 0.5);
+			 // echo("sa_head_height = ", sa_head_height);
+		    }
+	       }
+	  }
+     }
+}
+
+module power_post_bracket(dz, h2b = 10, side_thick = 6, drill = false, show = true ){
+    //mounts slim power meter with sensor at optical height
+    // dz = height of optical axis
+    // h2b = height of power meter optical axis
+    // side_thick = width/depth of post
+    pwr_meter_screw_height = 107.5; // from optical axis height
+    pwr_meter_width = 19;
+    post_dz = dz + pwr_meter_screw_height + 4;
+    post_screw_mount_tap = dz + pwr_meter_screw_height;
+    post_xoff = pwr_meter_width/2;
+    post_yoff = side_thick/2;
+   if(show){
+        translate([0,0,-dz])
+        difference(){
+            union(){
+                translate([-post_xoff-side_thick, 0,0])
+                cube([side_thick, side_thick, post_dz]);
+                translate([-post_xoff-side_thick*2, 0,0])
+                cube([side_thick, side_thick, 6]);
+            }
+            translate([-post_xoff-side_thick*2,side_thick/2, dz+pwr_meter_screw_height])
+            rotate([0,90,0])
+            cylinder(d = screw_tap_dia_8_32, h = 100);
+            translate([-post_xoff-side_thick*1.5,side_thick/2, -0.1])
+            cylinder(d = screw_clear_dia_8_32, h = 100);
+            
+        }
+    }
+    if(drill){
+        translate([-post_xoff-side_thick*1.5,side_thick/2, -50])
+        cylinder(d = screw_tap_dia_8_32, h = 100);
+    }
+    
+}
+//power_post_bracket(12.7);
+
+//-----------------------------------------------------------------------------
+
+module periscope_mirror(dz, mirror_dia, mirror_thick, post_thick, post_height , optic_center, height, zp, optic_xoff, do_cutout=0){
+     cutter_dia = 4;	// 4mm endmill cutter
+     // cutout_dy = mirror_dia + cutter_dia/2;
+     cutout_dy = 20;
+     cutout_dx = cutout_dy;
+     cutout_dz = cutter_dia*3;
+     grove_dia = mirror_dia + cutter_dia * 1.5;
+     rect_dz = cutter_dia;
+     rect_dy = 10;
+     rect_dx = 8;
+     rect_zpos = mirror_dia/2 - 6;
+
+     for(zp=[-1,1]){
+	  // the 1.1mm z-translate in the line below is fine tuned using the cross_section() view of periscope_base.scad
+	  // to ensure the mirror is placed with its base at the surface of the mount's 45 degree flat surface
+	  translate([optic_xoff, 0, (height - zp*post_height)/2 - zp*mirror_thick/2 - zp * (mirror_thick*sqrt(2)+0.1+optic_center - 1.1) ]){
+	       mirror([0, 0, (1-zp)/2])
+		    rotate([0, 45, 0])
+		    // the 0.5mm x-translate in the line below is fine tuned using the cross_section() view of periscope_base.scad
+		    // to ensure the mirror is placed with its base at the surface of the mount's 45 degree flat surface
+		    translate([0.5, 0, -mirror_thick/2]){
+		        color("silver") cylinder(d=mirror_dia, h=mirror_thick + do_cutout*5);
+			if (do_cutout){
+			     // for the cutout, add a grove around the bottom of the mirror, so the cutter can make a flat surface for the bottom
+			     color("white") cylinder(d=grove_dia, h=cutter_dia * 1.05);
+			     // leave a lip to hold the inset part of the mirror
+			     difference(){
+				  color("green") cylinder(d=grove_dia, h=cutter_dia*2);
+				  translate([-cutout_dy/2 - mirror_dia*0.90, -cutout_dy/2, -0.01])
+				       cube([cutout_dy, cutout_dy, cutter_dia*2+1]);
+			     }
+			     // rectangular flat 45 degree surface
+			     translate([-5, -cutout_dy/2, 0])
+				  cube([cutout_dx, cutout_dy, cutout_dz]);
+			}
+	       }
+
+	       if (0){
+		    // rectangular cutout at the most inset part of mirror, because the endmill can't reach the surface there
+		    translate([-rect_dx, -rect_dy/2, rect_zpos])
+			 cube([rect_dx, rect_dy, rect_dz]);
+	       }
+	  }
+     }
+}
+
+module periscope_base(dz = 12.7, show = 1, drill = false, height = 3*d_inch, show_mirror=false){
+    //
+    // Two-mirror periscope for raising the beam above the baseplate optical plane.
+    // Used by the Rb SAS baseplate.
+    //
+    // Input optical axis at 12.7mm
+    // optical axis of top mirror will be height - d_inch
+    base_dx = 1*d_inch;
+    base_dy = 1*d_inch;
+    mirror_dia = d_inch/2;
+    mirror_thick = 6;
+    post_thick = 6;
+    post_height = 30 + height - 3*d_inch;
+    hole_dia=8;
+    horiz_hole_dia = screw_tap_dia_8_32;
+    screw_yoff = mirror_dia/2+3.5;
+    screw_xoff = 5;		// screw offset from post center
+    optic_center = .3;		// height offset for optical center
+    optic_xoff = 10;		// x-axis offset for optical center
+    core_dx = 0.57 * d_inch - optic_xoff;	// depth of middle core trench
+    // core_dy = 0.55 * d_inch;	// width of middle core trench
+    core_dy = 20;	// width of middle core trench
+    core_dz = height - 2*(optic_center + mirror_thick + mirror_dia - 4);
+    
+    translate([(mirror_dia- post_thick)/2-optic_center- base_dx/2 ,0,0]){
+        if(show){
+         translate([-(mirror_dia- post_thick)/2-2*optic_center,0,-dz]){
+              difference(){
+               color("blue")
+                translate([-base_dx/2, -base_dy/2, 0])
+                cube([base_dx, base_dy, height]);
+               
+               if(0){
+                color("brown") 	// middle block
+                     translate([-base_dx/2+post_thick, -base_dy/2-0.1, (height - post_height)/2])
+                     cube([base_dx-post_thick+0.1, base_dy+0.2, post_height]);
+               }
+               
+               if(0){
+                color("orange"){	// 45 degree slants
+                     translate([-base_dx/2 + post_thick, -base_dy/2 - 0.1,(height + post_height)/2])
+                      rotate([0,45,0])
+                      cube([base_dx, base_dy+0.2, (base_dx-post_thick)*sqrt(2)]);    
+                     translate([-base_dx/2+post_thick, -base_dy/2-0.1, (height - post_height)/2 ])
+                      rotate([0,45,0])
+                      cube([(base_dx-post_thick)*sqrt(2), base_dy+0.2, base_dx]);
+                }
+               }
+               
+               if (0){
+                color("orange"){	// 45 degree slants
+                     for (zp=[-1, 1]){
+                      translate([-(base_dx)/2 + post_thick + 0.2*optic_xoff, -core_dy/2, (height + zp * post_height)/2])
+                           rotate([0,45,0])
+                           cube([(base_dx+3), core_dy, (base_dx-post_thick)*sqrt(2)]);
+                     }
+                }
+               }
+               
+               color("brown"){	// narrower middle block
+                translate([-(core_dx-base_dx/2)+0.01, -core_dy/2, -core_dz/2 + height/2])
+                     cube([core_dx, core_dy, core_dz]);
+               }
+               
+               
+               //mirror recesses 
+               zp1 = (height - post_height)/2-mirror_thick/2-mirror_thick*sqrt(2)+0.1+optic_center;
+               zp2 = (height + post_height)/2+mirror_thick/2+mirror_thick*sqrt(2)-0.1-optic_center;
+               if (0){
+                translate([optic_center + optic_xoff, 0, zp1])
+                     rotate([0,45,0])
+                     intersection(){
+                     cube([(mirror_dia + 2*mirror_thick),mirror_dia+0.1,6], center = true);
+                     cylinder(h = 6, r1 = mirror_dia/2, r2 = (mirror_dia + 2*mirror_thick)/2, center = true);
+                }
+                translate([optic_center + optic_xoff, 0, zp2])
+                     rotate([0,135,0])
+                     intersection(){
+                     cube([(mirror_dia + 2*mirror_thick),mirror_dia+0.1,6], center = true);
+                     cylinder(h = 6, r1 = mirror_dia/2, r2 = (mirror_dia + 2*mirror_thick)/2, center = true);  
+                }
+               }
+               
+               //through hole for recess behind mirror
+               if (0){
+                color("red")
+                     translate([-(mirror_dia - hole_dia)/2+optic_center,0,-1])
+                     cylinder(d = hole_dia, h = 100);
+               }
+    
+               // horizontal through hole for recess behind mirror
+               if (1){
+                color("red")
+                     for(zp=[zp1-2, zp2+2]){
+                      translate([10, 0, zp]){
+                           rotate([0, -90, 0])
+                            cylinder(d = horiz_hole_dia, h = 100);
+                      }
+                     }
+               }
+               
+               //baseplate screw holes
+               for(dy = [-1,1]){
+                
+                side_dx = screw_head_clear_dia_8_32;
+                side_dx_extra = 10;
+                side_dy = side_dx + 1;
+                screw_len = (height - post_height)/2-mirror_thick*sqrt(2) -screw_head_clear_dia_8_32/4 + 8;
+                side_dz = screw_len + 10;
+    
+                color("red")
+                     translate([screw_xoff, dy*screw_yoff,-1])
+                     cylinder(d = screw_clear_dia_8_32, h = screw_len+20);          
+                
+                // slot for screw head
+                translate([-screw_head_clear_dia_8_32/2 + screw_xoff, dy*screw_yoff - side_dy/2, screw_len])
+                     rotate([0,0,0])
+                     cube([side_dx + side_dx_extra, side_dy, side_dz]);
+                
+               }
+    
+               // cutouts for mirrors by placing actual mirrors
+               color("pink"){
+                for(zp=[-1,1]){
+                     periscope_mirror(dz, mirror_dia, mirror_thick, post_thick, post_height , optic_center, height, zp, optic_xoff, do_cutout=1);
+                }
+               }
+              }
+         }
+        }
+        
+    
+        if (show_mirror){
+         translate([-(mirror_dia- post_thick)/2-2*optic_center,0,-dz]){
+              for(zp=[-1,1]){
+               periscope_mirror(dz, mirror_dia, mirror_thick, post_thick, post_height , optic_center, height, zp, optic_xoff);
+              }
+         }
+        }
+         
+        if(drill)
+        {
+            translate([-(mirror_dia- post_thick)/2-2*optic_center,0,-dz]){
+            for(dy = [-1,1]){
+                color("pink")
+                translate([screw_xoff, dy*screw_yoff,-50])
+                cylinder(d = screw_tap_dia_8_32, h = 100);
+            }
+            }
+        }
+    }
+}
+
+module periscope2_mirrors(dz, height, mirror_xoff, rot=45, show=true, drill=false){
+     //
+     // Two-mirror periscope using two polaris mirror mounts, for raising the beam above
+     // the baseplate optical beam plane.
+     //
+     // polaris mount mirror pair for periscope2
+     // (top is adjustable, bottom is fixed)
+     //
+     // bottom mirror (fixed)
+     for (th=[rot+ 180, -rot]){
+	  translate([0, -mirror_xoff, dz])
+	       rotate([0, th, 0])
+	       rotate([90, 0, 0])
+	       mirror_mount_c05g(dz=mirror_xoff, show=(show && th>0), show_mirror=show, drill=drill, rot=0, name="");
+     }
+     // top mirror (adjustable)
+     translate([0, -mirror_xoff, height])
+	  rotate([0, rot, 0])
+	  rotate([90, 0, 0])
+	  mirror_mount_k05s2(dz=mirror_xoff, show=show, show_mirror=show, drill=drill, rot=0, name="");
+}
+
+module periscope2_holes(hole_xpos, base_dy, holedia, yoff, dz){
+     //
+     // mounting holes for periscope2
+     //
+     // main hole (for periscope base)
+     pin_dia = 2;
+     pin_zoff = 2.5;
+     pin_height = 5;
+     pin_xpos = hole_xpos - 12;
+     translate([0, yoff, 0]){
+	  color("red"){
+	       translate([hole_xpos, base_dy/2, -100])
+		    cylinder(d=holedia, h=200);
+	       // 2mm alignment pins
+	       for (dx=[0, -10]){
+		    translate([pin_xpos + dx, base_dy/2, -pin_zoff - dz])
+			 cylinder(d=pin_dia, h=pin_height);
+	       }
+	  }
+     }
+}
+
+module periscope2_base(dz = 12.7, show = 1, drill = false, height = 3*d_inch, show_mirrors=false,
+		       name="periscope", name_xoff=0, name_yoff=0){
+     //
+     // periscope using polaris adjustable mirror mounts, with alignment pins to fix rotation
+     // mirrors are oriented to bounce beams along x axis, and are centered on the z-axis
+     //
+     // dz = input optical axis
+     // height = output axis of top mirror
+     //
+     base_zdeep = 5;		// depth of periscope base into baseplate (bottom mirror needs pocket to fit)
+     base_ztop = 5;		// extra height on top to accommodate rotated mirror
+     base_dx = 1.35 * d_inch;
+     base_dy = 0.5 * d_inch;
+     base_dz = height + 0.5 * d_inch + base_zdeep + base_ztop;
+     mirror_xoff = 0.5 * d_inch;
+     mady = 1+18.3-5.1;		// k05s2 distance of from mirror surface to post axis
+     mady_c05g = 6.4+6;
+     holedia = screw_tap_dia_8_32;
+     // base_xoff = mady_c05g / sqrt(2);
+     base_xoff = 0;
+     base_yoff = 0.5 * d_inch;	// mirror centers are aligned with the z-axis, at x=0, y=0
+     hole_xpos = base_dx/2 - 3.8;
+     shoulder_dx = base_dx/2 - 6;
+     shoulder_dz = 20;
+
+     if (show){
+	  translate([0, base_yoff, -dz]){
+	       difference(){
+		    color("blue")
+			 translate([-base_dx/2 - base_xoff, 0, -base_zdeep])
+			 cube([base_dx, base_dy, base_dz]);
+		    // provide alignment pin positions for both 45 and -45
+		    periscope2_mirrors(dz, height, mirror_xoff, rot=45, show=false, drill=true);
+		    // mounting hole
+		    periscope2_holes(hole_xpos, base_dy, holedia=screw_clear_dia_8_32, yoff=0, dz=base_zdeep);
+		    // shoulder cutout (so mounting hole isn't too long)
+		    color("pink")
+			 translate([-shoulder_dx + base_dx/2 + 0.02, base_dy + 1, shoulder_dz])
+			 rotate([90, 0, 0])
+			 cube_with_rounded_corners([shoulder_dx + 4, base_dz - shoulder_dz + 1, base_dy + 2], dia=5);
+	       }
+	       if (show_mirrors){
+		    periscope2_mirrors(dz, height, mirror_xoff, show=true, drill=false);
+	       }
+	  }
+     }
+
+     text_label(name, name_xoff, -3+name_yoff, dz, rot=[0, 0, 0], show=show||drill);
+
+     if (dz>0){
+	  // pocket for periscope base and bottom mirror
+	  post(dz, base_zdeep + dz, drill=drill, use_nut=false, holedia=0, head_depth_offset=0,
+	       post_dx=base_dx+5, post_xoff=-base_xoff, post_dy=base_dy+12, post_yoff=base_dy/2 - 3 + base_yoff);
+	  // holes for periscope base mounting onto baseplate
+	  if (drill){
+	       periscope2_holes(hole_xpos, base_dy, holedia=screw_tap_dia_8_32, yoff=base_yoff, dz=dz+base_zdeep);
+	  }
+     }
+}
+
+module periscope3_downbeam(dz = 12.7, show = 1, drill = false, height = 3*d_inch, show_mirror=false,
+			   downbeam_hole_dia=screw_tap_dia_14_20,
+			   name="periscope", name_xoff=0, name_yoff=0){
+     //
+     // Half-periscope bouncing beam *down* through the baseplate
+     // Use two of these (on different baseplates) to make a periscope.
+     // Useful for baseplates which are mounted back to back, on either side of a breadboard, for example.
+     //
+     // dz = input optical axis
+     //
+     base_dx = 1.0 * d_inch;
+     base_dy = 0.5 * d_inch;
+     base_dz = 1.15 * d_inch;
+     mady = 14.0;		// k05s2 distance of from mirror surface to post axis
+     mady_c05g = 6.4+6;
+     holedia = screw_clear_dia_8_32;
+     holeheaddia = screw_head_clear_dia_8_32;
+     mirror_xoff = 0.5 * d_inch;	// height of mirror above mount
+     base_xoff = 5.5;
+     base_yoff = 0.5 * d_inch;	// mirror centers are aligned with the z-axis, at x=0, y=0
+     hole_xoff = 5.5;		// offset of hole from center of mount
+     pin_dy = 5.0;		// 2mm pin hole distance from 8-32 tap hole
+     pin_dia = 2.0;		// pin hole diameter
+     pin_dz = 2.2;		// pin hole depth
+     pin_top_dz = 10;		// pin hole on mount
+     shoulder_dx = 7;		// width of "shoulder" which is cut into the side where the 8-32 screwdown bolt goes.
+     shoulder_base_dz = 5;
+     shoulder_dz = base_dz - shoulder_base_dz;
+
+     if (show){
+	  translate([0, base_yoff, -dz]){
+	       difference(){
+		    color("blue")
+			 translate([-base_dx/2 - base_xoff, 0, 0])
+			 cube([base_dx, base_dy, base_dz]);
+
+		    translate([0, -mirror_xoff, dz])
+			 rotate([0, 45, 0])
+			 rotate([90, 0, 0])
+			 mirror_mount_k05s2(dz=mirror_xoff, show=false, drill=true, rot=0, name="");
+		    // mounting hole
+		    color("red")
+			 // translate([ - base_xoff + hole_xoff, base_dy/2, -0.1]){
+			 translate([ 0, base_dy/2, -0.1]){
+			      cylinder(d=holedia, h=100);
+			      translate([0, 0, shoulder_base_dz]) cylinder(d=holeheaddia, h=100);
+			      // pins on either side of mounting hole
+			      for (nx=[-1, 1]){
+				   translate([nx*pin_dy, 0, 0]){
+					cylinder(d=pin_dia, h=pin_top_dz);
+				   }
+			      }
+		    }
+		    // shoulder cut
+		    color("pink"){
+			 translate([-shoulder_dx + base_dx/2 - base_xoff + 0.1, -0.5, -shoulder_dz + base_dz])
+			      cube([shoulder_dx, base_dy+1, shoulder_dz + 0.1]);
+		    }
+	       }
+	       if (show_mirror){
+		    translate([0, -mirror_xoff, dz])
+			 rotate([0, 45, 0])
+			 rotate([90, 0, 0])
+			 mirror_mount_k05s2(dz=mirror_xoff, show=show && show_mirror, show_mirror=true, drill=drill, rot=0, name="");
+	       }
+	  }
+     }
+     if (drill){
+	  translate([0, base_yoff, -dz+0.01]){
+	       color("red"){
+		    // translate([ - base_xoff + hole_xoff, base_dy/2, 0]){
+		    translate([ 0, base_dy/2, 0]){
+			 // 8-32 mounting hole into baseplate
+			 translate([0, 0, -199])
+			      cylinder(d=screw_tap_dia_8_32, h=200);
+			 // 2mm pin holes into baseplate
+			 for (nx=[-1, 1]){
+			      translate([nx*pin_dy, 0, -pin_dz]){
+				   cylinder(d=pin_dia, h=pin_dz);
+			      }
+			 }
+		    }
+	       }
+	  }
+	  // hole for laser beam, through baseplate
+	  translate([0, 0, -200-dz+0.01])
+	       color("purple"){
+	       cylinder(d=downbeam_hole_dia, h=200);
+	  }
+     }
+     text_label(name, name_xoff, 8 + name_yoff, dz, rot=[0, 0, 0], show=show||drill);
+}     
+
+// periscope3_downbeam(show=true, show_mirror=false);
+// periscope3_downbeam(show=true, show_mirror=true);
+
+//-----------------------------------------------------------------------------
+
+module mirror_mount_km100(dz=0, show=1, rot=0, optic_center=true, drill=false, use_nut=true){
+     // height to base = 25.4 mm
+     // base screw = 8-32 clear
+     // optical flat surface = 15mm along +x
+     // mirror facing +x
+     // base post centered
+     // mirror surface vertical axis is 16 - 2 mm from post axis
+     mady = 16 - 2;		// distance from mirror surface to post axis
+     xoff = (optic_center ? mady : 0);
+     holedia = screw_tap_dia_8_32;
+     translate([-xoff, 0, 0])
+     rotate([0, 0, -90])
+     translate([0, mady, 0]) rotate([0, 0, rot]) translate([0, -mady, 0]){	// rotate about mirror axis
+	  if (show){
+	       translate([-0.1, 0, -1])
+		    translate([0, 13.5, 0])
+		    rotate([0, 0, 180])
+		    rotate([0, 180, 0])
+		    scale(1000){
+		    import("thorlabs/KM100-Solidworks.stl");
+	       }
+	  }
+	  if (dz>0){
+	       rotate([0, 0, 90])
+	       post(dz, 25.4, drill=drill, use_nut=use_nut, holedia=holedia, post_dx=10.2, lip_xpos=-5.1);
+	  }
+     }
+}
+
+module mirror_mount_mk05(dz=0, show=1, rot=0, optic_center=true, drill=false, use_nut=false){
+     // height to base = 10mm
+     // base screw = 8-32 clear
+     // optical flat surface = ? along +x
+     // mirror facing +x
+     // base post centered
+     // mirror surface vertical axis is 10.2 mm from post axis
+     mady = 10.2;		// distance from mirror surface to post axis
+     xoff = (optic_center ? mady : 0);
+     holedia = screw_tap_dia_8_32;
+     translate([-xoff, 0, 0])
+     translate([mady, 0, 0]) rotate([0, 0, rot]) translate([-mady, 0, 0]){	// rotate about mirror axis
+	  if (show){
+	       translate([0, 0, -10])
+	       rotate([0, -90, 0])
+	       translate([-16, -5.6, 17.3])
+	       scale(1000){
+		    import("thorlabs/MK05-Solidworks.stl");
+	       }
+	  }
+	  if (dz>0){
+	       post(dz, 10, drill=drill, use_nut=use_nut, holedia=holedia, post_dx=6.0, post_dy=20, lip_xpos=-3.0, lip_dy=10);
+	  }
+     }
+}
+
+module mirror_mount_k05s1(dz=0, show=1, rot=0, optic_center=true, drill=false, use_nut=false, name="", show_mirror=false, name_xoff=0, name_yoff=0, flip=0, mirror_thickness=6, pin_extra_dz=0.5){
+     // same as k05s2 but no lock nuts
+     mirror_mount_k05s2(dz=dz, show=show, rot=rot, optic_center=optic_center, drill=drill, use_nut=use_nut,
+			name=name, show_mirror=show_mirror, name_xoff=name_xoff, name_yoff=name_yoff, flip=flip, lock_nuts=false, mirror_thickness=mirror_thickness, pin_extra_dz=pin_extra_dz);
+}
+
+module mirror_mount_k05s2(dz=0, show=1, rot=0, optic_center=true, drill=false, use_nut=false, show_mirror=false, name_xoff=0, name_yoff=0, flip=0, lock_nuts=true, pin_extra_dz=0.5, mirror_thickness=6, name=""){
+     // polaris mirror mount
+     // height to base = 12.7mm
+     // base screw = 8-32 clear
+     // assume mirrors are 6mm thick (eg BB1-E02)
+     // optic stop is 8.0mm from post axis center, according to AutoCAD drawing
+     // so mirror surface to post axis distance = 8.0 + 6.0 = 14.0 mm
+     //
+     // OLD: optical flat surface = 18.3-5.1 mm along +x
+     // mirror facing +x
+     // base post centered
+     // mirror surface vertical axis is 10.2 mm from post axis
+     // OLD: mady = 1+18.3-5.1;		// distance from mirror surface to post axis
+     // 
+     // pin_extra_dz = additional depth to add to the 2mm pins (mostly for testing)
+     //
+     mady = 8 + mirror_thickness;			// distance from mirror surface to post axis
+     xoff = (optic_center ? mady : 0);
+     holedia = screw_tap_dia_8_32;
+     translate([-xoff, 0, 0])
+     translate([mady, 0, 0]) rotate([0, 0, rot]) translate([-mady, 0, 0]){	// rotate about mirror axis
+	  if (show){
+	       rotate([flip*90, 0, 0])
+		    if (lock_nuts){
+			 translate([0, 0, -12.7])
+			      rotate([0, -90, 0])
+			      translate([12.45, -0.3, -3.5])
+			      scale(1000){
+			      import("thorlabs/POLARIS-K05S2-Solidworks.stl");
+			 }
+		    }else{
+			 translate([0, -0.3, 0*0.1])
+			      rotate([-90, 0, 0])
+			      rotate([0, 0, -90])
+			      translate([-0.3, 3.5, 0])
+			      import("thorlabs/POLARIS-K05S1-Solidworks.stl");
+		    }
+	       if (show_mirror){
+		    mirror_xoff = mady - mirror_thickness;
+		    translate([mirror_xoff, 0, 0])
+			 rotate([0, 90, 0])
+			 color("grey")
+			 cylinder(d=0.5*d_inch, h=mirror_thickness);
+	       }
+	  }
+	  text_label(name, 15+name_xoff, name_yoff, dz, rot=[0, 0, -90], show=show||drill);
+	  if (dz>0){
+	       post(dz, 12.7, drill=drill, use_nut=use_nut, holedia=holedia, post_dx=10.2, post_dy=20, lip_xpos=0,
+		    pin_dia=2.0, pin_dy=5.0, pin_dz=2.7 + pin_extra_dz);
+	  }
+     }
+}
+
+
+//mirror_mount_k05s2(dz=12.7, show=true, drill=true);
+
+module mirror_mount_k05g4(dz=0, show_optics=true, show_mounting_features=false, rot=0, mirror_thickness=6, pin_depth=4, on_axis_tilt=0){
+    optical_stop_offset = 8.02;
+    rotate([0, 0, rot])
+    group(){
+    if (show_optics){
+        translate([-optical_stop_offset - mirror_thickness, 0, 0])
+        rotate([on_axis_tilt, 0, 0])
+        import("thorlabs/POLARIS-K05G4-Solidworks.stl");
+        translate([-mirror_thickness, 0, 0])
+        rotate([0, 90, 0])
+        
+        color("grey")
+        cylinder(d=0.5*d_inch, h=mirror_thickness);
+    }
+    if (show_mounting_features){
+        translate([-optical_stop_offset - mirror_thickness, 0, 0])
+        post(dz, 12.7, drill=show_mounting_features, use_nut=false, holedia=screw_tap_dia_8_32, post_dx=0, post_dy=0, lip_xpos=0,
+		    pin_dia=2.0, pin_dy=5.0, pin_dz=pin_depth);
+    }
+}
+}
+
+
+module mirror_mount_k05t2(dz=0, show=true, show_optics=true, show_mounting_features=false, rot=0, pin_depth=4, drill=false, optic_center=true){
+     // polaris mirror mount: half-inch threaded
+     // height to base = 12.7mm
+     // base screw = 8-32 clear
+     // front surface is 21.6 - 5.1mm from post hole center
+     rotate([0, 0, rot]){
+	  mady = 21.6 - 5.1;
+	  translate([(optic_center ? -mady : 0), 0, 0]){
+	       if (show_optics && show){
+		    import("thorlabs/POLARIS-K05T2-Solidworks.stl");
+	       }
+	       if (show_mounting_features || drill){
+		    post(dz, 12.7, drill=drill||show_mounting_features, use_nut=false, holedia=screw_tap_dia_8_32, post_dx=0, post_dy=0, lip_xpos=0,
+			 pin_dia=2.0, pin_dy=5.0, pin_dz=pin_depth);
+	       }
+	  }
+     }
+}
+
+module translation_mount_sm1z(dz, rod_len_in=3, show_optics=true, show_mounting_features=false, rot=0){
+    spacing_mm = rod_len_in * d_inch;
+    exported_d = d_inch * 3;
+    exported_to_back = 42.67;
+    exported_to_front = 33.53;
+    exported_to_back_hole = 38.23;
+    exported_to_front_hole = 29.08;
+    optical_axis_offset = 20.32;
+    asym = 4.57;
+    corner_rad = 6.35;
+    cutout_width_y = 50;
+    plate_thickness = 8.89;
+    delta = (spacing_mm - exported_d)/2;
+    cutout_width_x = exported_to_back + exported_to_front + (2 * delta) + 10;
+    deep_cutout_width_x = exported_to_back + exported_to_front - 2 * plate_thickness + (2 * delta);
+    rotate([0,0, rot])
+    group(){
+    if ((show_mounting_features)&&(dz < optical_axis_offset)){
+        translate([-exported_to_back_hole - delta, 0, -50])
+            color("red")
+            cylinder(h=100, r=screw_clear_dia_8_32/2);
+        translate([exported_to_front_hole + delta, 0, -50])
+            color("red")
+            cylinder(h=100, r=screw_clear_dia_8_32/2);
+        translate([-cutout_width_x/2 - asym, -cutout_width_y/2, -1 * optical_axis_offset])
+            color("blue")
+            cube_with_rounded_corners([cutout_width_x, cutout_width_y, optical_axis_offset - dz + 1], dia=2*corner_rad);
+        translate([-deep_cutout_width_x/2 - asym, -cutout_width_y/2, -1 * optical_axis_offset - 1])
+            color("blue")
+            cube_with_rounded_corners([deep_cutout_width_x, cutout_width_y, optical_axis_offset - dz + 2], dia=2*corner_rad);
+        translate([-exported_to_back - delta - 1, -10, -optical_axis_offset - 4])
+        color("red")
+        cylinder(h=100, r=1);
+         translate([-exported_to_back - delta - 1, 10, -optical_axis_offset - 4])
+        color("red")
+        cylinder(h=100, r=1);
+    }
+    
+    if (show_optics){
+    translate([ delta, 0, 0])
+    import("thorlabs/CP33.stl"); //plus x 
+    translate([-1 * delta, 0, 0])
+    import("thorlabs/CP33-1.stl"); //minus x
+    import("thorlabs/SM1Z.stl"); 
+    }
+}
+    
+} 
+//translation_mount_sm1z(12.7, rod_len_in=2.5, show_optics=true, show_mounting_features=true, rot=0);
+module translation_mount_sm1zp(dz, show_optics=true, show_mounting_features=false, rot=0){
+    optical_axis_offset = 17.1;
+    cutout_width_x = 35;
+    cutout_width_y = 75;
+    corner_rad = 6.35;
+    screw_clearance = 4.5/2;
+    rotate([0, 0, rot])
+    group(){
+    if ((show_mounting_features)&&(dz < optical_axis_offset)){
+        translate([-cutout_width_x/2 - 5.91, -cutout_width_y/2 - 17.58, -1 *        optical_axis_offset])
+            color("blue")
+            cube_with_rounded_corners([cutout_width_x, cutout_width_y, optical_axis_offset - dz + 1], dia=2*corner_rad);
+        translate([-5.91, -25.4, -50])
+            color("red")
+            cylinder(h=100, r=screw_clearance);
+        translate([-5.91, -38.1, -50])
+            color("red")
+            cylinder(h=100, r=screw_clearance);
+        translate([-17.07, -18.64, -optical_axis_offset - 4])
+        color("red")
+        cylinder(h=100, r=1);
+        translate([-17.07, -45.91, -optical_axis_offset - 4])
+        color("red")
+        cylinder(h=100, r=1);
+        translate([-5.91, -51.8, -optical_axis_offset - 4])
+        color("red")
+        cylinder(h=100, r=1);
+    }
+    if (show_optics){
+            import("thorlabs/SM1ZP-Solidworks.stl");
+    }
+}
+} 
+        
+//translation_mount_sm1zp(12.7, show_optics=true, show_mounting_features=true, rot=90);
+module mirror_mount_c05g(dz, show=true, drill=false, use_nut=false, rot = 0, optic_center=true, head_depth_offset=10, show_mirror=false, name="", name_xoff=0, name_yoff=0, mirror_dx=6){
+     // polaris static mount
+     // height to base = 12.7 mm
+     // base screw = 8-32 clear
+     // base post offset from optical axis by 9.4mm
+     // optical axis = x
+     // show_mirror = if true (and also show=true), then show the mirror in the mount
+     // mirror_dx = thickness of mirror (normally 6mm, but beam samplers are thinner, e.g . 3mm)
+     holedia = screw_tap_dia_8_32;
+     mady = 6.4 + mirror_dx;
+     xoff = (optic_center ? mady : 0);
+     translate([-xoff, 0, 0])
+     translate([mady, 0, 0]) rotate([0, 0, rot]) translate([-mady, 0, 0]){
+	  if (1){
+	       text_label(name, 10+name_xoff, name_yoff, dz, rot=[0,0,-90], show=show||drill);	// text parallel to optical surface
+	  }else{
+	       text_label(name, 0, -8, dz, rot=[0,0,180], show=show||drill);	// text parallel to optical axis
+	  }
+	  if (show){
+	       translate([9.4, 0, 0])
+		    rotate([0, 0, 90])
+		    translate([0, 0, -0.1])
+		    rotate([90, 0, 0])
+		    translate([-4.3, -15.1, -22])
+		    scale(1000){
+		    import("thorlabs/POLARIS-C05G-Solidworks.stl");
+	       }
+	       if (show_mirror){
+		    // mirror_dx = 6;
+		    mirror_xoff = 0.25 * d_inch;	// distance from mount hole center to the optical contact plane
+		    translate([mirror_xoff, 0, 0])
+			 rotate([0, 90, 0])
+			 color("grey")
+			 cylinder(d=0.5*d_inch, h=mirror_dx);
+	       }
+	  }
+	  if (dz>0){
+	       post(dz, 12.7, drill=drill, use_nut=use_nut, holedia=holedia, head_depth_offset=head_depth_offset,
+		    post_dx=16.0, lip_xpos=0, post_dy=16.0, post_xoff=2.0,
+		    pin_dia=2.0, pin_dy=5.0, pin_dz=2.2);
+	  }
+     }
+}
+//mirror_mount_c05g(name="m2");
+module mirror_mount_b05g(dz, show=true, drill=false, use_nut=false, rot = 0, optic_center=true, head_depth_offset=10, name="", show_mirror=false){
+     // polaris static mount
+     // height to base = 12.7 mm
+     // base screw = 8-32 clear
+     // base post offset from optical axis by 8 mm
+     // optical axis = x
+     // show_mirror = if true, then show beamsplitter optic in mount
+     holedia = screw_tap_dia_8_32;
+     mady = 8;				// 5mm from screw hole to optic face contact plane; 3mm thick beamsplitter
+     xoff = (optic_center ? mady : 0);
+     translate([-xoff, 0, 0])
+	  translate([mady, 0, 0]) rotate([0, 0, rot]) translate([-mady, 0, 0]){
+	  if (show){
+	       translate([9, 0, 0])
+		    rotate([0, 0, 90])
+		    translate([0, 0, -0.1])
+		    rotate([90, 0, 0])
+		    translate([-9, -18.1, -21.7])
+	       {
+		    import("thorlabs/POLARIS-B05G-Solidworks.stl");
+	       }
+	       if (show_mirror){
+		    mirror_dx = 3;
+		    mirror_xoff = 5;	// distance from mount hole center to the optical contact plane
+		    translate([mirror_xoff, 0, 0])
+			 rotate([0, 90, 0])
+			 color("grey")
+			 cylinder(d=0.5*d_inch, h=mirror_dx);
+	       }
+	  }
+	  if (dz>0){
+	       post(dz, 12.7, drill=drill, use_nut=use_nut, holedia=holedia, head_depth_offset=head_depth_offset,
+		    post_dx=16.0, lip_xpos=0, post_dy=16.0, post_xoff=2.0,
+		    pin_dia=2.0, pin_dy=5.0, pin_dz=2.2);
+	  }
+	  if (1){
+	       text_label(name, 10, 0, dz, rot=[0,0,-90], show=show||drill);	// text parallel to optical surface
+	  }else{
+	       text_label(name, 0, -8, dz, rot=[0,0,180], show=show||drill);	// text parallel to optical axis
+	  }
+     }
+}
+
+module mirror_mount_dmm05(dz=12.7, show=true, drill=true, rot=0, left_hand = false,use_nut = false, optic_center = true, show_mirror=false, name="dmm"){
+     //
+     // mount for d-shaped (half) mirror
+     //
+    holedia = screw_clear_dia_8_32;
+    post_dx = 7.4+1;
+    post_dy = 14.6 + 6;
+    post_dz = 14.6-dz;
+    left_ytrans = (left_hand ? 6.4: 0);
+    left_rot = (left_hand ? 180 : 0);
+    rotate([left_rot, 0, 0]){
+        if (show){
+           translate([-0.1-.2,0,0])
+           rotate([0,90,0])
+           translate([-14.6,-13.6,-6.4-4.3+.9])
+		   scale(1){
+		   import("thorlabs/DMM05-Solidworks.stl");
+            }
+	   if(show_mirror){
+		    mirror_dx = 6;
+		    mady = 0;
+		    mirror_xoff = mady - mirror_dx;
+		    translate([mirror_xoff, 0, 0]){
+			 rotate([0, 90, 0]){
+			      color("grey"){
+				   difference(){
+					cylinder(d=0.5*d_inch, h=mirror_dx);
+					color("red")
+					     translate([-50, 0, -1])
+					     cube([100, 100, 100]);
+				   }
+			      }
+		    }
+	       }
+	   }
+        }
+    }
+   
+   if (drill){
+       color("green")
+       translate([-post_dx/2-4.3+1.4-3, -post_dy/2 - 0 + left_ytrans/1.5, -14.6+0.1])
+       cube_with_rounded_corners([post_dx+5.5, post_dy-4, post_dz], dia=7.5);
+
+       // add a tapped hole just in case we want to use it
+       translate([-4.3+1.2, (left_hand ? 1 : -1) * 2.2, 0])
+	    post(dz, 14.6, drill=drill, use_nut=use_nut, holedia=holedia,
+		 headdia=screw_head_clear_dia_8_32,
+		 head_depth_offset=10,
+		 post_dx=0, post_dy=0);
+
+       if (0){
+	    color("green") // alignment pin
+		 translate([-post_dx/2-4.3+1.4, -6.4/2+ left_ytrans, -12.7+0.1-1])
+		 cylinder(d=6.4, h = 1);
+       }
+       
+    }
+   translate([0, (left_hand ? 0 : -35), 0])
+	text_label(name, 2, 16, dz, rot=[0, 0, -90], show=show||drill);
+}
+
+//mirror_mount_dmm05(left_hand=false, show_mirror=true);
+
+module mirror_mount_dmm05_with_slider_mount(dz=0, show=true, drill=false, rot=0, left_hand = true, use_nut = false, optic_center = true, side_thick=6, show_mirror=false, show_mount=false, name="dmm"){
+     // d-mirror mount
+     // with right-angle mount that allows mirror to slide perpendicular to optical axis
+     // uses a slot for the 8-32 screw to the base, for the sliding
+     // mirror faces along +x
+     left_rot = (left_hand ? 180 : 0);
+     left_xtrans = (left_hand ? 6.1: 0);
+     rotate([0, 0, rot]){
+	  mirror_mount_dmm05(dz=dz, show=show, drill=drill, rot=rot, use_nut=use_nut, left_hand = left_hand, optic_center=optic_center, name=name, show_mirror=show_mirror);
+      rotate([0,0,left_rot])
+      translate([left_xtrans,0,0])
+	  slider_right_angle_bracket(dz=dz, side_thick=side_thick, drill=drill, show=show, show_mount=show_mount);
+     }
+}
+
+// mirror_mount_dmm05_with_slider_mount(dz=25.4, left_hand=true, show_mirror=true, rot=45, optic_center=true);
+
+module mirror_mount_k1t(dz=0, show=1, rot=0, optic_center=true, drill=false, use_nut=false, name="k1t", add_post=true, post_include_ba=false, name_xoff=0, optical_axis_zpos=0){
+     // polaris 1" mirror mount (with SM1 ring)
+     // height to base = 25.4mm
+     // base screw = 8-32 clear
+     // optical flat surface = 31.1 - 8.9 - 2 mm along +x (SM1 retaining ring is 2mm thick)
+     // mirror facing +x
+     // base post centered
+     //
+     // add_post = (bool) if true, add a half-inch mouting post
+     //
+
+     mady = 31.1 - 8.9 - 2;		// distance from mirror surface to post axis
+     xoff = (optic_center ? mady : 0);
+     holedia = screw_tap_dia_8_32;
+     h2b = 25.4;
+     translate([-xoff, 0, optical_axis_zpos])
+     translate([mady, 0, 0]) rotate([0, 0, rot]) translate([-mady, 0, 0]){	// rotate about mirror axis
+	  if (show){
+	       translate([0, 0, -25.4])
+	       rotate([0, 0, -90])
+	       translate([20.1 - mady, -3.4, 25.4])
+	       scale(1){
+		    import("thorlabs/POLARIS-K1T-Solidworks.stl");
+	       }
+	  }
+	  text_label(name, -16+name_xoff, 0, (add_post ? optical_axis_zpos + dz : dz), rot=[0, 0, 90], show=show||drill);
+	  if ((dz>0) && (!add_post)){
+	       post(dz, 25.4, drill=drill, use_nut=use_nut, holedia=holedia, post_dx=10.2, post_dy=20, lip_xpos=0,
+		    pin_dia=2.0, pin_dy=5.0, pin_dz=2.2);
+	  }
+     }
+     if (add_post){
+	  translate([-xoff, 0, 0])
+	       half_inch_post_with_base(dz=dz, h2b=h2b, show=show, drill=drill, post_include_ba=post_include_ba, optical_axis_zpos=optical_axis_zpos);
+     }
+}
+
+module mirror_mount_k1(dz=0, show=1, rot=0, optic_center=true, drill=false, use_nut=false, name="k1", add_post=false, post_include_ba=false, name_xoff=0, optical_axis_zpos=0){
+     // polaris 1" mirror mount
+     // height to base = 25.4mm
+     // base screw = 8-32 clear
+     // optical flat surface = 31.1 - 8.9 - 2 mm along +x (SM1 retaining ring is 2mm thick)
+     // mirror facing +x
+     // base post centered
+     //
+     // add_post = (bool) if true, add a half-inch mouting post
+     //
+
+     mady = 31.1 - 8.9 - 2 - 0.73;		// distance from mirror surface to post axis
+     mdx = -6.35 + 15.2/2 - 26 ;
+     mdz = 0*25.4 - 0.64;
+     xoff = (optic_center ? mdx : 0);
+     holedia = screw_tap_dia_8_32;
+     h2b = 25.4;
+     overall_xoff = -1;
+     translate([-xoff + overall_xoff, 0, optical_axis_zpos + mdz])
+     translate([mady, 0, 0]) rotate([0, 0, rot]) translate([-mady, 0, 0]){	// rotate about mirror axis
+	  if (show){
+	       translate([0, 0, -25.4])
+	       rotate([0, 0, -90])
+	       translate([20.1 - mady, -2.3, 25.4])
+	       scale(1){
+		    import("thorlabs/POLARIS-K1-Solidworks.stl");
+	       }
+	  }
+	  text_label(name, -16+name_xoff, 0, (add_post ? optical_axis_zpos + dz : dz), rot=[0, 0, 90], show=show||drill);
+	  if ((dz>0) && (!add_post)){
+	       post(dz, 25.4, drill=drill, use_nut=use_nut, holedia=holedia, post_dx=10.2, post_dy=20, lip_xpos=0,
+		    pin_dia=2.0, pin_dy=5.0, pin_dz=2.2);
+	  }
+	  if (drill){
+	       translate([mady + xoff, 0, -100])
+		    color("red")
+		    cylinder(d=screw_tap_dia_8_32, h=100);
+	  }
+     }
+     if (add_post){
+	  translate([-xoff, 0, 0])
+	       half_inch_post_with_base(dz=dz, h2b=h2b, show=show, drill=drill, post_include_ba=post_include_ba, optical_axis_zpos=optical_axis_zpos);
+     }
+}
+
+// mirror_mount_k1t(dz=25.4, optic_center=true);
+
+module mirror_mount_km05(dz=0, show=1, rot=0, optic_center=true, drill=false, use_nut=false, name="km05", name_xoff=0,
+			 mount_threaded=true, show_mirror=true, add_screw_head_clearance=true, screw_head_depth=10){
+     // half-inch mirror mount (non-polaris)
+     // mirror center is 0.58 inches from bottom of mount, so these are not immediately compatible with polaris half-inch mounts
+     // also, the mounting holes in older versions of this are threaded 8-32, not clear 8-32
+     //
+     // mount_threaded: true if mounting hole is 8-32 threaded, false if it is 8-32 clear 
+     // show_mirror: true to show mirror in mount
+     // add_screw_head_clearance: true to add enlarged recess for 8-32 screw head on bottom of baseplate
+     //
+     holedia = screw_clear_dia_8_32;
+     mirror_front_to_post_xpos = 0.7 + 0.5*d_inch;
+     h2b = 0.58 * d_inch;
+
+     if (show){
+	  translate([-0.7, 0, 0]){		// mirror sticks out from front surface of mirror mount, by 0.7mm
+	       translate([-0.5*d_inch, 0, 0]){
+		    rotate([0, 0, 90])
+			 translate([-1.2, -9.35, 0.5]){
+			 import("thorlabs/KM05-Solidworks.stl");
+		    }
+	       }
+	       if (show_mirror){
+		    mirror_dx = 6;
+		    mirror_xoff = -0.21 * d_inch;	// distance from mount hole center to the optical contact plane
+		    translate([mirror_xoff, 0, 0])
+			 rotate([0, 90, 0])
+			 color("grey")
+			 cylinder(d=0.5*d_inch, h=mirror_dx);
+	       }
+	  }
+     }
+     if (drill){
+	  if (dz>0){
+	       translate([-mirror_front_to_post_xpos, 0, 0]){
+		    post(dz, h2b, drill=drill, use_nut=use_nut, holedia=holedia, 
+			 post_dx=19.0, lip_xpos=0, post_dy=31.0, post_xoff=0.125 * d_inch + 1.75 - 0.25 - 0.15, corner_diameter=4);
+		    // extra pocket for mirror to be able to move freely
+		    post(dz, h2b + 2, drill=drill, use_nut=use_nut, holedia=0, 
+			 post_dx=12.0, lip_xpos=0, post_dy=31.0, post_xoff=10);
+	       }
+	       if (add_screw_head_clearance){
+		    translate([-mirror_front_to_post_xpos, 0, -dz-screw_head_depth - 20]){
+			 color("red")
+			      cylinder(d=screw_head_clear_dia_8_32, h=20);
+		    }
+	       }
+	  }
+     }
+     text_label(name, 4.5 + name_xoff, 0, dz, rot=[0,0,-90], show=show||drill);	// text parallel to optical surface
+}
+
+// mirror_mount_km05();
+
+module cage_mount(dz=0, drill=false, show=true, optic_center=true, show_mount=false){
+     //
+     // SM1 cage mount plate
+     //
+     xoff = (optic_center ? 4.4 : 0);
+     h2b = 20.3;
+     if(show){
+	  translate([-4.4 + xoff, 0, 0])
+	       rotate([90,0,0])
+	       rotate([0,90,0])
+	       translate([-20.7, -20.32, 0]){
+	       import("thorlabs/CP02-Solidworks.stl");
+	  }
+     }
+     if(dz>0){
+	  translate([xoff, 0, 0])
+	       surface_adapter(dz, height_to_base=h2b, width=9, hole_separation=50, drill=drill, show=show||show_mount);
+     }
+}
+
+module cage_mount_with_pocket(dz=0, show=true, dx=40, optic_center=false, drill=false, name=""){
+     //
+     // cage mount with pocket and 8-32 clear hole for screw from bottom
+     // thickness = 8.9mm
+     // holes for two 2mm pins for alignment
+     //
+     h2b = 20.3;
+     post_dx = 16;
+     post_dy = 45;
+     thick = 8.9;
+     pin_dia = 2.0;
+     pin_xpos = (thick/2 + pin_dia/2);
+     pin_zoff = 0;
+     pin_height = 2.2;
+
+     cage_mount(0, show=show, drill=false, optic_center=false);
+     if (drill){
+	  translate([0, 0, 0])
+	       post(dz, h2b, drill=drill, holedia=screw_clear_dia_8_32, headdia=screw_head_clear_dia_8_32, head_depth_offset=12, post_dx=post_dx, post_dy=post_dy);
+	  for(dy=[-10, 10]){
+	       translate([pin_xpos, dy, pin_zoff - h2b - pin_height + 0.02])
+		    color("pink")
+		    cylinder(d=pin_dia, h=pin_height);
+	  }
+     }
+}
+
+module cage_mount_pair_with_rails(dz=0, show=true, dx=40, optic_center=false, drill=false, drill_832=false, drill_past_end=0, add_post=false, optical_axis_zpos=0, post_include_ba=false, name=""){
+     //
+     // two SM1 cage mount plates with 6mm dia rails connecting them
+     //
+     // dx = separation of plates along beam axis direction (x-axis)
+     // drill_past_end = extra pocket to cut out of baseplate beyond the end, for longer cage rods (used when placed directly on baseplate)
+     // if drill_832 then allow for 8-32 screw from bottom
+     //
+     rod_dia = 6;
+     cage_dy = 30/2;
+     cage_dx = dx + 8.9;
+     h2b = 20.3;
+     zoff = (add_post ? optical_axis_zpos : 0);
+     xoff = (optic_center ? 4.4 : 0);
+     post_dx = 16;
+     post_mid_dx = dx - 0.6 * post_dx;
+     post_dy = 45;
+     post_dz = h2b - dz + 2;
+
+     if (show){
+	  translate([xoff, 0, zoff]){
+	       cage_mount(0, show=show, drill=false, optic_center=false);
+	       translate([dx, 0, 0])
+		    cage_mount(0, show=show, drill=false, optic_center=false);
+	       // rails
+	       if (show){
+		    for(th=[0:90:360]){
+			 color("silver")
+			      rotate([th, 0, 0])
+			      translate([-4.4, cage_dy, cage_dy])
+			      rotate([0, 90, 0])
+			      cylinder(d=rod_dia, h=cage_dx);
+		    }
+	       }
+	  }
+     }
+     if (drill_832){
+	  for(pdx=[0, dx]){
+	       translate([pdx, 0, 0])
+		    post(dz, h2b, drill=drill, holedia=screw_clear_dia_8_32, headdia=screw_head_clear_dia_8_32, head_depth_offset=12, post_dx=post_dx, post_dy=post_dy);
+	  }
+	  // cutout between two cage mount endpieces
+	  color("olive")
+	       translate([post_dx * 0.3, -post_dy/2, -post_dz-dz+0.01]){
+	       cube([post_mid_dx, post_dy, post_dz]);
+	  }
+     }
+
+     if (add_post){
+	  translate([xoff, 0, 0])
+	       half_inch_post_with_base(dz=dz, show=show, h2b=h2b, optical_axis_zpos=optical_axis_zpos, drill=drill, post_include_ba=post_include_ba);
+     }
+     if (add_post==2){
+	  translate([xoff + dx, 0, 0])
+	       half_inch_post_with_base(dz=dz, show=show, h2b=h2b, optical_axis_zpos=optical_axis_zpos, drill=drill, post_include_ba=post_include_ba);
+     }
+}
+
+module pd_det10a2(dz=0, show=true, optic_center=true, drill=false, use_nut=true, name_xoff=0, name_yoff=0, name="", platemount=true, tube_slot_dx=22, tube_slot_xoff=10){
+    //
+    // photodetector DET10A2
+    //
+    // For historical reasons (eg the first fibernoise_aom baseplate), by default this mounts on a cage mount plate.
+    // To mount using a SM1TC tube clamp, set platemount=false.
+    //
+    // tube_slot_dx: length of slot (along beam axis) to cut for SM1 tube (when platemount is false)
+    // tube_slot_xoff: offset along beam direction, of tube slot
+    //
+    pd_dy = 49.8;
+    pd_dx = 22.5;
+    pd_dz = 59.3;
+    xoff = 2.25  + (platemount ? 0 : -10.65) ;
+    holedia = screw_tap_dia_8_32;
+    tr = 1.2 / 2 * d_inch;
+    tdz = (1.2 / 2 - 0.5) * d_inch;
+    tube_slot_dz = tdz + 1;
+    tube_slot_dy = 2 * sqrt(pow(tr, 2) - pow(tr-tdz, 2));
+    if(show){
+        rotate([90,0,0])
+        rotate([0,-90,0])
+        translate([-pd_dy/2,-25,-xoff]){
+            import("thorlabs/DET10A2-Solidworks.stl");
+        }
+    }
+    if (platemount){
+	 cage_mount(dz=dz, drill=drill, show=show);
+    }else{
+	 tube_mount_sm1tc(dz=dz, show=show, drill=drill, name="", tube_dx=0.5*d_inch);
+    }
+    // cut slot for SM1 tube, if not using platemount
+    if  (drill && (! platemount)){
+	 color("red")
+	      translate([-tube_slot_dx + tube_slot_xoff, -tube_slot_dy/2, -tube_slot_dz + 0.01 - dz])
+	      cube([tube_slot_dx, tube_slot_dy, tube_slot_dz]);
+    }
+    text_label(name, 16 + name_xoff, 8 + name_yoff, dz, rot=[0, 0, 90], show=show||drill);
+}
+
+module pd_pda10a(dz=0, show=true, optic_center=true, drill=false, show_mount = false, use_nut=true, name_xoff=0, name_yoff=0, name=""){
+    //photodetector parameters
+    pd_dy = 44.2;
+    pd_dx = 21.1;
+    pd_dz = 65 - 15.2;
+    recess_dz = 15.2 - dz+0.6; 
+    holedia = screw_tap_dia_8_32;
+    
+    if(show){
+       // rotate([90,0,0])
+        //rotate([0,-90,0])
+        translate([-pd_dx,pd_dy/2,pd_dz])
+        rotate([0,90,0])
+        rotate([0,0,-90]){
+            import("thorlabs/PDA10A_noRing-Solidworks.stl");
+        }
+    }
+   
+    translate([0,0,0])
+    difference(){
+        translate([-12.7,0,0])
+        surface_adapter(dz, height_to_base=15.3, width=15, hole_separation=50, drill=drill, show=show||show_mount, pda = true);
+        if(!drill){
+	     // pda_stub_od = 10.0;
+	     pda_stub_od = 10.7;			// measured actual stub OD 2019-10-06
+	     
+	     translate([-12.7,0,-20.2])				// hole for bottom stub on PDA
+		  cylinder(d = pda_stub_od + 0.3, h = 50);	// add 300um extra for clearance
+	}
+    }
+
+    if(drill){
+        color("green")
+        translate([-pd_dx-2, -pd_dy/2-2, -recess_dz-dz+0.1])
+        cube_with_rounded_corners([pd_dx+3, pd_dy+4, recess_dz], dia=8);
+    }
+ 
+    text_label(name, 16 + name_xoff, 8 + name_yoff, dz, rot=[0, 0, 90], show=show||drill);
+}
+//pd_pda10a(12.7);
+
+
+module pinhole_ida12(dz=0, show=1, drill=false, use_nut=false, head_depth_offset=15, use_surface=true, name="pin", show_mount=false){
+     // height to base = 12.8 mm (there is an extra 3.4mm from a 8-32 stud, but that stud is removed for our application!)
+     // base screw = 8-32 female
+     // base post centered
+     // use_surface: true = add surface mount adapter 
+     holedia = screw_clear_dia_8_32;
+     h2b = 12.8;
+     if (show){
+	  translate([-0.35, 0.05, 0])
+	  rotate([0, 0, -90])
+	  rotate([90, 0, 0])
+	       scale(1000){
+	       import("thorlabs/IDA12-P5-Solidworks.stl");
+	  }
+     }
+     text_label(name, 7, 0, dz, rot=[0, 0, -90], show=show||drill);
+     if (dz>0){
+	  if (use_surface){
+	       // add an adapter which allows the pinhole to be screwed in from the surface,
+	       // instead of requiring a bolt from the bottom.
+	       surface_adapter(dz, height_to_base=h2b, width=10, hole_separation=28, drill=drill, show=show||show_mount);
+	  }
+	  else{
+	       post(dz, h2b, drill=drill, use_nut=use_nut, holedia=holedia, headdia=screw_head_clear_dia_8_32, head_depth_offset=head_depth_offset, post_dx=2.9*2, post_dy=20, lip_xpos=2.9, lip_height=6);
+	  }
+     }
+}
+module pinhole_ida12_slide_mount(dz=0, show=1, drill=false, use_nut=false, head_depth_offset=15,slide_range = 4, name="", show_mount=false){
+     // oa_height = 12.8 + 3.4;	// height of optical axis above bottom of mount
+     oa_height = 12.8;		// height of optical axis above bottom of mount (ignore 3.4mm stud - it is removed)
+     rotate([-90,0,0])
+	  pinhole_ida12(dz=12.7, show=show, drill=false, use_nut=false, head_depth_offset=15, use_surface=false, name="");
+     //text_label(name, 10, 0, dz, rot=[0, 0, 90], show=show||drill);
+     post(dz, 16, drill=drill, use_nut = false, post_dx = 8, post_dy = 21, post_yoff = 0);
+     if (0){
+	  // old way, with stud included by mistake
+	  translate([5.9/2, -3.4/2, 0])
+	       slider_right_angle_bracket(dz=dz, side_thick=6, drill=drill, show=show, show_mount=show_mount);
+     }else{
+	  if (0){
+	       // temporary way, removing stud, but increasing side thickness so that baseplate 8-32 threaded hole stays in the same place as before
+	       translate([5.9/2, 3.4/2, 0])
+		    slider_right_angle_bracket(dz=dz, side_thick=6+3.4, drill=drill, show=show, show_mount=show_mount);
+	  }else{
+	       // correct way, removing stud, keeping standard side thickness
+	       translate([5.9/2, 3.4/2, 0])
+		    slider_right_angle_bracket(dz=dz, side_thick=6, slide_range = slide_range, drill=drill, show=show, show_mount=show_mount);
+	  }
+     }
+}
+
+//pinhole_ida12_slide_mount(12.7);
+
+module pinhole_ida15(dz=0, show=1, drill=false, use_nut=false, head_depth_offset=15){
+     // height to base = 14.9 + 3.4 = 18.3 mm
+     // base screw = 8-32 female
+     // base post centered
+     holedia = screw_clear_dia_8_32;
+     if (show){
+	  translate([0.3, 0, 0])
+	       rotate([0, 0, -90])
+	       rotate([90, 0, 0])
+	       scale(1000){
+	       import("thorlabs/IDA15-P5-Solidworks.stl");
+	  }
+     }
+     if (dz>0){
+	  post(dz, 18.3, drill=drill, use_nut=use_nut, holedia=holedia, headdia=screw_head_clear_dia_8_32, head_depth_offset=head_depth_offset, post_dx=8, post_dy=20, lip_xpos=4, lip_height=7);
+     }
+}
+
+module lens_holder_lmr1(dz, show=true, drill=false, use_nut=true, optic_center=true, head_depth_offset=14, nd=false, name=""){
+     // height to base = 22.1 mm
+     // base screw = 8-32 female
+     // base post centered
+     // optical axis = x
+     holedia = screw_clear_dia_8_32;
+     if (show){
+	  rotate([0, 0, -90])
+	       translate([0, -5.1, 0])
+	       rotate([90, 0, 0])
+	       scale(1000){
+	       import("thorlabs/LMR1-Solidworks.stl");
+	  }
+     }
+     text_label(name, 0, -22, dz, rot=[0, 0, 0], show=show||drill);
+     if (dz>0){
+         post(dz, h2b=22.1 , drill=drill, use_nut=use_nut, holedia=holedia, headdia=screw_head_clear_dia_8_32, head_depth_offset=head_depth_offset, post_dx=5.1*2+2, lip_xpos=-5.1);
+         if(nd){
+             post(dz, 30.5/2, drill = drill, use_nut = false, holedia = 0, headdia = 0, post_dx = 5.1*2+8, 
+		  post_xoff = 6 + 1);
+         }
+
+     }
+}
+
+module lens_holder_mlh05(dz, show=true, drill=false, use_nut=true, head_depth_offset=10){
+     // height to base = 10.0 mm
+     // base screw = 4-40 female
+     // base post centered
+     // optical axis = x
+     holedia = screw_clear_dia_4_40;
+     if (show){
+	  rotate([0, 0, 90])
+	       rotate([90, 0, 0])
+	       translate([0.4, -16.3, -10.6 - 3.8])
+	       scale(1000){
+	       import("thorlabs/MLH05-Solidworks.stl");
+	  }
+     }
+     if (dz>0){
+	  post(dz, 10.0, drill=drill, use_nut=use_nut, holedia=holedia, headdia=screw_head_clear_dia_4_40, head_depth_offset=head_depth_offset, post_dx=3.8*2, lip_xpos=-3.8);
+     }
+}
+
+module lens_holder_lmr05(dz, show=true, drill=false, use_nut=false, head_depth_offset=10, use_adapter=true){
+     // height to base = 10.0 mm
+     // base screw = 4-40 female
+     // base post centered
+     // optical axis = x
+     holedia = screw_clear_dia_8_32;
+     if (show){
+	  rotate([0, 0, 90])
+	       rotate([90, 0, 0])
+	       translate([0,0,0])
+	       scale(1000){
+	       import("thorlabs/LMR05-Solidworks.stl");
+	  }
+     }
+     if (dz>0){
+         if(!use_adapter){
+              post(dz, 16.0, drill=drill, use_nut=use_nut, holedia=holedia, headdia=screw_head_clear_dia_8_32, head_depth_offset=head_depth_offset, hole_xoff=-3.8, lip_xpos=-3.8*0);
+         }
+     }
+}
+
+module lmr05_slide_mount(dz, show=true, drill=false, use_adapter=true, name="", show_mount=false){
+    rotate([-90,0,0])
+    lens_holder_lmr05(dz=dz, show=show, drill=drill, use_adapter = use_adapter);
+    if(use_adapter){
+        translate([-1,-1.5,0])
+             slider_right_angle_bracket(dz=dz, side_thick=6, drill=drill, show=show, show_mount=show_mount);
+         }
+     text_label(name, 6, -18, dz, rot=[0, 0, 90], show=show||drill);
+}
+
+
+
+module lmr05_slide_mount_z(dz, show=true, drill=false, use_adapter=true, name="", show_mount=false){
+    rotate([-90,0,0])
+    lens_holder_lmr05(dz=dz, show=show, drill=drill, use_adapter = use_adapter);
+    if(use_adapter){
+        translate([-1,-2.5,0])
+             slider_right_angle_bracket_z(dz=dz, side_thick=6, drill=drill, show=show, show_mount=show_mount);
+         }
+     text_label(name, 6, -18, dz, rot=[0, 0, 90], show=show||drill);
+}
+
+//lmr05_slide_mount_z(12.7);
+
+module lens_holder_l05g(dz, show=true, drill=false, use_nut=false, optic_center=true, head_depth_offset=10, name="lens"){
+
+     // polaris mount
+     // height to base = 12.7 mm
+     // base screw = 8-32 clear
+     // base post offset from optical axis by 8mm
+     // optical axis = x
+     holedia = screw_tap_dia_8_32;
+     mady = 9.5;
+     xoff = (optic_center ? mady : 0);
+    pin_dx = 5.8;
+    pin_dia = 2;
+    pin_slot_width = pin_dia + 0.15;	// allow 150um for free sliding of pin within slot
+    pin_dz = 2;
+    slot_yoff = -5;
+     text_label(name, 0, 0, dz, rot=[0, 0, 90], show=show||drill);
+     translate([-xoff, 0, 0]){
+	  if (show){
+	       translate([mady, 0, 0])
+		    rotate([0, 0, 0])
+		    translate([0, 0, -12.7])
+		    rotate([90, 0, 90])
+		    translate([-13.3, -19 + 0.6 + 12.7, -28])
+		    scale(1000){
+		    import("thorlabs/POLARIS-L05G-Solidworks.stl");
+	       }
+	  }
+	  if (dz>0){
+	       post(dz, 12.7, drill=drill, use_nut=use_nut, holedia=holedia, headdia=screw_tap_dia_8_32, head_depth_offset=head_depth_offset,
+		    post_dx=18.0, lip_xpos=0, post_dy=18.0, post_xoff=1.0,
+		    pin_dia=2.0, pin_dy=5.0, pin_dz=2.2);
+	  }
+      if(drill){
+	   for (dy=[0, -10]){
+		translate([0, -slot_yoff + dy, -dz - pin_dz])
+		     color("red")
+		     slot_without_hull(width=pin_slot_width,length=pin_dx, height=100);
+	   }
+      }
+     }
+}
+
+module long_slot_l05g(show_optics=true, show_mounting_features=false, slot_length=20, pin_depth=2.5, pin_nominal=false){
+    pin_diameter=2;
+    slot_width=pin_diameter + 0.15;
+    if (show_optics){
+		    rotate([0, 0, 0])
+		    translate([0, 0, -12.7])
+		    rotate([90, 0, 90])
+		    translate([-13.3, -19 + 0.6 + 12.7, -28])
+		    scale(1000){
+		    import("thorlabs/POLARIS-L05G-Solidworks.stl");
+	       }
+    }
+    if(show_mounting_features){
+        n_holes = floor(slot_length/5.0);
+        echo(n_holes);
+        hole_start_offset =-8 - slot_length/2 + 2.5;
+        for (i = [0 : n_holes-1]){
+            color("red")
+            translate([hole_start_offset + (i * 5), 0, -50])
+            cylinder(r=screw_tap_dia_8_32/2, h=100);
+        }
+        for (dy=[-5, 5]){
+            translate([-8, dy, -12.7 - pin_depth])
+            color("red")
+            slot_without_hull(width=slot_width,length=slot_length, height=100);
+        }
+        if (pin_nominal){
+            translate([2.55,8,-12.7 - pin_depth])
+            color("red")
+            cylinder(r=1, h=100);
+        }
+    }
+    
+}
+
+
+//long_slot_l05g(show_mounting_features=true, slot_length=20, pin_nominal=true);
+
+module test_drill_l05g(){	// l05 test
+     base_dz = 12.7;
+     difference(){
+	  translate([-30, -35, -20 - base_dz]) cube([70, 70, 20]);
+	  lens_holder_l05g(base_dz, name="lens", drill=true);
+     }
+     lens_holder_l05g(base_dz, name="lens", show=false);
+}
+
+// test_drill_l05g();
+
+module fiberport_holder_hcp(dz=0, show=1, drill=false, use_nut=false){
+     // height to base = 26.9 mm
+     // base screw = 1/4-20 clear
+     // base post centered
+     holedia = screw_tap_dia_14_20;
+     if (show){
+	  rotate([0, 0, -90])
+	  translate([0, 0, -26.9])
+	       rotate([90, 0, 0])
+	       scale(1000){
+	       import("thorlabs/HCP-Solidworks.stl");
+	  }
+     }
+     if (dz>0){
+	  pxoff = -(38.9-32.5)/2;
+	  post(dz, 26.9, drill=drill, use_nut=use_nut, holedia=holedia, post_dx=38.9, post_dy=38.2,
+	       post_xoff=pxoff, lip_xpos=38.9/2 + pxoff);
+     }
+}
+
+
+module fiberport_holder_hca3(dz=0, show=1, optic_center=true, drill=false, use_nut=false, drill_depth_offset=0){
+     //
+     // HCA3 mounted on side, with three holes, and co-cylindrically drilled clearance hole for shoulders on screws
+    //
+    holedia = screw_tap_dia_8_32;
+    holedia_shoulder = 4.8;
+    drill_depth = .75*d_inch + drill_depth_offset;
+    drill_depth_shoulder = 0.125 * d_inch + 0*drill_depth_offset + 0.004 * d_inch + 1;
+    h2b = 26.9;
+    if(show){
+	 rotate([0, 0, -90])
+	      translate([0, 0, -26.9])
+	      rotate([90, 0, 0])
+	      rotate([0,180,0])
+	      translate([-38.1/2,0,0])
+	 { 
+	      import("thorlabs/HCA3-Solidworks.stl");
+	 }
+    }
+    if(drill){
+	 // holes in side for fiberport
+	 for (dy=[1, 0, -1]){
+	      translate([6.2, 12.7*dy, -26.9 + 6.2]){
+		   color("red"){						// 8-32 tapping hole
+			rotate([0,90,0]) cylinder(d=holedia, h=drill_depth);
+		   }
+		   color("purple"){						// screw shoulder
+			rotate([0,90,0]) cylinder(d=holedia_shoulder, h=drill_depth_shoulder);
+		   }
+	      }
+	 }
+    }
+}
+//fiberport_holder_hca3();
+
+module fiberport_sidemount(dz=0, show=1, optic_center=true, drill=false,  use_nut=false, name="", drill_depth_offset=0, name_xoff=0, name_yoff=0){
+     //
+     // fiberport mounted on side of baseplate, (optionally with slot cut into side)
+     // includes drill-out for tighter alignment using shoulder screws
+     //
+     poff = 1.5;
+     xoff = (optic_center ? poff-7.8 : 0);
+     translate([xoff, 0, 0]){
+	  if (false){
+	       rotate([0, 0, -90])
+		    translate([0, -poff, 0]){
+		    color("blue")
+			 fiberport_paf2(dz, show);
+	       }
+	  }
+	  fiberport_holder_hca3(dz, show=show, drill=drill, use_nut=use_nut, drill_depth_offset=drill_depth_offset);
+    
+	  text_label(name, 11 + name_xoff, name_yoff, dz, rot=[0,0,-90], show=show||drill);
+     }
+}
+    
+module test_drill_fp1(){	// fiberport sidemount test
+     base_dz = 12.7;
+     difference(){
+	  color("gray") translate([0, -35, -20 - base_dz]) cube([70, 70, 20]);
+	  fiberport_sidemount(base_dz, optic_center = true, drill = true, show=false);
+     }
+     // fiberport_sidemount(base_dz, optic_center = true, drill = false, show=true);
+}
+// test_drill_fp1();
+//fiberport_sidemount();
+
+module fiberport_paf2(){
+     rotate([0, 90, 0])
+     rotate([90, 0, 0])
+     scale(1000){
+	  import("thorlabs/PAF2-2A-Solidworks.stl");
+     }
+}
+
+module fiberport_with_holder(dz=0, show=1, optic_center=true, drill=false, use_nut=false){
+     // height to base = 26.9 mm
+     // base screw = 1/4-20 clear
+     // optical axis = y
+     // beam output = +y
+     // base post centered (if optic_center==true)
+     poff = 24;
+     xoff = (optic_center ? poff - 5 : 0);
+     translate([xoff, 0, 0]){
+	  if (show){
+	       rotate([0, 0, -90])
+		    translate([0, -poff, 0]){
+		    color("blue")
+			 fiberport_paf2(dz, show);
+	       }
+	  }
+	  fiberport_holder_hcp(dz, show, drill=drill, use_nut=use_nut);
+     }
+}
+//fiberport_with_holder();
+
+module rotation_stage_rsp1(dz=0, show=1, drill=false, use_nut=true, head_depth_offset=15){
+     // height to base = 27.7mm
+     // base screw = 8-32 female
+     // base post centered
+     holedia = screw_clear_dia_8_32;
+     if (show){
+	  rotate([0, 0, -90])
+	  rotate([180, 0, 0])
+	       scale(1000){
+	       import("thorlabs/RSP1-Solidworks.stl");
+	  }
+     }
+     if (dz>0){
+	  post(dz, 27.7, drill=drill, use_nut=use_nut, holedia=holedia, headdia=screw_head_clear_dia_8_32, head_depth_offset=head_depth_offset, post_dx=14.4, lip_xpos=7.2);
+    
+     }
+}
+
+module rotation_stage_rsp05(dz=0, show=1, drill=false, use_nut=true, name="", name_xoff=0, name_yoff=0, show_mount=true, low_profile=false, square_edges=false,
+			    use_post=false, head_depth_offset=14){
+     //
+     // height to base = 14.0mm
+     // base screw = 8-32 female
+     // base post centered
+     //
+     // low_profile = true for surface adapter which is thinner and has no screw head recess on the bottom; the recess is on the baseplate instead
+     holedia = screw_clear_dia_8_32;
+     text_label(name, 12+name_xoff, name_yoff, dz, rot=[0,0,90], show=show||drill);
+     adapter_hole_sep = (low_profile ? 22 : 28);
+     if (show){
+	  translate([0.6, 0, 0])
+	  rotate([0, 0, 90])
+	  rotate([90, 0, 0])
+	       scale(1000){
+	       import("thorlabs/RSP05-Solidworks.stl");
+	  }
+     }
+     if ((!use_post) && (dz>0)){
+	  surface_adapter(dz, height_to_base=14, width=10, hole_separation=adapter_hole_sep, drill=drill, show=show||show_mount, low_profile=low_profile,
+			  extra_length=4, square_edges=square_edges);
+     }
+     if (use_post){
+	  post(dz, 14.0, drill=drill, use_nut=use_nut, holedia=holedia, post_dx=10.2, lip_xpos=-5.1,
+	       headdia=screw_head_clear_dia_8_32, head_depth_offset=head_depth_offset );
+     }
+}
+
+module prism_mount_km100pm(dz=0, show=1, zoff=0, drill=false, use_nut=false, head_depth_offset=15, headdia=0, drill_platform=false){
+     // height to base = 19.1 mm
+     // base screw = 8-32 clear
+     // base post centered
+     // zoff = extra distance to move mount *down* (-z)
+     holedia = screw_tap_dia_8_32;
+     pdz = 19.1;	// 0.75 * d_inch
+
+     platform_xoff = 0.37 * d_inch / 2 - 0.25;		// in top view, this is distance from mounting hole to closest edge of platform
+     platform_yoff = d_inch - 0.88;			// in top view, this is distance from mounting hole to most -y edge of platform
+     platform_zoff = 0.75 * d_inch;		// from bottom of mount to top of platform
+     platform_dx = d_inch;
+     platform_dy = 1.62 * d_inch;
+     platform_hole_dx = (platform_dy - screw_clear_dia_6_32)/4 + 0.8;
+     platform_hole_dy = (platform_dy - screw_clear_dia_6_32)/3 + 0.2;
+     platform_hole_xoff = screw_clear_dia_6_32 / 2 + 0.71;
+     platform_hole_yoff = screw_clear_dia_6_32 / 2 + 0.71;
+    
+     if (show){
+	  translate([0, 0, -zoff])
+	  rotate([0, 0, -90])
+	  translate([-25.4, 0, -pdz])
+	       translate([0, 5.1, 0])
+	       rotate([90, 0, 0])
+	       scale(1000){
+	       import("thorlabs/KM100PM-Solidworks.stl");
+	  }
+     }
+     if (dz>0){
+	  post(dz, pdz + zoff, drill=drill, use_nut=use_nut, holedia=holedia, headdia=headdia, head_depth_offset=head_depth_offset,
+	       post_dx=5.1*2, lip_xpos=-5.1);
+     }
+     if (drill_platform){
+	  color("red"){
+	       translate([platform_xoff, -platform_yoff, platform_zoff - pdz-0.1]){
+		    // cube([platform_dx, platform_dy, 1]);
+		    for(nx=[0, 1, 2]){
+			 for(ny=(nx==0 ? [0, 1, 2] : (nx==1 ? [0] : [0, 1, 2, 3]))){
+			 // for(ny=[0, 1, 2]){
+			      phdy = platform_hole_dy - ([nx,ny]==[0, 1] ? 0.1 :
+							 ([nx,ny]==[0, 2] ? 0.1 :
+							  ([nx, ny]==[2, 2] ? 1 :
+							   ([nx, ny]==[2, 3] ? 0.65 : 0) ) ) );		// hole positions hand-tuned to match STL from thorlabs
+			      translate([nx*platform_hole_dx + platform_hole_xoff, ny*phdy + platform_hole_yoff, 0]){
+				   cylinder(d=screw_clear_dia_6_32, h=100);
+			      }
+			 }
+		    }
+	       }
+	  }
+     }
+}
+
+module prism_mount_km200pm(dz=0, show=1, zoff=0, drill=false, use_nut=false, head_depth_offset=15){
+     // height to base = 23.0 mm
+     // base screw = 8-32 clear
+     // base post centered
+     // z-center = top surface
+     // zoff = extra distance to move mount *down* (-z)
+     holedia = screw_tap_dia_8_32;
+     if (show){
+	  translate([0, 0, -zoff])
+	  rotate([0, 0, -90])
+	  translate([-19.8, 0, -3.1])
+	       rotate([0, 0, 180])
+	       rotate([90, 0, 0])
+	       scale(1000){
+	       import("thorlabs/KM200PM-Solidworks.stl");
+        }
+     }
+     h2b = 23+zoff;
+     if (dz>0){
+	  post(dz, 23.0 + zoff, drill=drill, use_nut=use_nut, holedia=holedia, headdia = 0, head_depth_offset=head_depth_offset, post_dx=70, post_dy=80, post_xoff = -10, lip_xpos=-5.1);
+         
+        
+    }
+    if(drill){ 
+             color("red")
+             translate([0,-10 - holedia,-drill_depth+0.1 - 23 - zoff])
+             cylinder(d = holedia, h = drill_depth);
+        }
+}
+
+//prism_mount_km200pm();
+
+module prism_half_inch(){
+     translate([-prism_dx/2, -prism_dy/2, 0])
+     color("pink"){
+	  cube([prism_dx, prism_dy, prism_dz]);
+     }
+}
+
+module prism_on_mount_km100pm(dz=0, show=1, prism_xoff=0, optic_center=true, drill=false, use_nut=true){
+     // height to base = 19.1 + 25.4/4 = 25.45 mm
+     // base screw = 8-32 clear
+     // base post centered
+     poff = 25.4/2 + 34.9 - 25.4 - 5.1 + prism_xoff;
+     xoff = (optic_center ? poff : 0);
+     translate([-xoff, 0, 0]){
+	  prism_mount_km100pm(dz, show, zoff=prism_dz/2, drill=drill, use_nut=use_nut);
+	  if (show){
+	       translate([0, 0, -prism_dz/2]){
+		    rotate([0, 0, -90])
+			 translate([0, poff, 0])	// translate prism on platform
+			 prism_half_inch();
+	       }
+	  }
+     }
+}
+
+module prism_on_mount_km200pm(dz=0, show=1, prism_xoff=10, optic_center=true, drill=false, use_nut=false){
+     // height to base = 23.0 + 25.4/4 = 29.35 mm
+     // base screw = 8-32 clear
+     // base post centered
+     poff = 25.4/2 + 34.9 - 25.4 - 5.1 + prism_xoff;
+     xoff = (optic_center ? poff : 0);
+     translate([-xoff, 0, 0]){
+	  prism_mount_km200pm(dz, show, zoff=prism_dz/2, drill=drill, use_nut=use_nut, head_depth_offset=15);
+	  if (show){
+	       translate([0, 0, -prism_dz/2]){
+		    rotate([0, 0, -90])
+			 translate([0, poff, 0])	// translate prism on platform
+			 prism_half_inch();
+	       }
+	  }
+     }
+}
+
+module prism_on_post(dz=0, show=1, drill=false, use_nut=true){
+     // just a prism on a post, with a holddown clamp
+     doff = 6.5;
+     post_dz = dz - prism_dz/2;
+     translate([0, 0, -prism_dz/2]){	// bring PRISM center to optical axis height
+	  translate([-prism_dx/2 - doff, -prism_dy/2 - doff, 0])
+	       rotate([0, 0, -45])
+	       clamp_post_pm3(post_dz, drill=drill, use_nut=use_nut, show=show);
+	  if (show){
+	       prism_half_inch();
+	  }
+     }
+     post(dz=dz, h2b=prism_dz/2, post_dx=prism_dx+4, post_dy=prism_dy+4);
+}
+
+
+module aom_box(){
+     // box representing AOM, with optical axis along +x
+     // bottom of AOM at z=0
+     translate([-aom_dx/2, -aom_dy/2, 0])
+     color("brown"){
+	  cube([aom_dx, aom_dy, aom_dz]);
+     }
+}
+
+module mount_for_km100pm(stage_dx=8, stage_dz=17, aomp_thick=4, aomp_dx=21, stage_dy=52.5-5, use_slots=0, slot_extra=0, stage_zoff=2+1.3, do_chamfer=0){
+     //
+     // right angle mount which fits on lower arm of KM100PM and holds an Isomet
+     // 1205C AOM on a horizontal patform, with the bragg center aligned with the
+     // mount's pivot.
+     //
+     // aomp_thick = thickness of AOM platform
+     // aomp_dx = length of AOM platform in direction of optical axis
+     //           (originally 22.34; changed to 21mm, so that the mount fits within 1" stock)
+     // stage_dx = thickness of part which screws onto KM100PM arm
+     // stage_dy = width of mount
+     // stage_dz = height of mount (use 16.0 for ATM200)
+     // stage_zoff = z-offset from bottom (increase for larger separation from bottom of km100pm arm)
+     // use_slots = boolean, set to 1 to enable slots instead of holes, for mount onto km100pm (allows transverse position adjustment)
+     // slot_extra = extra diameter for slot (e.g. to allow 1/8" endmill to be able to mill the slot)
+     // do_chamfer = boolean, set to 1 to chamfer front-bottom edge, to provide more clearance to baseplate when tilted
+     //
+     difference(){
+            color("brown")
+            translate([0,0,0]){
+            union(){
+                translate([-stage_dx/2, -stage_dy/2, stage_zoff])
+		     cube([stage_dx, stage_dy, stage_dz - stage_zoff]); // mount onto bottom arm of KM100PM
+                translate([0, -stage_dy/2,stage_dz-aomp_thick]) cube([aomp_dx, stage_dy, aomp_thick]);	// aom platform
+            }}
+            
+	    // holes for KM100PM bottom arm
+	    color("red")
+	    for(dy=[15.2, 38.1]){
+		 translate([-stage_dx/2-0.01, 25.4-dy, 6.4]){
+		      rotate([0,90,0]){
+			   if (use_slots){
+				// slots for screws, to allow manual position adjustment in direction transverse to optical axis
+				rotate([0, 0, 90]){
+				     slot_without_hull(width=screw_clear_dia_4_40 + slot_extra, length=10, height=drill_depth);
+				     translate([0, 0, 6.4 - 2.38]) slot_without_hull(width=screw_head_clear_dia_4_40, length=12, height=drill_depth);
+				}
+			   }else{
+				// standard hole with screw head clearance
+				cylinder(d = screw_clear_dia_4_40, h = drill_depth);
+				translate([0, 0, 6.4 - 2.38]) cylinder(d = screw_head_clear_dia_4_40, h=4);
+			   }
+		      }
+		 }
+	    }
+            
+	    if (do_chamfer){
+		 color("purple"){
+		      // chamfer front edge, to avoid hitting baseplate when tilted down
+		      translate([0, 0, -stage_dz + stage_zoff + stage_dx + 2])
+			   rotate([0, 45, 0])
+			   translate([-stage_dx/2, -stage_dy/2 - 1, 0])
+			   cube([stage_dx, stage_dy + 2, stage_dz - stage_zoff]); 
+		 }
+	    }
+
+	    // holes for AOM
+	    // use countersunk socket drive flat head 4-40 machine screws
+	    screw_440_flat_head_dia = 0.255 * d_inch;
+	    screw_440_flat_head_height = 0.083 * d_inch + 0.8;
+	    screw_440_flat_head_angle = 62;
+	    screw_440_flat_head_dif_dia = tan(screw_440_flat_head_angle/2) * screw_440_flat_head_height;
+	    screw_440_flat_head_dia2 = screw_440_flat_head_dia - 2 * screw_440_flat_head_dif_dia;
+	    echo("screw_440_flat_head dia1=", screw_440_flat_head_dia);
+	    echo("screw_440_flat_head dia2=", screw_440_flat_head_dia2);
+	    
+	    for(dy=[0, -38.07, -11.42, -38.07 + 11.42]){	// 11.42 is where the bragg center is, for the isomet_1205c
+		 translate([8-12+15.17,25.4-6.35 + dy, stage_dz - 0.01 - aomp_thick]){
+		      cylinder(d = screw_clear_dia_4_40, h = drill_depth);
+		      cylinder(d1=screw_440_flat_head_dia, d2=screw_440_flat_head_dia2, h=screw_440_flat_head_height);
+		      // cylinder(d = screw_head_clear_dia_4_40, h = drill_depth);
+		 }
+	    }
+        }
+}
+
+module upsidedown_mount_for_km100pm(stage_dx=8, stage_dz=17, aomp_thick=4, aomp_dx=21, stage_dy=52.5-5, use_slots=0, slot_extra=0, stage_zoff=2+1.3, do_chamfer=0, beam_hole=10){
+     //
+     // right angle mount which fits on lower arm of KM100PM and holds an Isomet
+     // 1205C AOM on a horizontal patform, with the bragg center aligned with the
+     // mount's pivot.
+     //
+     // aomp_thick = thickness of AOM platform
+     // aomp_dx = length of AOM platform in direction of optical axis
+     //           (originally 22.34; changed to 21mm, so that the mount fits within 1" stock)
+     // stage_dx = thickness of part which screws onto KM100PM arm
+     // stage_dy = width of mount
+     // stage_dz = height of mount (use 16.0 for ATM200)
+     // stage_zoff = z-offset from bottom (increase for larger separation from bottom of km100pm arm)
+     // use_slots = boolean, set to 1 to enable slots instead of holes, for mount onto km100pm (allows transverse position adjustment)
+     // slot_extra = extra diameter for slot (e.g. to allow 1/8" endmill to be able to mill the slot)
+     // do_chamfer = boolean, set to 1 to chamfer front-bottom edge, to provide more clearance to baseplate when tilted
+     // beam_hole = width and height of hole for beam at optical axis
+     //
+     difference(){
+            color("brown")
+            translate([0,0,0]){
+            union(){
+                translate([-stage_dx/2, -stage_dy/2, stage_zoff])
+		     cube([stage_dx, stage_dy, stage_dz - stage_zoff]); // mount onto bottom arm of KM100PM
+                translate([0, -stage_dy/2,stage_dz-aomp_thick]) cube([aomp_dx, stage_dy, aomp_thick]);	// aom platform
+            }}
+            
+	    // holes for KM100PM bottom arm
+	    color("red")
+	    for(dy=[15.2, 38.1]){
+		 translate([-stage_dx/2-0.01, 25.4-dy, 6.4]){
+		      rotate([0,90,0]){
+			   if (use_slots){
+				// slots for screws, to allow manual position adjustment in direction transverse to optical axis
+				rotate([0, 0, 90]){
+				     slot_without_hull(width=screw_clear_dia_4_40 + slot_extra, length=10, height=drill_depth);
+				     translate([0, 0, 6.4 - 2.38]) slot_without_hull(width=screw_head_clear_dia_4_40, length=12, height=drill_depth);
+				}
+			   }else{
+				// standard hole with screw head clearance
+				cylinder(d = screw_clear_dia_4_40, h = drill_depth);
+				translate([0, 0, 6.4 - 2.38]) cylinder(d = screw_head_clear_dia_4_40, h=4);
+			   }
+		      }
+		 }
+	    }
+            
+	    if (do_chamfer){
+		 color("purple"){
+		      // chamfer front edge, to avoid hitting baseplate when tilted down
+		      translate([0, 0, -stage_dz + stage_zoff + stage_dx + 2])
+			   rotate([0, 45, 0])
+			   translate([-stage_dx/2, -stage_dy/2 - 1, 0])
+			   cube([stage_dx, stage_dy + 2, stage_dz - stage_zoff]); 
+		 }
+	    }
+
+	    // holes for AOM
+	    // use countersunk socket drive flat head 4-40 machine screws
+	    screw_440_flat_head_dia = 0.255 * d_inch;
+	    screw_440_flat_head_height = 0.083 * d_inch + 0.8;
+	    screw_440_flat_head_angle = 62;
+	    screw_440_flat_head_dif_dia = tan(screw_440_flat_head_angle/2) * screw_440_flat_head_height;
+	    screw_440_flat_head_dia2 = screw_440_flat_head_dia - 2 * screw_440_flat_head_dif_dia;
+	    echo("screw_440_flat_head dia1=", screw_440_flat_head_dia);
+	    echo("screw_440_flat_head dia2=", screw_440_flat_head_dia2);
+	    
+	    for(dy=[0, -38.07, -11.42, -38.07 + 11.42]){	// 11.42 is where the bragg center is, for the isomet_1205c
+		 translate([8-12+15.17,25.4-6.35 + dy, stage_dz - 0.01 - aomp_thick]){
+		      cylinder(d = screw_clear_dia_4_40, h = drill_depth);
+         }
+         translate([8-12+15.17,25.4-6.35 + dy, stage_dz + 0.01 - screw_440_flat_head_height]){
+		      cylinder(d1=screw_440_flat_head_dia2, d2=screw_440_flat_head_dia, h=screw_440_flat_head_height);
+		      // cylinder(d = screw_head_clear_dia_4_40, h = drill_depth);
+		 }
+	    }
+        // cutout to fit AOM body (height 16 mm, screw holes to edge ~12 mm, quoted at 11.2mm, but add a buffer)
+        color("purple")
+        translate([-1,-stage_dy/2-0.01,13]) //gives 12.17 clearance in direction of optical axis
+            cube([5+0.01,stage_dy+0.02,17]); // extra 1mm in height to smoothly fit AOM in
+        
+        // hole for beam
+	    color("blue")
+        translate([-stage_dx/2-0.01, 7.6, 23]) // center on optical axis
+            rotate([0, 90, 0])
+                slot_without_hull(width=beam_hole, length=beam_hole, height=drill_depth);
+        }
+}
+
+module brimrose200_on_mount_km100pm_platform(dz, km100pm_yoff=0, aom_xpos=0, use_slots=true, use_four_holes=true){
+     //
+     // platform for brimrose TEF-200 AOM to sit on KM100PM, screwed onto vertical sidewall
+     //
+     // use_four_holes: four vs two holes for AOM to secure into plate
+     //
+     stage_dz = 32.92-16;  
+     zoff = 6.98;
+     pocket_ztop = -(stage_dz + zoff);
+     aom_height2beam = 6.5;
+     km100pm_bottom_to_beam = -pocket_ztop;
+     km100pm_sidewall_height = 0.570 * d_inch;	// distance from bottom of km100pm to top of sidewall
+     km100pm_sidwall_top_to_beam = km100pm_bottom_to_beam - km100pm_sidewall_height;
+     aom_platform_thick = km100pm_sidwall_top_to_beam - aom_height2beam;			// thickness of platform on top of KM100PM sidewall
+     aom_platform_main_thick = 0.20 * d_inch;	// thickness of AOM platform in area into which the AOM is screwed down
+     aom_platform_main_dx = 13.4;
+     aom_platform_dx = 20;
+     aom_platform_dy = 44;
+     aom_platform_ypos = -27;
+     aomp_xoff = 14;
+     
+     difference(){
+	  color("blue"){
+	       echo("aom_platform_thick = ", aom_platform_thick);
+	       translate([aomp_xoff, aom_platform_ypos, pocket_ztop + km100pm_sidewall_height + 0]){
+		    cube([aom_platform_dx, aom_platform_dy, aom_platform_thick]);
+		    translate([aom_platform_dx - aom_platform_main_dx, 0, -aom_platform_main_thick + aom_platform_thick])
+			 cube([aom_platform_main_dx, aom_platform_dy, aom_platform_main_thick]);
+	       }
+	  }
+	  color("purple")
+	       translate([aom_xpos, 0, 0])
+	       rotate([0, 0, -90])
+	       brimrose_tef_200_100(show=false, drill=true, use_four_holes=use_four_holes);
+	  translate([0, -km100pm_yoff, 0]){
+	       // holes or slots for mounting into KM100PM sidewall platform holder
+	       mount_km100pm_no_platform(dz=dz, show=false, zoff=6.98, drill=true, drill_platform=true, upside_down=false, platform_use_slots=use_slots);
+	  }
+     }
+}
+
+module brimrose200_on_mount_km100pm(dz=0, hole_dz = 22.9-18.5, show=1, optic_center=true, drill=true, use_nut=false, name="aom200", name_xoff=0){
+     //
+     // Brimrose TEF-200 mount on KM100PM
+     //
+     // Uses mount_km100pm_no_platform (KM100PM with vertical part of mounting platform, such that the AOM adaptor
+     // mount can be entirely flat).
+     //
+     // The TEF_200_100 optical axis is 6.5mm from the bottom of its base.
+     // For historical reasons, the KM100PM is recessed  32.92 - 16 + 6.98 = 23.9 mm 
+     // below the optical beam axis (assuming half-inch beam height).
+     // That means the pocket's top surface is 23.9 - 25.4/2 = 11.2 mm from the top surface of the baseplate.
+     //
+     // The top of the KM100PM sidewall is 0.570" = 11.48mm.
+     //
+     yoff =6.35 +screw_tap_dia_4_40/2; 	// Standard y-axis offset (transverse to beam) common to all AOM mounts on KM100pm
+     // Use the same yoff so that switching AOMs can be done by just switching the platform mount, leaving the pocket and
+     // the KM100PM unchanged.
+
+     aom_xpos = 27;
+
+     translate([0, -yoff, 0]){
+	  mount_km100pm_no_platform(dz=dz, show=show, zoff=6.98, drill=drill, drill_platform=true, upside_down=false);
+     }
+     if (0){
+	  // test box to check z positions
+	  color("purple"){
+	       stage_dz = 32.92-16;  
+	       zoff = 6.98;
+	       pocket_ztop = -(stage_dz + zoff);
+	       aom_height2beam = 6.5;
+	       km100pm_sidewall_height = 0.570 * d_inch;
+	       // translate([0, -40, -(stage_dz + zoff) - 0*dz])
+	       // translate([0, -40, -aom_height2beam])
+	       translate([0, -40, pocket_ztop + km100pm_sidewall_height + 0])
+		    cube([30, 30, 100]);
+	  }
+     }
+     if (show){
+	  brimrose200_on_mount_km100pm_platform(dz, yoff, aom_xpos);
+     }
+     if (show){
+	  translate([aom_xpos, 0, 0])
+	       rotate([0, 0, -90])
+	       color("orange")
+	       brimrose_tef_200_100();
+     }
+}
+
+module mount_brim_km100pm(stage_dx=4, hole_dz = 22.9-18.5, aom_rot = 0, stage_dz=17 + 6.98 +18.5+ 4, aomp_thick=4, aomp_dx=25.4, stage_dy=52.5-8, zoff=0, use_slots=true){
+     //
+     // right angle mount which fits on lower arm of KM100PM and holds an Brimrose
+     // TEF 60-30-461 AOM on a horizontal patform.  The KM100PM is right-side-up.
+     //
+     // aomp_thick = thickness of AOM platform
+     // aomp_dx = length of AOM platform in direction of optical axis
+     //           (originally 22.34; changed to 21mm, so that the mount fits within 1" stock)
+     // stage_dx = thickness of part which screws onto KM100PM arm
+     // stage_dy = width of mount
+     // stage_dz = height of mount
+     // zoff     = z-offset to move mount up by (so it doesn't hit the bottom of the recess)
+     // use_slots = make slots for AOM mounting screws (instead of holes) if true
+     //
+     difference(){
+	  color("brown")
+	       translate([0, 2+aom_rot+2, 0]){
+	       union(){
+		    translate([-stage_dx/2, -stage_dy/2, zoff])		// zoff only moves the part bolted to the km100pm
+			 cube([stage_dx, stage_dy, stage_dz - zoff]);// mount onto bottom arm of KM100PM
+		    translate([-stage_dx/2, -stage_dy/2,stage_dz-aomp_thick])
+			 cube([aomp_dx, stage_dy, aomp_thick]);// aom platform     
+		    
+	       }
+	  }
+	  
+	  //window for beam
+	  // translate([-stage_dx/2-0.1, 7.5,stage_dz/2+hole_dz/2])
+	  translate([-stage_dx/2-0.1, 7.5, 32.92-16 + 6.98])		// FIXME: 6.98 is the zoff used for the km100pm in the pocket
+	  // translate([-stage_dx/2-0.1, 7.5, stage_dz/2 + hole_dz/2])
+	       rotate([0,90,0])
+	       cylinder(d = 10, h = stage_dx+0.2);   
+	  
+	  // holes for KM100PM bottom arm
+	  color("red")
+	       for(dy=[15.2, 38.1]){
+		    translate([-stage_dx/2-2-0.01, 25.4-dy, 6.4]){
+			 rotate([0,90,0]){
+			      cylinder(d = screw_clear_dia_4_40, h = drill_depth);
+			      translate([0, 0, stage_dx-1]) cylinder(d = screw_head_clear_dia_4_40, h=5);
+			 }
+		    }
+	       }
+	  // holes for KM100PM side arm
+	  color("red")
+	       for(dy=[15.2, 38.1]){
+		    translate([-stage_dx/2-0.01, 25.4-6.6, dy-0.3]){
+			 rotate([0,90,0]){
+			      cylinder(d = screw_clear_dia_4_40, h = drill_depth);
+			      translate([0, 0, 6.2 - 2.38 - 2.8]) cylinder(d = screw_head_clear_dia_4_40, h=4);
+			 }
+		    }
+	       }
+	  
+	  // holes for AOM
+	  for(dy=[0, -25.4/2, 25.4/2]){	//0 is where the bragg center is
+	       translate([17.5+aomp_thick/2, aom_rot*7.4+4 + 3.5 - 3.7 + dy, stage_dz - 0.01 - aomp_thick]){
+		    if (use_slots){
+			 rotate([0, 0, 90])
+			      slot_without_hull(width=screw_clear_dia_4_40, length=5, height=drill_depth);			 
+		    }else{
+			 cylinder(d = screw_clear_dia_4_40, h = drill_depth);
+			 translate([0,0,aomp_thick-2])
+			      cylinder(d=screw_head_clear_dia_4_40, h=2+0.1);
+		    }
+	       }
+	  }
+     }
+}
+
+module mount_upside_down_brim_km100pm(){
+     //
+     // angle bracket for mounting brimrose 60 MHz AOM onto upside-down KM100PM
+     //
+     // aomp_thick = thickness of AOM platform
+     // aomp_dx = length of AOM platform in direction of optical axis
+     //           (originally 22.34; changed to 21mm, so that the mount fits within 1" stock)
+     // stage_dx = thickness of part which screws onto KM100PM arm
+     // stage_dy = width of mount
+     // stage_dz = height of mount
+    
+     // aomp_thick = 4; 
+     // aomp_dx = 21 - 6;
+     aomp_dx = 0.75 * d_inch;
+     aomp_thick = 0.75 * d_inch;
+    stage_dx = aomp_thick;
+    stage_dy = 40;
+    stage_dz = 20; 
+    stage_yoff = 8;
+    aom_xoff = 8 - 2;
+    difference(){
+	 translate([0, stage_yoff, 0])
+	      union(){
+	      color("brown"){
+		   cube([stage_dx, stage_dy, stage_dz]);
+		   cube([aomp_dx, stage_dy, aomp_thick]);
+	      }
+        }
+        //KM100PM arm holes
+        for(dy = [15, 15+22.9])
+        {
+            translate([-0.1, dy, 15])
+            rotate([0,90,0]){
+                cylinder(d = screw_clear_dia_4_40, h = 100);
+                translate([0, 0, 4])
+                cylinder(d = screw_head_clear_dia_4_40, h = 100);
+            }
+        }
+        //Brimrose AOM holes
+        for(dy = [0,12.7,-12.7]){
+            translate([9.2 - aom_xoff + 8, 32.5-3.7+dy, -0.1]){
+                // cylinder(d = screw_tap_dia_4_40, h = 10);
+                // translate([0,0,aomp_thick-2])
+                cylinder(d = screw_clear_dia_4_40, h = 100);
+                translate([0, 0, 4])
+                cylinder(d = screw_head_clear_dia_4_40, h = 100);
+            }
+        }
+            
+    }
+    
+}
+
+
+module  post_upside_down_brim_km100pm(){
+     //
+     // post for mounting upside-down KM100PM onto baseplate - used for mounting Brimrose AOM
+     //
+    base_thick = 6;
+    post_dz = 11.2+12.7 + 20 + 8.12;
+    post_dx = 9;
+    base_dy = 2;
+    post_dy = d_inch;
+    yoff =6.35 +screw_tap_dia_4_40/2; //Brimrose AOM dy offset to put optical axis at aperature
+    zoff = 6.98;
+    slot_dz = 14;
+    slot_zoff = 11;
+    slot_dy = screw_head_clear_dia_8_32 + 2.5;
+    beam_zoff = 19.1 + 5;
+    beam_hole_dia = 6.5;
+    corner_dy = 9;
+    corner_dz = 9;
+    //51.8-25.4
+    translate([-post_dx/2, -13.1,0])
+    difference(){
+	 color("blue")
+	      union(){     
+	      cube([post_dx,post_dy,post_dz]);
+	      cube([post_dx, base_dy, base_thick]);
+	 }
+        //side screw hole
+        translate([post_dx/2,50,post_dz-5.1 - 8.12])
+        rotate([90,0,0])
+        cylinder(d = screw_tap_dia_8_32, h = 100);
+        //base screw hole
+        translate([post_dx/2, 6.35+6.8, -0.1]){
+            // color("red") cylinder(d = screw_tap_dia_8_32, h= 100);
+            translate([0,0,base_thick - 22.8])
+		 color("purple")
+		 cylinder(d = screw_clear_dia_8_32, h= 30);
+	    // slot for screw going into base
+	    translate([2, 0, slot_zoff])
+	    rotate([0, -90, 0])
+		 translate([-slot_dz/2, -slot_dy/2, -post_dx/2])
+		 cube_with_rounded_corners([slot_dz, slot_dy, post_dx*2], dia=3);
+	    // for top hole, mounting km100
+            translate([0,0,base_thick + 35])
+		 color("purple")
+		 cylinder(d = screw_tap_dia_8_32, h= 30);
+	    // beam axis hole
+            translate([-40, yoff, beam_zoff])
+		 color("purple")
+		 rotate([0, 90, 0])
+		 cylinder(d = beam_hole_dia, h= 100);
+        }
+	// km100 inside corner cutout
+	translate([0, 0, 0])
+	     color("purple")
+	     translate([-2, -0.1, post_dz - corner_dz + 1])
+	     cube([post_dx*2, corner_dy, corner_dz]);
+    }
+}
+
+
+module mount_km100pm_no_platform(dz=0, aom_rot=0, hole_dz=22.9-18.5, show=1, zoff=0, drill=true, drill_platform=false, upside_down=false, platform_use_slots=false){
+    //
+    // km100pm with no platform (but with front screwed-in-piece)
+    // Allows flat AOM mounting platform to be screwed on top, in place of the flat platform.
+    // The two alignment pins are 1/16" dia.
+    // The center-to-center distance between alignment pins is 0.780"
+    // There are four positions for alignment pins, although only two are used.  Their separation along the beam axis is 0.1"
+    // The #3-48 mounting screws for the platform are also 0.780" apart.
+    // 
+    // Center is (by default) z at the top of the side-plate to which the platform mounts,
+    // and with xy at the center of the mounting post hole.
+    //
+    // The top of the sidewall is 0.570" from the bottom of the mount
+    //
+    // platform_use_slots: if true, then drill slots instead of holes, for the #3-48 screws and the 1/16" alignment pins
+    // 
+    holedia = screw_tap_dia_8_32;
+    stage_dz = 32.92-16;  
+    stage_yoff = 17.5+13 ;// AOM 
+    yoff =6.35 +screw_tap_dia_4_40/2; //Brimrose AOM dy offset to put optical axis at aperature
+    xtheta = (upside_down ? 180 : 0);
+    ud_zoff = (upside_down ? 30 : 0);
+    pin_dia = 1/16 * d_inch;
+    pin_dia_clear = pin_dia + 0.1;
+    zpos_vertical_sidemount_top = (-19.1 + 4.6) - dz;
+    zpos_standard_platform_top = zpos_vertical_sidemount_top - 0.180 * d_inch;
+    z_at_vertical_sidemount_top = false;
+    z_at_standard_platform_top = false;
+    z_for_aom_standard_pocket = true;
+    zpos_for_aom_standard_pocket = - (stage_dz + zoff);
+    zpos = ( z_for_aom_standard_pocket ? zpos_for_aom_standard_pocket :
+	     (z_at_standard_platform_top ? zpos_standard_platform_top : ( z_at_vertical_sidemount_top ? zpos_vertical_sidemount_top : 0 )
+		  )
+	 );		// 0 = bottom of km100pm
+    if (show){
+	 translate([0, 0, 0]){     
+	      if (1){
+		   translate([0, 0, ud_zoff])
+			rotate([xtheta, 0, 0])
+			translate([0, 0, 0])
+			translate([5.1, 25.4, zpos])
+			rotate([0, 0, -90])
+			rotate([0, 0, 0]){
+			import("thorlabs/KM100PM-noplatform2.stl");
+		   }
+	      }
+	 }
+    }
+    if (drill){
+	 color("red"){
+	      if (drill_platform){
+		   if (platform_use_slots){
+			// slots for #3-48 screws and 1/16" pins
+			slot_dy = 2.25;
+			for (dy=[0, 1]){
+			     translate([0.6745*d_inch, 0.155*d_inch - dy * 0.780 * d_inch, -0.1 + zpos - zpos_vertical_sidemount_top-20]){
+				  // slot for #3-48 screws
+				  rotate([0, 0, 90])
+				       slot_without_hull(width=screw_clear_dia_3_48,
+							 length=slot_dy + screw_clear_dia_3_48,
+							 height=100);
+				  // cylinder(d=screw_clear_dia_3_48, h=100);
+				  // slot for 1/16" pins
+				  translate([0.050*d_inch, 0.220 * d_inch, 0])
+				       rotate([0, 0, 90])
+				       slot_without_hull(width=pin_dia_clear,
+							 length=slot_dy + pin_dia_clear,
+							 height=100);
+			     }
+			}
+		   }else{
+			for (dy=[0, 1]){
+			     translate([0.6745*d_inch, 0.155*d_inch - dy * 0.780 * d_inch, -0.1 + zpos - zpos_vertical_sidemount_top-20]){
+				  // holes for #3-48 screws
+				  cylinder(d=screw_clear_dia_3_48, h=100);
+				  // holes for 1/16" pins
+				  translate([0.050*d_inch, 0.220 * d_inch, 0]) cylinder(d=pin_dia_clear, h=100);
+			     }
+			}
+		   }
+	      }
+	 }
+    }
+    if (dz>0){
+	 union(){
+	      post(dz, stage_dz + zoff, drill=drill, use_nut=false, holedia=holedia, head_depth_offset=0,
+		   post_dx=8+24+2, post_xoff = 8+2, post_dy = 53.5+aom_rot*3);
+	      //extra slot for knob
+	      post(dz, 26, drill=drill, use_nut=false, holedia=0,
+		   post_dx=40, post_xoff = -15.5, post_dy = 13.5+2, post_yoff = -20+1);
+	 }
+    }
+}
+
+// mount_km100pm_no_platform(drill=true);
+
+module mod_mount_km100pm(dz=0,aom_rot = 0,hole_dz = 22.9-18.5, show=1, zoff=0, drill=true, use_nut=false, brimrose = false, head_depth_offset=15,
+			 upside_down=false, use_slots=true, show_km100pm=true){
+    //
+    // km100pm with AOM mount
+    //
+    // hole_dz = how far from bottom of AOM (closest side to baseplate) is from the AOM aperature, default specs for brimrose TEF6030461
+    // modified km100pm mount, used for brimrose AOM
+    // 12.7-(32.92-16 + 6.98) = 11.2 (depth of recess)
+    // 30-1.8 =  height of bottom of KM100PM horizonal arm from optical axis
+    //
+    // use_slots: bool, true = use slots on brimrose AOM mount, allows sliding of AOM perpendicular to optical axis
+    
+    holedia = screw_tap_dia_8_32;
+    stage_dz = 32.92-16;  
+    stage_yoff = 17.5+13 ;// AOM 
+    yoff =6.35 +screw_tap_dia_4_40/2; //Brimrose AOM dy offset to put optical axis at aperature
+    xtheta = (upside_down ? 180 : 0);
+    ud_zoff = (upside_down ? 30 : 0);
+    
+    if (show){
+	 translate([0, 0, -zoff]){     
+	      if (show_km100pm){
+		   translate([0, 0, ud_zoff])
+			rotate([xtheta, 0, 0])
+			rotate([0, 0, -90])
+			translate([-51.8+25.8, 0, -stage_dz-1])
+			translate([0, 14.2, 0])
+			rotate([90, 0, 0]){
+			import("thorlabs/KM100PM-Solidworks-modified.stl");
+		   }
+	      }
+	      //custom mount
+	      if(brimrose){
+		   if (upside_down){
+			translate([0,yoff-7.5,zoff-11.2-12.7]){
+			     post_upside_down_brim_km100pm();
+			     //cylinder(d = screw_tap_dia_8_32, h= 100);
+			} //Post for mounting KM100PM in the upside-down configuration
+			
+		   }
+		   else{
+			translate([51.8-25.8-10,0,-stage_dz])
+			     mount_brim_km100pm(stage_dz=stage_dz+6.98 + 4+22.9-hole_dz, aom_rot=aom_rot, hole_dz = hole_dz, zoff=2.5, use_slots=use_slots);
+		   }
+	      }
+	      else{
+		   translate([51.8-25.8-8,0,-stage_dz])
+			// mount_for_km100pm(stage_dz=stage_dz, hole_dz = hole_dz, use_slots=1);
+			mount_for_km100pm(stage_dz=stage_dz, use_slots=1);
+	      }
+	 }
+    }
+    if (dz>0){
+	 union(){
+	      post(dz, stage_dz + zoff, drill=drill, use_nut=use_nut, holedia=holedia, head_depth_offset=head_depth_offset,
+		   post_dx=8+24+2, post_xoff = 8+2, post_dy = 53.5+aom_rot*3);
+	      //extra slot for knob
+	      post(dz, 26, drill=drill, use_nut=use_nut, holedia=0,
+		   post_dx=40, post_xoff = -15.5, post_dy = 13.5+2, post_yoff = -20+1);
+	 }
+    }
+}
+
+
+module isomet_on_mount_km100pm(dz=0, show=1, optic_center=true, drill=true, use_nut=false, name="", name_xoff=0){
+    
+     poff = 51.8-25.7-12+15.17;
+     yoff = -6.35 - screw_tap_dia_4_40/2;
+     xoff = (optic_center ? poff : 0);
+     translate([-xoff, yoff, 0]){
+	  text_label(name, 0 + name_xoff, 30, dz, rot=[0,0,0], show=show||drill);
+	  mod_mount_km100pm(dz, show=show, zoff=6.98, drill=drill, use_nut=use_nut);
+	  if (show){
+		    translate([poff,-yoff, 0])rotate([0,0,90])	// translate aom on platform
+			 isomet_1205c();
+	  }
+     }
+}
+
+// isomet_on_mount_km100pm(12.7, drill=true);
+
+module TEF(dx = 34.9, dy = 45.2, dz = 22.9, hole_dy = 45.2-26, hole_dz = 22.9-18.5, bragg_center = 29.7){
+     //
+     // brimrose AOM 60 MHz
+     //
+
+    difference(){
+        translate([-dx/2,-hole_dy,-hole_dz]){
+        cube([dx,dy,dz]);
+        }
+        translate([-50,0,0])
+        rotate([0,90,0]){
+        cylinder(d = 1.2, h = 100);
+        }
+        
+        translate([0,26-bragg_center,0])
+        for(dy=[0, 12.7, -12.7])
+        {
+            translate([0,dy,0])
+            cylinder(d = screw_tap_dia_4_40, h = 100);
+        }
+    }
+}
+
+module brimrose_on_mount_km100pm(dz=0, hole_dz = 22.9-18.5, show=1, aom_rot = 1, optic_center=true, drill=true, use_nut=false, name="", name_xoff=0, use_slots=true,
+				 show_label=true, show_km100pm=true, show_aom=true, show_km100pm=true){
+     //
+     // Upside-down Brimrose AOM on rightside-up KM100PM
+     //
+     // hole_dz = mm height of optical axis through AOM (e.g. 22.9-18.5 or 22.9-16)
+     //           Use 22.9-16.5 for TEF_80_40
+     //
+     poff = 14 + 34.9/2+4;
+     yoff = -6.35 - screw_tap_dia_4_40/2;
+     xoff = (optic_center ? poff : 0);
+     translate([-xoff, yoff, 0]){
+	  text_label(name, 0 + name_xoff, 30, dz, rot=[0,0,0], show=(show && show_label)||drill);
+	  mod_mount_km100pm(dz, hole_dz = hole_dz,aom_rot = aom_rot, show=show, zoff=6.98, drill=drill, use_nut=use_nut, brimrose = true, use_slots=use_slots, show_km100pm=show_km100pm);
+	  if (show && show_aom){
+	       translate([xoff + 0,-yoff, 0])// translate aom on platform
+		    rotate([0,0,180*aom_rot]) // rotate depending on what order you want to pick off. 
+		    // TEF(hole_dz = hole_dz);
+		    rotate([180, 0, 0]) rotate([0, 0, 90]) brimrose_tef_80_40();
+	  }
+     }
+}
+
+module brimrose_on_mount_upside_down_km100pm(dz=0, hole_dz = 22.9-18.5, show=1, optic_center=true, drill=true, use_nut=false, name="aom", name_xoff=0){
+     //
+     // KM100PM which is upside down, to allow brimrose AOM to be centered above post (and not stick out end so far)
+     //
+     poff = 14 + 34.9/2;
+     yoff = -6.35 - screw_tap_dia_4_40/2;
+     xoff = (optic_center ? poff : 0);
+     aom_xoff = 8 - 2;
+     translate([-xoff, yoff, 0]){
+	  text_label(name, 0 + name_xoff, 30, dz, rot=[0,0,0], show=show||drill);
+	  mod_mount_km100pm(dz,hole_dz = 22.9-18.5, show=show, zoff=6.98, drill=drill, use_nut=use_nut, brimrose = true, upside_down=true);
+	  if (show){
+		    translate([xoff-aom_xoff, -yoff, 0]) // translate aom on platform
+			 color("orange")
+		         TEF(hole_dz = hole_dz);
+			 // rotate([180, 0, 0]) rotate([0, 0, 90]) brimrose_tef_80_40();
+		    color("brown"){
+			 stage_yoff = 8;
+			 translate([13.9 + 0.25, -25, 18.5])
+			      mount_upside_down_brim_km100pm();
+//			 color("red")
+//			      TEF(hole_dz = hole_dz);
+		    }
+	  }
+     }
+}
+
+module clamp_post_pm3(dz=0, show=false, drill=false, use_nut=true){
+     // base screw = 6-32 tapped
+     // arm along +y
+     // post centered at origin, height at screw-in level
+     if(show){
+	  rotate([0,0,90])
+	       translate([0, 0, 15.7])
+	       rotate([90,0,0])
+	       scale(1000){
+	       import("thorlabs/PM3-Solidworks.stl");
+	  }
+     }
+     if (drill){
+	  color("red")
+	       translate([0, 0, -drill_depth + 0.1])
+	       cylinder(d=screw_tap_dia_6_32, h=drill_depth);
+     }
+     post(dz=dz, h2b=0, post_dx=8, post_dy=8, drill=drill, use_nut=use_nut, holedia=screw_tap_dia_6_32, nut_depth_offset=15);
+}
+
+module aom_on_post(dz=0, show=1, drill=false, use_nut=true){
+     // just an AOM on a post, with a holddown clamp
+     post_dz = dz - aom_dz/2;
+     translate([0, 0, -aom_dz/2]){	// bring AOM center to optical axis height
+	  translate([0, -aom_dy/2 - 5, aom_dz-12])
+	       clamp_post_pm3(post_dz+aom_dz-12, show=show, drill=drill, use_nut=use_nut);
+	  if (show){
+	       aom_box();
+	  }
+     }
+     post(dz=dz, h2b=aom_dz/2);
+}
+
+module skate_mount(dz=0, cube_size=10, lip_width=1.5, screw_yoff=9, wing_dy=14, show=true, drill=false, inset_extra=0.15, corner_mill_dia=1.6, square_edges=false){
+     // flat "skate" mount for cube on baseplate
+     // provides two side wings with 8-32 through holes to secure to baseplate
+     //
+     // inset_extra = extra space made for cube to fit (default 0.15 mm)
+     // corner_mill_dia = diameter of endmill used to cut dogbone clearance at the corners
+     // square_edges: if true, then do not round corners of mount
+     //
+     plate_dz = dz - cube_size/2;
+     plate_dx = cube_size + 2*lip_width;
+     mount_dx = plate_dx;
+     mount_dy = plate_dx + wing_dy;
+     chan_dx = cube_size/2;		// side channel for glue to exit surface of platform
+     chan_dy = mount_dy + 2;
+     inset_dx = cube_size + inset_extra;	// inset where cube sits
+     corner_offset = corner_mill_dia/2 * sin(45);
+
+     if (show){
+	  difference(){
+	       translate([-mount_dx/2, -mount_dy/2, -dz]){
+		    color("blue")
+			 if (square_edges){
+			      cube([mount_dx, mount_dy, plate_dz + lip_width]);
+			 }else{
+			      cube_with_rounded_corners([mount_dx, mount_dy, plate_dz + lip_width], dia=8);
+			 }
+	       }
+	       // cube 
+	       translate([-inset_dx/2, -inset_dx/2, -cube_size/2]) color("red") cube([inset_dx, inset_dx, cube_size]);
+	       // side channels
+	       for (theta=[0, 90]){
+		    rotate([0, 0, theta])
+			 translate([-chan_dx/2, -chan_dy/2, -cube_size/2]) color("red") cube([chan_dx, chan_dy, cube_size]);
+	       }
+	       // extra side wall cutout to allow 8-32 screw to be tilted in under beamsplitter
+	       for (theta=[0, 180]){
+		    rotate([0, 0, theta])
+			 translate([-chan_dx/2, screw_yoff, -cube_size/2-3]) color("purple") cube([chan_dx, chan_dy, cube_size]);
+	       }
+	       // holes for 8-32 screws & screw heads
+	       for (theta=[0, 180]){
+		    rotate([0, 0, theta]){
+			 color("pink") translate([0, screw_yoff, -20]) cylinder(d=screw_clear_dia_8_32, h=50);
+			 // color("orange") translate([0, screw_yoff, -dz + 3]) cylinder(d=screw_head_clear_dia_8_32, h=50);
+			 color("orange") translate([0, screw_yoff, -dz + 2]) cylinder(d=screw_head_clear_dia_8_32, h=50);
+		    }
+	       }
+	       // holes at corners for dogbone - to allow machining with endmill
+	       for (theta=[0, 90, 180, 270]){
+		    rotate([0, 0, theta]){
+			 color("pink") translate([inset_dx/2-corner_offset, inset_dx/2-corner_offset, -cube_size/2]) cylinder(d=corner_mill_dia, h=50);
+		    }
+	       }
+	  }
+     }
+     if (drill){
+	  for (theta=[0, 180]){
+	       rotate([0, 0, theta]){
+		    color("red") translate([0, screw_yoff, -50]) cylinder(d=screw_tap_dia_8_32, h=50);
+	       }
+	  }
+     }
+}
+
+module pbs_on_skate_mount(dz=0, show=true, drill=false, cube_size=10, name="", name_xoff=0, name_yoff=0){
+     // polarizing beamsplitter on skate mount
+
+     text_label(name, 15 + name_xoff, name_yoff, dz, rot=[0,0,90], show=show||drill);
+     skate_mount(dz, cube_size=cube_size, lip_width=1.5, show=show, drill=drill);
+
+     if(show){
+	  // now the beamsplitter cube
+	  color("gray"){
+	       translate([-cube_size/2, -cube_size/2, -cube_size/2])
+		    cube([cube_size, cube_size, cube_size]);
+	  }
+     }
+}
+
+module test_drill_pbs_on_skate_mount(){	// pbs test
+     base_dz = 12.7;
+     difference(){
+	  translate([-20, -35, -20 - base_dz]) cube([70, 70, 20]);
+	  pbs_on_skate_mount(base_dz, drill = true, show=false);
+	  // pbs(base_dz, drill = true, show=false);
+     }
+     pbs_on_skate_mount(base_dz, drill=false, show=true);
+}
+//test_drill_pbs_on_skate_mount();
+
+module test_drill_half_inch_pbs_on_skate_mount(){	// half-inch pbs test
+     base_dz = 12.7;
+     difference(){
+	  translate([-20, -35, -20 - base_dz]) cube([70, 70, 20]);
+	  pbs_on_skate_mount(base_dz, drill = true, show=false, cube_size=d_inch/2);
+	  translate([20, 0, 0]){
+	       pbs_on_skate_mount(base_dz, drill = true, show=false);
+	  }
+	  // pbs(base_dz, drill = true, show=false);
+     }
+     pbs_on_skate_mount(base_dz, drill=false, show=true, cube_size=d_inch/2);
+	  translate([20, 0, 0]){
+	       pbs_on_skate_mount(base_dz, drill = false, show=true);
+	  }
+}
+
+// test_drill_half_inch_pbs_on_skate_mount();
+
+module pbs(dz=0, show=true, drill = false, name="pbs"){
+     // polarizing beamsplitter
+    side_dx = 18;
+    side_dy = 18;
+    side_dz = 19;
+    lip_dx = side_dx/2;
+    pin_dia = 2;
+    pin_dz = 2.2;
+    lip_dz = 2;
+    if(show){
+        translate([-side_dx/2, -side_dy/2, -dz])
+        cube([side_dx, side_dy, side_dz]);
+    }
+   
+    if(drill){
+       translate([0,0,-50])
+        color("red")
+       cylinder(d = screw_tap_dia_8_32, h = 100);
+        //alignment pins
+        for(dx = [0, lip_dx]){
+        translate([-lip_dx/2+dx,side_dy/2+pin_dia/2,-dz-pin_dz])
+        color("red")
+        cylinder(d = pin_dia, h = 100);
+    }
+
+  }
+    text_label(name, 15, 0, dz, rot=[0,0,90], show=show||drill);
+}
+
+module test_drill_pbs(){	// pbs test
+     base_dz = 12.7;
+     difference(){
+	  translate([-20, -35, -20 - base_dz]) cube([70, 70, 20]);
+	  pbs(base_dz, drill = true, show=false);
+     }
+     // pbs(base_dz, drill=false, show=true);
+}
+
+//test_drill_pbs();
+
+module rbOven(dz = 2*d_inch, show = true, drill = false){
+    
+    tube_dia = 56;
+    cap_dia = 31;
+    len_tot = 78;
+    recess_dz = 100 + dz;
+    recess_len = 3*d_inch;
+    recess_width = 36;
+    cell_yoff = 5;	
+    platform_post_hole_dx = 1*d_inch;
+
+    translate([0,cell_yoff,dz]){
+    if(show){
+        rb_cell_holder();
+        rch_platform(dz,show,drill);
+    }
+    
+      if(drill){
+        color("pink"){
+		    for (dx=[-1, 1]){
+			 translate([dx*platform_post_hole_dx, -cell_yoff, -50-dz])
+                     cylinder(d=screw_tap_dia_14_20, h=100);
+			 }
+		 }
+	 }
+  }
+    
+}
+//rbOven(dz=0);
+
+//-----------------------------------------------------------------------------
+// tubes and tube mounts
+
+module tube_mount_sm1tc(dz=0, show=true, drill=false, name="sm1tc", show_tube=true, tube_xoff=-10, drill_tube=false, tube_dx=2*d_inch){
+     //
+     // SM1 tube clamp
+     // optic center is 1" from base bottom
+     //
+     h2b = 1.0 * d_inch;
+     tube_clear_od = 1.2 * d_inch + 1.5;
+     if (show){
+	  rotate([0, 0, 90])
+	       import("thorlabs/SM1TC-Solidworks.stl");	// centered at optic center
+     }
+     if (show_tube && show){
+	  translate([tube_xoff, 0, 0])
+	       color("silver")
+	       rotate([0, 0, 180])
+	       if (abs(tube_dx - 0.5*d_inch) < 1){
+		    import("thorlabs/SM1L05-Solidworks.stl");
+	       }else{
+		    import("thorlabs/SM1L20-Solidworks.stl");
+	       }
+     }
+     post(dz=dz, h2b=h2b, post_dx=13, post_dy=44, drill=drill, use_nut=false, holedia=screw_tap_dia_8_32);
+     if (drill_tube){
+	  color("purple")
+	       translate([tube_xoff, 0, 0])
+	       rotate([0, 90, 0])
+	       cylinder(d=tube_clear_od, h=tube_dx);
+     }
+}
+
+// tube_mount_sm1tc(drill=true);
+
+//-----------------------------------------------------------------------------
+// tests
+
+// mirror_mount_km100(30, rot=45);
+// mirror_mount_mk05(30, rot=45, optic_center=true);
+// mirror_mount_k05s2(30, rot=0, optic_center=false, show=false);	// should show alignment pin holes in post
+// pinhole_ida12();
+// pinhole_ida15();
+// lens_holder_lmr1();
+// fiberport_holder_hcp();
+// fiberport_with_holder();
+// rotation_stage_rsp1();
+// rotation_stage_rsp05(30);
+// prism_mount_km100pm();
+// prism_on_mount_km100pm();
+// prism_mount_km200pm();
+// prism_on_mount_km200pm();
+//aom_on_mount_km100pm();
+
+// mirror_mount_km100(30, rot=45, optic_center=true);
+// mirror_mount_km100(30, rot=45, optic_center=false);
+// prism_on_mount_km200pm(optic_center=true);
+// aom_on_mount_km200pm(optic_center=true);
+// fiberport_with_holder(optic_center=true);
+
+//lens_holder_l05g(dz=12.7);
+
+//-----------------------------------------------------------------------------
+
+module base_holddown_1420(base_dz, xpos=0, ypos=0, head_offset=7){
+     translate([xpos, ypos, 0]){
+	  translate([0, 0, -drill_depth - base_dz + 0.01]){
+	       color("red"){
+		    cylinder(d=screw_clear_dia_14_20, h=drill_depth);	// clearance hole
+	       }
+	  }
+	  translate([0, 0, -head_offset - base_dz + 0.01 ])
+	       color("DarkRed"){
+	       cylinder(d=screw_head_clear_dia_14_20, h=head_offset);
+	  }
+     }
+}
+
+//-----------------------------------------------------------------------------
+// off-axis parabolic mirrors
+
+module mirror_mpd169(dz=0, drill=false, show=true, drill_cylinder=true, drill_base=false, rect_extra_dz=8, rect_extra_dy=20){
+     //
+     // parabolic mirror with 6 inch focal distance, and focal point along +x direction
+     //
+     mdz = 18.5;	// distance from mirror center height to base
+     bclear = 4;
+     base_dia = 25.4 + bclear;	// diameter of base of mirror (with some clearance)
+     bolt_circ_rad = 9.5;
+     apin_dia = 3.2 + 0.1;	// alignment pin diameter (CAUTION: thorlabs drawing says 3.2mm and 0.13in, but 0.13 = 3.3mm
+     drill_dz = 200;
+     pin_dz = 5;		// depth of holes for alignment pins
+     drill_cylinder_dia = 1 * d_inch + 3;
+     drill_cylinder_h = 1.25 * d_inch + 2;
+     
+     translate([0, 0, -mdz]){
+	  if (show){
+	       scale(1){
+		    import("thorlabs/MPD169-P01-Solidworks.stl");
+	       }
+	  }
+	  if (drill){
+	       // base has three 4-40 tapped holes at 120 deg on a r=9.5mm circle
+	       // and two 3.2mm alignment pin holes, at the center, and 9.5mm towards the focal point
+	       color("red"){
+		    translate([0, 0, -drill_dz + 0.1]){
+			 for(th=[0, 120, 240]){
+			      rotate([0, 0, th])
+				   translate([-bolt_circ_rad, 0, 0]){
+				   cylinder(d=screw_clear_dia_4_40, h=drill_dz);
+			      }
+			 }
+		    }
+		    // alignment pins
+		    translate([0, 0, -pin_dz + 0.02]){
+			 for(dx=[0, bolt_circ_rad]){
+			      translate([dx, 0, 0]){
+				   cylinder(d=apin_dia, h=pin_dz);
+			      }
+			 }
+		    }
+		    // hole for base, if needed
+		    if (drill_base){
+			 cylinder(d=base_dia, h=mdz);
+		    }
+	       }
+	  }
+	  if (drill && drill_cylinder){
+	       // larger cylinder around mirror, to allow for clearance (if installed horizontally with tight clearance)
+	       color("pink"){
+		    if (0){
+			 translate([0, 0, 0.1]){
+			      cylinder(d=drill_cylinder_dia, h=drill_cylinder_h);
+			 }
+		    }else{	// rectangular cutout instead (easier to mill)
+			 translate([-drill_cylinder_dia/2, -(drill_cylinder_dia+rect_extra_dy)/2, 0.1]){
+			      cube([drill_cylinder_dia, drill_cylinder_dia+rect_extra_dy, drill_cylinder_h + rect_extra_dz]);
+			 }
+		    }
+	       }
+	  }
+     }
+}
+
+// mirror_mpd169();
+
+module test_mpd169(){
+     base_dz = 12.7;	// base post thickness
+     difference(){
+	  translate([-25, -25, -d_inch-base_dz]) cube([100, 100, d_inch]);
+	  mirror_mpd169(12.7, drill=true, show=false);
+     }
+     mirror_mpd169(12.7, drill=false, show=true);
+}
+
+// test_mpd169();
+
+module coupler_rc04fc(dz=0, drill=false, show=true, fc_angle=180){
+     //
+     // fiber coupler using parabolic mirror
+     // output along +x ; located with front surface at zy plane, and fiber coupling port pointed towards +z
+     //
+     // fc_angle = angle for the fiber coupler input (180 = up +z)
+     //
+     mdx = 41;			// length from back to front
+     if (show){
+	  rotate([fc_angle, 0, 0]){			// controls where fiber coupling port points towards
+	       translate([-mdx, 0, 0]){
+		    rotate([0, 0, 90]){
+			 import("thorlabs/RC04FC-P01-Solidworks.stl");
+		    }
+	       }
+	  }
+     }
+}
+
+module coupler_rc04fc_on_k05(dz=0, drill=false, show=true, optic_center=true, show_mount=false, fc_angle=180){
+     //
+     // fiber coupler using parabolic mirror, mounted in half-inch polaris mount (with SM0.5 threading)
+     // output along +x ; located with front surface at zy plane, and fiber coupling port pointed towards +z
+     //
+     translate([-5, 0, 0]){
+	  rotate([0, 0, 180]){
+	       mirror_mount_k05s2(dz=dz, show=show, drill=drill);
+	  }
+     }
+     coupler_rc04fc(dz=dz, drill=drill, show=show, fc_angle=fc_angle);
+}
+
+module coupler_rc04fc_on_k1(dz=0, drill=false, show=true, optic_center=true, show_mount=false, fc_angle=180){
+     //
+     // fiber coupler using parabolic mirror, mounted in one-inch polaris mount
+     // output along +x ; located with front surface at zy plane, and fiber coupling port pointed towards +z
+     //
+     translate([0, 0, 0]){
+	  rotate([0, 0, 180]){
+	       mirror_mount_k1(dz=dz, show=show, drill=drill);
+	  }
+     }
+     coupler_rc04fc(dz=dz, drill=drill, show=show, fc_angle=fc_angle);
+}
+
+module coupler_rc04fc_on_lmr05(dz=0, drill=false, show=true, optic_center=true, show_mount=false, fc_angle=180){
+     //
+     // fiber coupler using parabolic mirror, mounted in one-inch polaris mount
+     // output along +x ; located with front surface at zy plane, and fiber coupling port pointed towards +z
+     //
+     translate([3.5, 0, 0]){
+	  rotate([0, 0, 0]){
+	       lens_holder_lmr05(dz=dz, show=show, drill=drill, use_adapter=false, head_depth_offset=6);	// height to base is 16 mm
+	  }
+     }
+     coupler_rc04fc(dz=dz, drill=drill, show=show, fc_angle=fc_angle);
+}
+
+
+
+// coupler_rc04fc();
+// coupler_rc04fc_on_k05();
+// coupler_rc04fc_on_k1(drill=true);
+// coupler_rc04fc_on_lmr05(16, drill=true);
+// lens_holder_lmr05(dz=16, show=true, drill=true, use_adapter=false);
+// mirror_mount_k1(drill=true);
+
+//-----------------------------------------------------------------------------
+// tip-tilt stage
+
+module tip_tilt_py005(dz=0, drill=false, drill1=false, drill2=false, show=true){
+     if (show){
+	  translate([0, 0, -10 - 9.5]){			// top mounting surface at z=0 (xy plane)
+	       import("thorlabs/PY005-Solidworks.stl");	// centered on middle hole, adjustments long +y
+	  }
+     }
+     if (drill || drill1 || drill2 ){
+	  color("red"){
+	       for (nx=[-1, 1]){
+		    for (ny=[-1, 1]){
+			 if (drill || drill1){
+			      translate([ nx * 0.5 * d_inch, ny * 0.5 * d_inch, 0 ])
+				   cylinder(d=screw_tap_dia_8_32, h=100);
+			 }
+			 if (drill || drill2){
+			      translate([ nx * 0.75 * d_inch, ny * 0.25 * d_inch, 0 ])
+				   cylinder(d=screw_tap_dia_8_32, h=100);
+			 }
+		    }
+	       }
+	  }
+     }
+}
+
+// tip_tilt_py005(show=true, drill=true);
+
+module polaris_platform_k1m4(dz=0, drill=false, drill_top=false, drill_mount=false, show=true, enable_plate_mid_holes=0){
+     //
+     // adjustable tip-tilt mounting platform
+     //
+     // yz plane at top surface of mount
+     // top surface points towards +x
+     //
+     if (show){
+	  rotate([0, 0, -90]){
+	       translate([0, -0.25*d_inch, 0]){
+		    import("thorlabs/POLARIS-K1M4-Solidworks.stl");		// centered around middle hole on platform
+	       }
+	  }
+     }
+     if (drill_top){
+	  color("red"){
+	       // four holes along axes, 1" apart
+	       for (n=[-1, 1]){
+		    for (k=[0, 1 * enable_plate_mid_holes]){
+			 translate([ -4, (k ? n * 0.5 * d_inch : 0), (k ? 0 : n * 0.5 * d_inch) ])
+			      rotate([0, 90, 0])
+			      cylinder(d=screw_clear_dia_8_32, h=100);
+		    }
+	       }
+	       // pairs of holes at +x and +z
+	       for (th=[( enable_plate_mid_holes ? 0 : 90 ), 90]){
+		    rotate([th, 0, 0])
+		    for (k=[-1, 1]){
+			 translate([ -4, 0.75 * d_inch, k * 0.25 * d_inch ])
+			      rotate([0, 90, 0])
+			      cylinder(d=screw_clear_dia_8_32, h=100);
+		    }
+	       }
+	       // one hole in corner on 2" circle
+	       rotate([45, 0, 0])
+		    translate([ -4, 1.0 * d_inch, 0 ])
+		    rotate([0, 90, 0])
+		    cylinder(d=screw_clear_dia_8_32, h=100);
+	  }
+     }
+     if (drill_mount){
+	  color("pink"){
+	       if (0){
+		    // one hole along optical axis, displaced by 0.28" along -x, -z
+		    translate([ -4, -0.28 * d_inch, -0.28 * d_inch ])
+			 rotate([0, -90, 0])
+			 cylinder(d=screw_tap_dia_8_32, h=100);
+	       }
+	       if (1){
+		    // one hole along optical axis, displaced by 0.73" along +x, +z from mount bottom and side
+		    // Note: thorlabs/POLARIS-K1M4-AutoCADPDF.pdf drawing has internal inconsistency!  0.28 + 0.73 neq 1.0 !!
+		    // 0.73" seems to be accurate; let's use 0.27" instead of 0.28
+		    translate([ -4, -0.27 * d_inch, -0.27 * d_inch ])
+			 rotate([0, -90, 0])
+			 cylinder(d=screw_tap_dia_8_32, h=100);
+	       }
+	       // optical post going down -z and -y
+	       for (th=[0, -90]){
+		    rotate([th, 0, 0])
+			 translate([ (-0.25-0.13-0.20) * d_inch , 0, -110])
+			 cylinder(d=screw_tap_dia_8_32, h=100);
+	       }
+	       // knobs
+	       kw = 0.7 * d_inch;
+	       for (n=[-1, 1]){
+		    translate([ -4, n * 0.65 * d_inch, - n * 0.65 * d_inch ])
+			 rotate([0, -90, 0])
+			 // cylinder(d=kw, h=100);		// cylindrical cutout
+			 translate([-kw/2, -kw/2, 0])
+			 // cube([kw, kw, 100]);			// square cutout
+			 cube_with_rounded_corners(xyz=[kw, kw, 100], dia=10, no_xplus_rounding=(n==1 ? false : true));			// square cutout
+	       }
+	       translate([ -4, 0.65 * d_inch + kw/2 - 5, -0.65 * d_inch + 4 ])
+		    rotate([45, 0, 0])
+		    rotate([0, -90, 0])
+		    translate([-kw/2, -kw/2, 0])
+		    cube([kw, kw, 100]);			// square cutout
+	       // extra rotated cube for lower knob
+	       
+	       if (1){
+		    // body (to ensure flush seating for center mount)
+		    // bw = 1.95 * d_inch;	
+		    bw = 2.0 * d_inch;				// use 2" because center to bottom is 1"
+		    // translate([- 0.99*d_inch, -bw/2, -bw/2])
+		    translate([- 1.0*d_inch, -bw/2, -bw/2])
+			 cube([100, bw, bw]);
+	       }
+	  }
+     }
+}
+
+//mirror_mount_c05g(name="m2");
+// polaris_platform_k1m4(drill_top=true, drill_mount=true);
+// polaris_platform_k1m4(drill_top=false, drill_mount=true);
+// polaris_platform_k1m4(drill_top=true, drill_mount=false);
+
+//-----------------------------------------------------------------------------
+// polaris beamsplitter mount
+
+module beamsplitter_mount_b05s(dz, show=true, drill=false, use_nut=false, rot = 0, optic_center=true, head_depth_offset=10, show_mirror=true, name="", name_xoff=0, name_yoff=0){
+     // polaris B05S
+     // height to base = 12.7 mm
+     // base screw = 8-32 clear
+     // base post offset from optical axis by 5 mm + 3mm thickness = 8 mm
+     // optical axis = x
+     // show_mirror = if true (and also show=true), then show the mirror in the mount
+     //
+
+     holedia = screw_tap_dia_8_32;
+     mady = 8;
+     xoff = (optic_center ? mady : 0);
+     translate([-xoff, 0, 0])
+     translate([mady, 0, 0]) rotate([0, 0, rot]) translate([-mady, 0, 0]){
+	  if (1){
+	       text_label(name, 10+name_xoff, name_yoff, dz, rot=[0,0,-90], show=show||drill);	// text parallel to optical surface
+	  }else{
+	       text_label(name, 0, -8, dz, rot=[0,0,180], show=show||drill);	// text parallel to optical axis
+	  }
+	  if (show){
+	       rotate([0, 0, 90])
+	       translate([9.22, 24.54, -1.1 - 0.5 * d_inch])
+		    scale(1){
+		    import("thorlabs/POLARIS-B05S.stl");
+	       }
+	       if (show_mirror){
+		    mirror_dx = 3;
+		    mirror_xoff = 5;	// distance from mount hole center to the optical contact plane
+		    translate([mirror_xoff, 0, 0])
+			 rotate([0, 90, 0])
+			 color("grey")
+			 cylinder(d=0.5*d_inch, h=mirror_dx);
+	       }
+	  }
+	  if (dz>0){
+	       post(dz, 12.7, drill=drill, use_nut=use_nut, holedia=holedia, head_depth_offset=head_depth_offset,
+		    post_dx=16.0, lip_xpos=0, post_dy=16.0, post_xoff=2.0,
+		    pin_dia=2.0, pin_dy=5.0, pin_dz=2.2);
+	  }
+     }
+}
+
+// beamsplitter_mount_b05s(dz=25.4/2, drill=true);
+
+//-----------------------------------------------------------------------------
+// polaris vertical adjust mount for 1" dia mirror 
+
+module mirror_mount_k1vs2(dz, show=true, drill=false, use_nut=false, rot = 0, optic_center=true, head_depth_offset=10, show_mirror=true, name="", name_xoff=0, name_yoff=0){
+     // polaris K1VS2
+     // height to base = 0.7"
+     // base screw = 8-32 clear
+     // base post offset from optical axis by 0.7"
+     // optical axis = x
+     // show_mirror = if true (and also show=true), then show the mirror in the mount
+     //
+
+     holedia = screw_tap_dia_8_32;
+     mady = 0.7*d_inch - 2.5;
+     xoff = (optic_center ? mady : 0);
+     translate([-xoff, 0, 0])
+     translate([mady, 0, 0]) rotate([0, 0, rot]) translate([-mady, 0, 0]){
+	  if (1){
+	       text_label(name, 10+name_xoff, name_yoff, dz, rot=[0,0,-90], show=show||drill);	// text parallel to optical surface
+	  }else{
+	       text_label(name, 0, -8, dz, rot=[0,0,180], show=show||drill);	// text parallel to optical axis
+	  }
+	  if (show){
+	       rotate([0, 0, -90])
+	       translate([0, -50, 0])
+		    scale(1){
+		    import("thorlabs/POLARIS-K1VS2.stl");
+	       }
+	       if (show_mirror){
+		    mirror_dx = 3;
+		    mirror_xoff = 0.7*d_inch - mirror_dx - 2.5;	// distance from mount hole center to the optical contact plane
+		    translate([mirror_xoff, 0, 0])
+			 rotate([0, 90, 0])
+			 color("grey")
+			 cylinder(d=1.0*d_inch, h=mirror_dx);
+	       }
+	  }
+	  if (dz>0){
+	       post(dz, 25.4, drill=drill, use_nut=use_nut, holedia=holedia, head_depth_offset=head_depth_offset,
+		    post_dx=16.0, lip_xpos=0, post_dy=16.0, post_xoff=2.0,
+		    pin_dia=2.0, pin_dy=5.0, pin_dz=2.2);
+	  }
+     }
+}
+
+// mirror_mount_k1vs2(dz=25.4, drill=true, show=true);
+
+//-----------------------------------------------------------------------------
+// rotation stages
+
+module rotation_stage_pr01(dz, show=true, drill=false, use_nut=false, optic_center=true, head_depth_offset=6, name="",
+			   name_xoff=0, name_yoff=0, include_440=false, include_632=false, head_clear_dia=screw_head_clear_dia_14_20,
+			   base_1420_extra_dy=0){
+     // Rotation stage PR01
+     // height to base = 
+     // base screw = 8-32 clear
+     // optical axis = x (long axis of stage)
+     // top-center of stage is at (0,0,0)
+     // micrometer is in the +x direction (roughly)
+     //
+     // head_depth_offset is height above which holes are made for the top-surface 1/4-20 bolt heads
+
+     holedia = screw_tap_dia_14_20;
+     mady = 0;
+     xoff = (optic_center ? mady : 0);
+     translate([-xoff, 0, 0])
+     translate([mady, 0, 0]) rotate([0, 0, 0]) translate([-mady, 0, 0]){
+	  text_label(name, 10+name_xoff, name_yoff, dz, rot=[0,0,-90], show=show||drill);	// text parallel to optical surface
+	  if (show){
+	       rotate([0, 0, 0])
+	       translate([16.5, 1-0.1, -9.55 - 1.0*d_inch])
+		    scale(1){
+		    import("thorlabs/PR01-Solidworks.stl");
+	       }
+	  }
+	  if (dz>0){
+	       rotate([0, 0, 90])
+	       color("red"){
+		    // holes into base, below stage
+		    for (dx=[-1, 1]){
+			 for (dy=[-1, 1]){
+			      translate([dx*2.00/2 * d_inch, dy*(2.80/2 * d_inch + base_1420_extra_dy), -1.0*d_inch - 200 + 0.1])
+				   cylinder(d=holedia, h=200);
+			 }
+		    }
+		    // 1/4-20 mounting holes on stage top plate
+		    for (th=[0,60,120,180,240,300]){
+			 rotate([0, 0, th]) translate([1.0*d_inch, 0, -0.1]){
+			      cylinder(d=screw_clear_dia_14_20, h=200);
+			      translate([0, 0, head_depth_offset]) cylinder(d=head_clear_dia, h=200);
+			 }
+		    }
+		    // 6-32 mounting holes on stage top plate
+		    // r cos(36) = 1"
+		    if (include_632){
+			 h632dx = 1.0 * d_inch / cos(36);
+			 for (th=[0:36:359]){
+			      rotate([0, 0, th]) translate([h632dx, 0, -0.1]) cylinder(d=screw_clear_dia_6_32, h=200);
+			 }
+		    }
+		    // 4-40 mounting holes on stage top plate
+		    if (include_440){
+			 h440dx = 15;
+			 for (dx=[-1, 1]){
+			      for (dy=[-1, 1]){
+				   translate([dx*h440dx, dy*h440dx, -0.1])
+					cylinder(d=screw_clear_dia_4_40, h=200);
+			      }
+			 }
+		    }
+		    
+	       }
+	  }
+     }
+}
+
+// rotation_stage_pr01(25.4, drill=true);
+
+//-----------------------------------------------------------------------------
+// breadboards
+
+module inch_holes_breadboard(nx, ny, thick=0.5){
+     //
+     // optical breadboard with 1/4"-20 holes on a 1" grid
+     // The grid starts at the origin.
+     // The breadboard is nx x ny inches, and is shifted to start at -1/2", -1/2"
+     // The top surface is placed at z=0
+     //
+     translate([0, 0, -thick * d_inch]){
+	  difference(){
+	       translate([-d_inch/2, -d_inch/2, 0]){
+		    color("silver"){
+			 cube([nx * d_inch, ny * d_inch, thick * d_inch]);
+		    }
+	       }
+	       color("red"){
+		    for (ky=[0:ny-1]){
+			 for (kx=[0:nx-1]){
+			      translate([kx * d_inch, ky * d_inch, -0.1]){
+				   cylinder(d=screw_tap_dia_14_20, h=10 * d_inch);
+			      }
+			 }
+		    }
+	       }
+	  }
+     }
+}
+
+//-----------------------------------------------------------------------------
+// gas vapor cell and beamsplitter cubes
+
+module vapor_cell(dz, show=true, drill=false){
+     //
+     // thorlabs 1" diameter vapor gas cell
+     // aligned along x-axis, with tip-off pointing to +z
+     //
+     rotate([0, 0, 90]){
+	  import("thorlabs/GC25075-RB-Solidworks.stl");
+     }
+}
+
+module vapor_cell_holder(dz, show=true, drill=false, add_screw_head_clearance=false){
+     tube_id = 1.04 * d_inch;
+     tube_thick = 1.5;
+     tube_od = tube_id + 2*tube_thick;
+     tube_dx = 1.5 * d_inch;
+     tip_off_dia = 10;
+     lip_height = 3;		// for coil, at edges of tube
+     lip_dx = 3;
+     tube_ood = tube_od + 2*lip_height;
+     tube_coil_dx = tube_dx - 2*lip_dx;
+     foot_dx = 10;
+     foot_dy = 10;
+     foot_dz = 11;
+
+     if (show){
+	  difference(){
+	       rotate([0, 90, 0]){
+		    difference(){
+			 color("blue")
+			      cylinder(d=tube_ood, h=tube_dx);
+			 translate([0, 0, -0.5])
+			      color("red")
+			      cylinder(d=tube_id, h=tube_dx + 1);
+			 translate([0, 0, (tube_dx - tube_coil_dx)/2])
+			      color("green"){
+			      difference(){
+				   cylinder(d=tube_ood + 20, h=tube_coil_dx);
+				   cylinder(d=tube_od, h=tube_coil_dx);
+			      }
+			 }
+		    }
+	       }
+	       color("red"){
+		    // tip-off hole at top
+		    translate([0, 0, 10]){
+			 cylinder(d=tip_off_dia, h=40);
+		    }
+		    // viewport hole out sides
+		    rotate([90, 0, 0])
+			 translate([0, 0, -30]){
+			 cylinder(d=tip_off_dia, h=60);
+		    }
+	       }
+	  }
+	  difference(){
+	       for(my=[0, 1]){
+		    mirror([0, my, 0]){
+			 hull(){
+			      translate([tube_dx - lip_dx, 0, 0]){
+				   difference(){
+					rotate([0, 90, 0]){
+					     color("purple")
+						  cylinder(d=tube_ood, h=lip_dx);
+					}
+					translate([-2, -tube_ood/2, -dz-30 + 2*foot_dz]){
+					     color("blue")
+						  cube([lip_dx + 4, tube_ood, 30]);
+					}
+					translate([-2, -tube_ood + 10, -15]){
+					     color("blue")
+						  cube([lip_dx + 4, tube_ood, 50]);
+					}
+				   }
+				   translate([0, tube_ood/2, -dz + 0*foot_dz]){
+					color("brown")
+					     cube([foot_dx, foot_dy, foot_dz]);
+				   }
+			      }
+			 }
+		    }
+	       }
+	       color("red"){
+		    rotate([0, 90, 0])
+			 translate([0, 0, 20])
+			 cylinder(d=tube_id, h=tube_dx+10);
+		    
+		    for(my=[0, 1]){
+			 mirror([0, my, 0]){
+			      translate([tube_dx - lip_dx, 0, 0]){
+				   translate([foot_dx/2, tube_ood/2 + foot_dy/2, -dz - 0.1]){
+					cylinder(d=screw_clear_dia_8_32, h=100);
+					translate([0, 0, 10]){
+					     cylinder(d=screw_head_clear_dia_8_32, h=100);
+					}
+				   }
+			      }
+			 }
+		    }
+	       }
+	  }
+     }
+     if (drill){
+	  for(my=[0, 1]){
+	       mirror([0, my, 0]){
+		    translate([tube_dx - lip_dx, 0, 0]){
+			 translate([foot_dx/2, tube_ood/2 + foot_dy/2, 0]){
+			      color("red"){
+				   translate([0, 0, -100])
+					cylinder(d=( add_screw_head_clearance ? screw_clear_dia_8_32 : screw_tap_dia_8_32), h=100);
+				   if (add_screw_head_clearance){
+					translate([0, 0, -dz-10 - 20]){
+					     hex_nut(thick=20, dia=screw_nut_dia_8_32);
+					     // cylinder(d=screw_head_clear_dia_8_32, h=20);
+					}
+				   }
+			      }
+			 }
+		    }
+	       }
+	  }
+     }
+}
+
+module vapor_cell_with_holder(dz, show=true, drill=false, add_screw_head_clearance=true){
+     //
+     // vapor cell with tubular holders on two ends;
+     // the tube should allow a Zeeman coil to be wound around it.
+     //
+     pocket_dia = 1.6 * d_inch;
+     pocket_dx = 2 * 1.6 * d_inch;
+     if (1){
+	  vapor_cell(dz=dz, show=show);
+	  for (m=[0, 1]){
+	       mirror([m, 0, 0]){
+		    vapor_cell_holder(dz=dz, show=show, drill=drill);
+	       }
+	  }
+     }
+     if (drill){
+	  color("pink")
+	       rotate([0, 90, 0])
+	       translate([0, 0, -pocket_dx/2])
+	       cylinder(d=pocket_dia, h=pocket_dx);
+	  for (m=[0, 1]){
+	       mirror([m, 0, 0]){
+		    vapor_cell_holder(dz=dz, show=false, drill=true, add_screw_head_clearance=add_screw_head_clearance);
+	       }
+	  }
+     }
+}
+
+module beamsplitter_cube(dz, show=true, drill=false, cutout_top_spring=false, cutout_top_spring_rot=0){
+     //
+     // thorlabs 10mm beamsplitter cube, using STL
+     // cube is centered at x=0, y=0, z=0
+     // diagonal is aligned along x=y axis.
+     //
+     // cutout_top_spring: if true, leave dimple on top and slice out tab for a hold-down spring -- for 3D printed cover
+     //
+     cube_dx = 10;
+     drill_dx = cube_dx + 0.2;
+     if (show){
+	  rotate([0, 0, 90]){
+	       translate([-5, -5, -5]){
+		    import("thorlabs/PBS102-Solidworks.stl");
+	       }
+	  }
+     }
+     if (drill){
+	  top_spring_sphere_dia=3;
+	  color("red")
+	       translate([-drill_dx/2, -drill_dx/2, -drill_dx/2]){
+	       difference(){
+		    cube([drill_dx, drill_dx, drill_dx]);
+		    if (cutout_top_spring){
+			 translate([drill_dx/2, drill_dx/2, drill_dx/2 + cube_dx/2 + 1])
+			      sphere(d=top_spring_sphere_dia);
+		    }
+	       }
+	  }
+	  cutout_dx = 0.5;
+	  cutout_dy = 8;
+	  cutout_dz = 10;
+	  cutout_xoff = top_spring_sphere_dia/2 + 0.3;
+	  cutout_yoff = cutout_xoff;
+	  if (cutout_top_spring){
+	       rotate([0, 0, cutout_top_spring_rot])
+	       color("red"){
+		    translate([cutout_xoff, -cutout_yoff, cube_dx/2])
+			 cube([cutout_dx, cutout_dy, cutout_dz]);
+		    translate([-cutout_xoff, -cutout_yoff, cube_dx/2])
+			 cube([cutout_dx, cutout_dy, cutout_dz]);
+		    translate([-cutout_xoff - 0.05, -cutout_yoff, cube_dx/2])
+			 cube([2 * cutout_xoff + 0.1, cutout_dx, cutout_dz]);
+		    translate([0, cutout_dy - cutout_yoff - 2, cube_dx/2]){
+			 rotate([0, 90, 0])
+			      translate([0, 0, -cutout_xoff])
+			      cylinder(d=top_spring_sphere_dia, h=2*cutout_xoff);
+		    }
+	       }
+	  }
+     }
+}
+
+module cube_mirror(dz, show=true, drill=false, cutout_top_spring=false){
+     //
+     // thorlabs 12.5mm sized right angle cube mirror
+     // center in middle of mirror
+     // beam comes from +x and is bounced to +y
+     //
+     // cutout_top_spring: if true, leave dimple on top and slice out tab for a hold-down spring -- for 3D printed cover
+     // 
+     cube_dx = 12.5;
+     drill_dx = cube_dx + 0.2;
+     if (show){
+	  import("thorlabs/MRA12-P01-Solidworks.stl");
+     }
+     if (drill){
+	  top_spring_sphere_dia=3;
+	  spring_xp = -2.5;
+	  spring_yp = -2.5;
+	  color("red"){
+	       difference(){
+		    translate([-drill_dx/2, -drill_dx/2, -drill_dx/2]){
+			 cube([drill_dx, drill_dx, drill_dx]);
+		    }
+		    translate([0.15, 0.15, 0])
+			 rotate([0, 0, -45])
+			 translate([-25, 0, -25]) cube([50, 50, 50]);
+		    if (cutout_top_spring){
+			 translate([spring_xp, spring_yp, cube_dx/2 + 1])
+			      sphere(d=top_spring_sphere_dia);
+		    }
+	       }
+	  }
+	  cutout_dx = 0.5;
+	  cutout_dy = 8;
+	  cutout_dz = 10;
+	  cutout_xoff = top_spring_sphere_dia/2 + 0.3;
+	  cutout_yoff = cutout_xoff;
+	  if (cutout_top_spring){
+	       translate([spring_xp, spring_yp, 0])
+	       rotate([0, 0, 180]){
+		    color("red"){
+			 translate([cutout_xoff, -cutout_yoff, cube_dx/2])
+			      cube([cutout_dx, cutout_dy, cutout_dz]);
+			 translate([-cutout_xoff, -cutout_yoff, cube_dx/2])
+			      cube([cutout_dx, cutout_dy, cutout_dz]);
+			 translate([-cutout_xoff - 0.05, -cutout_yoff, cube_dx/2])
+			      cube([2 * cutout_xoff + 0.1, cutout_dx, cutout_dz]);
+			 translate([0, cutout_dy - cutout_yoff - 2, cube_dx/2]){
+			      rotate([0, 90, 0])
+				   translate([0, 0, -cutout_xoff])
+				   cylinder(d=top_spring_sphere_dia, h=2*cutout_xoff);
+			 }
+		    }
+	       }
+	  }
+     }
+}
+
+// vapor_cell(0);
+// beamsplitter_cube();
+// cube_mirror();
+
+//-----------------------------------------------------------------------------
+// tests
+
+module test_drill1(angle=45, base_dz=34, base_thick=5, base_dx=50, base_dy=50, base_xoff=0, show=true, optic_center=true){
+     difference(){
+	  translate([base_xoff-base_dx/2, -base_dy/2, -base_thick - base_dz]) cube([base_dx, base_dy, base_thick]);
+	  mirror_mount_km100(base_dz, rot=angle, optic_center=optic_center, drill=true, show=false);
+     }
+     mirror_mount_km100(base_dz, rot=angle, optic_center=optic_center, drill=false, use_nut=true, show=show);
+}
+
+module test_hex1(){
+     test_drill1(0, base_dz=30, base_thick=10, base_dx=20, base_xoff=0, base_dy=30, show=false, optic_center=false);
+     color("green") translate([0, 0, -40]) cylinder(d=8.55, h=50);
+}
+
+// test_drill1();
+// test_drill1(0, base_dz=30, base_thick=10, base_dx=20, base_xoff=-14);
+// test_drill1(0, base_dz=30, base_thick=10, base_dx=20, base_xoff=-14, base_dy=30, show=false, optic_center=true);
+// test_drill1(0, base_dz=30, base_thick=10, base_dx=20, base_xoff=0, base_dy=30, show=false, optic_center=false);
+// test_hex1();
+// pinhole_ida15(30, drill=true);
+// clamp_post_pm3();
+// aom_on_post(33, drill=true);
+// prism_on_post(33, drill=true);
+// lens_holder_mlh05(30, drill=true);
+// pinhole_ida12(33, drill=false);
+
+// fiberport_with_holder(30);
+
+module test_drill2(){
+     base_dz = 12.7;	// base post thickness
+     difference(){
+	  translate([-25, -25, -d_inch-base_dz]) cube([100, 100, d_inch]);
+	  rbOven(12.7, drill=true, show=false);
+     }
+     rbOven(12.7, drill=false, show=true);
+}
+
+//test_drill2();
+// rotation_stage_rsp05(30);
+// lens_holder_mlh05(30, drill=true);
+// aom_on_mount_km100pm();
+
+module test_drill3(){
+     base_dz = 12.7;	// base post thickness
+     difference(){
+	  translate([-25, -25, -20 - base_dz]) cube([50, 50, 20]);
+	  mirror_mount_k05s2(base_dz, rot=0, optic_center=false, drill=true, show=false, use_nut=false);	// should show alignment pin holes in post
+     }
+      mirror_mount_k05s2(30, rot=0, optic_center=false, show=true);	// should show alignment pin holes in post
+}
+
+// test_drill3();
+// lens_holder_l05g(30, rot=0, optic_center=true, show=true);
+//mirror_mount_c05g(30, rot=0, optic_center=true, show=true);
+
+module test_drill4(){	// test 8-32 tap hole for D-mirror mount on right angle slider post
+     base_dz = 12.7;	// base post thickness
+     difference(){
+      translate([-25, -35, -20 - base_dz]) cube([50, 70, 20]);
+	  mirror_mount_dmm05_with_slider_mount(base_dz, drill=true, show=false, use_nut=false, left_hand=false);
+     }    
+     mirror_mount_dmm05_with_slider_mount(base_dz, drill=false, show=true, use_nut=false, left_hand=false, show_mirror=true);
+}
+
+// test_drill4();
+
+module test_drill5(){	// test pinhole with slide mount
+     base_dz = 12.7;
+     difference(){
+	  translate([-25, -35, -20 - base_dz]) cube([50, 70, 20]);
+	  pinhole_ida12_slide_mount(base_dz, drill=true, show=false, use_nut=false, use_surface=true, name="pin");
+     }
+     pinhole_ida12_slide_mount(base_dz, drill=false, show=true, use_nut=false, use_surface=true, name="pin");
+}
+//test_drill5();
+
+module test_drill5a(){	// test pinhole with surface mount
+     base_dz = 12.7;
+     if (1){
+     difference(){
+	  translate([-25, -35, -20 - base_dz]) cube([50, 70, 20]);
+	  pinhole_ida12(base_dz, drill=true, show=false, use_nut=false, use_surface=true);
+     }}
+     translate([0, 0, 0.02])
+     color("green") pinhole_ida12(base_dz, drill=false, show=true, use_nut=false, use_surface=true);
+}
+
+// test_drill5a();
+// pinhole_ida12(12.7, drill=true, show=true, use_nut=false, use_surface=true);
+// pinhole_ida12(12.7, drill=false, show=true, use_nut=false, use_surface=true);
+// pinhole_ida12(12.7, drill=false, show=false, use_nut=false, use_surface=true);	// just the adapter
+
+module test_drill6(){	// lens holder
+     base_dz = 12.7;
+     difference(){
+	  translate([-70, -35, -20 - base_dz]) cube([70, 70, 20]);
+	  isomet_on_mount_km100pm(base_dz, optic_center = true, drill = true, show=false);
+     }
+     isomet_on_mount_km100pm(base_dz, optic_center = true, drill = false, show=true);
+}
+
+// periscope_base(12.7);
+// periscope2_base(dz=12.7, show_mirrors=true, drill=false);
+// periscope2_base(dz=12.7, show_mirrors=false, drill=false);
+// translate([-50, -50, 12.7]) cube([100, 100, 100]);
+// mirror_mount_c05g(dz=12.7, show_mirror=true);
+// mirror_mount_k05s2(dz=12.7, show_mirror=true);
+
+module test_periscope2(){	// adjustable mirror periscope
+     base_dz = 12.7;
+     difference(){
+	  translate([-35, -35, -20 - base_dz]) cube([70, 70, 20]);
+	  periscope2_base(dz=base_dz, drill=true, show=false, show_mirrors=false);
+     }
+     periscope2_base(dz=base_dz, show=true, drill=false, show_mirrors=true);
+}
+
+// test_periscope2();
+
+module test_cage_mount_pair(){
+     oaz = 55;
+     base_dz = 12.7;
+     difference(){
+	  translate([-35, -35, -20 - base_dz]) cube([100, 70, 20]);
+	  cage_mount_pair_with_rails(dz=12.7, add_post=2, optical_axis_zpos=oaz, drill=true, show=false, optic_center=true);
+     }
+     cage_mount_pair_with_rails(dz=12.7, add_post=2, optical_axis_zpos=oaz, drill=false, show=true, optic_center=true);
+     // translate([0, 0, oaz]) color("green") cube([400, 400, 200]);
+}
+
+// cage_mount();
+//cage_mount_pair_with_rails(dz=12.7, add_post=2, optical_axis_zpos=55, optic_center=true);
+// half_inch_post_with_base(dz=12.7, h2b=50);
+// test_cage_mount_pair();
+
+module test_mirror_mount_k1t(){
+     oaz = 55;
+     base_dz = 12.7;
+     difference(){
+	  translate([-35, -35, -20 - base_dz]) cube([100, 70, 20]);
+	  mirror_mount_k1t(dz=12.7, add_post=2, optical_axis_zpos=oaz, drill=true, show=false, optic_center=true);
+     }
+     mirror_mount_k1t(dz=12.7, add_post=2, optical_axis_zpos=oaz, drill=false, show=true, optic_center=true);
+     // translate([0, 0, oaz]) color("green") cube([400, 400, 200]);
+}
+
+// mirror_mount_k1t(dz=55, optic_center=true, add_post=true);
+// test_mirror_mount_k1t();
+
+module test_brimrose_mount1(){
+     oaz = 55;
+     base_dz = 12.7;
+     difference(){
+	  translate([-65, -30, -20 - base_dz]) cube([100, 70, 20]);
+	  brimrose_on_mount_km100pm(dz=12.7,hole_dz = 22.9-16, add_post=2, optical_axis_zpos=oaz, drill=true, show=false, optic_center=true);
+     }
+     brimrose_on_mount_km100pm(dz=12.7, hole_dz = 22.9-16, add_post=2, optical_axis_zpos=oaz, drill=false, show=true, optic_center=true);
+     // translate([0, 0, oaz]) color("green") cube([400, 400, 200]);
+}
+
+// test_brimrose_mount1();
+
+module test_brimrose_mount2(){
+     oaz = 55;
+     base_dz = 12.7;
+     difference(){
+	  translate([-65, -30, -20 - base_dz]) cube([100, 70, 20]);
+	  brimrose_on_mount_upside_down_km100pm(dz=12.7, drill=true, show=false, optic_center=true);
+     }
+     brimrose_on_mount_upside_down_km100pm(dz=12.7, drill=false, show=true, optic_center=true);
+     // translate([0, 0, oaz]) color("green") cube([400, 400, 200]);
+}
+
+// test_brimrose_mount2();
+
+module test_compare_all_aom_mounts(){
+     base_dz = 12.7;
+     del = 70;
+     difference(){
+	  color("gray") translate([-65, -30, -20 - base_dz]) cube([700, 70, 20]);
+	  brimrose_on_mount_upside_down_km100pm(dz=12.7, drill=true, show=false, optic_center=true, name="brimrose-ud");
+	  translate([del, 0, 0])
+	       brimrose_on_mount_km100pm(dz=12.7,hole_dz = 22.9-16, drill=true, show=false, optic_center=true, name="brimrose");
+	  translate([2*del, 0, 0])
+	       isomet_on_mount_km100pm(base_dz, drill=true, show=false, name="isomet", name_xoff=-10);
+	  translate([2.65*del, 0, 0])
+	       brimrose200_on_mount_km100pm(dz=12.7, drill=true, show=false, optic_center=true, name="brim200");
+     }
+     brimrose_on_mount_upside_down_km100pm(dz=12.7, drill=false, show=true, optic_center=true, name="");
+     translate([del, 0, 0])
+	  brimrose_on_mount_km100pm(dz=12.7, hole_dz = 22.9-16, drill=false, show=true, optic_center=true, name="", use_slots=true);
+     translate([2*del, 0, 0])
+	  isomet_on_mount_km100pm(base_dz, drill=false, show=true, name="", name_xoff=-10);
+     translate([2.65*del, 0, 0])
+	  brimrose200_on_mount_km100pm(dz=12.7, drill=false, show=true, optic_center=true, name="brim200");
+     // translate([0, 0, oaz]) color("green") cube([400, 400, 200]);
+}
+
+// test_compare_all_aom_mounts();
+
+module test_fiberport_shoulder_screws(){
+     // test recess for shoulder screws
+     // also test 2mm pin depths while we're at it
+     base_dz = 12.7;
+     del = 70;
+     difference(){
+	  difference(){
+	       color("gray") translate([0, -53/2, -20 - base_dz]) cube([43, 53, 20]);
+	       translate([50, 0, -base_dz])
+		    rotate([0, 90, 0])
+		    fiberport_sidemount(base_dz, optic_center = true, drill=true, show=false, name="", name_xoff=6, name_yoff=18);
+	       translate([20, 0, 0])
+		    mirror_mount_k05s2(dz=base_dz, drill=true, show=false, show_mirror=true, name="", pin_extra_dz=-0.5);
+	       translate([26, 0, 0])
+		    mirror_mount_k05s2(dz=base_dz, drill=true, show=false, show_mirror=true, name="");
+	       translate([32, 0, 0])
+		    mirror_mount_k05s2(dz=base_dz, drill=true, show=false, show_mirror=true, name="", pin_extra_dz=0.5);
+	  }
+	  color("pink"){
+	       translate([0, 0, 100])
+		    cube([100, 100, 100]);
+	  }
+     }
+     if (0){
+	  translate([20, 0, 0])
+	       mirror_mount_k05s2(dz=base_dz, drill=false, show=true, show_mirror=true);
+	  translate([50, 0, -base_dz])
+	       rotate([0, 90, 0])
+	       fiberport_sidemount(base_dz, optic_center = true, drill=false, show=true, name="", name_xoff=6, name_yoff=18);
+     }
+}
+
+// test_fiberport_shoulder_screws();
+
+module test_tube_mount1(){
+     base_dz = 12.7;
+     difference(){
+	  translate([-65, -30, -20 - base_dz]) cube([100, 70, 20]);
+	  tube_mount_sm1tc(dz=base_dz, show=false, drill=true, drill_tube=true);
+     }
+     tube_mount_sm1tc(dz=base_dz, drill=false, show=true, show_tube=true);
+}
+
+// test_tube_mount1();
+
+module test_cage_mount1(){
+     //
+     // cage mount directly on baseplate, centered at optical axis
+     //
+     base_dz = 12.7;
+     difference(){
+	  translate([-65, -30, -20 - base_dz]) cube([140, 70, 20]);
+	  cage_mount_pair_with_rails(dz=base_dz, dx=50, show=false, drill=true, drill_832=true);
+     }
+     cage_mount_pair_with_rails(dz=base_dz, dx=50, show=true, drill=false, drill_832=true);
+}
+
+// test_cage_mount1();
+
+module test_cage_mount2(){
+     //
+     // cage mount directly on baseplate, centered at optical axis
+     //
+     base_dz = 12.7;
+     difference(){
+	  translate([-65, -30, -20 - base_dz]) cube([140, 70, 20]);
+	  cage_mount_with_pocket(dz=base_dz, dx=50, show=false, drill=true);
+     }
+     cage_mount_with_pocket(dz=base_dz, dx=50, show=true, drill=false);
+}
+
+//test_cage_mount2();
+
+module test_periscope3_downbeam(){
+     //
+     // periscope bouncing beam down (or receiving beam from down) through baseplate
+     //
+     base_dz = 12.7;
+     difference(){
+	  translate([-65, -30, -20 - base_dz]) cube([140, 70, 20]);
+	  periscope3_downbeam(dz=base_dz, show=false, show_mirror=false, drill=true);
+     }
+     periscope3_downbeam(dz=base_dz, show=true, show_mirror=true, drill=false);
+}
+
+// test_periscope3_downbeam();
+
+// compare photodiode mounts
+
+module test_photodiode_mounts(){
+     //
+     // compared det10a2 vs 
+     //
+     base_dz = 12.7;
+     p1x = -65 + 9;
+     difference(){
+	  color("gray")
+	       translate([-65, -20, -20 - base_dz]) cube([80, 120, 20]);
+	  translate([p1x, 0, 0])
+	       pd_det10a2(dz=base_dz, show=false, optic_center=true, drill=true, use_nut=false, name_xoff=0, name_yoff=0, name="det10a2", platemount=false);
+	  translate([0, 0, 0])
+	       pd_pda10a(dz=base_dz, show=false, optic_center=true, drill=true, use_nut=false, name_xoff=-8, name_yoff=0, name="pda10a");
+     }
+     if (1){
+	  translate([p1x, 0, 0])
+	       pd_det10a2(dz=base_dz, show=true, optic_center=true, drill=false, use_nut=false, name_xoff=0, name_yoff=0, name="det10a2", platemount=false);
+	  translate([0, 0, 0])
+	       pd_pda10a(dz=base_dz, show=true, optic_center=true, drill=false, use_nut=false, name_xoff=-8, name_yoff=0, name="pda10a");
+     }
+     if (0){
+	  translate([p1x, 0, 0])
+	       tube_mount_sm1tc(dz=base_dz, show=true, drill=false, name="", tube_dx=0.5*d_inch);
+     }
+}
+
+// test_photodiode_mounts();
+
+module test_sm1tc(){
+     //
+     // tube clamp mount
+     //
+     base_dz = 12.7;
+     difference(){
+	  translate([-65, -30, -20 - base_dz]) cube([140, 70, 20]);
+	  tube_mount_sm1tc(dz=base_dz, show=false, drill=true);
+     }
+     tube_mount_sm1tc(dz=base_dz, show=true, drill=false);
+}
+
+// test_sm1tc();
+
+module test_rsp05(){
+     //
+     // rotation mount, e.g. for HWP
+     //
+     base_dz = 12.7;
+     difference(){
+	  color("silver")
+	       translate([-65, -30, -20 - base_dz]) cube([140, 30, 20]);
+	  rotation_stage_rsp05(dz=base_dz, show=false, drill=true, low_profile=true);
+     }
+     rotation_stage_rsp05(dz=base_dz, show=false, drill=true, low_profile=true);
+     // rotation_stage_rsp05(dz=base_dz, show=true, drill=false, low_profile=true);
+}
+
+// test_rsp05();
+
+module test_mirror_mount_km05(){
+     //
+     // km05 mirror mount
+     //
+     base_dz = 12.7;
+     difference(){
+	  translate([-28, -20, -10 - base_dz]) cube([35, 42, 10]);
+	  mirror_mount_km05(dz=base_dz, show=false, drill=true);
+     }
+     // mirror_mount_km05(dz=base_dz, show=true, drill=false);
+     mirror_mount_km05(dz=base_dz, show=false, drill=false);
+}
+
+// test_mirror_mount_km05();
+
+module test_vapor_cell_with_holder(){
+     base_dz = 12.7;
+     difference(){
+	  translate([-65, -30, -20 - base_dz]) cube([140, 70, 20]);
+	  vapor_cell_with_holder(dz=base_dz, show=false, drill=true);
+     }
+     vapor_cell_with_holder(dz=base_dz, show=true, drill=false);
+}
+
+// test_vapor_cell_with_holder();
+
+module test_beamsplitter_cube(){
+     base_dz = 12.7;
+     difference(){
+	  translate([-65, -30, - base_dz - 1]) cube([140, 70, 10]);
+	  beamsplitter_cube(dz=base_dz, show=false, drill=true);
+	  translate([0, 14, 0])
+	       cube_mirror(dz=base_dz, show=false, drill=true);
+     }
+     show = false;
+     beamsplitter_cube(dz=base_dz, show=show, drill=false);
+     translate([0, 14, 0])
+	  cube_mirror(dz=base_dz, show=show, drill=false);
+}
+
+// test_beamsplitter_cube();
+
+module test_cube_mirror(){
+     base_dz = 12.7;
+     difference(){
+	  color("gray") translate([-65, -30, - base_dz-10]) cube([140, 70, 20]);
+	  cube_mirror(dz=base_dz, show=false, drill=true);
+     }
+     cube_mirror(dz=base_dz, show=true, drill=false);
+}
+
+// test_cube_mirror();
