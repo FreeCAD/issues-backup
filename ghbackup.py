@@ -166,9 +166,11 @@ def push():
     try:
         repo = git.Repo(os.path.curdir)
         repo.git.add(all=True)
-        repo.index.commit("backup " + str(datetime.date.today()) )
+        commitmsg = "backup " + str(datetime.date.today())
+        repo.index.commit(commitmsg)
         origin = repo.remote(name='origin')
         origin.push()
+        print("Pushed revision",commitmsg)
         return True
     except:
         return False
