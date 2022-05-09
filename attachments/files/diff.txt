@@ -1,0 +1,459 @@
+1,4d0
+<         <source>
+<         <source>
+<         <source>
+<         <source>
+86a83
+>         <source>Add dependent objects to selection</source>
+88d84
+<         <source>Addons...</source>
+93a90
+>         <source>Adds all dependent objects to the selection</source>
+121a119
+>         <source>All</source>
+135a134
+>         <source>Always</source>
+219a219,223
+>         <source>Apply</source>
+>         <source>Apply the %1 preference pack</source>
+>         <source>Apply the setting to all links. Or, uncheck this
+>         <source>Apply to all</source>
+>         <source>A preference pack with that name already exists. Do you want to overwrite it?</source>
+223a228
+>         <source>Are you sure you want to delete the preference pack named &apos;%1&apos;? This cannot be undone.</source>
+247a253
+>         <source>Auto select depending objects</source>
+250a257
+>         <source>Available backup files:</source>
+295a303
+>         <source>Built-In Preference Packs</source>
+301a310,313
+>         <source>Cache directory</source>
+>         <source>Cache directory</source>
+>         <source>Cache size limit:</source>
+>         <source>Cache</source>
+304a317
+>         <source>Camera zoom</source>
+320a334
+>         <source>Case sensitive</source>
+329a344
+>         <source>Change whether show each link array element as individual objects</source>
+331a347,348
+>         <source>Check now...</source>
+>         <source>Check periodically at program start:</source>
+338d354
+<         <source>Choose the style of the Task Panel</source>
+381a398
+>         <source>Color gradient is used with its full color range</source>
+383a401
+>         <source>Color gradient starts from the zero value</source>
+410a429
+>         <source>Copy on change</source>
+413a433
+>         <source>Copy the linked object when its configuration is changed.
+418a439
+>         <source>C/POSIX</source>
+431a453
+>         <source>Create New Preference Pack</source>
+453a476
+>         <source>Current cache size: %1</source>
+468a492,494
+>         <source>Daily</source>
+>         <source>Data outside the specified min-max range
+>         <source>Data outside the specified min-max range
+483d508
+<         <source>Default</source>
+489a515
+>         <source>Delete saved preference pack?</source>
+494a521,522
+>         <source>Delete user-saved preference pack &apos;%1&apos;</source>
+>         <source>Depended by</source>
+498c526
+<         <source>Dependency</source>
+---
+>         <source>Depending on</source>
+517a546
+>         <source>Disable copy on change</source>
+547a577
+>         <source>Document:</source>
+561a592
+>         <source>Download</source>
+568a600
+>         <source>Do you want to clear it now?</source>
+591a624
+>         <source>Edit %1</source>
+604,618d636
+<         <source>Edit</source>
+<         <source>Edit</source>
+<         <source>Edit</source>
+<         <source>Edit</source>
+<         <source>Edit</source>
+<         <source>Edit</source>
+<         <source>Edit</source>
+<         <source>Edit</source>
+<         <source>Edit</source>
+<         <source>Edit</source>
+<         <source>Edit</source>
+<         <source>Edit</source>
+<         <source>Edit</source>
+<         <source>Edit</source>
+<         <source>Edit</source>
+628a647,650
+>         <source>Enable auto copy of linked object when its configuration is changed</source>
+>         <source>Enable block cursor</source>
+>         <source>Enable block cursor</source>
+>         <source>Enable cursor blinking</source>
+640a663
+>         <source>Enable</source>
+652a676
+>         <source>Enum</source>
+716,732d739
+<         <source>File</source>
+<         <source>File</source>
+<         <source>File</source>
+<         <source>File</source>
+<         <source>File</source>
+<         <source>File</source>
+<         <source>File</source>
+<         <source>File</source>
+<         <source>File</source>
+<         <source>File</source>
+<         <source>File</source>
+<         <source>File</source>
+<         <source>File</source>
+<         <source>File</source>
+<         <source>File</source>
+<         <source>File</source>
+<         <source>File</source>
+744d750
+<         <source>Finished</source>
+796a803
+>         <source>Georgian</source>
+815a823
+>         <source>Group name:</source>
+826,838c834
+<         <source>Help</source>
+<         <source>Help</source>
+<         <source>Help</source>
+<         <source>Help</source>
+<         <source>Help</source>
+<         <source>Help</source>
+<         <source>Help</source>
+<         <source>Help</source>
+<         <source>Help</source>
+<         <source>Help</source>
+<         <source>Help</source>
+<         <source>Help</source>
+<         <source>Help</source>
+---
+>         <source>Help addon needed!</source>
+855d850
+<         <source>Hierarchy</source>
+880a876
+>         <source>If enabled, numerical keypad decimal separator will be substituted with locale separator</source>
+970a967
+>         <source>Launch a guide on how to set up a macro in a custom global toolbar.</source>
+984a982
+>         <source>Link actions</source>
+989,997d986
+<         <source>Link</source>
+<         <source>Link</source>
+<         <source>Link</source>
+<         <source>Link</source>
+<         <source>Link</source>
+<         <source>Link</source>
+<         <source>Link</source>
+<         <source>Link</source>
+<         <source>Link</source>
+1000c989
+<         <source>List of last used calculations 
+---
+>         <source>List of last used calculations.
+1008a998
+>         <source>Load</source>
+1010a1001
+>         <source>Location:</source>
+1030d1020
+<         <source>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+1051,1060d1040
+<         <source>Macro</source>
+<         <source>Macro</source>
+<         <source>Macro</source>
+<         <source>Macro</source>
+<         <source>Macro</source>
+<         <source>Macro</source>
+<         <source>Macro</source>
+<         <source>Macro</source>
+<         <source>Macro</source>
+<         <source>Macro</source>
+1065a1046
+>         <source>Macros</source>
+1074a1056,1058
+>         <source>Manage preference packs</source>
+>         <source>Manage Preference Packs</source>
+>         <source>Manage...</source>
+1094d1077
+<         <source>Measure</source>
+1111a1095
+>         <source>Monthly</source>
+1134a1119,1120
+>         <source>Name</source>
+>         <source>Name</source>
+1143a1130
+>         <source>Never</source>
+1147d1133
+<         <source>New document scale</source>
+1159a1146
+>         <source>Next</source>
+1167,1168c1154
+<         <source>No macros found.</source>
+<         <source>No macro</source>
+---
+>         <source>none</source>
+1173d1158
+<         <source>No OpenGL</source>
+1180a1166
+>         <source>No selection in dialog, cannot load backup file</source>
+1193a1180
+>         <source>Notify the user if the cache size exceeds the specified limit</source>
+1194a1182,1183
+>         <source>Number format:</source>
+>         <source>Number of decimals for labels
+1196a1186
+>         <source>Number of labels besides the color bar</source>
+1219a1210,1212
+>         <source>Open Addon Manager...</source>
+>         <source>Open Addon Manager</source>
+>         <source>Open Addon Manager where macros created by the community and other addons can be downloaded.</source>
+1234a1228
+>         <source>Operating system</source>
+1247c1241
+<         <source>Out &amp;invisible</source>
+---
+>         <source>Out &amp;transparent</source>
+1255a1250
+>         <source>Pack already exists</source>
+1260d1254
+<         <source>Partial</source>
+1266a1261
+>         <source>Path:</source>
+1273a1269
+>         <source>Physical path:</source>
+1290a1287
+>         <source>Please check report view for more...</source>
+1296a1294
+>         <source>Please select which objects to copy when the configuration is changed</source>
+1315a1314,1315
+>         <source>Preference Pack Name</source>
+>         <source>Preference packs</source>
+1322a1323
+>         <source>Press a keyboard shortcut</source>
+1332a1334,1336
+>         <source>Press left mouse button and move mouse</source>
+>         <source>Press left mouse button</source>
+>         <source>Press left mouse button</source>
+1339a1344
+>         <source>Press middle mouse button or SHIFT and right mouse button</source>
+1343a1349,1352
+>         <source>Press middle mouse button</source>
+>         <source>Press modifier keys</source>
+>         <source>Press right mouse button and move mouse</source>
+>         <source>Press right mouse button</source>
+1348a1358
+>         <source>Previous</source>
+1359a1370
+>         <source>Property group templates</source>
+1425a1437
+>         <source>Relative size :   </source>
+1447a1460
+>         <source>Rename property group</source>
+1461a1475,1476
+>         <source>Report a bug or suggest a feature</source>
+>         <source>Report a bug</source>
+1462a1478
+>         <source>Rerefresh configurable object</source>
+1476a1493
+>         <source>Revert...</source>
+1478a1496
+>         <source>Revert to Backup Config</source>
+1525a1544
+>         <source>Save history</source>
+1527a1547
+>         <source>Save new...</source>
+1531a1552
+>         <source>Saves Python history across sessions</source>
+1548a1570
+>         <source>Scroll middle mouse button</source>
+1568a1591
+>         <source>Selected language</source>
+1571d1593
+<         <source>Selected</source>
+1575a1598
+>         <source>Selections</source>
+1589a1613
+>         <source>Select which object to copy or exclude when configuration changes.All external linked object are excluded by default.</source>
+1597a1622
+>         <source>Settings</source>
+1607a1633
+>         <source>Setup configurable object</source>
+1629a1656
+>         <source>Show output window on</source>
+1633d1659
+<         <source>Show report view on</source>
+1646a1673
+>         <source>Size of main coordinate system representation
+1662a1690
+>         <source>%</source>
+1704,1757d1731
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+<         <source>Standard-View</source>
+1764d1737
+<         <source>State</source>
+1789d1761
+<         <source>Structure</source>
+1792a1765
+>         <source>Substitute decimal separator (needs restart)</source>
+1805a1779
+>         <source>Synchronize the original configurable source object by
+1815a1790
+>         <source>Tags</source>
+1821d1795
+<         <source>test</source>
+1837a1812,1814
+>         <source>The cache directory %1 exceeds the size of %2.</source>
+>         <source>The cursor shape will be a block</source>
+>         <source>The cursor shape will be a block</source>
+1857a1835
+>         <source>The Help system of %1 is now handled by the &quot;Help&quot; addon. It can easily be installed via the Addons Manager</source>
+1877a1856
+>         <source>The text cursor will be blinking</source>
+1884d1862
+<         <source>This system does not support OpenGL</source>
+1892a1871,1872
+>         <source>Toggle array elements</source>
+>         <source>Toggle array elements</source>
+1907a1888,1889
+>         <source>Toggle visibility of Addon preference pack &apos;%1&apos; (use Addon Manager to permanently remove)</source>
+>         <source>Toggle visibility of built-in preference pack &apos;%1&apos;</source>
+1920,1930d1901
+<         <source>Tools</source>
+<         <source>Tools</source>
+<         <source>Tools</source>
+<         <source>Tools</source>
+<         <source>Tools</source>
+<         <source>Tools</source>
+<         <source>Tools</source>
+<         <source>Tools</source>
+<         <source>Tools</source>
+<         <source>Tools</source>
+<         <source>Tools</source>
+1940a1912,1913
+>         <source>Tracking</source>
+>         <source>Transform at the origin of the placement</source>
+1948a1922
+>         <source>Transient deleted</source>
+1965,1973d1938
+<         <source>TreeView</source>
+<         <source>TreeView</source>
+<         <source>TreeView</source>
+<         <source>TreeView</source>
+<         <source>TreeView</source>
+<         <source>TreeView</source>
+<         <source>TreeView</source>
+<         <source>TreeView</source>
+<         <source>TreeView</source>
+1981a1947
+>         <source>Type</source>
+1984d1949
+<         <source>Unable to load documentation.
+2008a1974
+>         <source>Unknown</source>
+2027a1994
+>         <source>User-Saved Preference Packs</source>
+2048,2061d2014
+<         <source>View</source>
+<         <source>View</source>
+<         <source>View</source>
+<         <source>View</source>
+<         <source>View</source>
+<         <source>View</source>
+<         <source>View</source>
+<         <source>View</source>
+<         <source>View</source>
+<         <source>View</source>
+<         <source>View</source>
+<         <source>View</source>
+<         <source>View</source>
+<         <source>View</source>
+2074a2028
+>         <source>Warning: Please make sure that this is the only running %1 instance and that no documents are opened as this may result into data loss!</source>
+2077a2032,2033
+>         <source>WARNING: this process will undo any preference changes made since the specified date, and will also reset your Recent files and Macros to their state on that date.</source>
+>         <source>Weekly</source>
+2088a2045
+>         <source>Whole words</source>
+2093,2100d2049
+<         <source>Window</source>
+<         <source>Window</source>
+<         <source>Window</source>
+<         <source>Window</source>
+<         <source>Window</source>
+<         <source>Window</source>
+<         <source>Window</source>
+<         <source>Window</source>
+2102d2050
+<         <source>Windows XP</source>
+2125a2074
+>         <source>Yearly</source>
