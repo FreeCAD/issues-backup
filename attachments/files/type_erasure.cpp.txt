@@ -1,0 +1,167 @@
+#include <iostream>
+#include <memory>
+#include <string>
+#include <vector>
+
+/*
+ The std::shared_ptr class of msvc causes problems when using it for type erasure based on static polymorphism.
+ Type erasure based on dynamic polymorphism works just fine.
+
+ Compile and run:
+ clang: clang++ type_erasure.cpp && ./a.out
+ gcc:   g++ type_erasure.cpp && ./a.out
+ msvc:  cl type_erasure.cpp -o a.exe
+        a.exe
+*/
+
+
+// Type erasure based on dynamic polymorphism
+// The class String therefore inherits from Object
+namespace DynamicPolymorphism {
+
+class Object {
+public:
+    virtual ~Object() {}
+    virtual const char* data() const = 0;
+};
+
+class String : public Object {
+public:
+    String(const char* str) : d(str) {
+    }
+    const char* data() const override {
+        return d.data();
+    }
+
+private:
+    std::string d;
+};
+
+using ObjectPtr = std::shared_ptr<Object>;
+
+
+// Here everything works as expected
+// Tested compilers are: clang, gcc, msvc
+void test()
+{
+    std::vector<ObjectPtr> objectArray;
+    objectArray.push_back(std::make_shared<String>("One"));
+    objectArray.push_back(std::make_shared<String>("Two"));
+    objectArray.push_back(std::make_shared<String>("Three"));
+    objectArray.push_back(std::make_shared<String>("Four"));
+
+    // Reference counters are: 1
+    for (const auto& it : objectArray) {
+        std::cout << "Value: " << it->data() << ",\tReference counter: " << it.use_count() << '\n';
+    }
+
+    std::vector<ObjectPtr> objectArrayCopy;
+    objectArrayCopy = objectArray;
+
+    // Reference counters are: 2
+    for (const auto& it : objectArray) {
+        std::cout << "Value: " << it->data() << ",\tReference counter: " << it.use_count() << '\n';
+    }
+    for (const auto& it : objectArrayCopy) {
+        std::cout << "Value: " << it->data() << ",\tReference counter: " << it.use_count() << '\n';
+    }
+
+    objectArray.clear();
+
+    // Reference counters are: 1
+    for (const auto& it : objectArrayCopy) {
+        std::cout << "Value: " << it->data() << ",\tReference counter: " << it.use_count() << '\n';
+    }
+}
+
+
+}
+
+
+// Type erasure based on static polymorphism
+// The class String therefore doesn't need a base class
+namespace StaticPolymorphism {
+
+class Object {
+public:
+    template <typename T>
+    Object(T&& obj): object(std::make_shared<Model<T>>(std::forward<T>(obj))){}
+    const char* data() const {
+        return object->data();
+    }
+
+    struct Concept {
+        virtual ~Concept() {}
+        virtual const char* data() const = 0;
+    };
+
+    template< typename T >
+    struct Model : Concept {
+        Model(const T& t) : object(t) {}
+        const char* data() const override {
+            return object.data();
+        }
+    private:
+        T object;
+    };
+
+    std::shared_ptr<Concept> object;
+};
+
+class String {
+public:
+    String(const char* str) : d(str) {
+    }
+    const char* data() const {
+        return d.data();
+    }
+
+private:
+    std::string d;
+};
+
+void test()
+{
+    std::vector<Object> objectArray;
+    objectArray.push_back(String("One"));
+    objectArray.push_back(String("Two"));
+    objectArray.push_back(String("Three"));
+    objectArray.push_back(String("Four"));
+
+    // Reference counters are: 1
+    for (const auto& it : objectArray) {
+        std::cout << "Value: " << it.data() << ",\tReference counter: " << it.object.use_count() << '\n';
+    }
+
+    std::vector<Object> objectArrayCopy;
+    objectArrayCopy = objectArray;
+
+    // Reference counters should be: 2
+    // gcc and clang behave correctly
+    // For msvc the reference counters are 1 
+    for (const auto& it : objectArray) {
+        std::cout << "Value: " << it.data() << ",\tReference counter: " << it.object.use_count() << '\n';
+    }
+    for (const auto& it : objectArrayCopy) {
+        std::cout << "Value: " << it.data() << ",\tReference counter: " << it.object.use_count() << '\n';
+    }
+
+    objectArray.clear();
+
+    // Reference counters should be: 1
+    // gcc and clang behaves correctly
+    // For msvc the shared_ptr's have dangling pointers and the program crashes 
+    for (const auto& it : objectArrayCopy) {
+        std::cout << "Value: " << it.data() << ",\tReference counter: " << it.object.use_count() << '\n';
+    }
+}
+
+}
+
+int main()
+{
+    std::cout << "====================================\nDynamic:\n====================================\n";
+    DynamicPolymorphism::test();
+    std::cout << "====================================\nStatic:\n====================================\n";
+    StaticPolymorphism::test();
+}
