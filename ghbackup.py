@@ -131,7 +131,14 @@ def get_image_links(data):
 
     """get_image_links(data): finds attached image links in the given dict (issues or comments)"""
 
-    return re.findall("https\:\/\/user-images.githubusercontent\.com/.*?\.jpg",json.dumps(data))
+    links = re.findall("https\:\/\/user-images.githubusercontent\.com/.*?\.jpg",json.dumps(data))
+    links2 = []
+    for l in links:
+        if " " in l:
+            print("Wrong image link:",l)
+        else:
+            links2.append(l)
+    return links2
 
 
 def get_file_links(data):
