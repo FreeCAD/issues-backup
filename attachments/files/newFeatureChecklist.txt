@@ -1,0 +1,51 @@
+Checklist for adding a new feature to an existing workbench in C++
+
+This checklist is intended as a aid to contributors.
+
+The checklist itemizes the tasks involved in adding a wholely new feature to an
+existing module (workbench). It assumes that the existing workbench (myModule) 
+and the new feature are written in C++. It also assumes that no new dependencies
+are involved.
+
+- new myModule/App/myFeature.cpp
+- new myModule/App/myFeature.h
+- new myModule/App/myFeaturePy.xml
+- new myModule/App/myFeaturePyImp.cpp
+
+- edit myModule/App/CMakeLists.txt
+    - add new source files
+- edit myModule/App/AppmyModule.cpp
+    - add init calls for new objects
+
+- new myModule/Gui/ViewProvidermyFeature.cpp
+- new myModule/Gui/ViewProvidermyFeature.h
+- new myModule/Gui/TaskmyFeature.cpp
+- new myModule/Gui/TaskmyFeature.h
+- new myModule/Gui/TaskmyFeature.ui
+
+- edit myModule/Gui/CMakeLists.txt
+    - add new source files
+- edit myModule/Gui/AppmyModuleGui.cpp
+    - add init calls for new objects
+- edit myModule/Gui/CommandXXXX.cpp
+    - add new command
+- edit myModule/Gui/Workbench.cpp
+    - add new command to menu & toolbar
+
+- new myModule/Gui/Resources/icons/myModule_myFeature.svg
+- edit myModule/Gui/Resources/myModule.qrc
+    - add icon to list
+
+- new myModule/myModuleTest/myFeatureTest.py
+- edit myModule/myModuleTest/TestmyModuleApp.py
+    - add import for myFeatureTest
+edit myModule/CMakeLists.txt
+    - add myFeatureTest.py to list
+
+- new wiki.freecadweb.org/myModule_myFeature
+- edit wiki.freecadweb.org/myModule_Workbench
+    - add new entry in module overview
+- edit predecessor and successor wiki entries
+    - update next and previous article pointers
+
+
