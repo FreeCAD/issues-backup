@@ -157,6 +157,8 @@ def backup_files(links,target):
     if not os.path.isdir(folder):
         os.makedirs(folder)
     for link in links:
+        if ">" in link:
+            link = link.split(">")[0]
         name = link.split("/")[-1]
         path = os.path.join(folder,name)
         if not os.path.exists(path):
