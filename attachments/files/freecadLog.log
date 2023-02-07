@@ -1,0 +1,292 @@
+﻿Msg: FreeCAD 0.21.0, Libs: 0.21.0R31709 (Git)
+© Juergen Riegel, Werner Mayer, Yorik van Havre and others 2001-2023
+FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+FreeCAD wouldn't be possible without FreeCAD community.
+  #####                 ####  ###   ####  
+  #                    #      # #   #   # 
+  #     ##  #### ####  #     #   #  #   # 
+  ####  # # #  # #  #  #     #####  #   # 
+  #     #   #### ####  #    #     # #   # 
+  #     #   #    #     #    #     # #   #  ##  ##  ##
+  #     #   #### ####   ### #     # ####   ##  ##  ##
+
+Log: Time = 2023-Jan-31 19:31:56
+Log: AboutImage = freecadabout
+Log: AppDataSkipVendor = true
+Log: AppHomePath = /tmp/.mount_freecaBaFzu4/usr/
+Log: AppIcon = freecad
+Log: AppTempPath = /tmp/
+Log: BOOST_VERSION = 1_74
+Log: BinPath = /tmp/.mount_freecaBaFzu4/usr/bin/
+Log: BuildRepositoryURL = https://github.com/FreeCAD/FreeCAD master
+Log: BuildRevision = 31709 (Git)
+Log: BuildRevisionBranch = master
+Log: BuildRevisionDate = 2023/01/28 20:07:29
+Log: BuildRevisionHash = e188802ca6997d2564e7570ab648462e6a059f87
+Log: BuildVersionMajor = 0
+Log: BuildVersionMinor = 21
+Log: BuildVersionPoint = 0
+Log: CSF_IGESDefaults = /usr/share/opencascade/resources/XSTEPResource
+Log: CSF_LANGUAGE = us
+Log: CSF_MDTVTexturesDirectory = /usr/share/opencascade/resources/Textures
+Log: CSF_PluginDefaults = /usr/share/opencascade/resources/StdResource
+Log: CSF_SHMessage = /usr/share/opencascade/resources/SHMessage
+Log: CSF_STEPDefaults = /usr/share/opencascade/resources/XSTEPResource
+Log: CSF_StandardDefaults = /usr/share/opencascade/resources/StdResource
+Log: CSF_XCAFDefaults = /usr/share/opencascade/resources/StdResource
+Log: Console = 0
+Log: CopyrightInfo = © Juergen Riegel, Werner Mayer, Yorik van Havre and others 2001-2023
+FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+FreeCAD wouldn't be possible without FreeCAD community.
+  #####                 ####  ###   ####  
+  #                    #      # #   #   # 
+  #     ##  #### ####  #     #   #  #   # 
+  ####  # # #  # #  #  #     #####  #   # 
+  #     #   #### ####  #    #     # #   # 
+  #     #   #    #     #    #     # #   #  ##  ##  ##
+  #     #   #### ####   ### #     # ####   ##  ##  ##
+
+
+Log: Debug = 0
+Log: DocPath = /tmp/.mount_freecaBaFzu4/usr/doc/
+Log: EIGEN_VERSION = 3.4.0
+Log: ExeName = FreeCAD
+Log: ExeVendor = FreeCAD
+Log: ExeVersion = 0.21.0
+Log: LoggingConsole = 1
+Log: LoggingFile = 1
+Log: LoggingFileName = /tmp/freecadLog.log
+Log: MaintainerUrl = http://www.freecad.org/wiki/Main_Page
+Log: OCC_VERSION = 7.6.3
+Log: PATH = /home/joe/.local/bin:/home/joe/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/cuda/bin:/opt/cuda/nsight_compute:/opt/cuda/nsight_systems/bin:/home/joe/.dotnet/tools:/var/lib/flatpak/exports/bin:/opt/flutter/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:/home/joe/.local/bin:/home/joe/.fzf/bin
+Log: PYSIDE_VERSION = 5.15.8
+Log: PYTHONHOME = /tmp/.mount_freecaBaFzu4/usr
+Log: PYTHONPATH = 
+Log: PYTHON_VERSION = 3.10.8
+Log: PythonSearchPath = /tmp/.mount_freecaBaFzu4/usr/lib/python310.zip:/tmp/.mount_freecaBaFzu4/usr/lib/python3.10:/tmp/.mount_freecaBaFzu4/usr/lib/python3.10/lib-dynload
+Log: QT_VERSION = 5.15.6
+Log: RunMode = Gui
+Log: SMESH_VERSION = 9.8.0.2
+Log: SplashAlignment = Bottom|Left
+Log: SplashInfoColor = #c8c8c8
+Log: SplashInfoPosition = 15.210
+Log: SplashScreen = freecadsplash
+Log: SplashTextColor = #ffffff
+Log: StartWorkbench = StartWorkbench
+Log: SystemParameter = /home/joe/.config/FreeCAD/system.cfg
+Log: UserAppData = /home/joe/.local/share/FreeCAD/
+Log: UserCachePath = /home/joe/.cache/FreeCAD/Cache/
+Log: UserConfigPath = /home/joe/.config/FreeCAD/
+Log: UserHomePath = /home/joe
+Log: UserMacroPath = /home/joe/.local/share/FreeCAD/Macro/
+Log: UserParameter = /home/joe/.config/FreeCAD/user.cfg
+Log: Verbose = 
+Log: XERCESC_VERSION = 3.2.4
+Log: Create Application
+Log: Run App init script
+Log: Init: starting App::FreeCADInit.py
+Log: Init:   Searching for modules...
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/AddonManager... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Arch... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Draft... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Fem... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Idf... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Image... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Import... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Inspection... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Material... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Measure... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Mesh... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/MeshPart... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/OpenSCAD... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Part... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/PartDesign... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Path... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Plot(Init.py not found)... ignore
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Points... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Raytracing... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/ReverseEngineering... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Robot... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Show(Init.py not found)... ignore
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Sketcher... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Spreadsheet... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Start... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Surface... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/TechDraw... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Test... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Tux(Init.py not found)... ignore
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Web... done
+Log: Init:      Initializing /home/joe/.local/share/FreeCAD/Mod/sheetmetal/./... done
+Log: Init:      Initializing /home/joe/.local/share/FreeCAD/Mod/kicadStepUpMod/./... done
+Log: Init:      Initializing /home/joe/.local/share/FreeCAD/Mod/Assembly4/./... done
+Log: Init:      Initializing /home/joe/.local/share/FreeCAD/Mod/A2plus/./... done
+Log: Init:      Initializing /home/joe/.local/share/FreeCAD/Mod/fcgear/./(Init.py not found)... ignore
+Log: Init: Initializing freecad.appimage
+Log: Init: No init module found in freecad.appimage, skipping
+Log: Init: Initializing freecad.gears
+Log: Init: No init module found in freecad.gears, skipping
+Log: Using /tmp/.mount_freecaBaFzu4/usr/Mod as module path!
+Log: System path after init:
+Log:    /tmp/.mount_freecaBaFzu4/usr/bin
+Log:    /tmp/.mount_freecaBaFzu4/usr/Mod/AddonManager
+Log:    /tmp/.mount_freecaBaFzu4/usr/Mod/Arch
+Log:    /tmp/.mount_freecaBaFzu4/usr/Mod/Draft
+Log:    /tmp/.mount_freecaBaFzu4/usr/Mod/Fem
+Log:    /tmp/.mount_freecaBaFzu4/usr/Mod/Idf
+Log:    /tmp/.mount_freecaBaFzu4/usr/Mod/Image
+Log:    /tmp/.mount_freecaBaFzu4/usr/Mod/Import
+Log:    /tmp/.mount_freecaBaFzu4/usr/Mod/Inspection
+Log:    /tmp/.mount_freecaBaFzu4/usr/Mod/Material
+Log:    /tmp/.mount_freecaBaFzu4/usr/Mod/Measure
+Log:    /tmp/.mount_freecaBaFzu4/usr/Mod/Mesh
+Log:    /tmp/.mount_freecaBaFzu4/usr/Mod/MeshPart
+Log:    /tmp/.mount_freecaBaFzu4/usr/Mod/OpenSCAD
+Log:    /tmp/.mount_freecaBaFzu4/usr/Mod/Part
+Log:    /tmp/.mount_freecaBaFzu4/usr/Mod/PartDesign
+Log:    /tmp/.mount_freecaBaFzu4/usr/Mod/Path
+Log:    /tmp/.mount_freecaBaFzu4/usr/Mod/Plot
+Log:    /tmp/.mount_freecaBaFzu4/usr/Mod/Points
+Log:    /tmp/.mount_freecaBaFzu4/usr/Mod/Raytracing
+Log:    /tmp/.mount_freecaBaFzu4/usr/Mod/ReverseEngineering
+Log:    /tmp/.mount_freecaBaFzu4/usr/Mod/Robot
+Log:    /tmp/.mount_freecaBaFzu4/usr/Mod/Show
+Log:    /tmp/.mount_freecaBaFzu4/usr/Mod/Sketcher
+Log:    /tmp/.mount_freecaBaFzu4/usr/Mod/Spreadsheet
+Log:    /tmp/.mount_freecaBaFzu4/usr/Mod/Start
+Log:    /tmp/.mount_freecaBaFzu4/usr/Mod/Surface
+Log:    /tmp/.mount_freecaBaFzu4/usr/Mod/TechDraw
+Log:    /tmp/.mount_freecaBaFzu4/usr/Mod/Test
+Log:    /tmp/.mount_freecaBaFzu4/usr/Mod/Tux
+Log:    /tmp/.mount_freecaBaFzu4/usr/Mod/Web
+Log:    /home/joe/.local/share/FreeCAD/Mod/sheetmetal
+Log:    /home/joe/.local/share/FreeCAD/Mod/sheetmetal/./
+Log:    /home/joe/.local/share/FreeCAD/Mod/kicadStepUpMod
+Log:    /home/joe/.local/share/FreeCAD/Mod/kicadStepUpMod/./
+Log:    /home/joe/.local/share/FreeCAD/Mod/Assembly4
+Log:    /home/joe/.local/share/FreeCAD/Mod/Assembly4/./
+Log:    /home/joe/.local/share/FreeCAD/Mod/A2plus
+Log:    /home/joe/.local/share/FreeCAD/Mod/A2plus/./
+Log:    /home/joe/.local/share/FreeCAD/Mod/fcgear
+Log:    /home/joe/.local/share/FreeCAD/Mod/fcgear/./
+Log:    /home/joe/.local/bin
+Log:    /home/joe/.cargo/bin
+Log:    /usr/local/sbin
+Log:    /usr/local/bin
+Log:    /usr/bin
+Log:    /opt/cuda/bin
+Log:    /opt/cuda/nsight_compute
+Log:    /opt/cuda/nsight_systems/bin
+Log:    /home/joe/.dotnet/tools
+Log:    /var/lib/flatpak/exports/bin
+Log:    /opt/flutter/bin
+Log:    /usr/lib/jvm/default/bin
+Log:    /usr/bin/site_perl
+Log:    /usr/bin/vendor_perl
+Log:    /usr/bin/core_perl
+Log:    /var/lib/snapd/snap/bin
+Log:    /home/joe/.local/bin
+Log:    /home/joe/.fzf/bin
+Log: Init: App::FreeCADInit.py done
+Log: Init: Creating Gui::Application and QApplication
+Log: Local server 'FreeCAD' started
+Log: OpenGL version is: 4.6 (4.6 (Compatibility Profile) Mesa 22.3.3)
+Log: Run Gui init script
+Log: Init: Running FreeCADGuiInit.py start script...
+Log: Init:   Searching modules...
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/AddonManager... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Arch... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Draft... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Fem... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Idf(InitGui.py not found)... ignore
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Image... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Import... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Inspection... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Material... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Measure(InitGui.py not found)... ignore
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Mesh... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/MeshPart... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/OpenSCAD... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Part... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/PartDesign... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Path... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Plot(InitGui.py not found)... ignore
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Points... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Raytracing... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/ReverseEngineering... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Robot... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Show(InitGui.py not found)... ignore
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Sketcher... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Spreadsheet... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Start... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Surface... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/TechDraw... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Test... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Tux... done
+Log: Init:      Initializing /tmp/.mount_freecaBaFzu4/usr/Mod/Web... done
+Log: Init:      Initializing /home/joe/.local/share/FreeCAD/Mod/sheetmetal/./... done
+Log: Module: Part
+Log: Loading Part module... done
+Log: Loading Sketcher module... done
+Log: Loading Path module... done
+Log: Loading PathStock... done
+Log: Loading Path.Tool.Gui.Controller... done
+Log: Init:      Initializing /home/joe/.local/share/FreeCAD/Mod/kicadStepUpMod/./... done
+Log: Init:      Initializing /home/joe/.local/share/FreeCAD/Mod/Assembly4/./... done
+Log: Init:      Packaged workbench  specified icon in class Assembly4WorkbenchLog:  ... replacing with icon from package.xml data.
+Log: Init:      Initializing /home/joe/.local/share/FreeCAD/Mod/A2plus/./... done
+Log: Init:      Initializing /home/joe/.local/share/FreeCAD/Mod/fcgear/./(InitGui.py not found)... ignore
+Log: All modules with GUIs using InitGui.py are now initialized
+Log: Init: Initializing freecad.appimage
+Log: Init: Initializing freecad.appimage... done
+Log: Init: Initializing freecad.gears
+Log: Init: Initializing freecad.gears... done
+Log: All modules with GUIs initialized using pkgutil are now initialized
+Log: Init: Loading FreeCAD GUI
+Log: Init: Running FreeCADGuiInit.py start script... done
+Log: Init: Activating default workbench StartWorkbench
+Log: Loading GUI of Web module... done
+Log: Loading GUI of Start module... done
+Log: Loading Start module... done
+Wrn: Recent macros : keyboard shortcut 1 disabled because conflicting with Std_ViewFront
+Log: Init: Showing main window
+Log: Main window restored
+Log: Show main window
+Log: Toolbars restored
+Log: Couldn't connect to spacenav daemon. Please ignore if you don't have a spacemouse.
+Log: Init: Entering event loop
+Log: Init: Executing event loop...
+Log: Init: Processing command line files
+Log: Loading PartDesign module... done
+Log: Loading GUI of Part module... done
+Log: Loading GUI of Sketcher module... done
+Log: Loading GUI of PartDesign module... done
+Log: Sketcher::setUpSketch()-T:0.015
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::setUpSketch()-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::setUpSketch()-T:0.005
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::setUpSketch()-T:0
+Log: Sketcher::setUpSketch()-T:0.001
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::setUpSketch()-T:0.001
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::setUpSketch()-T:0
+Log: Sketcher::setUpSketch()-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::setUpSketch()-T:0
+Log: Sketcher::setUpSketch()-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::setUpSketch()-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::setUpSketch()-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Hide main window
+Log: Finish: Event loop left
+Log: Destruct Gui::Application
+Log: Couldn't disconnect from spacenav daemon
+Log: FreeCAD terminating...
+Log: Saving system parameter...
+Log: Saving system parameter...done
+Log: Saving user parameter...
+Log: Saving user parameter...done
