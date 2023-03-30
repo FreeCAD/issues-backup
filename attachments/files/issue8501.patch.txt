@@ -1,0 +1,41 @@
+diff --git a/src/Gui/ExpressionCompleter.cpp b/src/Gui/ExpressionCompleter.cpp
+index 4edcdef8dd..f374070e49 100644
+--- a/src/Gui/ExpressionCompleter.cpp
++++ b/src/Gui/ExpressionCompleter.cpp
+@@ -779,21 +779,25 @@ QStringList ExpressionCompleter::splitPath(const QString& input) const
+                     lastElem = "";
+                 }
+                 // else... we don't reset lastElem if it's a '.' or '#' to allow chaining completions
+-                char last = path[path.size() - 1];
+-                if (last != '#' && last != '.' && path.find('#') != std::string::npos) {
+-                    path += "._self";
+-                    ++retry;
+-                    continue;
++                if (!path.empty()) {
++                    char last = path[path.size() - 1];
++                    if (last != '#' && last != '.' && path.find('#') != std::string::npos) {
++                        path += "._self";
++                        ++retry;
++                        continue;
++                    }
+                 }
+             }
+             else if (retry == 2) {
+                 path.resize(path.size() - 6);
+-                char last = path[path.size() - 1];
+-                if (last != '.' && last != '<' && path.find("#<<") != std::string::npos) {
+-                    path += ">>._self";
+-                    ++retry;
+-                    trim = ">>";
+-                    continue;
++                if (!path.empty()) {
++                    char last = path[path.size() - 1];
++                    if (last != '.' && last != '<' && path.find("#<<") != std::string::npos) {
++                        path += ">>._self";
++                        ++retry;
++                        trim = ">>";
++                        continue;
++                    }
+                 }
+             }
+             return QStringList() << input;

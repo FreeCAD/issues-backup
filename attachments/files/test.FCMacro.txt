@@ -1,0 +1,195 @@
+# NOTE : uses  marz guitar designer workbench to attempt to thread
+# it won't use more than 1 CPU aeither way, but, it is what I would 
+# love to fix in FreeCAD!
+#
+# Thanks to Frank Martinez for trying to help figure this one out,
+# even if it was a huge fail, but that's exactly what I expected.
+#
+
+from freecad.marz.extension.threading import Task
+import FreeCAD
+import Part
+from itertools import count, takewhile
+import math
+import collections
+import time
+import datetime
+
+# warning, don't change, or you just might run out of memory
+stepsize=25
+
+# check if point is on the line or face if True, we all know this one, right?
+def isInside(p, face, checkface=True):
+        return face.isInside(p, 0, checkface)
+
+# this one takes a list of points, returns a list of T/F
+def areInside(points, face, checkface=True):
+        tasks = [Task.execute(isInside, p, face, checkface) for p in points]
+        return Task.joinAll(tasks)
+
+# takes line, performs 'and' operation on the results, returns a list of T/F
+def isLineInside(line, face,  checkface=True):
+        a = FreeCAD.Base.Vector(line.StartPoint)
+        b = FreeCAD.Base.Vector(line.EndPoint)
+        return isInside(a, face, checkface) and isInside(b, face, checkface)        
+
+# And finally, this one takes a list of lines.
+def areLinesInside(lines, face, checkface=True):
+        tasks = [Task.execute(isLineInside, p, face, checkface) for p in lines]
+        return Task.joinAll(tasks)
+
+
+
+# some math stuff... Prevents stuff from getting messed up
+def round_nearest(x, a):
+        max_frac_digits = 8
+        for i in range(max_frac_digits):
+                if round(a, -int(math.floor(math.log10(a))) + i) == a:
+                        frac_digits = -int(math.floor(math.log10(a))) + i
+                        break
+        return round(round(x / a) * a, frac_digits)
+
+# better than range
+def numrange(start, stop, step):
+        stp = abs(step)
+        l=list()
+        j=list()
+        if start < stop:
+            l= list(takewhile(lambda x: x < stop, count(start, stp)))
+        else:
+            l = list(takewhile((lambda x: x < start, count(stop, stp))))
+            l.reverse()
+        for i in l:
+                j.append(round_nearest(i, stp))
+        return j
+
+
+# deduplicate wire points
+def dedup(lly):
+        l=collections.deque(lly)
+        lop=len(l)+1
+        while lop > 0 and len(l) > 1:
+                chg=False
+                if l[0].x == l[1].x and l[0].y == l[1].y:
+                        junk=l.popleft()
+                        chg=True
+                else:
+                        l.rotate(-1)
+                lop-=1
+                if chg:
+                        lop=len(l)+1
+        lly=list(l)
+        return lly
+
+
+# here's a simple polygon generator :-) Might look like a circle, but it isn't
+# ...well, ok, it is made from a circle ;-)
+def maketestObject(r, x, y):
+        if r == 0:
+                return None
+        c = None
+        x1= x
+        y1 = y
+        cache = None
+        cr=Part.makeCircle(r, FreeCAD.Base.Vector(0, 0, 0))
+        v=cr.Curve
+        # v contains the curve to locate the crossing points
+        lly=list()
+        cl=list()
+        ll= 1 if len(numrange(0-r, r, stepsize)) & 1 == 0 else 0
+        for i in numrange(0-r, r+(stepsize*ll), stepsize):
+                ly=Part.Line(FreeCAD.Base.Vector(i, 1+r, 0),FreeCAD.Base.Vector(i, r, 0)) 
+                ts=ly.intersect(v)
+                if len(ts) > 1:
+                        tor=FreeCAD.Base.Vector(ts[1].X,ts[1].Y,0)
+                        lly.append(tor)
+                elif len(ts) == 1:
+                        tor=FreeCAD.Base.Vector(ts[0].X,ts[0].Y,0)
+                        lly.append(tor)
+        # position all the points that match X positions, from the bottom to the top
+        zl=list()
+        for p in lly:
+                p.x=round_nearest(p.x, stepsize)
+                p.y=round_nearest(p.y, stepsize)
+                zl.append(p)
+        # we have all the points in the cache for the positive half
+        # copy them to a new list for de-dup
+        lly=list()
+        for p in zl:
+                lly.append(p)
+        zl.reverse()
+        # invert Y
+        for p in zl:
+                q=FreeCAD.Base.Vector(p.x,0-p.y,0)
+                lly.append(q)
+
+        # dedup wire points
+        lly=dedup(lly)
+        for i in lly:
+                cl.append(i)
+        ###
+        if len(cl) > 2:
+                cl.append(cl[0])
+                # make polygon :-)
+                p=Part.makePolygon(cl)
+                cache=[r,p]
+        if cache is None:
+                raise Exception("Circle not possible. Radius too small?")
+
+        c=cache[1].copy() # COPY
+        pos_1 = FreeCAD.Base.Vector(x1, y1, 0.)
+        center = FreeCAD.Base.Vector(0., 0., 0.)
+        rot = FreeCAD.Rotation(FreeCAD.Vector(0., 0., 1), 0)
+        c.Placement = FreeCAD.Base.Placement(pos_1, rot, center)
+        return c
+
+
+
+doc=FreeCAD.newDocument()
+Gui.updateGui()
+# Test experiment, don't let the large number scare you. 
+# I'm using it actually as micrometers, so I don't have 
+# to deal with the inaccuracies of binary floats, or the 
+# additional computational overhead.
+print('Making the polygon...')
+Gui.updateGui()
+p=maketestObject(5000, 0, 0)
+Part.show(p)
+Gui.updateGui()
+Gui.SendMsgToActiveView("ViewFit")
+Gui.updateGui()
+print("Looks nice, doesn't it?")
+Gui.updateGui()
+
+w = Part.Wire(p.Edges)
+face = Part.Face(w)
+
+# make a simple list that is a grid of points
+points = [App.Vector(x-50,y-50,0) for x in range(101) for y in range(101)]
+
+print("ok, we have the list done, let's start finding all the points inside")
+print(len(points),"to find. This is going to take a while, and shouldn't...")
+
+Gui.updateGui()
+Gui.updateGui()
+Gui.updateGui()
+
+start = time.time()
+have=areInside(points, face)
+end=time.time()
+totaltime=end-start
+
+print('Well, it only took', datetime.timedelta(seconds = totaltime))
+print('Showing just a few points, you will have to zoom in to see them.') 
+Gui.updateGui()
+
+pl=list()
+for i in range(len(have)):
+        if have[i]:
+                pl.append(Part.Vertex(points[i]))
+                if len(pl) == 10:
+                        break
+for i in pl:
+        Part.show(i,'Get_The_Point_Yet')
+print("All done.")
+Gui.updateGui()
