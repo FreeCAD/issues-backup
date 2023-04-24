@@ -1,0 +1,729 @@
+connect failed: No such file or directory
+FreeCAD 0.21.0, Libs: 0.21.0R14555 (Git shallow)
+© Juergen Riegel, Werner Mayer, Yorik van Havre and others 2001-2023
+FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+FreeCAD wouldn't be possible without FreeCAD community.
+  #####                 ####  ###   ####  
+  #                    #      # #   #   # 
+  #     ##  #### ####  #     #   #  #   # 
+  ####  # # #  # #  #  #     #####  #   # 
+  #     #   #### ####  #    #     # #   # 
+  #     #   #    #     #    #     # #   #  ##  ##  ##
+  #     #   #### ####   ### #     # ####   ##  ##  ##
+
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+context mismatch in svga_surface_destroy
+context mismatch in svga_surface_destroy
+----------------
+GuiCommand: ShapeString
+Pick ShapeString location point
+context mismatch in svga_surface_destroy
+context mismatch in svga_surface_destroy
+
+=================================================================
+==16961==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 4226640 byte(s) in 2588 object(s) allocated from:
+    #0 0x7f71ffa14302 in __interceptor_malloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:75
+    #1 0x7f71fcf37f07  (/lib/x86_64-linux-gnu/libpython3.10.so.1.0+0x137f07)
+
+Direct leak of 14448 byte(s) in 602 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fd7952f9 in PySide::Signal::registerSignals(SbkObjectType*, QMetaObject const*) (/lib/x86_64-linux-gnu/libpyside2.cpython-310-x86_64-linux-gnu.so.5.15+0x232f9)
+
+Direct leak of 7904 byte(s) in 247 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fcd3b5e3  (/lib/x86_64-linux-gnu/libshiboken2.cpython-310-x86_64-linux-gnu.so.5.15+0xe5e3)
+
+Direct leak of 4608 byte(s) in 96 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fd790ecb  (/lib/x86_64-linux-gnu/libpyside2.cpython-310-x86_64-linux-gnu.so.5.15+0x1eecb)
+
+Direct leak of 3840 byte(s) in 6 object(s) allocated from:
+    #0 0x7f71ffa12293 in __interceptor_realloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:98
+    #1 0x7f71f5f54ac0  (/lib/x86_64-linux-gnu/libfontconfig.so.1+0x1fac0)
+
+Direct leak of 2257 byte(s) in 3 object(s) allocated from:
+    #0 0x7f71ffa12293 in __interceptor_realloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:98
+    #1 0x7f71fcee4239 in _PyBytes_Resize (/lib/x86_64-linux-gnu/libpython3.10.so.1.0+0xe4239)
+
+Direct leak of 2016 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71bee420f1 in Part::initModule() /home/xtemp09/Downloads/test/FreeCAD/src/Mod/Part/App/AppPartPy.cpp:2335
+
+Direct leak of 1643 byte(s) in 149 object(s) allocated from:
+    #0 0x7f71ffa14302 in __interceptor_malloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:75
+    #1 0x7f71e1dcec90  (/usr/lib/python3/dist-packages/pivy/_coin.cpython-310-x86_64-linux-gnu.so+0x3cec90)
+
+Direct leak of 1193 byte(s) in 2 object(s) allocated from:
+    #0 0x7f71ffa12293 in __interceptor_realloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:98
+    #1 0x7f71fcf5a4aa  (/lib/x86_64-linux-gnu/libpython3.10.so.1.0+0x15a4aa)
+
+Direct leak of 448 byte(s) in 56 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fd79411b  (/lib/x86_64-linux-gnu/libpyside2.cpython-310-x86_64-linux-gnu.so.5.15+0x2211b)
+
+Direct leak of 264 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71d410a3c4  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x270a3c4)
+    #2 0x7f71d410a5f4  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x270a5f4)
+    #3 0x7f71d66bfe88  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4cbfe88)
+    #4 0x7f71d66bfad7  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4cbfad7)
+    #5 0x7f71d472cdaa  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d2cdaa)
+    #6 0x7f71d47407f3  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d407f3)
+    #7 0x7f71d4740bff  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d40bff)
+    #8 0x7f71d23d7e9a  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x9d7e9a)
+    #9 0x7f71fb0e733e in QObject::event(QEvent*) (/lib/x86_64-linux-gnu/libQt5Core.so.5+0x2e733e)
+    #10 0x7f71fbd6c712 in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt5Widgets.so.5+0x16c712)
+
+Direct leak of 256 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa14302 in __interceptor_malloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:75
+    #1 0x7f71f5f54a21  (/lib/x86_64-linux-gnu/libfontconfig.so.1+0x1fa21)
+
+Direct leak of 248 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fe106b41 in App::Application::setupPythonTypes() /home/xtemp09/Downloads/test/FreeCAD/src/App/Application.cpp:338
+
+Direct leak of 224 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71cf900abf in StartGui::initModule() /home/xtemp09/Downloads/test/FreeCAD/src/Mod/Start/Gui/AppStartGui.cpp:62
+
+Direct leak of 224 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71da40b7a1 in WebGui::initModule() /home/xtemp09/Downloads/test/FreeCAD/src/Mod/Web/Gui/AppWebGui.cpp:151
+
+Direct leak of 224 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71e5a328ea in Start::initModule() /home/xtemp09/Downloads/test/FreeCAD/src/Mod/Start/App/AppStart.cpp:46
+
+Direct leak of 224 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71ba0fe511 in SketcherGui::initModule() /home/xtemp09/Downloads/test/FreeCAD/src/Mod/Sketcher/Gui/AppSketcherGui.cpp:76
+
+Direct leak of 224 byte(s) in 14 object(s) allocated from:
+    #0 0x7f71ffa14302 in __interceptor_malloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:75
+    #1 0x7f71ee3ffdbf  (/usr/lib/x86_64-linux-gnu/dri/vmwgfx_dri.so+0x5ffdbf)
+
+Direct leak of 224 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fed33abe in Gui::PythonDebugModule::init_module() /home/xtemp09/Downloads/test/FreeCAD/src/Gui/PythonDebugger.cpp:106
+
+Direct leak of 224 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71b9dc5021 in Sketcher::initModule() /home/xtemp09/Downloads/test/FreeCAD/src/Mod/Sketcher/App/AppSketcherPy.cpp:112
+
+Direct leak of 224 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fe96e9e3 in Gui::Application::Application(bool) /home/xtemp09/Downloads/test/FreeCAD/src/Gui/Application.cpp:447
+
+Direct leak of 128 byte(s) in 2 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fcd3f789 in Shiboken::Conversions::createConverter(_typeobject*, _object* (*)(void const*)) (/lib/x86_64-linux-gnu/libshiboken2.cpython-310-x86_64-linux-gnu.so.5.15+0x12789)
+
+Direct leak of 96 byte(s) in 2 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fd791365 in PySide::Signal::newObjectFromMethod(_object*, QList<QMetaMethod> const&) (/lib/x86_64-linux-gnu/libpyside2.cpython-310-x86_64-linux-gnu.so.5.15+0x1f365)
+
+Direct leak of 80 byte(s) in 2 object(s) allocated from:
+    #0 0x7f71ffa14302 in __interceptor_malloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:75
+    #1 0x7f71fd029541  (/lib/x86_64-linux-gnu/libpython3.10.so.1.0+0x229541)
+
+Direct leak of 80 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71d5604a7e  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x3c04a7e)
+    #2 0x7f71d5605c81  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x3c05c81)
+    #3 0x7f71d64faf0f  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4afaf0f)
+    #4 0x7f71d64fb1b2  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4afb1b2)
+    #5 0x7f71d64fd0d4  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4afd0d4)
+    #6 0x7f71d4750744  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d50744)
+    #7 0x7f71d476db8e  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d6db8e)
+    #8 0x7f71fa294b42 in start_thread nptl/pthread_create.c:442
+
+Direct leak of 72 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71d66995bb  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4c995bb)
+    #2 0x7f71d66a619f  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4ca619f)
+    #3 0x7f71d66a67d9  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4ca67d9)
+    #4 0x7f71d68ff21d  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4eff21d)
+    #5 0x7f71d66a4696  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4ca4696)
+    #6 0x7f71d66a7588  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4ca7588)
+    #7 0x7f71d247db7e  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0xa7db7e)
+    #8 0x7f71d247f3e3  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0xa7f3e3)
+    #9 0x7f71e23edb56  (/lib/x86_64-linux-gnu/libQt5WebEngineWidgets.so.5+0x30b56)
+
+Direct leak of 64 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71da4289e7 in WebGui::BrowserView::getPyObject() /home/xtemp09/Downloads/test/FreeCAD/src/Mod/Web/Gui/BrowserView.cpp:914
+
+Direct leak of 48 byte(s) in 4 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71e1c3b46a  (/usr/lib/python3/dist-packages/pivy/_coin.cpython-310-x86_64-linux-gnu.so+0x23b46a)
+
+Direct leak of 40 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fef80ec9 in Gui::MainWindowPy::extension_object_new(_typeobject*, _object*, _object*) /home/xtemp09/Downloads/test/FreeCAD/src/Gui/MainWindowPy.cpp:63
+
+Direct leak of 32 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fc7bdec4 in SoSFTime::createInstance() (/lib/x86_64-linux-gnu/libCoin.so.80c+0x3bdec4)
+    #2 0x7ffdc07b40af  ([stack]+0x250af)
+
+Direct leak of 32 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa14302 in __interceptor_malloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:75
+    #1 0x7f71fd022bd9 in PyThread_allocate_lock (/lib/x86_64-linux-gnu/libpython3.10.so.1.0+0x222bd9)
+
+Direct leak of 8 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fd78aa49 in PySide::SignalManager::registerMetaMethodGetIndex(QObject*, char const*, QMetaMethod::MethodType) (/lib/x86_64-linux-gnu/libpyside2.cpython-310-x86_64-linux-gnu.so.5.15+0x18a49)
+
+Indirect leak of 230265 byte(s) in 1757 object(s) allocated from:
+    #0 0x7f71ffa14302 in __interceptor_malloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:75
+    #1 0x7f71faed84c0 in QArrayData::allocate(unsigned long, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (/lib/x86_64-linux-gnu/libQt5Core.so.5+0xd84c0)
+
+Indirect leak of 149814 byte(s) in 121 object(s) allocated from:
+    #0 0x7f71ffa14302 in __interceptor_malloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:75
+    #1 0x7f71fcf37f07  (/lib/x86_64-linux-gnu/libpython3.10.so.1.0+0x137f07)
+
+Indirect leak of 8268 byte(s) in 7 object(s) allocated from:
+    #0 0x7f71ffa12293 in __interceptor_realloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:98
+    #1 0x7f71fcf5a4aa  (/lib/x86_64-linux-gnu/libpython3.10.so.1.0+0x15a4aa)
+
+Indirect leak of 4680 byte(s) in 9 object(s) allocated from:
+    #0 0x7f71ffa13e47 in __interceptor_calloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:90
+    #1 0x7f71edeb2b27  (/usr/lib/x86_64-linux-gnu/dri/vmwgfx_dri.so+0xb2b27)
+
+Indirect leak of 4448 byte(s) in 139 object(s) allocated from:
+    #0 0x7f71ffa14302 in __interceptor_malloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:75
+    #1 0x7f71f5f4187f  (/lib/x86_64-linux-gnu/libfontconfig.so.1+0xc87f)
+
+Indirect leak of 3744 byte(s) in 9 object(s) allocated from:
+    #0 0x7f71ffa13e47 in __interceptor_calloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:90
+    #1 0x7f71ef9a3958  (<unknown module>)
+
+Indirect leak of 3520 byte(s) in 11 object(s) allocated from:
+    #0 0x7f71ffa13e47 in __interceptor_calloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:90
+    #1 0x7f71ee79bfa8  (/usr/lib/x86_64-linux-gnu/dri/vmwgfx_dri.so+0x99bfa8)
+
+Indirect leak of 3456 byte(s) in 54 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fcd41999 in Shiboken::Object::setParent(_object*, _object*) (/lib/x86_64-linux-gnu/libshiboken2.cpython-310-x86_64-linux-gnu.so.5.15+0x14999)
+
+Indirect leak of 3168 byte(s) in 99 object(s) allocated from:
+    #0 0x7f71ffa13e47 in __interceptor_calloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:90
+    #1 0x7f71f5f5751e  (/lib/x86_64-linux-gnu/libfontconfig.so.1+0x2251e)
+
+Indirect leak of 2672 byte(s) in 167 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71e0b1e141  (/usr/lib/python3/dist-packages/PySide2/QtGui.cpython-310-x86_64-linux-gnu.so+0x11e141)
+
+Indirect leak of 2272 byte(s) in 71 object(s) allocated from:
+    #0 0x7f71ffa13e47 in __interceptor_calloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:90
+    #1 0x7f71f5f5465a  (/lib/x86_64-linux-gnu/libfontconfig.so.1+0x1f65a)
+
+Indirect leak of 2256 byte(s) in 3 object(s) allocated from:
+    #0 0x7f71ffa14302 in __interceptor_malloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:75
+    #1 0x7f71fcf380aa  (/lib/x86_64-linux-gnu/libpython3.10.so.1.0+0x1380aa)
+
+Indirect leak of 2250 byte(s) in 188 object(s) allocated from:
+    #0 0x7f71ffa14302 in __interceptor_malloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:75
+    #1 0x7f71fa2a860e in __GI___strdup string/strdup.c:42
+
+Indirect leak of 1856 byte(s) in 22 object(s) allocated from:
+    #0 0x7f71ffa12293 in __interceptor_realloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:98
+    #1 0x7f71faed855f in QArrayData::reallocateUnaligned(QArrayData*, unsigned long, unsigned long, QFlags<QArrayData::AllocationOption>) (/lib/x86_64-linux-gnu/libQt5Core.so.5+0xd855f)
+
+Indirect leak of 1728 byte(s) in 216 object(s) allocated from:
+    #0 0x7f71ffa12be2 in operator new[](unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:250
+    #1 0x7f71fcd3b609  (/lib/x86_64-linux-gnu/libshiboken2.cpython-310-x86_64-linux-gnu.so.5.15+0xe609)
+
+Indirect leak of 1320 byte(s) in 11 object(s) allocated from:
+    #0 0x7f71ffa13e47 in __interceptor_calloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:90
+    #1 0x7f71ee7cd7f1  (/usr/lib/x86_64-linux-gnu/dri/vmwgfx_dri.so+0x9cd7f1)
+
+Indirect leak of 1200 byte(s) in 10 object(s) allocated from:
+    #0 0x7f71ffa13e47 in __interceptor_calloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:90
+    #1 0x7f71ef9af8b8  (<unknown module>)
+
+Indirect leak of 896 byte(s) in 14 object(s) allocated from:
+    #0 0x7f71ffa13e47 in __interceptor_calloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:90
+    #1 0x7f71ee3ffdd6  (/usr/lib/x86_64-linux-gnu/dri/vmwgfx_dri.so+0x5ffdd6)
+
+Indirect leak of 880 byte(s) in 10 object(s) allocated from:
+    #0 0x7f71ffa13e47 in __interceptor_calloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:90
+    #1 0x7f71edead724  (/usr/lib/x86_64-linux-gnu/dri/vmwgfx_dri.so+0xad724)
+
+Indirect leak of 792 byte(s) in 9 object(s) allocated from:
+    #0 0x7f71ffa13e47 in __interceptor_calloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:90
+    #1 0x7f71f92c7b0e in xcb_register_for_special_xge (/lib/x86_64-linux-gnu/libxcb.so.1+0x1ab0e)
+
+Indirect leak of 720 byte(s) in 18 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fcd3bf31  (/lib/x86_64-linux-gnu/libshiboken2.cpython-310-x86_64-linux-gnu.so.5.15+0xef31)
+
+Indirect leak of 616 byte(s) in 11 object(s) allocated from:
+    #0 0x7f71ffa13e47 in __interceptor_calloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:90
+    #1 0x7f71ee7cf36b  (/usr/lib/x86_64-linux-gnu/dri/vmwgfx_dri.so+0x9cf36b)
+
+Indirect leak of 544 byte(s) in 17 object(s) allocated from:
+    #0 0x7f71ffa12be2 in operator new[](unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:250
+    #1 0x7f71fd8ce942 in Py::MethodTable::table() /home/xtemp09/Downloads/test/FreeCAD/src/CXX/Python3/cxx_extensions.cxx:138
+
+Indirect leak of 544 byte(s) in 3 object(s) allocated from:
+    #0 0x7f71ffa13e47 in __interceptor_calloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:90
+    #1 0x7f71fb0deb85 in QMetaObjectBuilder::toMetaObject() const (/lib/x86_64-linux-gnu/libQt5Core.so.5+0x2deb85)
+
+Indirect leak of 544 byte(s) in 17 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fd8dbd7e in void std::vector<PyMethodDef, std::allocator<PyMethodDef> >::_M_realloc_insert<PyMethodDef>(__gnu_cxx::__normal_iterator<PyMethodDef*, std::vector<PyMethodDef, std::allocator<PyMethodDef> > >, PyMethodDef&&) (/home/xtemp09/Downloads/test/FreeCAD/build2/lib/libFreeCADBase.so+0xdbd7e)
+
+Indirect leak of 504 byte(s) in 9 object(s) allocated from:
+    #0 0x7f71ffa14302 in __interceptor_malloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:75
+    #1 0x7f71edeb5f20  (/usr/lib/x86_64-linux-gnu/dri/vmwgfx_dri.so+0xb5f20)
+
+Indirect leak of 456 byte(s) in 3 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fb0d6a47 in QMetaObjectBuilder::QMetaObjectBuilder() (/lib/x86_64-linux-gnu/libQt5Core.so.5+0x2d6a47)
+
+Indirect leak of 440 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71d4870c72  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2e70c72)
+    #2 0x7f71d480ecee  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2e0ecee)
+    #3 0x7f71d66a3ad4  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4ca3ad4)
+    #4 0x7f71d66a752e  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4ca752e)
+    #5 0x7f71d247db7e  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0xa7db7e)
+    #6 0x7f71d247f3e3  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0xa7f3e3)
+    #7 0x7f71e23edb56  (/lib/x86_64-linux-gnu/libQt5WebEngineWidgets.so.5+0x30b56)
+
+Indirect leak of 400 byte(s) in 10 object(s) allocated from:
+    #0 0x7f71ffa13e47 in __interceptor_calloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:90
+    #1 0x7f71ee7cae7c  (/usr/lib/x86_64-linux-gnu/dri/vmwgfx_dri.so+0x9cae7c)
+
+Indirect leak of 368 byte(s) in 2 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fd957e48 in ParameterGrp::_GetGroup(char const*) /home/xtemp09/Downloads/test/FreeCAD/src/Base/Parameter.cpp:413
+
+Indirect leak of 360 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa14302 in __interceptor_malloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:75
+    #1 0x7f71d09f2b44  (/lib/x86_64-linux-gnu/libudev.so.1+0x1cb44)
+    #2 0xb85862bfb3d737ff  (<unknown module>)
+
+Indirect leak of 320 byte(s) in 20 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71e1407a01  (/usr/lib/python3/dist-packages/PySide2/QtCore.cpython-310-x86_64-linux-gnu.so+0x207a01)
+
+Indirect leak of 288 byte(s) in 9 object(s) allocated from:
+    #0 0x7f71ffa13e47 in __interceptor_calloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:90
+    #1 0x7f71f5f5d10e in FcFontRenderPrepare (/lib/x86_64-linux-gnu/libfontconfig.so.1+0x2810e)
+
+Indirect leak of 256 byte(s) in 8 object(s) allocated from:
+    #0 0x7f71ffa13e47 in __interceptor_calloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:90
+    #1 0x7f71f5f5d0ad in FcFontRenderPrepare (/lib/x86_64-linux-gnu/libfontconfig.so.1+0x280ad)
+
+Indirect leak of 256 byte(s) in 4 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71d4879f67  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2e79f67)
+    #2 0x7f71d487aa79  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2e7aa79)
+    #3 0x7f71d487ac43  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2e7ac43)
+    #4 0x7f71d487afb6  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2e7afb6)
+    #5 0x7f71d4870894  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2e70894)
+    #6 0x7f71d472cdaa  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d2cdaa)
+    #7 0x7f71d4747faf  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d47faf)
+    #8 0x7f71d476da51  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d6da51)
+    #9 0x7f71d47476a3  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d476a3)
+    #10 0x7f71d47afdac  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2dafdac)
+    #11 0x7f71d47b04c0  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2db04c0)
+    #12 0x7f71d476db8e  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d6db8e)
+    #13 0x7f71fa294b42 in start_thread nptl/pthread_create.c:442
+
+Indirect leak of 192 byte(s) in 2 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fcd3d0f2 in Shiboken::ObjectType::initPrivateData(SbkObjectType*) (/lib/x86_64-linux-gnu/libshiboken2.cpython-310-x86_64-linux-gnu.so.5.15+0x100f2)
+
+Indirect leak of 168 byte(s) in 3 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fd9717c1 in GetPyObject(Base::Reference<ParameterGrp> const&) /home/xtemp09/Downloads/test/FreeCAD/src/Base/ParameterPy.cpp:832
+    #2 0xb85862bfb3d737ff  (<unknown module>)
+
+Indirect leak of 160 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71d2d60c2f  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x1360c2f)
+    #2 0x7f71d2d60f3e  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x1360f3e)
+    #3 0x7f71d2d5ee89  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x135ee89)
+    #4 0x7f71d472cdaa  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d2cdaa)
+    #5 0x7f71d4747ef7  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d47ef7)
+    #6 0x7f71d476da51  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d6da51)
+    #7 0x7f71d47476a3  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d476a3)
+    #8 0x7f71d47afdac  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2dafdac)
+    #9 0x7f71d47b04c0  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2db04c0)
+    #10 0x7f71d476db8e  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d6db8e)
+    #11 0x7f71fa294b42 in start_thread nptl/pthread_create.c:442
+
+Indirect leak of 144 byte(s) in 3 object(s) allocated from:
+    #0 0x7f71ffa14302 in __interceptor_malloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:75
+    #1 0x7f71f5f4bb44 in FcLangSetCopy (/lib/x86_64-linux-gnu/libfontconfig.so.1+0x16b44)
+
+Indirect leak of 144 byte(s) in 3 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fd78a774  (/lib/x86_64-linux-gnu/libpyside2.cpython-310-x86_64-linux-gnu.so.5.15+0x18774)
+
+Indirect leak of 128 byte(s) in 2 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fcd41919 in Shiboken::Object::setParent(_object*, _object*) (/lib/x86_64-linux-gnu/libshiboken2.cpython-310-x86_64-linux-gnu.so.5.15+0x14919)
+
+Indirect leak of 104 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71d4879726  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2e79726)
+    #2 0x7f71d487a958  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2e7a958)
+    #3 0x7f71d487ac43  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2e7ac43)
+    #4 0x7f71d487b01e  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2e7b01e)
+    #5 0x7f71d4870894  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2e70894)
+    #6 0x7f71d472cdaa  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d2cdaa)
+    #7 0x7f71d4747faf  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d47faf)
+    #8 0x7f71d476da51  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d6da51)
+    #9 0x7f71d47476a3  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d476a3)
+    #10 0x7f71d47afdac  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2dafdac)
+    #11 0x7f71d47b04c0  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2db04c0)
+    #12 0x7f71d476db8e  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d6db8e)
+    #13 0x7f71fa294b42 in start_thread nptl/pthread_create.c:442
+
+Indirect leak of 96 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa13e47 in __interceptor_calloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:90
+    #1 0x7f71ee930a2e  (/usr/lib/x86_64-linux-gnu/dri/vmwgfx_dri.so+0xb30a2e)
+
+Indirect leak of 96 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa13e47 in __interceptor_calloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:90
+    #1 0x7f71ee7cedd5  (/usr/lib/x86_64-linux-gnu/dri/vmwgfx_dri.so+0x9cedd5)
+
+Indirect leak of 88 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fd97e405 in Base::PlacementPy::PyMake(_typeobject*, _object*, _object*) /home/xtemp09/Downloads/test/FreeCAD/src/Base/PlacementPyImp.cpp:57
+
+Indirect leak of 64 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fd970d17 in Base::ParameterGrpPy::attach(Py::Tuple const&) /home/xtemp09/Downloads/test/FreeCAD/src/Base/ParameterPy.cpp:659
+
+Indirect leak of 64 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71bec3c3a5 in App::FeaturePythonT<Part::Part2DObject>::getPyObject() /home/xtemp09/Downloads/test/FreeCAD/src/Mod/Part/App/Part2DObject.cpp:295
+
+Indirect leak of 64 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71d2d60f19  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x1360f19)
+    #2 0x7f71d2d5ee89  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x135ee89)
+    #3 0x7f71d472cdaa  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d2cdaa)
+    #4 0x7f71d4747ef7  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d47ef7)
+    #5 0x7f71d476da51  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d6da51)
+    #6 0x7f71d47476a3  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d476a3)
+    #7 0x7f71d47afdac  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2dafdac)
+    #8 0x7f71d47b04c0  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2db04c0)
+    #9 0x7f71d476db8e  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d6db8e)
+    #10 0x7f71fa294b42 in start_thread nptl/pthread_create.c:442
+
+Indirect leak of 56 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fd97e41a in Base::PlacementPy::PyMake(_typeobject*, _object*, _object*) /home/xtemp09/Downloads/test/FreeCAD/src/Base/PlacementPyImp.cpp:57
+
+Indirect leak of 56 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71d487b1bf  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2e7b1bf)
+    #2 0x7f71d4870894  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2e70894)
+    #3 0x7f71d472cdaa  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d2cdaa)
+    #4 0x7f71d4747faf  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d47faf)
+    #5 0x7f71d476da51  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d6da51)
+    #6 0x7f71d47476a3  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d476a3)
+    #7 0x7f71d47afdac  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2dafdac)
+    #8 0x7f71d47b04c0  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2db04c0)
+    #9 0x7f71d476db8e  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d6db8e)
+    #10 0x7f71fa294b42 in start_thread nptl/pthread_create.c:442
+
+Indirect leak of 56 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71d2d60c8b  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x1360c8b)
+    #2 0x7f71d2d60f3e  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x1360f3e)
+    #3 0x7f71d2d5ee89  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x135ee89)
+    #4 0x7f71d472cdaa  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d2cdaa)
+    #5 0x7f71d4747ef7  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d47ef7)
+    #6 0x7f71d476da51  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d6da51)
+    #7 0x7f71d47476a3  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d476a3)
+    #8 0x7f71d47afdac  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2dafdac)
+    #9 0x7f71d47b04c0  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2db04c0)
+    #10 0x7f71d476db8e  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d6db8e)
+    #11 0x7f71fa294b42 in start_thread nptl/pthread_create.c:442
+
+Indirect leak of 56 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa13e47 in __interceptor_calloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:90
+    #1 0x7f71d09ec80f  (/lib/x86_64-linux-gnu/libudev.so.1+0x1680f)
+
+Indirect leak of 56 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71d4870b2f  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2e70b2f)
+    #2 0x7f71d4870c80  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2e70c80)
+    #3 0x7f71d480ecee  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2e0ecee)
+    #4 0x7f71d66a3ad4  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4ca3ad4)
+    #5 0x7f71d66a752e  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4ca752e)
+    #6 0x7f71d247db7e  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0xa7db7e)
+    #7 0x7f71d247f3e3  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0xa7f3e3)
+    #8 0x7f71e23edb56  (/lib/x86_64-linux-gnu/libQt5WebEngineWidgets.so.5+0x30b56)
+
+Indirect leak of 56 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71d4870af9  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2e70af9)
+    #2 0x7f71d4870c80  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2e70c80)
+    #3 0x7f71d480ecee  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2e0ecee)
+    #4 0x7f71d66a3ad4  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4ca3ad4)
+    #5 0x7f71d66a752e  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4ca752e)
+    #6 0x7f71d247db7e  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0xa7db7e)
+    #7 0x7f71d247f3e3  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0xa7f3e3)
+    #8 0x7f71e23edb56  (/lib/x86_64-linux-gnu/libQt5WebEngineWidgets.so.5+0x30b56)
+
+Indirect leak of 48 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa13e47 in __interceptor_calloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:90
+    #1 0x7f71ee7cc78e  (/usr/lib/x86_64-linux-gnu/dri/vmwgfx_dri.so+0x9cc78e)
+
+Indirect leak of 48 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71d4760841  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d60841)
+    #2 0x7f71d2d60cce  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x1360cce)
+    #3 0x7f71d2d60f3e  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x1360f3e)
+    #4 0x7f71d2d5ee89  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x135ee89)
+    #5 0x7f71d472cdaa  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d2cdaa)
+    #6 0x7f71d4747ef7  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d47ef7)
+    #7 0x7f71d476da51  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d6da51)
+    #8 0x7f71d47476a3  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d476a3)
+    #9 0x7f71d47afdac  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2dafdac)
+    #10 0x7f71d47b04c0  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2db04c0)
+    #11 0x7f71d476db8e  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d6db8e)
+    #12 0x7f71fa294b42 in start_thread nptl/pthread_create.c:442
+
+Indirect leak of 48 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71d4760841  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d60841)
+    #2 0x7f71d487b20a  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2e7b20a)
+    #3 0x7f71d4870894  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2e70894)
+    #4 0x7f71d472cdaa  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d2cdaa)
+    #5 0x7f71d4747faf  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d47faf)
+    #6 0x7f71d476da51  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d6da51)
+    #7 0x7f71d47476a3  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d476a3)
+    #8 0x7f71d47afdac  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2dafdac)
+    #9 0x7f71d47b04c0  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2db04c0)
+    #10 0x7f71d476db8e  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d6db8e)
+    #11 0x7f71fa294b42 in start_thread nptl/pthread_create.c:442
+
+Indirect leak of 48 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71d6699581  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4c99581)
+    #2 0x7f71d66a619f  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4ca619f)
+    #3 0x7f71d66a67d9  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4ca67d9)
+    #4 0x7f71d68ff21d  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4eff21d)
+    #5 0x7f71d66a4696  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4ca4696)
+    #6 0x7f71d66a7588  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4ca7588)
+    #7 0x7f71d247db7e  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0xa7db7e)
+    #8 0x7f71d247f3e3  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0xa7f3e3)
+    #9 0x7f71e23edb56  (/lib/x86_64-linux-gnu/libQt5WebEngineWidgets.so.5+0x30b56)
+
+Indirect leak of 48 byte(s) in 2 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fd970efd in __gnu_cxx::new_allocator<std::_List_node<Base::ParameterGrpObserver*> >::allocate(unsigned long, void const*) /usr/include/c++/11/ext/new_allocator.h:127
+    #2 0x7f71fd970efd in std::allocator_traits<std::allocator<std::_List_node<Base::ParameterGrpObserver*> > >::allocate(std::allocator<std::_List_node<Base::ParameterGrpObserver*> >&, unsigned long) /usr/include/c++/11/bits/alloc_traits.h:464
+    #3 0x7f71fd970efd in std::__cxx11::_List_base<Base::ParameterGrpObserver*, std::allocator<Base::ParameterGrpObserver*> >::_M_get_node() /usr/include/c++/11/bits/stl_list.h:442
+    #4 0x7f71fd970efd in std::_List_node<Base::ParameterGrpObserver*>* std::__cxx11::list<Base::ParameterGrpObserver*, std::allocator<Base::ParameterGrpObserver*> >::_M_create_node<Base::ParameterGrpObserver* const&>(Base::ParameterGrpObserver* const&) /usr/include/c++/11/bits/stl_list.h:634
+    #5 0x7f71fd970efd in void std::__cxx11::list<Base::ParameterGrpObserver*, std::allocator<Base::ParameterGrpObserver*> >::_M_insert<Base::ParameterGrpObserver* const&>(std::_List_iterator<Base::ParameterGrpObserver*>, Base::ParameterGrpObserver* const&) /usr/include/c++/11/bits/stl_list.h:1911
+    #6 0x7f71fd970efd in std::__cxx11::list<Base::ParameterGrpObserver*, std::allocator<Base::ParameterGrpObserver*> >::push_back(Base::ParameterGrpObserver* const&) /usr/include/c++/11/bits/stl_list.h:1212
+    #7 0x7f71fd970efd in Base::ParameterGrpPy::attach(Py::Tuple const&) /home/xtemp09/Downloads/test/FreeCAD/src/Base/ParameterPy.cpp:661
+
+Indirect leak of 40 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa13e47 in __interceptor_calloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:90
+    #1 0x7f71ee7cb3f3  (/usr/lib/x86_64-linux-gnu/dri/vmwgfx_dri.so+0x9cb3f3)
+
+Indirect leak of 40 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fea62df9 in __gnu_cxx::new_allocator<std::_Rb_tree_node<Base::Observer<char const*>*> >::allocate(unsigned long, void const*) /usr/include/c++/11/ext/new_allocator.h:127
+    #2 0x7f71fea62df9 in std::allocator_traits<std::allocator<std::_Rb_tree_node<Base::Observer<char const*>*> > >::allocate(std::allocator<std::_Rb_tree_node<Base::Observer<char const*>*> >&, unsigned long) /usr/include/c++/11/bits/alloc_traits.h:464
+    #3 0x7f71fea62df9 in std::_Rb_tree<Base::Observer<char const*>*, Base::Observer<char const*>*, std::_Identity<Base::Observer<char const*>*>, std::less<Base::Observer<char const*>*>, std::allocator<Base::Observer<char const*>*> >::_M_get_node() /usr/include/c++/11/bits/stl_tree.h:561
+    #4 0x7f71fea62df9 in std::_Rb_tree_node<Base::Observer<char const*>*>* std::_Rb_tree<Base::Observer<char const*>*, Base::Observer<char const*>*, std::_Identity<Base::Observer<char const*>*>, std::less<Base::Observer<char const*>*>, std::allocator<Base::Observer<char const*>*> >::_M_create_node<Base::Observer<char const*>* const&>(Base::Observer<char const*>* const&) /usr/include/c++/11/bits/stl_tree.h:611
+    #5 0x7f71fea62df9 in std::_Rb_tree_node<Base::Observer<char const*>*>* std::_Rb_tree<Base::Observer<char const*>*, Base::Observer<char const*>*, std::_Identity<Base::Observer<char const*>*>, std::less<Base::Observer<char const*>*>, std::allocator<Base::Observer<char const*>*> >::_Alloc_node::operator()<Base::Observer<char const*>* const&>(Base::Observer<char const*>* const&) const /usr/include/c++/11/bits/stl_tree.h:529
+    #6 0x7f71fea62df9 in std::_Rb_tree_iterator<Base::Observer<char const*>*> std::_Rb_tree<Base::Observer<char const*>*, Base::Observer<char const*>*, std::_Identity<Base::Observer<char const*>*>, std::less<Base::Observer<char const*>*>, std::allocator<Base::Observer<char const*>*> >::_M_insert_<Base::Observer<char const*>* const&, std::_Rb_tree<Base::Observer<char const*>*, Base::Observer<char const*>*, std::_Identity<Base::Observer<char const*>*>, std::less<Base::Observer<char const*>*>, std::allocator<Base::Observer<char const*>*> >::_Alloc_node>(std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, Base::Observer<char const*>* const&, std::_Rb_tree<Base::Observer<char const*>*, Base::Observer<char const*>*, std::_Identity<Base::Observer<char const*>*>, std::less<Base::Observer<char const*>*>, std::allocator<Base::Observer<char const*>*> >::_Alloc_node&) /usr/include/c++/11/bits/stl_tree.h:1784
+    #7 0xb85862bfb3d737ff  (<unknown module>)
+
+Indirect leak of 40 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71d4870ad2  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2e70ad2)
+    #2 0x7f71d4870c80  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2e70c80)
+    #3 0x7f71d480ecee  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2e0ecee)
+    #4 0x7f71d66a3ad4  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4ca3ad4)
+    #5 0x7f71d66a752e  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4ca752e)
+    #6 0x7f71d247db7e  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0xa7db7e)
+    #7 0x7f71d247f3e3  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0xa7f3e3)
+    #8 0x7f71e23edb56  (/lib/x86_64-linux-gnu/libQt5WebEngineWidgets.so.5+0x30b56)
+
+Indirect leak of 40 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fb0d8d27  (/lib/x86_64-linux-gnu/libQt5Core.so.5+0x2d8d27)
+
+Indirect leak of 32 byte(s) in 2 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fd78a801  (/lib/x86_64-linux-gnu/libpyside2.cpython-310-x86_64-linux-gnu.so.5.15+0x18801)
+
+Indirect leak of 32 byte(s) in 2 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fd796720 in PySide::initDynamicMetaObject(SbkObjectType*, QMetaObject const*, unsigned long) (/lib/x86_64-linux-gnu/libpyside2.cpython-310-x86_64-linux-gnu.so.5.15+0x24720)
+
+Indirect leak of 32 byte(s) in 2 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71faf0f414 in QtSharedPointer::ExternalRefCountData::getAndRef(QObject const*) (/lib/x86_64-linux-gnu/libQt5Core.so.5+0x10f414)
+
+Indirect leak of 31 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fa74bf3d in std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, char const*, unsigned long) (/lib/x86_64-linux-gnu/libstdc++.so.6+0x14bf3d)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fed32b10 in Gui::PythonDebugModule::PythonDebugModule() /home/xtemp09/Downloads/test/FreeCAD/src/Gui/PythonDebugger.cpp:124
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fed32c65 in Gui::PythonDebugModule::PythonDebugModule() /home/xtemp09/Downloads/test/FreeCAD/src/Gui/PythonDebugger.cpp:126
+
+Indirect leak of 24 byte(s) in 3 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fd78820d  (/lib/x86_64-linux-gnu/libpyside2.cpython-310-x86_64-linux-gnu.so.5.15+0x1620d)
+
+Indirect leak of 24 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa14302 in __interceptor_malloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:75
+    #1 0x7f71d09e0547 in udev_monitor_new_from_netlink (/lib/x86_64-linux-gnu/libudev.so.1+0xa547)
+
+Indirect leak of 22 byte(s) in 11 object(s) allocated from:
+    #0 0x7f71ffa13e47 in __interceptor_calloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:90
+    #1 0x7f71ee79bff6  (/usr/lib/x86_64-linux-gnu/dri/vmwgfx_dri.so+0x99bff6)
+
+Indirect leak of 22 byte(s) in 11 object(s) allocated from:
+    #0 0x7f71ffa13e47 in __interceptor_calloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:90
+    #1 0x7f71ee79bfda  (/usr/lib/x86_64-linux-gnu/dri/vmwgfx_dri.so+0x99bfda)
+
+Indirect leak of 16 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71d5602a1c  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x3c02a1c)
+    #2 0x7f71d5601292  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x3c01292)
+    #3 0x7f71d472cdaa  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d2cdaa)
+    #4 0x7f71d47407f3  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d407f3)
+    #5 0x7f71d4740bff  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d40bff)
+    #6 0x7f71d477c600  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d7c600)
+    #7 0x7f71d473fb6b  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d3fb6b)
+    #8 0x7f71d4717ce5  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d17ce5)
+    #9 0x7f71d66a828d  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4ca828d)
+    #10 0x7f71d4750737  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d50737)
+    #11 0x7f71d476db8e  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d6db8e)
+    #12 0x7f71fa294b42 in start_thread nptl/pthread_create.c:442
+
+Indirect leak of 16 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fd782dbc  (/lib/x86_64-linux-gnu/libpyside2.cpython-310-x86_64-linux-gnu.so.5.15+0x10dbc)
+
+Indirect leak of 16 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa14302 in __interceptor_malloc ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:75
+    #1 0x7f71d09e166f in udev_new (/lib/x86_64-linux-gnu/libudev.so.1+0xb66f)
+    #2 0x7f71d2d5ee89  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x135ee89)
+    #3 0x7f71d472cdaa  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d2cdaa)
+    #4 0x7f71d4747ef7  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d47ef7)
+    #5 0x7f71d476da51  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d6da51)
+    #6 0x7f71d47476a3  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d476a3)
+    #7 0x7f71d47afdac  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2dafdac)
+    #8 0x7f71d47b04c0  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2db04c0)
+    #9 0x7f71d476db8e  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d6db8e)
+    #10 0x7f71fa294b42 in start_thread nptl/pthread_create.c:442
+
+Indirect leak of 16 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71d2d5ea09  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x135ea09)
+    #2 0x7f71d66a6935  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4ca6935)
+    #3 0x7f71d68ff21d  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4eff21d)
+    #4 0x7f71d66a4696  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4ca4696)
+    #5 0x7f71d66a7588  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4ca7588)
+    #6 0x7f71d247db7e  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0xa7db7e)
+    #7 0x7f71d247f3e3  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0xa7f3e3)
+    #8 0x7f71e23edb56  (/lib/x86_64-linux-gnu/libQt5WebEngineWidgets.so.5+0x30b56)
+
+Indirect leak of 16 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71d4879699  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2e79699)
+    #2 0x7f71d487a958  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2e7a958)
+    #3 0x7f71d487ac43  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2e7ac43)
+    #4 0x7f71d487b01e  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2e7b01e)
+    #5 0x7f71d4870894  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2e70894)
+    #6 0x7f71d472cdaa  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d2cdaa)
+    #7 0x7f71d4747faf  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d47faf)
+    #8 0x7f71d476da51  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d6da51)
+    #9 0x7f71d47476a3  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d476a3)
+    #10 0x7f71d47afdac  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2dafdac)
+    #11 0x7f71d47b04c0  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2db04c0)
+    #12 0x7f71d476db8e  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d6db8e)
+    #13 0x7f71fa294b42 in start_thread nptl/pthread_create.c:442
+
+Indirect leak of 8 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71d46f54e0  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2cf54e0)
+    #2 0x7f71d415f6bd  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x275f6bd)
+    #3 0x7f71d410a3d5  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x270a3d5)
+    #4 0x7f71d410a5f4  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x270a5f4)
+    #5 0x7f71d66bfe88  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4cbfe88)
+    #6 0x7f71d66bfad7  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4cbfad7)
+    #7 0x7f71d472cdaa  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d2cdaa)
+    #8 0x7f71d47407f3  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d407f3)
+    #9 0x7f71d4740bff  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d40bff)
+    #10 0x7f71d23d7e9a  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x9d7e9a)
+    #11 0x7f71fb0e733e in QObject::event(QEvent*) (/lib/x86_64-linux-gnu/libQt5Core.so.5+0x2e733e)
+    #12 0x7f71fbd6c712 in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt5Widgets.so.5+0x16c712)
+
+Indirect leak of 8 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71d46f54e0  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2cf54e0)
+    #2 0x7f71d4760751  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d60751)
+    #3 0x7f71d4760857  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d60857)
+    #4 0x7f71d487b20a  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2e7b20a)
+    #5 0x7f71d4870894  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2e70894)
+    #6 0x7f71d472cdaa  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d2cdaa)
+    #7 0x7f71d4747faf  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d47faf)
+    #8 0x7f71d476da51  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d6da51)
+    #9 0x7f71d47476a3  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d476a3)
+    #10 0x7f71d47afdac  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2dafdac)
+    #11 0x7f71d47b04c0  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2db04c0)
+    #12 0x7f71d476db8e  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d6db8e)
+    #13 0x7f71fa294b42 in start_thread nptl/pthread_create.c:442
+
+Indirect leak of 8 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71d46f54e0  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2cf54e0)
+    #2 0x7f71d415f783  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x275f783)
+    #3 0x7f71d410a3d5  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x270a3d5)
+    #4 0x7f71d410a5f4  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x270a5f4)
+    #5 0x7f71d66bfe88  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4cbfe88)
+    #6 0x7f71d66bfad7  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x4cbfad7)
+    #7 0x7f71d472cdaa  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d2cdaa)
+    #8 0x7f71d47407f3  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d407f3)
+    #9 0x7f71d4740bff  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d40bff)
+    #10 0x7f71d23d7e9a  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x9d7e9a)
+    #11 0x7f71fb0e733e in QObject::event(QEvent*) (/lib/x86_64-linux-gnu/libQt5Core.so.5+0x2e733e)
+    #12 0x7f71fbd6c712 in QApplicationPrivate::notify_helper(QObject*, QEvent*) (/lib/x86_64-linux-gnu/libQt5Widgets.so.5+0x16c712)
+
+Indirect leak of 8 byte(s) in 1 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71d46f54e0  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2cf54e0)
+    #2 0x7f71d4760751  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d60751)
+    #3 0x7f71d4760857  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d60857)
+    #4 0x7f71d2d60cce  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x1360cce)
+    #5 0x7f71d2d60f3e  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x1360f3e)
+    #6 0x7f71d2d5ee89  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x135ee89)
+    #7 0x7f71d472cdaa  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d2cdaa)
+    #8 0x7f71d4747ef7  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d47ef7)
+    #9 0x7f71d476da51  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d6da51)
+    #10 0x7f71d47476a3  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d476a3)
+    #11 0x7f71d47afdac  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2dafdac)
+    #12 0x7f71d47b04c0  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2db04c0)
+    #13 0x7f71d476db8e  (/lib/x86_64-linux-gnu/libQt5WebEngineCore.so.5+0x2d6db8e)
+    #14 0x7f71fa294b42 in start_thread nptl/pthread_create.c:442
+
+Indirect leak of 8 byte(s) in 2 object(s) allocated from:
+    #0 0x7f71ffa12a92 in operator new(unsigned long) ../../../../src/libsanitizer/lsan/lsan_interceptors.cpp:248
+    #1 0x7f71fd92cd27 in Base::Handled::Handled() /home/xtemp09/Downloads/test/FreeCAD/src/Base/Handle.cpp:43
+
+SUMMARY: LeakSanitizer: 4706973 byte(s) leaked in 6934 allocation(s).
