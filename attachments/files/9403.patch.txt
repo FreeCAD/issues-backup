@@ -1,0 +1,70 @@
+diff --git a/src/Mod/Path/PathSimulator/App/PathSim.cpp b/src/Mod/Path/PathSimulator/App/PathSim.cpp
+index ee9b5b9931..fcb5ada0e7 100644
+--- a/src/Mod/Path/PathSimulator/App/PathSim.cpp
++++ b/src/Mod/Path/PathSimulator/App/PathSim.cpp
+@@ -32,27 +32,21 @@ TYPESYSTEM_SOURCE(PathSimulator::PathSim , Base::BaseClass);
+ 
+ PathSim::PathSim()
+ {
+-	m_stock = nullptr;
+-	m_tool = nullptr;
+ }
+ 
+ PathSim::~PathSim()
+ {
+-	if (m_stock)
+-	    delete m_stock;
+-	if (m_tool)
+-		delete m_tool;
+ }
+ 
+ void PathSim::BeginSimulation(Part::TopoShape * stock, float resolution)
+ {
+ 	Base::BoundBox3d bbox = stock->getBoundBox();
+-	m_stock = new cStock(bbox.MinX, bbox.MinY, bbox.MinZ, bbox.LengthX(), bbox.LengthY(), bbox.LengthZ(), resolution);
++	m_stock = std::make_unique<cStock>(bbox.MinX, bbox.MinY, bbox.MinZ, bbox.LengthX(), bbox.LengthY(), bbox.LengthZ(), resolution);
+ }
+ 
+ void PathSim::SetToolShape(const TopoDS_Shape& toolShape, float resolution)
+ {
+-	m_tool = new cSimTool(toolShape, resolution);
++	m_tool = std::make_unique<cSimTool>(toolShape, resolution);
+ }
+ 
+ Base::Placement * PathSim::ApplyCommand(Base::Placement * pos, Command * cmd)
+diff --git a/src/Mod/Path/PathSimulator/App/PathSim.h b/src/Mod/Path/PathSimulator/App/PathSim.h
+index c6bf74f19e..362a3a2a85 100644
+--- a/src/Mod/Path/PathSimulator/App/PathSim.h
++++ b/src/Mod/Path/PathSimulator/App/PathSim.h
+@@ -23,6 +23,7 @@
+ #ifndef PATHSIMULATOR_PathSim_H
+ #define PATHSIMULATOR_PathSim_H
+ 
++#include <memory>
+ #include <TopoDS_Shape.hxx>
+ 
+ #include <Mod/Path/App/Command.h>
+@@ -51,8 +52,8 @@ namespace PathSimulator
+ 			Base::Placement * ApplyCommand(Base::Placement * pos, Command * cmd);
+ 
+ 		public:
+-			cStock * m_stock;
+-			cSimTool *m_tool;
++			std::unique_ptr<cStock> m_stock;
++			std::unique_ptr<cSimTool> m_tool;
+ 	};
+ 
+ } //namespace Path
+diff --git a/src/Mod/Path/PathSimulator/App/PathSimPyImp.cpp b/src/Mod/Path/PathSimulator/App/PathSimPyImp.cpp
+index 6097889989..b4940952f3 100644
+--- a/src/Mod/Path/PathSimulator/App/PathSimPyImp.cpp
++++ b/src/Mod/Path/PathSimulator/App/PathSimPyImp.cpp
+@@ -86,7 +86,7 @@ PyObject* PathSimPy::GetResultMesh(PyObject * args)
+ {
+ 	if (!PyArg_ParseTuple(args, ""))
+ 		return nullptr;
+-	cStock *stock = getPathSimPtr()->m_stock;
++	cStock *stock = getPathSimPtr()->m_stock.get();
+ 	if (!stock)
+ 	{
+ 		PyErr_SetString(PyExc_RuntimeError, "Simulation has stock object");
