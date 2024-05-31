@@ -93,24 +93,36 @@ else:
 
 
 
-def get_data(api_point,page=1,all=False):
+def get_data_page(api_point, page=1, allpages=False):
 
-    """get_data(api_point,[page,all]): returns a dict from a github API point"""
+    """get_data_page(api_point,[page,allpages]): returns a dict from a page of an github API point"""
 
     print("fetching",api_point,"page",page)
-    if all:
+    if allpages:
         params = { "state": "all", "page": str(page) }
     else:
         params = { "page": str(page) }
     result = SESSION.get(url = BASEURL + api_point, params = params, headers = HEADERS)
     data = result.json()
-    if data:
-        if isinstance(data,dict):
-            print("Fetching data fro github failed. Here is the reply from github:")
-            print(data)
-            sys.exit()
-        data.extend( get_data(api_point, page + 1) )
     return data
+
+
+def get_data(api_point, page=1, allpages=False):
+    
+    """get_data(api_point,[page,allpages]): returns a dict from a github API point"""
+
+    result = []
+    while True:
+        data = get_data_page(api_point, page, allpages)
+        if data:
+            if isinstance(data,dict):
+                print("Fetching data fro github failed. Here is the reply from github:")
+                break
+            result.extend(data)
+            page += 1
+        else:
+            break
+    return result
 
 
 def get_issues(repo):
