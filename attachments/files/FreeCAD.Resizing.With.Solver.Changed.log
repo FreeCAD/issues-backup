@@ -1,0 +1,375 @@
+﻿Msg: FreeCAD 0.21.0, Libs: 0.21.0R33110 (Git)
+© Juergen Riegel, Werner Mayer, Yorik van Havre and others 2001-2023
+FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+FreeCAD wouldn't be possible without FreeCAD community.
+  #####                 ####  ###   ####  
+  #                    #      # #   #   # 
+  #     ##  #### ####  #     #   #  #   # 
+  ####  # # #  # #  #  #     #####  #   # 
+  #     #   #### ####  #    #     # #   # 
+  #     #   #    #     #    #     # #   #  ##  ##  ##
+  #     #   #### ####   ### #     # ####   ##  ##  ##
+
+Log: Time = 2023-May-11 20:31:34
+Log: AboutImage = freecadabout
+Log: AppDataSkipVendor = true
+Log: AppHomePath = C:/Utilities/FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310/
+Log: AppIcon = freecad
+Log: AppTempPath = C:\Users\Yosyp\AppData\Local\Temp\\
+Log: BOOST_VERSION = 1_74
+Log: BinPath = C:/Utilities/FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310/bin\
+Log: BuildRepositoryURL = https://github.com/FreeCAD/FreeCAD master
+Log: BuildRevision = 33110 (Git)
+Log: BuildRevisionBranch = master
+Log: BuildRevisionDate = 2023/05/06 17:32:27
+Log: BuildRevisionHash = 18e40941ceb36c52701a7c74ea26043ef3385701
+Log: BuildVersionMajor = 0
+Log: BuildVersionMinor = 21
+Log: BuildVersionPoint = 0
+Log: Console = 0
+Log: CopyrightInfo = © Juergen Riegel, Werner Mayer, Yorik van Havre and others 2001-2023
+FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+FreeCAD wouldn't be possible without FreeCAD community.
+  #####                 ####  ###   ####  
+  #                    #      # #   #   # 
+  #     ##  #### ####  #     #   #  #   # 
+  ####  # # #  # #  #  #     #####  #   # 
+  #     #   #### ####  #    #     # #   # 
+  #     #   #    #     #    #     # #   #  ##  ##  ##
+  #     #   #### ####   ### #     # ####   ##  ##  ##
+
+
+Log: Debug = 0
+Log: DocPath = C:/Utilities/FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310/doc\
+Log: EIGEN_VERSION = 3.4.0
+Log: ExeName = FreeCAD
+Log: ExeVendor = FreeCAD
+Log: ExeVersion = 0.21.0
+Log: LoggingConsole = 1
+Log: LoggingFile = 1
+Log: LoggingFileName = C:\Users\Yosyp\AppData\Roaming\FreeCAD\FreeCAD.log
+Log: MaintainerUrl = http://www.freecad.org/wiki/Main_Page
+Log: OCC_VERSION = 7.6.3
+Log: PATH = C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Utilities\LibPack-OCC76-V2\bin;C:\Utilities\doxygen-1.9.6.windows.x64.bin;%JAVA_HOME%\bin;C:\Utilities\cmake-3.26.3-windows-x86_64\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;#C:\Program Files\Common Files\Oracle\Java\javapath;#C:\Program Files (x86)\Common Files\Oracle\Java\javapath;#C:\Utilities\MSYS2_64\mingw64\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Utilities\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Users\Yosyp\AppData\Local\Microsoft\WindowsApps;C:\Utilities\Microsoft VS Code\bin;C:\Users\Yosyp\.dotnet\tools;C:\Users\Yosyp\AppData\Local\GitHubDesktop\bin
+Log: PYSIDE_VERSION = 5.15.8
+Log: PYTHON_VERSION = 3.10.10
+Log: PythonSearchPath = C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\bin\python310.zip;C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\bin\DLLs;C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\bin\lib;C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\bin
+Log: QT_VERSION = 5.15.8
+Log: RunMode = Gui
+Log: SMESH_VERSION = 9.8.0.2
+Log: SplashAlignment = Bottom|Left
+Log: SplashInfoColor = #c8c8c8
+Log: SplashInfoPosition = 15.210
+Log: SplashScreen = freecadsplash
+Log: SplashTextColor = #ffffff
+Log: StartWorkbench = StartWorkbench
+Log: SystemParameter = C:\Users\Yosyp\AppData\Roaming\FreeCAD\system.cfg
+Log: UserAppData = C:\Users\Yosyp\AppData\Roaming\FreeCAD\
+Log: UserCachePath = C:\Users\Yosyp\AppData\Local\Temp\FreeCAD\Cache\
+Log: UserConfigPath = C:\Users\Yosyp\AppData\Roaming\FreeCAD\
+Log: UserHomePath = C:/Users/Yosyp
+Log: UserMacroPath = C:\Users\Yosyp\AppData\Roaming\FreeCAD\Macro\
+Log: UserParameter = C:\Users\Yosyp\AppData\Roaming\FreeCAD\user.cfg
+Log: Verbose = 
+Log: XERCESC_VERSION = 3.2.4
+Log: Create Application
+Log: Run App init script
+Log: Init: starting App::FreeCADInit.py
+Log: Init:   Searching for modules...
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\AddonManager... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Arch... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Draft... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Fem... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Idf... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Import... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Inspection... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Material... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Measure... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Mesh... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\MeshPart... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\OpenSCAD... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Part... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\PartDesign... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Path... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Plot(Init.py not found)... ignore
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Points... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\ReverseEngineering... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Robot... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Show(Init.py not found)... ignore
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Sketcher... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Spreadsheet... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Start... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Surface... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\TechDraw... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Tux(Init.py not found)... ignore
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Web... done
+Log: Using C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod as module path!
+Log: System path after init:
+Log:    C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\bin
+Log:    C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\AddonManager
+Log:    C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Arch
+Log:    C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Draft
+Log:    C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Fem
+Log:    C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Idf
+Log:    C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Import
+Log:    C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Inspection
+Log:    C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Material
+Log:    C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Measure
+Log:    C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Mesh
+Log:    C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\MeshPart
+Log:    C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\OpenSCAD
+Log:    C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Part
+Log:    C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\PartDesign
+Log:    C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Path
+Log:    C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Plot
+Log:    C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Points
+Log:    C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\ReverseEngineering
+Log:    C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Robot
+Log:    C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Show
+Log:    C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Sketcher
+Log:    C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Spreadsheet
+Log:    C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Start
+Log:    C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Surface
+Log:    C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\TechDraw
+Log:    C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Tux
+Log:    C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Web
+Log:    C:\Program Files (x86)\Common Files\Oracle\Java\javapath
+Log:    C:\Utilities\LibPack-OCC76-V2\bin
+Log:    C:\Utilities\doxygen-1.9.6.windows.x64.bin
+Log:    %JAVA_HOME%\bin
+Log:    C:\Utilities\cmake-3.26.3-windows-x86_64\bin
+Log:    C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
+Log:    #C:\Program Files\Common Files\Oracle\Java\javapath
+Log:    #C:\Program Files (x86)\Common Files\Oracle\Java\javapath
+Log:    #C:\Utilities\MSYS2_64\mingw64\bin
+Log:    C:\Windows\system32
+Log:    C:\Windows
+Log:    C:\Windows\System32\Wbem
+Log:    C:\Windows\System32\WindowsPowerShell\v1.0\
+Log:    C:\Windows\System32\OpenSSH\
+Log:    C:\Program Files\dotnet\
+Log:    C:\Utilities\Git\cmd
+Log:    C:\ProgramData\chocolatey\bin
+Log:    C:\Users\Yosyp\AppData\Local\Microsoft\WindowsApps
+Log:    C:\Utilities\Microsoft VS Code\bin
+Log:    C:\Users\Yosyp\.dotnet\tools
+Log:    C:\Users\Yosyp\AppData\Local\GitHubDesktop\bin
+Log: Init: App::FreeCADInit.py done
+Log: Init: Creating Gui::Application and QApplication
+Log: Local server 'FreeCAD' started
+Log: OpenGL version is: 4.6 (4.6.0 Compatibility Profile Context 23.4.3.230420)
+Log: Run Gui init script
+Log: Init: Running FreeCADGuiInit.py start script...
+Log: Init:   Searching modules...
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\AddonManager... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Arch... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Draft... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Fem... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Idf(InitGui.py not found)... ignore
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Import... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Inspection... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Material... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Measure(InitGui.py not found)... ignore
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Mesh... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\MeshPart... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\OpenSCAD... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Part... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\PartDesign... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Path... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Plot(InitGui.py not found)... ignore
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Points... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\ReverseEngineering... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Robot... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Show(InitGui.py not found)... ignore
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Sketcher... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Spreadsheet... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Start... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Surface... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\TechDraw... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Tux... done
+Log: Init:      Initializing C:\Utilities\FreeCAD_weekly-builds-33110-2023-05-07-conda-Windows-x86_64-py310\Mod\Web... done
+Log: All modules with GUIs using InitGui.py are now initialized
+Log: All modules with GUIs initialized using pkgutil are now initialized
+Log: Init: Loading FreeCAD GUI
+Log: Init: Running FreeCADGuiInit.py start script... done
+Log: Init: Activating default workbench StartWorkbench
+Log: Loading GUI of Web module... done
+Log: Loading GUI of Start module... done
+Log: Loading Start module... done
+Log: Init: Showing main window
+Log: Main window restored
+Log: Show main window
+Log: Toolbars restored
+Log: 3Dconnexion device not attached.
+Log: Module: Part
+Log: Loading Part module... done
+Log: Loading Sketcher module... done
+Log: Loading PartDesign module... done
+Log: Loading GUI of Part module... done
+Log: Loading GUI of Sketcher module... done
+Log: Loading GUI of PartDesign module... done
+Log: Loading GUI of Spreadsheet module... done
+Log: Loading Surface module... done
+Log: Loading GUI of Surface module... done
+Log: Init: Entering event loop
+Log: Init: Executing event loop...
+Log: Init: Processing command line files
+Log: Sketcher::setUpSketch()-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0.001
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0.001
+Log: Sketcher::Solve()-DogLeg-T:0.001
+Log: Sketcher::setUpSketch()-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: SecondIcon
+Log: SecondIcon
+Log: SecondIcon
+Log: SecondIcon
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0.001
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0.001
+Log: Sketcher::setUpSketch()-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::setUpSketch()-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::setUpSketch()-T:0
+Log: Sketcher::Solve()-DogLeg-T:0
+Log: Sketcher::setUpSketch()-T:0
+Log: Sketcher::Solve()-DogLeg-T:0.001

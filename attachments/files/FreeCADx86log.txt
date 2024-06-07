@@ -1,0 +1,298 @@
+﻿Msg: FreeCAD 0.21.0, Libs: 0.21.0R33458 (Git)
+© Juergen Riegel, Werner Mayer, Yorik van Havre and others 2001-2023
+FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+FreeCAD wouldn't be possible without FreeCAD community.
+  #####                 ####  ###   ####  
+  #                    #      # #   #   # 
+  #     ##  #### ####  #     #   #  #   # 
+  ####  # # #  # #  #  #     #####  #   # 
+  #     #   #### ####  #    #     # #   # 
+  #     #   #    #     #    #     # #   #  ##  ##  ##
+  #     #   #### ####   ### #     # ####   ##  ##  ##
+
+Log: Time = 2023-Jul-01 16:28:12
+Log: AboutImage = freecadabout
+Log: AppDataSkipVendor = true
+Log: AppHomePath = /Applications/FreeCADx86.app/Contents/Resources/
+Log: AppIcon = freecad
+Log: AppTempPath = /private/var/folders/9b/t61x6zrx5c725zyd7y81kxj40000gn/T/
+Log: BOOST_VERSION = 1_74
+Log: BinPath = /Applications/FreeCADx86.app/Contents/Resources/bin/
+Log: BuildRepositoryURL = https://github.com/FreeCAD/FreeCAD master
+Log: BuildRevision = 33458 (Git)
+Log: BuildRevisionBranch = master
+Log: BuildRevisionDate = 2023/06/28 14:47:14
+Log: BuildRevisionHash = 8b89dd29d2382c72d738c52e8974216130ffa9db
+Log: BuildVersionMajor = 0
+Log: BuildVersionMinor = 21
+Log: BuildVersionPoint = 0
+Log: Console = 0
+Log: CopyrightInfo = © Juergen Riegel, Werner Mayer, Yorik van Havre and others 2001-2023
+FreeCAD is free and open-source software licensed under the terms of LGPL2+ license.
+FreeCAD wouldn't be possible without FreeCAD community.
+  #####                 ####  ###   ####  
+  #                    #      # #   #   # 
+  #     ##  #### ####  #     #   #  #   # 
+  ####  # # #  # #  #  #     #####  #   # 
+  #     #   #### ####  #    #     # #   # 
+  #     #   #    #     #    #     # #   #  ##  ##  ##
+  #     #   #### ####   ### #     # ####   ##  ##  ##
+
+
+Log: Debug = 0
+Log: DocPath = /Applications/FreeCADx86.app/Contents/Resources/doc/
+Log: EIGEN_VERSION = 3.4.0
+Log: ExeName = FreeCAD
+Log: ExeVendor = FreeCAD
+Log: ExeVersion = 0.21.0
+Log: LoggingConsole = 1
+Log: LoggingFile = 1
+Log: LoggingFileName = /Users/ed/Desktop/FreeCADx86log.txt
+Log: MaintainerUrl = http://www.freecad.org/wiki/Main_Page
+Log: OCC_VERSION = 7.6.3
+Log: PATH = /usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/TeX/texbin:/opt/X11/bin:/Library/Apple/usr/bin:/Applications/Wireshark.app/Contents/MacOS
+Log: PYSIDE_VERSION = 5.15.8
+Log: PYTHONPATH = 
+Log: PYTHON_VERSION = 3.10.12
+Log: PythonSearchPath = /Applications/FreeCADx86.app/Contents/Resources/lib/python310.zip:/Applications/FreeCADx86.app/Contents/Resources/lib/python3.10:/Applications/FreeCADx86.app/Contents/Resources/lib/python3.10/lib-dynload
+Log: QT_VERSION = 5.15.8
+Log: RunMode = Gui
+Log: SMESH_VERSION = 9.8.0.2
+Log: SplashAlignment = Bottom|Left
+Log: SplashInfoColor = #8aadf4
+Log: SplashInfoPosition = 6,75
+Log: SplashScreen = freecadsplash
+Log: SplashTextColor = #8aadf4
+Log: StartWorkbench = StartWorkbench
+Log: SystemParameter = /Users/ed/Library/Preferences/FreeCAD/system.cfg
+Log: UserAppData = /Users/ed/Library/Application Support/FreeCAD/
+Log: UserCachePath = /Users/ed/Library/Caches/FreeCAD/Cache/
+Log: UserConfigPath = /Users/ed/Library/Preferences/FreeCAD/
+Log: UserHomePath = /Users/ed
+Log: UserMacroPath = /Users/ed/Library/Application Support/FreeCAD/Macro/
+Log: UserParameter = /Users/ed/Library/Preferences/FreeCAD/user.cfg
+Log: Verbose = 
+Log: XERCESC_VERSION = 3.2.4
+Log: Create Application
+Log: Run App init script
+Log: Init: starting App::FreeCADInit.py
+Log: Init:   Searching for modules...
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Mesh... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Draft... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/ReverseEngineering... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Plot(Init.py not found)... ignore
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Fem... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Spreadsheet... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Web... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/TechDraw... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Path... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/MeshPart... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Show(Init.py not found)... ignore
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Sketcher... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Start... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/OpenSCAD... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Surface... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Robot... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Inspection... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Idf... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Arch... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/AddonManager... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Points... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Measure... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/PartDesign... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Tux(Init.py not found)... ignore
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Part... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Import... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Material... done
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/MeshRemodel/./... done
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/.DS_Store(Init.py not found)... ignore
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/DynamicData/./... done
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/fcgear/./(Init.py not found)... ignore
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/workfeature(Init.py not found)... ignore
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/Pyramids-and-Polyhedrons(Init.py not found)... ignore
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/QuickMeasure-main(Init.py not found)... ignore
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/GDML/./(Init.py not found)... ignore
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/offline-documentation(Init.py not found)... ignore
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/Manipulator/./... done
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/fasteners/./... done
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/lattice2/./(Init.py not found)... ignore
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/CurvedShapes/./... done
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/Alternate_OpenSCAD/./(Init.py not found)... ignore
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/toSketch/./(Init.py not found)... ignore
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/Help/./(Init.py not found)... ignore
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/Curves/./(Init.py not found)... ignore
+Log: Init: Initializing freecad.Curves
+Log: Init: No init module found in freecad.Curves, skipping
+Log: Init: Initializing freecad.toSketch
+Log: Init: No init module found in freecad.toSketch, skipping
+Log: Init: Initializing freecad.OpenSCAD_Alt_Import
+Log: Init: No init module found in freecad.OpenSCAD_Alt_Import, skipping
+Log: Init: Initializing freecad.gdml
+Log: Init: No init module found in freecad.gdml, skipping
+Log: Init: Initializing freecad.gears
+Log: Init: No init module found in freecad.gears, skipping
+Log: Using /Applications/FreeCADx86.app/Contents/Resources/Mod as module path!
+Log: System path after init:
+Log:    /Applications/FreeCADx86.app/Contents/Resources/bin
+Log:    /Applications/FreeCADx86.app/Contents/Resources/Mod/Mesh
+Log:    /Applications/FreeCADx86.app/Contents/Resources/Mod/Draft
+Log:    /Applications/FreeCADx86.app/Contents/Resources/Mod/ReverseEngineering
+Log:    /Applications/FreeCADx86.app/Contents/Resources/Mod/Plot
+Log:    /Applications/FreeCADx86.app/Contents/Resources/Mod/Fem
+Log:    /Applications/FreeCADx86.app/Contents/Resources/Mod/Spreadsheet
+Log:    /Applications/FreeCADx86.app/Contents/Resources/Mod/Web
+Log:    /Applications/FreeCADx86.app/Contents/Resources/Mod/TechDraw
+Log:    /Applications/FreeCADx86.app/Contents/Resources/Mod/Path
+Log:    /Applications/FreeCADx86.app/Contents/Resources/Mod/MeshPart
+Log:    /Applications/FreeCADx86.app/Contents/Resources/Mod/Show
+Log:    /Applications/FreeCADx86.app/Contents/Resources/Mod/Sketcher
+Log:    /Applications/FreeCADx86.app/Contents/Resources/Mod/Start
+Log:    /Applications/FreeCADx86.app/Contents/Resources/Mod/OpenSCAD
+Log:    /Applications/FreeCADx86.app/Contents/Resources/Mod/Surface
+Log:    /Applications/FreeCADx86.app/Contents/Resources/Mod/Robot
+Log:    /Applications/FreeCADx86.app/Contents/Resources/Mod/Inspection
+Log:    /Applications/FreeCADx86.app/Contents/Resources/Mod/Idf
+Log:    /Applications/FreeCADx86.app/Contents/Resources/Mod/Arch
+Log:    /Applications/FreeCADx86.app/Contents/Resources/Mod/AddonManager
+Log:    /Applications/FreeCADx86.app/Contents/Resources/Mod/Points
+Log:    /Applications/FreeCADx86.app/Contents/Resources/Mod/Measure
+Log:    /Applications/FreeCADx86.app/Contents/Resources/Mod/PartDesign
+Log:    /Applications/FreeCADx86.app/Contents/Resources/Mod/Tux
+Log:    /Applications/FreeCADx86.app/Contents/Resources/Mod/Part
+Log:    /Applications/FreeCADx86.app/Contents/Resources/Mod/Import
+Log:    /Applications/FreeCADx86.app/Contents/Resources/Mod/Material
+Log:    /Users/ed/Library/Application Support/FreeCAD/Mod/MeshRemodel
+Log:    /Users/ed/Library/Application Support/FreeCAD/Mod/MeshRemodel/./
+Log:    /Users/ed/Library/Application Support/FreeCAD/Mod/.DS_Store
+Log:    /Users/ed/Library/Application Support/FreeCAD/Mod/DynamicData
+Log:    /Users/ed/Library/Application Support/FreeCAD/Mod/DynamicData/./
+Log:    /Users/ed/Library/Application Support/FreeCAD/Mod/fcgear
+Log:    /Users/ed/Library/Application Support/FreeCAD/Mod/fcgear/./
+Log:    /Users/ed/Library/Application Support/FreeCAD/Mod/workfeature
+Log:    /Users/ed/Library/Application Support/FreeCAD/Mod/Pyramids-and-Polyhedrons
+Log:    /Users/ed/Library/Application Support/FreeCAD/Mod/QuickMeasure-main
+Log:    /Users/ed/Library/Application Support/FreeCAD/Mod/GDML
+Log:    /Users/ed/Library/Application Support/FreeCAD/Mod/GDML/./
+Log:    /Users/ed/Library/Application Support/FreeCAD/Mod/offline-documentation
+Log:    /Users/ed/Library/Application Support/FreeCAD/Mod/Manipulator
+Log:    /Users/ed/Library/Application Support/FreeCAD/Mod/Manipulator/./
+Log:    /Users/ed/Library/Application Support/FreeCAD/Mod/fasteners
+Log:    /Users/ed/Library/Application Support/FreeCAD/Mod/fasteners/./
+Log:    /Users/ed/Library/Application Support/FreeCAD/Mod/lattice2
+Log:    /Users/ed/Library/Application Support/FreeCAD/Mod/lattice2/./
+Log:    /Users/ed/Library/Application Support/FreeCAD/Mod/CurvedShapes
+Log:    /Users/ed/Library/Application Support/FreeCAD/Mod/CurvedShapes/./
+Log:    /Users/ed/Library/Application Support/FreeCAD/Mod/Alternate_OpenSCAD
+Log:    /Users/ed/Library/Application Support/FreeCAD/Mod/Alternate_OpenSCAD/./
+Log:    /Users/ed/Library/Application Support/FreeCAD/Mod/toSketch
+Log:    /Users/ed/Library/Application Support/FreeCAD/Mod/toSketch/./
+Log:    /Users/ed/Library/Application Support/FreeCAD/Mod/Help
+Log:    /Users/ed/Library/Application Support/FreeCAD/Mod/Help/./
+Log:    /Users/ed/Library/Application Support/FreeCAD/Mod/Curves
+Log:    /Users/ed/Library/Application Support/FreeCAD/Mod/Curves/./
+Log:    /usr/local/bin
+Log:    /System/Cryptexes/App/usr/bin
+Log:    /usr/bin
+Log:    /bin
+Log:    /usr/sbin
+Log:    /sbin
+Log:    /Library/TeX/texbin
+Log:    /opt/X11/bin
+Log:    /Library/Apple/usr/bin
+Log:    /Applications/Wireshark.app/Contents/MacOS
+Log: Init: App::FreeCADInit.py done
+Log: Init: Creating Gui::Application and QApplication
+Log: Local server 'FreeCAD' started
+Wrn: Populating font family aliases took 256 ms. Replace uses of missing font family "Courier" with one that exists to avoid this cost. 
+Log: OpenGL version is: 2.1 (2.1 Metal - 83)
+Log: Run Gui init script
+Log: Init: Running FreeCADGuiInit.py start script...
+Log: Init:   Searching modules...
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Mesh... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Draft... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/ReverseEngineering... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Plot(InitGui.py not found)... ignore
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Fem... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Spreadsheet... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Web... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/TechDraw... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Path... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/MeshPart... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Show(InitGui.py not found)... ignore
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Sketcher... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Start... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/OpenSCAD... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Surface... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Robot... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Inspection... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Idf(InitGui.py not found)... ignore
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Arch... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/AddonManager... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Points... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Measure(InitGui.py not found)... ignore
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/PartDesign... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Tux... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Part... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Import... done
+Log: Init:      Initializing /Applications/FreeCADx86.app/Contents/Resources/Mod/Material... done
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/MeshRemodel/./... done
+Log: Init:      Packaged workbench MeshRemodel specified icon            in class MeshRemodelWorkbenchLog:  ... replacing with icon from package.xml data.
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/.DS_Store(InitGui.py not found)... ignore
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/DynamicData/./... done
+Log: Init:      Packaged workbench DynamicData specified icon            in class DynamicDataWorkbenchLog:  ... replacing with icon from package.xml data.
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/fcgear/./(InitGui.py not found)... ignore
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/workfeature... done
+Msg: ('Mod/Pyramids_and_polyhedrons', 'Mod/Pyramids-and-Polyhedrons', 'Mod/FreeCAD-Pyramids-and-Polyhedrons', 'Mod/Pyramids-and-polyhedrons')Msg: 
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/Pyramids-and-Polyhedrons... done
+Log: Module: Part
+Log: Loading Part module... done
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/QuickMeasure-main... done
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/GDML/./(InitGui.py not found)... ignore
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/offline-documentation(InitGui.py not found)... ignore
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/Manipulator/./... done
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/fasteners/./... done
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/lattice2/./... done
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/CurvedShapes/./... done
+Log: Failed to get handle to CurvedShapesWorkbench -- no icon                                can be generated,
+ check classname in package.xml
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/Alternate_OpenSCAD/./(InitGui.py not found)... ignore
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/toSketch/./(InitGui.py not found)... ignore
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/Help/./... done
+Log: Failed to get handle to Help -- no icon                                can be generated,
+ check classname in package.xml
+Log: Init:      Initializing /Users/ed/Library/Application Support/FreeCAD/Mod/Curves/./(InitGui.py not found)... ignore
+Log: All modules with GUIs using InitGui.py are now initialized
+Log: Init: Initializing freecad.Curves
+Log: Init: Initializing freecad.Curves... done
+Log: Init: Initializing freecad.toSketch
+Log: Loading Sketcher module... done
+Log: Init: Initializing freecad.toSketch... done
+Log: Init: Initializing freecad.OpenSCAD_Alt_Import
+Log: Init: Initializing freecad.OpenSCAD_Alt_Import... done
+Log: Init: Initializing freecad.gdml
+Log: Loading GUI of Part module... done
+Log: Loading GUI of Sketcher module... done
+Log: Loading Mesh module... done
+Log: Loading GUI of Mesh module... done
+Log: Loading GUI of MeshPart module... done
+Log: Init: Initializing freecad.gdml... done
+Log: Init: Initializing freecad.gears
+Log: Init: Initializing freecad.gears... done
+Log: All modules with GUIs initialized using pkgutil are now initialized
+Log: Init: Loading FreeCAD GUI
+Log: Ignoring unknown TestWorkbench workbench found in user preferences.
+Log: Init: Running FreeCADGuiInit.py start script... done
+Log: Init: Activating default workbench StartWorkbench
+Log: Loading GUI of Web module... done
+Log: Loading GUI of Start module... done
+Log: Loading Start module... done
+Wrn: Cannot find icon: /Users/ed/Library/Caches/FreeCAD/Cache/AddonManager/MacroIcons/Animator.svg
+Wrn: Cannot find icon: /Users/ed/Library/Caches/FreeCAD/Cache/AddonManager/MacroIcons/Workbench_PartDesign.svg
+Wrn: Cannot find icon: /Users/ed/Library/Caches/FreeCAD/Cache/AddonManager/MacroIcons/Parametric_Curve_FP.svg
+Log: Init: Showing main window
+Log: Main window restored
+Log: Show main window
+Log: Toolbars restored
+Log: Init: Entering event loop
+Log: Init: Executing event loop...
+Log: Init: Processing command line files

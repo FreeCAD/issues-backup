@@ -1,0 +1,136 @@
+>>> import re
+>>> import Draft
+>>> from PySide2 import QtCore
+>>> 
+>>> patfiles = QtCore.QDir(":/patterns").entryList()
+>>> for fn in patfiles:
+...     print('checking file', fn)
+...     file = ":/patterns/" + str(fn)
+...     f = QtCore.QFile(file)
+...     f.open(QtCore.QIODevice.ReadOnly)
+...     data = f.readAll()
+...     print('  type: {}, size: {}, start: {}'.format(type(data), data.size(), data[:40]))
+...     s = str(data)
+...     ind_pattern = s.find('<pattern')
+...     print('  ind_pattern:', ind_pattern)
+...     if fn == 'simple.svg':
+...         print('details on file', fn)
+...         if ind_pattern != -1:
+...             print('pattern_preview:', repr(s[ind_pattern - 5 : ind_pattern + 60]))
+...         s = s.replace('\n', '_linebreak')
+...         tag = 'pattern'
+...         searchpat = '<' + tag + '.*?</' + tag + '>'
+...         tags = re.findall(searchpat, s)
+...         result = {}
+...         for t in tags:
+...             print('  tag:', repr(tag))
+...             tagid = re.findall('id="(.*?)"', t)
+...             if tagid:
+...                 tagid = tagid[0]
+...             else:
+...                 tagid = 'none'
+...             res = t.replace('_linebreak', '\n')
+...             result[tagid] = res
+...         print('  result:', result)
+... 
+checking file aluminium.svg
+True
+  type: <class 'PySide2.QtCore.QByteArray'>, size: 3615, start: b'<?xml version="1.0" encoding="UTF-8" sta'
+  ind_pattern: -1
+checking file brick01.svg
+True
+  type: <class 'PySide2.QtCore.QByteArray'>, size: 4658, start: b'<?xml version="1.0" encoding="UTF-8" sta'
+  ind_pattern: -1
+checking file concrete.svg
+True
+  type: <class 'PySide2.QtCore.QByteArray'>, size: 5281, start: b'<?xml version="1.0" encoding="UTF-8" sta'
+  ind_pattern: 637
+checking file cross.svg
+True
+  type: <class 'PySide2.QtCore.QByteArray'>, size: 3038, start: b'<?xml version="1.0" encoding="UTF-8" sta'
+  ind_pattern: 637
+checking file cuprous.svg
+True
+  type: <class 'PySide2.QtCore.QByteArray'>, size: 12251, start: b'<?xml version="1.0" encoding="UTF-8" sta'
+  ind_pattern: -1
+checking file diagonal1.svg
+True
+  type: <class 'PySide2.QtCore.QByteArray'>, size: 15545, start: b'<?xml version="1.0" encoding="UTF-8" sta'
+  ind_pattern: -1
+checking file diagonal2.svg
+True
+  type: <class 'PySide2.QtCore.QByteArray'>, size: 15489, start: b'<?xml version="1.0" encoding="UTF-8" sta'
+  ind_pattern: -1
+checking file earth.svg
+True
+  type: <class 'PySide2.QtCore.QByteArray'>, size: 3777, start: b'<?xml version="1.0" encoding="UTF-8" sta'
+  ind_pattern: -1
+checking file general_steel.svg
+True
+  type: <class 'PySide2.QtCore.QByteArray'>, size: 2438, start: b'<?xml version="1.0" encoding="UTF-8" sta'
+  ind_pattern: -1
+checking file glass.svg
+True
+  type: <class 'PySide2.QtCore.QByteArray'>, size: 16385, start: b'<?xml version="1.0" encoding="UTF-8" sta'
+  ind_pattern: -1
+checking file hatch45L.svg
+True
+  type: <class 'PySide2.QtCore.QByteArray'>, size: 2290, start: b'<?xml version="1.0" encoding="UTF-8" sta'
+  ind_pattern: 637
+checking file hatch45R.svg
+True
+  type: <class 'PySide2.QtCore.QByteArray'>, size: 2290, start: b'<?xml version="1.0" encoding="UTF-8" sta'
+  ind_pattern: 637
+checking file hbone.svg
+True
+  type: <class 'PySide2.QtCore.QByteArray'>, size: 7682, start: b'<?xml version="1.0" encoding="UTF-8" sta'
+  ind_pattern: -1
+checking file line.svg
+True
+  type: <class 'PySide2.QtCore.QByteArray'>, size: 1473, start: b'<?xml version="1.0" encoding="UTF-8" sta'
+  ind_pattern: 637
+checking file plastic.svg
+True
+  type: <class 'PySide2.QtCore.QByteArray'>, size: 3376, start: b'<?xml version="1.0" encoding="UTF-8" sta'
+  ind_pattern: -1
+checking file plus.svg
+True
+  type: <class 'PySide2.QtCore.QByteArray'>, size: 2770, start: b'<?xml version="1.0" encoding="UTF-8" sta'
+  ind_pattern: -1
+checking file simple.svg
+True
+  type: <class 'PySide2.QtCore.QByteArray'>, size: 1931, start: b'<?xml version="1.0" encoding="UTF-8" sta'
+  ind_pattern: 637
+details on file simple.svg
+pattern_preview: 'n    <pattern height=".1" width=".1" y="0" x="0" patternUnits="us'
+  tag: 'pattern'
+  result: {'simple': '<pattern height=".1" width=".1" y="0" x="0" patternUnits="userSpaceOnUse" id="simple">\\n      <g id="g3377" style="fill:none;stroke:#000000;stroke-width:0.005">\\n        <path id="path3379" d="M0,0 l.12,.12" />\\n      </g>\\n    </pattern>'}
+checking file solid.svg
+True
+  type: <class 'PySide2.QtCore.QByteArray'>, size: 1201, start: b'<?xml version="1.0" encoding="UTF-8" sta'
+  ind_pattern: -1
+checking file square.svg
+True
+  type: <class 'PySide2.QtCore.QByteArray'>, size: 2124, start: b'<?xml version="1.0" encoding="UTF-8" sta'
+  ind_pattern: 637
+checking file steel.svg
+True
+  type: <class 'PySide2.QtCore.QByteArray'>, size: 8370, start: b'<?xml version="1.0" encoding="UTF-8" sta'
+  ind_pattern: -1
+checking file titanium.svg
+True
+  type: <class 'PySide2.QtCore.QByteArray'>, size: 11467, start: b'<?xml version="1.0" encoding="UTF-8" sta'
+  ind_pattern: -1
+checking file wood.svg
+True
+  type: <class 'PySide2.QtCore.QByteArray'>, size: 18427, start: b'<?xml version="1.0" encoding="UTF-8" sta'
+  ind_pattern: 363
+checking file woodgrain.svg
+True
+  type: <class 'PySide2.QtCore.QByteArray'>, size: 3984, start: b'<?xml version="1.0" encoding="UTF-8" sta'
+  ind_pattern: 363
+checking file zinc.svg
+True
+  type: <class 'PySide2.QtCore.QByteArray'>, size: 4435, start: b'<?xml version="1.0" encoding="UTF-8" sta'
+  ind_pattern: -1
+>>> 

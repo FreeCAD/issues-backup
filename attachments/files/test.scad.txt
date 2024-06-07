@@ -1,0 +1,4 @@
+hull(){
+	circle(10);
+	translate([10,0,0])circle(10);
+}

@@ -1,0 +1,2785 @@
+App.ActiveDocument.addObject("Part::Sphere","O1")
+App.ActiveDocument.O1.Radius='3 mm'
+App.ActiveDocument.O1.Angle1='-90.00 deg'
+App.ActiveDocument.O1.Angle2='90.00 deg'
+App.ActiveDocument.O1.Angle3='360.00 deg'
+App.ActiveDocument.O1.Placement=App.Placement(App.Vector(50.00495755892498,50.00366554970526,0.0023422415218622115),App.Rotation(App.Vector(0.00,0.00,1.00),0.0009782236775623132))
+App.ActiveDocument.O1.Label='O1'
+
+App.ActiveDocument.addObject("Part::Sphere","O2")
+App.ActiveDocument.O2.Radius='3 mm'
+App.ActiveDocument.O2.Angle1='-90.00 deg'
+App.ActiveDocument.O2.Angle2='90.00 deg'
+App.ActiveDocument.O2.Angle3='360.00 deg'
+App.ActiveDocument.O2.Placement=App.Placement(App.Vector(89.76096957737477,56.99192596990813,-25.07648364709208),App.Rotation(App.Vector(0.00,0.00,1.00),0.00452991429612091))
+App.ActiveDocument.O2.Label='O2'
+
+App.ActiveDocument.addObject("Part::Cylinder","O3")
+App.ActiveDocument.O3.Radius='3.000057313133244 mm'
+App.ActiveDocument.O3.Height='47.04774112649584 mm'
+App.ActiveDocument.O3.Angle='360.00 deg'
+App.ActiveDocument.O3.FirstAngle='0.00 deg'
+App.ActiveDocument.O3.SecondAngle='0.00 deg'
+App.ActiveDocument.O3.Placement=App.Placement(App.Vector(89.563226626479,56.95727815584615,-24.947886889861223),App.Rotation(App.Vector(0.17310909402770383,-0.9849026558827566,0.0009507105813992278),58.151886897652254))
+App.ActiveDocument.O3.Label='O3'
+
+App.ActiveDocument.addObject("Part::Sphere","O4")
+App.ActiveDocument.O4.Radius='3 mm'
+App.ActiveDocument.O4.Angle1='-90.00 deg'
+App.ActiveDocument.O4.Angle2='90.00 deg'
+App.ActiveDocument.O4.Angle3='360.00 deg'
+App.ActiveDocument.O4.Placement=App.Placement(App.Vector(120.5525870927608,52.622947736495654,-49.5082639778915),App.Rotation(App.Vector(0.00,0.00,1.00),0.004385781254191329))
+App.ActiveDocument.O4.Label='O4'
+
+App.ActiveDocument.addObject("Part::Cylinder","O5")
+App.ActiveDocument.O5.Radius='3.001408778530682 mm'
+App.ActiveDocument.O5.Height='39.15392486023638 mm'
+App.ActiveDocument.O5.Angle='360.00 deg'
+App.ActiveDocument.O5.FirstAngle='0.00 deg'
+App.ActiveDocument.O5.SecondAngle='0.00 deg'
+App.ActiveDocument.O5.Placement=App.Placement(App.Vector(120.39778180378646,52.64652267796895,-49.3840886415658),App.Rotation(App.Vector(-0.14041516385214095,-0.9900927137194659,0.0038500462969899897),51.84985789667655))
+App.ActiveDocument.O5.Label='O5'
+
+App.ActiveDocument.addObject("Part::Sphere","O6")
+App.ActiveDocument.O6.Radius='3 mm'
+App.ActiveDocument.O6.Angle1='-90.00 deg'
+App.ActiveDocument.O6.Angle2='90.00 deg'
+App.ActiveDocument.O6.Angle3='360.00 deg'
+App.ActiveDocument.O6.Placement=App.Placement(App.Vector(145.1080949867466,38.5375820694457,-76.1720400664693),App.Rotation(App.Vector(0.00,0.00,1.00),0.0049058051446793476))
+App.ActiveDocument.O6.Label='O6'
+
+App.ActiveDocument.addObject("Part::Cylinder","O7")
+App.ActiveDocument.O7.Radius='3.00227097138421 mm'
+App.ActiveDocument.O7.Height='38.499449579776076 mm'
+App.ActiveDocument.O7.Angle='360.00 deg'
+App.ActiveDocument.O7.FirstAngle='0.00 deg'
+App.ActiveDocument.O7.SecondAngle='0.00 deg'
+App.ActiveDocument.O7.Placement=App.Placement(App.Vector(144.9846678534388,38.605898354572474,-76.03745753301902),App.Rotation(App.Vector(-0.4976638224234194,-0.8673700017010684,0.0018765898874360532),46.71560398206997))
+App.ActiveDocument.O7.Label='O7'
+
+App.ActiveDocument.addObject("Part::Sphere","O8")
+App.ActiveDocument.O8.Radius='3 mm'
+App.ActiveDocument.O8.Angle1='-90.00 deg'
+App.ActiveDocument.O8.Angle2='90.00 deg'
+App.ActiveDocument.O8.Angle3='360.00 deg'
+App.ActiveDocument.O8.Placement=App.Placement(App.Vector(160.00424715030275,10.002417414688898,-109.99850248042932),App.Rotation(App.Vector(0.00,0.00,1.00),0.0007775479942814179))
+App.ActiveDocument.O8.Label='O8'
+
+App.ActiveDocument.addObject("Part::Cylinder","O9")
+App.ActiveDocument.O9.Radius='3.002360243701364 mm'
+App.ActiveDocument.O9.Height='46.226300835480345 mm'
+App.ActiveDocument.O9.Angle='360.00 deg'
+App.ActiveDocument.O9.FirstAngle='0.00 deg'
+App.ActiveDocument.O9.SecondAngle='0.00 deg'
+App.ActiveDocument.O9.Placement=App.Placement(App.Vector(159.9300149210391,10.14296549620267,-109.82755897245845),App.Rotation(App.Vector(-0.8864627900634199,-0.4627998723346596,0.0015050077615830105),43.58311427711188))
+App.ActiveDocument.O9.Label='O9'
+
+App.ActiveDocument.addObject("Part::Sphere","O10")
+App.ActiveDocument.O10.Radius='3 mm'
+App.ActiveDocument.O10.Angle1='-90.00 deg'
+App.ActiveDocument.O10.Angle2='90.00 deg'
+App.ActiveDocument.O10.Angle3='360.00 deg'
+App.ActiveDocument.O10.Placement=App.Placement(App.Vector(210.7634089789739,37.16815501607238,-76.5560549436014),App.Rotation(App.Vector(0.00,0.00,1.00),0.0036017243125196154))
+App.ActiveDocument.O10.Label='O10'
+
+App.ActiveDocument.addObject("Part::Cylinder","O11")
+App.ActiveDocument.O11.Radius='3.0045975814347052 mm'
+App.ActiveDocument.O11.Height='65.9155945854093 mm'
+App.ActiveDocument.O11.Angle='360.00 deg'
+App.ActiveDocument.O11.FirstAngle='0.00 deg'
+App.ActiveDocument.O11.SecondAngle='0.00 deg'
+App.ActiveDocument.O11.Placement=App.Placement(App.Vector(210.51105933678187,37.03137214683411,-76.72233462158599),App.Rotation(App.Vector(0.47182847944998807,-0.8816903572002545,0.0011481446026909282),120.15217567561612))
+App.ActiveDocument.O11.Label='O11'
+
+App.ActiveDocument.addObject("Part::Sphere","O12")
+App.ActiveDocument.O12.Radius='3 mm'
+App.ActiveDocument.O12.Angle1='-90.00 deg'
+App.ActiveDocument.O12.Angle2='90.00 deg'
+App.ActiveDocument.O12.Angle3='360.00 deg'
+App.ActiveDocument.O12.Placement=App.Placement(App.Vector(261.0797593903343,51.66869297545092,-50.506271042664714),App.Rotation(App.Vector(0.00,0.00,1.00),0.003822902595143635))
+App.ActiveDocument.O12.Label='O12'
+
+App.ActiveDocument.addObject("Part::Cylinder","O13")
+App.ActiveDocument.O13.Radius='3.0007956506982687 mm'
+App.ActiveDocument.O13.Height='57.89857588731143 mm'
+App.ActiveDocument.O13.Angle='360.00 deg'
+App.ActiveDocument.O13.FirstAngle='0.00 deg'
+App.ActiveDocument.O13.SecondAngle='0.00 deg'
+App.ActiveDocument.O13.Placement=App.Placement(App.Vector(260.8262059669828,51.59579922142206,-50.638312288525185),App.Rotation(App.Vector(0.2769511404064328,-0.9608840022747679,0.0017468720481539303),116.44939841238322))
+App.ActiveDocument.O13.Label='O13'
+
+App.ActiveDocument.addObject("Part::Sphere","O14")
+App.ActiveDocument.O14.Radius='3 mm'
+App.ActiveDocument.O14.Angle1='-90.00 deg'
+App.ActiveDocument.O14.Angle2='90.00 deg'
+App.ActiveDocument.O14.Angle3='360.00 deg'
+App.ActiveDocument.O14.Placement=App.Placement(App.Vector(314.40987393970465,60.114966895244464,-26.07299863792043),App.Rotation(App.Vector(0.00,0.00,1.00),0.0017851825188657988))
+App.ActiveDocument.O14.Label='O14'
+
+App.ActiveDocument.addObject("Part::Cylinder","O15")
+App.ActiveDocument.O15.Radius='3.002078730751821 mm'
+App.ActiveDocument.O15.Height='58.67438837461362 mm'
+App.ActiveDocument.O15.Angle='360.00 deg'
+App.ActiveDocument.O15.FirstAngle='0.00 deg'
+App.ActiveDocument.O15.SecondAngle='0.00 deg'
+App.ActiveDocument.O15.Placement=App.Placement(App.Vector(314.1444476984708,60.07647706175255,-26.19321482034132),App.Rotation(App.Vector(0.15644453695577515,-0.987686745307789,0.0032522449000971965),114.35391426413294))
+App.ActiveDocument.O15.Label='O15'
+
+App.ActiveDocument.addObject("Part::Sphere","O16")
+App.ActiveDocument.O16.Radius='3 mm'
+App.ActiveDocument.O16.Angle1='-90.00 deg'
+App.ActiveDocument.O16.Angle2='90.00 deg'
+App.ActiveDocument.O16.Angle3='360.00 deg'
+App.ActiveDocument.O16.Placement=App.Placement(App.Vector(380.0009254097276,60.00046624858588,0.0020981516405507816),App.Rotation(App.Vector(0.00,0.00,1.00),0.002196019917867046))
+App.ActiveDocument.O16.Label='O16'
+
+App.ActiveDocument.addObject("Part::Cylinder","O17")
+App.ActiveDocument.O17.Radius='3.004363966063787 mm'
+App.ActiveDocument.O17.Height='69.88015146975427 mm'
+App.ActiveDocument.O17.Angle='360.00 deg'
+App.ActiveDocument.O17.FirstAngle='0.00 deg'
+App.ActiveDocument.O17.SecondAngle='0.00 deg'
+App.ActiveDocument.O17.Placement=App.Placement(App.Vector(379.67633751146906,60.005437627841836,-0.12720944233162185),App.Rotation(App.Vector(-0.0017384352157692176,-0.9999984889203586,0.003434192163068388),111.67974436686427))
+App.ActiveDocument.O17.Label='O17'
+
+App.ActiveDocument.addObject("Part::Sphere","O18")
+App.ActiveDocument.O18.Radius='3 mm'
+App.ActiveDocument.O18.Angle1='-90.00 deg'
+App.ActiveDocument.O18.Angle2='90.00 deg'
+App.ActiveDocument.O18.Angle3='360.00 deg'
+App.ActiveDocument.O18.Placement=App.Placement(App.Vector(84.80722252888926,72.49926812634848,-15.30187288821916),App.Rotation(App.Vector(0.00,0.00,1.00),0.0030609999507356877))
+App.ActiveDocument.O18.Label='O18'
+
+App.ActiveDocument.addObject("Part::Cylinder","O19")
+App.ActiveDocument.O19.Radius='3.002472705418264 mm'
+App.ActiveDocument.O19.Height='43.734541085518465 mm'
+App.ActiveDocument.O19.Angle='360.00 deg'
+App.ActiveDocument.O19.FirstAngle='0.00 deg'
+App.ActiveDocument.O19.SecondAngle='0.00 deg'
+App.ActiveDocument.O19.Placement=App.Placement(App.Vector(84.63099447046253,72.38643566573661,-15.221087102277961),App.Rotation(App.Vector(0.5428892183596112,-0.8398043204157087,0.0023930357745241726),69.73451277063317))
+App.ActiveDocument.O19.Label='O19'
+
+App.ActiveDocument.addObject("Part::Sphere","O20")
+App.ActiveDocument.O20.Radius='3 mm'
+App.ActiveDocument.O20.Angle1='-90.00 deg'
+App.ActiveDocument.O20.Angle2='90.00 deg'
+App.ActiveDocument.O20.Angle3='360.00 deg'
+App.ActiveDocument.O20.Placement=App.Placement(App.Vector(108.57278355493695,74.47405860861558,-29.675097143841647),App.Rotation(App.Vector(0.00,0.00,1.00),0.0033764723197220224))
+App.ActiveDocument.O20.Label='O20'
+
+App.ActiveDocument.addObject("Part::Cylinder","O21")
+App.ActiveDocument.O21.Radius='3.0027177757421315 mm'
+App.ActiveDocument.O21.Height='27.569048945705664 mm'
+App.ActiveDocument.O21.Angle='360.00 deg'
+App.ActiveDocument.O21.FirstAngle='0.00 deg'
+App.ActiveDocument.O21.SecondAngle='0.00 deg'
+App.ActiveDocument.O21.Placement=App.Placement(App.Vector(108.45412191976,74.46090819457552,-29.605010758602816),App.Rotation(App.Vector(0.08269535355122731,-0.9965748735047645,0.0007758081411424988),58.920714351768275))
+App.ActiveDocument.O21.Label='O21'
+
+App.ActiveDocument.addObject("Part::Cylinder","O22")
+App.ActiveDocument.O22.Radius='3.0032041377457714 mm'
+App.ActiveDocument.O22.Height='25.829135323076777 mm'
+App.ActiveDocument.O22.Angle='360.00 deg'
+App.ActiveDocument.O22.FirstAngle='0.00 deg'
+App.ActiveDocument.O22.SecondAngle='0.00 deg'
+App.ActiveDocument.O22.Placement=App.Placement(App.Vector(108.48069480497789,74.38685971151631,-29.65407681065926),App.Rotation(App.Vector(0.6807470464532941,-0.7325185722868168,0.0018103610014998572),79.84455249332817))
+App.ActiveDocument.O22.Label='O22'
+
+App.ActiveDocument.addObject("Part::Sphere","O23")
+App.ActiveDocument.O23.Radius='3 mm'
+App.ActiveDocument.O23.Angle1='-90.00 deg'
+App.ActiveDocument.O23.Angle2='90.00 deg'
+App.ActiveDocument.O23.Angle3='360.00 deg'
+App.ActiveDocument.O23.Placement=App.Placement(App.Vector(132.8217552647818,70.72737337310696,-45.80364202463604),App.Rotation(App.Vector(0.00,0.00,1.00),0.0008331950454175563))
+App.ActiveDocument.O23.Label='O23'
+
+App.ActiveDocument.addObject("Part::Cylinder","O24")
+App.ActiveDocument.O24.Radius='3.0018231079630304 mm'
+App.ActiveDocument.O24.Height='29.066724219745748 mm'
+App.ActiveDocument.O24.Angle='360.00 deg'
+App.ActiveDocument.O24.FirstAngle='0.00 deg'
+App.ActiveDocument.O24.SecondAngle='0.00 deg'
+App.ActiveDocument.O24.Placement=App.Placement(App.Vector(132.6969953156831,70.74212338740573,-45.7240899766893),App.Rotation(App.Vector(-0.15274834260625367,-0.9882651181899735,0.001674912909459899),56.68572249814973))
+App.ActiveDocument.O24.Label='O24'
+
+App.ActiveDocument.addObject("Part::Cylinder","O25")
+App.ActiveDocument.O25.Radius='3.001636586867648 mm'
+App.ActiveDocument.O25.Height='21.955913186370836 mm'
+App.ActiveDocument.O25.Angle='360.00 deg'
+App.ActiveDocument.O25.FirstAngle='0.00 deg'
+App.ActiveDocument.O25.SecondAngle='0.00 deg'
+App.ActiveDocument.O25.Placement=App.Placement(App.Vector(132.75691649241796,70.63490380647589,-45.82160778631244),App.Rotation(App.Vector(0.827826460501157,-0.5609842700950946,0.0019963114581709107),99.61318368569826))
+App.ActiveDocument.O25.Label='O25'
+
+App.ActiveDocument.addObject("Part::Sphere","O26")
+App.ActiveDocument.O26.Radius='3 mm'
+App.ActiveDocument.O26.Angle1='-90.00 deg'
+App.ActiveDocument.O26.Angle2='90.00 deg'
+App.ActiveDocument.O26.Angle3='360.00 deg'
+App.ActiveDocument.O26.Placement=App.Placement(App.Vector(155.61775853503636,61.05268649765917,-62.38012222107388),App.Rotation(App.Vector(0.00,0.00,1.00),0.0005947392714810351))
+App.ActiveDocument.O26.Label='O26'
+
+App.ActiveDocument.addObject("Part::Cylinder","O27")
+App.ActiveDocument.O27.Radius='3.0015576346445445 mm'
+App.ActiveDocument.O27.Height='29.500707161120886 mm'
+App.ActiveDocument.O27.Angle='360.00 deg'
+App.ActiveDocument.O27.FirstAngle='0.00 deg'
+App.ActiveDocument.O27.SecondAngle='0.00 deg'
+App.ActiveDocument.O27.Placement=App.Placement(App.Vector(155.5042518382233,61.10192034326202,-62.29689829078287),App.Rotation(App.Vector(-0.3906203093521586,-0.9205518855130459,0.003185743211239689),56.20899626572666))
+App.ActiveDocument.O27.Label='O27'
+
+App.ActiveDocument.addObject("Part::Cylinder","O28")
+App.ActiveDocument.O28.Radius='3.003647895272999 mm'
+App.ActiveDocument.O28.Height='28.135487683364268 mm'
+App.ActiveDocument.O28.Angle='360.00 deg'
+App.ActiveDocument.O28.FirstAngle='0.00 deg'
+App.ActiveDocument.O28.SecondAngle='0.00 deg'
+App.ActiveDocument.O28.Placement=App.Placement(App.Vector(155.56496240827153,60.93721928128403,-62.44519612631015),App.Rotation(App.Vector(0.9061434720120886,-0.42297045775074776,0.0039364188196120056),119.03874233205))
+App.ActiveDocument.O28.Label='O28'
+
+App.ActiveDocument.addObject("Part::Sphere","O29")
+App.ActiveDocument.O29.Radius='3 mm'
+App.ActiveDocument.O29.Angle1='-90.00 deg'
+App.ActiveDocument.O29.Angle2='90.00 deg'
+App.ActiveDocument.O29.Angle3='360.00 deg'
+App.ActiveDocument.O29.Placement=App.Placement(App.Vector(179.80738681088312,49.78789693682259,-75.58032580993793),App.Rotation(App.Vector(0.00,0.00,1.00),0.0007387872423392406))
+App.ActiveDocument.O29.Label='O29'
+
+App.ActiveDocument.addObject("Part::Cylinder","O30")
+App.ActiveDocument.O30.Radius='3.0016765250456556 mm'
+App.ActiveDocument.O30.Height='29.475679727516717 mm'
+App.ActiveDocument.O30.Angle='360.00 deg'
+App.ActiveDocument.O30.FirstAngle='0.00 deg'
+App.ActiveDocument.O30.SecondAngle='0.00 deg'
+App.ActiveDocument.O30.Placement=App.Placement(App.Vector(179.68630282869603,49.842934821377334,-75.51890918506031),App.Rotation(App.Vector(-0.4221102417697882,-0.9065445073426076,0.003805443674055398),63.67704425316769))
+App.ActiveDocument.O30.Label='O30'
+
+App.ActiveDocument.addObject("Part::Cylinder","O31")
+App.ActiveDocument.O31.Radius='3.0034605454015963 mm'
+App.ActiveDocument.O31.Height='55.64701024034334 mm'
+App.ActiveDocument.O31.Angle='360.00 deg'
+App.ActiveDocument.O31.FirstAngle='0.00 deg'
+App.ActiveDocument.O31.SecondAngle='0.00 deg'
+App.ActiveDocument.O31.Placement=App.Placement(App.Vector(179.70627783937329,49.59099655104177,-75.75254696913564),App.Rotation(App.Vector(0.8952172792787141,-0.4456299169499472,0.0014688786869787652),127.75450555986887))
+App.ActiveDocument.O31.Label='O31'
+
+App.ActiveDocument.addObject("Part::Sphere","O32")
+App.ActiveDocument.O32.Radius='3 mm'
+App.ActiveDocument.O32.Angle1='-90.00 deg'
+App.ActiveDocument.O32.Angle2='90.00 deg'
+App.ActiveDocument.O32.Angle3='360.00 deg'
+App.ActiveDocument.O32.Placement=App.Placement(App.Vector(214.9567135853203,59.82989553969684,-62.127174741761394),App.Rotation(App.Vector(0.00,0.00,1.00),0.0014622192684494485))
+App.ActiveDocument.O32.Label='O32'
+
+App.ActiveDocument.addObject("Part::Cylinder","O33")
+App.ActiveDocument.O33.Radius='3.003702272452932 mm'
+App.ActiveDocument.O33.Height='38.56366741617946 mm'
+App.ActiveDocument.O33.Angle='360.00 deg'
+App.ActiveDocument.O33.FirstAngle='0.00 deg'
+App.ActiveDocument.O33.SecondAngle='0.00 deg'
+App.ActiveDocument.O33.Placement=App.Placement(App.Vector(214.77885511227723,59.78117904787618,-62.19391514296949),App.Rotation(App.Vector(0.2747563239364433,-0.9615138909329038,0.0006099266433207296),110.21051425686713))
+App.ActiveDocument.O33.Label='O33'
+
+App.ActiveDocument.addObject("Part::Cylinder","O34")
+App.ActiveDocument.O34.Radius='3.0027113162667853 mm'
+App.ActiveDocument.O34.Height='26.919908155215914 mm'
+App.ActiveDocument.O34.Angle='360.00 deg'
+App.ActiveDocument.O34.FirstAngle='0.00 deg'
+App.ActiveDocument.O34.SecondAngle='0.00 deg'
+App.ActiveDocument.O34.Placement=App.Placement(App.Vector(214.93392324253116,59.717075937273165,-62.20111735006226),App.Rotation(App.Vector(0.9833280107151476,-0.1818406537136033,0.0011076790412846839),122.04832080941783))
+App.ActiveDocument.O34.Label='O34'
+
+App.ActiveDocument.addObject("Part::Sphere","O35")
+App.ActiveDocument.O35.Radius='3 mm'
+App.ActiveDocument.O35.Angle1='-90.00 deg'
+App.ActiveDocument.O35.Angle2='90.00 deg'
+App.ActiveDocument.O35.Angle3='360.00 deg'
+App.ActiveDocument.O35.Placement=App.Placement(App.Vector(251.74727204975346,68.91566129058923,-46.20340638916895),App.Rotation(App.Vector(0.00,0.00,1.00),0.0018667169273021735))
+App.ActiveDocument.O35.Label='O35'
+
+App.ActiveDocument.addObject("Part::Cylinder","O36")
+App.ActiveDocument.O36.Radius='3.0017409309220167 mm'
+App.ActiveDocument.O36.Height='40.693956312390114 mm'
+App.ActiveDocument.O36.Angle='360.00 deg'
+App.ActiveDocument.O36.FirstAngle='0.00 deg'
+App.ActiveDocument.O36.SecondAngle='0.00 deg'
+App.ActiveDocument.O36.Placement=App.Placement(App.Vector(251.56499135298898,68.86846116776155,-46.28453082032081),App.Rotation(App.Vector(0.23969369221069217,-0.970848563842171,0.00036636492403382183),112.79303087083808))
+App.ActiveDocument.O36.Label='O36'
+
+App.ActiveDocument.addObject("Part::Cylinder","O37")
+App.ActiveDocument.O37.Radius='3.00209042034566 mm'
+App.ActiveDocument.O37.Height='19.87469585012193 mm'
+App.ActiveDocument.O37.Angle='360.00 deg'
+App.ActiveDocument.O37.FirstAngle='0.00 deg'
+App.ActiveDocument.O37.SecondAngle='0.00 deg'
+App.ActiveDocument.O37.Placement=App.Placement(App.Vector(251.794002916035,68.82703561698493,-46.22773463059976),App.Rotation(App.Vector(0.8794854806496725,0.4759257182863883,0.0032624739802161982),102.381743311931))
+App.ActiveDocument.O37.Label='O37'
+
+App.ActiveDocument.addObject("Part::Sphere","O38")
+App.ActiveDocument.O38.Radius='3 mm'
+App.ActiveDocument.O38.Angle1='-90.00 deg'
+App.ActiveDocument.O38.Angle2='90.00 deg'
+App.ActiveDocument.O38.Angle3='360.00 deg'
+App.ActiveDocument.O38.Placement=App.Placement(App.Vector(289.7126656236019,73.52474664052421,-30.820325888086764),App.Rotation(App.Vector(0.00,0.00,1.00),0.0014751790081246785))
+App.ActiveDocument.O38.Label='O38'
+
+App.ActiveDocument.addObject("Part::Cylinder","O39")
+App.ActiveDocument.O39.Radius='3.0043102975426628 mm'
+App.ActiveDocument.O39.Height='40.81188445752923 mm'
+App.ActiveDocument.O39.Angle='360.00 deg'
+App.ActiveDocument.O39.FirstAngle='0.00 deg'
+App.ActiveDocument.O39.SecondAngle='0.00 deg'
+App.ActiveDocument.O39.Placement=App.Placement(App.Vector(289.5250707396825,73.50285746720093,-30.895975039566018),App.Rotation(App.Vector(0.12049650220067072,-0.9927137517720825,0.0025989076370518736),111.91115955250118))
+App.ActiveDocument.O39.Label='O39'
+
+App.ActiveDocument.addObject("Part::Cylinder","O40")
+App.ActiveDocument.O40.Radius='3.004441642185414 mm'
+App.ActiveDocument.O40.Height='28.212835225331613 mm'
+App.ActiveDocument.O40.Angle='360.00 deg'
+App.ActiveDocument.O40.FirstAngle='0.00 deg'
+App.ActiveDocument.O40.SecondAngle='0.00 deg'
+App.ActiveDocument.O40.Placement=App.Placement(App.Vector(289.8369287570888,73.45541308101365,-30.79986833982119),App.Rotation(App.Vector(0.4771292535019085,0.8788331328828651,0.0024287056390113137),80.40872879396802))
+App.ActiveDocument.O40.Label='O40'
+
+App.ActiveDocument.addObject("Part::Sphere","O41")
+App.ActiveDocument.O41.Radius='3 mm'
+App.ActiveDocument.O41.Angle1='-90.00 deg'
+App.ActiveDocument.O41.Angle2='90.00 deg'
+App.ActiveDocument.O41.Angle3='360.00 deg'
+App.ActiveDocument.O41.Placement=App.Placement(App.Vector(325.2721272214213,74.49077092141688,-17.051267668098458),App.Rotation(App.Vector(0.00,0.00,1.00),0.004379140813293174))
+App.ActiveDocument.O41.Label='O41'
+
+App.ActiveDocument.addObject("Part::Cylinder","O42")
+App.ActiveDocument.O42.Radius='3.0010603735555144 mm'
+App.ActiveDocument.O42.Height='37.76149422376166 mm'
+App.ActiveDocument.O42.Angle='360.00 deg'
+App.ActiveDocument.O42.FirstAngle='0.00 deg'
+App.ActiveDocument.O42.SecondAngle='0.00 deg'
+App.ActiveDocument.O42.Placement=App.Placement(App.Vector(325.0928441139972,74.48718132979992,-17.11810570777467),App.Rotation(App.Vector(0.02718544916764429,-0.9996304073774235,0.002883750866463406),111.16482477357142))
+App.ActiveDocument.O42.Label='O42'
+
+App.ActiveDocument.addObject("Part::Cylinder","O43")
+App.ActiveDocument.O43.Radius='3.002985097172371 mm'
+App.ActiveDocument.O43.Height='58.537210202589755 mm'
+App.ActiveDocument.O43.Angle='360.00 deg'
+App.ActiveDocument.O43.FirstAngle='0.00 deg'
+App.ActiveDocument.O43.SecondAngle='0.00 deg'
+App.ActiveDocument.O43.Placement=App.Placement(App.Vector(325.5461931362546,74.41827099363252,-16.96575248941256),App.Rotation(App.Vector(0.2558986731211802,0.966703609745417,0.0012678925744096159),73.2418947998773))
+App.ActiveDocument.O43.Label='O43'
+
+App.ActiveDocument.addObject("Part::Sphere","O44")
+App.ActiveDocument.O44.Radius='3 mm'
+App.ActiveDocument.O44.Angle1='-90.00 deg'
+App.ActiveDocument.O44.Angle2='90.00 deg'
+App.ActiveDocument.O44.Angle3='360.00 deg'
+App.ActiveDocument.O44.Placement=App.Placement(App.Vector(106.31286348078685,97.60108234345144,-21.47348804063383),App.Rotation(App.Vector(0.00,0.00,1.00),0.002208421499304304))
+App.ActiveDocument.O44.Label='O44'
+
+App.ActiveDocument.addObject("Part::Cylinder","O45")
+App.ActiveDocument.O45.Radius='3.004277958195005 mm'
+App.ActiveDocument.O45.Height='33.29010157810459 mm'
+App.ActiveDocument.O45.Angle='360.00 deg'
+App.ActiveDocument.O45.FirstAngle='0.00 deg'
+App.ActiveDocument.O45.SecondAngle='0.00 deg'
+App.ActiveDocument.O45.Placement=App.Placement(App.Vector(106.20865794433112,97.47421772029693,-21.44338073847142),App.Rotation(App.Vector(0.7593167714009662,-0.6507211696796201,0.004156937415945306),79.42198378308292))
+App.ActiveDocument.O45.Label='O45'
+
+App.ActiveDocument.addObject("Part::Sphere","O46")
+App.ActiveDocument.O46.Radius='3 mm'
+App.ActiveDocument.O46.Angle1='-90.00 deg'
+App.ActiveDocument.O46.Angle2='90.00 deg'
+App.ActiveDocument.O46.Angle3='360.00 deg'
+App.ActiveDocument.O46.Placement=App.Placement(App.Vector(124.29134808494243,96.9194751547485,-31.249618020569887),App.Rotation(App.Vector(0.00,0.00,1.00),0.004037544859992264))
+App.ActiveDocument.O46.Label='O46'
+
+App.ActiveDocument.addObject("Part::Cylinder","O47")
+App.ActiveDocument.O47.Radius='3.004066856199224 mm'
+App.ActiveDocument.O47.Height='20.26903942289688 mm'
+App.ActiveDocument.O47.Angle='360.00 deg'
+App.ActiveDocument.O47.FirstAngle='0.00 deg'
+App.ActiveDocument.O47.SecondAngle='0.00 deg'
+App.ActiveDocument.O47.Placement=App.Placement(App.Vector(124.19804453996468,96.92534543024628,-31.203841669579237),App.Rotation(App.Vector(-0.03766756014853907,-0.9992903256373777,0.004280905098210225),61.47829800606878))
+App.ActiveDocument.O47.Label='O47'
+
+App.ActiveDocument.addObject("Part::Cylinder","O48")
+App.ActiveDocument.O48.Radius='3.0046748480576118 mm'
+App.ActiveDocument.O48.Height='27.175116526010513 mm'
+App.ActiveDocument.O48.Angle='360.00 deg'
+App.ActiveDocument.O48.FirstAngle='0.00 deg'
+App.ActiveDocument.O48.SecondAngle='0.00 deg'
+App.ActiveDocument.O48.Placement=App.Placement(App.Vector(124.21085359486516,96.80794424573185,-31.245447525412317),App.Rotation(App.Vector(0.8191756952475766,-0.5735426577994436,0.0012290515010319248),86.71199954054485))
+App.ActiveDocument.O48.Label='O48'
+
+App.ActiveDocument.addObject("Part::Sphere","O49")
+App.ActiveDocument.O49.Radius='3 mm'
+App.ActiveDocument.O49.Angle1='-90.00 deg'
+App.ActiveDocument.O49.Angle2='90.00 deg'
+App.ActiveDocument.O49.Angle3='360.00 deg'
+App.ActiveDocument.O49.Placement=App.Placement(App.Vector(144.10877515554094,92.76901318447327,-41.95388621135591),App.Rotation(App.Vector(0.00,0.00,1.00),0.003207003245010954))
+App.ActiveDocument.O49.Label='O49'
+
+App.ActiveDocument.addObject("Part::Cylinder","O50")
+App.ActiveDocument.O50.Radius='3.0019825579885535 mm'
+App.ActiveDocument.O50.Height='22.675417629333573 mm'
+App.ActiveDocument.O50.Angle='360.00 deg'
+App.ActiveDocument.O50.FirstAngle='0.00 deg'
+App.ActiveDocument.O50.SecondAngle='0.00 deg'
+App.ActiveDocument.O50.Placement=App.Placement(App.Vector(144.01138409372734,92.78786976913297,-41.90263142847009),App.Rotation(App.Vector(-0.20518021910982145,-0.9787242092060693,0.0029709198061395824),62.1444021315611))
+App.ActiveDocument.O50.Label='O50'
+
+App.ActiveDocument.addObject("Part::Cylinder","O51")
+App.ActiveDocument.O51.Radius='3.0041200457336212 mm'
+App.ActiveDocument.O51.Height='24.811456798187127 mm'
+App.ActiveDocument.O51.Angle='360.00 deg'
+App.ActiveDocument.O51.FirstAngle='0.00 deg'
+App.ActiveDocument.O51.SecondAngle='0.00 deg'
+App.ActiveDocument.O51.Placement=App.Placement(App.Vector(144.05357194275643,92.65562797847959,-41.975195355148415),App.Rotation(App.Vector(0.8900445633564354,-0.45587352987385876,0.0006292873685979783),98.83449225197757))
+App.ActiveDocument.O51.Label='O51'
+
+App.ActiveDocument.addObject("Part::Sphere","O52")
+App.ActiveDocument.O52.Radius='3 mm'
+App.ActiveDocument.O52.Angle1='-90.00 deg'
+App.ActiveDocument.O52.Angle2='90.00 deg'
+App.ActiveDocument.O52.Angle3='360.00 deg'
+App.ActiveDocument.O52.Placement=App.Placement(App.Vector(164.79114946441877,85.5195734240009,-52.0128793132871),App.Rotation(App.Vector(0.00,0.00,1.00),0.002292252721948884))
+App.ActiveDocument.O52.Label='O52'
+
+App.ActiveDocument.addObject("Part::Cylinder","O53")
+App.ActiveDocument.O53.Radius='3.0027290250858854 mm'
+App.ActiveDocument.O53.Height='23.871722957916397 mm'
+App.ActiveDocument.O53.Angle='360.00 deg'
+App.ActiveDocument.O53.FirstAngle='0.00 deg'
+App.ActiveDocument.O53.SecondAngle='0.00 deg'
+App.ActiveDocument.O53.Placement=App.Placement(App.Vector(164.68590723947923,85.55544183061906,-51.962856194788),App.Rotation(App.Vector(-0.3306408201297068,-0.943756667824898,0.00024373368357860303),65.35050732170737))
+App.ActiveDocument.O53.Label='O53'
+
+App.ActiveDocument.addObject("Part::Cylinder","O54")
+App.ActiveDocument.O54.Radius='3.003965552380876 mm'
+App.ActiveDocument.O54.Height='27.832090332427818 mm'
+App.ActiveDocument.O54.Angle='360.00 deg'
+App.ActiveDocument.O54.FirstAngle='0.00 deg'
+App.ActiveDocument.O54.SecondAngle='0.00 deg'
+App.ActiveDocument.O54.Placement=App.Placement(App.Vector(164.74308710799744,85.4007141413869,-52.06751914774107),App.Rotation(App.Vector(0.9363349700751539,-0.3511079945178701,0.0038376588817509894),111.63844842069176))
+App.ActiveDocument.O54.Label='O54'
+
+App.ActiveDocument.addObject("Part::Sphere","O55")
+App.ActiveDocument.O55.Radius='3 mm'
+App.ActiveDocument.O55.Angle1='-90.00 deg'
+App.ActiveDocument.O55.Angle2='90.00 deg'
+App.ActiveDocument.O55.Angle3='360.00 deg'
+App.ActiveDocument.O55.Placement=App.Placement(App.Vector(188.2766098398371,79.59481413828311,-57.81637740411633),App.Rotation(App.Vector(0.00,0.00,1.00),0.004568954080859578))
+App.ActiveDocument.O55.Label='O55'
+
+App.ActiveDocument.addObject("Part::Cylinder","O56")
+App.ActiveDocument.O56.Radius='3.0009078201593704 mm'
+App.ActiveDocument.O56.Height='24.65936773160555 mm'
+App.ActiveDocument.O56.Angle='360.00 deg'
+App.ActiveDocument.O56.FirstAngle='0.00 deg'
+App.ActiveDocument.O56.SecondAngle='0.00 deg'
+App.ActiveDocument.O56.Placement=App.Placement(App.Vector(188.1606255390127,79.62184327933079,-57.7884664164329),App.Rotation(App.Vector(-0.2447120867962326,-0.9695957892729492,0.0021502892949531896),76.52609605551072))
+App.ActiveDocument.O56.Label='O56'
+
+App.ActiveDocument.addObject("Part::Cylinder","O57")
+App.ActiveDocument.O57.Radius='3.0036811796366316 mm'
+App.ActiveDocument.O57.Height='35.359952746003714 mm'
+App.ActiveDocument.O57.Angle='360.00 deg'
+App.ActiveDocument.O57.FirstAngle='0.00 deg'
+App.ActiveDocument.O57.SecondAngle='0.00 deg'
+App.ActiveDocument.O57.Placement=App.Placement(App.Vector(188.23388452430532,79.44501433128156,-57.90894061764098),App.Rotation(App.Vector(0.961910349804135,-0.2733651019052842,0.000029288069404169726),119.82731544014219))
+App.ActiveDocument.O57.Label='O57'
+
+App.ActiveDocument.addObject("Part::Sphere","O58")
+App.ActiveDocument.O58.Radius='3 mm'
+App.ActiveDocument.O58.Angle1='-90.00 deg'
+App.ActiveDocument.O58.Angle2='90.00 deg'
+App.ActiveDocument.O58.Angle3='360.00 deg'
+App.ActiveDocument.O58.Placement=App.Placement(App.Vector(215.3032128708789,84.12314198544092,-51.449869458002446),App.Rotation(App.Vector(0.00,0.00,1.00),0.004859984098058551))
+App.ActiveDocument.O58.Label='O58'
+
+App.ActiveDocument.addObject("Part::Cylinder","O59")
+App.ActiveDocument.O59.Radius='3.004549372734708 mm'
+App.ActiveDocument.O59.Height='27.850229692603307 mm'
+App.ActiveDocument.O59.Angle='360.00 deg'
+App.ActiveDocument.O59.FirstAngle='0.00 deg'
+App.ActiveDocument.O59.SecondAngle='0.00 deg'
+App.ActiveDocument.O59.Placement=App.Placement(App.Vector(215.16651145023667,84.10418978444594,-51.48268872080067),App.Rotation(App.Vector(0.1653894920129451,-0.9862283284978686,0.002710001758242855),103.08440019427519))
+App.ActiveDocument.O59.Label='O59'
+
+App.ActiveDocument.addObject("Part::Cylinder","O60")
+App.ActiveDocument.O60.Radius='3.0043120591054597 mm'
+App.ActiveDocument.O60.Height='26.273461244025214 mm'
+App.ActiveDocument.O60.Angle='360.00 deg'
+App.ActiveDocument.O60.FirstAngle='0.00 deg'
+App.ActiveDocument.O60.SecondAngle='0.00 deg'
+App.ActiveDocument.O60.Placement=App.Placement(App.Vector(215.30163555783213,84.0023335825888,-51.50443487999601),App.Rotation(App.Vector(0.9998987988774711,-0.014226454350637288,0.003922501818008255),113.7277760346843))
+App.ActiveDocument.O60.Label='O60'
+
+App.ActiveDocument.addObject("Part::Sphere","O61")
+App.ActiveDocument.O61.Radius='3 mm'
+App.ActiveDocument.O61.Angle1='-90.00 deg'
+App.ActiveDocument.O61.Angle2='90.00 deg'
+App.ActiveDocument.O61.Angle3='360.00 deg'
+App.ActiveDocument.O61.Placement=App.Placement(App.Vector(242.65422252597202,89.63991674511581,-42.112305576902756),App.Rotation(App.Vector(0.00,0.00,1.00),0.000025101413092352143))
+App.ActiveDocument.O61.Label='O61'
+
+App.ActiveDocument.addObject("Part::Cylinder","O62")
+App.ActiveDocument.O62.Radius='3.001378555585498 mm'
+App.ActiveDocument.O62.Height='29.13117687531557 mm'
+App.ActiveDocument.O62.Angle='360.00 deg'
+App.ActiveDocument.O62.FirstAngle='0.00 deg'
+App.ActiveDocument.O62.SecondAngle='0.00 deg'
+App.ActiveDocument.O62.Placement=App.Placement(App.Vector(242.520271258563,89.61049599514034,-42.16261924452568),App.Rotation(App.Vector(0.19760863538245332,-0.9802809940125764,0.004117236641829909),108.50224553075277))
+App.ActiveDocument.O62.Label='O62'
+
+App.ActiveDocument.addObject("Part::Cylinder","O63")
+App.ActiveDocument.O63.Radius='3.0006396547276446 mm'
+App.ActiveDocument.O63.Height='22.767433413991967 mm'
+App.ActiveDocument.O63.Angle='360.00 deg'
+App.ActiveDocument.O63.FirstAngle='0.00 deg'
+App.ActiveDocument.O63.SecondAngle='0.00 deg'
+App.ActiveDocument.O63.Placement=App.Placement(App.Vector(242.70079364884097,89.53337154294805,-42.13561058800714),App.Rotation(App.Vector(0.9157754775259446,0.4016905211255652,0.004323562099219667),100.24908063472029))
+App.ActiveDocument.O63.Label='O63'
+
+App.ActiveDocument.addObject("Part::Sphere","O64")
+App.ActiveDocument.O64.Radius='3 mm'
+App.ActiveDocument.O64.Angle1='-90.00 deg'
+App.ActiveDocument.O64.Angle2='90.00 deg'
+App.ActiveDocument.O64.Angle3='360.00 deg'
+App.ActiveDocument.O64.Placement=App.Placement(App.Vector(269.71780141820966,92.50015858924384,-32.64256118241125),App.Rotation(App.Vector(0.00,0.00,1.00),0.003571905348229567))
+App.ActiveDocument.O64.Label='O64'
+
+App.ActiveDocument.addObject("Part::Cylinder","O65")
+App.ActiveDocument.O65.Radius='3.0030961242217677 mm'
+App.ActiveDocument.O65.Height='28.524979791725976 mm'
+App.ActiveDocument.O65.Angle='360.00 deg'
+App.ActiveDocument.O65.FirstAngle='0.00 deg'
+App.ActiveDocument.O65.SecondAngle='0.00 deg'
+App.ActiveDocument.O65.Placement=App.Placement(App.Vector(269.5810858676437,92.4876212750833,-32.69070856126824),App.Rotation(App.Vector(0.105216400214048,-0.9944493497036425,0.004717087549673841),109.19067728966765))
+App.ActiveDocument.O65.Label='O65'
+
+App.ActiveDocument.addObject("Part::Cylinder","O66")
+App.ActiveDocument.O66.Radius='3.0032954352191807 mm'
+App.ActiveDocument.O66.Height='27.35362582787075 mm'
+App.ActiveDocument.O66.Angle='360.00 deg'
+App.ActiveDocument.O66.FirstAngle='0.00 deg'
+App.ActiveDocument.O66.SecondAngle='0.00 deg'
+App.ActiveDocument.O66.Placement=App.Placement(App.Vector(269.81634189288786,92.40682616260045,-32.63181665996937),App.Rotation(App.Vector(0.6884029024570314,0.7253285075665611,0.003738644558295359),86.22465379108182))
+App.ActiveDocument.O66.Label='O66'
+
+App.ActiveDocument.addObject("Part::Sphere","O67")
+App.ActiveDocument.O67.Radius='3 mm'
+App.ActiveDocument.O67.Angle1='-90.00 deg'
+App.ActiveDocument.O67.Angle2='90.00 deg'
+App.ActiveDocument.O67.Angle3='360.00 deg'
+App.ActiveDocument.O67.Placement=App.Placement(App.Vector(293.4669310532333,93.36919283102372,-24.245406511919477),App.Rotation(App.Vector(0.00,0.00,1.00),0.004608424962488724))
+App.ActiveDocument.O67.Label='O67'
+
+App.ActiveDocument.addObject("Part::Cylinder","O68")
+App.ActiveDocument.O68.Radius='3.0000015216840863 mm'
+App.ActiveDocument.O68.Height='24.951483274991453 mm'
+App.ActiveDocument.O68.Angle='360.00 deg'
+App.ActiveDocument.O68.FirstAngle='0.00 deg'
+App.ActiveDocument.O68.SecondAngle='0.00 deg'
+App.ActiveDocument.O68.Placement=App.Placement(App.Vector(293.3464544059584,93.36592474109877,-24.29130775621689),App.Rotation(App.Vector(0.036542955906154785,-0.999332083130348,0.0032101982820876974),109.45884292270586))
+App.ActiveDocument.O68.Label='O68'
+
+App.ActiveDocument.addObject("Part::Cylinder","O69")
+App.ActiveDocument.O69.Radius='3.002606469098745 mm'
+App.ActiveDocument.O69.Height='37.3046658493511 mm'
+App.ActiveDocument.O69.Angle='360.00 deg'
+App.ActiveDocument.O69.FirstAngle='0.00 deg'
+App.ActiveDocument.O69.SecondAngle='0.00 deg'
+App.ActiveDocument.O69.Placement=App.Placement(App.Vector(293.6246124690592,93.27632092603928,-24.21024975516819),App.Rotation(App.Vector(0.5104533354311604,0.8599054554700787,0.004446092053827621),78.99407381827271))
+App.ActiveDocument.O69.Label='O69'
+
+App.ActiveDocument.addObject("Part::Sphere","O70")
+App.ActiveDocument.O70.Radius='3 mm'
+App.ActiveDocument.O70.Angle1='-90.00 deg'
+App.ActiveDocument.O70.Angle2='90.00 deg'
+App.ActiveDocument.O70.Angle3='360.00 deg'
+App.ActiveDocument.O70.Placement=App.Placement(App.Vector(119.99997201937877,125.07606352457185,-22.95177179441764),App.Rotation(App.Vector(0.00,0.00,1.00),0.004341218306868744))
+App.ActiveDocument.O70.Label='O70'
+
+App.ActiveDocument.addObject("Part::Cylinder","O71")
+App.ActiveDocument.O71.Radius='3.0004497711711675 mm'
+App.ActiveDocument.O71.Height='30.425680493022348 mm'
+App.ActiveDocument.O71.Angle='360.00 deg'
+App.ActiveDocument.O71.FirstAngle='0.00 deg'
+App.ActiveDocument.O71.SecondAngle='0.00 deg'
+App.ActiveDocument.O71.Placement=App.Placement(App.Vector(119.92949244348733,124.93968662322042,-22.9423065361026),App.Rotation(App.Vector(0.8951230473639537,-0.4458191674635234,0.00006181307083146015),87.25186165473889))
+App.ActiveDocument.O71.Label='O71'
+
+App.ActiveDocument.addObject("Part::Sphere","O72")
+App.ActiveDocument.O72.Radius='3 mm'
+App.ActiveDocument.O72.Angle1='-90.00 deg'
+App.ActiveDocument.O72.Angle2='90.00 deg'
+App.ActiveDocument.O72.Angle3='360.00 deg'
+App.ActiveDocument.O72.Placement=App.Placement(App.Vector(135.53526281559226,122.04859369888206,-30.47854324991542),App.Rotation(App.Vector(0.00,0.00,1.00),0.004316835441910849))
+App.ActiveDocument.O72.Label='O72'
+
+App.ActiveDocument.addObject("Part::Cylinder","O73")
+App.ActiveDocument.O73.Radius='3.0047506842715768 mm'
+App.ActiveDocument.O73.Height='17.353952997976645 mm'
+App.ActiveDocument.O73.Angle='360.00 deg'
+App.ActiveDocument.O73.FirstAngle='0.00 deg'
+App.ActiveDocument.O73.SecondAngle='0.00 deg'
+App.ActiveDocument.O73.Placement=App.Placement(App.Vector(135.4613228668012,122.06341675924021,-30.440662147755525),App.Rotation(App.Vector(-0.1912571027456262,-0.9815399740455552,0.002554451565307352),64.56583815198611))
+App.ActiveDocument.O73.Label='O73'
+
+App.ActiveDocument.addObject("Part::Cylinder","O74")
+App.ActiveDocument.O74.Radius='3.0043083784721913 mm'
+App.ActiveDocument.O74.Height='27.26578164620087 mm'
+App.ActiveDocument.O74.Angle='360.00 deg'
+App.ActiveDocument.O74.FirstAngle='0.00 deg'
+App.ActiveDocument.O74.SecondAngle='0.00 deg'
+App.ActiveDocument.O74.Placement=App.Placement(App.Vector(135.48125457998682,121.92428016892104,-30.48495138583461),App.Rotation(App.Vector(0.9127417648844799,-0.40853698808744937,0.0020172283678641747),91.60801695106346))
+App.ActiveDocument.O74.Label='O74'
+
+App.ActiveDocument.addObject("Part::Sphere","O75")
+App.ActiveDocument.O75.Radius='3 mm'
+App.ActiveDocument.O75.Angle1='-90.00 deg'
+App.ActiveDocument.O75.Angle2='90.00 deg'
+App.ActiveDocument.O75.Angle3='360.00 deg'
+App.ActiveDocument.O75.Placement=App.Placement(App.Vector(152.607164235215,116.91873034597565,-38.04725873547786),App.Rotation(App.Vector(0.00,0.00,1.00),0.000806294312455641))
+App.ActiveDocument.O75.Label='O75'
+
+App.ActiveDocument.addObject("Part::Cylinder","O76")
+App.ActiveDocument.O76.Radius='3.001864354113595 mm'
+App.ActiveDocument.O76.Height='19.16782139184564 mm'
+App.ActiveDocument.O76.Angle='360.00 deg'
+App.ActiveDocument.O76.FirstAngle='0.00 deg'
+App.ActiveDocument.O76.SecondAngle='0.00 deg'
+App.ActiveDocument.O76.Placement=App.Placement(App.Vector(152.5217599880741,116.9431362641192,-38.00781628640733),App.Rotation(App.Vector(-0.2879054262952349,-0.9576588460980032,0.0036143856939947682),67.00422781671652))
+App.ActiveDocument.O76.Label='O76'
+
+App.ActiveDocument.addObject("Part::Cylinder","O77")
+App.ActiveDocument.O77.Radius='3.004493493592399 mm'
+App.ActiveDocument.O77.Height='25.640407957282854 mm'
+App.ActiveDocument.O77.Angle='360.00 deg'
+App.ActiveDocument.O77.FirstAngle='0.00 deg'
+App.ActiveDocument.O77.SecondAngle='0.00 deg'
+App.ActiveDocument.O77.Placement=App.Placement(App.Vector(152.56244703497066,116.80002122688842,-38.064686852581374),App.Rotation(App.Vector(0.9433351817807787,-0.33184143022628276,0.0035104739777238126),98.68289380726054))
+App.ActiveDocument.O77.Label='O77'
+
+App.ActiveDocument.addObject("Part::Sphere","O78")
+App.ActiveDocument.O78.Radius='3 mm'
+App.ActiveDocument.O78.Angle1='-90.00 deg'
+App.ActiveDocument.O78.Angle2='90.00 deg'
+App.ActiveDocument.O78.Angle3='360.00 deg'
+App.ActiveDocument.O78.Placement=App.Placement(App.Vector(171.03813817322484,110.49757355091526,-44.46623786576153),App.Rotation(App.Vector(0.00,0.00,1.00),0.0010095730457872398))
+App.ActiveDocument.O78.Label='O78'
+
+App.ActiveDocument.addObject("Part::Cylinder","O79")
+App.ActiveDocument.O79.Radius='3.003442519468543 mm'
+App.ActiveDocument.O79.Height='20.34293016769771 mm'
+App.ActiveDocument.O79.Angle='360.00 deg'
+App.ActiveDocument.O79.FirstAngle='0.00 deg'
+App.ActiveDocument.O79.SecondAngle='0.00 deg'
+App.ActiveDocument.O79.Placement=App.Placement(App.Vector(170.9440933480735,110.5307288763948,-44.437334613700315),App.Rotation(App.Vector(-0.3288472161370422,-0.944383136464707,0.0010682927838727818),71.79323356543472))
+App.ActiveDocument.O79.Label='O79'
+
+App.ActiveDocument.addObject("Part::Cylinder","O80")
+App.ActiveDocument.O80.Radius='3.001399026326718 mm'
+App.ActiveDocument.O80.Height='26.563083865104215 mm'
+App.ActiveDocument.O80.Angle='360.00 deg'
+App.ActiveDocument.O80.FirstAngle='0.00 deg'
+App.ActiveDocument.O80.SecondAngle='0.00 deg'
+App.ActiveDocument.O80.Placement=App.Placement(App.Vector(171.00665243207754,110.3743732909913,-44.50302147496723),App.Rotation(App.Vector(0.9701187882287792,-0.2426304530052342,0.004412934786641754),106.33504180635313))
+App.ActiveDocument.O80.Label='O80'
+
+App.ActiveDocument.addObject("Part::Sphere","O81")
+App.ActiveDocument.O81.Radius='3 mm'
+App.ActiveDocument.O81.Angle1='-90.00 deg'
+App.ActiveDocument.O81.Angle2='90.00 deg'
+App.ActiveDocument.O81.Angle3='360.00 deg'
+App.ActiveDocument.O81.Placement=App.Placement(App.Vector(191.73675282909696,106.20731102843035,-47.425293051984134),App.Rotation(App.Vector(0.00,0.00,1.00),0.001639882961450031))
+App.ActiveDocument.O81.Label='O81'
+
+App.ActiveDocument.addObject("Part::Cylinder","O82")
+App.ActiveDocument.O82.Radius='3.002960262195148 mm'
+App.ActiveDocument.O82.Height='21.131677870549776 mm'
+App.ActiveDocument.O82.Angle='360.00 deg'
+App.ActiveDocument.O82.FirstAngle='0.00 deg'
+App.ActiveDocument.O82.SecondAngle='0.00 deg'
+App.ActiveDocument.O82.Placement=App.Placement(App.Vector(191.63527418263237,106.22539738589104,-47.41451835558322),App.Rotation(App.Vector(-0.20311435378868897,-0.979155023111766,0.00266043569183824),82.03223304197795))
+App.ActiveDocument.O82.Label='O82'
+
+App.ActiveDocument.addObject("Part::Cylinder","O83")
+App.ActiveDocument.O83.Radius='3.0015108197813762 mm'
+App.ActiveDocument.O83.Height='28.490232323686158 mm'
+App.ActiveDocument.O83.Angle='360.00 deg'
+App.ActiveDocument.O83.FirstAngle='0.00 deg'
+App.ActiveDocument.O83.SecondAngle='0.00 deg'
+App.ActiveDocument.O83.Placement=App.Placement(App.Vector(191.72070681024647,106.07511942323929,-47.47947015196956),App.Rotation(App.Vector(0.9916575655048561,-0.12890024351017398,0.0028265310530697974),111.16553410029196))
+App.ActiveDocument.O83.Label='O83'
+
+App.ActiveDocument.addObject("Part::Sphere","O84")
+App.ActiveDocument.O84.Radius='3 mm'
+App.ActiveDocument.O84.Angle1='-90.00 deg'
+App.ActiveDocument.O84.Angle2='90.00 deg'
+App.ActiveDocument.O84.Angle3='360.00 deg'
+App.ActiveDocument.O84.Placement=App.Placement(App.Vector(213.76628584040532,108.41139988937748,-44.04189044643492),App.Rotation(App.Vector(0.00,0.00,1.00),0.0002610104390500745))
+App.ActiveDocument.O84.Label='O84'
+
+App.ActiveDocument.addObject("Part::Cylinder","O85")
+App.ActiveDocument.O85.Radius='3.000559732880543 mm'
+App.ActiveDocument.O85.Height='22.174067891496346 mm'
+App.ActiveDocument.O85.Angle='360.00 deg'
+App.ActiveDocument.O85.FirstAngle='0.00 deg'
+App.ActiveDocument.O85.SecondAngle='0.00 deg'
+App.ActiveDocument.O85.Placement=App.Placement(App.Vector(213.6572870972213,108.39844131325825,-44.0599414041458),App.Rotation(App.Vector(0.09958892086828519,-0.9950286663409705,0.003861712196822962),98.69730564609158))
+App.ActiveDocument.O85.Label='O85'
+
+App.ActiveDocument.addObject("Part::Cylinder","O86")
+App.ActiveDocument.O86.Radius='3.0003038548631147 mm'
+App.ActiveDocument.O86.Height='25.1830926326929 mm'
+App.ActiveDocument.O86.Angle='360.00 deg'
+App.ActiveDocument.O86.FirstAngle='0.00 deg'
+App.ActiveDocument.O86.SecondAngle='0.00 deg'
+App.ActiveDocument.O86.Placement=App.Placement(App.Vector(213.7730899756798,108.2890039870173,-44.076082050571365),App.Rotation(App.Vector(0.9980101587228947,0.06305333524804559,0.0025852346538815098),106.93967979267697))
+App.ActiveDocument.O86.Label='O86'
+
+App.ActiveDocument.addObject("Part::Sphere","O87")
+App.ActiveDocument.O87.Radius='3 mm'
+App.ActiveDocument.O87.Angle1='-90.00 deg'
+App.ActiveDocument.O87.Angle2='90.00 deg'
+App.ActiveDocument.O87.Angle3='360.00 deg'
+App.ActiveDocument.O87.Placement=App.Placement(App.Vector(235.39591963285145,112.28299022874567,-38.24510763721463),App.Rotation(App.Vector(0.00,0.00,1.00),0.0027110988791147306))
+App.ActiveDocument.O87.Label='O87'
+
+App.ActiveDocument.addObject("Part::Cylinder","O88")
+App.ActiveDocument.O88.Radius='3.0015198898729785 mm'
+App.ActiveDocument.O88.Height='22.497521468118354 mm'
+App.ActiveDocument.O88.Angle='360.00 deg'
+App.ActiveDocument.O88.FirstAngle='0.00 deg'
+App.ActiveDocument.O88.SecondAngle='0.00 deg'
+App.ActiveDocument.O88.Placement=App.Placement(App.Vector(235.28877500228714,112.26305915475832,-38.270684934425475),App.Rotation(App.Vector(0.17620147694986799,-0.9843541230272188,0.0012637540796586067),104.78141137746911))
+App.ActiveDocument.O88.Label='O88'
+
+App.ActiveDocument.addObject("Part::Cylinder","O89")
+App.ActiveDocument.O89.Radius='3.001106781209764 mm'
+App.ActiveDocument.O89.Height='23.85069323345724 mm'
+App.ActiveDocument.O89.Angle='360.00 deg'
+App.ActiveDocument.O89.FirstAngle='0.00 deg'
+App.ActiveDocument.O89.SecondAngle='0.00 deg'
+App.ActiveDocument.O89.Placement=App.Placement(App.Vector(235.4331360104499,112.17153964555477,-38.26320724595573),App.Rotation(App.Vector(0.9522536996538157,0.30530786346836947,0.0013171529323541121),99.24780344490155))
+App.ActiveDocument.O89.Label='O89'
+
+App.ActiveDocument.addObject("Part::Sphere","O90")
+App.ActiveDocument.O90.Radius='3 mm'
+App.ActiveDocument.O90.Angle1='-90.00 deg'
+App.ActiveDocument.O90.Angle2='90.00 deg'
+App.ActiveDocument.O90.Angle3='360.00 deg'
+App.ActiveDocument.O90.Placement=App.Placement(App.Vector(256.18122344409784,115.03631248078321,-31.958896357014467),App.Rotation(App.Vector(0.00,0.00,1.00),0.000004679631849138222))
+App.ActiveDocument.O90.Label='O90'
+
+App.ActiveDocument.addObject("Part::Cylinder","O91")
+App.ActiveDocument.O91.Radius='3.0003240294557574 mm'
+App.ActiveDocument.O91.Height='21.671883164321056 mm'
+App.ActiveDocument.O91.Angle='360.00 deg'
+App.ActiveDocument.O91.FirstAngle='0.00 deg'
+App.ActiveDocument.O91.SecondAngle='0.00 deg'
+App.ActiveDocument.O91.Placement=App.Placement(App.Vector(256.0796847850879,115.02333751073535,-31.986411398897154),App.Rotation(App.Vector(0.13140721565678226,-0.9913284741564382,0.0024050676618710466),106.69176534022287))
+App.ActiveDocument.O91.Label='O91'
+
+App.ActiveDocument.addObject("Part::Cylinder","O92")
+App.ActiveDocument.O92.Radius='3.0012415979472835 mm'
+App.ActiveDocument.O92.Height='26.03337425892321 mm'
+App.ActiveDocument.O92.Angle='360.00 deg'
+App.ActiveDocument.O92.FirstAngle='0.00 deg'
+App.ActiveDocument.O92.SecondAngle='0.00 deg'
+App.ActiveDocument.O92.Placement=App.Placement(App.Vector(256.2519709841133,114.9252018556687,-31.958787978940087),App.Rotation(App.Vector(0.8572804264073107,0.5148497552673978,0.0023755784025901315),91.49938382911138))
+App.ActiveDocument.O92.Label='O92'
+
+App.ActiveDocument.addObject("Part::Sphere","O93")
+App.ActiveDocument.O93.Radius='3 mm'
+App.ActiveDocument.O93.Angle1='-90.00 deg'
+App.ActiveDocument.O93.Angle2='90.00 deg'
+App.ActiveDocument.O93.Angle3='360.00 deg'
+App.ActiveDocument.O93.Placement=App.Placement(App.Vector(274.640673322977,116.70334988099276,-26.048939283818665),App.Rotation(App.Vector(0.00,0.00,1.00),0.0009862481156870996))
+App.ActiveDocument.O93.Label='O93'
+
+App.ActiveDocument.addObject("Part::Cylinder","O94")
+App.ActiveDocument.O94.Radius='3.0003923480754424 mm'
+App.ActiveDocument.O94.Height='19.25863850045398 mm'
+App.ActiveDocument.O94.Angle='360.00 deg'
+App.ActiveDocument.O94.FirstAngle='0.00 deg'
+App.ActiveDocument.O94.SecondAngle='0.00 deg'
+App.ActiveDocument.O94.Placement=App.Placement(App.Vector(274.5514434681778,116.69896878094585,-26.081472506951155),App.Rotation(App.Vector(0.0899281306871399,-0.9959482573462924,0.0001238620143625413),107.67779924886945))
+App.ActiveDocument.O94.Label='O94'
+
+App.ActiveDocument.addObject("Part::Cylinder","O95")
+App.ActiveDocument.O95.Radius='3.0001687813821873 mm'
+App.ActiveDocument.O95.Height='29.73325791769005 mm'
+App.ActiveDocument.O95.Angle='360.00 deg'
+App.ActiveDocument.O95.FirstAngle='0.00 deg'
+App.ActiveDocument.O95.SecondAngle='0.00 deg'
+App.ActiveDocument.O95.Placement=App.Placement(App.Vector(274.7366095038665,116.58608329645602,-26.04388099905738),App.Rotation(App.Vector(0.778336960893657,0.6278467769343297,0.004582296114791896),86.56121163591858))
+App.ActiveDocument.O95.Label='O95'
+
+App.ActiveDocument.addObject("Part::Sphere","O96")
+App.ActiveDocument.O96.Radius='3 mm'
+App.ActiveDocument.O96.Angle1='-90.00 deg'
+App.ActiveDocument.O96.Angle2='90.00 deg'
+App.ActiveDocument.O96.Angle3='360.00 deg'
+App.ActiveDocument.O96.Placement=App.Placement(App.Vector(129.2271445613246,153.877487519002,-22.189091459858084),App.Rotation(App.Vector(0.00,0.00,1.00),0.004206275292124333))
+App.ActiveDocument.O96.Label='O96'
+
+App.ActiveDocument.addObject("Part::Cylinder","O97")
+App.ActiveDocument.O97.Radius='3.00171400260749 mm'
+App.ActiveDocument.O97.Height='29.95015652051912 mm'
+App.ActiveDocument.O97.Angle='360.00 deg'
+App.ActiveDocument.O97.FirstAngle='0.00 deg'
+App.ActiveDocument.O97.SecondAngle='0.00 deg'
+App.ActiveDocument.O97.Placement=App.Placement(App.Vector(129.18250593007065,153.73454007950642,-22.19342610796171),App.Rotation(App.Vector(0.9523169547194985,-0.30511050089071123,0.0016004217860377758),91.44486416896657))
+App.ActiveDocument.O97.Label='O97'
+
+App.ActiveDocument.addObject("Part::Sphere","O98")
+App.ActiveDocument.O98.Radius='3 mm'
+App.ActiveDocument.O98.Angle1='-90.00 deg'
+App.ActiveDocument.O98.Angle2='90.00 deg'
+App.ActiveDocument.O98.Angle3='360.00 deg'
+App.ActiveDocument.O98.Placement=App.Placement(App.Vector(143.25553232116334,148.58112409699038,-28.39466942115223),App.Rotation(App.Vector(0.00,0.00,1.00),0.0007118025107740345))
+App.ActiveDocument.O98.Label='O98'
+
+App.ActiveDocument.addObject("Part::Cylinder","O99")
+App.ActiveDocument.O99.Radius='3.0042560494111243 mm'
+App.ActiveDocument.O99.Height='16.065016561640256 mm'
+App.ActiveDocument.O99.Angle='360.00 deg'
+App.ActiveDocument.O99.FirstAngle='0.00 deg'
+App.ActiveDocument.O99.SecondAngle='0.00 deg'
+App.ActiveDocument.O99.Placement=App.Placement(App.Vector(143.18187654813968,148.60675114843593,-28.367869718159376),App.Rotation(App.Vector(-0.353338830787616,-0.9354954145572496,0.0012358402415798653),67.51318605721693))
+App.ActiveDocument.O99.Label='O99'
+
+App.ActiveDocument.addObject("Part::Cylinder","O100")
+App.ActiveDocument.O100.Radius='3.004547970654852 mm'
+App.ActiveDocument.O100.Height='27.43156548587523 mm'
+App.ActiveDocument.O100.Angle='360.00 deg'
+App.ActiveDocument.O100.FirstAngle='0.00 deg'
+App.ActiveDocument.O100.SecondAngle='0.00 deg'
+App.ActiveDocument.O100.Placement=App.Placement(App.Vector(143.21457569200953,148.4497139012739,-28.405824350689763),App.Rotation(App.Vector(0.9602164556448981,-0.27925679635194106,0.004572705491725714),94.31696874830061))
+App.ActiveDocument.O100.Label='O100'
+
+App.ActiveDocument.addObject("Part::Sphere","O101")
+App.ActiveDocument.O101.Radius='3 mm'
+App.ActiveDocument.O101.Angle1='-90.00 deg'
+App.ActiveDocument.O101.Angle2='90.00 deg'
+App.ActiveDocument.O101.Angle3='360.00 deg'
+App.ActiveDocument.O101.Placement=App.Placement(App.Vector(158.36671373224013,142.12312316781282,-34.14327864926829),App.Rotation(App.Vector(0.00,0.00,1.00),0.003773247223560651))
+App.ActiveDocument.O101.Label='O101'
+
+App.ActiveDocument.addObject("Part::Cylinder","O102")
+App.ActiveDocument.O102.Radius='3.000632386707406 mm'
+App.ActiveDocument.O102.Height='17.238616617233653 mm'
+App.ActiveDocument.O102.Angle='360.00 deg'
+App.ActiveDocument.O102.FirstAngle='0.00 deg'
+App.ActiveDocument.O102.SecondAngle='0.00 deg'
+App.ActiveDocument.O102.Placement=App.Placement(App.Vector(158.29043558051978,142.15206591291104,-34.11268242544181),App.Rotation(App.Vector(-0.3929884202563144,-0.9195434201517871,0.004699190355657896),70.72909236910067))
+App.ActiveDocument.O102.Label='O102'
+
+App.ActiveDocument.addObject("Part::Cylinder","O103")
+App.ActiveDocument.O103.Radius='3.001072307376665 mm'
+App.ActiveDocument.O103.Height='25.88437798368034 mm'
+App.ActiveDocument.O103.Angle='360.00 deg'
+App.ActiveDocument.O103.FirstAngle='0.00 deg'
+App.ActiveDocument.O103.SecondAngle='0.00 deg'
+App.ActiveDocument.O103.Placement=App.Placement(App.Vector(158.33981919014872,141.99528533012557,-34.16341145592841),App.Rotation(App.Vector(0.9748397511659406,-0.22290684051129278,0.0010624804573349455),98.58523239133234))
+App.ActiveDocument.O103.Label='O103'
+
+App.ActiveDocument.addObject("Part::Sphere","O104")
+App.ActiveDocument.O104.Radius='3 mm'
+App.ActiveDocument.O104.Angle1='-90.00 deg'
+App.ActiveDocument.O104.Angle2='90.00 deg'
+App.ActiveDocument.O104.Angle3='360.00 deg'
+App.ActiveDocument.O104.Placement=App.Placement(App.Vector(174.79154135132467,135.4903044310769,-38.64251654370467),App.Rotation(App.Vector(0.00,0.00,1.00),0.002992862217020904))
+App.ActiveDocument.O104.Label='O104'
+
+App.ActiveDocument.addObject("Part::Cylinder","O105")
+App.ActiveDocument.O105.Radius='3.0012946049438836 mm'
+App.ActiveDocument.O105.Height='18.09031105376216 mm'
+App.ActiveDocument.O105.Angle='360.00 deg'
+App.ActiveDocument.O105.FirstAngle='0.00 deg'
+App.ActiveDocument.O105.SecondAngle='0.00 deg'
+App.ActiveDocument.O105.Placement=App.Placement(App.Vector(174.7072345846685,135.52505490891795,-38.61740924118394),App.Rotation(App.Vector(-0.3743820593646253,-0.9272745405897339,0.004111351384127226),75.74881978770466))
+App.ActiveDocument.O105.Label='O105'
+
+App.ActiveDocument.addObject("Part::Cylinder","O106")
+App.ActiveDocument.O106.Radius='3.0020242438992697 mm'
+App.ActiveDocument.O106.Height='25.674250610095847 mm'
+App.ActiveDocument.O106.Angle='360.00 deg'
+App.ActiveDocument.O106.FirstAngle='0.00 deg'
+App.ActiveDocument.O106.SecondAngle='0.00 deg'
+App.ActiveDocument.O106.Placement=App.Placement(App.Vector(174.77100724967988,135.36651812891049,-38.67326434916913),App.Rotation(App.Vector(0.9889180953212652,-0.14846211889287142,0.00287810012849705),102.98225590735053))
+App.ActiveDocument.O106.Label='O106'
+
+App.ActiveDocument.addObject("Part::Sphere","O107")
+App.ActiveDocument.O107.Radius='3 mm'
+App.ActiveDocument.O107.Angle1='-90.00 deg'
+App.ActiveDocument.O107.Angle2='90.00 deg'
+App.ActiveDocument.O107.Angle3='360.00 deg'
+App.ActiveDocument.O107.Placement=App.Placement(App.Vector(193.01042449656265,131.33678841051938,-40.50023757521904),App.Rotation(App.Vector(0.00,0.00,1.00),0.002873697958481163))
+App.ActiveDocument.O107.Label='O107'
+
+App.ActiveDocument.addObject("Part::Cylinder","O108")
+App.ActiveDocument.O108.Radius='3.002784773229289 mm'
+App.ActiveDocument.O108.Height='18.590833158543813 mm'
+App.ActiveDocument.O108.Angle='360.00 deg'
+App.ActiveDocument.O108.FirstAngle='0.00 deg'
+App.ActiveDocument.O108.SecondAngle='0.00 deg'
+App.ActiveDocument.O108.Placement=App.Placement(App.Vector(192.92017640134986,131.35834347535945,-40.488626974550385),App.Rotation(App.Vector(-0.22235931077266954,-0.9749647875245052,0.0035347874343753683),84.32785530806379))
+App.ActiveDocument.O108.Label='O108'
+
+App.ActiveDocument.addObject("Part::Cylinder","O109")
+App.ActiveDocument.O109.Radius='3.0043511612780573 mm'
+App.ActiveDocument.O109.Height='25.83724038673735 mm'
+App.ActiveDocument.O109.Angle='360.00 deg'
+App.ActiveDocument.O109.FirstAngle='0.00 deg'
+App.ActiveDocument.O109.SecondAngle='0.00 deg'
+App.ActiveDocument.O109.Placement=App.Placement(App.Vector(193.00187544947622,131.20750026027946,-40.53175092925019),App.Rotation(App.Vector(0.998720577595368,-0.05056884305157007,0.0023067242934812606),105.40237979810234))
+App.ActiveDocument.O109.Label='O109'
+
+App.ActiveDocument.addObject("Part::Sphere","O110")
+App.ActiveDocument.O110.Radius='3 mm'
+App.ActiveDocument.O110.Angle1='-90.00 deg'
+App.ActiveDocument.O110.Angle2='90.00 deg'
+App.ActiveDocument.O110.Angle3='360.00 deg'
+App.ActiveDocument.O110.Placement=App.Placement(App.Vector(211.98425385446762,132.34493077673417,-38.461627200672005),App.Rotation(App.Vector(0.00,0.00,1.00),0.0016828065616866007))
+App.ActiveDocument.O110.Label='O110'
+
+App.ActiveDocument.addObject("Part::Cylinder","O111")
+App.ActiveDocument.O111.Radius='3.0033044655527585 mm'
+App.ActiveDocument.O111.Height='18.91697528986829 mm'
+App.ActiveDocument.O111.Angle='360.00 deg'
+App.ActiveDocument.O111.FirstAngle='0.00 deg'
+App.ActiveDocument.O111.SecondAngle='0.00 deg'
+App.ActiveDocument.O111.Placement=App.Placement(App.Vector(211.88872994720217,132.34206872976984,-38.47514918710219),App.Rotation(App.Vector(0.053148293125545545,-0.9985866306624784,0.0020975474855906427),96.11756387677788))
+App.ActiveDocument.O111.Label='O111'
+
+App.ActiveDocument.addObject("Part::Cylinder","O112")
+App.ActiveDocument.O112.Radius='3.0024693210292615 mm'
+App.ActiveDocument.O112.Height='24.39379010720913 mm'
+App.ActiveDocument.O112.Angle='360.00 deg'
+App.ActiveDocument.O112.FirstAngle='0.00 deg'
+App.ActiveDocument.O112.SecondAngle='0.00 deg'
+App.ActiveDocument.O112.Placement=App.Placement(App.Vector(211.99309200809714,132.2281222472518,-38.49318112816259),App.Rotation(App.Vector(0.9972288481348555,0.07439505660747431,0.004644832833998048),103.08649921573662))
+App.ActiveDocument.O112.Label='O112'
+
+App.ActiveDocument.addObject("Part::Sphere","O113")
+App.ActiveDocument.O113.Radius='3 mm'
+App.ActiveDocument.O113.Angle1='-90.00 deg'
+App.ActiveDocument.O113.Angle2='90.00 deg'
+App.ActiveDocument.O113.Angle3='360.00 deg'
+App.ActiveDocument.O113.Placement=App.Placement(App.Vector(230.324083360544,135.762955136883,-34.466254260965),App.Rotation(App.Vector(0.00,0.00,1.00),0.0006903694013878725))
+App.ActiveDocument.O113.Label='O113'
+
+App.ActiveDocument.addObject("Part::Cylinder","O114")
+App.ActiveDocument.O114.Radius='3.002915468101057 mm'
+App.ActiveDocument.O114.Height='18.88924161453338 mm'
+App.ActiveDocument.O114.Angle='360.00 deg'
+App.ActiveDocument.O114.FirstAngle='0.00 deg'
+App.ActiveDocument.O114.SecondAngle='0.00 deg'
+App.ActiveDocument.O114.Placement=App.Placement(App.Vector(230.23285631863467,135.74520060003593,-34.48504125962885),App.Rotation(App.Vector(0.1831884396578308,-0.9830778176602954,0.00245024804943081),102.1002938391146))
+App.ActiveDocument.O114.Label='O114'
+
+App.ActiveDocument.addObject("Part::Cylinder","O115")
+App.ActiveDocument.O115.Radius='3.0009403999361504 mm'
+App.ActiveDocument.O115.Height='24.07436482548431 mm'
+App.ActiveDocument.O115.Angle='360.00 deg'
+App.ActiveDocument.O115.FirstAngle='0.00 deg'
+App.ActiveDocument.O115.SecondAngle='0.00 deg'
+App.ActiveDocument.O115.Placement=App.Placement(App.Vector(230.34621093048338,135.6447303748553,-34.48166858869691),App.Rotation(App.Vector(0.977437558147095,0.21122457225295638,0.0033544342343347832),98.94534739364319))
+App.ActiveDocument.O115.Label='O115'
+
+App.ActiveDocument.addObject("Part::Sphere","O116")
+App.ActiveDocument.O116.Radius='3 mm'
+App.ActiveDocument.O116.Angle1='-90.00 deg'
+App.ActiveDocument.O116.Angle2='90.00 deg'
+App.ActiveDocument.O116.Angle3='360.00 deg'
+App.ActiveDocument.O116.Placement=App.Placement(App.Vector(247.7611051018906,139.31942161880585,-29.783321383861704),App.Rotation(App.Vector(0.00,0.00,1.00),0.0023659884910699914))
+App.ActiveDocument.O116.Label='O116'
+
+App.ActiveDocument.addObject("Part::Cylinder","O117")
+App.ActiveDocument.O117.Radius='3.0011873524479964 mm'
+App.ActiveDocument.O117.Height='18.218481341752746 mm'
+App.ActiveDocument.O117.Angle='360.00 deg'
+App.ActiveDocument.O117.FirstAngle='0.00 deg'
+App.ActiveDocument.O117.SecondAngle='0.00 deg'
+App.ActiveDocument.O117.Placement=App.Placement(App.Vector(247.67489958406696,139.30322694510386,-29.80287764372861),App.Rotation(App.Vector(0.19983478636464974,-0.979829606696284,0.001498904929944448),104.74607093509256))
+App.ActiveDocument.O117.Label='O117'
+
+App.ActiveDocument.addObject("Part::Cylinder","O118")
+App.ActiveDocument.O118.Radius='3.0007357341690897 mm'
+App.ActiveDocument.O118.Height='25.534513450982665 mm'
+App.ActiveDocument.O118.Angle='360.00 deg'
+App.ActiveDocument.O118.FirstAngle='0.00 deg'
+App.ActiveDocument.O118.SecondAngle='0.00 deg'
+App.ActiveDocument.O118.Placement=App.Placement(App.Vector(247.80349688428956,139.19542591726233,-29.79130811077168),App.Rotation(App.Vector(0.9447675776605206,0.3277410932450682,0.0017513791693722458),94.84081209351213))
+App.ActiveDocument.O118.Label='O118'
+
+App.ActiveDocument.addObject("Part::Sphere","O119")
+App.ActiveDocument.O119.Radius='3 mm'
+App.ActiveDocument.O119.Angle1='-90.00 deg'
+App.ActiveDocument.O119.Angle2='90.00 deg'
+App.ActiveDocument.O119.Angle3='360.00 deg'
+App.ActiveDocument.O119.Placement=App.Placement(App.Vector(263.7204507542009,142.56960233510273,-25.021901179653003),App.Rotation(App.Vector(0.00,0.00,1.00),0.002099226522263746))
+App.ActiveDocument.O119.Label='O119'
+
+App.ActiveDocument.addObject("Part::Cylinder","O120")
+App.ActiveDocument.O120.Radius='3.004979471485237 mm'
+App.ActiveDocument.O120.Height='16.801615220325502 mm'
+App.ActiveDocument.O120.Angle='360.00 deg'
+App.ActiveDocument.O120.FirstAngle='0.00 deg'
+App.ActiveDocument.O120.SecondAngle='0.00 deg'
+App.ActiveDocument.O120.Placement=App.Placement(App.Vector(263.6421876723244,142.55021990692345,-25.04267800992429),App.Rotation(App.Vector(0.19939377462594104,-0.9799194470161411,0.00361430638860313),106.293756890345))
+App.ActiveDocument.O120.Label='O120'
+
+App.ActiveDocument.addObject("Part::Cylinder","O121")
+App.ActiveDocument.O121.Radius='3.000831678345476 mm'
+App.ActiveDocument.O121.Height='27.811256339629196 mm'
+App.ActiveDocument.O121.Angle='360.00 deg'
+App.ActiveDocument.O121.FirstAngle='0.00 deg'
+App.ActiveDocument.O121.SecondAngle='0.00 deg'
+App.ActiveDocument.O121.Placement=App.Placement(App.Vector(263.7783953536604,142.43979420517928,-25.02773113926582),App.Rotation(App.Vector(0.9212429473130809,0.3889877016383785,0.003291939246189142),92.10306055128379))
+App.ActiveDocument.O121.Label='O121'
+
+App.ActiveDocument.addObject("Part::Sphere","O122")
+App.ActiveDocument.O122.Radius='3 mm'
+App.ActiveDocument.O122.Angle1='-90.00 deg'
+App.ActiveDocument.O122.Angle2='90.00 deg'
+App.ActiveDocument.O122.Angle3='360.00 deg'
+App.ActiveDocument.O122.Placement=App.Placement(App.Vector(136.084852994387,183.43305749306805,-20.400556332959127),App.Rotation(App.Vector(0.00,0.00,1.00),0.0009936278076224437))
+App.ActiveDocument.O122.Label='O122'
+
+App.ActiveDocument.addObject("Part::Cylinder","O123")
+App.ActiveDocument.O123.Radius='3.001471581426778 mm'
+App.ActiveDocument.O123.Height='30.08794720921813 mm'
+App.ActiveDocument.O123.Angle='360.00 deg'
+App.ActiveDocument.O123.FirstAngle='0.00 deg'
+App.ActiveDocument.O123.SecondAngle='0.00 deg'
+App.ActiveDocument.O123.Placement=App.Placement(App.Vector(136.05366678787115,183.28628432244335,-20.406893475329614),App.Rotation(App.Vector(0.9741080513511063,-0.2260829588733976,0.00006520353991299244),93.37844860127467))
+App.ActiveDocument.O123.Label='O123'
+
+App.ActiveDocument.addObject("Part::Sphere","O124")
+App.ActiveDocument.O124.Radius='3 mm'
+App.ActiveDocument.O124.Angle1='-90.00 deg'
+App.ActiveDocument.O124.Angle2='90.00 deg'
+App.ActiveDocument.O124.Angle3='360.00 deg'
+App.ActiveDocument.O124.Placement=App.Placement(App.Vector(148.68109933915702,175.88913409412453,-25.656793141561586),App.Rotation(App.Vector(0.00,0.00,1.00),0.0033616406417849055))
+App.ActiveDocument.O124.Label='O124'
+
+App.ActiveDocument.addObject("Part::Cylinder","O125")
+App.ActiveDocument.O125.Radius='3.0028905414835836 mm'
+App.ActiveDocument.O125.Height='15.436979850647788 mm'
+App.ActiveDocument.O125.Angle='360.00 deg'
+App.ActiveDocument.O125.FirstAngle='0.00 deg'
+App.ActiveDocument.O125.SecondAngle='0.00 deg'
+App.ActiveDocument.O125.Placement=App.Placement(App.Vector(148.61651590688692,175.92532445928157,-25.629604570714786),App.Rotation(App.Vector(-0.5138143841298034,-0.8579013804985458,0.0017012113888771009),70.3032039388327))
+App.ActiveDocument.O125.Label='O125'
+
+App.ActiveDocument.addObject("Part::Cylinder","O126")
+App.ActiveDocument.O126.Radius='3.003601762129526 mm'
+App.ActiveDocument.O126.Height='27.697188208723254 mm'
+App.ActiveDocument.O126.Angle='360.00 deg'
+App.ActiveDocument.O126.FirstAngle='0.00 deg'
+App.ActiveDocument.O126.SecondAngle='0.00 deg'
+App.ActiveDocument.O126.Placement=App.Placement(App.Vector(148.65156008361993,175.75405896882825,-25.667254185095846),App.Rotation(App.Vector(0.9808144645545543,-0.19494354598335076,0.0017410144079247137),95.62755715396005))
+App.ActiveDocument.O126.Label='O126'
+
+App.ActiveDocument.addObject("Part::Sphere","O127")
+App.ActiveDocument.O127.Radius='3 mm'
+App.ActiveDocument.O127.Angle1='-90.00 deg'
+App.ActiveDocument.O127.Angle2='90.00 deg'
+App.ActiveDocument.O127.Angle3='360.00 deg'
+App.ActiveDocument.O127.Placement=App.Placement(App.Vector(162.13591587644154,167.8355089761665,-30.275264116885285),App.Rotation(App.Vector(0.00,0.00,1.00),0.0017565193811687986))
+App.ActiveDocument.O127.Label='O127'
+
+App.ActiveDocument.addObject("Part::Cylinder","O128")
+App.ActiveDocument.O128.Radius='3.003146727463291 mm'
+App.ActiveDocument.O128.Height='16.18332222355202 mm'
+App.ActiveDocument.O128.Angle='360.00 deg'
+App.ActiveDocument.O128.FirstAngle='0.00 deg'
+App.ActiveDocument.O128.SecondAngle='0.00 deg'
+App.ActiveDocument.O128.Placement=App.Placement(App.Vector(162.06702360849692,167.87570698729076,-30.249264652190003),App.Rotation(App.Vector(-0.5136920807415104,-0.8579746186126124,0.0012106457823895579),73.59370564154874))
+App.ActiveDocument.O128.Label='O128'
+
+App.ActiveDocument.addObject("Part::Cylinder","O129")
+App.ActiveDocument.O129.Radius='3.0003009446003754 mm'
+App.ActiveDocument.O129.Height='26.01090934742741 mm'
+App.ActiveDocument.O129.Angle='360.00 deg'
+App.ActiveDocument.O129.FirstAngle='0.00 deg'
+App.ActiveDocument.O129.SecondAngle='0.00 deg'
+App.ActiveDocument.O129.Placement=App.Placement(App.Vector(162.11693589905673,167.70386126617635,-30.29090675891174),App.Rotation(App.Vector(0.9894375390641436,-0.14495984371780885,0.003567000363997924),98.47614220265305))
+App.ActiveDocument.O129.Label='O129'
+
+App.ActiveDocument.addObject("Part::Sphere","O130")
+App.ActiveDocument.O130.Radius='3 mm'
+App.ActiveDocument.O130.Angle1='-90.00 deg'
+App.ActiveDocument.O130.Angle2='90.00 deg'
+App.ActiveDocument.O130.Angle3='360.00 deg'
+App.ActiveDocument.O130.Placement=App.Placement(App.Vector(176.88021809698134,160.31912591500156,-33.739437697173535),App.Rotation(App.Vector(0.00,0.00,1.00),0.0049585042010868))
+App.ActiveDocument.O130.Label='O130'
+
+App.ActiveDocument.addObject("Part::Cylinder","O131")
+App.ActiveDocument.O131.Radius='3.0031889730114614 mm'
+App.ActiveDocument.O131.Height='16.74213723700539 mm'
+App.ActiveDocument.O131.Angle='360.00 deg'
+App.ActiveDocument.O131.FirstAngle='0.00 deg'
+App.ActiveDocument.O131.SecondAngle='0.00 deg'
+App.ActiveDocument.O131.Placement=App.Placement(App.Vector(176.81055567583792,160.35473977415904,-33.72179757076798),App.Rotation(App.Vector(-0.4540803736943605,-0.8909607254113897,0.003465676866707148),78.17339928645048))
+App.ActiveDocument.O131.Label='O131'
+
+App.ActiveDocument.addObject("Part::Cylinder","O132")
+App.ActiveDocument.O132.Radius='3.0004053103656245 mm'
+App.ActiveDocument.O132.Height='25.138759526051224 mm'
+App.ActiveDocument.O132.Angle='360.00 deg'
+App.ActiveDocument.O132.FirstAngle='0.00 deg'
+App.ActiveDocument.O132.SecondAngle='0.00 deg'
+App.ActiveDocument.O132.Placement=App.Placement(App.Vector(176.8722225408435,160.19291006608486,-33.76227418656124),App.Rotation(App.Vector(0.9964699283541482,-0.08395047281510028,0.0025519198802555067),101.1322256630351))
+App.ActiveDocument.O132.Label='O132'
+
+App.ActiveDocument.addObject("Part::Sphere","O133")
+App.ActiveDocument.O133.Radius='3 mm'
+App.ActiveDocument.O133.Angle1='-90.00 deg'
+App.ActiveDocument.O133.Angle2='90.00 deg'
+App.ActiveDocument.O133.Angle3='360.00 deg'
+App.ActiveDocument.O133.Placement=App.Placement(App.Vector(193.33688984592897,155.5735735351371,-35.15887662299413),App.Rotation(App.Vector(0.00,0.00,1.00),0.000957729777283235))
+App.ActiveDocument.O133.Label='O133'
+
+App.ActiveDocument.addObject("Part::Cylinder","O134")
+App.ActiveDocument.O134.Radius='3.000822649947626 mm'
+App.ActiveDocument.O134.Height='17.01334283621913 mm'
+App.ActiveDocument.O134.Angle='360.00 deg'
+App.ActiveDocument.O134.FirstAngle='0.00 deg'
+App.ActiveDocument.O134.SecondAngle='0.00 deg'
+App.ActiveDocument.O134.Placement=App.Placement(App.Vector(193.25705712876132,155.59864810061833,-35.152634902153615),App.Rotation(App.Vector(-0.27705299406750256,-0.9608546396194549,0.003117812841737707),85.26562363285124))
+App.ActiveDocument.O134.Label='O134'
+
+App.ActiveDocument.addObject("Part::Cylinder","O135")
+App.ActiveDocument.O135.Radius='3.003110462390654 mm'
+App.ActiveDocument.O135.Height='24.572415313912305 mm'
+App.ActiveDocument.O135.Angle='360.00 deg'
+App.ActiveDocument.O135.FirstAngle='0.00 deg'
+App.ActiveDocument.O135.SecondAngle='0.00 deg'
+App.ActiveDocument.O135.Placement=App.Placement(App.Vector(193.33819378557072,155.45318364704156,-35.18394654873951),App.Rotation(App.Vector(0.9999079373458929,-0.013568965792641463,0.001306611082879481),102.42312848952234))
+App.ActiveDocument.O135.Label='O135'
+
+App.ActiveDocument.addObject("Part::Sphere","O136")
+App.ActiveDocument.O136.Radius='3 mm'
+App.ActiveDocument.O136.Angle1='-90.00 deg'
+App.ActiveDocument.O136.Angle2='90.00 deg'
+App.ActiveDocument.O136.Angle3='360.00 deg'
+App.ActiveDocument.O136.Placement=App.Placement(App.Vector(210.54492854932428,155.86367591326444,-33.79367245278287),App.Rotation(App.Vector(0.00,0.00,1.00),0.0037628944388690723))
+App.ActiveDocument.O136.Label='O136'
+
+App.ActiveDocument.addObject("Part::Cylinder","O137")
+App.ActiveDocument.O137.Radius='3.001967995724918 mm'
+App.ActiveDocument.O137.Height='17.09309281553312 mm'
+App.ActiveDocument.O137.Angle='360.00 deg'
+App.ActiveDocument.O137.FirstAngle='0.00 deg'
+App.ActiveDocument.O137.SecondAngle='0.00 deg'
+App.ActiveDocument.O137.Placement=App.Placement(App.Vector(210.460319439183,155.86099590225933,-33.801497081103975),App.Rotation(App.Vector(0.016790824273029012,-0.9998590241730243,0.0038347224443086615),94.53873655972541))
+App.ActiveDocument.O137.Label='O137'
+
+App.ActiveDocument.addObject("Part::Cylinder","O138")
+App.ActiveDocument.O138.Radius='3.0031653829670373 mm'
+App.ActiveDocument.O138.Height='23.778493503304215 mm'
+App.ActiveDocument.O138.Angle='360.00 deg'
+App.ActiveDocument.O138.FirstAngle='0.00 deg'
+App.ActiveDocument.O138.SecondAngle='0.00 deg'
+App.ActiveDocument.O138.Placement=App.Placement(App.Vector(210.55250513909337,155.7454330667521,-33.81454734389533),App.Rotation(App.Vector(0.9981448519967262,0.060883942320068794,0.0029788739136734346),101.21426673293692))
+App.ActiveDocument.O138.Label='O138'
+
+App.ActiveDocument.addObject("Part::Sphere","O139")
+App.ActiveDocument.O139.Radius='3 mm'
+App.ActiveDocument.O139.Angle1='-90.00 deg'
+App.ActiveDocument.O139.Angle2='90.00 deg'
+App.ActiveDocument.O139.Angle3='360.00 deg'
+App.ActiveDocument.O139.Placement=App.Placement(App.Vector(227.0368737436414,159.50950628390734,-30.716812184070353),App.Rotation(App.Vector(0.00,0.00,1.00),0.0003857230231024833))
+App.ActiveDocument.O139.Label='O139'
+
+App.ActiveDocument.addObject("Part::Cylinder","O140")
+App.ActiveDocument.O140.Radius='3.004747962884417 mm'
+App.ActiveDocument.O140.Height='16.99199589687535 mm'
+App.ActiveDocument.O140.Angle='360.00 deg'
+App.ActiveDocument.O140.FirstAngle='0.00 deg'
+App.ActiveDocument.O140.SecondAngle='0.00 deg'
+App.ActiveDocument.O140.Placement=App.Placement(App.Vector(226.95025364230608,159.49054513132887,-30.731933450380115),App.Rotation(App.Vector(0.21597355859335785,-0.9763992124067499,0.0016909608242606778),100.32789011012213))
+App.ActiveDocument.O140.Label='O140'
+
+App.ActiveDocument.addObject("Part::Cylinder","O141")
+App.ActiveDocument.O141.Radius='3.0041821322079856 mm'
+App.ActiveDocument.O141.Height='24.02085329386932 mm'
+App.ActiveDocument.O141.Angle='360.00 deg'
+App.ActiveDocument.O141.FirstAngle='0.00 deg'
+App.ActiveDocument.O141.SecondAngle='0.00 deg'
+App.ActiveDocument.O141.Placement=App.Placement(App.Vector(227.05263173105595,159.39021173046316,-30.732887956602983),App.Rotation(App.Vector(0.9905502505650643,0.1371502865672852,0.003124061652898147),98.88925412264743))
+App.ActiveDocument.O141.Label='O141'
+
+App.ActiveDocument.addObject("Part::Sphere","O142")
+App.ActiveDocument.O142.Radius='3 mm'
+App.ActiveDocument.O142.Angle1='-90.00 deg'
+App.ActiveDocument.O142.Angle2='90.00 deg'
+App.ActiveDocument.O142.Angle3='360.00 deg'
+App.ActiveDocument.O142.Placement=App.Placement(App.Vector(242.55054854894047,164.34757332250962,-26.864828032963533),App.Rotation(App.Vector(0.00,0.00,1.00),0.0022006490032775773))
+App.ActiveDocument.O142.Label='O142'
+
+App.ActiveDocument.addObject("Part::Cylinder","O143")
+App.ActiveDocument.O143.Radius='3.0044434113101275 mm'
+App.ActiveDocument.O143.Height='16.53560274061958 mm'
+App.ActiveDocument.O143.Angle='360.00 deg'
+App.ActiveDocument.O143.FirstAngle='0.00 deg'
+App.ActiveDocument.O143.SecondAngle='0.00 deg'
+App.ActiveDocument.O143.Placement=App.Placement(App.Vector(242.47180295260486,164.322645010571,-26.885734516867107),App.Rotation(App.Vector(0.29762357109303494,-0.9546833034728476,0.0018690433591413346),103.3260746895392))
+App.ActiveDocument.O143.Label='O143'
+
+App.ActiveDocument.addObject("Part::Cylinder","O144")
+App.ActiveDocument.O144.Radius='3.0020872897475943 mm'
+App.ActiveDocument.O144.Height='25.471245400935288 mm'
+App.ActiveDocument.O144.Angle='360.00 deg'
+App.ActiveDocument.O144.FirstAngle='0.00 deg'
+App.ActiveDocument.O144.SecondAngle='0.00 deg'
+App.ActiveDocument.O144.Placement=App.Placement(App.Vector(242.57494908775868,164.21926722325838,-26.884046260554243),App.Rotation(App.Vector(0.9790191074884934,0.20376846461715728,0.0047277978010816235),96.5048806302038))
+App.ActiveDocument.O144.Label='O144'
+
+App.ActiveDocument.addObject("Part::Sphere","O145")
+App.ActiveDocument.O145.Radius='3 mm'
+App.ActiveDocument.O145.Angle1='-90.00 deg'
+App.ActiveDocument.O145.Angle2='90.00 deg'
+App.ActiveDocument.O145.Angle3='360.00 deg'
+App.ActiveDocument.O145.Placement=App.Placement(App.Vector(256.9759698851067,169.52079054931514,-22.706025442574198),App.Rotation(App.Vector(0.00,0.00,1.00),0.0023948109843948628))
+App.ActiveDocument.O145.Label='O145'
+
+App.ActiveDocument.addObject("Part::Cylinder","O146")
+App.ActiveDocument.O146.Radius='3.003269610800272 mm'
+App.ActiveDocument.O146.Height='15.722581376725111 mm'
+App.ActiveDocument.O146.Angle='360.00 deg'
+App.ActiveDocument.O146.FirstAngle='0.00 deg'
+App.ActiveDocument.O146.SecondAngle='0.00 deg'
+App.ActiveDocument.O146.Placement=App.Placement(App.Vector(256.9071525342797,169.49691044613812,-22.727691517615895),App.Rotation(App.Vector(0.3376175467028307,-0.941283375056822,0.003315233424174745),105.18597244803443))
+App.ActiveDocument.O146.Label='O146'
+
+App.ActiveDocument.addObject("Part::Cylinder","O147")
+App.ActiveDocument.O147.Radius='3.0041506885607823 mm'
+App.ActiveDocument.O147.Height='27.601569968385068 mm'
+App.ActiveDocument.O147.Angle='360.00 deg'
+App.ActiveDocument.O147.FirstAngle='0.00 deg'
+App.ActiveDocument.O147.SecondAngle='0.00 deg'
+App.ActiveDocument.O147.Placement=App.Placement(App.Vector(257.01099283894865,169.38449606410873,-22.71982106116045),App.Rotation(App.Vector(0.9700887815627622,0.2427503983232062,0.00473489314246647),94.76221969435649))
+App.ActiveDocument.O147.Label='O147'
+
+App.ActiveDocument.addObject("Part::Sphere","O148")
+App.ActiveDocument.O148.Radius='3 mm'
+App.ActiveDocument.O148.Angle1='-90.00 deg'
+App.ActiveDocument.O148.Angle2='90.00 deg'
+App.ActiveDocument.O148.Angle3='360.00 deg'
+App.ActiveDocument.O148.Placement=App.Placement(App.Vector(141.72891492591668,213.4614996100702,-18.139054341335715),App.Rotation(App.Vector(0.00,0.00,1.00),0.003320962845004114))
+App.ActiveDocument.O148.Label='O148'
+
+App.ActiveDocument.addObject("Part::Cylinder","O149")
+App.ActiveDocument.O149.Radius='3.0043419059410335 mm'
+App.ActiveDocument.O149.Height='30.330114169936635 mm'
+App.ActiveDocument.O149.Angle='360.00 deg'
+App.ActiveDocument.O149.FirstAngle='0.00 deg'
+App.ActiveDocument.O149.SecondAngle='0.00 deg'
+App.ActiveDocument.O149.Placement=App.Placement(App.Vector(141.70003837167528,213.30731864547843,-18.148375783263198),App.Rotation(App.Vector(0.9827963218934767,-0.18469268981920695,0.0011352899626385683),94.23561325559271))
+App.ActiveDocument.O149.Label='O149'
+
+App.ActiveDocument.addObject("Part::Sphere","O150")
+App.ActiveDocument.O150.Radius='3 mm'
+App.ActiveDocument.O150.Angle1='-90.00 deg'
+App.ActiveDocument.O150.Angle2='90.00 deg'
+App.ActiveDocument.O150.Angle3='360.00 deg'
+App.ActiveDocument.O150.Placement=App.Placement(App.Vector(152.71751128961657,203.68809811641813,-22.57940260523747),App.Rotation(App.Vector(0.00,0.00,1.00),0.0031071234863358044))
+App.ActiveDocument.O150.Label='O150'
+
+App.ActiveDocument.addObject("Part::Cylinder","O151")
+App.ActiveDocument.O151.Radius='3.00016522008541 mm'
+App.ActiveDocument.O151.Height='15.206026048264974 mm'
+App.ActiveDocument.O151.Angle='360.00 deg'
+App.ActiveDocument.O151.FirstAngle='0.00 deg'
+App.ActiveDocument.O151.SecondAngle='0.00 deg'
+App.ActiveDocument.O151.Placement=App.Placement(App.Vector(152.6635551532147,203.73861299859377,-22.56186947202234),App.Rotation(App.Vector(-0.6645100644692887,-0.7472793147271117,0.00040004748050142646),73.1859302432636))
+App.ActiveDocument.O151.Label='O151'
+
+App.ActiveDocument.addObject("Part::Cylinder","O152")
+App.ActiveDocument.O152.Radius='3.002689544855788 mm'
+App.ActiveDocument.O152.Height='27.976581799066935 mm'
+App.ActiveDocument.O152.Angle='360.00 deg'
+App.ActiveDocument.O152.FirstAngle='0.00 deg'
+App.ActiveDocument.O152.SecondAngle='0.00 deg'
+App.ActiveDocument.O152.Placement=App.Placement(App.Vector(152.6970896456001,203.54781584166233,-22.59682927575802),App.Rotation(App.Vector(0.9896271490217713,-0.1436596878704701,0.0036920090929774586),96.24553354159588))
+App.ActiveDocument.O152.Label='O152'
+
+App.ActiveDocument.addObject("Part::Sphere","O153")
+App.ActiveDocument.O153.Radius='3 mm'
+App.ActiveDocument.O153.Angle1='-90.00 deg'
+App.ActiveDocument.O153.Angle2='90.00 deg'
+App.ActiveDocument.O153.Angle3='360.00 deg'
+App.ActiveDocument.O153.Placement=App.Placement(App.Vector(164.58823219938006,193.81883122554882,-26.422339347165735),App.Rotation(App.Vector(0.00,0.00,1.00),0.002816168385687111))
+App.ActiveDocument.O153.Label='O153'
+
+App.ActiveDocument.addObject("Part::Cylinder","O154")
+App.ActiveDocument.O154.Radius='3.003809869089627 mm'
+App.ActiveDocument.O154.Height='15.751204599950423 mm'
+App.ActiveDocument.O154.Angle='360.00 deg'
+App.ActiveDocument.O154.FirstAngle='0.00 deg'
+App.ActiveDocument.O154.SecondAngle='0.00 deg'
+App.ActiveDocument.O154.Placement=App.Placement(App.Vector(164.5307600710751,193.8674898407823,-26.403826954674283),App.Rotation(App.Vector(-0.6393446192875241,-0.7689203195312833,0.00042833149141106473),76.02971343981095))
+App.ActiveDocument.O154.Label='O154'
+
+App.ActiveDocument.addObject("Part::Cylinder","O155")
+App.ActiveDocument.O155.Radius='3.004144071630763 mm'
+App.ActiveDocument.O155.Height='26.11828864354811 mm'
+App.ActiveDocument.O155.Angle='360.00 deg'
+App.ActiveDocument.O155.FirstAngle='0.00 deg'
+App.ActiveDocument.O155.SecondAngle='0.00 deg'
+App.ActiveDocument.O155.Placement=App.Placement(App.Vector(164.57597860017455,193.68893256938836,-26.441297426674595),App.Rotation(App.Vector(0.9955720964133594,-0.09400106830833622,0.002107529869675744),98.39356874868861))
+App.ActiveDocument.O155.Label='O155'
+
+App.ActiveDocument.addObject("Part::Sphere","O156")
+App.ActiveDocument.O156.Radius='3 mm'
+App.ActiveDocument.O156.Angle1='-90.00 deg'
+App.ActiveDocument.O156.Angle2='90.00 deg'
+App.ActiveDocument.O156.Angle3='360.00 deg'
+App.ActiveDocument.O156.Placement=App.Placement(App.Vector(177.93505924739887,184.95547462090954,-29.307399263770517),App.Rotation(App.Vector(0.00,0.00,1.00),0.0012427489123313718))
+App.ActiveDocument.O156.Label='O156'
+
+App.ActiveDocument.addObject("Part::Cylinder","O157")
+App.ActiveDocument.O157.Radius='3.0037754435925144 mm'
+App.ActiveDocument.O157.Height='16.117206306118927 mm'
+App.ActiveDocument.O157.Angle='360.00 deg'
+App.ActiveDocument.O157.FirstAngle='0.00 deg'
+App.ActiveDocument.O157.SecondAngle='0.00 deg'
+App.ActiveDocument.O157.Placement=App.Placement(App.Vector(177.8710934497455,185.001875761736,-29.2960717570559),App.Rotation(App.Vector(-0.55304531105332,-0.833151177111295,0.0043862066169039395),79.79468042150535))
+App.ActiveDocument.O157.Label='O157'
+
+App.ActiveDocument.addObject("Part::Cylinder","O158")
+App.ActiveDocument.O158.Radius='3.0031802871093114 mm'
+App.ActiveDocument.O158.Height='24.80610184338012 mm'
+App.ActiveDocument.O158.Angle='360.00 deg'
+App.ActiveDocument.O158.FirstAngle='0.00 deg'
+App.ActiveDocument.O158.SecondAngle='0.00 deg'
+App.ActiveDocument.O158.Placement=App.Placement(App.Vector(177.93228697904829,184.8341860744051,-29.33202806378699),App.Rotation(App.Vector(0.9990840648281333,-0.04279055277154345,0.0025952011106084726),100.18870348248883))
+App.ActiveDocument.O158.Label='O158'
+
+App.ActiveDocument.addObject("Part::Sphere","O159")
+App.ActiveDocument.O159.Radius='3 mm'
+App.ActiveDocument.O159.Angle1='-90.00 deg'
+App.ActiveDocument.O159.Angle2='90.00 deg'
+App.ActiveDocument.O159.Angle3='360.00 deg'
+App.ActiveDocument.O159.Placement=App.Placement(App.Vector(193.23373279154308,179.199646966446,-30.561245597025618),App.Rotation(App.Vector(0.00,0.00,1.00),0.0032722761413904256))
+App.ActiveDocument.O159.Label='O159'
+
+App.ActiveDocument.addObject("Part::Cylinder","O160")
+App.ActiveDocument.O160.Radius='3.0016369848096356 mm'
+App.ActiveDocument.O160.Height='16.228979124103326 mm'
+App.ActiveDocument.O160.Angle='360.00 deg'
+App.ActiveDocument.O160.FirstAngle='0.00 deg'
+App.ActiveDocument.O160.SecondAngle='0.00 deg'
+App.ActiveDocument.O160.Placement=App.Placement(App.Vector(193.15795937262584,179.23119891070317,-30.555585930247982),App.Rotation(App.Vector(-0.3521785010859389,-0.9359328519572659,0.00435494548159836),85.61555189485598))
+App.ActiveDocument.O160.Label='O160'
+
+App.ActiveDocument.addObject("Part::Cylinder","O161")
+App.ActiveDocument.O161.Radius='3.000020229832872 mm'
+App.ActiveDocument.O161.Height='23.83018518186102 mm'
+App.ActiveDocument.O161.Angle='360.00 deg'
+App.ActiveDocument.O161.FirstAngle='0.00 deg'
+App.ActiveDocument.O161.SecondAngle='0.00 deg'
+App.ActiveDocument.O161.Placement=App.Placement(App.Vector(193.2335320636335,179.0820631711974,-30.582670715714634),App.Rotation(App.Vector(0.999990479823716,0.00436351486006138,0.001457843177597501),101.01056039099166))
+App.ActiveDocument.O161.Label='O161'
+
+App.ActiveDocument.addObject("Part::Sphere","O162")
+App.ActiveDocument.O162.Radius='3 mm'
+App.ActiveDocument.O162.Angle1='-90.00 deg'
+App.ActiveDocument.O162.Angle2='90.00 deg'
+App.ActiveDocument.O162.Angle3='360.00 deg'
+App.ActiveDocument.O162.Placement=App.Placement(App.Vector(209.56516589196102,178.9824214439643,-29.563344162232674),App.Rotation(App.Vector(0.00,0.00,1.00),0.004272184660465895))
+App.ActiveDocument.O162.Label='O162'
+
+App.ActiveDocument.addObject("Part::Cylinder","O163")
+App.ActiveDocument.O163.Radius='3.0007663142730148 mm'
+App.ActiveDocument.O163.Height='16.19867975814655 mm'
+App.ActiveDocument.O163.Angle='360.00 deg'
+App.ActiveDocument.O163.FirstAngle='0.00 deg'
+App.ActiveDocument.O163.SecondAngle='0.00 deg'
+App.ActiveDocument.O163.Placement=App.Placement(App.Vector(209.4828975896705,178.98401545066073,-29.569737815682352),App.Rotation(App.Vector(-0.013336521286609454,-0.9999110646452373,0.0014357630249200793),93.49621560333283))
+App.ActiveDocument.O163.Label='O163'
+
+App.ActiveDocument.addObject("Part::Cylinder","O164")
+App.ActiveDocument.O164.Radius='3.0030167918791575 mm'
+App.ActiveDocument.O164.Height='23.289545384199638 mm'
+App.ActiveDocument.O164.Angle='360.00 deg'
+App.ActiveDocument.O164.FirstAngle='0.00 deg'
+App.ActiveDocument.O164.SecondAngle='0.00 deg'
+App.ActiveDocument.O164.Placement=App.Placement(App.Vector(209.57098159486068,178.86869837698194,-29.588344600493624),App.Rotation(App.Vector(0.9990994793629782,0.0424291213275248,0.001258061210321917),100.3551665106237))
+App.ActiveDocument.O164.Label='O164'
+
+App.ActiveDocument.addObject("Part::Sphere","O165")
+App.ActiveDocument.O165.Radius='3 mm'
+App.ActiveDocument.O165.Angle1='-90.00 deg'
+App.ActiveDocument.O165.Angle2='90.00 deg'
+App.ActiveDocument.O165.Angle3='360.00 deg'
+App.ActiveDocument.O165.Placement=App.Placement(App.Vector(225.02839796333848,183.29752140717426,-26.97740626586967),App.Rotation(App.Vector(0.00,0.00,1.00),0.0029701635041513566))
+App.ActiveDocument.O165.Label='O165'
+
+App.ActiveDocument.addObject("Part::Cylinder","O166")
+App.ActiveDocument.O166.Radius='3.0048694449302102 mm'
+App.ActiveDocument.O166.Height='16.095632006973084 mm'
+App.ActiveDocument.O166.Angle='360.00 deg'
+App.ActiveDocument.O166.FirstAngle='0.00 deg'
+App.ActiveDocument.O166.SecondAngle='0.00 deg'
+App.ActiveDocument.O166.Placement=App.Placement(App.Vector(224.94863600989956,183.273502095382,-26.989877486312036),App.Rotation(App.Vector(0.26868575069906164,-0.9632278896353041,0.0035589159990479947),99.16795750420512))
+App.ActiveDocument.O166.Label='O166'
+
+App.ActiveDocument.addObject("Part::Cylinder","O167")
+App.ActiveDocument.O167.Radius='3.0022292803092703 mm'
+App.ActiveDocument.O167.Height='23.92096530520002 mm'
+App.ActiveDocument.O167.Angle='360.00 deg'
+App.ActiveDocument.O167.FirstAngle='0.00 deg'
+App.ActiveDocument.O167.SecondAngle='0.00 deg'
+App.ActiveDocument.O167.Placement=App.Placement(App.Vector(225.03593305212897,183.1747968952964,-26.99528129297481),App.Rotation(App.Vector(0.9964539990922705,0.08413933499274538,0.004492575232457351),98.90693190041407))
+App.ActiveDocument.O167.Label='O167'
+
+App.ActiveDocument.addObject("Part::Sphere","O168")
+App.ActiveDocument.O168.Radius='3 mm'
+App.ActiveDocument.O168.Angle1='-90.00 deg'
+App.ActiveDocument.O168.Angle2='90.00 deg'
+App.ActiveDocument.O168.Angle3='360.00 deg'
+App.ActiveDocument.O168.Placement=App.Placement(App.Vector(239.20978054344567,189.73092984162784,-23.596097584791174),App.Rotation(App.Vector(0.00,0.00,1.00),0.0022683589112719063))
+App.ActiveDocument.O168.Label='O168'
+
+App.ActiveDocument.addObject("Part::Cylinder","O169")
+App.ActiveDocument.O169.Radius='3.0038437890920995 mm'
+App.ActiveDocument.O169.Height='15.780817537031826 mm'
+App.ActiveDocument.O169.Angle='360.00 deg'
+App.ActiveDocument.O169.FirstAngle='0.00 deg'
+App.ActiveDocument.O169.SecondAngle='0.00 deg'
+App.ActiveDocument.O169.Placement=App.Placement(App.Vector(239.14187783116438,189.70247534541198,-23.613910939988934),App.Rotation(App.Vector(0.41324104619178254,-0.9106216765168293,0.0038049647827489166),102.23890617102215))
+App.ActiveDocument.O169.Label='O169'
+
+App.ActiveDocument.addObject("Part::Cylinder","O170")
+App.ActiveDocument.O170.Radius='3.003465943652315 mm'
+App.ActiveDocument.O170.Height='25.555317124818632 mm'
+App.ActiveDocument.O170.Angle='360.00 deg'
+App.ActiveDocument.O170.FirstAngle='0.00 deg'
+App.ActiveDocument.O170.SecondAngle='0.00 deg'
+App.ActiveDocument.O170.Placement=App.Placement(App.Vector(239.22732291732896,189.6053344611267,-23.612947880793875),App.Rotation(App.Vector(0.9914601874338604,0.13040972637657922,0.003812185857376738),97.28152348744355))
+App.ActiveDocument.O170.Label='O170'
+
+App.ActiveDocument.addObject("Part::Sphere","O171")
+App.ActiveDocument.O171.Radius='3 mm'
+App.ActiveDocument.O171.Angle1='-90.00 deg'
+App.ActiveDocument.O171.Angle2='90.00 deg'
+App.ActiveDocument.O171.Angle3='360.00 deg'
+App.ActiveDocument.O171.Placement=App.Placement(App.Vector(252.271431371639,197.01142706793692,-19.834336841682504),App.Rotation(App.Vector(0.00,0.00,1.00),0.003612834375946096))
+App.ActiveDocument.O171.Label='O171'
+
+App.ActiveDocument.addObject("Part::Cylinder","O172")
+App.ActiveDocument.O172.Radius='3.0025497819611675 mm'
+App.ActiveDocument.O172.Height='15.261738336854018 mm'
+App.ActiveDocument.O172.Angle='360.00 deg'
+App.ActiveDocument.O172.FirstAngle='0.00 deg'
+App.ActiveDocument.O172.SecondAngle='0.00 deg'
+App.ActiveDocument.O172.Placement=App.Placement(App.Vector(252.20529992718562,196.9795097385451,-19.857287805546814),App.Rotation(App.Vector(0.48701293564718096,-0.8733947564030338,0.0017854344246415299),104.12424188744086))
+App.ActiveDocument.O172.Label='O172'
+
+App.ActiveDocument.addObject("Part::Cylinder","O173")
+App.ActiveDocument.O173.Radius='3.004410735854534 mm'
+App.ActiveDocument.O173.Height='27.760424631915267 mm'
+App.ActiveDocument.O173.Angle='360.00 deg'
+App.ActiveDocument.O173.FirstAngle='0.00 deg'
+App.ActiveDocument.O173.SecondAngle='0.00 deg'
+App.ActiveDocument.O173.Placement=App.Placement(App.Vector(252.29151934486063,196.87459641165827,-19.851388380851052),App.Rotation(App.Vector(0.9856465789635962,0.16882186285359888,0.00411052784642406),95.88173901495067))
+App.ActiveDocument.O173.Label='O173'
+
+App.ActiveDocument.addObject("Part::Sphere","O174")
+App.ActiveDocument.O174.Radius='3 mm'
+App.ActiveDocument.O174.Angle1='-90.00 deg'
+App.ActiveDocument.O174.Angle2='90.00 deg'
+App.ActiveDocument.O174.Angle3='360.00 deg'
+App.ActiveDocument.O174.Placement=App.Placement(App.Vector(146.62379821230905,243.86894662181933,-15.61126845087963),App.Rotation(App.Vector(0.00,0.00,1.00),0.0026121894707981886))
+App.ActiveDocument.O174.Label='O174'
+
+App.ActiveDocument.addObject("Part::Cylinder","O175")
+App.ActiveDocument.O175.Radius='3.00031026094564 mm'
+App.ActiveDocument.O175.Height='30.59485702732555 mm'
+App.ActiveDocument.O175.Angle='360.00 deg'
+App.ActiveDocument.O175.FirstAngle='0.00 deg'
+App.ActiveDocument.O175.SecondAngle='0.00 deg'
+App.ActiveDocument.O175.Placement=App.Placement(App.Vector(146.60270802000127,243.71478787085402,-15.625737579949158),App.Rotation(App.Vector(0.987286508744651,-0.15895077744634808,0.0019072844100034548),94.69023856132476))
+App.ActiveDocument.O175.Label='O175'
+
+App.ActiveDocument.addObject("Part::Sphere","O176")
+App.ActiveDocument.O176.Radius='3 mm'
+App.ActiveDocument.O176.Angle1='-90.00 deg'
+App.ActiveDocument.O176.Angle2='90.00 deg'
+App.ActiveDocument.O176.Angle3='360.00 deg'
+App.ActiveDocument.O176.Placement=App.Placement(App.Vector(155.8187753383031,231.87983572487656,-19.31761250175931),App.Rotation(App.Vector(0.00,0.00,1.00),0.003502981250486883))
+App.ActiveDocument.O176.Label='O176'
+
+App.ActiveDocument.addObject("Part::Cylinder","O177")
+App.ActiveDocument.O177.Radius='3.0026867438304907 mm'
+App.ActiveDocument.O177.Height='15.400918142037222 mm'
+App.ActiveDocument.O177.Angle='360.00 deg'
+App.ActiveDocument.O177.FirstAngle='0.00 deg'
+App.ActiveDocument.O177.SecondAngle='0.00 deg'
+App.ActiveDocument.O177.Placement=App.Placement(App.Vector(155.77119714940025,231.93952929932132,-19.297890418335545),App.Rotation(App.Vector(-0.7935690766411332,-0.6084801727245839,0.00390596853931385),76.22615427913199))
+App.ActiveDocument.O177.Label='O177'
+
+App.ActiveDocument.addObject("Part::Cylinder","O178")
+App.ActiveDocument.O178.Radius='3.0030449745406447 mm'
+App.ActiveDocument.O178.Height='28.261143804277662 mm'
+App.ActiveDocument.O178.Angle='360.00 deg'
+App.ActiveDocument.O178.FirstAngle='0.00 deg'
+App.ActiveDocument.O178.SecondAngle='0.00 deg'
+App.ActiveDocument.O178.Placement=App.Placement(App.Vector(155.80268294900281,231.73657182175825,-19.33401870776452),App.Rotation(App.Vector(0.9939991794696622,-0.10938752768775072,0.004729802725192985),96.57375474947483))
+App.ActiveDocument.O178.Label='O178'
+
+App.ActiveDocument.addObject("Part::Sphere","O179")
+App.ActiveDocument.O179.Radius='3 mm'
+App.ActiveDocument.O179.Angle1='-90.00 deg'
+App.ActiveDocument.O179.Angle2='90.00 deg'
+App.ActiveDocument.O179.Angle3='360.00 deg'
+App.ActiveDocument.O179.Placement=App.Placement(App.Vector(166.16104641498208,219.96374045084502,-22.5961905018021),App.Rotation(App.Vector(0.00,0.00,1.00),0.004935675995158677))
+App.ActiveDocument.O179.Label='O179'
+
+App.ActiveDocument.addObject("Part::Cylinder","O180")
+App.ActiveDocument.O180.Radius='3.0007779968040342 mm'
+App.ActiveDocument.O180.Height='15.954243344602883 mm'
+App.ActiveDocument.O180.Angle='360.00 deg'
+App.ActiveDocument.O180.FirstAngle='0.00 deg'
+App.ActiveDocument.O180.SecondAngle='0.00 deg'
+App.ActiveDocument.O180.Placement=App.Placement(App.Vector(166.11245801700318,220.02278727992507,-22.58224035048243),App.Rotation(App.Vector(-0.7551108382005512,-0.6555971491945802,0.003402648571156107),78.25513015221242))
+App.ActiveDocument.O180.Label='O180'
+
+App.ActiveDocument.addObject("Part::Cylinder","O181")
+App.ActiveDocument.O181.Radius='3.0041513495415977 mm'
+App.ActiveDocument.O181.Height='26.206815650651087 mm'
+App.ActiveDocument.O181.Angle='360.00 deg'
+App.ActiveDocument.O181.FirstAngle='0.00 deg'
+App.ActiveDocument.O181.SecondAngle='0.00 deg'
+App.ActiveDocument.O181.Placement=App.Placement(App.Vector(166.15714087334982,219.8324946345722,-22.617906078553958),App.Rotation(App.Vector(0.9981922338842578,-0.06010211488088456,0.0009961075961147693),98.31213370727895))
+App.ActiveDocument.O181.Label='O181'
+
+App.ActiveDocument.addObject("Part::Sphere","O182")
+App.ActiveDocument.O182.Radius='3 mm'
+App.ActiveDocument.O182.Angle1='-90.00 deg'
+App.ActiveDocument.O182.Angle2='90.00 deg'
+App.ActiveDocument.O182.Angle3='360.00 deg'
+App.ActiveDocument.O182.Placement=App.Placement(App.Vector(178.34164982890385,209.3928230291185,-25.145134358666255),App.Rotation(App.Vector(0.00,0.00,1.00),0.0035420414912382616))
+App.ActiveDocument.O182.Label='O182'
+
+App.ActiveDocument.addObject("Part::Cylinder","O183")
+App.ActiveDocument.O183.Radius='3.0013850016804944 mm'
+App.ActiveDocument.O183.Height='16.16409123984901 mm'
+App.ActiveDocument.O183.Angle='360.00 deg'
+App.ActiveDocument.O183.FirstAngle='0.00 deg'
+App.ActiveDocument.O183.SecondAngle='0.00 deg'
+App.ActiveDocument.O183.Placement=App.Placement(App.Vector(178.28050175354107,209.44432915888777,-25.132134227953546),App.Rotation(App.Vector(-0.6554176664039254,-0.7552666301152412,0.0041355156733980155),81.0255341911534))
+App.ActiveDocument.O183.Label='O183'
+
+App.ActiveDocument.addObject("Part::Cylinder","O184")
+App.ActiveDocument.O184.Radius='3.001250794787986 mm'
+App.ActiveDocument.O184.Height='24.544644261470754 mm'
+App.ActiveDocument.O184.Angle='360.00 deg'
+App.ActiveDocument.O184.FirstAngle='0.00 deg'
+App.ActiveDocument.O184.SecondAngle='0.00 deg'
+App.ActiveDocument.O184.Placement=App.Placement(App.Vector(178.3395774927665,209.2706792958239,-25.16399415870847),App.Rotation(App.Vector(0.999862226298618,-0.016599048803202576,0.0019523352197483147),99.6692900238155))
+App.ActiveDocument.O184.Label='O184'
+
+App.ActiveDocument.addObject("Part::Sphere","O185")
+App.ActiveDocument.O185.Radius='3 mm'
+App.ActiveDocument.O185.Angle1='-90.00 deg'
+App.ActiveDocument.O185.Angle2='90.00 deg'
+App.ActiveDocument.O185.Angle3='360.00 deg'
+App.ActiveDocument.O185.Placement=App.Placement(App.Vector(192.93778265257856,202.33747344370298,-26.354718115635148),App.Rotation(App.Vector(0.00,0.00,1.00),0.0024750481878968622))
+App.ActiveDocument.O185.Label='O185'
+
+App.ActiveDocument.addObject("Part::Cylinder","O186")
+App.ActiveDocument.O186.Radius='3.0027135271751204 mm'
+App.ActiveDocument.O186.Height='16.094508279401396 mm'
+App.ActiveDocument.O186.Angle='360.00 deg'
+App.ActiveDocument.O186.FirstAngle='0.00 deg'
+App.ActiveDocument.O186.SecondAngle='0.00 deg'
+App.ActiveDocument.O186.Placement=App.Placement(App.Vector(192.86878577785723,202.37642003300337,-26.349625632140185),App.Rotation(App.Vector(-0.43514657488754244,-0.9003596272399381,0.00277765859181243),85.72981704208064))
+App.ActiveDocument.O186.Label='O186'
+
+App.ActiveDocument.addObject("Part::Cylinder","O187")
+App.ActiveDocument.O187.Radius='3.0035964952458114 mm'
+App.ActiveDocument.O187.Height='23.284757414045327 mm'
+App.ActiveDocument.O187.Angle='360.00 deg'
+App.ActiveDocument.O187.FirstAngle='0.00 deg'
+App.ActiveDocument.O187.SecondAngle='0.00 deg'
+App.ActiveDocument.O187.Placement=App.Placement(App.Vector(192.9421252308731,202.22209561881536,-26.37761625517697),App.Rotation(App.Vector(0.9999184800241345,0.012768449640597647,0.0005414946106839191),100.30451917154691))
+App.ActiveDocument.O187.Label='O187'
+
+App.ActiveDocument.addObject("Part::Sphere","O188")
+App.ActiveDocument.O188.Radius='3 mm'
+App.ActiveDocument.O188.Angle1='-90.00 deg'
+App.ActiveDocument.O188.Angle2='90.00 deg'
+App.ActiveDocument.O188.Angle3='360.00 deg'
+App.ActiveDocument.O188.Placement=App.Placement(App.Vector(209.0293052481291,201.73953234649116,-25.57057040131356),App.Rotation(App.Vector(0.00,0.00,1.00),0.0008078420793561481))
+App.ActiveDocument.O188.Label='O188'
+
+App.ActiveDocument.addObject("Part::Cylinder","O189")
+App.ActiveDocument.O189.Radius='3.0031494431200296 mm'
+App.ActiveDocument.O189.Height='15.958537168956916 mm'
+App.ActiveDocument.O189.Angle='360.00 deg'
+App.ActiveDocument.O189.FirstAngle='0.00 deg'
+App.ActiveDocument.O189.SecondAngle='0.00 deg'
+App.ActiveDocument.O189.Placement=App.Placement(App.Vector(208.95103753633475,201.73948839106149,-25.57457139107375),App.Rotation(App.Vector(-0.03738075806084583,-0.9993010952294591,0.00040903967534985485),92.78764467066216))
+App.ActiveDocument.O189.Label='O189'
+
+App.ActiveDocument.addObject("Part::Cylinder","O190")
+App.ActiveDocument.O190.Radius='3.003159743375247 mm'
+App.ActiveDocument.O190.Height='22.877569193731038 mm'
+App.ActiveDocument.O190.Angle='360.00 deg'
+App.ActiveDocument.O190.FirstAngle='0.00 deg'
+App.ActiveDocument.O190.SecondAngle='0.00 deg'
+App.ActiveDocument.O190.Placement=App.Placement(App.Vector(209.03170246813406,201.62140435573545,-25.592566740806664),App.Rotation(App.Vector(0.9997222014845826,0.02356946878526795,0.000052722972013706796),99.94960967148243))
+App.ActiveDocument.O190.Label='O190'
+
+App.ActiveDocument.addObject("Part::Sphere","O191")
+App.ActiveDocument.O191.Radius='3 mm'
+App.ActiveDocument.O191.Angle1='-90.00 deg'
+App.ActiveDocument.O191.Angle2='90.00 deg'
+App.ActiveDocument.O191.Angle3='360.00 deg'
+App.ActiveDocument.O191.Placement=App.Placement(App.Vector(223.96921732229555,207.05114409674795,-23.22981744375072),App.Rotation(App.Vector(0.00,0.00,1.00),0.0030577817714214583))
+App.ActiveDocument.O191.Label='O191'
+
+App.ActiveDocument.addObject("Part::Cylinder","O192")
+App.ActiveDocument.O192.Radius='3.0019975177676694 mm'
+App.ActiveDocument.O192.Height='15.86800203112533 mm'
+App.ActiveDocument.O192.Angle='360.00 deg'
+App.ActiveDocument.O192.FirstAngle='0.00 deg'
+App.ActiveDocument.O192.SecondAngle='0.00 deg'
+App.ActiveDocument.O192.Placement=App.Placement(App.Vector(223.89485089061176,207.0236001924886,-23.240918671625952),App.Rotation(App.Vector(0.33509699347688887,-0.9421836365394751,0.0018908657947447672),98.40592042494849))
+App.ActiveDocument.O192.Label='O192'
+
+App.ActiveDocument.addObject("Part::Cylinder","O193")
+App.ActiveDocument.O193.Radius='3.0033037551144064 mm'
+App.ActiveDocument.O193.Height='23.831549917966058 mm'
+App.ActiveDocument.O193.Angle='360.00 deg'
+App.ActiveDocument.O193.FirstAngle='0.00 deg'
+App.ActiveDocument.O193.SecondAngle='0.00 deg'
+App.ActiveDocument.O193.Placement=App.Placement(App.Vector(223.97350022006336,206.9299902754317,-23.24968441283031),App.Rotation(App.Vector(0.999010726974475,0.044469848098805685,0.004269910265095254),98.95160535717865))
+App.ActiveDocument.O193.Label='O193'
+
+App.ActiveDocument.addObject("Part::Sphere","O194")
+App.ActiveDocument.O194.Radius='3 mm'
+App.ActiveDocument.O194.Angle1='-90.00 deg'
+App.ActiveDocument.O194.Angle2='90.00 deg'
+App.ActiveDocument.O194.Angle3='360.00 deg'
+App.ActiveDocument.O194.Placement=App.Placement(App.Vector(237.04399815714393,215.35418822431265,-20.133505735082025),App.Rotation(App.Vector(0.00,0.00,1.00),0.0014458053797914662))
+App.ActiveDocument.O194.Label='O194'
+
+App.ActiveDocument.addObject("Part::Cylinder","O195")
+App.ActiveDocument.O195.Radius='3.0009317382123153 mm'
+App.ActiveDocument.O195.Height='15.636587816962972 mm'
+App.ActiveDocument.O195.Angle='360.00 deg'
+App.ActiveDocument.O195.FirstAngle='0.00 deg'
+App.ActiveDocument.O195.SecondAngle='0.00 deg'
+App.ActiveDocument.O195.Placement=App.Placement(App.Vector(236.98048678536446,215.3134047475785,-20.146280954619034),App.Rotation(App.Vector(0.536020914706736,-0.8442047020699152,0.004923563932604075),101.31071095162876))
+App.ActiveDocument.O195.Label='O195'
+
+App.ActiveDocument.addObject("Part::Cylinder","O196")
+App.ActiveDocument.O196.Radius='3.00223447640964 mm'
+App.ActiveDocument.O196.Height='25.684417716486415 mm'
+App.ActiveDocument.O196.Angle='360.00 deg'
+App.ActiveDocument.O196.FirstAngle='0.00 deg'
+App.ActiveDocument.O196.SecondAngle='0.00 deg'
+App.ActiveDocument.O196.Placement=App.Placement(App.Vector(237.05592041185412,215.22662842770322,-20.149328076282053),App.Rotation(App.Vector(0.9964375297373369,0.08433415281458587,0.0034465960086542424),97.6773383457873))
+App.ActiveDocument.O196.Label='O196'
+
+App.ActiveDocument.addObject("Part::Sphere","O197")
+App.ActiveDocument.O197.Radius='3 mm'
+App.ActiveDocument.O197.Angle1='-90.00 deg'
+App.ActiveDocument.O197.Angle2='90.00 deg'
+App.ActiveDocument.O197.Angle3='360.00 deg'
+App.ActiveDocument.O197.Placement=App.Placement(App.Vector(248.61151964008255,224.8475753150077,-16.695309166135672),App.Rotation(App.Vector(0.00,0.00,1.00),0.0007033616936199572))
+App.ActiveDocument.O197.Label='O197'
+
+App.ActiveDocument.addObject("Part::Cylinder","O198")
+App.ActiveDocument.O198.Radius='3.004448116652522 mm'
+App.ActiveDocument.O198.Height='15.198891063170215 mm'
+App.ActiveDocument.O198.Angle='360.00 deg'
+App.ActiveDocument.O198.FirstAngle='0.00 deg'
+App.ActiveDocument.O198.SecondAngle='0.00 deg'
+App.ActiveDocument.O198.Placement=App.Placement(App.Vector(248.55209626209506,224.79654708751556,-16.71482286013298),App.Rotation(App.Vector(0.6344604341049348,-0.7729553399488082,0.003281344784866943),102.93095255238359))
+App.ActiveDocument.O198.Label='O198'
+
+App.ActiveDocument.addObject("Part::Cylinder","O199")
+App.ActiveDocument.O199.Radius='3.0044885440126183 mm'
+App.ActiveDocument.O199.Height='27.96458492613547 mm'
+App.ActiveDocument.O199.Angle='360.00 deg'
+App.ActiveDocument.O199.FirstAngle='0.00 deg'
+App.ActiveDocument.O199.SecondAngle='0.00 deg'
+App.ActiveDocument.O199.Placement=App.Placement(App.Vector(248.62555058173652,224.70646384082886,-16.712949066137703),App.Rotation(App.Vector(0.9914651180035013,0.13037223547329052,0.0013756783367852355),96.38310227549857))
+App.ActiveDocument.O199.Label='O199'
+
+App.ActiveDocument.addObject("Part::Sphere","O200")
+App.ActiveDocument.O200.Radius='3 mm'
+App.ActiveDocument.O200.Angle1='-90.00 deg'
+App.ActiveDocument.O200.Angle2='90.00 deg'
+App.ActiveDocument.O200.Angle3='360.00 deg'
+App.ActiveDocument.O200.Placement=App.Placement(App.Vector(150.6567381053845,274.8777485417903,-12.802547987602747),App.Rotation(App.Vector(0.00,0.00,1.00),0.004829606046053848))
+App.ActiveDocument.O200.Label='O200'
+
+App.ActiveDocument.addObject("Part::Cylinder","O201")
+App.ActiveDocument.O201.Radius='3.000005016872529 mm'
+App.ActiveDocument.O201.Height='31.081367290402245 mm'
+App.ActiveDocument.O201.Angle='360.00 deg'
+App.ActiveDocument.O201.FirstAngle='0.00 deg'
+App.ActiveDocument.O201.SecondAngle='0.00 deg'
+App.ActiveDocument.O201.Placement=App.Placement(App.Vector(150.63749424591728,274.7212879822725,-12.81731415389261),App.Rotation(App.Vector(0.9916444101036752,-0.12900141049668482,0.00339427820882089),95.13609686803615))
+App.ActiveDocument.O201.Label='O201'
+
+App.ActiveDocument.addObject("Part::Sphere","O202")
+App.ActiveDocument.O202.Radius='3 mm'
+App.ActiveDocument.O202.Angle1='-90.00 deg'
+App.ActiveDocument.O202.Angle2='90.00 deg'
+App.ActiveDocument.O202.Angle3='360.00 deg'
+App.ActiveDocument.O202.Placement=App.Placement(App.Vector(158.0677312940528,260.4941952631676,-15.907568615890142),App.Rotation(App.Vector(0.00,0.00,1.00),0.004464928130089015))
+App.ActiveDocument.O202.Label='O202'
+
+App.ActiveDocument.addObject("Part::Cylinder","O203")
+App.ActiveDocument.O203.Radius='3.0011472269129276 mm'
+App.ActiveDocument.O203.Height='16.308394301958796 mm'
+App.ActiveDocument.O203.Angle='360.00 deg'
+App.ActiveDocument.O203.FirstAngle='0.00 deg'
+App.ActiveDocument.O203.SecondAngle='0.00 deg'
+App.ActiveDocument.O203.Placement=App.Placement(App.Vector(158.03293543351919,260.56671801911625,-15.893182728762884),App.Rotation(App.Vector(-0.8889563880876724,-0.45799185590807134,0.0007827012848088777),79.12563234399862))
+App.ActiveDocument.O203.Label='O203'
+
+App.ActiveDocument.addObject("Part::Cylinder","O204")
+App.ActiveDocument.O204.Radius='3.0049146651752214 mm'
+App.ActiveDocument.O204.Height='28.61778374191202 mm'
+App.ActiveDocument.O204.Angle='360.00 deg'
+App.ActiveDocument.O204.FirstAngle='0.00 deg'
+App.ActiveDocument.O204.SecondAngle='0.00 deg'
+App.ActiveDocument.O204.Placement=App.Placement(App.Vector(158.05540627763855,260.3520392049202,-15.92633632210432),App.Rotation(App.Vector(0.9969252813739924,-0.07835804590076262,0.0026749179925531275),96.76964579224604))
+App.ActiveDocument.O204.Label='O204'
+
+App.ActiveDocument.addObject("Part::Sphere","O205")
+App.ActiveDocument.O205.Radius='3 mm'
+App.ActiveDocument.O205.Angle1='-90.00 deg'
+App.ActiveDocument.O205.Angle2='90.00 deg'
+App.ActiveDocument.O205.Angle3='360.00 deg'
+App.ActiveDocument.O205.Placement=App.Placement(App.Vector(167.07554197053636,246.15261057352444,-18.834424022018244),App.Rotation(App.Vector(0.00,0.00,1.00),0.001519009028435755))
+App.ActiveDocument.O205.Label='O205'
+
+App.ActiveDocument.addObject("Part::Cylinder","O206")
+App.ActiveDocument.O206.Radius='3.0006428870123765 mm'
+App.ActiveDocument.O206.Height='17.01463905763985 mm'
+App.ActiveDocument.O206.Angle='360.00 deg'
+App.ActiveDocument.O206.FirstAngle='0.00 deg'
+App.ActiveDocument.O206.SecondAngle='0.00 deg'
+App.ActiveDocument.O206.Placement=App.Placement(App.Vector(167.02986803780607,246.22575200579348,-18.817150654727712),App.Rotation(App.Vector(-0.8467963690356318,-0.5319172016282894,0.002963535753856688),80.21189663204315))
+App.ActiveDocument.O206.Label='O206'
+
+App.ActiveDocument.addObject("Part::Cylinder","O207")
+App.ActiveDocument.O207.Radius='3.0046894537696156 mm'
+App.ActiveDocument.O207.Height='26.209960070982167 mm'
+App.ActiveDocument.O207.Angle='360.00 deg'
+App.ActiveDocument.O207.FirstAngle='0.00 deg'
+App.ActiveDocument.O207.SecondAngle='0.00 deg'
+App.ActiveDocument.O207.Placement=App.Placement(App.Vector(167.07159238471303,246.02120766892935,-18.85080754372053),App.Rotation(App.Vector(0.9993915881963182,-0.034877692619218234,0.0011128781110701148),98.17443594457326))
+App.ActiveDocument.O207.Label='O207'
+
+App.ActiveDocument.addObject("Part::Sphere","O208")
+App.ActiveDocument.O208.Radius='3 mm'
+App.ActiveDocument.O208.Angle1='-90.00 deg'
+App.ActiveDocument.O208.Angle2='90.00 deg'
+App.ActiveDocument.O208.Angle3='360.00 deg'
+App.ActiveDocument.O208.Placement=App.Placement(App.Vector(178.34691327122624,233.50293206938062,-21.209083817338783),App.Rotation(App.Vector(0.00,0.00,1.00),0.002185221963430204))
+App.ActiveDocument.O208.Label='O208'
+
+App.ActiveDocument.addObject("Part::Cylinder","O209")
+App.ActiveDocument.O209.Radius='3.002280709139702 mm'
+App.ActiveDocument.O209.Height='16.93690147285323 mm'
+App.ActiveDocument.O209.Angle='360.00 deg'
+App.ActiveDocument.O209.FirstAngle='0.00 deg'
+App.ActiveDocument.O209.SecondAngle='0.00 deg'
+App.ActiveDocument.O209.Placement=App.Placement(App.Vector(178.2924103110278,233.5672393541889,-21.196021203134425),App.Rotation(App.Vector(-0.746643809129091,-0.665224039169663,0.0020999645874060216),82.02537859977984))
+App.ActiveDocument.O209.Label='O209'
+
+App.ActiveDocument.addObject("Part::Cylinder","O210")
+App.ActiveDocument.O210.Radius='3.004693962203493 mm'
+App.ActiveDocument.O210.Height='24.185116795354695 mm'
+App.ActiveDocument.O210.Angle='360.00 deg'
+App.ActiveDocument.O210.FirstAngle='0.00 deg'
+App.ActiveDocument.O210.SecondAngle='0.00 deg'
+App.ActiveDocument.O210.Placement=App.Placement(App.Vector(178.34853105244744,233.3829678340276,-21.225438139709386),App.Rotation(App.Vector(0.9999999861042935,-0.00016670756679655429,0.003508484884250045),99.27700752351763))
+App.ActiveDocument.O210.Label='O210'
+
+App.ActiveDocument.addObject("Part::Sphere","O211")
+App.ActiveDocument.O211.Radius='3 mm'
+App.ActiveDocument.O211.Angle1='-90.00 deg'
+App.ActiveDocument.O211.Angle2='90.00 deg'
+App.ActiveDocument.O211.Angle3='360.00 deg'
+App.ActiveDocument.O211.Placement=App.Placement(App.Vector(192.61764528237552,224.93501018806435,-22.428904070653665),App.Rotation(App.Vector(0.00,0.00,1.00),0.0025045062604685665))
+App.ActiveDocument.O211.Label='O211'
+
+App.ActiveDocument.addObject("Part::Cylinder","O212")
+App.ActiveDocument.O212.Radius='3.000685260652376 mm'
+App.ActiveDocument.O212.Height='16.525213812732794 mm'
+App.ActiveDocument.O212.Angle='360.00 deg'
+App.ActiveDocument.O212.FirstAngle='0.00 deg'
+App.ActiveDocument.O212.SecondAngle='0.00 deg'
+App.ActiveDocument.O212.Placement=App.Placement(App.Vector(192.54851720394805,224.9797852984194,-22.422171693728835),App.Rotation(App.Vector(-0.5147311733999035,-0.857351630972006,0.0014123310973574233),85.80566215431753))
+App.ActiveDocument.O212.Label='O212'
+
+App.ActiveDocument.addObject("Part::Cylinder","O213")
+App.ActiveDocument.O213.Radius='3.0037167815552954 mm'
+App.ActiveDocument.O213.Height='22.707063954445623 mm'
+App.ActiveDocument.O213.Angle='360.00 deg'
+App.ActiveDocument.O213.FirstAngle='0.00 deg'
+App.ActiveDocument.O213.SecondAngle='0.00 deg'
+App.ActiveDocument.O213.Placement=App.Placement(App.Vector(192.62241907289902,224.82100824072856,-22.449875734715118),App.Rotation(App.Vector(0.9998997728761683,0.01415783183214276,0.0013638534959044069),99.8561585894989))
+App.ActiveDocument.O213.Label='O213'
+
+App.ActiveDocument.addObject("Part::Sphere","O214")
+App.ActiveDocument.O214.Radius='3 mm'
+App.ActiveDocument.O214.Angle1='-90.00 deg'
+App.ActiveDocument.O214.Angle2='90.00 deg'
+App.ActiveDocument.O214.Angle3='360.00 deg'
+App.ActiveDocument.O214.Placement=App.Placement(App.Vector(208.96592230839235,224.06666142404092,-21.753670026968535),App.Rotation(App.Vector(0.00,0.00,1.00),0.0005536998772832758))
+App.ActiveDocument.O214.Label='O214'
+
+App.ActiveDocument.addObject("Part::Cylinder","O215")
+App.ActiveDocument.O215.Radius='3.003493746043709 mm'
+App.ActiveDocument.O215.Height='16.217202353139857 mm'
+App.ActiveDocument.O215.Angle='360.00 deg'
+App.ActiveDocument.O215.FirstAngle='0.00 deg'
+App.ActiveDocument.O215.SecondAngle='0.00 deg'
+App.ActiveDocument.O215.Placement=App.Placement(App.Vector(208.8815915346499,224.07573919743118,-21.754622267183148),App.Rotation(App.Vector(-0.05291769229172254,-0.9985988773489176,0.004110727384755219),92.37426218352337))
+App.ActiveDocument.O215.Label='O215'
+
+App.ActiveDocument.addObject("Part::Cylinder","O216")
+App.ActiveDocument.O216.Radius='3.000088621468407 mm'
+App.ActiveDocument.O216.Height='22.4294564034806 mm'
+App.ActiveDocument.O216.Angle='360.00 deg'
+App.ActiveDocument.O216.FirstAngle='0.00 deg'
+App.ActiveDocument.O216.SecondAngle='0.00 deg'
+App.ActiveDocument.O216.Placement=App.Placement(App.Vector(208.96573802227908,223.95947039636192,-21.772342951628097),App.Rotation(App.Vector(0.9999957196378815,0.0029258684036496075,0.00008270865313298791),99.70872521983357))
+App.ActiveDocument.O216.Label='O216'
+
+App.ActiveDocument.addObject("Part::Sphere","O217")
+App.ActiveDocument.O217.Radius='3 mm'
+App.ActiveDocument.O217.Angle1='-90.00 deg'
+App.ActiveDocument.O217.Angle2='90.00 deg'
+App.ActiveDocument.O217.Angle3='360.00 deg'
+App.ActiveDocument.O217.Placement=App.Placement(App.Vector(223.73348720332447,230.713641618901,-19.489212982079753),App.Rotation(App.Vector(0.00,0.00,1.00),0.0013357779365772216))
+App.ActiveDocument.O217.Label='O217'
+
+App.ActiveDocument.addObject("Part::Cylinder","O218")
+App.ActiveDocument.O218.Radius='3.0005634269590664 mm'
+App.ActiveDocument.O218.Height='16.190682577773995 mm'
+App.ActiveDocument.O218.Angle='360.00 deg'
+App.ActiveDocument.O218.FirstAngle='0.00 deg'
+App.ActiveDocument.O218.SecondAngle='0.00 deg'
+App.ActiveDocument.O218.Placement=App.Placement(App.Vector(223.66154453706946,230.67874007993566,-19.50142650201889),App.Rotation(App.Vector(0.4102107333129017,-0.9119907643583304,0.0006524437892274205),97.95263049583654))
+App.ActiveDocument.O218.Label='O218'
+
+App.ActiveDocument.addObject("Part::Cylinder","O219")
+App.ActiveDocument.O219.Radius='3.0007723596667515 mm'
+App.ActiveDocument.O219.Height='23.717631166353254 mm'
+App.ActiveDocument.O219.Angle='360.00 deg'
+App.ActiveDocument.O219.FirstAngle='0.00 deg'
+App.ActiveDocument.O219.SecondAngle='0.00 deg'
+App.ActiveDocument.O219.Placement=App.Placement(App.Vector(223.73516670752022,230.5961245190046,-19.508720914162645),App.Rotation(App.Vector(0.9999514204975248,0.009856807037884654,0.003165116234108757),98.9862116029745))
+App.ActiveDocument.O219.Label='O219'
+
+App.ActiveDocument.addObject("Part::Sphere","O220")
+App.ActiveDocument.O220.Radius='3 mm'
+App.ActiveDocument.O220.Angle1='-90.00 deg'
+App.ActiveDocument.O220.Angle2='90.00 deg'
+App.ActiveDocument.O220.Angle3='360.00 deg'
+App.ActiveDocument.O220.Placement=App.Placement(App.Vector(235.83018029901245,241.18691625692946,-16.52908764878445),App.Rotation(App.Vector(0.00,0.00,1.00),0.0005602129230884368))
+App.ActiveDocument.O220.Label='O220'
+
+App.ActiveDocument.addObject("Part::Cylinder","O221")
+App.ActiveDocument.O221.Radius='3.0021514809916594 mm'
+App.ActiveDocument.O221.Height='16.10684275511518 mm'
+App.ActiveDocument.O221.Angle='360.00 deg'
+App.ActiveDocument.O221.FirstAngle='0.00 deg'
+App.ActiveDocument.O221.SecondAngle='0.00 deg'
+App.ActiveDocument.O221.Placement=App.Placement(App.Vector(235.77107869953235,241.1327827279706,-16.543775989820347),App.Rotation(App.Vector(0.6546066223661499,-0.7559696885156051,0.003997596426414792),100.48805626286178))
+App.ActiveDocument.O221.Label='O221'
+
+App.ActiveDocument.addObject("Part::Cylinder","O222")
+App.ActiveDocument.O222.Radius='3.001834667199983 mm'
+App.ActiveDocument.O222.Height='25.850076771079383 mm'
+App.ActiveDocument.O222.Angle='360.00 deg'
+App.ActiveDocument.O222.FirstAngle='0.00 deg'
+App.ActiveDocument.O222.SecondAngle='0.00 deg'
+App.ActiveDocument.O222.Placement=App.Placement(App.Vector(235.83715907641965,241.05849367804518,-16.54632848212112),App.Rotation(App.Vector(0.9988970039351365,0.0469550373166476,0.0041424805798887),97.9343597644377))
+App.ActiveDocument.O222.Label='O222'
+
+App.ActiveDocument.addObject("Part::Sphere","O223")
+App.ActiveDocument.O223.Radius='3 mm'
+App.ActiveDocument.O223.Angle1='-90.00 deg'
+App.ActiveDocument.O223.Angle2='90.00 deg'
+App.ActiveDocument.O223.Angle3='360.00 deg'
+App.ActiveDocument.O223.Placement=App.Placement(App.Vector(245.7759290654443,253.03248819362454,-13.360245581532187),App.Rotation(App.Vector(0.00,0.00,1.00),0.0024058144140013784))
+App.ActiveDocument.O223.Label='O223'
+
+App.ActiveDocument.addObject("Part::Cylinder","O224")
+App.ActiveDocument.O224.Radius='3.0013909466616067 mm'
+App.ActiveDocument.O224.Height='15.633372051050836 mm'
+App.ActiveDocument.O224.Angle='360.00 deg'
+App.ActiveDocument.O224.FirstAngle='0.00 deg'
+App.ActiveDocument.O224.SecondAngle='0.00 deg'
+App.ActiveDocument.O224.Placement=App.Placement(App.Vector(245.7304812410563,252.97297333624164,-13.371790795332444),App.Rotation(App.Vector(0.7657556771651106,-0.6431315906479815,0.001550747094710512),101.58739289310644))
+App.ActiveDocument.O224.Label='O224'
+
+App.ActiveDocument.addObject("Part::Cylinder","O225")
+App.ActiveDocument.O225.Radius='3.004273499033712 mm'
+App.ActiveDocument.O225.Height='28.237975041564887 mm'
+App.ActiveDocument.O225.Angle='360.00 deg'
+App.ActiveDocument.O225.FirstAngle='0.00 deg'
+App.ActiveDocument.O225.SecondAngle='0.00 deg'
+App.ActiveDocument.O225.Placement=App.Placement(App.Vector(245.79449146172755,252.89012759940502,-13.373631649940915),App.Rotation(App.Vector(0.9949927253605084,0.09994736854798941,0.0005358700951698669),96.72642642981204))
+App.ActiveDocument.O225.Label='O225'
+
+App.ActiveDocument.addObject("Part::Sphere","O226")
+App.ActiveDocument.O226.Radius='3 mm'
+App.ActiveDocument.O226.Angle1='-90.00 deg'
+App.ActiveDocument.O226.Angle2='90.00 deg'
+App.ActiveDocument.O226.Angle3='360.00 deg'
+App.ActiveDocument.O226.Placement=App.Placement(App.Vector(153.21236769766628,307.36657429304194,-9.532822669957762),App.Rotation(App.Vector(0.00,0.00,1.00),0.0021802310817397564))
+App.ActiveDocument.O226.Label='O226'
+
+App.ActiveDocument.addObject("Part::Cylinder","O227")
+App.ActiveDocument.O227.Radius='3.0007747019685245 mm'
+App.ActiveDocument.O227.Height='32.42485612784395 mm'
+App.ActiveDocument.O227.Angle='360.00 deg'
+App.ActiveDocument.O227.FirstAngle='0.00 deg'
+App.ActiveDocument.O227.SecondAngle='0.00 deg'
+App.ActiveDocument.O227.Placement=App.Placement(App.Vector(153.20065874009313,307.20222010561656,-9.550611795934442),App.Rotation(App.Vector(0.9969250018630049,-0.07836160195177133,0.0048714209867315806),95.7331313259249))
+App.ActiveDocument.O227.Label='O227'
+
+App.ActiveDocument.addObject("Part::Sphere","O228")
+App.ActiveDocument.O228.Radius='3 mm'
+App.ActiveDocument.O228.Angle1='-90.00 deg'
+App.ActiveDocument.O228.Angle2='90.00 deg'
+App.ActiveDocument.O228.Angle3='360.00 deg'
+App.ActiveDocument.O228.Placement=App.Placement(App.Vector(159.27998496482877,289.6760278758001,-12.380928704106088),App.Rotation(App.Vector(0.00,0.00,1.00),0.0023617674069475194))
+App.ActiveDocument.O228.Label='O228'
+
+App.ActiveDocument.addObject("Part::Cylinder","O229")
+App.ActiveDocument.O229.Radius='3.004039418156774 mm'
+App.ActiveDocument.O229.Height='18.728041265099193 mm'
+App.ActiveDocument.O229.Angle='360.00 deg'
+App.ActiveDocument.O229.FirstAngle='0.00 deg'
+App.ActiveDocument.O229.SecondAngle='0.00 deg'
+App.ActiveDocument.O229.Placement=App.Placement(App.Vector(159.24908609133666,289.7641558461041,-12.368598213975966),App.Rotation(App.Vector(-0.9459454469859323,-0.324325779620715,0.0046787309123996305),81.33994559346687))
+App.ActiveDocument.O229.Label='O229'
+
+App.ActiveDocument.addObject("Part::Cylinder","O230")
+App.ActiveDocument.O230.Radius='3.0041531202968486 mm'
+App.ActiveDocument.O230.Height='29.122197867909303 mm'
+App.ActiveDocument.O230.Angle='360.00 deg'
+App.ActiveDocument.O230.FirstAngle='0.00 deg'
+App.ActiveDocument.O230.SecondAngle='0.00 deg'
+App.ActiveDocument.O230.Placement=App.Placement(App.Vector(159.27021467411268,289.52964949902014,-12.400563366365226),App.Rotation(App.Vector(0.9991412352101042,-0.041434190022579725,0.003876337020314936),96.89309153330498))
+App.ActiveDocument.O230.Label='O230'
+
+App.ActiveDocument.addObject("Part::Sphere","O231")
+App.ActiveDocument.O231.Radius='3 mm'
+App.ActiveDocument.O231.Angle1='-90.00 deg'
+App.ActiveDocument.O231.Angle2='90.00 deg'
+App.ActiveDocument.O231.Angle3='360.00 deg'
+App.ActiveDocument.O231.Placement=App.Placement(App.Vector(167.39455726997272,272.0804530758434,-15.20798883420653),App.Rotation(App.Vector(0.00,0.00,1.00),0.003896467794707257))
+App.ActiveDocument.O231.Label='O231'
+
+App.ActiveDocument.addObject("Part::Cylinder","O232")
+App.ActiveDocument.O232.Radius='3.00495768425674 mm'
+App.ActiveDocument.O232.Height='19.387082557364206 mm'
+App.ActiveDocument.O232.Angle='360.00 deg'
+App.ActiveDocument.O232.FirstAngle='0.00 deg'
+App.ActiveDocument.O232.SecondAngle='0.00 deg'
+App.ActiveDocument.O232.Placement=App.Placement(App.Vector(167.35384272117463,272.1662978967712,-15.192929603489139),App.Rotation(App.Vector(-0.90799622276494,-0.41897835199995903,0.0031981561737688025),81.70331285281678))
+App.ActiveDocument.O232.Label='O232'
+
+App.ActiveDocument.addObject("Part::Cylinder","O233")
+App.ActiveDocument.O233.Radius='3.000918622579651 mm'
+App.ActiveDocument.O233.Height='25.91768377370072 mm'
+App.ActiveDocument.O233.Angle='360.00 deg'
+App.ActiveDocument.O233.FirstAngle='0.00 deg'
+App.ActiveDocument.O233.SecondAngle='0.00 deg'
+App.ActiveDocument.O233.Placement=App.Placement(App.Vector(167.39749007806194,271.9489173401825,-15.223935904146431),App.Rotation(App.Vector(0.9999236831384343,-0.012354266423713324,0.004398548688084504),97.95999429699268))
+App.ActiveDocument.O233.Label='O233'
+
+App.ActiveDocument.addObject("Part::Sphere","O234")
+App.ActiveDocument.O234.Radius='3 mm'
+App.ActiveDocument.O234.Angle1='-90.00 deg'
+App.ActiveDocument.O234.Angle2='90.00 deg'
+App.ActiveDocument.O234.Angle3='360.00 deg'
+App.ActiveDocument.O234.Placement=App.Placement(App.Vector(178.11475115622247,256.90498363675346,-17.546976330773802),App.Rotation(App.Vector(0.00,0.00,1.00),0.00431809215733588))
+App.ActiveDocument.O234.Label='O234'
+
+App.ActiveDocument.addObject("Part::Cylinder","O235")
+App.ActiveDocument.O235.Radius='3.0041213409823913 mm'
+App.ActiveDocument.O235.Height='18.53816044441611 mm'
+App.ActiveDocument.O235.Angle='360.00 deg'
+App.ActiveDocument.O235.FirstAngle='0.00 deg'
+App.ActiveDocument.O235.SecondAngle='0.00 deg'
+App.ActiveDocument.O235.Placement=App.Placement(App.Vector(178.06389318140893,256.9822200701728,-17.53828995304458),App.Rotation(App.Vector(-0.8167441298223641,-0.5770000228775638,0.004798841005699221),82.82533728591528))
+App.ActiveDocument.O235.Label='O235'
+
+App.ActiveDocument.addObject("Part::Cylinder","O236")
+App.ActiveDocument.O236.Radius='3.0001544819567685 mm'
+App.ActiveDocument.O236.Height='23.44992050012703 mm'
+App.ActiveDocument.O236.Angle='360.00 deg'
+App.ActiveDocument.O236.FirstAngle='0.00 deg'
+App.ActiveDocument.O236.SecondAngle='0.00 deg'
+App.ActiveDocument.O236.Placement=App.Placement(App.Vector(178.11766535366846,256.7876264699595,-17.564413972185108),App.Rotation(App.Vector(0.9999515798559192,0.009840627198056317,0.00030310050924378554),98.89098133235953))
+App.ActiveDocument.O236.Label='O236'
+
+App.ActiveDocument.addObject("Part::Sphere","O237")
+App.ActiveDocument.O237.Radius='3 mm'
+App.ActiveDocument.O237.Angle1='-90.00 deg'
+App.ActiveDocument.O237.Angle2='90.00 deg'
+App.ActiveDocument.O237.Angle3='360.00 deg'
+App.ActiveDocument.O237.Placement=App.Placement(App.Vector(192.419171323557,246.6843806984301,-18.80124441568114),App.Rotation(App.Vector(0.00,0.00,1.00),0.00378263675326321))
+App.ActiveDocument.O237.Label='O237'
+
+App.ActiveDocument.addObject("Part::Cylinder","O238")
+App.ActiveDocument.O238.Radius='3.004885561315783 mm'
+App.ActiveDocument.O238.Height='17.448732152310445 mm'
+App.ActiveDocument.O238.Angle='360.00 deg'
+App.ActiveDocument.O238.FirstAngle='0.00 deg'
+App.ActiveDocument.O238.SecondAngle='0.00 deg'
+App.ActiveDocument.O238.Placement=App.Placement(App.Vector(192.35022409089686,246.73377572100486,-18.791119916539593),App.Rotation(App.Vector(-0.5814314269374353,-0.8135954128247638,0.0015470240188086648),85.93092390257654))
+App.ActiveDocument.O238.Label='O238'
+
+App.ActiveDocument.addObject("Part::Cylinder","O239")
+App.ActiveDocument.O239.Radius='3.00160014435832 mm'
+App.ActiveDocument.O239.Height='21.8297013614266 mm'
+App.ActiveDocument.O239.Angle='360.00 deg'
+App.ActiveDocument.O239.FirstAngle='0.00 deg'
+App.ActiveDocument.O239.SecondAngle='0.00 deg'
+App.ActiveDocument.O239.Placement=App.Placement(App.Vector(192.4225412611404,246.57393041067112,-18.815939874245384),App.Rotation(App.Vector(0.9999579487900492,0.009170640740834061,0.004413142403976017),99.47998230639615))
+App.ActiveDocument.O239.Label='O239'
+
+App.ActiveDocument.addObject("Part::Sphere","O240")
+App.ActiveDocument.O240.Radius='3 mm'
+App.ActiveDocument.O240.Angle1='-90.00 deg'
+App.ActiveDocument.O240.Angle2='90.00 deg'
+App.ActiveDocument.O240.Angle3='360.00 deg'
+App.ActiveDocument.O240.Placement=App.Placement(App.Vector(209.41579319858798,245.7139563470322,-18.13190502922745),App.Rotation(App.Vector(0.00,0.00,1.00),0.0037434947243753128))
+App.ActiveDocument.O240.Label='O240'
+
+App.ActiveDocument.addObject("Part::Cylinder","O241")
+App.ActiveDocument.O241.Radius='3.002504763653811 mm'
+App.ActiveDocument.O241.Height='16.866699241267465 mm'
+App.ActiveDocument.O241.Angle='360.00 deg'
+App.ActiveDocument.O241.FirstAngle='0.00 deg'
+App.ActiveDocument.O241.SecondAngle='0.00 deg'
+App.ActiveDocument.O241.Placement=App.Placement(App.Vector(209.33247361687214,245.71730959029964,-18.134992185231003),App.Rotation(App.Vector(-0.05691713959981702,-0.9983789056364197,0.003883686459705419),92.25137303226244))
+App.ActiveDocument.O241.Label='O241'
+
+App.ActiveDocument.addObject("Part::Cylinder","O242")
+App.ActiveDocument.O242.Radius='3.0006450727080165 mm'
+App.ActiveDocument.O242.Height='21.731476831559323 mm'
+App.ActiveDocument.O242.Angle='360.00 deg'
+App.ActiveDocument.O242.FirstAngle='0.00 deg'
+App.ActiveDocument.O242.SecondAngle='0.00 deg'
+App.ActiveDocument.O242.Placement=App.Placement(App.Vector(209.411924726529,245.60782424254919,-18.14730868962764),App.Rotation(App.Vector(0.9997812229407758,-0.02091665018704034,0.004117317761879886),99.499266110509))
+App.ActiveDocument.O242.Label='O242'
+
+App.ActiveDocument.addObject("Part::Sphere","O243")
+App.ActiveDocument.O243.Radius='3 mm'
+App.ActiveDocument.O243.Angle1='-90.00 deg'
+App.ActiveDocument.O243.Angle2='90.00 deg'
+App.ActiveDocument.O243.Angle3='360.00 deg'
+App.ActiveDocument.O243.Placement=App.Placement(App.Vector(224.3125422107486,254.07133701944554,-15.805867035687864),App.Rotation(App.Vector(0.00,0.00,1.00),0.004955689543611612))
+App.ActiveDocument.O243.Label='O243'
+
+App.ActiveDocument.addObject("Part::Cylinder","O244")
+App.ActiveDocument.O244.Radius='3.0011857340191095 mm'
+App.ActiveDocument.O244.Height='17.064636944196206 mm'
+App.ActiveDocument.O244.Angle='360.00 deg'
+App.ActiveDocument.O244.FirstAngle='0.00 deg'
+App.ActiveDocument.O244.SecondAngle='0.00 deg'
+App.ActiveDocument.O244.Placement=App.Placement(App.Vector(224.23740087453317,254.02718948911698,-15.8158138721597),App.Rotation(App.Vector(0.489212448795061,-0.8721646518541896,0.003867915319650782),97.75390264694319))
+App.ActiveDocument.O244.Label='O244'
+
+App.ActiveDocument.addObject("Part::Cylinder","O245")
+App.ActiveDocument.O245.Radius='3.0028769172519785 mm'
+App.ActiveDocument.O245.Height='23.416119263816626 mm'
+App.ActiveDocument.O245.Angle='360.00 deg'
+App.ActiveDocument.O245.FirstAngle='0.00 deg'
+App.ActiveDocument.O245.SecondAngle='0.00 deg'
+App.ActiveDocument.O245.Placement=App.Placement(App.Vector(224.30762070665696,253.9538116431156,-15.82211678566942),App.Rotation(App.Vector(0.9996945851153427,-0.024713083398529134,0.0025358196747370253),98.96318865607373))
+App.ActiveDocument.O245.Label='O245'
+
+App.ActiveDocument.addObject("Part::Sphere","O246")
+App.ActiveDocument.O246.Radius='3 mm'
+App.ActiveDocument.O246.Angle1='-90.00 deg'
+App.ActiveDocument.O246.Angle2='90.00 deg'
+App.ActiveDocument.O246.Angle3='360.00 deg'
+App.ActiveDocument.O246.Placement=App.Placement(App.Vector(235.68782427855663,267.2340270369403,-12.80310418766169),App.Rotation(App.Vector(0.00,0.00,1.00),0.0002203035968137157))
+App.ActiveDocument.O246.Label='O246'
+
+App.ActiveDocument.addObject("Part::Cylinder","O247")
+App.ActiveDocument.O247.Radius='3.003468627663601 mm'
+App.ActiveDocument.O247.Height='17.478991581002855 mm'
+App.ActiveDocument.O247.Angle='360.00 deg'
+App.ActiveDocument.O247.FirstAngle='0.00 deg'
+App.ActiveDocument.O247.SecondAngle='0.00 deg'
+App.ActiveDocument.O247.Placement=App.Placement(App.Vector(235.63275089297926,267.1687789625571,-12.819652159606589),App.Rotation(App.Vector(0.75664792225559,-0.6538225460675846,0.0005710822748509447),99.79140826295388))
+App.ActiveDocument.O247.Label='O247'
+
+App.ActiveDocument.addObject("Part::Cylinder","O248")
+App.ActiveDocument.O248.Radius='3.004950765910971 mm'
+App.ActiveDocument.O248.Height='26.051293572250678 mm'
+App.ActiveDocument.O248.Angle='360.00 deg'
+App.ActiveDocument.O248.FirstAngle='0.00 deg'
+App.ActiveDocument.O248.SecondAngle='0.00 deg'
+App.ActiveDocument.O248.Placement=App.Placement(App.Vector(235.68670596045803,267.10268303095444,-12.82332053497766),App.Rotation(App.Vector(0.9999853437081441,0.005414089850113361,0.00004008602466886946),98.14126376930257))
+App.ActiveDocument.O248.Label='O248'
+
+App.ActiveDocument.addObject("Part::Sphere","O249")
+App.ActiveDocument.O249.Radius='3 mm'
+App.ActiveDocument.O249.Angle1='-90.00 deg'
+App.ActiveDocument.O249.Angle2='90.00 deg'
+App.ActiveDocument.O249.Angle3='360.00 deg'
+App.ActiveDocument.O249.Placement=App.Placement(App.Vector(244.22377845817428,281.9625790095586,-9.717455740792538),App.Rotation(App.Vector(0.00,0.00,1.00),0.0005564717749296189))
+App.ActiveDocument.O249.Label='O249'
+
+App.ActiveDocument.addObject("Part::Cylinder","O250")
+App.ActiveDocument.O250.Radius='3.0014776325365924 mm'
+App.ActiveDocument.O250.Height='17.1263968976285 mm'
+App.ActiveDocument.O250.Angle='360.00 deg'
+App.ActiveDocument.O250.FirstAngle='0.00 deg'
+App.ActiveDocument.O250.SecondAngle='0.00 deg'
+App.ActiveDocument.O250.Placement=App.Placement(App.Vector(244.17976296306483,281.88595153765147,-9.729048391041156),App.Rotation(App.Vector(0.8651970521743032,-0.5014320102555242,0.0009856048727005118),100.28406226881378))
+App.ActiveDocument.O250.Label='O250'
+
+App.ActiveDocument.addObject("Part::Cylinder","O251")
+App.ActiveDocument.O251.Radius='3.00042314721389 mm'
+App.ActiveDocument.O251.Height='28.907881159300345 mm'
+App.ActiveDocument.O251.Angle='360.00 deg'
+App.ActiveDocument.O251.FirstAngle='0.00 deg'
+App.ActiveDocument.O251.SecondAngle='0.00 deg'
+App.ActiveDocument.O251.Placement=App.Placement(App.Vector(244.22966942725247,281.81530298677785,-9.732703199145027),App.Rotation(App.Vector(0.998558945494578,0.053665933074497615,0.0025401923203121866),97.16935232220493))
+App.ActiveDocument.O251.Label='O251'
+
+App.ActiveDocument.addObject("Part::Sphere","O252")
+App.ActiveDocument.O252.Radius='3 mm'
+App.ActiveDocument.O252.Angle1='-90.00 deg'
+App.ActiveDocument.O252.Angle2='90.00 deg'
+App.ActiveDocument.O252.Angle3='360.00 deg'
+App.ActiveDocument.O252.Placement=App.Placement(App.Vector(153.36606682650222,343.68721608970606,-5.49071664076464),App.Rotation(App.Vector(0.00,0.00,1.00),0.0031255482304043303))
+App.ActiveDocument.O252.Label='O252'
+
+App.ActiveDocument.addObject("Part::Cylinder","O253")
+App.ActiveDocument.O253.Radius='3.004219819290657 mm'
+App.ActiveDocument.O253.Height='36.17951768812466 mm'
+App.ActiveDocument.O253.Angle='360.00 deg'
+App.ActiveDocument.O253.FirstAngle='0.00 deg'
+App.ActiveDocument.O253.SecondAngle='0.00 deg'
+App.ActiveDocument.O253.Placement=App.Placement(App.Vector(153.36590574341895,343.50591660152537,-5.512278759943576),App.Rotation(App.Vector(0.9999909265317446,-0.0042599124618823946,0.0010155493720955034),96.35008285784804))
+App.ActiveDocument.O253.Label='O253'
+
+App.ActiveDocument.addObject("Part::Sphere","O254")
+App.ActiveDocument.O254.Radius='3 mm'
+App.ActiveDocument.O254.Angle1='-90.00 deg'
+App.ActiveDocument.O254.Angle2='90.00 deg'
+App.ActiveDocument.O254.Angle3='360.00 deg'
+App.ActiveDocument.O254.Placement=App.Placement(App.Vector(159.16128027384693,319.3141870515213,-8.766337609273277),App.Rotation(App.Vector(0.00,0.00,1.00),0.004175321534756238))
+App.ActiveDocument.O254.Label='O254'
+
+App.ActiveDocument.addObject("Part::Cylinder","O255")
+App.ActiveDocument.O255.Radius='3.000356852983928 mm'
+App.ActiveDocument.O255.Height='25.012214377083133 mm'
+App.ActiveDocument.O255.Angle='360.00 deg'
+App.ActiveDocument.O255.FirstAngle='0.00 deg'
+App.ActiveDocument.O255.SecondAngle='0.00 deg'
+App.ActiveDocument.O255.Placement=App.Placement(App.Vector(159.1297409976314,319.43461001938726,-8.747567447207707),App.Rotation(App.Vector(-0.9728921664746749,-0.23125923205834084,0.00003837506311749284),82.55697110480038))
+App.ActiveDocument.O255.Label='O255'
+
+App.ActiveDocument.addObject("Part::Cylinder","O256")
+App.ActiveDocument.O256.Radius='3.000651428973615 mm'
+App.ActiveDocument.O256.Height='29.55977822460628 mm'
+App.ActiveDocument.O256.Angle='360.00 deg'
+App.ActiveDocument.O256.FirstAngle='0.00 deg'
+App.ActiveDocument.O256.SecondAngle='0.00 deg'
+App.ActiveDocument.O256.Placement=App.Placement(App.Vector(159.16277967873907,319.16600663256753,-8.78230471578192),App.Rotation(App.Vector(0.9999921851441547,0.00395343529335204,0.001169393566924175),96.9596551031724))
+App.ActiveDocument.O256.Label='O256'
+
+App.ActiveDocument.addObject("Part::Sphere","O257")
+App.ActiveDocument.O257.Radius='3 mm'
+App.ActiveDocument.O257.Angle1='-90.00 deg'
+App.ActiveDocument.O257.Angle2='90.00 deg'
+App.ActiveDocument.O257.Angle3='360.00 deg'
+App.ActiveDocument.O257.Placement=App.Placement(App.Vector(167.10798874769708,296.90088359450255,-11.84559967555783),App.Rotation(App.Vector(0.00,0.00,1.00),0.0017856558857317851))
+App.ActiveDocument.O257.Label='O257'
+
+App.ActiveDocument.addObject("Part::Cylinder","O258")
+App.ActiveDocument.O258.Radius='3.0047600863953243 mm'
+App.ActiveDocument.O258.Height='23.73745007978741 mm'
+App.ActiveDocument.O258.Angle='360.00 deg'
+App.ActiveDocument.O258.FirstAngle='0.00 deg'
+App.ActiveDocument.O258.SecondAngle='0.00 deg'
+App.ActiveDocument.O258.Placement=App.Placement(App.Vector(167.06676662011472,297.0142065928662,-11.829796468536507),App.Rotation(App.Vector(-0.9424976748796591,-0.33421270599191244,0.003012669335229734),82.62302523340246))
+App.ActiveDocument.O258.Label='O258'
+
+App.ActiveDocument.addObject("Part::Cylinder","O259")
+App.ActiveDocument.O259.Radius='3.002667614946109 mm'
+App.ActiveDocument.O259.Height='24.800016063534976 mm'
+App.ActiveDocument.O259.Angle='360.00 deg'
+App.ActiveDocument.O259.FirstAngle='0.00 deg'
+App.ActiveDocument.O259.SecondAngle='0.00 deg'
+App.ActiveDocument.O259.Placement=App.Placement(App.Vector(167.11039491370263,296.77575813603653,-11.862386281896915),App.Rotation(App.Vector(0.9999322526569729,0.011640021320928316,0.0009148287604018401),97.71973714839628))
+App.ActiveDocument.O259.Label='O259'
+
+App.ActiveDocument.addObject("Part::Sphere","O260")
+App.ActiveDocument.O260.Radius='3 mm'
+App.ActiveDocument.O260.Angle1='-90.00 deg'
+App.ActiveDocument.O260.Angle2='90.00 deg'
+App.ActiveDocument.O260.Angle3='360.00 deg'
+App.ActiveDocument.O260.Placement=App.Placement(App.Vector(177.75461314116018,278.78853796607325,-14.271430452466648),App.Rotation(App.Vector(0.00,0.00,1.00),0.003641746291353012))
+App.ActiveDocument.O260.Label='O260'
+
+App.ActiveDocument.addObject("Part::Cylinder","O261")
+App.ActiveDocument.O261.Radius='3.0003509670187465 mm'
+App.ActiveDocument.O261.Height='20.93782645479239 mm'
+App.ActiveDocument.O261.Angle='360.00 deg'
+App.ActiveDocument.O261.FirstAngle='0.00 deg'
+App.ActiveDocument.O261.SecondAngle='0.00 deg'
+App.ActiveDocument.O261.Placement=App.Placement(App.Vector(177.70344892748886,278.8783368804364,-14.25881759082314),App.Rotation(App.Vector(-0.862100143336527,-0.506737942983491,0.003400078533441514),83.40901804978576))
+App.ActiveDocument.O261.Label='O261'
+
+App.ActiveDocument.addObject("Part::Cylinder","O262")
+App.ActiveDocument.O262.Radius='3.0032606832488624 mm'
+App.ActiveDocument.O262.Height='21.90916294743129 mm'
+App.ActiveDocument.O262.Angle='360.00 deg'
+App.ActiveDocument.O262.FirstAngle='0.00 deg'
+App.ActiveDocument.O262.SecondAngle='0.00 deg'
+App.ActiveDocument.O262.Placement=App.Placement(App.Vector(177.75711220823095,278.6795057201181,-14.290828252061749),App.Rotation(App.Vector(0.9998628277185965,0.016562781969589664,0.004562057292010518),98.51737055469525))
+App.ActiveDocument.O262.Label='O262'
+
+App.ActiveDocument.addObject("Part::Sphere","O263")
+App.ActiveDocument.O263.Radius='3 mm'
+App.ActiveDocument.O263.Angle1='-90.00 deg'
+App.ActiveDocument.O263.Angle2='90.00 deg'
+App.ActiveDocument.O263.Angle3='360.00 deg'
+App.ActiveDocument.O263.Placement=App.Placement(App.Vector(192.43867479035782,266.96408621079104,-15.53914531670147),App.Rotation(App.Vector(0.00,0.00,1.00),0.00023627064750206817))
+App.ActiveDocument.O263.Label='O263'
+
+App.ActiveDocument.addObject("Part::Cylinder","O264")
+App.ActiveDocument.O264.Radius='3.004080172906525 mm'
+App.ActiveDocument.O264.Height='18.708706337968323 mm'
+App.ActiveDocument.O264.Angle='360.00 deg'
+App.ActiveDocument.O264.FirstAngle='0.00 deg'
+App.ActiveDocument.O264.SecondAngle='0.00 deg'
+App.ActiveDocument.O264.Placement=App.Placement(App.Vector(192.36405858321433,267.02167780423287,-15.531797437101785),App.Rotation(App.Vector(-0.6272614445970504,-0.7788087570912525,0.0017607886723910737),86.15851713783555))
+App.ActiveDocument.O264.Label='O264'
+
+App.ActiveDocument.addObject("Part::Cylinder","O265")
+App.ActiveDocument.O265.Radius='3.003026095196312 mm'
+App.ActiveDocument.O265.Height='20.333325706545377 mm'
+App.ActiveDocument.O265.Angle='360.00 deg'
+App.ActiveDocument.O265.FirstAngle='0.00 deg'
+App.ActiveDocument.O265.SecondAngle='0.00 deg'
+App.ActiveDocument.O265.Placement=App.Placement(App.Vector(192.4374393160322,266.86075269143873,-15.5573124473589),App.Rotation(App.Vector(0.9999995797040722,-0.0009168378695975028,0.0012817618978393974),99.13395199938432))
+App.ActiveDocument.O265.Label='O265'
+
+App.ActiveDocument.addObject("Part::Sphere","O266")
+App.ActiveDocument.O266.Radius='3 mm'
+App.ActiveDocument.O266.Angle1='-90.00 deg'
+App.ActiveDocument.O266.Angle2='90.00 deg'
+App.ActiveDocument.O266.Angle3='360.00 deg'
+App.ActiveDocument.O266.Placement=App.Placement(App.Vector(210.3629690271972,266.0740456247746,-14.803341598900843),App.Rotation(App.Vector(0.00,0.00,1.00),0.0006719300080086543))
+App.ActiveDocument.O266.Label='O266'
+
+App.ActiveDocument.addObject("Part::Cylinder","O267")
+App.ActiveDocument.O267.Radius='3.0036945796861376 mm'
+App.ActiveDocument.O267.Height='17.780544048418285 mm'
+App.ActiveDocument.O267.Angle='360.00 deg'
+App.ActiveDocument.O267.FirstAngle='0.00 deg'
+App.ActiveDocument.O267.SecondAngle='0.00 deg'
+App.ActiveDocument.O267.Placement=App.Placement(App.Vector(210.2730234574885,266.0802066174837,-14.807175888780161),App.Rotation(App.Vector(-0.04941031814074054,-0.9987785642780039,0.00454843312468358),92.36135706356364))
+App.ActiveDocument.O267.Label='O267'
+
+App.ActiveDocument.addObject("Part::Cylinder","O268")
+App.ActiveDocument.O268.Radius='3.000791484744234 mm'
+App.ActiveDocument.O268.Height='20.446198910860186 mm'
+App.ActiveDocument.O268.Angle='360.00 deg'
+App.ActiveDocument.O268.FirstAngle='0.00 deg'
+App.ActiveDocument.O268.SecondAngle='0.00 deg'
+App.ActiveDocument.O268.Placement=App.Placement(App.Vector(210.35647986303218,265.9744585741737,-14.818304772786412),App.Rotation(App.Vector(0.9989240008879111,-0.04637715439835431,0.002597711880886967),99.27899068787387))
+App.ActiveDocument.O268.Label='O268'
+
+App.ActiveDocument.addObject("Part::Sphere","O269")
+App.ActiveDocument.O269.Radius='3 mm'
+App.ActiveDocument.O269.Angle1='-90.00 deg'
+App.ActiveDocument.O269.Angle2='90.00 deg'
+App.ActiveDocument.O269.Angle3='360.00 deg'
+App.ActiveDocument.O269.Placement=App.Placement(App.Vector(225.66887885672688,276.47276745766857,-12.29135194046363),App.Rotation(App.Vector(0.00,0.00,1.00),0.000707471557188164))
+App.ActiveDocument.O269.Label='O269'
+
+App.ActiveDocument.addObject("Part::Cylinder","O270")
+App.ActiveDocument.O270.Radius='3.0048620104484027 mm'
+App.ActiveDocument.O270.Height='18.487933115777498 mm'
+App.ActiveDocument.O270.Angle='360.00 deg'
+App.ActiveDocument.O270.FirstAngle='0.00 deg'
+App.ActiveDocument.O270.SecondAngle='0.00 deg'
+App.ActiveDocument.O270.Placement=App.Placement(App.Vector(225.59387615041553,276.4225564255687,-12.305234739082568),App.Rotation(App.Vector(0.5618363222925816,-0.8272484191297957,0.0012946239908142266),97.71917372993936))
+App.ActiveDocument.O270.Label='O270'
+
+App.ActiveDocument.addObject("Part::Cylinder","O271")
+App.ActiveDocument.O271.Radius='3.0041805544820197 mm'
+App.ActiveDocument.O271.Height='22.48935717695676 mm'
+App.ActiveDocument.O271.Angle='360.00 deg'
+App.ActiveDocument.O271.FirstAngle='0.00 deg'
+App.ActiveDocument.O271.SecondAngle='0.00 deg'
+App.ActiveDocument.O271.Placement=App.Placement(App.Vector(225.66561553446917,276.3598635029025,-12.310528000684782),App.Rotation(App.Vector(0.9981682034947085,-0.06049989695979779,0.0014665745241336126),98.89369025964635))
+App.ActiveDocument.O271.Label='O271'
+
+App.ActiveDocument.addObject("Part::Sphere","O272")
+App.ActiveDocument.O272.Radius='3 mm'
+App.ActiveDocument.O272.Angle1='-90.00 deg'
+App.ActiveDocument.O272.Angle2='90.00 deg'
+App.ActiveDocument.O272.Angle3='360.00 deg'
+App.ActiveDocument.O272.Placement=App.Placement(App.Vector(236.92299902729832,293.26650123553736,-8.992447024179206),App.Rotation(App.Vector(0.00,0.00,1.00),0.0035155074819229817))
+App.ActiveDocument.O272.Label='O272'
+
+App.ActiveDocument.addObject("Part::Cylinder","O273")
+App.ActiveDocument.O273.Radius='3.001865593884532 mm'
+App.ActiveDocument.O273.Height='20.278092099181638 mm'
+App.ActiveDocument.O273.Angle='360.00 deg'
+App.ActiveDocument.O273.FirstAngle='0.00 deg'
+App.ActiveDocument.O273.SecondAngle='0.00 deg'
+App.ActiveDocument.O273.Placement=App.Placement(App.Vector(236.8670912095803,293.18297511078947,-9.006456157529259),App.Rotation(App.Vector(0.83081566432751,-0.5565476905962673,0.004639925935121045),99.28431042543207))
+App.ActiveDocument.O273.Label='O273'
+
+App.ActiveDocument.addObject("Part::Cylinder","O274")
+App.ActiveDocument.O274.Radius='3.001714553233513 mm'
+App.ActiveDocument.O274.Height='26.075838965816594 mm'
+App.ActiveDocument.O274.Angle='360.00 deg'
+App.ActiveDocument.O274.FirstAngle='0.00 deg'
+App.ActiveDocument.O274.SecondAngle='0.00 deg'
+App.ActiveDocument.O274.Placement=App.Placement(App.Vector(236.91541803786097,293.138466505661,-9.011022130183989),App.Rotation(App.Vector(0.9988805122767527,-0.04730456842348472,0.0030874643860172115),98.32489647888995))
+App.ActiveDocument.O274.Label='O274'
+
+App.ActiveDocument.addObject("Part::Sphere","O275")
+App.ActiveDocument.O275.Radius='3 mm'
+App.ActiveDocument.O275.Angle1='-90.00 deg'
+App.ActiveDocument.O275.Angle2='90.00 deg'
+App.ActiveDocument.O275.Angle3='360.00 deg'
+App.ActiveDocument.O275.Placement=App.Placement(App.Vector(245.06931920450327,312.97428887852976,-5.478178357247874),App.Rotation(App.Vector(0.00,0.00,1.00),0.0004902139283309115))
+App.ActiveDocument.O275.Label='O275'
+
+App.ActiveDocument.addObject("Part::Cylinder","O276")
+App.ActiveDocument.O276.Radius='3.0032247020559177 mm'
+App.ActiveDocument.O276.Height='21.39401529260137 mm'
+App.ActiveDocument.O276.Angle='360.00 deg'
+App.ActiveDocument.O276.FirstAngle='0.00 deg'
+App.ActiveDocument.O276.SecondAngle='0.00 deg'
+App.ActiveDocument.O276.Placement=App.Placement(App.Vector(245.02709769794066,312.8724083324902,-5.4945643426533355),App.Rotation(App.Vector(0.9241155612861034,-0.3821131107262224,0.003968091729227407),99.35145808658055))
+App.ActiveDocument.O276.Label='O276'
+
+App.ActiveDocument.addObject("Part::Cylinder","O277")
+App.ActiveDocument.O277.Radius='3.001405743938337 mm'
+App.ActiveDocument.O277.Height='30.996801119419676 mm'
+App.ActiveDocument.O277.Angle='360.00 deg'
+App.ActiveDocument.O277.FirstAngle='0.00 deg'
+App.ActiveDocument.O277.SecondAngle='0.00 deg'
+App.ActiveDocument.O277.Placement=App.Placement(App.Vector(245.06543621154017,312.8162346347147,-5.500640538182888),App.Rotation(App.Vector(0.9996285627920879,-0.02725319156034228,0.0013901775374669323),97.78139256213156))
+App.ActiveDocument.O277.Label='O277'
+
+App.ActiveDocument.addObject("Part::Sphere","O278")
+App.ActiveDocument.O278.Radius='3 mm'
+App.ActiveDocument.O278.Angle1='-90.00 deg'
+App.ActiveDocument.O278.Angle2='90.00 deg'
+App.ActiveDocument.O278.Angle3='360.00 deg'
+App.ActiveDocument.O278.Placement=App.Placement(App.Vector(150.00475378152842,390.0041208049058,0.0014544245133542332),App.Rotation(App.Vector(0.00,0.00,1.00),0.0000816211771487274))
+App.ActiveDocument.O278.Label='O278'
+
+App.ActiveDocument.addObject("Part::Cylinder","O279")
+App.ActiveDocument.O279.Radius='3.000018026899913 mm'
+App.ActiveDocument.O279.Height='46.29542686914582 mm'
+App.ActiveDocument.O279.Angle='360.00 deg'
+App.ActiveDocument.O279.FirstAngle='0.00 deg'
+App.ActiveDocument.O279.SecondAngle='0.00 deg'
+App.ActiveDocument.O279.Placement=App.Placement(App.Vector(150.01930116082474,389.77094295116467,-0.02598534664244658),App.Rotation(App.Vector(0.9973714734449062,0.07245787713103759,0.0014944605658924026),96.75065852794964))
+App.ActiveDocument.O279.Label='O279'
+
+App.ActiveDocument.addObject("Part::Sphere","O280")
+App.ActiveDocument.O280.Radius='3 mm'
+App.ActiveDocument.O280.Angle1='-90.00 deg'
+App.ActiveDocument.O280.Angle2='90.00 deg'
+App.ActiveDocument.O280.Angle3='360.00 deg'
+App.ActiveDocument.O280.Placement=App.Placement(App.Vector(157.7012368030371,347.4151940172733,-5.3171055603375725),App.Rotation(App.Vector(0.00,0.00,1.00),0.001868407216611583))
+App.ActiveDocument.O280.Label='O280'
+
+App.ActiveDocument.addObject("Part::Cylinder","O281")
+App.ActiveDocument.O281.Radius='3.001202710357665 mm'
+App.ActiveDocument.O281.Height='43.1680903668405 mm'
+App.ActiveDocument.O281.Angle='360.00 deg'
+App.ActiveDocument.O281.FirstAngle='0.00 deg'
+App.ActiveDocument.O281.SecondAngle='0.00 deg'
+App.ActiveDocument.O281.Placement=App.Placement(App.Vector(157.66148519417882,347.6283756970235,-5.293187197090564),App.Rotation(App.Vector(-0.9840567810697156,-0.17785458001049628,0.004159301727939304),82.99464051432105))
+App.ActiveDocument.O281.Label='O281'
+
+App.ActiveDocument.addObject("Part::Cylinder","O282")
+App.ActiveDocument.O282.Radius='3.001860910419427 mm'
+App.ActiveDocument.O282.Height='28.066402157842898 mm'
+App.ActiveDocument.O282.Angle='360.00 deg'
+App.ActiveDocument.O282.FirstAngle='0.00 deg'
+App.ActiveDocument.O282.SecondAngle='0.00 deg'
+App.ActiveDocument.O282.Placement=App.Placement(App.Vector(157.70713254765687,347.27133978904953,-5.334426371040588),App.Rotation(App.Vector(0.99865102209335,0.051924330249964304,0.0019365817363179905),96.98476689474637))
+App.ActiveDocument.O282.Label='O282'
+
+App.ActiveDocument.addObject("Part::Sphere","O283")
+App.ActiveDocument.O283.Radius='3 mm'
+App.ActiveDocument.O283.Angle1='-90.00 deg'
+App.ActiveDocument.O283.Angle2='90.00 deg'
+App.ActiveDocument.O283.Angle3='360.00 deg'
+App.ActiveDocument.O283.Placement=App.Placement(App.Vector(166.28936390445796,318.584853544269,-8.9811051504688),App.Rotation(App.Vector(0.00,0.00,1.00),0.0034099141718189397))
+App.ActiveDocument.O283.Label='O283'
+
+App.ActiveDocument.addObject("Part::Cylinder","O284")
+App.ActiveDocument.O284.Radius='3.000365922135818 mm'
+App.ActiveDocument.O284.Height='30.00134246029023 mm'
+App.ActiveDocument.O284.Angle='360.00 deg'
+App.ActiveDocument.O284.FirstAngle='0.00 deg'
+App.ActiveDocument.O284.SecondAngle='0.00 deg'
+App.ActiveDocument.O284.Placement=App.Placement(App.Vector(166.24713973419077,318.72919561047473,-8.962936993690926),App.Rotation(App.Vector(-0.9583745165390883,-0.2855140732931895,0.00283191143309794),83.06233805790723))
+App.ActiveDocument.O284.Label='O284'
+
+App.ActiveDocument.addObject("Part::Cylinder","O285")
+App.ActiveDocument.O285.Radius='3.002694139874032 mm'
+App.ActiveDocument.O285.Height='21.667648709933523 mm'
+App.ActiveDocument.O285.Angle='360.00 deg'
+App.ActiveDocument.O285.FirstAngle='0.00 deg'
+App.ActiveDocument.O285.SecondAngle='0.00 deg'
+App.ActiveDocument.O285.Placement=App.Placement(App.Vector(166.2920576028343,318.4733493140064,-8.993687884506452),App.Rotation(App.Vector(0.9992868090962245,0.03776073577522083,0.0012217490755055949),97.51673364399718))
+App.ActiveDocument.O285.Label='O285'
+
+App.ActiveDocument.addObject("Part::Sphere","O286")
+App.ActiveDocument.O286.Radius='3 mm'
+App.ActiveDocument.O286.Angle1='-90.00 deg'
+App.ActiveDocument.O286.Angle2='90.00 deg'
+App.ActiveDocument.O286.Angle3='360.00 deg'
+App.ActiveDocument.O286.Placement=App.Placement(App.Vector(177.34340603630463,297.8212379710684,-11.526907596512485),App.Rotation(App.Vector(0.00,0.00,1.00),0.004623023799220829))
+App.ActiveDocument.O286.Label='O286'
+
+App.ActiveDocument.addObject("Part::Cylinder","O287")
+App.ActiveDocument.O287.Radius='3.0002941929308773 mm'
+App.ActiveDocument.O287.Height='23.42363004197169 mm'
+App.ActiveDocument.O287.Angle='360.00 deg'
+App.ActiveDocument.O287.FirstAngle='0.00 deg'
+App.ActiveDocument.O287.SecondAngle='0.00 deg'
+App.ActiveDocument.O287.Placement=App.Placement(App.Vector(177.2873502109555,297.9257438133309,-11.516168507919495),App.Rotation(App.Vector(-0.8826696949184527,-0.4699938400368302,0.0005098484862416775),83.82873638386282))
+App.ActiveDocument.O287.Label='O287'
+
+App.ActiveDocument.addObject("Part::Cylinder","O288")
+App.ActiveDocument.O288.Radius='3.004592470433276 mm'
+App.ActiveDocument.O288.Height='19.04136573527862 mm'
+App.ActiveDocument.O288.Angle='360.00 deg'
+App.ActiveDocument.O288.FirstAngle='0.00 deg'
+App.ActiveDocument.O288.SecondAngle='0.00 deg'
+App.ActiveDocument.O288.Placement=App.Placement(App.Vector(177.34481324851944,297.727988530968,-11.538842010720709),App.Rotation(App.Vector(0.9997680379642403,0.021537647623021464,0.002699098553643361),98.21151129884848))
+App.ActiveDocument.O288.Label='O288'
+
+App.ActiveDocument.addObject("Part::Sphere","O289")
+App.ActiveDocument.O289.Radius='3 mm'
+App.ActiveDocument.O289.Angle1='-90.00 deg'
+App.ActiveDocument.O289.Angle2='90.00 deg'
+App.ActiveDocument.O289.Angle3='360.00 deg'
+App.ActiveDocument.O289.Placement=App.Placement(App.Vector(192.69604901635032,284.8731440891889,-12.754602330491275),App.Rotation(App.Vector(0.00,0.00,1.00),0.0029224580062111663))
+App.ActiveDocument.O289.Label='O289'
+
+App.ActiveDocument.addObject("Part::Cylinder","O290")
+App.ActiveDocument.O290.Radius='3.002149813259518 mm'
+App.ActiveDocument.O290.Height='19.92205495043905 mm'
+App.ActiveDocument.O290.Angle='360.00 deg'
+App.ActiveDocument.O290.FirstAngle='0.00 deg'
+App.ActiveDocument.O290.SecondAngle='0.00 deg'
+App.ActiveDocument.O290.Placement=App.Placement(App.Vector(192.6198422041108,284.93662718816165,-12.74764087114536),App.Rotation(App.Vector(-0.644748357319168,-0.7643948951518673,0.002449902024970232),86.50123801808819))
+App.ActiveDocument.O290.Label='O290'
+
+App.ActiveDocument.addObject("Part::Cylinder","O291")
+App.ActiveDocument.O291.Radius='3.0025180261079862 mm'
+App.ActiveDocument.O291.Height='17.944913179591314 mm'
+App.ActiveDocument.O291.Angle='360.00 deg'
+App.ActiveDocument.O291.FirstAngle='0.00 deg'
+App.ActiveDocument.O291.SecondAngle='0.00 deg'
+App.ActiveDocument.O291.Placement=App.Placement(App.Vector(192.6968575105364,284.783428973188,-12.766987967241612),App.Rotation(App.Vector(0.99989552783794,-0.01445452903720389,0.0035476731366855985),98.83971603559621))
+App.ActiveDocument.O291.Label='O291'
+
+App.ActiveDocument.addObject("Part::Sphere","O292")
+App.ActiveDocument.O292.Radius='3 mm'
+App.ActiveDocument.O292.Angle1='-90.00 deg'
+App.ActiveDocument.O292.Angle2='90.00 deg'
+App.ActiveDocument.O292.Angle3='360.00 deg'
+App.ActiveDocument.O292.Placement=App.Placement(App.Vector(211.59246736645184,284.1426043204546,-11.911791514166408),App.Rotation(App.Vector(0.00,0.00,1.00),0.0009870396498107804))
+App.ActiveDocument.O292.Label='O292'
+
+App.ActiveDocument.addObject("Part::Cylinder","O293")
+App.ActiveDocument.O293.Radius='3.000594616103096 mm'
+App.ActiveDocument.O293.Height='18.738001645214272 mm'
+App.ActiveDocument.O293.Angle='360.00 deg'
+App.ActiveDocument.O293.FirstAngle='0.00 deg'
+App.ActiveDocument.O293.SecondAngle='0.00 deg'
+App.ActiveDocument.O293.Placement=App.Placement(App.Vector(211.49867169543762,284.1488278626888,-11.915155146727665),App.Rotation(App.Vector(-0.038457974792286284,-0.9992602184490664,0.0038215491940257595),92.55198498803419))
+App.ActiveDocument.O293.Label='O293'
+
+App.ActiveDocument.addObject("Part::Cylinder","O294")
+App.ActiveDocument.O294.Radius='3.002927967873313 mm'
+App.ActiveDocument.O294.Height='18.15587702577237 mm'
+App.ActiveDocument.O294.Angle='360.00 deg'
+App.ActiveDocument.O294.FirstAngle='0.00 deg'
+App.ActiveDocument.O294.SecondAngle='0.00 deg'
+App.ActiveDocument.O294.Placement=App.Placement(App.Vector(211.5866495615184,284.054878214671,-11.929478462029767),App.Rotation(App.Vector(0.9976894378356025,-0.06793957338164142,0.0027725847149595285),99.06518342893364))
+App.ActiveDocument.O294.Label='O294'
+
+App.ActiveDocument.addObject("Part::Sphere","O295")
+App.ActiveDocument.O295.Radius='3 mm'
+App.ActiveDocument.O295.Angle1='-90.00 deg'
+App.ActiveDocument.O295.Angle2='90.00 deg'
+App.ActiveDocument.O295.Angle3='360.00 deg'
+App.ActiveDocument.O295.Placement=App.Placement(App.Vector(227.59859723766007,296.3455236968679,-9.1940718871549),App.Rotation(App.Vector(0.00,0.00,1.00),0.0033943976180481807))
+App.ActiveDocument.O295.Label='O295'
+
+App.ActiveDocument.addObject("Part::Cylinder","O296")
+App.ActiveDocument.O296.Radius='3.0014628218306436 mm'
+App.ActiveDocument.O296.Height='20.108354556902235 mm'
+App.ActiveDocument.O296.Angle='360.00 deg'
+App.ActiveDocument.O296.FirstAngle='0.00 deg'
+App.ActiveDocument.O296.SecondAngle='0.00 deg'
+App.ActiveDocument.O296.Placement=App.Placement(App.Vector(227.52144548102115,296.285218797133,-9.208504406639992),App.Rotation(App.Vector(0.6062279933344794,-0.7952909028133356,0.002405285324499825),97.69402560187596))
+App.ActiveDocument.O296.Label='O296'
+
+App.ActiveDocument.addObject("Part::Cylinder","O297")
+App.ActiveDocument.O297.Radius='3.004514260496837 mm'
+App.ActiveDocument.O297.Height='20.004487580387913 mm'
+App.ActiveDocument.O297.Angle='360.00 deg'
+App.ActiveDocument.O297.FirstAngle='0.00 deg'
+App.ActiveDocument.O297.SecondAngle='0.00 deg'
+App.ActiveDocument.O297.Placement=App.Placement(App.Vector(227.592920395022,296.24703055898544,-9.213623056780682),App.Rotation(App.Vector(0.9953176419108468,-0.09665811761580884,0.004854222353139507),98.82005213688981))
+App.ActiveDocument.O297.Label='O297'
+
+App.ActiveDocument.addObject("Part::Sphere","O298")
+App.ActiveDocument.O298.Radius='3 mm'
+App.ActiveDocument.O298.Angle1='-90.00 deg'
+App.ActiveDocument.O298.Angle2='90.00 deg'
+App.ActiveDocument.O298.Angle3='360.00 deg'
+App.ActiveDocument.O298.Placement=App.Placement(App.Vector(239.6158411987242,317.67490104057225,-5.322648581409749),App.Rotation(App.Vector(0.00,0.00,1.00),0.0048132326613955076))
+App.ActiveDocument.O298.Label='O298'
+
+App.ActiveDocument.addObject("Part::Cylinder","O299")
+App.ActiveDocument.O299.Radius='3.003542042110251 mm'
+App.ActiveDocument.O299.Height='24.536859042636557 mm'
+App.ActiveDocument.O299.Angle='360.00 deg'
+App.ActiveDocument.O299.FirstAngle='0.00 deg'
+App.ActiveDocument.O299.SecondAngle='0.00 deg'
+App.ActiveDocument.O299.Placement=App.Placement(App.Vector(239.55336089028557,317.5672883695441,-5.341062461558388),App.Rotation(App.Vector(0.8712721571659193,-0.49080019167421446,0.0029777960486169807),98.99001502333029))
+App.ActiveDocument.O299.Label='O299'
+
+App.ActiveDocument.addObject("Part::Cylinder","O300")
+App.ActiveDocument.O300.Radius='3.003155455773047 mm'
+App.ActiveDocument.O300.Height='24.580684453329578 mm'
+App.ActiveDocument.O300.Angle='360.00 deg'
+App.ActiveDocument.O300.FirstAngle='0.00 deg'
+App.ActiveDocument.O300.SecondAngle='0.00 deg'
+App.ActiveDocument.O300.Placement=App.Placement(App.Vector(239.60100844697695,317.55484399084764,-5.343090921726992),App.Rotation(App.Vector(0.9939616810299896,-0.10972773871741363,0.003988423164742776),98.49109808960293))
+App.ActiveDocument.O300.Label='O300'
+
+App.ActiveDocument.addObject("Part::Sphere","O301")
+App.ActiveDocument.O301.Radius='3 mm'
+App.ActiveDocument.O301.Angle1='-90.00 deg'
+App.ActiveDocument.O301.Angle2='90.00 deg'
+App.ActiveDocument.O301.Angle3='360.00 deg'
+App.ActiveDocument.O301.Placement=App.Placement(App.Vector(250.0032713084174,350.0045126020209,0.0013138425424659172),App.Rotation(App.Vector(0.00,0.00,1.00),0.0006579753896151519))
+App.ActiveDocument.O301.Label='O301'
+
+App.ActiveDocument.addObject("Part::Cylinder","O302")
+App.ActiveDocument.O302.Radius='3.0043827281709685 mm'
+App.ActiveDocument.O302.Height='34.02618590525885 mm'
+App.ActiveDocument.O302.Angle='360.00 deg'
+App.ActiveDocument.O302.FirstAngle='0.00 deg'
+App.ActiveDocument.O302.SecondAngle='0.00 deg'
+App.ActiveDocument.O302.Placement=App.Placement(App.Vector(249.95076400151143,349.8396649018215,-0.025267514839710754),App.Rotation(App.Vector(0.9520616574170674,-0.30590619555063997,0.0036010820363986153),98.91996415336826))
+App.ActiveDocument.O302.Label='O302'
+
+App.ActiveDocument.addObject("Part::Cylinder","O303")
+App.ActiveDocument.O303.Radius='3.0028456337118543 mm'
+App.ActiveDocument.O303.Height='37.38021012460702 mm'
+App.ActiveDocument.O303.Angle='360.00 deg'
+App.ActiveDocument.O303.FirstAngle='0.00 deg'
+App.ActiveDocument.O303.SecondAngle='0.00 deg'
+App.ActiveDocument.O303.Placement=App.Placement(App.Vector(249.9765047696309,349.81797973163987,-0.0231105618587844),App.Rotation(App.Vector(0.9912408676314173,-0.13206643153093403,0.0028003324131873255),98.34874246059542))
+App.ActiveDocument.O303.Label='O303'
+
+from BOPTools import BOPFeatures
+def elod_make_multi_fuse(self, inputNames, fname):
+    obj = self.doc.addObject("Part::MultiFuse", fname)
+    obj.Shapes = [self.doc.getObject(name) for name in inputNames]
+    self.copy_visual_attributes(obj, obj.Shapes[0])
+    target = self.move_input_objects(obj.Shapes)
+    if target:
+        target.addObject(obj)
+    return obj
+
+BOPFeatures.BOPFeatures.elod_make_multi_fuse = elod_make_multi_fuse
+bp = BOPFeatures.BOPFeatures(App.activeDocument())
+bp.elod_make_multi_fuse(["O1","O2","O3",], "Fuse2")
+bp.elod_make_multi_fuse(["O4","O5","O6",], "Fuse3")
+bp.elod_make_multi_fuse(["O7","O8","O9",], "Fuse4")
+bp.elod_make_multi_fuse(["O10","O11","O12",], "Fuse5")
+bp.elod_make_multi_fuse(["O13","O14","O15",], "Fuse6")
+bp.elod_make_multi_fuse(["O16","O17","O18",], "Fuse7")
+bp.elod_make_multi_fuse(["O19","O20","O21",], "Fuse8")
+bp.elod_make_multi_fuse(["O22","O23","O24",], "Fuse9")
+bp.elod_make_multi_fuse(["O25","O26","O27",], "Fuse10")
+bp.elod_make_multi_fuse(["O28","O29","O30",], "Fuse11")
+bp.elod_make_multi_fuse(["O31","O32","O33",], "Fuse12")
+bp.elod_make_multi_fuse(["O34","O35","O36",], "Fuse13")
+bp.elod_make_multi_fuse(["O37","O38","O39",], "Fuse14")
+bp.elod_make_multi_fuse(["O40","O41","O42",], "Fuse15")
+bp.elod_make_multi_fuse(["O43","O44","O45",], "Fuse16")
+bp.elod_make_multi_fuse(["O46","O47","O48",], "Fuse17")
+bp.elod_make_multi_fuse(["O49","O50","O51",], "Fuse18")
+bp.elod_make_multi_fuse(["O52","O53","O54",], "Fuse19")
+bp.elod_make_multi_fuse(["O55","O56","O57",], "Fuse20")
+bp.elod_make_multi_fuse(["O58","O59","O60",], "Fuse21")
+bp.elod_make_multi_fuse(["O61","O62","O63",], "Fuse22")
+bp.elod_make_multi_fuse(["O64","O65","O66",], "Fuse23")
+bp.elod_make_multi_fuse(["O67","O68","O69",], "Fuse24")
+bp.elod_make_multi_fuse(["O70","O71","O72",], "Fuse25")
+bp.elod_make_multi_fuse(["O73","O74","O75",], "Fuse26")
+bp.elod_make_multi_fuse(["O76","O77","O78",], "Fuse27")
+bp.elod_make_multi_fuse(["O79","O80","O81",], "Fuse28")
+bp.elod_make_multi_fuse(["O82","O83","O84",], "Fuse29")
+bp.elod_make_multi_fuse(["O85","O86","O87",], "Fuse30")
+bp.elod_make_multi_fuse(["O88","O89","O90",], "Fuse31")
+bp.elod_make_multi_fuse(["O91","O92","O93",], "Fuse32")
+bp.elod_make_multi_fuse(["O94","O95","O96",], "Fuse33")
+bp.elod_make_multi_fuse(["O97","O98","O99",], "Fuse34")
+bp.elod_make_multi_fuse(["O100","O101","O102",], "Fuse35")
+bp.elod_make_multi_fuse(["O103","O104","O105",], "Fuse36")
+bp.elod_make_multi_fuse(["O106","O107","O108",], "Fuse37")
+bp.elod_make_multi_fuse(["O109","O110","O111",], "Fuse38")
+bp.elod_make_multi_fuse(["O112","O113","O114",], "Fuse39")
+bp.elod_make_multi_fuse(["O115","O116","O117",], "Fuse40")
+bp.elod_make_multi_fuse(["O118","O119","O120",], "Fuse41")
+bp.elod_make_multi_fuse(["O121","O122","O123",], "Fuse42")
+bp.elod_make_multi_fuse(["O124","O125","O126",], "Fuse43")
+bp.elod_make_multi_fuse(["O127","O128","O129",], "Fuse44")
+bp.elod_make_multi_fuse(["O130","O131","O132",], "Fuse45")
+bp.elod_make_multi_fuse(["O133","O134","O135",], "Fuse46")
+bp.elod_make_multi_fuse(["O136","O137","O138",], "Fuse47")
+bp.elod_make_multi_fuse(["O139","O140","O141",], "Fuse48")
+bp.elod_make_multi_fuse(["O142","O143","O144",], "Fuse49")
+bp.elod_make_multi_fuse(["O145","O146","O147",], "Fuse50")
+bp.elod_make_multi_fuse(["O148","O149","O150",], "Fuse51")
+bp.elod_make_multi_fuse(["O151","O152","O153",], "Fuse52")
+bp.elod_make_multi_fuse(["O154","O155","O156",], "Fuse53")
+bp.elod_make_multi_fuse(["O157","O158","O159",], "Fuse54")
+bp.elod_make_multi_fuse(["O160","O161","O162",], "Fuse55")
+bp.elod_make_multi_fuse(["O163","O164","O165",], "Fuse56")
+bp.elod_make_multi_fuse(["O166","O167","O168",], "Fuse57")
+bp.elod_make_multi_fuse(["O169","O170","O171",], "Fuse58")
+bp.elod_make_multi_fuse(["O172","O173","O174",], "Fuse59")
+bp.elod_make_multi_fuse(["O175","O176","O177",], "Fuse60")
+bp.elod_make_multi_fuse(["O178","O179","O180",], "Fuse61")
+bp.elod_make_multi_fuse(["O181","O182","O183",], "Fuse62")
+bp.elod_make_multi_fuse(["O184","O185","O186",], "Fuse63")
+bp.elod_make_multi_fuse(["O187","O188","O189",], "Fuse64")
+bp.elod_make_multi_fuse(["O190","O191","O192",], "Fuse65")
+bp.elod_make_multi_fuse(["O193","O194","O195",], "Fuse66")
+bp.elod_make_multi_fuse(["O196","O197","O198",], "Fuse67")
+bp.elod_make_multi_fuse(["O199","O200","O201",], "Fuse68")
+bp.elod_make_multi_fuse(["O202","O203","O204",], "Fuse69")
+bp.elod_make_multi_fuse(["O205","O206","O207",], "Fuse70")
+bp.elod_make_multi_fuse(["O208","O209","O210",], "Fuse71")
+bp.elod_make_multi_fuse(["O211","O212","O213",], "Fuse72")
+bp.elod_make_multi_fuse(["O214","O215","O216",], "Fuse73")
+bp.elod_make_multi_fuse(["O217","O218","O219",], "Fuse74")
+bp.elod_make_multi_fuse(["O220","O221","O222",], "Fuse75")
+bp.elod_make_multi_fuse(["O223","O224","O225",], "Fuse76")
+bp.elod_make_multi_fuse(["O226","O227","O228",], "Fuse77")
+bp.elod_make_multi_fuse(["O229","O230","O231",], "Fuse78")
+bp.elod_make_multi_fuse(["O232","O233","O234",], "Fuse79")
+bp.elod_make_multi_fuse(["O235","O236","O237",], "Fuse80")
+bp.elod_make_multi_fuse(["O238","O239","O240",], "Fuse81")
+bp.elod_make_multi_fuse(["O241","O242","O243",], "Fuse82")
+bp.elod_make_multi_fuse(["O244","O245","O246",], "Fuse83")
+bp.elod_make_multi_fuse(["O247","O248","O249",], "Fuse84")
+bp.elod_make_multi_fuse(["O250","O251","O252",], "Fuse85")
+bp.elod_make_multi_fuse(["O253","O254","O255",], "Fuse86")
+bp.elod_make_multi_fuse(["O256","O257","O258",], "Fuse87")
+bp.elod_make_multi_fuse(["O259","O260","O261",], "Fuse88")
+bp.elod_make_multi_fuse(["O262","O263","O264",], "Fuse89")
+bp.elod_make_multi_fuse(["O265","O266","O267",], "Fuse90")
+bp.elod_make_multi_fuse(["O268","O269","O270",], "Fuse91")
+bp.elod_make_multi_fuse(["O271","O272","O273",], "Fuse92")
+bp.elod_make_multi_fuse(["O274","O275","O276",], "Fuse93")
+bp.elod_make_multi_fuse(["O277","O278","O279",], "Fuse94")
+bp.elod_make_multi_fuse(["O280","O281","O282",], "Fuse95")
+bp.elod_make_multi_fuse(["O283","O284","O285",], "Fuse96")
+bp.elod_make_multi_fuse(["O286","O287","O288",], "Fuse97")
+bp.elod_make_multi_fuse(["O289","O290","O291",], "Fuse98")
+bp.elod_make_multi_fuse(["O292","O293","O294",], "Fuse99")
+bp.elod_make_multi_fuse(["O295","O296","O297",], "Fuse100")
+bp.elod_make_multi_fuse(["O298","O299","O300",], "Fuse101")
+bp.elod_make_multi_fuse(["O301","O302","O303",], "Fuse102")
+bp.elod_make_multi_fuse(["Fuse2","Fuse3","Fuse4",], "Fuse103")
+bp.elod_make_multi_fuse(["Fuse5","Fuse6","Fuse7",], "Fuse104")
+bp.elod_make_multi_fuse(["Fuse8","Fuse9","Fuse10",], "Fuse105")
+bp.elod_make_multi_fuse(["Fuse11","Fuse12","Fuse13",], "Fuse106")
+bp.elod_make_multi_fuse(["Fuse14","Fuse15","Fuse16",], "Fuse107")
+bp.elod_make_multi_fuse(["Fuse17","Fuse18","Fuse19",], "Fuse108")
+bp.elod_make_multi_fuse(["Fuse20","Fuse21","Fuse22",], "Fuse109")
+bp.elod_make_multi_fuse(["Fuse23","Fuse24","Fuse25",], "Fuse110")
+bp.elod_make_multi_fuse(["Fuse26","Fuse27","Fuse28",], "Fuse111")
+bp.elod_make_multi_fuse(["Fuse29","Fuse30","Fuse31",], "Fuse112")
+bp.elod_make_multi_fuse(["Fuse32","Fuse33","Fuse34",], "Fuse113")
+bp.elod_make_multi_fuse(["Fuse35","Fuse36","Fuse37",], "Fuse114")
+bp.elod_make_multi_fuse(["Fuse38","Fuse39","Fuse40",], "Fuse115")
+bp.elod_make_multi_fuse(["Fuse41","Fuse42","Fuse43",], "Fuse116")
+bp.elod_make_multi_fuse(["Fuse44","Fuse45","Fuse46",], "Fuse117")
+bp.elod_make_multi_fuse(["Fuse47","Fuse48","Fuse49",], "Fuse118")
+bp.elod_make_multi_fuse(["Fuse50","Fuse51","Fuse52",], "Fuse119")
+bp.elod_make_multi_fuse(["Fuse53","Fuse54","Fuse55",], "Fuse120")
+bp.elod_make_multi_fuse(["Fuse56","Fuse57","Fuse58",], "Fuse121")
+bp.elod_make_multi_fuse(["Fuse59","Fuse60","Fuse61",], "Fuse122")
+bp.elod_make_multi_fuse(["Fuse62","Fuse63","Fuse64",], "Fuse123")
+bp.elod_make_multi_fuse(["Fuse65","Fuse66","Fuse67",], "Fuse124")
+bp.elod_make_multi_fuse(["Fuse68","Fuse69","Fuse70",], "Fuse125")
+bp.elod_make_multi_fuse(["Fuse71","Fuse72","Fuse73",], "Fuse126")
+bp.elod_make_multi_fuse(["Fuse74","Fuse75","Fuse76",], "Fuse127")
+bp.elod_make_multi_fuse(["Fuse77","Fuse78","Fuse79",], "Fuse128")
+bp.elod_make_multi_fuse(["Fuse80","Fuse81","Fuse82",], "Fuse129")
+bp.elod_make_multi_fuse(["Fuse83","Fuse84","Fuse85",], "Fuse130")
+bp.elod_make_multi_fuse(["Fuse86","Fuse87","Fuse88",], "Fuse131")
+bp.elod_make_multi_fuse(["Fuse89","Fuse90","Fuse91",], "Fuse132")
+bp.elod_make_multi_fuse(["Fuse92","Fuse93","Fuse94",], "Fuse133")
+bp.elod_make_multi_fuse(["Fuse95","Fuse96","Fuse97",], "Fuse134")
+bp.elod_make_multi_fuse(["Fuse98","Fuse99","Fuse100",], "Fuse135")
+bp.elod_make_multi_fuse(["Fuse101","Fuse102","Fuse103",], "Fuse136")
+bp.elod_make_multi_fuse(["Fuse104","Fuse105","Fuse106",], "Fuse137")
+bp.elod_make_multi_fuse(["Fuse107","Fuse108","Fuse109",], "Fuse138")
+bp.elod_make_multi_fuse(["Fuse110","Fuse111","Fuse112",], "Fuse139")
+bp.elod_make_multi_fuse(["Fuse113","Fuse114","Fuse115",], "Fuse140")
+bp.elod_make_multi_fuse(["Fuse116","Fuse117","Fuse118",], "Fuse141")
+bp.elod_make_multi_fuse(["Fuse119","Fuse120","Fuse121",], "Fuse142")
+bp.elod_make_multi_fuse(["Fuse122","Fuse123","Fuse124",], "Fuse143")
+bp.elod_make_multi_fuse(["Fuse125","Fuse126","Fuse127",], "Fuse144")
+bp.elod_make_multi_fuse(["Fuse128","Fuse129","Fuse130",], "Fuse145")
+bp.elod_make_multi_fuse(["Fuse131","Fuse132","Fuse133",], "Fuse146")
+bp.elod_make_multi_fuse(["Fuse134","Fuse135","Fuse136",], "Fuse147")
+bp.elod_make_multi_fuse(["Fuse137","Fuse138","Fuse139",], "Fuse148")
+bp.elod_make_multi_fuse(["Fuse140","Fuse141","Fuse142",], "Fuse149")
+bp.elod_make_multi_fuse(["Fuse143","Fuse144","Fuse145",], "Fuse150")
+bp.elod_make_multi_fuse(["Fuse146","Fuse147","Fuse148",], "Fuse151")
+bp.elod_make_multi_fuse(["Fuse149","Fuse150","Fuse151",], "Fuse152")
+
+App.ActiveDocument.recompute()
+

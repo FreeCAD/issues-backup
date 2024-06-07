@@ -1,0 +1,17 @@
+﻿  Automatic MOC and UIC for target FreeCADGui
+  DlgSettingsTheme.cpp
+..\..\..\..\..\src\Gui\PreferencePages\DlgSettingsTheme.cpp(82): error C2061: syntax error: identifier 'PrefComboBox'
+..\..\..\..\..\src\Gui\PreferencePages\DlgSettingsTheme.cpp(85): error C2511: 'void Gui::Dialog::DlgSettingsTheme::populateStylesheets(const char *,const char *)': overloaded member function not found in 'Gui::Dialog::DlgSettingsTheme'
+  d:\freecadclone\src\gui\preferencepages\DlgSettingsTheme.h(42): note: see declaration of 'Gui::Dialog::DlgSettingsTheme'
+..\..\..\..\..\src\Gui\PreferencePages\DlgSettingsTheme.cpp(90): error C2065: 'filter': undeclared identifier
+..\..\..\..\..\src\Gui\PreferencePages\DlgSettingsTheme.cpp(91): error C2065: 'filter': undeclared identifier
+..\..\..\..\..\src\Gui\PreferencePages\DlgSettingsTheme.cpp(92): error C2065: 'filter': undeclared identifier
+..\..\..\..\..\src\Gui\PreferencePages\DlgSettingsTheme.cpp(100): error C2065: 'filter': undeclared identifier
+..\..\..\..\..\src\Gui\PreferencePages\DlgSettingsTheme.cpp(108): error C2065: 'combo': undeclared identifier
+..\..\..\..\..\src\Gui\PreferencePages\DlgSettingsTheme.cpp(111): error C2065: 'combo': undeclared identifier
+..\..\..\..\..\src\Gui\PreferencePages\DlgSettingsTheme.cpp(111): error C2065: 'def': undeclared identifier
+..\..\..\..\..\src\Gui\PreferencePages\DlgSettingsTheme.cpp(113): error C2065: 'combo': undeclared identifier
+..\..\..\..\..\src\Gui\PreferencePages\DlgSettingsTheme.cpp(117): error C2065: 'combo': undeclared identifier
+..\..\..\..\..\src\Gui\PreferencePages\DlgSettingsTheme.cpp(129): error C2065: 'combo': undeclared identifier
+..\..\..\..\..\src\Gui\PreferencePages\DlgSettingsTheme.cpp(134): error C2065: 'combo': undeclared identifier
+..\..\..\..\..\src\Gui\PreferencePages\DlgSettingsTheme.cpp(135): error C2065: 'combo': undeclared identifier
