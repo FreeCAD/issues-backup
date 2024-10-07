@@ -143,7 +143,7 @@ def get_image_links(data):
 
     """get_image_links(data): finds attached image links in the given dict (issues or comments)"""
 
-    links = re.findall("https\:\/\/user-images.githubusercontent\.com/.*?\.jpg",json.dumps(data))
+    links = re.findall(r"https\:\/\/user-images.githubusercontent\.com/.*?\.jpg",json.dumps(data))
     links2 = []
     for l in links:
         if " " in l:
@@ -157,7 +157,7 @@ def get_file_links(data):
 
     """get_file_links(data): finds attached file links in the given dict (issues or comments)"""
 
-    return re.findall("(https\:\/\/github.com/"+repo.replace("/","\/")+"\/files\/.*?)\)",json.dumps(data))
+    return re.findall(r"(https\:\/\/github.com/"+repo.replace(r"/",r"\/")+r"\/files\/.*?)\)",json.dumps(data))
 
 
 def backup_files(links,target):
