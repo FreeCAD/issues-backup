@@ -236,10 +236,8 @@ if __name__ == "__main__":
     allpages = False
     dopush = False
     attachments = True
-    if len(args) < 1:
-        print(__doc__)
-        exit()
-    elif len(args) >= 2:
+    repo = DEFAULT_REPO
+    if len(args) >= 1:
         repo = args[-1]
         if "--all" in args:
             allpages = True
@@ -247,8 +245,6 @@ if __name__ == "__main__":
             dopush = True
         if "--noattachments" in args:
             attachments = False
-    if not repo:
-        repo = DEFAULT_REPO
     backup(repo, attachments=attachments, allpages=allpages)
     if dopush:
         push()
