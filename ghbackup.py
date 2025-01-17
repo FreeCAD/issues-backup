@@ -34,14 +34,21 @@ a file named ".ghbackup" in your home directory or together with this script.
 
 command-line usage:
 
-    ./ghbackup.py [ORG/REPO] : backs up issues and pull requests from the given repository.
-                               (note: pull requests are stored together with issues. github
-                               considers every pull request an issue, but not every issue
-                               a pull request).
-                               If no org/repo is given, the default (FreeCAD/FreeCAD)
-                               is backed up. 2 json files are created/updated in the
-                               current directory. If that directory is git-managed,
-                               files will also be committed and pushed.
+    ./ghbackup.py [Options] [ORG/REPO]
+
+        backs up issues and pull requests from the given repository.
+        (note: pull requests are stored together with issues. github
+        considers every pull request an issue, but not every issue
+        a pull request).
+        If no org/repo is given, the default (FreeCAD/FreeCAD)
+        is backed up. 2 json files are created/updated in the
+        current directory. If that directory is git-managed,
+        files will also be committed and pushed.
+        Options can be:
+        
+        --all : fetches all issues (open and closed). Otherwise, only
+                open issues are fetched
+        --push : git pushes the changes 
 
 python usage:
 
@@ -97,7 +104,7 @@ def get_data_page(api_point, page=1, allpages=False):
 
     """get_data_page(api_point,[page,allpages]): returns a dict from a page of an github API point"""
 
-    print("fetching",api_point,"page",page)
+    print("    Fetching",api_point,"page",page)
     if allpages:
         params = { "state": "all", "page": str(page) }
     else:
@@ -125,29 +132,30 @@ def get_data(api_point, page=1, allpages=False):
     return result
 
 
-def get_issues(repo):
+def get_issues(repo, allpages=False):
 
     """get_issues(repo): returns a dict from github issues"""
 
-    return get_data(repo+"/issues")
+    return get_data(repo+"/issues", allpages=allpages)
 
 
-def get_issue_comments(repo):
+def get_issue_comments(repo, allpages=False):
 
     """get_issue_comments(repo): returns a dict from github issue comments"""
 
-    return get_data(repo+"/issues/comments")
+    return get_data(repo+"/issues/comments", allpages=allpages)
 
 
 def get_image_links(data):
 
     """get_image_links(data): finds attached image links in the given dict (issues or comments)"""
 
-    links = re.findall(r"https\:\/\/user-images.githubusercontent\.com/.*?\.jpg",json.dumps(data))
+    links = re.findall(r"https\:\/\/user-images.githubusercontent\.com/.*?\.(?:jpg|jpeg|png|gif|bmp)",json.dumps(data))
     links2 = []
     for l in links:
         if " " in l:
-            print("Wrong image link:",l)
+            pass
+            #print("Wrong image link:",l)
         else:
             links2.append(l)
     return links2
@@ -165,7 +173,8 @@ def backup_files(links,target):
     """backup_files(links,target): downloads all links from the given link list, and saves them under
     attachments/<target>. Skips existing files."""
 
-    folder = os.path.join(os.path.dirname(__file__),"attachments",target)
+    cwd = os.getcwd()
+    folder = os.path.join(cwd,"issue-attachments",target)
     if not os.path.isdir(folder):
         os.makedirs(folder)
     for link in links:
@@ -187,7 +196,7 @@ def push():
     try:
         repo = git.Repo(os.path.curdir)
         repo.git.add(all=True)
-        commitmsg = "backup " + str(datetime.date.today())
+        commitmsg = "Issues backup " + str(datetime.date.today())
         repo.index.commit(commitmsg)
         origin = repo.remote(name='origin')
         origin.push()
@@ -197,35 +206,49 @@ def push():
         return False
 
 
-def backup(repo):
+def backup(repo, attachments=True, allpages=False):
 
     """backup(repo): backs up issues, issue comments and pull requests into 3 json files"""
 
     print("Backing up issues...")
     with open("issues.json","w") as f:
-        issues = get_issues(repo)
+        issues = get_issues(repo, allpages)
         json.dump(issues,f,indent=4)
     print("Backing up issue comments...")
     with open("comments.json","w") as f:
-        comments = get_issue_comments(repo)
+        comments = get_issue_comments(repo, allpages)
         json.dump(comments,f,indent=4)
-    print("Backing up image attachments...")
-    imagelinks = get_image_links(issues)
-    imagelinks.extend(get_image_links(comments))
-    backup_files(imagelinks,"images")
-    print("Backing up file attachments...")
-    filelinks = get_file_links(issues)
-    filelinks.extend(get_file_links(comments))
-    backup_files(filelinks,"files")
+    if attachments:
+        print("Backing up image attachments...")
+        imagelinks = get_image_links(issues)
+        imagelinks.extend(get_image_links(comments))
+        backup_files(imagelinks,"images")
+        print("Backing up file attachments...")
+        filelinks = get_file_links(issues)
+        filelinks.extend(get_file_links(comments))
+        backup_files(filelinks,"files")
     return True
 
 
 if __name__ == "__main__":
 
     args = sys.argv[1:]
-    if len(args) == 1:
-        repo = args[0]
-    else:
+    allpages = False
+    dopush = False
+    attachments = True
+    if len(args) < 1:
+        print(__doc__)
+        exit()
+    elif len(args) >= 2:
+        repo = args[-1]
+        if "--all" in args:
+            allpages = True
+        if "--push" in args:
+            dopush = True
+        if "--noattachments" in args:
+            attachments = False
+    if not repo:
         repo = DEFAULT_REPO
-    backup(repo)
-    push()
+    backup(repo, attachments=attachments, allpages=allpages)
+    if dopush:
+        push()
