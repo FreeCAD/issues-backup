@@ -1,0 +1,32 @@
+=== FreeCAD 0.20.2, double click on file ===
+
+>>> import sys
+>>> print('argv:', sys.argv)
+argv: ['/Applications/FreeCAD.app/Contents/Resources/bin/freecad']
+>>> import Draft
+>>> print('simple found 1:', 'simple' in Draft.svg_patterns())
+simple found 1: False
+>>> del App.svgpatterns  # force a reload of the patterns
+>>> print('simple found 2:', 'simple' in Draft.svg_patterns())
+simple found 2: True
+>>> print('ModDirs:', App.__ModDirs__)
+ModDirs: ['/Applications/FreeCAD.app/Contents/Resources/Mod/Mesh', '/Applications/FreeCAD.app/Contents/Resources/Mod/Draft', '/Applications/FreeCAD.app/Contents/Resources/Mod/ReverseEngineering', '/Applications/FreeCAD.app/Contents/Resources/Mod/Drawing', '/Applications/FreeCAD.app/Contents/Resources/Mod/Plot', '/Applications/FreeCAD.app/Contents/Resources/Mod/Test', '/Applications/FreeCAD.app/Contents/Resources/Mod/Fem', '/Applications/FreeCAD.app/Contents/Resources/Mod/Spreadsheet', '/Applications/FreeCAD.app/Contents/Resources/Mod/Web', '/Applications/FreeCAD.app/Contents/Resources/Mod/TechDraw', '/Applications/FreeCAD.app/Contents/Resources/Mod/Path', '/Applications/FreeCAD.app/Contents/Resources/Mod/MeshPart', '/Applications/FreeCAD.app/Contents/Resources/Mod/Show', '/Applications/FreeCAD.app/Contents/Resources/Mod/Sketcher', '/Applications/FreeCAD.app/Contents/Resources/Mod/Start', '/Applications/FreeCAD.app/Contents/Resources/Mod/OpenSCAD', '/Applications/FreeCAD.app/Contents/Resources/Mod/Surface', '/Applications/FreeCAD.app/Contents/Resources/Mod/Robot', '/Applications/FreeCAD.app/Contents/Resources/Mod/Image', '/Applications/FreeCAD.app/Contents/Resources/Mod/Inspection', '/Applications/FreeCAD.app/Contents/Resources/Mod/Idf', '/Applications/FreeCAD.app/Contents/Resources/Mod/Arch', '/Applications/FreeCAD.app/Contents/Resources/Mod/AddonManager', '/Applications/FreeCAD.app/Contents/Resources/Mod/Points', '/Applications/FreeCAD.app/Contents/Resources/Mod/Measure', '/Applications/FreeCAD.app/Contents/Resources/Mod/PartDesign', '/Applications/FreeCAD.app/Contents/Resources/Mod/Tux', '/Applications/FreeCAD.app/Contents/Resources/Mod/Part', '/Applications/FreeCAD.app/Contents/Resources/Mod/Import', '/Applications/FreeCAD.app/Contents/Resources/Mod/Material', '/Applications/FreeCAD.app/Contents/Resources/Mod/Raytracing']
+>>> Draft.loadTexture(Draft.svg_patterns()['simple'][1], 128)
+>>> 
+
+=== FreeCAD 0.20.2, load FreeCAD first ===
+
+>>> import sys
+>>> print('argv:', sys.argv)
+argv: ['/Applications/FreeCAD.app/Contents/Resources/bin/freecad']
+>>> import Draft
+>>> print('simple found 1:', 'simple' in Draft.svg_patterns())
+simple found 1: True
+>>> del App.svgpatterns  # force a reload of the patterns
+>>> print('simple found 2:', 'simple' in Draft.svg_patterns())
+simple found 2: True
+>>> print('ModDirs:', App.__ModDirs__)
+ModDirs: ['/Applications/FreeCAD.app/Contents/Resources/Mod/Mesh', '/Applications/FreeCAD.app/Contents/Resources/Mod/Draft', '/Applications/FreeCAD.app/Contents/Resources/Mod/ReverseEngineering', '/Applications/FreeCAD.app/Contents/Resources/Mod/Drawing', '/Applications/FreeCAD.app/Contents/Resources/Mod/Plot', '/Applications/FreeCAD.app/Contents/Resources/Mod/Test', '/Applications/FreeCAD.app/Contents/Resources/Mod/Fem', '/Applications/FreeCAD.app/Contents/Resources/Mod/Spreadsheet', '/Applications/FreeCAD.app/Contents/Resources/Mod/Web', '/Applications/FreeCAD.app/Contents/Resources/Mod/TechDraw', '/Applications/FreeCAD.app/Contents/Resources/Mod/Path', '/Applications/FreeCAD.app/Contents/Resources/Mod/MeshPart', '/Applications/FreeCAD.app/Contents/Resources/Mod/Show', '/Applications/FreeCAD.app/Contents/Resources/Mod/Sketcher', '/Applications/FreeCAD.app/Contents/Resources/Mod/Start', '/Applications/FreeCAD.app/Contents/Resources/Mod/OpenSCAD', '/Applications/FreeCAD.app/Contents/Resources/Mod/Surface', '/Applications/FreeCAD.app/Contents/Resources/Mod/Robot', '/Applications/FreeCAD.app/Contents/Resources/Mod/Image', '/Applications/FreeCAD.app/Contents/Resources/Mod/Inspection', '/Applications/FreeCAD.app/Contents/Resources/Mod/Idf', '/Applications/FreeCAD.app/Contents/Resources/Mod/Arch', '/Applications/FreeCAD.app/Contents/Resources/Mod/AddonManager', '/Applications/FreeCAD.app/Contents/Resources/Mod/Points', '/Applications/FreeCAD.app/Contents/Resources/Mod/Measure', '/Applications/FreeCAD.app/Contents/Resources/Mod/PartDesign', '/Applications/FreeCAD.app/Contents/Resources/Mod/Tux', '/Applications/FreeCAD.app/Contents/Resources/Mod/Part', '/Applications/FreeCAD.app/Contents/Resources/Mod/Import', '/Applications/FreeCAD.app/Contents/Resources/Mod/Material', '/Applications/FreeCAD.app/Contents/Resources/Mod/Raytracing']
+>>> Draft.loadTexture(Draft.svg_patterns()['simple'][1], 128)
+<pivy.coin.SoSFImage; proxy of <Swig Object of type 'SoSFImage *' at 0x12692b030> >
+>>> 
