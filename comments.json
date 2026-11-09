@@ -642168,7 +642168,7 @@
         "created_at": "2022-04-03T18:57:31Z",
         "updated_at": "2022-04-03T18:57:31Z",
         "body": "> The problem is that we cannot do much if it is an OCC bug. We reported many bugs to the OCC guys, even patches but they don't care much. I mean there are for example patches around for more than one year and there were not considered for OCC 7.6.\r\n\r\nStill, maybe we could report this OCC bug. There's always a chance that they will fix this one.",
-        "author_association": "CONTRIBUTOR",
+        "author_association": "COLLABORATOR",
         "pin": null,
         "reactions": {
             "url": "https://api.github.com/repos/FreeCAD/FreeCAD/issues/comments/1086927712/reactions",
@@ -677747,7 +677747,7 @@
         "created_at": "2022-05-04T19:03:04Z",
         "updated_at": "2022-05-04T19:03:04Z",
         "body": "> @FEA-eng do you mind trying to reproduce on v0.20dev ?\r\n\r\nI checked this and it still happens (with displacement components) in 0.20.\r\n\r\n> OS: Windows 10 (10.0)\r\n> Word size of FreeCAD: 64-bit\r\n> Version: 0.20.28774 (Git)\r\n> Build type: Release\r\n> Python 3.8.13, Qt 5.12.9, Coin 4.0.0, OCC 7.5.3\r\n> Locale: Polish/Poland (pl_PL)",
-        "author_association": "CONTRIBUTOR",
+        "author_association": "COLLABORATOR",
         "pin": null,
         "reactions": {
             "url": "https://api.github.com/repos/FreeCAD/FreeCAD/issues/comments/1117701514/reactions",
@@ -726544,7 +726544,7 @@
         "created_at": "2022-06-19T14:56:55Z",
         "updated_at": "2022-06-19T14:56:55Z",
         "body": "Then what about this FR ? #6439\r\n\r\nAlso, I didn't necessarily mean a new workbench. It could be as well a rather small tool to \"drive\" a sketch and read the positions of its points (which can already be done with a short Python script). Then just do some simple calculations to get the velocity, acceleration and so on.\r\n\r\nMaybe this FR could be adjusted to make it clear that a single tool can be sufficient ?",
-        "author_association": "CONTRIBUTOR",
+        "author_association": "COLLABORATOR",
         "pin": null,
         "reactions": {
             "url": "https://api.github.com/repos/FreeCAD/FreeCAD/issues/comments/1159748499/reactions",
@@ -730713,7 +730713,7 @@
         "created_at": "2022-06-22T13:41:46Z",
         "updated_at": "2022-06-22T13:41:46Z",
         "body": "> then maybe the ui file should be renamed to something like `DlgDressUpEdges`?\r\n\r\nThat would definitely make sense. Or DlgFilletChamferEdges.ui. Will be a bit easier to find with \"fillet\" and \"chamfer\" keywords.",
-        "author_association": "CONTRIBUTOR",
+        "author_association": "COLLABORATOR",
         "reactions": {
             "url": "https://api.github.com/repos/FreeCAD/FreeCAD/issues/comments/1163113917/reactions",
             "total_count": 0,
@@ -731432,22 +731432,22 @@
         "id": 1164270450,
         "node_id": "IC_kwDOAFeGkM5FZVty",
         "user": {
-            "login": "quiret",
-            "id": 7682485,
-            "node_id": "MDQ6VXNlcjc2ODI0ODU=",
-            "avatar_url": "https://avatars.githubusercontent.com/u/7682485?v=4",
+            "login": "ghost",
+            "id": 10137,
+            "node_id": "MDQ6VXNlcjEwMTM3",
+            "avatar_url": "https://avatars.githubusercontent.com/u/10137?v=4",
             "gravatar_id": "",
-            "url": "https://api.github.com/users/quiret",
-            "html_url": "https://github.com/quiret",
-            "followers_url": "https://api.github.com/users/quiret/followers",
-            "following_url": "https://api.github.com/users/quiret/following{/other_user}",
-            "gists_url": "https://api.github.com/users/quiret/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/quiret/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/quiret/subscriptions",
-            "organizations_url": "https://api.github.com/users/quiret/orgs",
-            "repos_url": "https://api.github.com/users/quiret/repos",
-            "events_url": "https://api.github.com/users/quiret/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/quiret/received_events",
+            "url": "https://api.github.com/users/ghost",
+            "html_url": "https://github.com/ghost",
+            "followers_url": "https://api.github.com/users/ghost/followers",
+            "following_url": "https://api.github.com/users/ghost/following{/other_user}",
+            "gists_url": "https://api.github.com/users/ghost/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/ghost/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/ghost/subscriptions",
+            "organizations_url": "https://api.github.com/users/ghost/orgs",
+            "repos_url": "https://api.github.com/users/ghost/repos",
+            "events_url": "https://api.github.com/users/ghost/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/ghost/received_events",
             "type": "User",
             "user_view_type": "public",
             "site_admin": false
@@ -768414,7 +768414,7 @@
         "created_at": "2022-07-21T16:46:38Z",
         "updated_at": "2022-07-21T16:46:38Z",
         "body": "> should we consider this issue out of scope? see https://forum.freecadweb.org/viewtopic.php?p=611120#p611120\r\n\r\nBut the discussion there is about the integration of just a single tool while the rest will remain in the Curves workbench and could be implemented in the future, as requested here.",
-        "author_association": "CONTRIBUTOR",
+        "author_association": "COLLABORATOR",
         "pin": null,
         "reactions": {
             "url": "https://api.github.com/repos/FreeCAD/FreeCAD/issues/comments/1191715292/reactions",
@@ -769206,7 +769206,7 @@
         "created_at": "2022-07-22T08:52:18Z",
         "updated_at": "2022-07-22T08:52:18Z",
         "body": "Solved by: #7227",
-        "author_association": "CONTRIBUTOR",
+        "author_association": "COLLABORATOR",
         "pin": null,
         "reactions": {
             "url": "https://api.github.com/repos/FreeCAD/FreeCAD/issues/comments/1192340107/reactions",
@@ -769440,7 +769440,7 @@
         "created_at": "2022-07-22T12:30:48Z",
         "updated_at": "2022-07-22T12:30:48Z",
         "body": "> @FEA-eng any idea if this has been added to the documentation?\r\n\r\nYes, it's documented: https://wiki.freecadweb.org/TechDraw_SurfaceFinishSymbol\r\n\r\nand I added it to the release notes.",
-        "author_association": "CONTRIBUTOR",
+        "author_association": "COLLABORATOR",
         "pin": null,
         "reactions": {
             "url": "https://api.github.com/repos/FreeCAD/FreeCAD/issues/comments/1192524120/reactions",
@@ -772307,7 +772307,7 @@
         "created_at": "2022-07-25T18:59:28Z",
         "updated_at": "2022-07-25T19:00:00Z",
         "body": "> If you mean to use the sketcher solver as simulation then I believe this is achievable with assemly 4's animation feature\r\n\r\nIt's cool if it works with sketches as well. However, animation is just a nice visual addition to kinematic analysis. What I'm talking about is being able to do some calculations - obtain positions of vertices and generate plots of displacement, velocity and acceleration vs time.",
-        "author_association": "CONTRIBUTOR",
+        "author_association": "COLLABORATOR",
         "pin": null,
         "reactions": {
             "url": "https://api.github.com/repos/FreeCAD/FreeCAD/issues/comments/1194487400/reactions",
@@ -775359,7 +775359,7 @@
         "created_at": "2022-07-28T20:19:30Z",
         "updated_at": "2022-07-28T20:19:30Z",
         "body": "This may come down to the recurring request for being able to sketch in TechDraw.",
-        "author_association": "CONTRIBUTOR",
+        "author_association": "COLLABORATOR",
         "pin": null,
         "reactions": {
             "url": "https://api.github.com/repos/FreeCAD/FreeCAD/issues/comments/1198592245/reactions",
@@ -785841,7 +785841,7 @@
         "created_at": "2022-08-05T09:22:28Z",
         "updated_at": "2022-08-05T09:23:25Z",
         "body": "This issue can be closed since #5024 resolved it. @luzpaz Could you close it?",
-        "author_association": "CONTRIBUTOR",
+        "author_association": "COLLABORATOR",
         "pin": null,
         "reactions": {
             "url": "https://api.github.com/repos/FreeCAD/FreeCAD/issues/comments/1206237917/reactions",
@@ -785888,7 +785888,7 @@
         "created_at": "2022-08-05T09:31:06Z",
         "updated_at": "2022-08-05T09:31:06Z",
         "body": "This issue can be closed since #6382 resolved it. @luzpaz Can you close it?",
-        "author_association": "CONTRIBUTOR",
+        "author_association": "COLLABORATOR",
         "pin": null,
         "reactions": {
             "url": "https://api.github.com/repos/FreeCAD/FreeCAD/issues/comments/1206245886/reactions",
@@ -824520,7 +824520,7 @@
         "created_at": "2022-09-21T18:26:51Z",
         "updated_at": "2022-09-21T18:26:51Z",
         "body": "@adrianinsaval I would expect the (m/kg/s/degree) unit system to display meters at all times, not only when the dimensions are close to 1 m. That's how it's done in other CAD software (like SolidWorks). Seeing mm displayed everywhere (for example the default 10 mm depth of extrusion) with MKS system enabled is really confusing. Maybe this request should be changed to something like \"make the MKS system display meters regardless of the dimension value\" instead.",
-        "author_association": "CONTRIBUTOR",
+        "author_association": "COLLABORATOR",
         "pin": null,
         "reactions": {
             "url": "https://api.github.com/repos/FreeCAD/FreeCAD/issues/comments/1254073988/reactions",
@@ -825169,7 +825169,7 @@
         "created_at": "2022-09-22T13:53:34Z",
         "updated_at": "2022-09-22T13:53:34Z",
         "body": "Small dimensions displayed in meters may seem inconvenient but it's mainly about consistency (and clarity). Especially if you are going to show the dimensions to someone, then the units should be consistent according to the rules of engineering. I'm not a civil engineer but guys from that field would likely agree with me that the MKS system should show meters at all times.",
-        "author_association": "CONTRIBUTOR",
+        "author_association": "COLLABORATOR",
         "pin": null,
         "reactions": {
             "url": "https://api.github.com/repos/FreeCAD/FreeCAD/issues/comments/1255058566/reactions",
@@ -835135,7 +835135,7 @@
         "created_at": "2022-10-03T23:57:00Z",
         "updated_at": "2022-10-03T23:57:00Z",
         "body": "> this is a red flag: why should this be any argument ?\r\n\r\nDon't exaggerate, I know that FreeCAD veterans don't like comparisons with commercial software and that FreeCAD will never compete with that software but sometimes it's good to take a look at current standards in the CAD industry. After all, they were established by experts following the needs of users and are meant to make the designers' lives much easier.\r\n\r\n> no, it's **EXACTLY** the same per definition: con-centric means coincident centers. \r\n\r\nEven if the concentric constraint internally works on centers like the coincident constraint, there's still a difference in the way they are used - concentric constraint is applied to arcs/circles themselves and coincident constraint is applied to their centers. The implications of this difference (and thus the advantages of concentric constraint) are listed in the referenced thread. Also, from what I know, concentricity and coincidence are not the same thing when 3D space is considered (this is also explained in that forum thread but is not relevant for the Sketcher since it can't handle 3D geometry - I just want to clarify that they are not necessarily the same by definition). And finally, whether you like this argument or not, all the commercial CAD programs offer both types of constraints and they do it for a reason.\r\n\r\n> This issue should be closed as _solved_ and not burden already limited developers time.\r\n\r\nMarking this FR as solved would be misleading for the reasons mentioned above. As a trade-off, it could be changed to something like \"[FR] Possibility to apply the coincident constraint to arcs and circles themselves\" since this would bring the advantages of concentric constraint to the Sketcher and would be sufficient at least until 3D sketches are introduced.",
-        "author_association": "CONTRIBUTOR",
+        "author_association": "COLLABORATOR",
         "pin": null,
         "reactions": {
             "url": "https://api.github.com/repos/FreeCAD/FreeCAD/issues/comments/1266218557/reactions",
@@ -838837,7 +838837,7 @@
         "created_at": "2022-10-10T03:46:06Z",
         "updated_at": "2022-10-10T03:46:44Z",
         "body": "> Please check if you have VBO option is enabled in Preference -> Display -> Use OpenGL VBO\r\n\r\nYou're right, I had that disabled. Enabling it makes things much faster.\r\n\r\nI would have liked to talk about enabling it by default, [but it looks like that discussion has already happened](https://forum.freecadweb.org/viewtopic.php?style=3&f=34&t=70838) and it's simply a matter of lots of work to be done and not enough time :)\r\n\r\n> On my computer, the model you linked renders about 15 fps without VBO, and 25fps with VBO.\r\n\r\nInteresting--now that I open the file again, I get a similar experience. Before I was seeing 3fps or so. I'm not sure what changed. And your branch is buttery smooth, thank you for working on that!\r\n\r\n> The code you linked is only active (i.e. !ctx2) when you use SubLink to partial rendering some larger shape, which is not what happened here.\r\n\r\nAll I know is that it was active when I was doing my testing earlier:\r\n\r\n![2022-10-09-233857_770x333_scrot](https://user-images.githubusercontent.com/5213469/194796221-a2e19ba4-5518-4634-88e7-36b69dfa10e6.png)\r\n\r\nBut I did misread the code, it is assigned to by reading the enabled GL_EXTENSIONS: https://github.com/FreeCAD/FreeCAD/blob/42a19ab883e4818f57d2c0cd48affbbb4e734500/src/Mod/Part/Gui/SoBrepFaceSet.cpp#L516-L517\r\n\r\nMaybe a driver bug or a race condition or something in my earlier run?\r\n\r\nBut on the other hand, it doesn't seem like this follows the VBO setting in the preferences.\r\n\r\nAnyway, feel free to close this issue or whatever works best for your workflow.",
-        "author_association": "CONTRIBUTOR",
+        "author_association": "COLLABORATOR",
         "pin": null,
         "reactions": {
             "url": "https://api.github.com/repos/FreeCAD/FreeCAD/issues/comments/1272750864/reactions",
@@ -873615,7 +873615,7 @@
         "created_at": "2022-11-04T10:44:37Z",
         "updated_at": "2022-11-04T10:44:37Z",
         "body": "> Just enable selection of 2 circles with coincidence tool.\r\n\r\nThat's right, in the referenced forum thread we agreed that this should suffice for now.",
-        "author_association": "CONTRIBUTOR",
+        "author_association": "COLLABORATOR",
         "pin": null,
         "reactions": {
             "url": "https://api.github.com/repos/FreeCAD/FreeCAD/issues/comments/1303246759/reactions",
@@ -873987,7 +873987,7 @@
         "created_at": "2022-11-04T13:02:47Z",
         "updated_at": "2022-11-04T13:02:47Z",
         "body": "> I have done this. It works as expected. #7703 I will let you @FEA-eng follow the PR, find a merger willing to look into it and get it merged.\r\n\r\nGreat, thank you. I will add a link to this PR in the referenced forum thread and try to attract some mergers.",
-        "author_association": "CONTRIBUTOR",
+        "author_association": "COLLABORATOR",
         "pin": null,
         "reactions": {
             "url": "https://api.github.com/repos/FreeCAD/FreeCAD/issues/comments/1303504389/reactions",
@@ -941052,7 +941052,7 @@
         "created_at": "2022-12-07T18:41:06Z",
         "updated_at": "2022-12-07T18:41:06Z",
         "body": "> @WandererFan does this have anything to do with Complex Section ?\r\n\r\nYes, the new Complex Section tool fulfills this FR in a large part. Only broken out and rotated/removed sections are still to be implemented. I can create a new request for them or modify this one.",
-        "author_association": "CONTRIBUTOR",
+        "author_association": "COLLABORATOR",
         "pin": null,
         "reactions": {
             "url": "https://api.github.com/repos/FreeCAD/FreeCAD/issues/comments/1341412446/reactions",
@@ -955417,7 +955417,7 @@
         "created_at": "2022-12-21T19:15:51Z",
         "updated_at": "2022-12-21T19:15:51Z",
         "body": "> Yes please close this ticket and open new tickets for each new feature?\r\n\r\nUnfortunately, I can't edit or close this FR. It was imported from the old bug tracker. And @WandererFan created it (even though it originated from my request on the forum).",
-        "author_association": "CONTRIBUTOR",
+        "author_association": "COLLABORATOR",
         "pin": null,
         "reactions": {
             "url": "https://api.github.com/repos/FreeCAD/FreeCAD/issues/comments/1361967446/reactions",
@@ -971200,7 +971200,7 @@
         "created_at": "2023-01-04T20:24:26Z",
         "updated_at": "2023-01-04T20:24:26Z",
         "body": "It occurs in 0.20.2, I never had this issue in 0.20.1 so some change in the source code must be causing it.",
-        "author_association": "CONTRIBUTOR",
+        "author_association": "COLLABORATOR",
         "pin": null,
         "reactions": {
             "url": "https://api.github.com/repos/FreeCAD/FreeCAD/issues/comments/1371382790/reactions",
@@ -1239807,7 +1239807,7 @@
         "created_at": "2023-04-15T19:12:18Z",
         "updated_at": "2023-04-15T19:12:18Z",
         "body": "@adrianinsaval Nope, it's not what is requested here. The new snap feature just adds snapping at an angle and introduces the snap manager. Snapping to midpoints, center points, quadrants, extensions or intersections is still missing.",
-        "author_association": "CONTRIBUTOR",
+        "author_association": "COLLABORATOR",
         "pin": null,
         "reactions": {
             "url": "https://api.github.com/repos/FreeCAD/FreeCAD/issues/comments/1509932308/reactions",
@@ -1239948,7 +1239948,7 @@
         "created_at": "2023-04-15T19:35:27Z",
         "updated_at": "2023-04-15T19:35:27Z",
         "body": "@adrianinsaval Yes, I tested this in the newest Windows build (32821). By midpoints, I mean midpoints of lines and arcs. That's not implemented yet but paddle mentioned adding it in the future. This one would be the most important for me but other snaps would be useful too. Quadrant snap would snap to the quadrant points on the circumference of circles, arcs and ellipses. Snapping to extensions is available in other CAD software and can be very useful but would probably require more effort to implement.",
-        "author_association": "CONTRIBUTOR",
+        "author_association": "COLLABORATOR",
         "pin": null,
         "reactions": {
             "url": "https://api.github.com/repos/FreeCAD/FreeCAD/issues/comments/1509939056/reactions",
@@ -1242611,7 +1242611,7 @@
         "created_at": "2023-04-16T11:11:45Z",
         "updated_at": "2023-04-16T11:11:45Z",
         "body": "@adrianinsaval Right, I haven't noticed that midpoint snap working before. It's really great to have it already available. What would be needed to make it equivalent to snaps in other CAD software is an auto constraint and maybe some symbol indicating a successful snap.\r\n\r\nQuadrant snap can also be quite useful. For example, to properly draw this (btw. tangent snap would also be nice):\r\n\r\n![quadrant snap](https://user-images.githubusercontent.com/59876896/232304993-52f6fcd2-04af-4fa9-afd9-6fe8143c8c7b.JPG)\r\n\r\nWhen it comes to the previously mentioned (geometric) center snap, it would be useful for closed profiles made of lines/polylines.",
-        "author_association": "CONTRIBUTOR",
+        "author_association": "COLLABORATOR",
         "pin": null,
         "reactions": {
             "url": "https://api.github.com/repos/FreeCAD/FreeCAD/issues/comments/1510299636/reactions",
@@ -1304407,7 +1304407,7 @@
         "created_at": "2023-05-17T09:29:08Z",
         "updated_at": "2023-05-17T09:29:27Z",
         "body": "Would it be sufficient to add `obj.ViewObject.Field = 'Displacement Magnitude'` after `obj.ViewObject.DisplayMode = \"Surface\"` in ObjectsFem.py ? I can't build FreeCAD from source so I don't know if it's enough. It would be great to have this improvement in 0.21.",
-        "author_association": "CONTRIBUTOR",
+        "author_association": "COLLABORATOR",
         "pin": null,
         "reactions": {
             "url": "https://api.github.com/repos/FreeCAD/FreeCAD/issues/comments/1551061079/reactions",
@@ -1304735,7 +1304735,7 @@
         "created_at": "2023-05-17T13:12:18Z",
         "updated_at": "2023-05-17T13:12:18Z",
         "body": "@luzpaz Do you mean adding it to the source code in Visual Studio and running some bug checks? The problem is that I'm unable to compile FreeCAD from the source code (original or modified) because of a ton of errors and I don't have enough experience and time to fix them. But if there's another way to test whether this change works then I will be glad to give it a try.",
-        "author_association": "CONTRIBUTOR",
+        "author_association": "COLLABORATOR",
         "pin": null,
         "reactions": {
             "url": "https://api.github.com/repos/FreeCAD/FreeCAD/issues/comments/1551368878/reactions",
@@ -1312292,7 +1312292,7 @@
         "created_at": "2023-05-24T08:23:40Z",
         "updated_at": "2023-05-24T08:23:40Z",
         "body": "> please include full reproduction steps and example file here on the issue, our contribution process says:\r\n\r\nDone. But in such a case it would be nice to add support for the .FCStd file format here, if possible.\r\n\r\n",
-        "author_association": "CONTRIBUTOR",
+        "author_association": "COLLABORATOR",
         "pin": null,
         "reactions": {
             "url": "https://api.github.com/repos/FreeCAD/FreeCAD/issues/comments/1560669235/reactions",
@@ -1320677,7 +1320677,7 @@
         "created_at": "2023-05-30T17:44:34Z",
         "updated_at": "2023-05-30T17:44:34Z",
         "body": "@luzpaz Unfortunately, I only have Windows. I guess that there's no such procedure for that OS, right?",
-        "author_association": "CONTRIBUTOR",
+        "author_association": "COLLABORATOR",
         "pin": null,
         "reactions": {
             "url": "https://api.github.com/repos/FreeCAD/FreeCAD/issues/comments/1568828610/reactions",
@@ -1346727,7 +1346727,7 @@
         "created_at": "2023-06-22T13:36:51Z",
         "updated_at": "2024-01-21T21:07:49Z",
         "body": "I can confirm that the issue occurs in the newest weekly build of FreeCAD 0.21 as well (details below). It's due to the fact that all 3 electrostatic potential boundary conditions don't have the \"unspecified\" box next to the \"Potential\" field checked in the newer versions.\r\n\r\n```\r\nOS: Windows 11 build 22621\r\nWord size of FreeCAD: 64-bit\r\nVersion: 0.21.0.33345 (Git)\r\nBuild type: Release\r\nBranch: master\r\nHash: a3c4f4bb01f5201daf666852444a8f9c5adbda8d\r\nPython 3.10.11, Qt 5.15.8, Coin 4.0.0, Vtk 9.1.0, OCC 7.6.3\r\nLocale: Polish/Poland (pl_PL)\r\n```",
-        "author_association": "CONTRIBUTOR",
+        "author_association": "COLLABORATOR",
         "pin": null,
         "reactions": {
             "url": "https://api.github.com/repos/FreeCAD/FreeCAD/issues/comments/1602654054/reactions",
@@ -1350129,7 +1350129,7 @@
         "created_at": "2023-06-26T12:08:11Z",
         "updated_at": "2023-06-26T12:08:11Z",
         "body": "@luzpaz Can this be marked to be merged for 0.21?",
-        "author_association": "CONTRIBUTOR",
+        "author_association": "COLLABORATOR",
         "reactions": {
             "url": "https://api.github.com/repos/FreeCAD/FreeCAD/issues/comments/1607335563/reactions",
             "total_count": 0,
@@ -1350175,7 +1350175,7 @@
         "created_at": "2023-06-26T12:08:37Z",
         "updated_at": "2023-06-26T12:08:37Z",
         "body": "@luzpaz Can this be marked to be merged for 0.21?",
-        "author_association": "CONTRIBUTOR",
+        "author_association": "COLLABORATOR",
         "reactions": {
             "url": "https://api.github.com/repos/FreeCAD/FreeCAD/issues/comments/1607336215/reactions",
             "total_count": 0,
@@ -1380021,7 +1380021,7 @@
         "created_at": "2023-07-17T19:28:26Z",
         "updated_at": "2023-07-17T19:35:03Z",
         "body": "@Syres916 It would be great. The 0.21 release seems to be coming very soon and this PR definitely should be included in it. The problem is that someone has to merge this and there aren\u2019t many users with such rights. The creator of this PR, @0penBrain, can merge but maybe someone else needs to take a look at this, I don\u2019t know the rules regarding the Sketcher PRs. @abdullahtahiriyo is busy so maybe @chennes or @wwmayer could help?",
-        "author_association": "CONTRIBUTOR",
+        "author_association": "COLLABORATOR",
         "reactions": {
             "url": "https://api.github.com/repos/FreeCAD/FreeCAD/issues/comments/1638744196/reactions",
             "total_count": 0,
